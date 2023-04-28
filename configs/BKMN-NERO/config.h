@@ -33,10 +33,10 @@
 
 // version >= 4.5.0
 
+#define BEEPER_PIN           PC1
 #define LED0_PIN             PB6
 #define LED1_PIN             PB5
 #define LED2_PIN             PB4
-#define BEEPER_PIN           PC1
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
 #define SPI1_SCK_PIN         PA5
