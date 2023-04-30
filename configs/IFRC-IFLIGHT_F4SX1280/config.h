@@ -36,9 +36,6 @@
 #define USE_RX_SX1280
 #define RX_CHANNELS_AETR
 #define RX_SPI_DEFAULT_PROTOCOL         RX_SPI_EXPRESSLRS
-
-// version >= 4.5.0
-
 #define RX_EXPRESSLRS_TIMER_INSTANCE    TIM5
 #define RX_EXPRESSLRS_SPI_RESET_PIN     PA8
 #define RX_EXPRESSLRS_SPI_BUSY_PIN      PA13
@@ -46,6 +43,8 @@
 #define RX_SPI_EXTI                     PC14
 #define RX_SPI_BIND                     PB2
 #define RX_SPI_LED                      PC15
+
+// version >= 4.5.0
 
 #define MOTOR1_PIN           PA0
 #define MOTOR2_PIN           PA1

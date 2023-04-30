@@ -35,10 +35,10 @@
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
 
-#define LED0_PIN             PC13
-#define RX_PPM_PIN           PA3
 // version >= 4.5.0
 
+#define LED0_PIN             PC13
+#define RX_PPM_PIN           PA3
 #define BEEPER_PIN           PB2
 #define LED_STRIP_PIN        PA8
 

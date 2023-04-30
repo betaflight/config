@@ -32,10 +32,10 @@
 #define USE_FLASH_M25P16
 #define USE_MAX7456
 
-#define LED0_PIN             PB9
-#define LED1_PIN             PB8
 // version >= 4.5.0
 
+#define LED0_PIN             PB9
+#define LED1_PIN             PB8
 #define BEEPER_PIN           PC3
 #define BEEPER_INVERTED
 #define PINIO1_PIN           PC0

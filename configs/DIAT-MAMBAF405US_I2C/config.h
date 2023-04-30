@@ -35,10 +35,10 @@
 #define USE_FLASH_M25P16
 #define USE_MAX7456
 
-#define LED0_PIN             PC15
-#define LED1_PIN             PC14
 // version >= 4.5.0
 
+#define LED0_PIN             PC15
+#define LED1_PIN             PC14
 #define BEEPER_PIN           PC13
 #define BEEPER_INVERTED
 //TODO #define OSD_DISPLAYPORT_DEVICE MAX7456

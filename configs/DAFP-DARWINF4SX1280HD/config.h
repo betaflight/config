@@ -45,9 +45,6 @@
 #define USE_RX_EXPRESSLRS
 #define USE_RX_EXPRESSLRS_TELEMETRY
 #define USE_RX_SX1280
-
-// version >= 4.5.0
-
 #define RX_CHANNELS_AETR
 #define RX_SPI_DEFAULT_PROTOCOL         RX_SPI_EXPRESSLRS
 #define DEFAULT_RX_FEATURE              FEATURE_RX_SPI
@@ -59,6 +56,9 @@
 #define RX_SPI_EXTI                     PC13
 #define RX_SPI_BIND                     PB2
 #define RX_SPI_LED                      PC15
+
+// version >= 4.5.0
+
 #define BEEPER_PIN           PA14
 #define MOTOR1_PIN           PB8
 #define MOTOR2_PIN           PA0

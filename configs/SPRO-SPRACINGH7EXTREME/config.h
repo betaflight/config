@@ -121,8 +121,6 @@
 #define USE_CAMERA_CONTROL
 #define USE_MAX7456
 
-// version >= 4.5.0
-
 #define BEEPER_PIN           PD7
 #define MOTOR1_PIN           PA0
 #define MOTOR2_PIN           PA1

@@ -26,12 +26,12 @@
 
 // version >= 4.5.0
 
-// ATRY-START-F435 V1.0 LED assignments to use as a default
+// AT-START-F435 V1.0 LED assignments to use as a default
 #define LED0_PIN                PD13 // Labelled LED2 Red
 #define LED1_PIN                PD14 // Labelled LED3 Amber
 #define LED2_PIN                PD15 // Labelled LED4 Green
 
-// ATRY-START-F435 J7 connector SPI 2
+// AT-START-F435 J7 connector SPI 2
 #define SPI2_SCK_PIN            PD1
 #define SPI2_SDI_PIN            PC2
 #define SPI2_SDO_PIN            PD4

@@ -32,10 +32,10 @@
 #define USE_GYRO_SPI_MPU6000
 #define USE_MAX7456
 
-#define LED0_PIN             PC13
-#define LED1_PIN             PC14
 // version >= 4.5.0
 
+#define LED0_PIN             PC13
+#define LED1_PIN             PC14
 #define BEEPER_PIN           PB2
 #define BEEPER_INVERTED
 
