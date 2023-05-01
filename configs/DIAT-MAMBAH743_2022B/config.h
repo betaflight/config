@@ -39,6 +39,8 @@
 #define USE_FLASH_W25N01G
 #define USE_MAX7456
 
+// version >= 4.5.0
+
 #define BEEPER_PIN           PE3
 #define MOTOR1_PIN           PA0
 #define MOTOR2_PIN           PA1
