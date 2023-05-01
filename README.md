@@ -4,6 +4,8 @@ Repository for the storage of config.h files for board settings.
 
 ## Version Comments (simple rules engine)
 
+The file can include comments that will be utilised by the https://build.betaflight.com API so as to produce a unique file for a given version as requested by the Makefile when a user begins a build.
+
 Version comment details are as follows:
 
 `// version <= 4.1.0`
