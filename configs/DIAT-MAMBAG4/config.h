@@ -83,10 +83,10 @@
 #define ADC1_DMA_OPT                    10
 #define ADC2_DMA_OPT                    11
 
-#define SPI_RX_DMA_OPT                  6
-#define SPI_TX_DMA_OPT                  7
-#define SPI_RX_DMA_OPT                  8
-#define SPI_TX_DMA_OPT                  9
+#define SPI1_RX_DMA_OPT                 6
+#define SPI1_TX_DMA_OPT                 7
+#define SPI2_RX_DMA_OPT                 8
+#define SPI2_TX_DMA_OPT                 9
 
 #define ADC_INSTANCE                    ADC2
 #define BARO_I2C_INSTANCE               (I2CDEV_1)
