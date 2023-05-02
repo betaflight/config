@@ -30,5 +30,9 @@ You need to hydrate the target list first with:
 > make configs
 ```
 
-Let's say the current version.h file has the version 4.5.0 in it. Then when you make a build for a specific target configuration e.g. `make BETAFLIGHTF4` the make file will create `./src/config/4.5.0/BETAFLIGHTF4/` and download the `config.h` file from the API (passing the version and the board as required). The API will produce a `config.h` based on the content rules described above.
+Let's say the current version.h file has the version 4.5.0 in it. Then when you make a build for a specific target configuration e.g. 
+```
+> make BETAFLIGHTF4
+``` 
+the make file will create `./src/config/4.5.0/BETAFLIGHTF4/` and download the `config.h` file from the API (passing the version and the board as required). The API will produce a `config.h` based on the content rules described above.
 
