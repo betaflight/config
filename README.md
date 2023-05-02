@@ -1,4 +1,4 @@
-# config repository
+# Target Configuration (config.h) repository
 
 Repository for the storage of config.h files for board settings.
 
