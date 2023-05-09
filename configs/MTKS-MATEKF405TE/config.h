@@ -127,4 +127,3 @@
 
 #define SERIALRX_UART                   SERIAL_PORT_USART2
 #define DEFAULT_RX_FEATURE              FEATURE_RX_SERIAL
-#define SERIALRX_PROVIDER               SERIALRX_CRSF
