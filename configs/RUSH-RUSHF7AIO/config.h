@@ -126,5 +126,4 @@
 #define PINIO1_BOX                      40
 #define PINIO2_BOX                      41
 
-#define SERIALRX_PROVIDER               CRSF
 #define SERIALRX_UART                   SERIAL_PORT_USART1

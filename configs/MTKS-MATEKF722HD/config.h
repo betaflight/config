@@ -107,7 +107,6 @@
 #define ADC1_DMA_OPT            0  // DMA 2 Stream 0 Channel 0 
 
 #define DEFAULT_RX_FEATURE      FEATURE_RX_SERIAL
-// #define SERIALRX_PROVIDER       SERIALRX_SBUS
 #define SERIALRX_UART           SERIAL_PORT_USART2
 
 #define MAG_I2C_INSTANCE        (I2CDEV_1)

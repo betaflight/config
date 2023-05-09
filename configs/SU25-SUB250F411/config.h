@@ -83,7 +83,6 @@
 #define SERIALRX_UART                   SERIAL_PORT_USART2
 
 #define BARO_I2C_INSTANCE               (I2CDEV_1)
-#define SERIALRX_PROVIDER               CRSF
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
 //TODO #define DSHOT_IDLE_VALUE 800
 #define DEFAULT_DSHOT_BURST             DSHOT_DMAR_AUTO
