@@ -84,7 +84,8 @@
 //TODO resource RX_BIND 1 @01
 #define RX_BIND_PLUG_PIN                PO15
 
-#define CAMERA_CONTROL_PIN              PA0
+//TODO camera control not implemented yet
+// #define CAMERA_CONTROL_PIN              PA0
 
 #define ADC_VBAT_PIN                    PC2
 #define ADC_CURR_PIN                    PC1
@@ -107,8 +108,12 @@
 #define MAX7456_SPI_INSTANCE            SPI2
 #define MAX7456_SPI_CS_PIN              PB12
 
-#define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 0, CAMERA_CONTROL_PIN, 2, 13 ) \
+/*
+//TODO camera control not implemented yet
+ #define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 0, CAMERA_CONTROL_PIN, 2, 13 ) \
                                         TIMER_PIN_MAP( 1, LED_STRIP_PIN, 2, 7 ) \
+*/
+#define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 1, LED_STRIP_PIN, 2, 7 ) \
                                         TIMER_PIN_MAP( 2, UART2_RX_PIN, 1,  6 ) \
                                         TIMER_PIN_MAP( 3, SERVO1_PIN, 1,  11 ) \
                                         TIMER_PIN_MAP( 4, SERVO2_PIN, 1,  10 ) \
