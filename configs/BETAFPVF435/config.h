@@ -79,7 +79,7 @@
 
 #define TIMER_PIN_MAPPING                   TIMER_PIN_MAP( 0, PB0, 2,  1 ) \
                                             TIMER_PIN_MAP( 1, PB1, 2,  2 ) \
-                                            TIMER_PIN_MAP( 2, PA3, 2,  7 ) \
+                                            TIMER_PIN_MAP( 2, PA3, 1,  7 ) \
                                             TIMER_PIN_MAP( 3, PA2, 1,  6 ) \
                                             TIMER_PIN_MAP( 4, PC8, 2,  4 ) \
                                             TIMER_PIN_MAP( 5, PA8, 1,  5 ) \
