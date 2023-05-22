@@ -26,6 +26,10 @@
 #define BOARD_NAME        NEUTRONRCF722AIO
 #define MANUFACTURER_ID   NERC
 
+#define USE_ACC
+#define USE_GYRO
+#define USE_ACCGYRO_BMI270
+
 #define BEEPER_PIN           PC15
 #define MOTOR1_PIN           PC9
 #define MOTOR2_PIN           PC8
