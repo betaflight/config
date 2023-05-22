@@ -26,6 +26,11 @@
 #define BOARD_NAME        GEPRCF745_BT_HD
 #define MANUFACTURER_ID   GEPR
 
+#define USE_ACC
+#define USE_ACC_SPI_ICM42688P
+#define USE_GYRO
+#define USE_GYRO_SPI_ICM42688P
+
 #define BEEPER_PIN           PD2
 #define MOTOR1_PIN           PB0
 #define MOTOR2_PIN           PB1
