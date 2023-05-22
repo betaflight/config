@@ -26,6 +26,11 @@
 #define BOARD_NAME        NEUTRONRCF407
 #define MANUFACTURER_ID   NERC
 
+#define USE_ACC
+#define USE_ACC_SPI_ICM42688P
+#define USE_GYRO
+#define USE_GYRO_SPI_ICM42688P
+
 #define BEEPER_PIN           PB4
 #define MOTOR1_PIN           PB0
 #define MOTOR2_PIN           PB1
