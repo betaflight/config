@@ -64,7 +64,7 @@
 #define SDCARD_SPI_CS_PIN    PD8
 #define USB_MSC_PIN          PA0
 #define GYRO_1_EXTI_PIN      PC4
-#define GYRO_1_CS_PIN        PC4
+#define GYRO_1_CS_PIN        PA4
 #define USB_DETECT_PIN       PA9
 
 #define TIMER_PIN_MAPPING \
