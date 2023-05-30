@@ -108,7 +108,7 @@
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define MAX7456_SPI_INSTANCE            SPI2
 
-#define ALIGN_BOARD_YAW                 -45
+#define DEFAULT_ALIGN_BOARD_YAW         -45
 
 #define BEEPER_INVERTED
 
