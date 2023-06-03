@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F405
 
-#define BOARD_NAME        MATEKF405TEMINI
+#define BOARD_NAME        MATEKF405TE_SD
 #define MANUFACTURER_ID   MTKS
 
 #define USE_GYRO
@@ -32,8 +32,7 @@
 #define USE_ACC_SPI_ICM42688P
 #define USE_BARO_DPS310
 #define USE_MAX7456
-#define USE_FLASH
-#define USE_FLASH_M25P16
+#define USE_SDCARD
 
 #define BEEPER_PIN           PB9
 #define MOTOR1_PIN           PC9
@@ -113,9 +112,10 @@
 #define PINIO1_BOX 40
 #define PINIO2_BOX 41
 #define SYSTEM_HSE_MHZ                  8
-#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
 #define MAX7456_SPI_INSTANCE            SPI1
-#define FLASH_SPI_INSTANCE              SPI2
+#define USE_SDCARD_SPI
+#define SDCARD_SPI_INSTANCE             SPI2
 
 #define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE             SPI1
