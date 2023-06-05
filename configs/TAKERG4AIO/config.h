@@ -20,7 +20,7 @@
  */
 
 #define FC_TARGET_MCU       STM32G47X
-#define BOARD_NAME          GEPRCG4AIO
+#define BOARD_NAME          TAKERG4AIO
 #define MANUFACTURER_ID     GEPR
 
 #define USE_ACC
@@ -31,6 +31,7 @@
 #define USE_GYRO_SPI_ICM42688P
 #define USE_BARO
 #define USE_BARO_BMP280
+#define USE_BARO_DPS310
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
@@ -88,6 +89,7 @@
 // #define TIMUP8_DMA_OPT 0
 
 #define ADC_INSTANCE                 ADC2
+#define BARO_I2C_INSTANCE            (I2CDEV_1)
 #define DEFAULT_GYRO_TO_USE          GYRO_CONFIG_USE_GYRO_1
 #define DEFAULT_BLACKBOX_DEVICE      BLACKBOX_DEVICE_FLASH
 #define MAX7456_SPI_INSTANCE         SPI2
@@ -98,4 +100,8 @@
 #define FLASH_SPI_INSTANCE           SPI2 
 #define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE          SPI1
+
+#define DEFAULT_ALIGN_BOARD_ROLL     180
+#define DEFAULT_ALIGN_BOARD_YAW      45
+#define GYRO_1_ALIGN_YAW             2700
 #define GYRO_1_ALIGN                 CW270_DEG
