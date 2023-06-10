@@ -8,7 +8,7 @@ Cloud build takes care of the config repository for the general user, and knowle
 
 ## How to use - Firmware
 
-The config repository will be used directly by the firmware, and is only required if you wish to use one of the targets defined here. 
+The config repository will be used directly by the firmware, and is only required if you wish to use one of the targets present here when building locally. 
 
 You need to hydrate the target list first with:
 
