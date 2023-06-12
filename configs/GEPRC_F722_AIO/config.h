@@ -33,6 +33,8 @@
 #define USE_ACCGYRO_BMI270
 #define USE_GYRO_SPI_ICM42688P
 #define USE_ACC_SPI_ICM42688P
+#define USE_BARO
+#define USE_BARO_BMP280
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
@@ -93,7 +95,6 @@
 #define ADC3_DMA_OPT        0
 
 #define MAG_I2C_INSTANCE (I2CDEV_2)
-#define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_2)
 
 #define USE_ADC
