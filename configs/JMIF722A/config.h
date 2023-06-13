@@ -85,7 +85,6 @@
 #define FLASH_CS_PIN         PD2
 #define MAX7456_SPI_CS_PIN   PB12
 
-#define GYRO_1_ALIGN         CW90_DEG
 #define GYRO_1_EXTI_PIN      PC4
 #define GYRO_1_CS_PIN        PB2
 
@@ -111,3 +110,4 @@
 #define MAX7456_SPI_INSTANCE SPI2
 #define FLASH_SPI_INSTANCE SPI3
 #define GYRO_1_SPI_INSTANCE SPI1
+#define GYRO_1_ALIGN CW90_DEG
