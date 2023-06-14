@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F7X2
 
-#define BOARD_NAME        SKYSTARSF7HDPRO
+#define BOARD_NAME        SKYSTARSF7RS
 #define MANUFACTURER_ID   SKST
 
 #define USE_ACC
