@@ -23,11 +23,11 @@
 
 #define FC_TARGET_MCU     STM32H750
 
-#define BOARD_NAME        SPRACINGH7NANO
+#define BOARD_NAME        SPRACINGH7ZERO
 #define MANUFACTURER_ID   SPRO
 
-#define TARGET_BOARD_IDENTIFIER "SP7N"
-#define USBD_PRODUCT_STRING "SPRacingH7NANO"
+#define TARGET_BOARD_IDENTIFIER "SP7Z"
+#define USBD_PRODUCT_STRING "SPRacingH7ZERO"
 
 #define FC_VMA_ADDRESS    0x97CE0000
 
@@ -48,25 +48,35 @@
 #define QUADSPI1_BK1_IO1_PIN PD12
 #define QUADSPI1_BK1_IO2_PIN PE2
 #define QUADSPI1_BK1_IO3_PIN PD13
-#define QUADSPI1_BK1_CS_PIN NONE
+#define QUADSPI1_BK1_CS_PIN PB10
 #define QUADSPI1_BK2_IO0_PIN PE7
 #define QUADSPI1_BK2_IO1_PIN PE8
 #define QUADSPI1_BK2_IO2_PIN PE9
 #define QUADSPI1_BK2_IO3_PIN PE10
-#define QUADSPI1_BK2_CS_PIN PB10
-#define QUADSPI1_MODE QUADSPI_MODE_BK2_ONLY
-#define QUADSPI1_CS_FLAGS (QUADSPI_BK1_CS_NONE | QUADSPI_BK2_CS_SOFTWARE | QUADSPI_CS_MODE_SEPARATE)
+#define QUADSPI1_BK2_CS_PIN NONE
+#define QUADSPI1_MODE QUADSPI_MODE_BK1_ONLY
+#define QUADSPI1_CS_FLAGS (QUADSPI_BK1_CS_HARDWARE | QUADSPI_BK2_CS_NONE | QUADSPI_CS_MODE_LINKED)
 
 #define FLASH_QUADSPI_INSTANCE    QUADSPI
 
+#define USE_FLASH_CHIP
 #define CONFIG_IN_EXTERNAL_FLASH
 #define USE_FIRMWARE_PARTITION
 
-// SD card not present on hardware, but pins are reserved.
-//#define USE_SDCARD
-#ifdef USE_SDCARD
+#define USE_SDCARD
+#define USE_SDCARD_SDIO
 #define SDCARD_DETECT_PIN PD10
 #define SDCARD_DETECT_INVERTED
+#define SDIO_DEVICE             SDIODEV_1
+#define SDIO_USE_4BIT           true
+#define SDIO_CK_PIN             PC12
+#define SDIO_CMD_PIN            PD2
+#define SDIO_D0_PIN             PC8
+#define SDIO_D1_PIN             PC9
+#define SDIO_D2_PIN             PC10
+#define SDIO_D3_PIN             PC11
+
+#ifdef USE_SDCARD
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_SDCARD
 #else
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
@@ -92,14 +102,17 @@
 
 #define USE_USB_ID
 
-#define USE_I2C_DEVICE_1
-#define I2C1_SCL_PIN PB8
-#define I2C1_SDA_PIN PB9
+#define USE_I2C_DEVICE_1        // Connected to BMP388 only
+#define I2C1_SCL_PIN            PB8
+#define I2C1_SDA_PIN            PB9
 #define I2C_DEVICE (I2CDEV_1)
 
-#define USE_I2C_DEVICE_4
-#define I2C4_SCL_PIN            PB6 // Shared with motor outputs 5/6
-#define I2C4_SDA_PIN            PB7
+#define I2C2_SCL_PIN            NONE
+#define I2C2_SDA_PIN            NONE
+#define I2C3_SCL_PIN            NONE
+#define I2C3_SDA_PIN            NONE
+#define I2C4_SCL_PIN            NONE
+#define I2C4_SDA_PIN            NONE
 
 #define ENSURE_MPU_DATA_READY_IS_LOW
 
@@ -126,8 +139,6 @@
 #define USE_GYRO
 #define USE_GYRO_SPI_MPU6500
 #define USE_BARO_BMP388
-#define USE_BARO_BMP280
-#define USE_BARO_MS5611
 #define USE_MAG
 #define USE_MAG_HMC5883
 #define USE_MAG_QMC5883
@@ -166,29 +177,20 @@
 #define UART7_RX_PIN         NONE
 #define UART8_RX_PIN         PE0
 
-#define I2C1_SCL_PIN         PB8
-#define I2C1_SDA_PIN         PB9
-#define I2C2_SCL_PIN         NONE
-#define I2C2_SDA_PIN         NONE
-#define I2C3_SCL_PIN         NONE
-#define I2C3_SDA_PIN         NONE
-
 #define LED0_PIN             PE3
 #define TRANSPONDER_PIN      PB11
 
 #define CAMERA_CONTROL_PIN   PE5
 
-#define ADC_VBAT_PIN         PC1
-#define ADC_RSSI_PIN         PC4
-#define ADC_CURR_PIN         PC0
+#define ADC_VBAT_PIN         PC4
+#define ADC_RSSI_PIN         PC0
+#define ADC_CURR_PIN         PC1
 #define ADC_EXTERNAL1_PIN    PC5
 
-#define MAX7456_SPI_CS_PIN   PE11
-
-#define GYRO_1_EXTI_PIN      PE15
-#define GYRO_2_EXTI_PIN      PD4
-#define GYRO_1_CS_PIN        PB12
-#define GYRO_2_CS_PIN        PA15
+#define GYRO_1_EXTI_PIN      PD4
+#define GYRO_2_EXTI_PIN      PE15
+#define GYRO_1_CS_PIN        SPI3_NSS_PIN
+#define GYRO_2_CS_PIN        SPI2_NSS_PIN
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP(0, PA8, 1, 10) \
@@ -218,18 +220,20 @@
 #define TIMUP5_DMA_OPT 0
 #define TIMUP8_DMA_OPT 2
 
-//TODO #define MAG_BUSTYPE I2C
 #define MAG_I2C_INSTANCE (I2CDEV_1)
 
 #define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 
-#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_1
+#define DEFAULT_GYRO_TO_USE  GYRO_CONFIG_USE_GYRO_1
 #define USE_SPI_GYRO
-#define GYRO_1_SPI_INSTANCE SPI2
-#define GYRO_1_ALIGN CW0_DEG_FLIP
-#define GYRO_2_SPI_INSTANCE SPI3
-#define GYRO_2_ALIGN CW0_DEG_FLIP
-#define MAX7456_SPI_INSTANCE SPI4
+#define GYRO_1_SPI_INSTANCE  SPI3
+#define GYRO_1_ALIGN         CW180_DEG
+#define GYRO_2_SPI_INSTANCE  SPI2
+#define GYRO_2_ALIGN         CW90_DEG
 
-#define SERIALRX_UART SERIAL_PORT_USART1
+#define USE_MAX7456
+#define MAX7456_SPI_INSTANCE SPI4
+#define MAX7456_SPI_CS_PIN   SPI4_NSS_PIN
+
+#define SERIALRX_UART        SERIAL_PORT_USART1
