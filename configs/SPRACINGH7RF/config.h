@@ -175,7 +175,9 @@
 #define SPRACING_PIXEL_OSD_PIXEL_GATING_DEBUG_PIN       PB0
 #define SPRACING_PIXEL_OSD_PIXEL_BLANKING_DEBUG_PIN     PB1
 
+#define BEEPER_INVERTED
 #define BEEPER_PIN           PE4
+
 #define MOTOR1_PIN           PB0
 #define MOTOR2_PIN           PB1
 #define MOTOR3_PIN           PA6
