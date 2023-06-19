@@ -64,8 +64,8 @@
 #define UART3_RX_PIN            PB10
 #define UART5_RX_PIN            PB8
 #define UART7_RX_PIN            PB3
-#define I2C2_SCL                PH2
-#define I2C2_SDA                PH3
+#define I2C2_SCL_PIN            PH2
+#define I2C2_SDA_PIN            PH3
 #define LED0_PIN                PC13
 #define LED1_PIN                PC14
 #define SPI1_SCK_PIN            PA5
