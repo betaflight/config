@@ -30,13 +30,10 @@
 #define USE_GYRO
 #define USE_ACCGYRO_BMI270
 
-#define USE_ACC
 #define USE_ACC_SPI_ICM42688P
 
-#define USE_BARO
 #define USE_BARO_DPS310
 
-#define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 
 #define USE_FLASH
@@ -99,8 +96,6 @@
 #define SYSTEM_HSE_MHZ          8
 #define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE     SPI1
-#define GYRO_1_ALIGN CW0_DEG
-#define GYRO_1_ALIGN_YAW        0
 #define DEFAULT_ALIGN_BOARD_YAW -45
 #define MAX7456_SPI_INSTANCE    SPI2
 #define FLASH_SPI_INSTANCE      SPI2
