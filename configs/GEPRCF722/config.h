@@ -50,10 +50,12 @@
 #define LED_STRIP_PIN        PA8
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PA2
+#define UART3_TX_PIN         PB10
 #define UART4_TX_PIN         PA0
 #define UART6_TX_PIN         PC6
 #define UART1_RX_PIN         PA10
 #define UART2_RX_PIN         PA3
+#define UART3_RX_PIN         PB11
 #define UART4_RX_PIN         PA1
 #define UART6_RX_PIN         PC7
 #define I2C1_SCL_PIN         PB8
