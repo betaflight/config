@@ -39,9 +39,11 @@
 #define USE_FLASH
 #define USE_FLASH_M25P16
 
+#define CAMERA_CONTROL_PIN                  PA4
+
 #define USE_MAX7456
 #define MAX7456_SPI_CS_PIN                  PH2
-#define MAX7456_SPI_INSTANCE                SPI3
+#define MAX7456_SPI_INSTANCE                SPI2
 
 #define BEEPER_PIN                          PB10
 #define MOTOR1_PIN                          PC9
@@ -101,7 +103,7 @@
 
 #define GYRO_1_EXTI_PIN                     PB12
 #define GYRO_1_CS_PIN                       PC14
-#define GYRO_1_SPI_INSTANCE                 SPI2
+#define GYRO_1_SPI_INSTANCE                 SPI1
 
 #define TIMER_PIN_MAPPING                   TIMER_PIN_MAP( 0, LED_STRIP_PIN, 1, -1 ) \
                                             TIMER_PIN_MAP( 1, MOTOR4_PIN, 1,  2 ) \
