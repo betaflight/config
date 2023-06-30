@@ -84,8 +84,7 @@
 //TODO resource RX_BIND 1 @01
 #define RX_BIND_PLUG_PIN                PO15
 
-//TODO camera control not implemented yet
-// #define CAMERA_CONTROL_PIN              PA0
+#define CAMERA_CONTROL_PIN              PA0
 
 #define ADC_VBAT_PIN                    PC2
 #define ADC_CURR_PIN                    PC1
