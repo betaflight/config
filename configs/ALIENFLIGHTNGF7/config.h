@@ -34,7 +34,9 @@
 #define USE_ACC_SPI_MPU6500
 #define USE_GYRO_SPI_ICM20602
 #define USE_ACC_SPI_ICM20602
+#define USE_BARO
 #define USE_BARO_SPI_BMP280
+#define USE_MAG
 #define USE_MAG_MPU925X_AK8963
 #define USE_MAG_SPI_AK8963
 #define USE_MAX7456
@@ -77,7 +79,7 @@
 #define ADC_RSSI_PIN         PC4
 #define ADC_CURR_PIN         PC1
 #define BARO_CS_PIN          PA15
-#define COMPASS_CS_PIN       PC15
+#define MAG_CS_PIN           PC15
 #define SDCARD_SPI_CS_PIN    PB10
 #define SDCARD_DETECT_PIN    PB11
 #define FLASH_CS_PIN         PB12
@@ -109,8 +111,7 @@
 #define MAG_ALIGN_PITCH 1800
 #define MAG_ALIGN_YAW 1800
 #define USE_SPI_MAG
-#define MAG_SPI_DEVICE SPI3
-#define USE_BARO
+#define MAG_SPI_INSTANCE SPI3
 #define BARO_SPI_INSTANCE SPI3
 //TODO #define SPEKTRUM_SAT_BIND 9
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_SDCARD
