@@ -62,8 +62,8 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 #define GYRO_1_EXTI_PIN                 PD10
 #define GYRO_2_EXTI_PIN                 PD11
 
-#define GYRO_1_CS_PIN                   PA15
-#define GYRO_2_CS_PIN                   PB12
+#define GYRO_1_CS_PIN                   PB12
+#define GYRO_2_CS_PIN                   PA15
 
 #define I2C2_SCL_PIN                    PB10
 #define I2C2_SDA_PIN                    PB11
