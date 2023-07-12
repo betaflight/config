@@ -25,7 +25,7 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 
 #pragma once
 
-#define FC_TARGET_MCU           STM32H723
+#define FC_TARGET_MCU           STM32H725
 
 #define BOARD_NAME              CHONKERH735
 #define MANUFACTURER_ID         YOLO
