@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F745
 
-#define BOARD_NAME        FLYWOOF745AIO
+#define BOARD_NAME        FLYWOOF745AIOV2
 #define MANUFACTURER_ID   FLWO
 
 #define USE_ACC
