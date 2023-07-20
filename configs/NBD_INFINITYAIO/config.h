@@ -26,6 +26,11 @@
 #define BOARD_NAME        NBD_INFINITYAIO
 #define MANUFACTURER_ID   NEBD
 
+#define USE_ACC
+#define USE_ACC_SPI_MPU6000
+#define USE_GYRO
+#define USE_GYRO_SPI_MPU6000
+
 #define BEEPER_PIN           PC15
 #define MOTOR1_PIN           PB4
 #define MOTOR2_PIN           PB1
@@ -70,10 +75,6 @@
 #define BEEPER_INVERTED
 #define FLASH_SPI_INSTANCE SPI1
 #define USE_SPI_GYRO
-#define USE_GYRO
-#define USE_GYRO_SPI_MPU6000
-#define USE_ACC
-#define USE_ACC_SPI_MPU6000
 #define GYRO_1_SPI_INSTANCE SPI2
 #define GYRO_1_ALIGN CW180_DEG
 #define GYRO_1_ALIGN_YAW 1800
