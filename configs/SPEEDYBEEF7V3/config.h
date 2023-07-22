@@ -94,7 +94,7 @@
 
 
 #define SPI3_TX_DMA_OPT     0
-#define ADC1_DMA_OPT        0
+#define ADC1_DMA_OPT        1
 
 #define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_2
 #define MAG_I2C_INSTANCE (I2CDEV_1)
