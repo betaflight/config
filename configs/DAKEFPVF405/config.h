@@ -26,13 +26,20 @@
 #define BOARD_NAME        DAKEFPVF405
 #define MANUFACTURER_ID   DAKE
 
-#define USE_GYRO
-#define USE_GYRO_SPI_ICM42688P
 #define USE_ACC
+#define USE_BARO
+#define USE_FLASH
+#define USE_GYRO
+
+#define USE_ACC_SPI_MPU6000
+#define USE_ACC_SPI_MPU6500
 #define USE_ACC_SPI_ICM42688P
 #define USE_ACCGYRO_BMI270
+#define USE_GYRO_SPI_MPU6000
+#define USE_GYRO_SPI_MPU6500
+#define USE_GYRO_SPI_ICM42688P
 #define USE_BARO_SPI_BMP280
-#define USE_FLASH
+#define USE_BARO_SPI_DPS310
 #define USE_FLASH_M25P16
 #define USE_MAX7456
 
@@ -58,8 +65,8 @@
 #define UART6_RX_PIN         PC7
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
-#define LED0_PIN             PC15
-#define LED1_PIN             PC14
+#define LED0_PIN             PC14
+#define LED1_PIN             PC15
 #define SPI1_SCK_PIN         PA5
 #define SPI2_SCK_PIN         PB13
 #define SPI3_SCK_PIN         PC10
@@ -96,7 +103,6 @@
 
 #define ADC2_DMA_OPT        1
 
-#define USE_BARO
 #define BARO_SPI_INSTANCE SPI2
 
 #define USE_ADC
@@ -112,5 +118,5 @@
 #define FLASH_SPI_INSTANCE SPI3
 #define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE SPI1
-#define GYRO_1_ALIGN CW270_DEG
-#define GYRO_1_ALIGN_YAW 2700
+#define GYRO_1_ALIGN CW90_DEG
+#define GYRO_1_ALIGN_YAW 900
