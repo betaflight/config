@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F7X2
 
-#define BOARD_NAME        AXISFLYINGARGUSF7AIO
+#define BOARD_NAME        ARGUSF7AIO
 #define MANUFACTURER_ID   AXFL
 
 #define USE_ACC
