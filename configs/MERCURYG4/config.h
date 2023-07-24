@@ -109,6 +109,6 @@
 #define GYRO_1_ALIGN_YAW                1800
 
 //TODO set rssi_channel = 15
-//TODO set dshot_bitbang = ON
-//TODO set vbat_divider = 5
-//TODO set vbat_multiplier = 2
+#define DEFAULT_DSHOT_BITBANG DSHOT_BITBANG_ON
+#define DEFAULT_VOLTAGE_METER_DIVIDER 5
+#define DEFAULT_VOLTAGE_METER_MULTIPLIER 2
