@@ -90,7 +90,6 @@
 #define ADC1_DMA_OPT        1
 
 
-//TODO #define MOTOR_PWM_PROTOCOL DSHOT600
 #define MAG_I2C_INSTANCE (I2CDEV_1)
 #define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_1)
