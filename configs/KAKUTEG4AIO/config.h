@@ -39,12 +39,14 @@
 #define USE_GYRO_SPI_ICM42688P
 #define USE_SPI_GYRO
 #define USE_MAX7456
+#define USE_CAMERA_CONTROL
 
 #define BEEPER_PIN           PB7
 #define MOTOR1_PIN           PA3
 #define MOTOR2_PIN           PA1
 #define MOTOR3_PIN           PA2
 #define MOTOR4_PIN           PA0
+#define CAMERA_CONTROL_PIN   PB5
 #define LED_STRIP_PIN        PB6
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PB3
@@ -77,7 +79,8 @@
     TIMER_PIN_MAP( 1, MOTOR4_PIN , 1,  1) \
     TIMER_PIN_MAP( 2, MOTOR2_PIN , 1,  2) \
     TIMER_PIN_MAP( 3, MOTOR3_PIN , 2,  3) \
-    TIMER_PIN_MAP( 4, MOTOR1_PIN , 2,  4)
+    TIMER_PIN_MAP( 4, MOTOR1_PIN , 2,  4) \
+    TIMER_PIN_MAP( 5, CAMERA_CONTROL_PIN , 1, 5)
 
 #define ADC1_DMA_OPT                 10
 #define ADC2_DMA_OPT                 11
