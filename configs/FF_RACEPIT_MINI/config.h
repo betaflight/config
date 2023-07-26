@@ -85,7 +85,6 @@
 #define ADC2_DMA_OPT        1
 
 #define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
-//TODO #define MOTOR_PWM_PROTOCOL Dshot600
 
 #define UART1_TX_PIN         PA9
 #define UART1_RX_PIN         PB7
