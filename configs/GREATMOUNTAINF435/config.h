@@ -32,8 +32,6 @@
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO_SPI_ICM42688P
 
-
-
 #define GYRO_1_CS_PIN                   PA4
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define GYRO_1_ALIGN                    CW180_DEG_FLIP
@@ -66,11 +64,9 @@
 #define MOTOR7_PIN                      PC8
 #define MOTOR8_PIN                      PC9
 
-
 #define LED0_PIN                        PD15
 #define LED1_PIN                        PD14
 #define LED_STRIP_PIN                   PB10
-
 
 #define UART1_TX_PIN                    PA9
 #define UART2_TX_PIN                    PA2
@@ -98,8 +94,7 @@
 #define USE_FLASH_W25N01G
 #define FLASH_CS_PIN                    PD6
 #define FLASH_SPI_INSTANCE              SPI3
-#define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
-
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
 
 #define I2C3_SCL_PIN                    PC0
 #define I2C3_SDA_PIN                    PC1
@@ -113,20 +108,20 @@
 #define MAX7456_SPI_INSTANCE            SPI2
 #define MAX7456_SPI_CS_PIN              PD5
 
-#define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 1, LED_STRIP_PIN, 2, 7 ) \
-                                        TIMER_PIN_MAP( 2, BEEPER_PIN, 1,  6 ) \
-                                        TIMER_PIN_MAP( 3, MOTOR5_PIN, 1,  11 ) \
-                                        TIMER_PIN_MAP( 4, MOTOR6_PIN, 1,  10 ) \
-                                        TIMER_PIN_MAP( 5, MOTOR7_PIN, 2,  8 ) \
-                                        TIMER_PIN_MAP( 6, MOTOR8_PIN, 2,  9 ) \
-                                        TIMER_PIN_MAP( 7, MOTOR1_PIN, 2,  0 ) \
-                                        TIMER_PIN_MAP( 8, MOTOR2_PIN, 2,  2 ) \
-                                        TIMER_PIN_MAP( 9, MOTOR3_PIN, 1,  1 ) \
-                                        TIMER_PIN_MAP(10, MOTOR4_PIN, 1,  3 )
+#define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 0, LED_STRIP_PIN, 2, 7 ) \
+                                        TIMER_PIN_MAP( 1, BEEPER_PIN, 1,  6 ) \
+                                        TIMER_PIN_MAP( 2, MOTOR5_PIN, 1,  11 ) \
+                                        TIMER_PIN_MAP( 3, MOTOR6_PIN, 1,  10 ) \
+                                        TIMER_PIN_MAP( 4, MOTOR7_PIN, 2,  8 ) \
+                                        TIMER_PIN_MAP( 5, MOTOR8_PIN, 2,  9 ) \
+                                        TIMER_PIN_MAP( 6, MOTOR1_PIN, 2,  0 ) \
+                                        TIMER_PIN_MAP( 7, MOTOR2_PIN, 2,  2 ) \
+                                        TIMER_PIN_MAP( 8, MOTOR3_PIN, 1,  1 ) \
+                                        TIMER_PIN_MAP( 9, MOTOR4_PIN, 1,  3 )
 
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SCALE     110
 #define DEFAULT_CURRENT_METER_SCALE     100
 
-#define DEFAULT_FEATURES (FEATURE_OSD |FEATURE_LED_STRIP)
+#define DEFAULT_FEATURES (FEATURE_OSD | FEATURE_LED_STRIP)
