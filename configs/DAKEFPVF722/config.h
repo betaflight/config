@@ -26,14 +26,18 @@
 #define BOARD_NAME        DAKEFPVF722
 #define MANUFACTURER_ID   DAKE
 
-#define USE_GYRO
-#define USE_GYRO_SPI_ICM42688P
 #define USE_ACC
-#define USE_ACC_SPI_ICM42688P
-#define USE_ACCGYRO_BMI270
+#define USE_ACC_SPI_MPU6000
+#define USE_ACC_SPI_MPU6500
+#define USE_BARO
 #define USE_BARO_SPI_BMP280
+#define USE_BARO_SPI_DPS310
+#define USE_CAMERA_CONTROL
 #define USE_FLASH
 #define USE_FLASH_M25P16
+#define USE_GYRO
+#define USE_GYRO_SPI_MPU6000
+#define USE_GYRO_SPI_MPU6500
 #define USE_MAX7456
 
 #define BEEPER_PIN           PC3
@@ -56,8 +60,8 @@
 #define UART4_RX_PIN         PA1
 #define UART5_RX_PIN         PD2
 #define UART6_RX_PIN         PC7
-#define LED0_PIN             PC15
-#define LED1_PIN             PC14
+#define LED0_PIN             PC14
+#define LED1_PIN             PC15
 #define SPI1_SCK_PIN         PA5
 #define SPI2_SCK_PIN         PB13
 #define SPI3_SCK_PIN         PC10
@@ -67,6 +71,7 @@
 #define SPI1_SDO_PIN         PA7
 #define SPI2_SDO_PIN         PB15
 #define SPI3_SDO_PIN         PB5
+#define CAMERA_CONTROL_PIN   PB4
 #define ADC_VBAT_PIN         PC1
 #define ADC_RSSI_PIN         PC2
 #define ADC_CURR_PIN         PC0
@@ -94,21 +99,24 @@
 
 #define ADC2_DMA_OPT        1
 
-#define USE_BARO
-#define BARO_SPI_INSTANCE SPI2
-
-
 #define USE_ADC
 #define ADC_INSTANCE ADC2
+#define BARO_SPI_INSTANCE SPI2
+#define FLASH_SPI_INSTANCE SPI3
+#define MAX7456_SPI_INSTANCE SPI2
+
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
+
 #define BEEPER_INVERTED
-#define MAX7456_SPI_INSTANCE SPI2
 #define PINIO1_CONFIG 129
 #define PINIO1_BOX 40
-#define FLASH_SPI_INSTANCE SPI3
+
 #define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE SPI1
-#define GYRO_1_ALIGN CW270_DEG
-#define GYRO_1_ALIGN_YAW 2700
+#define GYRO_1_ALIGN CW90_DEG
+#define GYRO_1_ALIGN_YAW 900
+
+#define SERIALRX_UART           SERIAL_PORT_USART2
+#define ESC_SENSOR_UART         SERIAL_PORT_USART3
