@@ -47,8 +47,10 @@
 #define LED_STRIP_PIN        PB6
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PA2
+#define UART6_TX_PIN         PC6
 #define UART1_RX_PIN         PA10
 #define UART2_RX_PIN         PA3
+#define UART6_RX_PIN         PC7
 #define INVERTER_PIN_UART2   PC13
 #define I2C2_SCL_PIN         PB10
 #define I2C2_SDA_PIN         PB11
