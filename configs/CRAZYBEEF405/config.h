@@ -55,8 +55,8 @@
 #define UART3_RX_PIN         PB11
 #define UART6_RX_PIN         PC7
 #define INVERTER_PIN_UART2   PC13
-#define I2C1_SCL_PIN         PB10
-#define I2C1_SDA_PIN         PB11
+#define I2C2_SCL_PIN         PB10
+#define I2C2_SDA_PIN         PB11
 #define LED0_PIN             PB5
 #define SPI1_SCK_PIN         PA5
 #define SPI2_SCK_PIN         PB13
@@ -95,8 +95,8 @@
 
 #define ADC1_DMA_OPT        1
 
-#define MAG_I2C_INSTANCE (I2CDEV_1)
-#define BARO_I2C_INSTANCE (I2CDEV_1)
+#define MAG_I2C_INSTANCE (I2CDEV_2)
+#define BARO_I2C_INSTANCE (I2CDEV_2)
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define BEEPER_INVERTED
 #define SYSTEM_HSE_MHZ 8
