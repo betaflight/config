@@ -141,6 +141,6 @@
 #define FLASH_SPI_INSTANCE              SPI3
 #define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE             SPI1
-#define GYRO_1_ALIGN                    CW90FLIP
+#define GYRO_1_ALIGN                    CW90_DEG_FLIP
 #define GYRO_2_SPI_INSTANCE             SPI4
-#define GYRO_2_ALIGN                    CW0FLIP
+#define GYRO_2_ALIGN                    CW0_DEG_FLIP
