@@ -87,6 +87,7 @@
     TIMER_PIN_MAP( 5, PB5 , 1,  0)
 
 #define ADC1_DMA_OPT        1
+#define ADC_INSTANCE        ADC1
 
 #define MAG_ALIGN CW180_DEG
 #define MAG_ALIGN_YAW 1800
