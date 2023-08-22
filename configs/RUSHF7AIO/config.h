@@ -46,7 +46,7 @@
 
 #define USE_MAX7456
 
-#define BEEPER_PIN                      PB02
+#define BEEPER_PIN                      PB2
 #define MOTOR1_PIN                      PC8
 #define MOTOR2_PIN                      PC9
 #define MOTOR3_PIN                      PA8
