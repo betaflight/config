@@ -94,8 +94,8 @@
                                             TIMER_PIN_MAP( 5, PA8, 1,  5 ) \
                                             TIMER_PIN_MAP( 6, PB6, 1,  0 )
 
-#define ADC_INSTANCE ADC2
-#define ADC2_DMA_OPT 11
+#define ADC_INSTANCE ADC1
+#define ADC1_DMA_OPT 11
 
 #define SERIALRX_UART		SERIAL_PORT_USART3
 
