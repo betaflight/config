@@ -24,6 +24,15 @@
 #define BOARD_NAME        NEUTRONRCH743AIO
 #define MANUFACTURER_ID   NERC
 
+#define USE_GYRO
+#define USE_ACC
+#define USE_ACCGYRO_BMI270
+#define USE_FLASH
+#define USE_FLASH_W25M02G
+#define USE_MAX7456
+#define USE_BARO_DPS310
+#define USE_SDCARD
+
 #define BEEPER_PIN           PA15
 #define MOTOR1_PIN           PB0
 #define MOTOR2_PIN           PB1
@@ -76,9 +85,6 @@
 #define SDIO_D1_PIN          PC9
 #define SDIO_D2_PIN          PC10
 #define SDIO_D3_PIN          PC11
-#define PINIO1_PIN           PC3
-#define PINIO2_PIN           PD10
-#define PINIO3_PIN           PD11
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PB2
 #define GYRO_2_EXTI_PIN      PE15
@@ -132,11 +138,6 @@
 #define USE_SDCARD_SDIO
 
 #define MAX7456_SPI_INSTANCE SPI2
-#define PINIO1_CONFIG 129
-#define PINIO1_BOX 0
-#define PINIO2_BOX 40
-#define PINIO3_BOX 41
-#define PINIO4_BOX 42
 #define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG
