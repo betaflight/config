@@ -24,12 +24,13 @@
 #define BOARD_NAME        NEUTRONRCH7BT
 #define MANUFACTURER_ID   NERC
 
-#define USE_GYRO
 #define USE_ACC
+#define USE_GYRO
 #define USE_ACCGYRO_BMI270
-#define USE_FLASH
-#define USE_FLASH_W25M02G
+#define USE_BARO
+#define USE_BARO_DPS310
 #define USE_MAX7456
+#define USE_SDCARD
 
 #define BEEPER_PIN           PA15
 #define MOTOR1_PIN           PB0
