@@ -24,7 +24,7 @@
 #define FC_TARGET_MCU                   STM32F411
 
 #define BOARD_NAME                      TAKERF411
-#define MANUFACTURER_ID                 GEPRC
+#define MANUFACTURER_ID                 GEPR
 
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
