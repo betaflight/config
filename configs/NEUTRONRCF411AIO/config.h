@@ -36,7 +36,12 @@
 #define USE_ACC_SPI_ICM20689
 #define USE_ACC_SPI_MPU6000
 #define USE_GYRO_SPI_MPU6000
+#define USE_ACCGYRO_BMI270
 #define USE_MAX7456
+#define USE_BARO
+#define USE_BARO_DPS310
+#define USE_FLASH
+#define USE_FLASH_W25Q128FV
 
 #define BEEPER_PIN           PB2
 #define MOTOR1_PIN           PB4
@@ -86,7 +91,6 @@
 #define ADC1_DMA_OPT        0
 
 #define MAG_I2C_INSTANCE (I2CDEV_1)
-#define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
