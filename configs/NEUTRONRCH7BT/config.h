@@ -28,7 +28,7 @@
 #define USE_ACC
 #define USE_ACCGYRO_BMI270
 #define USE_FLASH
-#define USE_FLASH_W25M02G
+#define USE_FLASH_W25N01G
 #define USE_MAX7456
 #define USE_BARO_DPS310
 #define USE_MAG_QMC5883
