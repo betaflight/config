@@ -29,6 +29,10 @@
 #define USE_ACC
 #define USE_GYRO
 #define USE_ACCGYRO_BMI270
+#define USE_FLASH
+#define USE_FLASH_M25P16
+#define USE_MAX7456
+#define USE_BARO_DPS310
 
 #define BEEPER_PIN           PC15
 #define MOTOR1_PIN           PC9
@@ -85,7 +89,6 @@
 #define MAG_I2C_INSTANCE (I2CDEV_2)
 #define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_2)
-
 #define USE_ADC
 #define ADC_INSTANCE ADC3
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
@@ -98,3 +101,4 @@
 #define FLASH_SPI_INSTANCE SPI3
 #define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE SPI1
+

@@ -28,20 +28,15 @@
 
 #define USE_ACC
 #define USE_ACC_SPI_MPU6000
-
-#define USE_BARO
-#define USE_BARO_DPS310
-
-#define USE_FLASH
-#define USE_FLASH_W25N01G
-
 #define USE_GYRO
 #define USE_GYRO_SPI_MPU6000
 #define USE_ACCGYRO_BMI270
-
+#define USE_FLASH
+#define USE_FLASH_W25N01G
+#define USE_BARO
+#define USE_BARO_DPS310
 #define USE_MAG
 #define USE_MAG_QMC5883
-
 #define USE_MAX7456
 
 #define BEEPER_PIN           PD2
@@ -133,7 +128,7 @@
 #define MAG_ALIGN CW180_DEG
 #define MAG_ALIGN_YAW 1800
 
-#define MAG_I2C_INSTANCE (I2CDEV_2)
+#define MAG_I2C_INSTANCE (I2CDEV_1)
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
