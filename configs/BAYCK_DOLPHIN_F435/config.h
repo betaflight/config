@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     AT32F435G
 
-#define BOARD_NAME        BAYCK DOLPHIN
+#define BOARD_NAME        BAYCK_DOLPHIN
 #define MANUFACTURER_ID   BAYCKRC
 
 #define USE_GYRO
