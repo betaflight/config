@@ -105,7 +105,6 @@
 #define ADC1_DMA_OPT        11
 
 #define MAG_I2C_INSTANCE (I2CDEV_1)
-#define USE_BARO
 #define BARO_SPI_INSTANCE SPI3
 #define USE_ADC
 #define ADC_INSTANCE ADC2
@@ -121,5 +120,3 @@
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW180_DEG
 #define GYRO_2_SPI_INSTANCE SPI1
-    
-    
