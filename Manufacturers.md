@@ -69,6 +69,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |NGUA|NG.UAVP|https://ng.uavp.ch/Shop|
 |OPEN|OpenPilot|https://librepilot.atlassian.net/wiki/spaces/LPDOC/pages/31588369/Supported+Hardware|
 |PYDR|Pyro-Drone|https://pyrodrone.com/|
+|PYID|PYI Technologies|https://pyidrones.com/|
 |RAST|Racerstar|https://www.racerstar.com/|
 |RCTI|RCTimer|http://rctimer.com/|
 |RUSH|FPV Racing Rush|http://www.rushfpv.com/|
