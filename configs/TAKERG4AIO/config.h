@@ -46,8 +46,10 @@
 #define UART1_RX_PIN        PA10
 #define UART2_RX_PIN        PB4
 #define UART4_RX_PIN        PC11
-#define UART1_RX_PIN1       PB11
+
 #define LPUART1_TX_PIN      PB10
+#define LPUART1_RX_PIN      PB11
+
 #define I2C1_SCL_PIN        PA13
 #define I2C1_SDA_PIN        PA14
 #define LED0_PIN            PB7
@@ -86,6 +88,7 @@
 // #define TIMUP8_DMA_OPT 0
 
 #define ADC_INSTANCE                 ADC2
+#define DEFAULT_PID_PROCESS_DENOM    2
 #define DEFAULT_GYRO_TO_USE          GYRO_CONFIG_USE_GYRO_1
 #define DEFAULT_BLACKBOX_DEVICE      BLACKBOX_DEVICE_FLASH
 #define MAX7456_SPI_INSTANCE         SPI2
