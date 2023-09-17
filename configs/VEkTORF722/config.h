@@ -22,8 +22,8 @@
 #pragma once
 
 #define FC_TARGET_MCU   STM32F7X2
-#define BOARD_NAME      VEkTORF722
-#define MANUFACTURER_ID PYI
+#define BOARD_NAME      VEKTORF722
+#define MANUFACTURER_ID PYID
 
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
@@ -35,7 +35,6 @@
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 #define USE_MAX7456
-
 
 #define BEEPER_PIN PC13
 #define MOTOR1_PIN PC8
@@ -85,9 +84,9 @@
     TIMER_PIN_MAP( 2, PA8,  1,  0) \
     TIMER_PIN_MAP( 3, PA9,  1,  0) \
     TIMER_PIN_MAP( 4, PB0,  2,  0) \
-    TIMER_PIN_MAP( 5, PB1,  2,  -1) \
+    TIMER_PIN_MAP( 5, PB1,  2, -1) \
     TIMER_PIN_MAP( 6, PA10, 1,  0) \
-    TIMER_PIN_MAP( 7, PB4,  1,  -1) \
+    TIMER_PIN_MAP( 7, PB4,  1, -1) \
     TIMER_PIN_MAP( 8, PB3,  1,  0)
 
 #define ADC3_DMA_OPT 0
