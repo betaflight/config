@@ -113,7 +113,7 @@
 #define DEFAULT_CURRENT_METER_SCALE         220
 #define DEFAULT_CURRENT_METER_OFFSET        -1300
 
-#define SERIALRX_UART                       SERIAL_PORT_USART4
+#define SERIALRX_UART                       SERIAL_PORT_UART4
 
 #define PINIO1_BOX                          40
 #define PINIO2_BOX                          41
