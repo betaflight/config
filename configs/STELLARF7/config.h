@@ -42,8 +42,8 @@
 #define MOTOR2_PIN PC7
 #define MOTOR3_PIN PC8
 #define MOTOR4_PIN PC9
-#define RX_PWM1_PIN PB10
-#define RX_PWM2_PIN PB11
+#define SERVO1_PIN PB11
+#define SERVO2_PIN PB10
 #define RX_PPM_PIN PB7
 #define UART1_TX_PIN PB6
 #define UART1_RX_PIN PB7
@@ -119,6 +119,6 @@
 #define PINIO1_BOX 40
 #define PINIO2_BOX 41
 #define PINIO3_BOX 42
-//TODO set box_user_1_name = "VTX POWER"
-//TODO set box_user_2_name = "CAMERA SWITCH"
+//TODO set box_user_1_name = VTX POWER
+//TODO set box_user_2_name = CAMERA SWITCH
 //TODO set small_angle = 180
