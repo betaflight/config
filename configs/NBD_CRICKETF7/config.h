@@ -30,6 +30,7 @@
 #define USE_ACC_SPI_MPU6000
 #define USE_GYRO
 #define USE_GYRO_SPI_MPU6000
+#define USE_MAX7456
 
 #define BEEPER_PIN           PC15
 #define MOTOR1_PIN           PB4
@@ -71,9 +72,7 @@
     TIMER_PIN_MAP( 3, PB0 , 2,  0) \
     TIMER_PIN_MAP( 4, PA8 , 1,  0)
 
-
 #define ADC1_DMA_OPT        1
-
 
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
