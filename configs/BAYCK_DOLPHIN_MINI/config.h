@@ -96,7 +96,6 @@
     TIMER_PIN_MAP(12, UART5_TX_PIN   , 2,  0) \
     TIMER_PIN_MAP(13, UART5_RX_PIN   , 2,  9)
 
-
 #define USE_ADC
 #define ADC_INSTANCE ADC1
 #define ADC1_DMA_OPT        11
