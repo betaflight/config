@@ -102,7 +102,6 @@
     TIMER_PIN_MAP(14, UART2_TX_PIN , 2,  14) \
     TIMER_PIN_MAP(15, UART4_RX_PIN , 1,  12) 
 
-#define USE_ADC
 #define ADC_INSTANCE ADC1
 #define ADC1_DMA_OPT        11
 #define MAG_I2C_INSTANCE (I2CDEV_1)
