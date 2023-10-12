@@ -52,7 +52,6 @@
 #define MOTOR4_PIN           PB5
 #define MOTOR5_PIN           PC8
 #define MOTOR6_PIN           PC9
-#define RX_PPM_PIN           PB8
 #define LED_STRIP_PIN        PB6
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PA2
@@ -76,7 +75,6 @@
 #define SPI3_SDO_PIN         PC12
 #define CAMERA_CONTROL_PIN   PB7
 #define ADC_VBAT_PIN         PC2
-#define ADC_RSSI_PIN         PA0
 #define ADC_CURR_PIN         PC1
 #define BARO_CS_PIN          PB3
 #define FLASH_CS_PIN         PB12
@@ -87,34 +85,33 @@
 #define GYRO_2_CS_PIN        PC14
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PB0 , 2,  7) \
-    TIMER_PIN_MAP( 1, PB1 , 2,  2) \
-    TIMER_PIN_MAP( 2, PA3 , 1,  6) \
-    TIMER_PIN_MAP( 3, PB5 , 1,  3) \
-    TIMER_PIN_MAP( 4, PC8 , 2,  9) \
-    TIMER_PIN_MAP( 5, PC9 , 2,  8) \
-    TIMER_PIN_MAP( 6, PB6 , 1,  13) \
-    TIMER_PIN_MAP( 7, PB8 , 2, -1) \
-    TIMER_PIN_MAP( 8, PC6 , 2,  11) \
-    TIMER_PIN_MAP( 9, PC7 , 2,  10) \
-    TIMER_PIN_MAP(10, PA9 , 1,  5) \
-    TIMER_PIN_MAP(11, PA10, 1,  4) \
-    TIMER_PIN_MAP(12, PA1 , 1,  12) \
-    TIMER_PIN_MAP(13, PA2 , 1, -1)
+    TIMER_PIN_MAP( 0, MOTOR1_PIN , 2,  7) \
+    TIMER_PIN_MAP( 1, MOTOR2_PIN , 2,  2) \
+    TIMER_PIN_MAP( 2, MOTOR3_PIN , 1,  6) \
+    TIMER_PIN_MAP( 3, MOTOR4_PIN , 1,  3) \
+    TIMER_PIN_MAP( 4, MOTOR5_PIN , 2,  9) \
+    TIMER_PIN_MAP( 5, MOTOR6_PIN , 2,  8) \
+    TIMER_PIN_MAP( 6, LED_STRIP_PIN , 1,  13) \
+    TIMER_PIN_MAP( 7, CAMERA_CONTROL_PIN , 1, 15) \
+    TIMER_PIN_MAP( 8, UART1_TX_PIN , 1,  5) \
+    TIMER_PIN_MAP( 9, UART1_RX_PIN , 1,  4) \
+    TIMER_PIN_MAP(10, UART3_TX_PIN , 1,  1) \
+    TIMER_PIN_MAP(11, UART3_RX_PIN , 2,  2) \
+    TIMER_PIN_MAP(12, UART6_TX_PIN , 2,  0) \
+    TIMER_PIN_MAP(13, UART6_RX_PIN , 2,  10) \
+    TIMER_PIN_MAP(14, UART2_TX_PIN , 2,  14) \
+    TIMER_PIN_MAP(15, UART4_RX_PIN , 1,  12) 
 
-#define ADC1_DMA_OPT        11
-
-#define MAG_I2C_INSTANCE (I2CDEV_1)
-#define BARO_SPI_INSTANCE SPI3
-#define USE_ADC
 #define ADC_INSTANCE ADC1
-#define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
+#define ADC1_DMA_OPT        11
+#define MAG_I2C_INSTANCE (I2CDEV_1)
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
+#define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define BEEPER_INVERTED
 #define SYSTEM_HSE_MHZ 8
+#define BARO_SPI_INSTANCE SPI3
 #define MAX7456_SPI_INSTANCE SPI3
-#define DASHBOARD_I2C_INSTANCE (I2CDEV_1)
 #define FLASH_SPI_INSTANCE SPI2
 #define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE SPI1
