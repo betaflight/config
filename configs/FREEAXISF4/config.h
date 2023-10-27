@@ -24,7 +24,7 @@
 #define FC_TARGET_MCU     STM32F411
 
 #define BOARD_NAME        FREEAXISF4
-#define MANUFACTURER_ID   FRXS
+#define MANUFACTURER_ID   CLNE
 
 #define USE_GYRO
 #define USE_ACC
