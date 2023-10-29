@@ -77,7 +77,6 @@
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
 #define PINIO1_PIN           PB0
-#define BARO_CS_PIN          PB1
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PB4 , 1, -1) \
@@ -93,8 +92,6 @@
 
 //TODO #define CAMERA_CONTROL_MODE SOFTWARE_PWM
 #define MAG_I2C_INSTANCE (I2CDEV_1)
-#define USE_BARO
-#define BARO_SPI_INSTANCE SPI2
 
 #define USE_ADC
 #define ADC_INSTANCE ADC2

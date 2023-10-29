@@ -64,7 +64,6 @@
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PA1
 #define GYRO_1_CS_PIN        PA4
-#define BARO_CS_PIN          PA15
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PA3 , 3, -1) \
@@ -80,8 +79,6 @@
 
 #define ADC1_DMA_OPT        1
 
-#define USE_BARO
-#define BARO_SPI_INSTANCE SPI2
 
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BURST DSHOT_DMAR_AUTO
