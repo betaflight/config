@@ -33,16 +33,9 @@
 #define USE_MAX7456
 
 #define USE_ACC_SPI_ICM42688P
+#define USE_BARO_DPS310
 #define USE_FLASH_W25Q128FV
 #define USE_GYRO_SPI_ICM42688P
-#define USE_SPI_GYRO
-
-#define USE_BARO_DPS310
-#define USE_BARO_BPM280
-#define USE_BARO_BPM085
-#define USE_BARO_MS5611
-#define USE_BARO_QMP6988
-#define USE_BARO_LPS
 
 #define GYRO_1_CS_PIN        PB0
 #define GYRO_1_EXTI_PIN      PC4
