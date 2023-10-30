@@ -108,9 +108,6 @@
 #define TIMUP5_DMA_OPT                  0
 #define TIMUP8_DMA_OPT                  0
 
-#define MAG_ALIGN                       CW180_DEG
-#define MAG_ALIGN_YAW                   1800
-#define MAG_I2C_INSTANCE                (I2CDEV_1)
 #define USE_BARO
 #define BARO_I2C_INSTANCE               (I2CDEV_1)
 

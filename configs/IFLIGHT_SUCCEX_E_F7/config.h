@@ -98,7 +98,6 @@
 
 #define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_2)
-#define MAG_I2C_INSTANCE (I2CDEV_2)
 
 #define USE_ADC
 #define ADC_INSTANCE ADC3

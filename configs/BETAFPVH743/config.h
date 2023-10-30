@@ -118,7 +118,6 @@
 #define TIMUP8_DMA_OPT      0
 #define TIMUP0_DMA_OPT      0
 
-#define MAG_I2C_INSTANCE (I2CDEV_2)
 #define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 
