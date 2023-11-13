@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F411
 
-#define BOARD_NAME        MEPS411
+#define BOARD_NAME        MEPSF411
 #define MANUFACTURER_ID   MEPS
 
 #define USE_GYRO
