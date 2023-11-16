@@ -121,9 +121,9 @@
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW180_DEG
 #define GYRO_1_ALIGN_PITCH 1800
-#define PINIO1_BOX = 40
-#define PINIO2_BOX = 41
-#define PINIO3_BOX = 42
+#define PINIO1_BOX 40
+#define PINIO2_BOX 41
+#define PINIO3_BOX 42
 //TODO set small_angle = 180
 //TODO set box_user_1_name = VTX POWER
 //TODO set box_user_2_name = CAMERA SWITCH
