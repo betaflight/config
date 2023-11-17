@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F405
 
-#define BOARD_NAME        VDRCF4X8
+#define BOARD_NAME        VGF405X8
 #define MANUFACTURER_ID   VGRC
 
 #define USE_GYRO
