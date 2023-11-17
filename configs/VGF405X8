@@ -20,8 +20,6 @@
  */
 
 #pragma once
-
-
 #define FC_TARGET_MCU     STM32F405
 
 #define BOARD_NAME        VDRCF4X8
