@@ -61,7 +61,6 @@
 #define ADC_VBAT_PIN         PC2
 #define ADC_RSSI_PIN         PC3
 #define ADC_CURR_PIN         PC1
-#define BARO_CS_PIN          PB9
 #define FLASH_CS_PIN         PC0
 #define MAX7456_SPI_CS_PIN   PC14
 #define GYRO_1_EXTI_PIN      PC4
@@ -78,8 +77,6 @@
 
 #define ADC1_DMA_OPT        1
 
-#define USE_BARO
-#define BARO_SPI_INSTANCE SPI3
 //TODO #define SERIALRX_INVERTED ON
 //TODO #define SERIALRX_HALFDUPLEX ON
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
