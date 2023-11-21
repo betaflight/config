@@ -26,22 +26,17 @@
 #define BOARD_NAME        NEUTRONRCF411AIO
 #define MANUFACTURER_ID   NERC
 
-#define USE_ACC
-#define USE_ACC_SPI_ICM42688P
-#define USE_ACC_SPI_ICM42605
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
-#define USE_GYRO_SPI_ICM42605
-#define USE_GYRO_SPI_ICM20689
-#define USE_ACC_SPI_ICM20689
-#define USE_ACC_SPI_MPU6000
 #define USE_GYRO_SPI_MPU6000
+#define USE_ACC
 #define USE_ACCGYRO_BMI270
-#define USE_MAX7456
-#define USE_BARO
-#define USE_BARO_DPS310
+#define USE_ACC_SPI_ICM42688P
+#define USE_ACC_SPI_MPU6000
 #define USE_FLASH
-#define USE_FLASH_W25Q128FV
+#define USE_FLASH_M25P16
+#define USE_MAX7456
+#define USE_BARO_DPS310
 
 #define BEEPER_PIN           PB2
 #define MOTOR1_PIN           PB4
@@ -54,10 +49,10 @@
 #define LED_STRIP_PIN        PA8
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PA2
-#define SOFTSERIAL1_TX_PIN   PA0
+//#define SOFTSERIAL1_TX_PIN   PA0
 #define UART1_RX_PIN         PA10
 #define UART2_RX_PIN         PA3
-#define SOFTSERIAL1_RX_PIN   PB10
+//#define SOFTSERIAL1_RX_PIN   PB10
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
 #define LED0_PIN             PC13
@@ -74,7 +69,7 @@
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PA1
 #define GYRO_1_CS_PIN        PA4
-#define USB_DETECT_PIN       PC15
+//#define USB_DETECT_PIN       PC15
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PA3 , 3, -1) \
@@ -91,6 +86,7 @@
 #define ADC1_DMA_OPT        0
 
 #define MAG_I2C_INSTANCE (I2CDEV_1)
+#define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
@@ -105,3 +101,5 @@
 #define FLASH_SPI_INSTANCE SPI2
 #define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE SPI1
+#define GYRO_1_ALIGN CW90_DEG
+#define GYRO_1_ALIGN_YAW 900

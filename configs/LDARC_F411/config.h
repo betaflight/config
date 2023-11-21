@@ -26,6 +26,11 @@
 #define BOARD_NAME        LDARC_F411
 #define MANUFACTURER_ID   LDAR
 
+#define USE_ACC
+#define USE_GYRO
+#define USE_GYRO_SPI_MPU6000
+#define USE_ACC_SPI_MPU6000
+
 #define BEEPER_PIN           PB2
 #define MOTOR1_PIN           PB4
 #define MOTOR2_PIN           PB5
