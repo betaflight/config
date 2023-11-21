@@ -34,6 +34,7 @@
 #define USE_BARO_DPS310
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
+#define USE_FRSKYOSD
 
 #define BEEPER_PIN              PC13
 #define MOTOR1_PIN              PC8
@@ -107,7 +108,6 @@
 #define DEFAULT_RX_FEATURE      FEATURE_RX_SERIAL
 #define SERIALRX_UART           SERIAL_PORT_USART2
 
-#define MAG_I2C_INSTANCE        (I2CDEV_1)
 #define BARO_BUSTYPE I2C
 #define BARO_I2C_INSTANCE       (I2CDEV_1)
 
