@@ -69,7 +69,6 @@
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
 #define GYRO_1_CS_PIN        PA4
-#define BARO_CS_PIN          PC14
 #define FLASH_CS_PIN         PC13
 #define I2C2_SCL_PIN         PB10
 #define I2C2_SDA_PIN         PB11
@@ -86,8 +85,6 @@
 #define ADC1_DMA_OPT        1
 
 #define MAG_I2C_INSTANCE (I2CDEV_2)
-#define USE_BARO
-#define BARO_SPI_INSTANCE SPI2
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define FLASH_SPI_INSTANCE SPI2
 #define MAX7456_SPI_INSTANCE SPI2

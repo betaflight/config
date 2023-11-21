@@ -74,7 +74,6 @@
 #define ADC_RSSI_PIN         PC2
 #define ADC_CURR_PIN         PC1
 #define FLASH_CS_PIN         PB12
-#define BARO_CS_PIN          PC13
 #define MAX7456_SPI_CS_PIN   PA15
 #define GYRO_1_EXTI_PIN      PC4
 #define GYRO_2_EXTI_PIN      PB2
@@ -94,8 +93,6 @@
 
 #define ADC1_DMA_OPT        0
 
-#define USE_BARO
-#define BARO_SPI_INSTANCE SPI3
 
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 //TODO #define DSHOT_IDLE_VALUE 450

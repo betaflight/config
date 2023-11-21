@@ -71,7 +71,6 @@
 #define ADC_VBAT_PIN         PC2
 #define ADC_RSSI_PIN         PA0
 #define ADC_CURR_PIN         PC1
-#define BARO_CS_PIN          PB3
 #define SDCARD_SPI_CS_PIN    PB12
 #define SDCARD_DETECT_PIN    PB7
 #define FLASH_CS_PIN         PB12
@@ -102,8 +101,6 @@
 #define ADC2_DMA_OPT        1
 
 #define MAG_I2C_INSTANCE (I2CDEV_2)
-#define USE_BARO
-#define BARO_SPI_INSTANCE SPI3
 #define USE_ADC
 #define ADC_INSTANCE ADC2
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_SDCARD
