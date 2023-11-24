@@ -92,6 +92,7 @@
 #define SPI1_TX_DMA_OPT     1
 #define ADC1_DMA_OPT        1
 
+#define MAG_I2C_INSTANCE (I2CDEV_1)
 #define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 #define DEFAULT_BARO_DEVICE BARO_BMP280
