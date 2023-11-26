@@ -108,6 +108,7 @@
 #define BEEPER_INVERTED
 
 #define DASHBOARD_I2C_INSTANCE              (I2CDEV_2)
+#define MAG_I2C_INSTANCE                    (I2CDEV_2)
 
 #define GYRO_1_SPI_INSTANCE                 SPI1
 #define FLASH_SPI_INSTANCE                  SPI2

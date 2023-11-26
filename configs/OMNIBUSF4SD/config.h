@@ -104,6 +104,7 @@
 #define SPI2_TX_DMA_OPT     0
 #define ADC2_DMA_OPT        1
 
+#define MAG_I2C_INSTANCE (I2CDEV_2)
 #define USE_BARO
 #define BARO_SPI_INSTANCE SPI3
 #define USE_ADC

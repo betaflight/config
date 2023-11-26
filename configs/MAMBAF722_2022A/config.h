@@ -97,6 +97,7 @@
 #define PINIO1_PIN           PC2
 #define PINIO2_PIN           PC0
 
+#define MAG_I2C_INSTANCE (I2CDEV_1)
 #define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 #define USE_ADC

@@ -91,6 +91,7 @@
 #define ADC2_DMA_OPT        0
 
 //TODO #define CAMERA_CONTROL_MODE SOFTWARE_PWM
+#define MAG_I2C_INSTANCE (I2CDEV_1)
 
 #define USE_ADC
 #define ADC_INSTANCE ADC2
