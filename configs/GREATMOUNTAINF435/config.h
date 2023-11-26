@@ -108,6 +108,10 @@
 #define MAX7456_SPI_INSTANCE            SPI2
 #define MAX7456_SPI_CS_PIN              PD5
 
+#define PINIO1_PIN                      PD2
+#define PINIO1_CONFIG                   129
+#define PINIO1_BOX                      39
+
 #define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 0, LED_STRIP_PIN, 2, 7 ) \
                                         TIMER_PIN_MAP( 1, BEEPER_PIN, 1,  6 ) \
                                         TIMER_PIN_MAP( 2, MOTOR5_PIN, 1,  11 ) \
