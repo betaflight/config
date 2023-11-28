@@ -26,13 +26,14 @@
 #define BOARD_NAME        JHEF405PRO
 #define MANUFACTURER_ID   JHEF
 
-#define USE_GYRO
-#define USE_GYRO_SPI_MPU6000
 #define USE_ACC
+#define USE_GYRO
 #define USE_ACC_SPI_MPU6000
+#define USE_GYRO_SPI_MPU6000
 #define USE_ACCGYRO_BMI270
-#define USE_GYRO_SPI_ICM42688P
 #define USE_ACC_SPI_ICM42688P
+#define USE_GYRO_SPI_ICM42688P
+#define USE_BARO
 #define USE_BARO_BMP280
 #define USE_BARO_DPS310
 #define USE_FLASH
@@ -45,14 +46,16 @@
 #define MOTOR2_PIN           PB1
 #define MOTOR3_PIN           PA3
 #define MOTOR4_PIN           PA2
+#define MOTOR5_PIN           PB5
+#define MOTOR6_PIN           PB7
+#define MOTOR7_PIN           PC9
+#define MOTOR8_PIN           PC8
 #define LED_STRIP_PIN        PA9
 #define UART1_TX_PIN         PB6
-#define UART2_TX_PIN         PD5
 #define UART3_TX_PIN         PB10
 #define UART4_TX_PIN         PA0
 #define UART6_TX_PIN         PC6
 #define UART1_RX_PIN         PA10
-#define UART2_RX_PIN         PD6
 #define UART3_RX_PIN         PB11
 #define UART4_RX_PIN         PA1
 #define UART6_RX_PIN         PC7
@@ -80,13 +83,15 @@
     TIMER_PIN_MAP( 1, PB1 , 2,  0) \
     TIMER_PIN_MAP( 2, PA3 , 1,  1) \
     TIMER_PIN_MAP( 3, PA2 , 1,  0) \
-    TIMER_PIN_MAP( 4, PA9 , 1,  0)
+    TIMER_PIN_MAP( 4, PA9 , 1,  0) \
+    TIMER_PIN_MAP( 5, PB5 , 1,  0) \
+    TIMER_PIN_MAP( 6, PB7 , 1,  0) \
+    TIMER_PIN_MAP( 7, PC9 , 2,  0) \
+    TIMER_PIN_MAP( 8, PC8 , 2,  0)
 
-
-#define ADC1_DMA_OPT        1
+#define ADC1_DMA_OPT        0
 
 #define MAG_I2C_INSTANCE (I2CDEV_1)
-#define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BURST DSHOT_DMAR_OFF
@@ -97,7 +102,7 @@
 #define SYSTEM_HSE_MHZ 8
 #define MAX7456_SPI_INSTANCE SPI3
 #define FLASH_SPI_INSTANCE SPI3
-#define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE SPI1
-#define GYRO_1_ALIGN CW180_DEG
-#define GYRO_1_ALIGN_YAW 1800
+#define GYRO_1_ALIGN CW90_DEG
+#define GYRO_1_ALIGN_YAW 900
+#define GYRO2_SPI_INSTANCE SPI1
