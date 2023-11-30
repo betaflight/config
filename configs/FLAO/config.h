@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F405
 
-#define BOARD_NAME        F405X8V2
+#define BOARD_NAME            FLAOF405X8
 #define MANUFACTURER_ID   FLAO
 
 #define USE_ACC
