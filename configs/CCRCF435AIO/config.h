@@ -40,7 +40,6 @@
 
 #define USE_MAX7456
 
-#define USE_BEEPER
 #define BEEPER_PIN              PC15
 
 #define MOTOR1_PIN              PB6
@@ -96,7 +95,6 @@
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
 #define BEEPER_INVERTED
 #define SYSTEM_HSE_MHZ          8
-#define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE     SPI1
 #define GYRO_1_ALIGN CW180_DEG
 #define DEFAULT_ALIGN_BOARD_YAW -45
