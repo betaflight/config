@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU                       AT32F435M
 
-#define BOARD_NAME                          AIRBOTF435
+#define BOARD_NAME                          AIRBOTSUPERF4
 #define MANUFACTURER_ID                     AIRB
 
 #define USE_ACC
