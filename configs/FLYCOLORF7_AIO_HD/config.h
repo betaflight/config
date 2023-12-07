@@ -73,12 +73,12 @@
 #define ADC_VBAT_PIN PC1
 #define ADC_RSSI_PIN PC3
 #define ADC_CURR_PIN PC2
-#define BARO_CS_PIN C15
-#define FLASH_CS_PIN C8
-#define MAX7456_SPI_CS_PIN B12
-#define GYRO_1_EXTI_PIN C4
-#define GYRO_1_CS_PIN A4
-#define PINIO1_PIN C14
+#define BARO_CS_PIN PC15
+#define FLASH_CS_PIN PC8
+#define MAX7456_SPI_CS_PIN PB12
+#define GYRO_1_EXTI_PIN PC4
+#define GYRO_1_CS_PIN PA4
+#define PINIO1_PIN PC14
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP(  0, PC6,  1, 0) \
