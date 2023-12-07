@@ -109,8 +109,8 @@
 
 /* CS1/CS2 pads for SPI3 connection:
  *
- * CS1 D04
- * CS2 E02
+ * CS1 PD4
+ * CS2 PE2
  */
 
 #define TIMER_PIN_MAPPING \
