@@ -34,7 +34,7 @@
 
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
-#define USE_SPI_GYRO
+#define USE_ACCGYRO_LSM6DSV16X
 
 #define USE_FLASH
 #define USE_FLASH_M25P16
