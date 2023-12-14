@@ -30,11 +30,12 @@
 #define USE_ACC_SPI_MPU6000
 #define USE_GYRO
 #define USE_GYRO_SPI_MPU6000
+#define USE_BARO
 #define USE_BARO_BMP280
 #define USE_BARO_DPS310
-#define USE_MAX7456
 #define USE_FLASH
 #define USE_FLASH_M25P16
+#define USE_MAX7456
 
 #define BEEPER_PIN           PD15
 #define MOTOR1_PIN           PB0
@@ -43,20 +44,24 @@
 #define MOTOR4_PIN           PE11
 #define MOTOR5_PIN           PC9
 #define MOTOR6_PIN           PA3
+#define MOTOR7_PIN           PB4
+#define MOTOR8_PIN           PB5
 #define RX_PPM_PIN           PE13
 #define LED_STRIP_PIN        PD12
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PD5
 #define UART3_TX_PIN         PB10
 #define UART4_TX_PIN         PA0
+#define UART5_TX_PIN         PC12
 #define UART6_TX_PIN         PC6
+#define UART7_TX_PIN         PE8
 #define UART1_RX_PIN         PA10
 #define UART2_RX_PIN         PD6
 #define UART3_RX_PIN         PB11
 #define UART4_RX_PIN         PA1
+#define UART5_RX_PIN         PD2
 #define UART6_RX_PIN         PC7
 #define UART7_RX_PIN         PE7
-#define UART7_TX_PIN         PE8
 #define I2C1_SCL_PIN         PB6
 #define I2C1_SDA_PIN         PB7
 #define LED0_PIN             PA2
@@ -78,6 +83,7 @@
 #define GYRO_1_EXTI_PIN      PE1
 #define GYRO_1_CS_PIN        PE4
 #define USB_DETECT_PIN       PA8
+#define PINIO1_PIN           PC0
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PE13, 1,  1) \
@@ -94,7 +100,6 @@
 #define ADC1_DMA_OPT        1
 
 #define MAG_I2C_INSTANCE (I2CDEV_1)
-#define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
