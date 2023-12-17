@@ -37,7 +37,7 @@
 // MPU6000 interrupts
 #define USE_EXTI
 #define USE_GYRO_EXTI
-#define GYRO_1_EXTI_PIN                 PB8
+#define GYRO_1_EXTI_PIN                 PA8
 
 #define SPI1_SCK_PIN                    PA5
 #define SPI2_SCK_PIN                    PB13
