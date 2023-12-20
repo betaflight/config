@@ -75,12 +75,14 @@
 #define MAX7456_SPI_CS_PIN   PA15
 #define MAX7456_SPI_INSTANCE SPI3
 
+// ADC
 #define USE_ADC
 #define ADC_VBAT_PIN         PC1
 #define ADC_RSSI_PIN         PC2
 #define ADC_CURR_PIN         PC3
 #define ADC_INSTANCE ADC3
 
+// UART PORTS
 #define UART1_TX_PIN         PB6
 #define UART1_RX_PIN         PB7
 
@@ -99,6 +101,7 @@
 #define UART6_TX_PIN         PC6
 #define UART6_RX_PIN         PC7
 
+// TIMERS
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PB9 , 2, -1) \
     TIMER_PIN_MAP( 1, PA9 , 1,  0) \
@@ -108,17 +111,13 @@
     TIMER_PIN_MAP( 5, PB8 , 1,  0)
     //TIMER_PIN_MAP( 6, PB3 , 1,  0)
 
+// MOTORS PINOUT
 #define MOTOR1_PIN           PA9
 #define MOTOR2_PIN           PA8
 #define MOTOR3_PIN           PC9
 #define MOTOR4_PIN           PC8
-// #define LED_STRIP_PIN        PB3
 
 #define ADC3_DMA_OPT        0
-
-#define INVERTER_PIN_UART1   PC0
-// #define ESCSERIAL_PIN        PB9
-#define PINIO1_PIN           PB1
 
 // BARO I2C
 #define USE_BARO
@@ -128,10 +127,18 @@
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
 
-
-#define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
-#define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
+// USERS
+#define PINIO1_PIN           PB1
 #define PINIO1_BOX 40
 #define PINIO1_CONFIG 129
-#define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
+
+// DEFAULTS
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
+#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
+#define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
+
+// DISABLED
+// #define INVERTER_PIN_UART1   PC0
+// #define LED_STRIP_PIN        PB3
+// #define ESCSERIAL_PIN        PB9
