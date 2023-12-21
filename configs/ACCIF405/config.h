@@ -45,42 +45,44 @@
 #define LED1_PIN             PC14
 #define BEEPER_PIN           PC13
 #define BEEPER_INVERTED
-//TODO #define OSD_DISPLAYPORT_DEVICE MAX7456
+#define OSD_DISPLAYPORT_DEVICE MAX7456
 
-// ACC/GYRO
+// ACC/GYRO SPI 1
+#define USE_SPI_GYRO
 #define GYRO_1_EXTI_PIN      PC4
 #define GYRO_1_CS_PIN        PA4
-#define USE_SPI_GYRO
-#define GYRO_1_SPI_INSTANCE SPI1
-#define GYRO_1_ALIGN CW180_DEG
+#define GYRO_1_SPI_INSTANCE  SPI1
+#define GYRO_1_ALIGN CW0_DEG
 #define GYRO_1_ALIGN_YAW 1800
 
 #define SPI1_SCK_PIN         PA5
 #define SPI1_SDI_PIN         PA6
 #define SPI1_SDO_PIN         PA7
 
-// FLASH
+// FLASH SPI 2
 #define SPI2_SCK_PIN         PB13
 #define SPI2_SDI_PIN         PB14
 #define SPI2_SDO_PIN         PB15
 
 #define FLASH_CS_PIN         PB12
-#define FLASH_SPI_INSTANCE SPI2
+#define FLASH_SPI_INSTANCE   SPI2
 
-// OSD
-// #define SPI3_SCK_PIN         PC10
-// #define SPI3_SDI_PIN         PC11
-// #define SPI3_SDO_PIN         PB5
+// OSD SPI 3
+#define SPI3_SCK_PIN         PC10
+#define SPI3_SDI_PIN         PB5
+#define SPI3_SDO_PIN         PC11
 
-// #define MAX7456_SPI_CS_PIN   PB12
-// #define MAX7456_SPI_INSTANCE SPI3
+#define MAX7456_SPI_CS_PIN   PA15
+#define MAX7456_SPI_INSTANCE SPI3
 
+// ADC
+#define USE_ADC
 #define ADC_VBAT_PIN         PC1
 #define ADC_RSSI_PIN         PC2
 #define ADC_CURR_PIN         PC3
-#define USE_ADC
 #define ADC_INSTANCE ADC3
 
+// UART PORTS
 #define UART1_TX_PIN         PB6
 #define UART1_RX_PIN         PB7
 
@@ -99,13 +101,9 @@
 #define UART6_TX_PIN         PC6
 #define UART6_RX_PIN         PC7
 
-// DISABE I2C as is not use and seems
-// not timer function is available
-
-// #define I2C1_SCL_PIN         PB8
-// #define I2C1_SDA_PIN         PB9
-
+// TIMERS
 #define TIMER_PIN_MAPPING \
+    TIMER_PIN_MAP( 0, PB9 , 2, -1) \
     TIMER_PIN_MAP( 1, PA9 , 1,  0) \
     TIMER_PIN_MAP( 2, PA8 , 1,  0) \
     TIMER_PIN_MAP( 3, PC9 , 2,  0) \
@@ -113,25 +111,34 @@
     TIMER_PIN_MAP( 5, PB8 , 1,  0)
     //TIMER_PIN_MAP( 6, PB3 , 1,  0)
 
+// MOTORS PINOUT
 #define MOTOR1_PIN           PA9
 #define MOTOR2_PIN           PA8
 #define MOTOR3_PIN           PC9
 #define MOTOR4_PIN           PC8
-// #define LED_STRIP_PIN        PB3
 
-#define ADC3_DMA_OPT        0
+#define ADC3_DMA_OPT         0
 
-#define INVERTER_PIN_UART1   PC0
-// #define ESCSERIAL_PIN        PB9
+// BARO I2C
+#define USE_BARO
+#define BARO_I2C_INSTANCE (I2CDEV_1)
+#define MAG_I2C_INSTANCE (I2CDEV_1)
+
+#define I2C1_SCL_PIN         PB8
+#define I2C1_SDA_PIN         PB9
+
+// USERS
 #define PINIO1_PIN           PB1
-
-// #define USE_BARO
-// #define BARO_I2C_INSTANCE (I2CDEV_1)
-// #define MAG_I2C_INSTANCE (I2CDEV_1)
-
-#define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
-#define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
-#define PINIO1_BOX 0
+#define PINIO1_BOX 40
 #define PINIO1_CONFIG 129
-#define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
+
+// DEFAULTS
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
+#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
+#define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
+
+// DISABLED
+// #define INVERTER_PIN_UART1   PC0
+// #define LED_STRIP_PIN        PB3
+// #define ESCSERIAL_PIN        PB9
