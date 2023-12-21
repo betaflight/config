@@ -117,7 +117,7 @@
 #define MOTOR3_PIN           PC9
 #define MOTOR4_PIN           PC8
 
-#define ADC3_DMA_OPT        0
+#define ADC1_DMA_OPT         11
 
 // BARO I2C
 #define USE_BARO
