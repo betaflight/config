@@ -31,13 +31,19 @@
 #define LED0_INVERTED
 #define BEEPER_PIN                      PB2
 #define BEEPER_INVERTED
-#define LED_STRIP_PIN                   UNKNOWN   
+#define LED_STRIP_PIN A08
 
 // MOTORS & SERVOS
-#define MOTOR1_PIN                      UNKNOWN
-#define MOTOR2_PIN                      UNKNOWN
-#define MOTOR3_PIN                      UNKNOWN
-#define MOTOR4_PIN                      UNKNOWN
+#define MOTOR1_PIN B00
+#define MOTOR2_PIN B01
+#define MOTOR3_PIN C08
+#define MOTOR4_PIN C09
+#define MOTOR5_PIN B06
+#define MOTOR6_PIN B07
+#define MOTOR7_PIN B11
+#define MOTOR8_PIN B10
+#define RX_PPM_PIN A03
+
 #define DEFAULT_DSHOT_BURST             DSHOT_DMAR_AUTO
 #define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_OFF
 
@@ -125,9 +131,13 @@
 #define PINIO1_PIN                      PC14
 
 // TIMERS & DMA
-#define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 0, PIN , TIM,  DMA)
-
-
-
-
-
+#define TIMER_PIN_MAPPING               TIMER_PIN_MAP(  0, PA8,  1,  8 ) \
+                                        TIMER_PIN_MAP(  1, PA3,  1,  9 ) \
+                                        TIMER_PIN_MAP(  2, PB0,  2,  0 ) \
+                                        TIMER_PIN_MAP(  3, PB1,  2,  2 ) \
+                                        TIMER_PIN_MAP(  4, PC8,  2,  1 ) \
+                                        TIMER_PIN_MAP(  5, PC9,  2,  3 ) \
+                                        TIMER_PIN_MAP(  6, PB6,  1, 11 ) \
+                                        TIMER_PIN_MAP(  7, PB7,  1, 10 ) \
+                                        TIMER_PIN_MAP(  8, PB11, 1, 12 ) \
+                                        TIMER_PIN_MAP(  9, PB10, 1, 13 )
