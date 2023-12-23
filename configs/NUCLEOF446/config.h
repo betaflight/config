@@ -125,6 +125,4 @@
 
 #define MAX_SUPPORTED_MOTORS            12
 
-//#define USE_GYRO_EXTI
-//#define USE_MPU_DATA_READY_SIGNAL
 //#define ENSURE_MPU_DATA_READY_IS_LOW
