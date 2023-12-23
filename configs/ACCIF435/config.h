@@ -101,6 +101,10 @@
 #define UART6_TX_PIN         PC6
 #define UART6_RX_PIN         PC7
 
+// I2C Pins
+#define I2C1_SCL_PIN         PB8
+#define I2C1_SDA_PIN         PB9
+
 // TIMERS
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PB9 , 2, -1) \
@@ -123,9 +127,6 @@
 #define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 #define MAG_I2C_INSTANCE (I2CDEV_1)
-
-#define I2C1_SCL_PIN         PB8
-#define I2C1_SDA_PIN         PB9
 
 // USERS
 #define PINIO1_PIN           PB1
