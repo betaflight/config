@@ -31,18 +31,18 @@
 #define LED0_INVERTED
 #define BEEPER_PIN                      PB2
 #define BEEPER_INVERTED
-#define LED_STRIP_PIN A08
+#define LED_STRIP_PIN                   PA8
 
 // MOTORS & SERVOS
-#define MOTOR1_PIN B00
-#define MOTOR2_PIN B01
-#define MOTOR3_PIN C08
-#define MOTOR4_PIN C09
-#define MOTOR5_PIN B06
-#define MOTOR6_PIN B07
-#define MOTOR7_PIN B11
-#define MOTOR8_PIN B10
-#define RX_PPM_PIN A03
+#define MOTOR1_PIN                      PB0
+#define MOTOR2_PIN                      PB1
+#define MOTOR3_PIN                      PC8
+#define MOTOR4_PIN                      PC9
+#define MOTOR5_PIN                      PB6
+#define MOTOR6_PIN                      PB7
+#define MOTOR7_PIN                      PB11
+#define MOTOR8_PIN                      PB10
+#define RX_PPM_PIN                      PA3
 
 #define DEFAULT_DSHOT_BURST             DSHOT_DMAR_AUTO
 #define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_OFF
