@@ -127,5 +127,4 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 #define GYRO_2_ALIGN                    CW0_DEG_FLIP
 #define GYRO_2_ALIGN_PITCH              1800
 
-#define USE_MPU_DATA_READY_SIGNAL
 #define ENSURE_MPU_DATA_READY_IS_LOW
