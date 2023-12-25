@@ -21,9 +21,9 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     STM32F722
+#define FC_TARGET_MCU     STM32F7X2
 
-#define BOARD_NAME        SPEDIXFF722
+#define BOARD_NAME        SPEDIXF722
 #define MANUFACTURER_ID   SPDX
 
 #define USE_ACC
