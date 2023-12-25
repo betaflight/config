@@ -21,7 +21,7 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     STM32F411SX1280
+#define FC_TARGET_MCU     STM32F411
 
 #define BOARD_NAME        EMAX_TINYHAWKF4SX1280
 #define MANUFACTURER_ID   EMAX
