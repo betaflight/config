@@ -111,4 +111,3 @@
 #define GYRO_1_ALIGN CW0_DEG
 #define PINIO1_BOX 40
 #define PINIO2_BOX 41
-#define PIONIO2_CONFIG 129
