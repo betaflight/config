@@ -21,7 +21,7 @@
 
 #pragma once
 
-#define FC_TARGET_MCU                   AT32F435M
+#define FC_TARGET_MCU                   AT32F435G
 
 #define BOARD_NAME                      IFLIGHT_BLITZ_F435
 #define MANUFACTURER_ID                 IFRC
