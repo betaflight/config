@@ -21,7 +21,7 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     STM32F411SX1280
+#define FC_TARGET_MCU     STM32F411
 
 #define BOARD_NAME        EMAX_TINYHAWKF4SX1280
 #define MANUFACTURER_ID   EMAX
@@ -46,48 +46,49 @@
 #define DEFAULT_RX_FEATURE              FEATURE_RX_SPI
 #define RX_SPI_PROTOCOL                 EXPRESSLRS
 #define RX_EXPRESSLRS_TIMER_INSTANCE    TIM5
-#define RX_EXPRESSLRS_SPI_RESET_PIN     PA8
-#define RX_EXPRESSLRS_SPI_BUSY_PIN      PA13
-#define RX_SPI_CS                       PA15
-#define RX_SPI_EXTI                     PC14
-#define RX_SPI_BIND                     PB2
-#define RX_SPI_LED                      PB9
 
-#define BEEPER_PIN           PC15
-#define MOTOR1_PIN           PB10
-#define MOTOR2_PIN           PB6
-#define MOTOR3_PIN           PB7
-#define MOTOR4_PIN           PB8
-#define RX_PPM_PIN           PA3
-#define RX_PWM1_PIN          PA2
-#define RX_PWM2_PIN          PA9
-#define RX_PWM3_PIN          PA10
-#define LED_STRIP_PIN        PA0
-#define UART1_TX_PIN         PA9
-#define UART2_TX_PIN         PA2
-#define UART1_RX_PIN         PA10
-#define UART2_RX_PIN         PA3
-#define LED0_PIN             PC13
-#define SPI1_SCK_PIN         PA5
-#define SPI2_SCK_PIN         PB13
-#define SPI3_SCK_PIN         PB3
-#define SPI1_SDI_PIN         PA6
-#define SPI2_SDI_PIN         PB14
-#define SPI3_SDI_PIN         PB4
-#define SPI1_SDO_PIN         PA7
-#define SPI2_SDO_PIN         PB15
-#define SPI3_SDO_PIN         PB5
-#define ADC_VBAT_PIN         PB0
-#define ADC_CURR_PIN         PB1
-#define MAX7456_SPI_CS_PIN   PB12
-#define RX_SPI_CS_PIN        PA15
-#define RX_SPI_EXTI_PIN      PC14
-#define RX_SPI_BIND_PIN      PB2
-#define RX_SPI_LED_PIN       PB9
+#define RX_EXPRESSLRS_SPI_RESET_PIN PA8
+#define RX_EXPRESSLRS_SPI_BUSY_PIN  PA13
+#define RX_SPI_CS                   PA15
+#define RX_SPI_EXTI                 PC14
+#define RX_SPI_BIND                 PB2
+#define RX_SPI_LED                  PB9
+
+#define BEEPER_PIN                  PC15
+#define MOTOR1_PIN                  PB10
+#define MOTOR2_PIN                  PB6
+#define MOTOR3_PIN                  PB7
+#define MOTOR4_PIN                  PB8
+#define RX_PPM_PIN                  PA3
+#define RX_PWM1_PIN                 PA2
+#define RX_PWM2_PIN                 PA9
+#define RX_PWM3_PIN                 PA10
+#define LED_STRIP_PIN               PA0
+#define UART1_TX_PIN                PA9
+#define UART2_TX_PIN                PA2
+#define UART1_RX_PIN                PA10
+#define UART2_RX_PIN                PA3
+#define LED0_PIN                    PC13
+#define SPI1_SCK_PIN                PA5
+#define SPI2_SCK_PIN                PB13
+#define SPI3_SCK_PIN                PB3
+#define SPI1_SDI_PIN                PA6
+#define SPI2_SDI_PIN                PB14
+#define SPI3_SDI_PIN                PB4
+#define SPI1_SDO_PIN                PA7
+#define SPI2_SDO_PIN                PB15
+#define SPI3_SDO_PIN                PB5
+#define ADC_VBAT_PIN                PB0
+#define ADC_CURR_PIN                PB1
+#define MAX7456_SPI_CS_PIN          PB12
+#define RX_SPI_CS_PIN               PA15
+#define RX_SPI_EXTI_PIN             PC14
+#define RX_SPI_BIND_PIN             PB2
+#define RX_SPI_LED_PIN              PB9
 #define RX_SPI_EXPRESSLRS_RESET_PIN PA8
-#define RX_SPI_EXPRESSLRS_BUSY_PIN PA13
-#define GYRO_1_EXTI_PIN      PA1
-#define GYRO_1_CS_PIN        PA4
+#define RX_SPI_EXPRESSLRS_BUSY_PIN  PA13
+#define GYRO_1_EXTI_PIN             PA1
+#define GYRO_1_CS_PIN               PA4
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PA3 , 3, -1) \
@@ -99,8 +100,6 @@
     TIMER_PIN_MAP( 6, PA2 , 3, -1) \
     TIMER_PIN_MAP( 7, PA9 , 1,  0) \
     TIMER_PIN_MAP( 8, PA10, 1,  0)
-
-
 
 #define ADC1_DMA_OPT        0
 
