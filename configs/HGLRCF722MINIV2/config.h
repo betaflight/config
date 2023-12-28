@@ -68,7 +68,7 @@
 #define SPI3_SCK_PIN PC10
 #define SPI1_SDI_PIN PA6
 #define SPI2_SDI_PIN PB14
-#define SPI2_SDI_PIN PC11
+#define SPI3_SDI_PIN PC11
 #define SPI1_SDO_PIN PA7
 #define SPI2_SDO_PIN PB15
 #define SPI3_SDO_PIN PC12
