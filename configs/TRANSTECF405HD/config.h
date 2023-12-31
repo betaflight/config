@@ -26,6 +26,12 @@
 #define BOARD_NAME        TRANSTECF405HD
 #define MANUFACTURER_ID   TTRH
 
+#define USE_ACC
+#define USE_ACC_SPI_MPU6000
+#define USE_GYRO
+#define USE_GYRO_SPI_MPU6000
+#define USE_MAX7456
+
 #define BEEPER_PIN           PB4
 #define MOTOR1_PIN           PC6
 #define MOTOR2_PIN           PC7
