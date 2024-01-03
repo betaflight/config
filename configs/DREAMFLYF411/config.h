@@ -47,7 +47,7 @@
 #define UART2_TX_PIN PA2
 #define UART1_RX_PIN PA10
 #define UART2_RX_PIN PA3
-#define LEPD_PIN PC13
+#define LED0_PIN PC13
 #define SPI1_SCK_PIN PA5
 #define SPI2_SCK_PIN PB13
 #define SPI1_SDI_PIN PA6
