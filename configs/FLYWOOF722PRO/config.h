@@ -21,7 +21,7 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     STM32F722
+#define FC_TARGET_MCU     STM32F7X2
 
 #define USE_ACC
 #define USE_BARO
