@@ -60,6 +60,7 @@
 
 #define FLASH_QUADSPI_INSTANCE    QUADSPI
 
+#define USE_SDCARD_SDIO
 #define SDCARD_DETECT_PIN PD10
 #define SDCARD_DETECT_INVERTED
 #define SDIO_DEVICE             SDIODEV_1
@@ -121,6 +122,8 @@
 #define USE_FLASH_W25N01G
 #define USE_CAMERA_CONTROL
 #define USE_MAX7456
+#define USE_SDCARD
+#define USE_TRANSPONDER
 
 #define BEEPER_PIN           PD7
 #define MOTOR1_PIN           PA0
