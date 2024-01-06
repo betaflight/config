@@ -21,6 +21,7 @@
 
 #pragma once
 
+#define FC_TARGET_MCU     STM32F7X2
 #define BOARD_NAME        FLYCOLORF7MINI
 #define MANUFACTURER_ID   FLCO
 
@@ -39,7 +40,7 @@
 #define BEEPER_PIN                          PC14
 #define MOTOR1_PIN                          PB1
 #define MOTOR2_PIN                          PB4
-#define MOTOR3_PIN                          PB03
+#define MOTOR3_PIN                          PB3
 #define MOTOR4_PIN                          PA15
 #define MOTOR5_PIN                          PC8
 #define MOTOR6_PIN                          PC9
