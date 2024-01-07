@@ -30,6 +30,7 @@
 #define USE_ACC_SPI_MPU6000
 #define USE_GYRO
 #define USE_GYRO_SPI_MPU6000
+#define USE_MAX7456
 
 #define BEEPER_PIN           PB6
 #define MOTOR1_PIN           PB0
@@ -81,5 +82,5 @@
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG
 #define GYRO_1_ALIGN_YAW 900
-#define MAX7456_SPI_INSTANCE SPI0
+#define MAX7456_SPI_INSTANCE NULL
 //TODO #define SBUS_BAUD_FAST OFF

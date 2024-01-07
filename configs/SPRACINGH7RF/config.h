@@ -100,7 +100,6 @@
 #define USE_BARO
 #define BARO_I2C_INSTANCE       (I2CDEV_2)
 
-#define USE_MPU_DATA_READY_SIGNAL
 #define ENSURE_MPU_DATA_READY_IS_LOW
 
 #define SX1280_BUSY_PIN         PC7

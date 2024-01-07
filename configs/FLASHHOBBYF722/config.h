@@ -21,7 +21,7 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     STM32F722
+#define FC_TARGET_MCU     STM32F7X2
 
 #define BOARD_NAME        FLASHHOBBYF722
 #define MANUFACTURER_ID   FLHB
