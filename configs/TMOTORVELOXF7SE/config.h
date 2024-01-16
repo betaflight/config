@@ -26,8 +26,11 @@
 #define BOARD_NAME        TMOTORVELOXF7SE
 #define MANUFACTURER_ID   TMTR
 
-#define USE_GYRO_SPI_ICM42688P
+#define USE_ACC
 #define USE_ACC_SPI_ICM42688P
+#define USE_GYRO
+#define USE_GYRO_SPI_ICM42688P
+#define USE_BARO
 #define USE_BARO_DPS310
 #define USE_FLASH
 #define USE_FLASH_W25N01G
@@ -80,22 +83,20 @@
 #define GYRO_1_CS_PIN        PA4
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PA1 , 2,  0) \
-    TIMER_PIN_MAP( 1, PB0 , 2,  0) \
-    TIMER_PIN_MAP( 2, PB5 , 2,  0) \
-    TIMER_PIN_MAP( 3, PB1 , 2,  0) \
-    TIMER_PIN_MAP( 4, PC8 , 3,  0) \
-    TIMER_PIN_MAP( 5, PC9 , 3,  0) \
-    TIMER_PIN_MAP( 6, PA8 , 1,  0) \
-    TIMER_PIN_MAP( 7, PA9 , 1,  0) \
-    TIMER_PIN_MAP( 8, PB3 , 1,  0) \
-    TIMER_PIN_MAP( 9, PA10 , 1,  0) \
-
+    TIMER_PIN_MAP( 0, PA1,  2,  0 ) \
+    TIMER_PIN_MAP( 1, PB0,  2,  0 ) \
+    TIMER_PIN_MAP( 2, PB5,  2,  0 ) \
+    TIMER_PIN_MAP( 3, PB1,  2,  0 ) \
+    TIMER_PIN_MAP( 4, PC8,  3,  0 ) \
+    TIMER_PIN_MAP( 5, PC9,  3,  0 ) \
+    TIMER_PIN_MAP( 6, PA8,  1,  0 ) \
+    TIMER_PIN_MAP( 7, PA9,  1,  0 ) \
+    TIMER_PIN_MAP( 8, PB3,  1,  0 ) \
+    TIMER_PIN_MAP( 9, PA10, 1,  0 )
 
 #define ADC1_DMA_OPT        1
 
 #define MAG_I2C_INSTANCE (I2CDEV_1)
-#define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
@@ -107,9 +108,7 @@
 #define PINIO1_CONFIG 129
 #define PINIO2_CONFIG 129
 #define PINIO1_BOX 39
-#define PINIO2_BOX 255
 #define FLASH_SPI_INSTANCE SPI3
-#define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG
 #define GYRO_1_ALIGN_YAW 900
