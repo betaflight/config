@@ -84,33 +84,7 @@
                                         TIMER_PIN_MAP( 0, BEEPER_PIN , 2,  -1)
 
 #define ADC_INSTANCE                    ADC1
-
 #define ADC1_DMA_OPT                    6
-
-// QSPI removed due to lack of compatibility with BF
-
-// #define USE_QUADSPI
-// #define USE_QUADSPI_DEVICE_1
-// #define QUADSPI1_SCK_PIN PG5
-// #define QUADSPI1_BK1_IO0_PIN PD11
-// #define QUADSPI1_BK1_IO1_PIN PD12
-// #define QUADSPI1_BK1_IO2_PIN PE2
-
-// #define QUADSPI1_BK1_IO3_PIN PD13
-// #define QUADSPI1_BK1_CS_PIN PE11
-
-// TS
-// #define QUADSPI1_BK2_IO0_PIN PE7
-// #define QUADSPI1_BK2_IO1_PIN PE8
-// #define QUADSPI1_BK2_IO2_PIN PE9
-// #define QUADSPI1_BK2_IO3_PIN PE10
-// #define QUADSPI1_BK2_CS_PIN NONE
-
-// #define QUADSPI1_MODE QUADSPI_MODE_BK1_ONLY
-// #define QUADSPI1_CS_FLAGS (QUADSPI_BK1_CS_HARDWARE | QUADSPI_BK2_CS_NONE | QUADSPI_CS_MODE_LINKED)
-
-
-// #define FLASH_QUADSPI_INSTANCE    QUADSPI
 
 #define SPI1_TX_DMA_OPT                 8
 #define SPI1_RX_DMA_OPT                 9
@@ -142,8 +116,3 @@
 
 #define GYRO_1_ALIGN                    CW90_DEG
 #define GYRO_1_ALIGN_YAW                1800
-
-//TODO set rssi_channel = 15
-//TODO set dshot_bitbang = ON
-//TODO set vbat_divider = 5
-//TODO set vbat_multiplier = 2
