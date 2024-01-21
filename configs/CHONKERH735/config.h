@@ -25,29 +25,23 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 
 #pragma once
 
-#define FC_TARGET_MCU           STM32H725
+#define FC_TARGET_MCU                   STM32H725
 
-#define BOARD_NAME              CHONKERH735
-#define MANUFACTURER_ID         YOLO
-
+#define BOARD_NAME                      CHONKERH735
+#define MANUFACTURER_ID                 YOLO
 
 #define USE_ACC
-#define USE_ACC_SPI_ICM20602
-
+#define USE_BARO
+#define USE_FLASH
 #define USE_GYRO
-#define USE_SPI_GYRO
+
+#define USE_ACC_SPI_ICM20602
 #define USE_GYRO_SPI_ICM20602
 #define USE_ACC_GYRO_BMI270
-
-#define USE_BARO
 #define USE_BARO_DPS310
-
-#define USE_FLASH
 #define USE_FLASH_W25Q128FV
 
-
-
-// Resources
+// ADC Resources
 
 // #define ADC_VBAT_PIN
 // #define ADC_RSSI_PIN
@@ -106,11 +100,17 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 
 #define USB_DETECT_PIN                  PA9
 
-//TODO Timer mapping
+#define TIMER_PIN_MAPPING \
+    TIMER_PIN_MAP( 0, MOTOR1_PIN, 2,  0) \
+    TIMER_PIN_MAP( 1, MOTOR2_PIN, 2,  0) \
+    TIMER_PIN_MAP( 2, MOTOR3_PIN, 2,  0) \
+    TIMER_PIN_MAP( 3, MOTOR4_PIN, 2,  0)
 
-//TODO DMA options
+#define ADC1_DMA_OPT                    8
+#define ADC3_DMA_OPT                    9
 
 #define BARO_I2C_INSTANCE               (I2CDEV_2)
+#define MAG_I2C_INSTANCE                (I2CDEV_2)
 #define FLASH_SPI_INSTANCE              SPI4
 #define GYRO_1_SPI_INSTANCE             SPI2
 #define GYRO_2_SPI_INSTANCE             SPI3
