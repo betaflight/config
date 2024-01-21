@@ -30,6 +30,7 @@
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
+#define USE_IMU_XTAL
 #define USE_BARO
 #define USE_BARO_DPS310
 #define USE_FLASH
@@ -83,8 +84,14 @@
                                         TIMER_PIN_MAP( 8, MOTOR8_PIN , 1,  -1) \
                                         TIMER_PIN_MAP( 0, BEEPER_PIN , 2,  -1)
 
-#define ADC_INSTANCE                    ADC1
-#define ADC1_DMA_OPT                    6
+
+#define TIMUP3_DMA_OPT                  0  // Motors 1-4
+#define TIMUP15_DMA_OPT                 1  // Motors 5-6
+#define TIMUP1_DMA_OPT                  2  // Motors 7-8
+
+#define ADC1_DMA_OPT                    5
+// ADC3 is not used directly, but required for the battery and current ADC channels to work.
+#define ADC3_DMA_OPT                    6
 
 #define SPI1_TX_DMA_OPT                 8
 #define SPI1_RX_DMA_OPT                 9
@@ -108,8 +115,9 @@
 
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SCALE_DEFAULT 118
-#define DEFAULT_CURRENT_METER_SCALE     400
+// Nominally an 11:1 divider, but this appears slightly more accurate.
+#define DEFAULT_VOLTAGE_METER_SCALE 111
+#define DEFAULT_CURRENT_METER_SCALE 400
 
 #define DEFAULT_BARO_I2C_ADDRESS        119
 #define USE_I2C_PULLUP
