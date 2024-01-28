@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F405
 
-#define BOARD_NAME        AOCODARC_F405V3
+#define BOARD_NAME        AOCODARCF405V3
 #define MANUFACTURER_ID   SJET
 
 #define USE_GYRO
