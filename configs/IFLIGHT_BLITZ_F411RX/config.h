@@ -29,6 +29,8 @@
 #define USE_GYRO
 #define USE_ACC
 #define USE_ACCGYRO_BMI270
+#define USE_GYRO_SPI_MPU6000
+#define USE_ACC_SPI_MPU6000
 #define USE_MAX7456
 
 #define MOTOR1_PIN           PA0
