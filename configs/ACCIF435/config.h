@@ -27,9 +27,15 @@
 #define MANUFACTURER_ID   CUST
 
 #define USE_ACC
-#define USE_ACC_SPI_MPU6000
 #define USE_GYRO
-#define USE_GYRO_SPI_MPU6000
+
+#define USE_ACC_SPI_MPU6000 // For MPU6000 variation
+#define USE_GYRO_SPI_MPU6000 // For MPU6000 variation
+
+#define USE_ACC_SPI_ICM42688P // For ICM42688P variation
+#define USE_GYRO_SPI_ICM42688P // For ICM42688P variation
+
+#define USE_ACCGYRO_BMI270 // For BMI270 variation
 
 #define USE_BARO_BMP280
 
