@@ -45,7 +45,7 @@
 #define RX_PPM_PIN                      PA3
 
 #define DEFAULT_DSHOT_BURST             DSHOT_DMAR_AUTO
-#define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_OFF
+#define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_ON
 
 // SPI
 #define SPI1_SCK_PIN                    PA5
