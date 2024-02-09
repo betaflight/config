@@ -86,6 +86,8 @@
 
 #define CAMERA_CONTROL_PIN              PA0
 
+#define USE_ADC
+#define ADC_INSTANCE                    ADC1
 #define ADC_VBAT_PIN                    PC2
 #define ADC_CURR_PIN                    PC1
 #define ADC1_DMA_OPT                    11
