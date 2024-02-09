@@ -91,7 +91,6 @@
                                             TIMER_PIN_MAP( 6, PB6, 1,  0 )
 
 
-#define USE_ADC
 #define ADC_INSTANCE ADC2
 
 

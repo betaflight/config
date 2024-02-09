@@ -100,7 +100,6 @@
 
 #define ADC2_DMA_OPT        1
 
-#define USE_ADC
 #define ADC_INSTANCE ADC2
 #define BARO_SPI_INSTANCE SPI2
 #define FLASH_SPI_INSTANCE SPI3
