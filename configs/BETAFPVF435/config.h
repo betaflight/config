@@ -34,7 +34,6 @@
 
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
-#define USE_SPI_GYRO
 
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
@@ -106,7 +105,6 @@
 #define BEEPER_INVERTED
 #define SYSTEM_HSE_MHZ 8
 
-#define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW270_DEG
 #define GYRO_1_ALIGN_YAW 2700

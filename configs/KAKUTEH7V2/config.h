@@ -120,5 +120,4 @@
 #define PINIO2_CONFIG 129
 #define PINIO1_BOX 0
 #define PINIO2_BOX 40
-#define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE SPI4

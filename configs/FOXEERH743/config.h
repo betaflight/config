@@ -122,7 +122,6 @@
 #define MAX7456_SPI_INSTANCE            SPI1
 #define FLASH_SPI_INSTANCE              SPI3
 //TODO #define SDCARD_MODE OFF
-#define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE             SPI2
 #define GYRO_1_ALIGN                    CW0_DEG
 #define GYRO_1_ALIGN_YAW                1800

@@ -105,7 +105,6 @@
 #define MAX7456_SPI_INSTANCE            SPI2
 #define DASHBOARD_I2C_INSTANCE          (I2CDEV_1)
 #define FLASH_SPI_INSTANCE              SPI1
-#define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE             SPI4
 #define GYRO_1_ALIGN                    CW270_DEG
 #define GYRO_2_SPI_INSTANCE             SPI4

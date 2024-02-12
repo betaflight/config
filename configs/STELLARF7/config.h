@@ -110,7 +110,6 @@
 //set osd_displayport_device = MAX7456
 #define MAX7456_SPI_INSTANCE SPI2
 #define FLASH_SPI_INSTANCE SPI3
-#define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW180_DEG
 #define GYRO_1_ALIGN_PITCH 1800

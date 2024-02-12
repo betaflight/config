@@ -30,7 +30,6 @@
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
-#define USE_SPI_GYRO
 #define USE_BARO
 #define USE_BARO_DPS310
 #define USE_BARO_QMP6988
