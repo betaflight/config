@@ -28,7 +28,6 @@
 
 #define USE_ACC
 #define USE_ACC_SPI_MPU6000
-#define USE_ADC
 #define USE_BARO
 #define USE_BARO_SPI_BMP280
 #define USE_GYRO

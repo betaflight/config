@@ -82,7 +82,6 @@
                                 TIMER_PIN_MAP(3, PA3, 1, 2) \
                                 TIMER_PIN_MAP(4, PB1, 2, 3)
 
-#define USE_ADC
 #define ADC_INSTANCE            ADC1
 #define ADC1_DMA_OPT            11
 
