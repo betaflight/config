@@ -117,6 +117,5 @@
 #define DEFAULT_CURRENT_METER_SCALE     800
 #define DEFAULT_VOLTAGE_METER_SCALE     110
 
-#define USE_SPI_GYRO
 #define GYRO_1_ALIGN                    CW180_DEG
 #define GYRO_1_ALIGN_YAW                1800
