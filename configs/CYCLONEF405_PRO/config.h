@@ -26,6 +26,14 @@
 #define BOARD_NAME        CYCLONEF405_PRO
 #define MANUFACTURER_ID   CYCL
 
+#define USE_ACC
+#define USE_ACC_SPI_MPU6000
+#define USE_GYRO
+#define USE_GYRO_SPI_MPU6000
+#define USE_FLASH
+#define USE_FLASH_W25Q128FV
+#define USE_MAX7456
+
 #define BEEPER_PIN           PC13
 #define MOTOR1_PIN           PC8
 #define MOTOR2_PIN           PC9
