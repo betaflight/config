@@ -37,7 +37,6 @@
 #define USE_FLASH_W25Q128FV
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
-#define USE_SPI_GYRO
 #define USE_MAX7456
 #define USE_CAMERA_CONTROL
 

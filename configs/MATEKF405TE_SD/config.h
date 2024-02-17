@@ -117,7 +117,6 @@
 #define USE_SDCARD_SPI
 #define SDCARD_SPI_INSTANCE             SPI2
 
-#define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define GYRO_1_ALIGN                    CW270_DEG_FLIP
 #define GYRO_1_ALIGN_PITCH              1800

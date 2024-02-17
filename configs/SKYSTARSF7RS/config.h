@@ -31,7 +31,6 @@
 #define USE_CAMERA_CONTROL
 #define USE_FLASH
 #define USE_GYRO
-#define USE_SPI_GYRO
 #define USE_MAX7456
 
 #define USE_ACC_SPI_MPU6000
