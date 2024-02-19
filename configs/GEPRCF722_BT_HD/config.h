@@ -52,13 +52,11 @@
 #define UART3_TX_PIN         PB10
 #define UART4_TX_PIN         PC10
 #define UART5_TX_PIN         PC12
-#define UART6_TX_PIN         PC6
 #define UART1_RX_PIN         PA10
 #define UART2_RX_PIN         PA3
 #define UART3_RX_PIN         PB11
 #define UART4_RX_PIN         PC11
 #define UART5_RX_PIN         PD2
-#define UART6_RX_PIN         PC7
 #define I2C2_SCL_PIN         PB10
 #define I2C2_SDA_PIN         PB11
 #define LED0_PIN             PC4
@@ -97,8 +95,6 @@
     TIMER_PIN_MAP( 8, PB1 , 2,  0) \
     TIMER_PIN_MAP( 9, PB0 , 2,  0) \
     TIMER_PIN_MAP(10, PA1 , 1,  0)
-
-
 
 #define ADC3_DMA_OPT        0
 
