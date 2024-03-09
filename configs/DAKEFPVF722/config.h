@@ -29,6 +29,7 @@
 #define USE_ACC
 #define USE_ACC_SPI_MPU6000
 #define USE_ACC_SPI_MPU6500
+#define USE_ACC_SPI_ICM42688P
 #define USE_BARO
 #define USE_BARO_SPI_BMP280
 #define USE_BARO_SPI_DPS310
@@ -38,6 +39,7 @@
 #define USE_GYRO
 #define USE_GYRO_SPI_MPU6000
 #define USE_GYRO_SPI_MPU6500
+#define USE_GYRO_SPI_ICM42688P
 #define USE_MAX7456
 
 #define BEEPER_PIN           PC3
@@ -60,6 +62,8 @@
 #define UART4_RX_PIN         PA1
 #define UART5_RX_PIN         PD2
 #define UART6_RX_PIN         PC7
+#define I2C1_SCL_PIN         PB8
+#define I2C1_SDA_PIN         PB9
 #define LED0_PIN             PC14
 #define LED1_PIN             PC15
 #define SPI1_SCK_PIN         PA5
@@ -104,6 +108,7 @@
 #define BARO_SPI_INSTANCE SPI2
 #define FLASH_SPI_INSTANCE SPI3
 #define MAX7456_SPI_INSTANCE SPI2
+#define MAG_I2C_INSTANCE (I2CDEV_1)
 
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
