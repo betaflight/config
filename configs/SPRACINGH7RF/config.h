@@ -152,6 +152,7 @@
 #define USE_MAG_QMC5883
 #define USE_FLASH_W25Q128FV
 #define USE_SDCARD
+#define USE_LED_STRIP
 
 #ifndef USE_OSD
 #define USE_OSD

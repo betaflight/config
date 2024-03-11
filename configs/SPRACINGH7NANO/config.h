@@ -135,6 +135,7 @@
 #define USE_FLASH_W25N01G
 #define USE_CAMERA_CONTROL
 #define USE_MAX7456
+#define USE_LED_STRIP
 
 #define BEEPER_PIN           PD7
 #define MOTOR1_PIN           PA0
