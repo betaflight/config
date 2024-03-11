@@ -126,6 +126,7 @@
 #define USE_MAX7456
 #define USE_SDCARD
 #define USE_TRANSPONDER
+#define USE_LED_STRIP
 
 #define BEEPER_PIN           PD7
 #define MOTOR1_PIN           PA0
