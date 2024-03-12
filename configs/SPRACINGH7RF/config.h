@@ -153,6 +153,11 @@
 #define USE_FLASH_W25Q128FV
 #define USE_SDCARD
 
+// The target has a connector and circuit for the LED strip.
+#ifndef USE_LED_STRIP
+#define USE_LED_STRIP
+#endif
+
 #ifndef USE_OSD
 #define USE_OSD
 #endif

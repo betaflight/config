@@ -136,6 +136,11 @@
 #define USE_CAMERA_CONTROL
 #define USE_MAX7456
 
+// The target has a specific set of pads for the LED strip.
+#ifndef USE_LED_STRIP
+#define USE_LED_STRIP
+#endif
+
 #define BEEPER_PIN           PD7
 #define MOTOR1_PIN           PA0
 #define MOTOR2_PIN           PA1
