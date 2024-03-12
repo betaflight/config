@@ -23,18 +23,22 @@
 
 #define FC_TARGET_MCU     STM32F405
 
-#define BOARD_NAME        NETURONF405
+#define BOARD_NAME        CADDXF4
 #define MANUFACTURER_ID   CADX
 
 #define USE_GYRO
 #define USE_GYRO_SPI_MPU6000
+#define USE_GYRO_SPI_ICM42688P
+
 #define USE_ACC
 #define USE_ACC_SPI_MPU6000
-#define USE_GYRO_SPI_ICM42688P
 #define USE_ACC_SPI_ICM42688P
 #define USE_ACCGYRO_BMI270
+
+#define USE_BARO
 #define USE_BARO_BMP280
 #define USE_BARO_DPS310
+
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
@@ -100,7 +104,6 @@
 
 #define ADC3_DMA_OPT        0
 
-#define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 #define MAG_I2C_INSTANCE (I2CDEV_1)
 #define ADC_INSTANCE ADC3
