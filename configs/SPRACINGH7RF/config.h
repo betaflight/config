@@ -67,7 +67,7 @@
 #define USE_FIRMWARE_PARTITION
 
 #define USE_SDCARD_SDIO
-#define SDCARD_DETECT_PIN PC13
+#define SDCARD_DETECT_PIN       PC13
 #define SDCARD_DETECT_INVERTED
 #define SDIO_DEVICE             SDIODEV_1
 #define SDIO_USE_4BIT           1
@@ -126,15 +126,23 @@
 #define ADC_INSTANCE                  ADC3
 #define ADC1_INSTANCE                 ADC1
 #define ADC3_INSTANCE                 ADC3
-#define CURRENT_METER_2_ADC_PIN       PC0
-#define CURRENT_METER_2_ADC_INSTANCE  ADC3
+
+// Hardware ADC pins and intended usage
 #define CURRENT_METER_1_ADC_PIN       PC1
 #define CURRENT_METER_1_ADC_INSTANCE  ADC3
+#define CURRENT_METER_2_ADC_PIN       PC0
+#define CURRENT_METER_2_ADC_INSTANCE  ADC3
 #define ADC_EXTERNAL1_PIN             PC2
 #define ADC_EXTERNAL1_INSTANCE        ADC3
 #define VBAT_ADC_INSTANCE             ADC3
 #define VIDEO_IN_ADC_PIN              PC5
 #define VIDEO_OUT_ADC_PIN             PC4
+
+// BF usage of ADC pins
+#define ADC_VBAT_PIN         PC3
+#define ADC_RSSI_PIN         PC0
+#define ADC_CURR_PIN         PC1
+#define ADC_EXTERNAL1_PIN    PC2
 
 #define VTX_ENABLE_PIN                PC15
 #define PINIO1_PIN                    VTX_ENABLE_PIN
@@ -220,21 +228,9 @@
 #define LED0_PIN             PE5
 #define LED1_PIN             PE6
 #define LED2_PIN             NONE
+
 #define SPEKTRUM_RX_BIND_PIN NONE
 #define RX_BIND_PLUG_PIN     NONE
-
-#define ADC_VBAT_PIN         PC3
-#define ADC_RSSI_PIN         PC0
-#define ADC_CURR_PIN         PC1
-#define ADC_EXTERNAL1_PIN    PC2
-
-#define SDCARD_DETECT_PIN    PC13
-#define SDIO_CK_PIN          PC12
-#define SDIO_CMD_PIN         PD2
-#define SDIO_D0_PIN          PC8
-#define SDIO_D1_PIN          PC9
-#define SDIO_D2_PIN          PC10
-#define SDIO_D3_PIN          PC11
 
 //#define PINIO1_PIN           PC15
 #define RX_SPI_CS_PIN        PB12
@@ -285,9 +281,6 @@
     TIMER_PIN_MAP( 6, PA2 , 2,  6 ) \
     TIMER_PIN_MAP( 7, PA3 , 2,  7 ) \
     TIMER_PIN_MAP( 8, PB7 , 1,  8 )
-
-
-#define ADC3_DMA_OPT       10
 
 #define MAG_I2C_INSTANCE     (I2CDEV_1)
 #define BARO_I2C_INSTANCE    (I2CDEV_2)
