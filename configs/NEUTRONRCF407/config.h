@@ -38,6 +38,10 @@
 #define USE_MAX7456
 #define USE_BARO
 #define USE_BARO_DPS310
+#ifndef USE_MAG
+#define USE_MAG
+#define USE_MAG_QMC5883
+#endif
 
 #define BEEPER_PIN           PB4
 #define MOTOR1_PIN           PB0
