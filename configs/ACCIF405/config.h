@@ -37,6 +37,7 @@
 
 #define USE_ACCGYRO_BMI270 // For BMI270 variation
 
+#define USE_BARO
 #define USE_BARO_BMP280
 
 #define USE_FLASH
@@ -51,7 +52,6 @@
 #define LED1_PIN             PC14
 #define BEEPER_PIN           PC13
 #define BEEPER_INVERTED
-#define OSD_DISPLAYPORT_DEVICE MAX7456
 #define LED_STRIP_PIN        PB3
 
 // ACC/GYRO SPI 1
@@ -125,7 +125,6 @@
 #define ADC1_DMA_OPT         1
 
 // BARO I2C
-#define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 #define MAG_I2C_INSTANCE (I2CDEV_1)
 
