@@ -91,13 +91,13 @@
     TIMER_PIN_MAP( 1, PA1 , 2, -1) \
     TIMER_PIN_MAP( 2, PA9 , 1, -1) \
     TIMER_PIN_MAP( 3, PA10, 1, -1) \
-    TIMER_PIN_MAP( 4, PB0 , 2,  0) \
-    TIMER_PIN_MAP( 5, PB1 , 2,  0) \
+    TIMER_PIN_MAP( 4, PB0 , 1,  1) \
+    TIMER_PIN_MAP( 5, PB1 , 1,  0) \
     TIMER_PIN_MAP( 6, PB3 , 1,  0) \
     TIMER_PIN_MAP( 7, PB4 , 1, -1) \
     TIMER_PIN_MAP( 8, PB6 , 1,  0) \
     TIMER_PIN_MAP( 9, PB7 , 1,  0) \
-    TIMER_PIN_MAP(10, PC8 , 2,  0) \
+    TIMER_PIN_MAP(10, PC8 , 2,  1) \
     TIMER_PIN_MAP(11, PC9 , 2,  0)
 
 
