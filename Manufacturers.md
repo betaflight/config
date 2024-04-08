@@ -69,6 +69,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |MARC|Mayhem RC|https://mayhemrc.com.au/|
 |MEPS|MepsKing|https://www.mepsking.com/|
 |MERA|MerakRC|http://www.merakrc.com/|
+|MICO|MicoAir Tech|https://micoair.com/|
 |MOLA|MotoLab|https://github.com/MotoLab|
 |MOQU|Modd Quad|https://www.moddquad.com/|
 |MTKS|Matek Systems|http://www.mateksys.com/|
