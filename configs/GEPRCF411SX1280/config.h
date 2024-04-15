@@ -41,7 +41,7 @@
 #define USE_ACC_SPI_ICM42605
 #define USE_ACC_SPI_ICM42688P
 #define USE_FLASH
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 #define USE_MAX7456
 
 #define USE_RX_SPI

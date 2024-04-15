@@ -31,7 +31,7 @@
 #define USE_GYRO
 #define USE_GYRO_SPI_MPU6000
 #define USE_FLASH
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 
 #define BEEPER_PIN           PC15
 #define MOTOR1_PIN           PB4

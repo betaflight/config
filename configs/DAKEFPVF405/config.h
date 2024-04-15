@@ -40,7 +40,7 @@
 #define USE_GYRO_SPI_ICM42688P
 #define USE_BARO_SPI_BMP280
 #define USE_BARO_SPI_DPS310
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 #define USE_MAX7456
 
 #define BEEPER_PIN           PC3

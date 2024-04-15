@@ -50,7 +50,7 @@
 #define SPI3_SDO_PIN         PC12
 
 #define USE_FLASH
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 #define FLASH_CS_PIN            PB3
 #define FLASH_SPI_INSTANCE      SPI3
 

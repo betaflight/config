@@ -30,7 +30,7 @@
 #define USE_ACC
 #define USE_ACCGYRO_BMI270
 #define USE_FLASH
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 #define USE_MAX7456
 
 #define BEEPER_PIN           PD2

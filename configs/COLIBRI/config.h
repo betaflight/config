@@ -32,7 +32,7 @@
 #define USE_GYRO_SPI_MPU6000
 #define USE_BARO_MS5611
 #define USE_FLASH
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 
 #define BEEPER_PIN           PC5
 #define MOTOR1_PIN           PB0

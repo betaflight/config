@@ -157,7 +157,7 @@
 #define USE_MAG
 #define USE_MAG_HMC5883
 #define USE_MAG_QMC5883
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 #define USE_SDCARD
 // The target has a specific set of pads for the LED strip.
 #ifndef USE_LED_STRIP

@@ -34,7 +34,7 @@
 #define USE_ACC_SPI_MPU6000
 #define USE_BARO_SPI_LPS
 #define USE_FLASH
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 #define USE_MAX7456
 
 #define BEEPER_PIN           PC13

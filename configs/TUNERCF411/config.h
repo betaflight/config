@@ -27,7 +27,7 @@
 #define USE_GYRO
 #define USE_ACCGYRO_BMI270
 #define USE_FLASH
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 #define USE_MAX7456
 
 #define BOARD_NAME TUNERCF411

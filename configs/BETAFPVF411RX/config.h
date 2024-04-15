@@ -36,7 +36,7 @@
 #define USE_RX_CC2500
 #define USE_MAX7456
 #define USE_FLASH
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 
 #define BEEPER_PIN           PA14
 #define MOTOR1_PIN           PB8

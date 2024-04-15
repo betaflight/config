@@ -31,7 +31,7 @@
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM20689
 #define USE_FLASH
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 #define USE_MAX7456
 
 #define BEEPER_PIN           PC13

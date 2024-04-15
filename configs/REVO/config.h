@@ -33,7 +33,7 @@
 #define USE_ACC_SPI_MPU6000
 #define USE_GYRO_SPI_MPU6000
 #define USE_FLASH
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 
 #define MOTOR1_PIN           PB0
 #define MOTOR2_PIN           PB1

@@ -34,7 +34,7 @@
 #define USE_BARO_BMP280
 #define USE_BARO_DPS310
 #define USE_FLASH
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 
 #define BEEPER_PIN              PC13
 #define MOTOR1_PIN              PC8

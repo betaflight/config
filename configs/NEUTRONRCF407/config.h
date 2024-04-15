@@ -34,7 +34,7 @@
 #define USE_ACCGYRO_BMI270
 #define USE_GYRO_SPI_ICM42688P
 #define USE_FLASH
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 #define USE_MAX7456
 #define USE_BARO
 #define USE_BARO_DPS310

@@ -36,7 +36,7 @@
 #define USE_BARO
 #define USE_BARO_BMP280
 #define USE_FLASH
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 #define USE_MAX7456
 
 #define BEEPER_PIN           PB4

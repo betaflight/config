@@ -34,7 +34,7 @@
 #define USE_ACC_SPI_MPU6000
 #define USE_MAX7456
 #define USE_FLASH
-#define USE_FLASH_COMMON
+#define USE_FLASH_X25
 
 #define BEEPER_PIN           PB4
 #define MOTOR1_PIN           PB0
