@@ -91,7 +91,7 @@
 #define ADC1_DMA_OPT                    11
 
 #define USE_FLASH
-#define USE_FLASH_W25Q128FV
+#define USE_FLASH_M25P16
 #define FLASH_CS_PIN                    PB9
 #define FLASH_SPI_INSTANCE              SPI3
 

@@ -90,7 +90,7 @@
 
 #define USE_FLASH
 #define USE_FLASH_M25P16
-#define USE_FLASH_W25Q128FV
+#define USE_FLASH_M25P16
 #define USE_FLASH_W25N01G
 #define FLASH_CS_PIN                    PD6
 #define FLASH_SPI_INSTANCE              SPI3

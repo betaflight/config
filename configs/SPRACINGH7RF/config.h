@@ -158,7 +158,7 @@
 #define USE_MAG
 #define USE_MAG_HMC5883
 #define USE_MAG_QMC5883
-#define USE_FLASH_W25Q128FV
+#define USE_FLASH_M25P16
 #define USE_SDCARD
 
 // The target has a connector and circuit for the LED strip.

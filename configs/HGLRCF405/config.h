@@ -33,7 +33,7 @@
 #define USE_BARO_SPI_BMP280
 #define USE_MAX7456
 #define USE_FLASH
-#define USE_FLASH_W25Q128FV
+#define USE_FLASH_M25P16
 
 #define BEEPER_PIN           PB4
 #define MOTOR1_PIN           PB0
