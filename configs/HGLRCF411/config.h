@@ -35,7 +35,7 @@
 #define USE_ACC_SPI_ICM42688P
 #define USE_MAX7456
 #define USE_FLASH
-#define USE_FLASH_M25P16
+#define USE_FLASH_COMMON
 
 #define BEEPER_PIN           PB2
 #define MOTOR1_PIN           PB4

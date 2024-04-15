@@ -84,7 +84,7 @@
 
 // FLASH
 #define USE_FLASH
-#define USE_FLASH_M25P16
+#define USE_FLASH_COMMON
 #define USE_FLASH_W25M
 #define FLASH_SPI_INSTANCE              SPI3
 #define FLASH_CS_PIN                    SPI3_NSS_PIN

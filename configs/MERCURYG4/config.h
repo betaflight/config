@@ -33,7 +33,7 @@
 #define USE_BARO
 #define USE_BARO_DPS310
 #define USE_FLASH
-#define USE_FLASH_M25P16
+#define USE_FLASH_COMMON
 
 #define BEEPER_PIN                      PA10
 #define MOTOR1_PIN                      PC6

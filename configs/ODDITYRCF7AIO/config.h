@@ -34,7 +34,7 @@
 #define USE_BARO_DPS310
 #define USE_BARO_QMP6988
 #define USE_FLASH
-#define USE_FLASH_M25P16
+#define USE_FLASH_COMMON
 #define USE_MAX7456
 
 #define BEEPER_PIN           PC13

@@ -37,7 +37,7 @@
 #define USE_ACCGYRO_LSM6DSV16X
 
 #define USE_FLASH
-#define USE_FLASH_M25P16
+#define USE_FLASH_COMMON
 
 #define CAMERA_CONTROL_PIN                  PA4
 

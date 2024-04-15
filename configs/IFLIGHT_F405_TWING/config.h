@@ -32,7 +32,7 @@
 #define USE_ACC_SPI_ICM20689
 #define USE_BARO_BMP280
 #define USE_FLASH
-#define USE_FLASH_M25P16
+#define USE_FLASH_COMMON
 #define USE_FLASH_W25N01G
 #define USE_MAX7456
 

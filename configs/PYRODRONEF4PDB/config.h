@@ -31,7 +31,7 @@
 #define USE_ACC
 #define USE_ACC_SPI_MPU6000
 #define USE_FLASH
-#define USE_FLASH_M25P16
+#define USE_FLASH_COMMON
 #define USE_MAX7456
 
 #define BEEPER_PIN           PB5

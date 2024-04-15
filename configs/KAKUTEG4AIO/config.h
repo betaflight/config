@@ -34,7 +34,7 @@
 #define USE_BARO_QMP6988
 #define USE_BARO_LPS
 #define USE_FLASH
-#define USE_FLASH_M25P16
+#define USE_FLASH_COMMON
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 #define USE_MAX7456
