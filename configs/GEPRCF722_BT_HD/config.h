@@ -35,10 +35,6 @@
 #define USE_GYRO_SPI_ICM42688P
 #define USE_SDCARD
 #define USE_MAX7456
-#define USE_BARO
-#define USE_BARO_DPS310
-#define USE_MAG
-#define USE_MAG_QMC5883
 
 #define BEEPER_PIN           PC15
 #define MOTOR1_PIN           PC8
