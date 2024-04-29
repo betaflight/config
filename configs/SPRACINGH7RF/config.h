@@ -221,15 +221,6 @@
 #define UART9_RX_PIN         NONE
 #define UART10_RX_PIN        NONE
 
-#define I2C1_SCL_PIN         PB8
-#define I2C2_SCL_PIN         PB10
-#define I2C3_SCL_PIN         NONE
-#define I2C4_SCL_PIN         NONE
-#define I2C1_SDA_PIN         PB9
-#define I2C2_SDA_PIN         PB11
-#define I2C3_SDA_PIN         NONE
-#define I2C4_SDA_PIN         NONE
-
 #define LED0_PIN             PE5
 #define LED1_PIN             PE6
 #define LED2_PIN             NONE
@@ -286,9 +277,6 @@
     TIMER_PIN_MAP( 6, PA2 , 2,  6 ) \
     TIMER_PIN_MAP( 7, PA3 , 2,  7 ) \
     TIMER_PIN_MAP( 8, PB7 , 1,  8 )
-
-#define MAG_I2C_INSTANCE     (I2CDEV_1)
-#define BARO_I2C_INSTANCE    (I2CDEV_2)
 
 #define PINIO1_BOX 40
 
