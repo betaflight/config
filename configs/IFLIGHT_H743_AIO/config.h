@@ -51,7 +51,7 @@
 #define UART8_TX_PIN PE1
 #define UART1_RX_PIN PA10
 #define UART2_RX_PIN PA3
-#define UART3_RX_PIN B11
+#define UART3_RX_PIN PB11
 #define UART4_RX_PIN PA1
 #define UART6_RX_PIN PC7
 #define UART7_RX_PIN PE7
