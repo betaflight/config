@@ -28,11 +28,12 @@
 
 #define USE_ACC
 #define USE_ACC_SPI_MPU6000
-#define USE_ACC_SPI_ICM42688P   
+#define USE_ACCGYRO_BMI270
+#define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
 #define USE_GYRO_SPI_MPU6000
 #define USE_GYRO_SPI_ICM42688P
-#define USE_ACCGYRO_BMI270
+#define USE_BARO
 #define USE_BARO_DPS310
 #define USE_BARO_BMP280
 #define USE_FLASH
@@ -56,7 +57,8 @@
 #define UART6_TX_PIN         PC6
 #define UART1_RX_PIN         PB7
 #define UART2_RX_PIN         PA3
-#define UART4_RX_PIN         PB11
+#define UART3_RX_PIN         PB11
+#define UART4_RX_PIN         PA1
 #define UART5_RX_PIN         PD2
 #define UART6_RX_PIN         PC7
 #define I2C1_SCL_PIN         PB8
@@ -94,28 +96,26 @@
     TIMER_PIN_MAP( 7, PB4,  1,  0) \
     TIMER_PIN_MAP( 8, PB3,  1,  0) \
 
-#define ADC3_DMA_OPT 0
-
-#define MAG_I2C_INSTANCE  (I2CDEV_1)
-#define BARO_I2C_INSTANCE (I2CDEV_1)
-
-#define FLASH_SPI_INSTANCE   SPI3
-#define GYRO_1_SPI_INSTANCE  SPI1
-#define GYRO_2_SPI_INSTANCE  SPI1
-#define MAX7456_SPI_INSTANCE SPI2
-
-#define SERIALRX_PROVIDER SERIALRX_CRSF
+#define ADC3_DMA_OPT                    0
+#define DEFAULT_GYRO_TO_USE             GYRO_CONFIG_USE_GYRO_BOTH
+#define MAG_I2C_INSTANCE                (I2CDEV_1)
+#define BARO_I2C_INSTANCE               (I2CDEV_1)
 #define ADC_INSTANCE ADC3
-
-#define DEFAULT_BLACKBOX_DEVICE BLACKBOX_DEVICE_FLASH
-#define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
-#define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
-#define DEFAULT_CURRENT_METER_SCALE 250
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
+#define DEFAULT_DSHOT_BURST             DSHOT_DMAR_ON
+#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
+#define DEFAULT_CURRENT_METER_SCALE     250
 #define BEEPER_INVERTED
-#define PINIO1_CONFIG 129
-#define PINIO1_BOX 40
-#define GYRO_1_ALIGN CW270_DEG
-#define GYRO_1_ALIGN_YAW 2700
-#define GYRO_2_ALIGN CW270_DEG
-#define GYRO_2_ALIGN_YAW 2700
+#define MAX7456_SPI_INSTANCE            SPI2
+#define PINIO1_CONFIG                   129
+#define PINIO2_CONFIG                   129
+#define PINIO1_BOX                      40
+#define PINIO2_BOX                      41
+#define FLASH_SPI_INSTANCE              SPI3
+#define GYRO_1_SPI_INSTANCE             SPI1
+#define GYRO_1_ALIGN                    CW270_DEG
+#define GYRO_1_ALIGN_YAW                2700
+#define GYRO_2_SPI_INSTANCE             SPI1
+#define GYRO_2_ALIGN                    CW270_DEG
+#define GYRO_2_ALIGN_YAW                2700
