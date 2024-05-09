@@ -78,7 +78,7 @@
 #define FLASH_CS_PIN PC10
 #define MAX7456_SPI_CS_PIN PB12
 #define GYRO_1_EXTI_PIN PC4
-#define GYRO_1_CS_PIN B2
+#define GYRO_1_CS_PIN PB2
 #define USB_DETECT_PIN PC14
 
 #define TIMER_PIN_MAPPING \
