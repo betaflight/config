@@ -32,7 +32,8 @@
 #define USE_ACC_SPI_MPU6000
 #define USE_BARO_BMP280
 #define USE_FLASH
-#define USE_FLASH_W25P16
+// No matching hardware define for W25P16
+// #define USE_FLASH_W25P16
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
 

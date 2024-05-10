@@ -33,7 +33,8 @@
 #define USE_BARO
 #define USE_BARO_DPS310
 #define USE_FLASH
-#define USE_FLASH_W25Q256
+// Although we do mention the W25Q256 in drivers/flash_m25p16.c, USE_FLASH_W25Q256 is not defined anywhere
+// #define USE_FLASH_W25Q256
 #define USE_MAX7456
 
 #define BEEPER_PIN PC13

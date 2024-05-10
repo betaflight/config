@@ -27,7 +27,8 @@
 #define MANUFACTURER_ID   YUPF
 
 #define USE_GYRO
-#define USE_GYRO_FAST_KALMAN
+// no matching hardware define for GYRO_FAST_KALMAN
+// #define USE_GYRO_FAST_KALMAN
 #define USE_GYRO_SPI_MPU6500
 #define USE_GYRO_SPI_ICM20689
 #define USE_ACC
