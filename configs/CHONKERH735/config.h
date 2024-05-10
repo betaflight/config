@@ -37,7 +37,7 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 
 #define USE_ACC_SPI_ICM20602
 #define USE_GYRO_SPI_ICM20602
-#define USE_ACC_GYRO_BMI270
+#define USE_ACCGYRO_BMI270
 #define USE_BARO_DPS310
 #define USE_FLASH_W25Q128FV
 
