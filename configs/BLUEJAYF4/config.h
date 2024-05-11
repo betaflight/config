@@ -31,8 +31,7 @@
 #define USE_ACC
 #define USE_ACC_SPI_MPU6500
 #define USE_FLASH
-// No matching hardware define for W25P16
-// #define USE_FLASH_W25P16
+#define USE_FLASH_M25P16
 
 #define BEEPER_PIN           PC1
 #define MOTOR1_PIN           PA0
