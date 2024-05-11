@@ -44,7 +44,7 @@
 #define LED_STRIP_PIN PD12
 #define UART1_TX_PIN PA9
 #define UART2_TX_PIN PA2
-#define UART3_TX_PIN B10
+#define UART3_TX_PIN PB10
 #define UART4_TX_PIN PA0
 #define UART6_TX_PIN PC6
 #define UART7_TX_PIN PE8
