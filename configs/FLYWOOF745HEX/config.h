@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F745
 
-#define BOARD_NAME        FLYWOOF745NANO
+#define BOARD_NAME        FLYWOOF745HEX
 #define MANUFACTURER_ID   FLWO
 
 #define USE_ACC
@@ -32,16 +32,17 @@
 #define USE_GYRO_SPI_MPU6000
 #define USE_BARO
 #define USE_BARO_BMP280
+#define USE_BARO_DPS310
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
 
 #define BEEPER_PIN           PD15
-#define MOTOR1_PIN           PB0
-#define MOTOR2_PIN           PB1
-#define MOTOR3_PIN           PE9
+#define MOTOR1_PIN           PB1
+#define MOTOR2_PIN           PC9
+#define MOTOR3_PIN           PB0
 #define MOTOR4_PIN           PE11
-#define MOTOR5_PIN           PC9
+#define MOTOR5_PIN           PE9
 #define MOTOR6_PIN           PA3
 #define MOTOR7_PIN           PB4
 #define MOTOR8_PIN           PB5
@@ -49,22 +50,20 @@
 #define LED_STRIP_PIN        PD12
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PD5
-#define UART3_TX_PIN         PD8
+#define UART3_TX_PIN         PB10
 #define UART4_TX_PIN         PA0
 #define UART5_TX_PIN         PC12
 #define UART6_TX_PIN         PC6
 #define UART7_TX_PIN         PE8
 #define UART1_RX_PIN         PA10
 #define UART2_RX_PIN         PD6
-#define UART3_RX_PIN         PD9
+#define UART3_RX_PIN         PB11
 #define UART4_RX_PIN         PA1
 #define UART5_RX_PIN         PD2
 #define UART6_RX_PIN         PC7
 #define UART7_RX_PIN         PE7
 #define I2C1_SCL_PIN         PB6
 #define I2C1_SDA_PIN         PB7
-#define I2C2_SCL_PIN         PB10
-#define I2C2_SDA_PIN         PB11
 #define LED0_PIN             PA2
 #define SPI1_SCK_PIN         PA5
 #define SPI2_SCK_PIN         PB13
@@ -87,11 +86,11 @@
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, RX_PPM_PIN, 1,  1) \
-    TIMER_PIN_MAP( 1, MOTOR1_PIN, 2,  0) \
-    TIMER_PIN_MAP( 2, MOTOR2_PIN, 2,  0) \
-    TIMER_PIN_MAP( 3, MOTOR3_PIN, 1,  2) \
+    TIMER_PIN_MAP( 1, MOTOR3_PIN, 2,  0) \
+    TIMER_PIN_MAP( 2, MOTOR1_PIN, 2,  0) \
+    TIMER_PIN_MAP( 3, MOTOR5_PIN, 1,  2) \
     TIMER_PIN_MAP( 4, MOTOR4_PIN, 1,  1) \
-    TIMER_PIN_MAP( 5, MOTOR5_PIN, 2,  0) \
+    TIMER_PIN_MAP( 5, MOTOR2_PIN, 2,  0) \
     TIMER_PIN_MAP( 6, MOTOR6_PIN, 2,  0) \
     TIMER_PIN_MAP( 7, MOTOR7_PIN, 1,  0) \
     TIMER_PIN_MAP( 8, MOTOR8_PIN, 1,  0) \
@@ -101,8 +100,8 @@
 
 #define MAG_I2C_INSTANCE (I2CDEV_1)
 #define BARO_I2C_INSTANCE (I2CDEV_1)
-#define DEFAULT_BARO_DEVICE BARO_BMP280
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
+#define DEFAULT_DSHOT_BITBANG DSHOT_BITBANG_AUTO
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_CURRENT_METER_SCALE 175
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
@@ -111,3 +110,4 @@
 #define FLASH_SPI_INSTANCE SPI1
 #define GYRO_1_SPI_INSTANCE SPI4
 #define GYRO_1_ALIGN CW270_DEG
+#define GYRO_2_SPI_INSTANCE SPI4

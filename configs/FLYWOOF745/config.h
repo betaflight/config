@@ -30,6 +30,7 @@
 #define USE_ACC_SPI_MPU6000
 #define USE_GYRO
 #define USE_GYRO_SPI_MPU6000
+#define USE_BARO
 #define USE_BARO_BMP280
 #define USE_BARO_DPS310
 #define USE_FLASH
@@ -37,11 +38,11 @@
 #define USE_MAX7456
 
 #define BEEPER_PIN           PD15
-#define MOTOR1_PIN           PB1
-#define MOTOR2_PIN           PC9
-#define MOTOR3_PIN           PB0
+#define MOTOR1_PIN           PB0
+#define MOTOR2_PIN           PB1
+#define MOTOR3_PIN           PE9
 #define MOTOR4_PIN           PE11
-#define MOTOR5_PIN           PE9
+#define MOTOR5_PIN           PC9
 #define MOTOR6_PIN           PA3
 #define MOTOR7_PIN           PB4
 #define MOTOR8_PIN           PB5
@@ -84,24 +85,20 @@
 #define USB_DETECT_PIN       PA8
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PE13, 1,  1) \
-    TIMER_PIN_MAP( 1, PB0 , 2,  0) \
-    TIMER_PIN_MAP( 2, PB1 , 2,  0) \
-    TIMER_PIN_MAP( 3, PE9 , 1,  2) \
-    TIMER_PIN_MAP( 4, PE11, 1,  1) \
-    TIMER_PIN_MAP( 5, PC9 , 2,  0) \
-    TIMER_PIN_MAP( 6, PA3 , 2,  0) \
-    TIMER_PIN_MAP( 7, PB3 , 1,  0) \
-    TIMER_PIN_MAP( 8, PB4 , 1,  0) \
-    TIMER_PIN_MAP( 9, PB5 , 1,  0) \
-    TIMER_PIN_MAP(10, PD12, 1,  0)
-
-
+    TIMER_PIN_MAP( 0, RX_PPM_PIN, 1,  1) \
+    TIMER_PIN_MAP( 1, MOTOR1_PIN, 2,  0) \
+    TIMER_PIN_MAP( 2, MOTOR2_PIN, 2,  0) \
+    TIMER_PIN_MAP( 3, MOTOR3_PIN, 1,  2) \
+    TIMER_PIN_MAP( 4, MOTOR4_PIN, 1,  1) \
+    TIMER_PIN_MAP( 5, MOTOR5_PIN, 2,  0) \
+    TIMER_PIN_MAP( 6, MOTOR6_PIN, 2,  0) \
+    TIMER_PIN_MAP( 7, MOTOR7_PIN, 1,  0) \
+    TIMER_PIN_MAP( 8, MOTOR8_PIN, 1,  0) \
+    TIMER_PIN_MAP( 9, LED_STRIP_PIN, 1,  0)
 
 #define ADC1_DMA_OPT        1
 
 #define MAG_I2C_INSTANCE (I2CDEV_1)
-#define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BITBANG DSHOT_BITBANG_AUTO
@@ -110,7 +107,6 @@
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
 #define BEEPER_INVERTED
 #define MAX7456_SPI_INSTANCE SPI2
-#define DASHBOARD_I2C_INSTANCE (I2CDEV_1)
 #define FLASH_SPI_INSTANCE SPI1
 #define GYRO_1_SPI_INSTANCE SPI4
 #define GYRO_1_ALIGN CW270_DEG
