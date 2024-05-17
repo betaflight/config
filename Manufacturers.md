@@ -102,6 +102,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |TMTR|T-motor|http://uav-en.tmotor.com/|
 |TTRH|TransTEC|http://www.transtechobby.com/|
 |TURC|TUNERC|https://www.tunerc.com/|
+|TYKH|Tykho Ltd.|https://tykho.com.ua/|
 |VGRC|V-GOOD Technology Co.|http://www.vgoodrc.com/|
 |VIVA|VivaFPV|https://vivafpv.com/|
 |WIZZ|WIZZ|https://wizz.store/|
