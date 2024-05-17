@@ -65,7 +65,6 @@
 #define UART4_TX_PIN                        PC10
 #define UART5_TX_PIN                        PC12
 #define UART6_TX_PIN                        PA4
-#define UART7_TX_PIN                        PC0
 
 
 #define UART1_RX_PIN                        PB7
@@ -109,15 +108,16 @@
 #define GYRO_1_SPI_INSTANCE                 SPI3
 #define GYRO_1_ALIGN                        CW270_DEG
 
-#define TIMER_PIN_MAPPING                   TIMER_PIN_MAP( 0, LED_STRIP_PIN, 1, 8 ) \
-                                            TIMER_PIN_MAP( 1, SERVO1_PIN, 1,  9 ) \
-                                            TIMER_PIN_MAP( 2, SERVO2_PIN, 1, 10) \
-                                            TIMER_PIN_MAP( 3, BEEPER_PIN, 1, 7 )
+#define TIMER_PIN_MAPPING                   TIMER_PIN_MAP( 0, LED_STRIP_PIN, 1, 0 ) \
+                                            TIMER_PIN_MAP( 1, SERVO1_PIN, 1,  1 ) \
+                                            TIMER_PIN_MAP( 2, SERVO2_PIN, 1, 2) \
+                                            TIMER_PIN_MAP( 3, BEEPER_PIN, 1, 3 )
 
 #define ADC1_DMA_OPT                        11
-#define SPI1_TX_DMA_OPT                     12
-#define SPI2_TX_DMA_OPT                     13
-#define SPI3_TX_DMA_OPT                     14
+#define SPI2_TX_DMA_OPT                     8
+#define SPI2_RX_DMA_OPT                     7
+#define SPI3_TX_DMA_OPT                     6
+#define SPI3_RX_DMA_OPT                     5
 
 #define ADC_INSTANCE                        ADC1
 #define BARO_I2C_INSTANCE                   (I2CDEV_1)
