@@ -78,11 +78,12 @@
 #define BARO_CS_PIN          PC4
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PA2, 1,  0) \
-    TIMER_PIN_MAP( 1, PB5, 1,  0) \
-    TIMER_PIN_MAP( 2, PB6, 1,  0) \
-    TIMER_PIN_MAP( 3, PB7, 1,  0) \
-    TIMER_PIN_MAP( 4, PC8, 2,  0)
+    TIMER_PIN_MAP(0, PB5, 1, 0) \
+    TIMER_PIN_MAP(1, PB6, 1, 0) \
+    TIMER_PIN_MAP(2, PB7, 1, 0) \
+    TIMER_PIN_MAP(3, PA2, 1, 0) \
+    TIMER_PIN_MAP(4, PC8, 2, 0) \
+    TIMER_PIN_MAP(5, PB0, 1, -1)
 
 
 #define ADC1_DMA_OPT        1
