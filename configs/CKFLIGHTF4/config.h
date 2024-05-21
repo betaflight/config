@@ -90,7 +90,6 @@
 
 #define MAG_I2C_INSTANCE (I2CDEV_2)
 
-#define USE_BARO
 #define BARO_SPI_INSTANCE SPI1
 
 #define BEEPER_INVERTED
