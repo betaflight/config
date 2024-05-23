@@ -35,13 +35,6 @@
 #define USE_SDCARD_SPI
 #define USE_MAX7456
 
-#ifndef USE_MAG
-#define USE_MAG
-#define USE_MAG_HMC5883
-#define USE_MAG_QMC5883
-#define USE_MAG_IST8310
-#endif
-
 #define MOTOR1_PIN PB0
 #define MOTOR2_PIN PB1
 #define MOTOR3_PIN PA15
