@@ -25,6 +25,7 @@
 #define BOARD_NAME          EMAX_F405_ELRS_AIO
 #define MANUFACTURER_ID     EMAX 
 
+#define USE_ACC
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P 
 #define USE_ACC_SPI_ICM42688P 
@@ -34,8 +35,6 @@
 #define MOTOR2_PIN  PB1
 #define MOTOR3_PIN  PA3
 #define MOTOR4_PIN  PA2
-#define MOTOR5_PIN  PC8
-#define MOTOR6_PIN  PA8
 #define LED_STRIP_PIN   PB6
 #define UART1_TX_PIN    PA9
 #define UART3_TX_PIN    PB10
@@ -46,8 +45,6 @@
 #define UART4_RX_PIN    PA1
 #define UART5_RX_PIN    PD2
 #define UART6_RX_PIN    PC7
-#define INVERTER3_PIN   PC9
-#define INVERTER6_PIN   PC8
 #define LED1_PIN        PB5
 #define SPI1_SCK_PIN    PA5
 #define SPI2_SCK_PIN    PB13
@@ -57,8 +54,7 @@
 #define SPI3_SDI_PIN    PC11
 #define SPI1_SDO_PIN    PA7
 #define SPI2_SDO_PIN    PB15
-#define SPI3_SDO_PIN    C12
-#define BARO_CS_PIN     PB3
+#define SPI3_SDO_PIN    PC12
 #define ESCSERIAL1_PIN  PB8
 #define ADC_BATT_PIN    PC2
 #define ADC_RSSI_PIN    PC0
@@ -70,24 +66,18 @@
 #define USB_DETECT_PIN  PC5
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP(0,PB8 , 2, -1) \
-    TIMER_PIN_MAP(1,PC8 , 2, -1) \
-    TIMER_PIN_MAP(2,PB0 , 2, 0) \
-    TIMER_PIN_MAP(3,PB1 , 2, 0) \
-    TIMER_PIN_MAP(4,PA3 , 1, 1) \
-    TIMER_PIN_MAP(5,PA2 , 1, 0) \
-    TIMER_PIN_MAP(6,PB6 , 1, 0) \
-    TIMER_PIN_MAP(7,PA8 , 1, -1) \
-    TIMER_PIN_MAP(8,PA9 , 1, 0) \
-    TIMER_PIN_MAP(9,PA10 , 1, 0)
+    TIMER_PIN_MAP(0,PB0 , 2, 0) \
+    TIMER_PIN_MAP(1,PB1 , 2, 0) \
+    TIMER_PIN_MAP(2,PA3 , 1, 1) \
+    TIMER_PIN_MAP(3,PA2 , 1, 0) \
+    TIMER_PIN_MAP(4,PA9 , 1, 0) \
+    TIMER_PIN_MAP(5,PA10 , 1, 0)
 
 #define ADC2_DMA_OPT        1
 #define SPI2_TX_DMA_OPT     0
 
 
 #define SERIALRX_PROVIDER CRSF
-#define MAG_BUSTYPE SPI
-#define DEFAULT_BARO_DEVICE BARO_NONE
 #define ADC_DEVICE 2
 #define BLACKBOX_DEVICE SPIFLASH
 #define DSHOT_BURST ON
@@ -96,11 +86,11 @@
 #define BEEPER_INVERSION ON
 #define BEEPER_OD OFF
 #define SYSTEM_HSE_MHZ 8
-#define MAX7456_SPI_BUS SPI3
-#define FLASH_SPI_BUS SPI2
-#define GYRO_1_BUSTYPE SPI
+#define MAX7456_SPI_INSTANCE SPI3
+#define FLASH_SPI_INSTANCE SPI2
+#define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_SPIBUS SPI1
-#define GYRO_1_SENSOR_ALIGN CW90
+#define GYRO_1_ALIGN CW90_DEG
 #define GYRO_1_ALIGN_YAW 900
 #define GYRO_2_BUSTYPE SPI
 #define GYRO_2_SPIBUS 1
