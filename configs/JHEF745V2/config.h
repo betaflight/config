@@ -2,7 +2,7 @@
 
 #define FC_TARGET_MCU     STM32F745
 
-#define BOARD_NAME        JHEF745_ICM
+#define BOARD_NAME        JHEF745V2
 #define MANUFACTURER_ID   JHEF
 
 #define USE_ACC
