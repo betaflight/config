@@ -112,7 +112,7 @@
 #define PINIO1_CONFIG                   129
 #define PINIO1_BOX                      39
 
-#define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 0, LED_STRIP_PIN, 2, 7 ) \
+#define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 0, LED_STRIP_PIN, 1, 7 ) \
                                         TIMER_PIN_MAP( 1, BEEPER_PIN, 1,  6 ) \
                                         TIMER_PIN_MAP( 2, MOTOR5_PIN, 1,  11 ) \
                                         TIMER_PIN_MAP( 3, MOTOR6_PIN, 1,  10 ) \
