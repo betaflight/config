@@ -4,9 +4,6 @@ env:
 
 on:
   pull_request_target:
-    branches:
-      - master
-      - '*-maintenance'
 
 permissions:
   pull-requests: write
