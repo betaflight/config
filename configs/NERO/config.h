@@ -67,8 +67,8 @@
 
 // ADC
 #define ADC_VBAT_PIN         PC3
-#define ADC_CURR_PIN         PC2 # --> pin AD
-#define ADC_RSSI_PIN         PA4 # --> pin DA
+#define ADC_CURR_PIN         PC2 // --> pin AD
+#define ADC_RSSI_PIN         PA4 // --> pin DA
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
 
