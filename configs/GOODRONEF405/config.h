@@ -19,43 +19,49 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
-#define FC_TARGET_MCU     STM32F7X2
+#pragma once
 
-#define BOARD_NAME        TALONF7V2
-#define MANUFACTURER_ID   HENA
+#define FC_TARGET_MCU     STM32F405
+
+#define BOARD_NAME        GOODRONEF405
+#define MANUFACTURER_ID   GDFL
 
 #define USE_ACC
-#define USE_ACC_SPI_MPU6000
+#define USE_ACC_SPI_MPU6500
 #define USE_GYRO
-#define USE_GYRO_SPI_MPU6000
+#define USE_GYRO_SPI_MPU6500
+#define USE_GYRO_SPI_ICM42688P
+#define USE_ACC_SPI_ICM42688P
+#define USE_ACCGYRO_BMI270
+#define USE_BARO
+#define USE_BARO_SPI_BMP280
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
 
 #define BEEPER_PIN           PB4
-#define MOTOR1_PIN           PB6
-#define MOTOR2_PIN           PB7
-#define MOTOR3_PIN           PB8
-#define MOTOR4_PIN           PC8
-#define MOTOR5_PIN           PA1
-#define MOTOR6_PIN           PB9
-#define MOTOR7_PIN           PC9
-#define MOTOR8_PIN           PB1
-#define LED_STRIP_PIN        PB1
+#define MOTOR1_PIN           PB0
+#define MOTOR2_PIN           PB1
+#define MOTOR3_PIN           PA3
+#define MOTOR4_PIN           PA2
+#define MOTOR5_PIN           PC8
+#define MOTOR6_PIN           PA8
+#define RX_PPM_PIN           PB8
+#define SONAR_TRIGGER_PIN    PC9
+#define SONAR_ECHO_PIN       PA8
+#define LED_STRIP_PIN        PB6
 #define UART1_TX_PIN         PA9
-#define UART2_TX_PIN         PA2
 #define UART3_TX_PIN         PB10
 #define UART4_TX_PIN         PA0
-#define UART5_TX_PIN         PC12
 #define UART6_TX_PIN         PC6
 #define UART1_RX_PIN         PA10
-#define UART2_RX_PIN         PA3
 #define UART3_RX_PIN         PB11
 #define UART4_RX_PIN         PA1
 #define UART5_RX_PIN         PD2
 #define UART6_RX_PIN         PC7
-#define LED0_PIN             PB0
-#define RX_SPI_BIND_PIN      PB2
+#define INVERTER_PIN_UART3   PC9
+#define INVERTER_PIN_UART6   PC8
+#define LED0_PIN             PB5
 #define SPI1_SCK_PIN         PA5
 #define SPI2_SCK_PIN         PB13
 #define SPI3_SCK_PIN         PC10
@@ -64,48 +70,62 @@
 #define SPI3_SDI_PIN         PC11
 #define SPI1_SDO_PIN         PA7
 #define SPI2_SDO_PIN         PB15
-#define SPI3_SDO_PIN         PB5
-#define CAMERA_CONTROL_PIN   PB3
+#define SPI3_SDO_PIN         PC12
+#define ESCSERIAL_PIN        PB8
 #define ADC_VBAT_PIN         PC2
-#define ADC_RSSI_PIN         PC3
+#define ADC_RSSI_PIN         PC0
 #define ADC_CURR_PIN         PC1
+#define BARO_CS_PIN          PB3
+#define SDCARD_SPI_CS_PIN    PB12
+#define SDCARD_DETECT_PIN    PB7
 #define FLASH_CS_PIN         PB12
 #define MAX7456_SPI_CS_PIN   PA15
 #define GYRO_1_EXTI_PIN      PC4
 #define GYRO_1_CS_PIN        PA4
+#define USB_DETECT_PIN       PC5
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PB3 , 1, 0 ) \
-    TIMER_PIN_MAP( 1, PB6 , 1, 0 ) \
-    TIMER_PIN_MAP( 2, PB7 , 1, 0 ) \
-    TIMER_PIN_MAP( 3, PB8 , 1, 0 ) \
-    TIMER_PIN_MAP( 4, PB9 , 1, -1) \
-    TIMER_PIN_MAP( 5, PA1 , 2, 0 ) \
-    TIMER_PIN_MAP( 6, PC8 , 2, 0 ) \
-    TIMER_PIN_MAP( 7, PC9 , 2, 0 ) \
-    TIMER_PIN_MAP( 8, PB1 , 2, 0 )
+    TIMER_PIN_MAP( 0, PB8 , 2, -1) \
+    TIMER_PIN_MAP( 1, PC8 , 2, -1) \
+    TIMER_PIN_MAP( 2, PB0 , 2,  0) \
+    TIMER_PIN_MAP( 3, PB1 , 2,  0) \
+    TIMER_PIN_MAP( 4, PA3 , 1,  1) \
+    TIMER_PIN_MAP( 5, PA2 , 1,  0) \
+    TIMER_PIN_MAP( 6, PB6 , 1,  0) \
+    TIMER_PIN_MAP( 7, PA8 , 1, -1) \
+    TIMER_PIN_MAP( 8, PA9 , 1,  0) \
+    TIMER_PIN_MAP( 9, PA10, 1,  0)
 
 
-#define ADC1_DMA_OPT        1
 
+#define SPI2_TX_DMA_OPT     0
+#define ADC2_DMA_OPT        1
+
+#define MAG_I2C_INSTANCE (I2CDEV_2)
+#define BARO_SPI_INSTANCE SPI3
 #define DEFAULT_BARO_DEVICE BARO_NONE
 
+#define ADC_INSTANCE ADC2
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
+//TODO #define DSHOT_IDLE_VALUE 450
 #define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
+//TODO #define MOTOR_POLES 12
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SCALE 160
-#define DEFAULT_CURRENT_METER_SCALE 150
 #define BEEPER_INVERTED
-#define DEFAULT_PID_PROCESS_DENOM 1
-//TODO #define OSD_VBAT_POS 2447
-//TODO #define OSD_RSSI_POS 2074
-//TODO #define OSD_TIM_2_POS 2456
-//TODO #define OSD_VTX_CHANNEL_POS 2049
-//TODO #define OSD_CURRENT_POS 2439
-//TODO #define OSD_MAH_DRAWN_POS 2433
-//TODO #define OSD_CRAFT_NAME_POS 2058
-//TODO #define OSD_WARNINGS_POS 14378
+//TODO #define YAW_MOTORS_REVERSED ON
+#define SDCARD_DETECT_INVERTED
+#define USE_SDCARD_SPI
+#define SDCARD_SPI_INSTANCE SPI2
+#define SYSTEM_HSE_MHZ 8
+//TODO #define VTX_BAND 5
+//TODO #define VTX_CHANNEL 8
+//TODO #define VTX_POWER 1
+//TODO #define VTX_FREQ 5917
 #define MAX7456_SPI_INSTANCE SPI3
+#define DASHBOARD_I2C_INSTANCE (I2CDEV_2)
 #define FLASH_SPI_INSTANCE SPI2
 #define GYRO_1_SPI_INSTANCE SPI1
+#define GYRO_1_ALIGN CW270_DEG
+#define GYRO_1_ALIGN_YAW 2700
+#define GYRO_2_SPI_INSTANCE SPI1
