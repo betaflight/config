@@ -70,8 +70,7 @@
     TIMER_PIN_MAP(1,PB1 , 2, 0) \
     TIMER_PIN_MAP(2,PA3 , 1, 0) \
     TIMER_PIN_MAP(3,PA2 , 1, 0) \
-    TIMER_PIN_MAP(4,PA9 , 1, 0) \
-    TIMER_PIN_MAP(5,PA10 , 1, 0)
+    TIMER_PIN_MAP(4,PA10 , 1, 0)
 
 #define ADC2_DMA_OPT        1
 #define SPI2_TX_DMA_OPT     0
