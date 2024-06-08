@@ -23,14 +23,13 @@
 
 #define FC_TARGET_MCU     STM32F405
 #define BOARD_NAME        BHF405V3
-#define MANUFACTURER_ID   Brot
+#define MANUFACTURER_ID   BROT
 
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 #define USE_BARO
-#define USE_BARO_SPL06
 #define USE_BARO_BMP280
 #define USE_BARO_MS5611
 #define USE_BARO_DPS310
@@ -80,7 +79,6 @@
 #define GYRO_1_EXTI_PIN         PC4
 #define GYRO_1_CS_PIN           PA4
 
-
 #define TIMER_PIN_MAPPING \
         TIMER_PIN_MAP(0,  PB6, 1,  0)\
         TIMER_PIN_MAP(1,  PB7, 1,  0)\
@@ -110,16 +108,8 @@
 #define BEEPER_INVERTED
 #define FLASH_SPI_INSTANCE                  SPI2
 #define MAX7456_SPI_INSTANCE                SPI2   
-#define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE                 SPI1
 #define GYRO_1_ALIGN                        CW90_DEG
 #define SYSTEM_HSE_MHZ                      8       
-
-
 #define SERIALRX_UART                       SERIAL_PORT_USART2
 #define MSP_DISPLAYPORT_UART                SERIAL_PORT_UART5
-
-
-
-
-
