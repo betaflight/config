@@ -103,16 +103,12 @@
     TIMER_PIN_MAP(5,  PA3,  2,  5) \
     TIMER_PIN_MAP(6,  PD12, 1,  6) \
     TIMER_PIN_MAP(7,  PD13, 1,  7) \
-    TIMER_PIN_MAP(8,  PD14, 1, 12) \
-    TIMER_PIN_MAP(9,  PD15, 1, -1) \
-    TIMER_PIN_MAP(10, PE5,  1,  0) \
-    TIMER_PIN_MAP(11, PE6,  1, -1) \
-    TIMER_PIN_MAP(12, PA8,  1, 14) \
-    TIMER_PIN_MAP(13, PA15, 1,  0) \
-    TIMER_PIN_MAP(14, PC7,  2,  0) \
-    TIMER_PIN_MAP(15, PC6,  2,  0) \
-    TIMER_PIN_MAP(16, PB8,  1,  0) \
-    TIMER_PIN_MAP(17, PB9,  1,  0)
+    TIMER_PIN_MAP(8,  PA8,  1, 14) \
+    TIMER_PIN_MAP(9,  PA15, 1,  0) \
+    TIMER_PIN_MAP(10, PC7,  2,  0) \
+    TIMER_PIN_MAP(11, PC6,  2,  0) \
+    TIMER_PIN_MAP(12, PB8,  1,  0) \
+    TIMER_PIN_MAP(13, PB9,  1,  0)
 
 #define ADC1_DMA_OPT        8
 #define ADC3_DMA_OPT        9
@@ -123,7 +119,6 @@
 #define TIMUP5_DMA_OPT      0
 #define TIMUP8_DMA_OPT      0
 
-#define DEFAULT_GYRO_TO_USE             GYRO_CONFIG_USE_GYRO_1
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define MAX7456_SPI_INSTANCE            SPI2
 #define MAG_I2C_INSTANCE                I2CDEV_1
