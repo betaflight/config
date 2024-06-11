@@ -109,4 +109,5 @@
 #define SYSTEM_HSE_MHZ                      8       
 #define DEFAULT_DSHOT_BURST                 DSHOT_DMAR_ON
 #define SERIALRX_UART                       SERIAL_PORT_USART2
-#define MSP_DISPLAYPORT_UART                SERIAL_PORT_UART4
+#define MSP_DISPLAYPORT_UART                SERIAL_PORT_USART1
+
