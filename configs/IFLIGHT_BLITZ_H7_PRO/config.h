@@ -46,6 +46,10 @@
 #define MOTOR8_PIN              PD13
 #define RX_PPM_PIN              PA3
 #define LED_STRIP_PIN           PA8
+#define SERVO1_PIN              PD14
+#define SERVO2_PIN              PD15
+#define SERVO3_PIN              PE5
+#define SERVO4_PIN              PE6
 #define UART1_TX_PIN            PA9
 #define UART2_TX_PIN            PD5
 #define UART3_TX_PIN            PD8
@@ -103,12 +107,16 @@
     TIMER_PIN_MAP(5,  PA3,  2,  5) \
     TIMER_PIN_MAP(6,  PD12, 1,  6) \
     TIMER_PIN_MAP(7,  PD13, 1,  7) \
-    TIMER_PIN_MAP(8,  PA8,  1, 14) \
-    TIMER_PIN_MAP(9,  PA15, 1,  0) \
-    TIMER_PIN_MAP(10, PC7,  2,  0) \
-    TIMER_PIN_MAP(11, PC6,  2,  0) \
-    TIMER_PIN_MAP(12, PB8,  1,  0) \
-    TIMER_PIN_MAP(13, PB9,  1,  0)
+    TIMER_PIN_MAP(8,  PD14, 1, 12) \
+    TIMER_PIN_MAP(9,  PD15, 1, -1) \
+    TIMER_PIN_MAP(10, PE5,  1,  0) \
+    TIMER_PIN_MAP(11, PE6,  1, -1) \
+    TIMER_PIN_MAP(12, PA8,  1, 14) \
+    TIMER_PIN_MAP(13, PA15, 1,  0) \
+    TIMER_PIN_MAP(14, PC7,  2,  0) \
+    TIMER_PIN_MAP(15, PC6,  2,  0) \
+    TIMER_PIN_MAP(16, PB8,  1,  0) \
+    TIMER_PIN_MAP(17, PB9,  1,  0)
 
 #define ADC1_DMA_OPT        8
 #define ADC3_DMA_OPT        9
