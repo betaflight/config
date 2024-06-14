@@ -52,6 +52,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |GEFP|GetFPV LLC|https://www.getfpv.com/|
 |GEPR|GEPRC|https://geprc.com/|
 |GFPV|GE-FPV|http://www.ge-fpv.com/|
+[GMRC]Great Mountain RC|[https://github.com/shanggl|
 |HAMO|Happymodel|http://www.happymodel.cn/|
 |HARC|HAKRC|https://www.hakrc.com/|
 |HBRO|Holybro|http://www.holybro.com/index.html|
