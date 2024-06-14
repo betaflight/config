@@ -79,18 +79,22 @@
 #define GYRO_1_CS_PIN        PA4
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP(0,  PB6,  1,  0)\
-    TIMER_PIN_MAP(1,  PB7,  1,  0)\
-    TIMER_PIN_MAP(2,  PB8,  1,  0)\
-    TIMER_PIN_MAP(3,  PB9,  1,  0)\
-    TIMER_PIN_MAP(4,  PB0,  2,  0)\
-    TIMER_PIN_MAP(5,  PB1,  2,  0)\
-    TIMER_PIN_MAP(6,  PB5,  1,  0)\
-    TIMER_PIN_MAP(7,  PB4,  1,  0)\
-    TIMER_PIN_MAP(8,  PA8,  1,  0)\
-    TIMER_PIN_MAP(9,  PA3,  2,  0)\
-    TIMER_PIN_MAP(10, PB3,  1,  0)\
-    TIMER_PIN_MAP(11, PC9,  2,  0)
+        TIMER_PIN_MAP(0,  PB6,  1, -1)\
+        TIMER_PIN_MAP(1,  PB7,  1,  0)\
+        TIMER_PIN_MAP(2,  PB8,  1,  0)\
+        TIMER_PIN_MAP(3,  PB9,  1, -1)\
+        TIMER_PIN_MAP(4,  PB0,  2,  0)\
+        TIMER_PIN_MAP(5,  PB1,  2,  0)\
+        TIMER_PIN_MAP(6,  PB5,  1,  0)\
+        TIMER_PIN_MAP(7,  PB4,  1,  0)\
+        TIMER_PIN_MAP(8,  PA8,  1,  0)\
+        TIMER_PIN_MAP(9,  PA3,  2,  0)\
+        TIMER_PIN_MAP(10, PB3,  1,  0)\
+        TIMER_PIN_MAP(11, PC9,  2,  0)\
+        TIMER_PIN_MAP(12, PB10, 1,  0)\
+        TIMER_PIN_MAP(13, PB11, 1,  0)\
+        TIMER_PIN_MAP(14, PC8,  2,  0)\
+        TIMER_PIN_MAP(15, PA15, 1,  0)
 
 #define ADC1_DMA_OPT        0
 
