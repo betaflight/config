@@ -39,19 +39,19 @@
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
 
-#define MOTOR1_PIN           PA15
-#define MOTOR2_PIN           PB6
-#define MOTOR3_PIN           PB0
-#define MOTOR4_PIN           PB1
-#define MOTOR5_PIN           PC8
-#define MOTOR6_PIN           PC9
+#define MOTOR1_PIN           PA8
+#define MOTOR2_PIN           PA9
+#define SERVO1_PIN           PB0
+#define SERVO2_PIN           PB1
+#define SERVO3_PIN           PC8
+#define SERVO4_PIN           PC9
 #define LED_STRIP_PIN        PA1
-#define UART1_TX_PIN         PA9
+#define UART1_TX_PIN         PB6
 #define UART2_TX_PIN         PA2
 #define UART3_TX_PIN         PC10
 #define UART5_TX_PIN         PC12
 #define UART6_TX_PIN         PC6
-#define UART1_RX_PIN         PA10
+#define UART1_RX_PIN         PB7
 #define UART2_RX_PIN         PA3
 #define UART3_RX_PIN         PC11
 #define UART5_RX_PIN         PD2
@@ -78,18 +78,18 @@
 #define MAX7456_SPI_CS_PIN   PC15
 #define GYRO_1_EXTI_PIN      PB12
 #define GYRO_1_CS_PIN        PA4
-#define USB_DETECT_PIN       PA8
-#define PINIO1_PIN           PB7
+#define USB_DETECT_PIN       PA10
+#define PINIO1_PIN           PB14
 #define PINIO2_PIN           PB15
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PA15 , 1,  0) \
-    TIMER_PIN_MAP( 1, PB6  , 1,  0) \
-    TIMER_PIN_MAP( 2, PB0  , 2,  0) \
-    TIMER_PIN_MAP( 3, PB1  , 2,  0) \
-    TIMER_PIN_MAP( 4, PC8  , 2,  0) \
-    TIMER_PIN_MAP( 5, PC9  , 2,  0) \
-    TIMER_PIN_MAP( 6, PA1  , 2,  0)
+    TIMER_PIN_MAP( 0, MOTOR1_PIN     , 1,  1) \
+    TIMER_PIN_MAP( 1, MOTOR2_PIN     , 1,  0) \
+    TIMER_PIN_MAP( 2, SERVO1_PIN     , 2,  0) \
+    TIMER_PIN_MAP( 3, SERVO2_PIN     , 2,  0) \
+    TIMER_PIN_MAP( 4, SERVO3_PIN     , 2,  0) \
+    TIMER_PIN_MAP( 5, SE4RV4_PIN     , 2,  0) \
+    TIMER_PIN_MAP( 6, LED_STRIP_PIN  , 1,  0)
 
 
 #define ADC1_DMA_OPT        1
