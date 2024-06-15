@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F405
 
-#define BOARD_NAME        VRBF45
+#define BOARD_NAME        VRBF405
 #define MANUFACTURER_ID   VRBA
 
 #define USE_ACC
