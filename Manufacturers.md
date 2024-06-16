@@ -108,3 +108,4 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |WIZZ|WIZZ|https://wizz.store/|
 |YUPF|YuPiFc|https://www.yupifc.com/|
 |ZEEZ|Zeez RC|https://www.zeezrc.com/|
+|JLDZ|YYRC||
