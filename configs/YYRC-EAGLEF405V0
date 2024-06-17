@@ -23,10 +23,8 @@
 
 #define FC_TARGET_MCU     STM32F405
 
-#define BOARD_NAME        SPEDIXF405
-#define MANUFACTURER_ID   SPDX
 
-#define BOARD_NAME        EAGLEF722
+#define BOARD_NAME        EAGLEF405
 #define MANUFACTURER_ID   YYRC
 
 #define USE_ACC
