@@ -5,6 +5,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 
 |Manufacturer Id|Name|Contact|
 |-|-|-|
+|JLDZ|YYRC||
 |CUST|'Custom', to be used for homebrew targets||
 |FOSS|Free open source target definitions||
 |COMM|Community provided target definitions for closed source targets||
@@ -108,4 +109,4 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |WIZZ|WIZZ|https://wizz.store/|
 |YUPF|YuPiFc|https://www.yupifc.com/|
 |ZEEZ|Zeez RC|https://www.zeezrc.com/|
-|JLDZ|YYRC||
+
