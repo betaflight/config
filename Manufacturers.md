@@ -41,7 +41,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |FFRC|FlyFishRC|https://www.flyfish-rc.com/|
 |FLAO|FLAO Limited|https://www.sunrisemodel.com|
 |FLCO|Shenzhen Flycolor Electronic Co., LTD|http://www.flycolor.net/|
-[FLHI|Fly High|https://elektronchika.github.io/flyhigh/|
+|FLHI|Fly High|https://elektronchika.github.io/flyhigh/|
 |FLLF|Flying Lemon FPV|https://github.com/flyinglemonfpv|
 |FLMO|FlyMod|https://flymod.net/|
 |FLON|FlightOne|https://flightone.com/|
@@ -52,7 +52,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |GEFP|GetFPV LLC|https://www.getfpv.com/|
 |GEPR|GEPRC|https://geprc.com/|
 |GFPV|GE-FPV|http://www.ge-fpv.com/|
-[GMRC]Great Mountain RC|[https://github.com/shanggl|
+|GMRC|Great Mountain RC|https://github.com/shanggl|
 |HAMO|Happymodel|http://www.happymodel.cn/|
 |HARC|HAKRC|https://www.hakrc.com/|
 |HBRO|Holybro|http://www.holybro.com/index.html|
@@ -75,7 +75,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |MOQU|Modd Quad|https://www.moddquad.com/|
 |MTKS|Matek Systems|http://www.mateksys.com/|
 |MZGC|Manaz GCS|https://www.shop-mzgcs.de/|
-|NAMO|Namimno Silan Electronic Technology Co.Ltd|http://namimnorc.com/]
+|NAMO|Namimno Silan Electronic Technology Co.Ltd|http://namimnorc.com/|
 |NEBD|NewBeeDrone|https://newbeedrone.com/|
 |NERC|NeutronRC|https://www.facebook.com/Neutronrc-575638996448880|
 |NGUA|NG.UAVP|https://ng.uavp.ch/Shop|
