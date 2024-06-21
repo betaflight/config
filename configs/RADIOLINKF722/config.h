@@ -47,7 +47,6 @@
 #define MOTOR6_PIN           PB5
 #define MOTOR7_PIN           PB0
 #define MOTOR8_PIN           PB1
-#define RX_PPM_PIN           PA3
 #define LED_STRIP_PIN        PC8
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PA2
@@ -90,9 +89,7 @@
     TIMER_PIN_MAP( 5, PB5 , 1,  0) \
     TIMER_PIN_MAP( 6, PB0 , 2,  0) \
     TIMER_PIN_MAP( 7, PB1 , 2,  0) \
-    TIMER_PIN_MAP( 8, PC8 , 2,  0) \
-    TIMER_PIN_MAP( 9, PA3 , 3, -1) \
-    TIMER_PIN_MAP(10, PA0 , 2,  0)
+    TIMER_PIN_MAP( 8, PC8 , 2,  0) 
 
 
 #define SPI3_TX_DMA_OPT     0
@@ -101,7 +98,6 @@
 #define MAG_I2C_INSTANCE (I2CDEV_1)
 #define BARO_I2C_INSTANCE (I2CDEV_1)
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
-#define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SCALE 110
