@@ -27,14 +27,16 @@
 #define MANUFACTURER_ID   DFRA
 
 #define USE_ACC
-#define USE_BARO
-#define USE_FLASH
-#define USE_GYRO
-
 #define USE_ACC_SPI_ICM20689
+#define USE_ACC_SPI_ICM42688P
+#define USE_BARO
 #define USE_BARO_BMP280
+#define USE_BARO_DPS310
+#define USE_FLASH
 #define USE_FLASH_W25Q128FV
+#define USE_GYRO
 #define USE_GYRO_SPI_ICM20689
+#define USE_GYRO_SPI_ICM42688P
 #define USE_MAX7456
 
 #define BEEPER_PIN           PC15
@@ -102,6 +104,7 @@
 #define ADC3_DMA_OPT        0
 
 #define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
+#define BARO_I2C_INSTANCE (I2CDEV_2)
 #define MAG_I2C_INSTANCE (I2CDEV_2)
 
 #define ADC_INSTANCE ADC3
