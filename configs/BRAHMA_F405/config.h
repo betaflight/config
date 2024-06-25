@@ -33,7 +33,8 @@
 #define USE_BARO
 #define USE_BARO_DPS310
 #define USE_FLASH
-#define USE_FLASH_W25Q256
+// Originally used #define USE_FLASH_W25Q256, but we don't have such a define, hence use W25Q128FV
+#define USE_FLASH_W25Q128FV
 #define USE_MAX7456
 
 #define BEEPER_PIN PC13
