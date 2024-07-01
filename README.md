@@ -10,7 +10,6 @@ Cloud build takes care of the config repository for the general user, and knowle
 
 For a target to be successfully approved it **must** adhere to both https://betaflight.com/docs/development/manufacturer/requirements-for-submission-of-targets AND https://betaflight.com/docs/development/manufacturer/config-target-guidance.
 
-
 Pull-Requests for config submission should only be from a custom branch, and not `master` directly.
 
 ## How to use - Firmware
