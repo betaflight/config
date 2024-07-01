@@ -85,10 +85,10 @@
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PA1,  2,  0 ) \
     TIMER_PIN_MAP( 1, PB0,  2,  0 ) \
-    TIMER_PIN_MAP( 2, PB5,  2,  0 ) \
+    TIMER_PIN_MAP( 2, PB5,  1,  0 ) \
     TIMER_PIN_MAP( 3, PB1,  2,  0 ) \
-    TIMER_PIN_MAP( 4, PC8,  3,  0 ) \
-    TIMER_PIN_MAP( 5, PC9,  3,  0 ) \
+    TIMER_PIN_MAP( 4, PC8,  2,  0 ) \
+    TIMER_PIN_MAP( 5, PC9,  2,  0 ) \
     TIMER_PIN_MAP( 6, PA8,  1,  0 ) \
     TIMER_PIN_MAP( 7, PA9,  1,  0 ) \
     TIMER_PIN_MAP( 8, PB3,  1,  0 ) \
