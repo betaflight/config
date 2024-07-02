@@ -75,6 +75,7 @@
 #define ADC_VBAT_PIN         PC3
 #define ADC_RSSI_PIN         PC0
 #define ADC_CURR_PIN         PC2
+#define PINIO1_PIN           PD6
 #define FLASH_CS_PIN         PB3
 #define MAX7456_SPI_CS_PIN   PB14
 #define GYRO_1_EXTI_PIN      PB13
@@ -105,6 +106,8 @@
 #define MAX7456_SPI_INSTANCE            SPI3
 #define DASHBOARD_I2C_INSTANCE          (I2CDEV_1)
 #define FLASH_SPI_INSTANCE              SPI3
+#define PINIO1_CONFIG                   1
+#define PINIO1_BOX                      40
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define GYRO_1_ALIGN                    CW180_DEG
 #define GYRO_1_ALIGN_YAW                1800
