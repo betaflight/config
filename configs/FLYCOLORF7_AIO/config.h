@@ -26,6 +26,14 @@
 #define BOARD_NAME        FLYCOLORF7_AIO
 #define MANUFACTURER_ID   FLCO
 
+#define USE_ACC
+#define USE_ACC_SPI_MPU6000
+#define USE_GYRO
+#define USE_GYRO_SPI_MPU6000
+#define USE_FLASH
+#define USE_FLASH_W25Q128FV
+#define USE_MAX7456
+
 #define BEEPER_PIN           PC14
 #define MOTOR1_PIN           PB1
 #define MOTOR2_PIN           PB4
