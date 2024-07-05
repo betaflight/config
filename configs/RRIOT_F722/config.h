@@ -68,7 +68,7 @@
 #define SPI3_SDI_PIN PC11
 #define SPI3_SDO_PIN PB2
 
-#define CAMERA_CONTROL_PIN PC4
+#define CAMERA_CONTROL_PIN PA10
 #define ADC_VBAT_PIN PC0
 #define ADC_CURR_PIN PC1
 #define FLASH_CS_PIN PA15
@@ -78,13 +78,14 @@
 #define LED0_PIN PC14
 #define BEEPER_PIN PC13
 
-#define TIMER_PIN_MAPPING \
- TIMER_PIN_MAP(0, PA9, 1, 0) \
- TIMER_PIN_MAP(1, PA8, 1, 0) \
- TIMER_PIN_MAP(2, PC9, 1, 0) \
- TIMER_PIN_MAP(3, PC8, 1, 0) \
- TIMER_PIN_MAP(4, PB5, 1, 0) \
- TIMER_PIN_MAP(5, PB4, 1, 0)
+#define TIMER_PIN_MAPPING       \
+    TIMER_PIN_MAP(0, PA9, 1, 0) \
+    TIMER_PIN_MAP(1, PA8, 1, 0) \
+    TIMER_PIN_MAP(2, PC9, 1, 0) \
+    TIMER_PIN_MAP(3, PC8, 1, 0) \
+    TIMER_PIN_MAP(4, PB5, 1, 0) \
+    TIMER_PIN_MAP(5, PB4, 1, 0) \
+    TIMER_PIN_MAP(6, PA10, 1, -1)
 
 #define ADC1_DMA_OPT 0
 
