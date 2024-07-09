@@ -55,13 +55,16 @@
 #define BEEPER_PIN                          PC13
 
 #define MOTOR1_PIN                          PC6
-#define MOTOR2_PIN                          PC7
+#define MOTOR2_PIN                          PB5
 #define MOTOR3_PIN                          PC8
 #define MOTOR4_PIN                          PC9
 #define MOTOR5_PIN                          PA0
 #define MOTOR6_PIN                          PA1
 #define MOTOR7_PIN                          PA2
 #define MOTOR8_PIN                          PA3
+
+#define SERVO1_PIN                          PB7
+#define SERVO2_PIN                          PB8
 
 #define CAMERA_CONTROL_PIN                  PC5
 
@@ -76,11 +79,11 @@
 #define UART3_TX_PIN                        PB11
 #define UART3_RX_PIN                        PB10
 
-#define UART4_TX_PIN                        NONE
-#define UART4_RX_PIN                        NONE
+#define UART4_TX_PIN                        PH3
+#define UART4_RX_PIN                        PH2
 
-#define UART5_TX_PIN                        PB6
-#define UART5_RX_PIN                        PB5
+#define UART5_TX_PIN                        PB9
+#define UART5_RX_PIN                        PD2
 
 #define UART7_TX_PIN                        PB4
 #define UART7_RX_PIN                        PB3
@@ -88,8 +91,8 @@
 #define UART8_TX_PIN                        PC2
 #define UART8_RX_PIN                        PC3
 
-#define I2C2_SCL_PIN                        PH2
-#define I2C2_SDA_PIN                        PH3
+#define I2C1_SCL_PIN                        PB6
+#define I2C1_SDA_PIN                        PC7
 
 #define LED0_PIN                            PC14
 #define LED1_PIN                            PC15
@@ -107,12 +110,12 @@
 #define SPI3_SDO_PIN                        PC12
 
 #define ADC_VBAT_PIN                        PC0
-#define ADC_CURR_PIN                        NONE
+#define ADC_CURR_PIN                        PC1
 
 
-#define TIMER_PIN_MAPPING         \
+#define TIMER_PIN_MAPPING             \
         TIMER_PIN_MAP(0, PC6, 1, 9)   \
-        TIMER_PIN_MAP(1, PC7, 1, 10)  \
+        TIMER_PIN_MAP(1, PB5, 1, 10)  \
         TIMER_PIN_MAP(2, PC8, 1, 11)  \
         TIMER_PIN_MAP(3, PC9, 1, 12)  \
         TIMER_PIN_MAP(4, PA0, 1, -1)  \
@@ -120,13 +123,15 @@
         TIMER_PIN_MAP(6, PA2, 1, -1)  \
         TIMER_PIN_MAP(7, PA3, 1, -1)  \
         TIMER_PIN_MAP(8, PA8, 1, 8)   \
-        TIMER_PIN_MAP(9, PC5, 1, -1)  
+        TIMER_PIN_MAP(9, PB7, 1, -1)  \
+        TIMER_PIN_MAP(10, PB8, 2, -1) \
+        TIMER_PIN_MAP(11, PC5, 1, -1)  
 
 #define ADC1_DMA_OPT                        0
 #define SPI3_TX_DMA_OPT                     5
 
 #define ADC_INSTANCE                        ADC1
-#define BARO_I2C_INSTANCE                   I2CDEV_2
+#define BARO_I2C_INSTANCE                   I2CDEV_1
 
 #define DEFAULT_BLACKBOX_DEVICE             BLACKBOX_DEVICE_FLASH
 
