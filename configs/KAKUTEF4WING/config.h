@@ -57,9 +57,7 @@
 #define UART5_RX_PIN         PD2
 #define UART6_RX_PIN         PC7
 #define INVERTER_PIN_UART3   PC13
-#define I2C1_SCL_PIN         PB8
 #define I2C2_SCL_PIN         PB10
-#define I2C1_SDA_PIN         PB9
 #define I2C2_SDA_PIN         PB11
 #define LED0_PIN             PC5
 #define SPI1_SCK_PIN         PA5
@@ -84,17 +82,19 @@
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, MOTOR1_PIN     , 1,  1) \
-    TIMER_PIN_MAP( 1, MOTOR2_PIN     , 1,  0) \
+    TIMER_PIN_MAP( 1, MOTOR2_PIN     , 1,  1) \
     TIMER_PIN_MAP( 2, SERVO1_PIN     , 2,  0) \
     TIMER_PIN_MAP( 3, SERVO2_PIN     , 2,  0) \
-    TIMER_PIN_MAP( 4, SERVO3_PIN     , 2,  0) \
-    TIMER_PIN_MAP( 5, SE4RV4_PIN     , 2,  0) \
+    TIMER_PIN_MAP( 4, SERVO3_PIN     , 2,  1) \
+    TIMER_PIN_MAP( 5, SERVO4_PIN     , 2,  0) \
     TIMER_PIN_MAP( 6, LED_STRIP_PIN  , 1,  0)
 
 
-#define ADC1_DMA_OPT        1
+#define ADC1_DMA_OPT        0
 
-#define MAG_I2C_INSTANCE (I2CDEV_1)
+#define MIXER_MODE MIXER_FLYING_WING
+
+#define MAG_I2C_INSTANCE (I2CDEV_2)
 #define BARO_I2C_INSTANCE (I2CDEV_2)
 
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
