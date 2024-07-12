@@ -45,7 +45,6 @@
 #define MOTOR2_PIN PC8
 #define MOTOR3_PIN PA8
 #define MOTOR4_PIN PA9
-#define RX_PPM_PIN PB9
 #define LED_STRIP_PIN PB3
 #define UART1_TX_PIN PB6
 #define UART2_TX_PIN PA2
