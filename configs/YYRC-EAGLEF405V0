@@ -80,6 +80,7 @@
 #define GYRO_1_CS_PIN PA0
 #define USB_DETECT_PIN PA10
 #define PULLDOWN_PIN_UART1 PC0
+#define PINIO1_PIN PC1
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PB9 , 2, -1) \
