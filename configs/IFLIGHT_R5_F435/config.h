@@ -76,8 +76,7 @@
 
 // FLASH
 #define USE_FLASH
-#define USE_FLASH_W25M
-#define USE_FLASH_W25Q128FV             // Is this correct for W25Q512JVEIQ?
+#define USE_FLASH_W25M512
 #define FLASH_SPI_INSTANCE              SPI3
 #define FLASH_CS_PIN                    SPI3_NSS_PIN
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
