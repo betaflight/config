@@ -43,8 +43,6 @@
 #define USE_CAMERA_CONTROL
 #endif
 
-
-
 #define BEEPER_PIN PD15
 #define MOTOR1_PIN PB4
 #define MOTOR2_PIN PB5
