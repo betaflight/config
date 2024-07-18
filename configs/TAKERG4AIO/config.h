@@ -32,6 +32,15 @@
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
+// Added to enable barometer and specify types
+#define USE_BARO
+#define USE_BARO_BMP280
+#define USE_BARO_DPS310
+#define USE_BARO_MS5611
+// Added to enable magnetometer and specify types
+#define USE_MAG
+#define USE_MAG_QMC5883
+#define USE_MAG_IST8310
 
 #define BEEPER_PIN          PA15
 #define MOTOR1_PIN          PA0
@@ -101,3 +110,7 @@
 
 #define DEFAULT_ALIGN_BOARD_YAW      45
 #define GYRO_1_ALIGN                 CW270_DEG
+
+#define MAG_I2C_INSTANCE             (I2CDEV_1)
+#define BARO_I2C_INSTANCE            (I2CDEV_1)
+// Defines the I2C instance for magnetometer and barometer
