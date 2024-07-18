@@ -38,9 +38,11 @@
 #define USE_BARO_DPS310
 #define USE_BARO_MS5611
 // Added to enable magnetometer and specify types
+#ifndef USE_MAG
 #define USE_MAG
 #define USE_MAG_QMC5883
 #define USE_MAG_IST8310
+#endif
 
 #define BEEPER_PIN          PA15
 #define MOTOR1_PIN          PA0
