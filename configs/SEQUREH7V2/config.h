@@ -84,7 +84,6 @@
 #define GYRO_1_EXTI_PIN PD0
 #define GYRO_1_CS_PIN PB12
 
-
 #define TIMER_PIN_MAPPING \
      TIMER_PIN_MAP( 1, PB5, 1, -1) \
      TIMER_PIN_MAP( 2, PB0, 2, -1) \
