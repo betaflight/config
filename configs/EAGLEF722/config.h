@@ -50,8 +50,9 @@
 #define UART2_TX_PIN PA2
 #define UART3_TX_PIN PB10
 #define UART4_TX_PIN PA0
+#define UART5_TX_PIN PC12
 #define UART6_TX_PIN PC6
-#define UART1_RX_PIN PA7
+#define UART1_RX_PIN PB7
 #define UART2_RX_PIN PA3
 #define UART3_RX_PIN PC11
 #define UART4_RX_PIN PA1
@@ -71,11 +72,12 @@
 #define SPI2_SDO_PIN PB15
 #define SPI3_SDO_PIN PB5
 #define ADC_VBAT_PIN PB0
+#define ADC_RSSI_PIN PC2
 #define ADC_CURR_PIN PC3
 #define FLASH_CS_PIN PB12
 #define MAX7456_SPI_CS_PIN PA15
 #define GYRO_1_EXTI_PIN PC4
-#define GYRO_1_CS_PIN PA0
+#define GYRO_1_CS_PIN PA4
 #define USB_DETECT_PIN PA10
 #define PINIO1_PIN PC1
 
