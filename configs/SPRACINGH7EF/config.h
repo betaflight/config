@@ -85,7 +85,6 @@
 #define USE_FLASHFS
 #define USE_FLASH_TOOLS
 // For the SPI flash chip for logging
-#define USE_FLASH_W25Q128FV
 #define USE_FLASH_M25P16
 
 #define FLASH_CS_PIN            PD7 // *NOT* SPI6_NSS, SOFTWARE CS ONLY
