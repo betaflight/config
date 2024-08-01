@@ -113,8 +113,6 @@
 #define MAG_I2C_INSTANCE        (I2CDEV_2)
 #define BARO_I2C_INSTANCE       (I2CDEV_2)
 
-// no define matching USE_MPU_DATA_READY_SIGNAL in Betaflight 4.5 - did this mean gyro_exti?
-// #define USE_MPU_DATA_READY_SIGNAL
 #define ENSURE_MPU_DATA_READY_IS_LOW
 
 
