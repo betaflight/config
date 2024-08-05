@@ -31,6 +31,7 @@
 #define USE_ACC
 #define USE_ACC_SPI_MPU6000
 #define USE_MAX7456
+#define USE_VTX_RTC6705_SOFTSPI
 
 #define BEEPER_PIN           PB4
 #define MOTOR1_PIN           PB5
@@ -67,6 +68,10 @@
 #define VTX_CS_PIN           PC7
 #define VTX_DATA_PIN         PC6
 #define VTX_CLK_PIN          PC2
+#define RTC6705_SPI_SDO_PIN  PC6
+#define RTC6705_SPICLK_PIN   PC2
+#define RTC6705_CS_PIN       PC7
+
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PB5 , 1,  0) \
