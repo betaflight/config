@@ -72,7 +72,6 @@
 #define RTC6705_SPICLK_PIN   PC2
 #define RTC6705_CS_PIN       PC7
 
-
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PB5 , 1,  0) \
     TIMER_PIN_MAP( 1, PB0 , 2,  0) \
