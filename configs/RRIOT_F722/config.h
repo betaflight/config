@@ -99,5 +99,4 @@
 
 #define BEEPER_INVERTED
 
-#define PINIO1_PIN PB0
-#define PINIO1_BOX 39
+#define PINIO1_BOX 40
