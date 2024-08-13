@@ -22,7 +22,7 @@
 #pragma once
 
 #define FC_TARGET_MCU     STM32F405
-#define BOARD_NAME        BHF405V3
+#define BOARD_NAME        BROTHERHOBBYF405V3
 #define MANUFACTURER_ID   BROT
 
 #define USE_ACC
