@@ -60,6 +60,7 @@
 #define UART6_RX_PIN PC7
 #define I2C1_SCL_PIN PB8
 #define I2C1_SDA_PIN PB9
+#define LED_STRIP_PIN PA8
 #define LED0_PIN PC15
 #define SPI1_SCK_PIN PA5
 #define SPI2_SCK_PIN PB13
