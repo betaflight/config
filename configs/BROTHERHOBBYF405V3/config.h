@@ -80,17 +80,16 @@
 #define GYRO_1_CS_PIN           PA4
 
 #define TIMER_PIN_MAPPING \
- 	TIMER_PIN_MAP(0, PA8, 1, 0) \
+ 	TIMER_PIN_MAP(0, PA8, 1, 1) \
  	TIMER_PIN_MAP(1, PA9, 1, 1) \
  	TIMER_PIN_MAP(2, PB10, 1, 0) \
- 	TIMER_PIN_MAP(3, PB11, 1, 0) \
+ 	TIMER_PIN_MAP(3, PB11, 1, 1) \
  	TIMER_PIN_MAP(4, PB7, 1, 0) \
  	TIMER_PIN_MAP(5, PB6, 1, 0) \
  	TIMER_PIN_MAP(6, PB0, 2, 0) \
  	TIMER_PIN_MAP(7, PB1, 2, 0) \
  	TIMER_PIN_MAP(8, PC9, 2, 0)
 
-#define SPI2_TX_DMA_OPT     0
 #define ADC1_DMA_OPT        1
 
 #define MAG_I2C_INSTANCE                    (I2CDEV_1)
