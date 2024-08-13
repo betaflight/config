@@ -101,6 +101,7 @@
                                         TIMER_PIN_MAP( 8, PB4,  1,  0) \
                                         TIMER_PIN_MAP( 9, PB3,  1,  0)
 
+#define ADC3_DMA_OPT                    1
 #define ADC_INSTANCE                    ADC3
 #define BARO_I2C_INSTANCE               (I2CDEV_1)
 #define FLASH_SPI_INSTANCE              SPI3

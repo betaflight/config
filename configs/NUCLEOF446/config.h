@@ -29,20 +29,21 @@
 #define MANUFACTURER_ID                 STMI
 
 #define USE_ACC
-#define USE_FAKE_ACC
+// #define USE_FAKE_ACC
 #define USE_ACC_SPI_MPU6500
 #define USE_ACC_SPI_MPU9250
 #define USE_GYRO
-#define USE_FAKE_GYRO
+// #define USE_FAKE_GYRO
 #define USE_GYRO_SPI_MPU6500
 #define USE_GYRO_SPI_MPU9250
 #define USE_MAG
-#define USE_FAKE_MAG
-//#define USE_MAX7456
-//#define USE_SDCARD
-#define USE_SONAR
+// #define USE_FAKE_MAG
+// #define USE_MAX7456
+// #define USE_SDCARD
+// SONAR is not supported
+// #define USE_SONAR
 #define USE_RX_SPI
-#define USE_CC2500
+// #define USE_CC2500
 // #define USE_RX_NRF24
 // #define USE_RX_CX10
 // #define USE_RX_H8_3D
@@ -50,8 +51,8 @@
 // #define USE_RX_SYMA
 // #define USE_RX_V202
 
-//#define USE_BEEPER
-//#define BEEPER_PIN                    PD12
+// #define USE_BEEPER
+// #define BEEPER_PIN                    PD12
 
 #define LED0_PIN                        PA5  // Onboard (green) LED
 
