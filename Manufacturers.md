@@ -19,6 +19,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |BKRC|BAYCK RC||
 |BEFH|BETAFPV Hobby|https://betafpv.com/|
 |BKMN|Jason Blackman|https://github.com/blckmn|
+|BROT|Brotherhobby Co., Ltd|https://brotherhobby.com/|
 |BSTF|BEASTFPV|http://www.beastfpv.com/|
 |CADX|CADDX TECHNOLOGY (SHENZHEN) CO., LTD|https://caddxfpv.com/|
 |CCRC|Sunhey Now|https://sunheyccrc.aliexpress.com/|
