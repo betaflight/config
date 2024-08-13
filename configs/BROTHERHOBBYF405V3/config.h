@@ -22,7 +22,7 @@
 #pragma once
 
 #define FC_TARGET_MCU     STM32F405
-#define BOARD_NAME        BrotherHobbyF405V3
+#define BOARD_NAME        BHF405V3
 #define MANUFACTURER_ID   BROT
 
 #define USE_ACC
@@ -73,7 +73,7 @@
 #define ADC_VBAT_PIN            PC0
 #define ADC_RSSI_PIN            PC5
 #define ADC_CURR_PIN            PC1
-#define PINIO1_PIN 				PC14
+#define PINIO1_PIN              PC14
 #define FLASH_CS_PIN            PA15
 #define MAX7456_SPI_CS_PIN      PB12
 #define GYRO_1_EXTI_PIN         PC4
@@ -106,6 +106,5 @@
 #define GYRO_1_SPI_INSTANCE                 SPI1
 #define GYRO_1_ALIGN                        CW90_DEG
 #define SYSTEM_HSE_MHZ                      8  
-#define DASHBOARD_I2C_INSTANCE 				(I2CDEV_1)
 #define PINIO1_CONFIG 129
 #define PINIO1_BOX 40
