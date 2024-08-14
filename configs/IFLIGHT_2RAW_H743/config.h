@@ -45,10 +45,10 @@
 #define MOTOR7_PIN              PD12
 #define MOTOR8_PIN              PD13
 #define LED_STRIP_PIN           PA8
-#define SERVO1_PIN              PD14
-#define SERVO2_PIN              PD15
-#define SERVO3_PIN              PE5
-#define SERVO4_PIN              PE6
+#define SERVO1_PIN              PD14 //  S9
+#define SERVO2_PIN              PD15 // S10
+#define SERVO3_PIN              PE5  // S11
+#define SERVO4_PIN              PE6  // S12
 #define UART1_TX_PIN            PA9
 #define UART2_TX_PIN            PD5
 #define UART3_TX_PIN            PD8
@@ -71,30 +71,25 @@
 #define LED2_PIN                PE4
 #define SPI1_SCK_PIN            PA5
 #define SPI2_SCK_PIN            PB13
-//#define SPI3_SCK_PIN            PB3
+#define SPI3_SCK_PIN            PB3
 #define SPI3_SCK_PIN            PC10
 #define SPI4_SCK_PIN            PE12
 #define SPI1_SDI_PIN            PA6
 #define SPI2_SDI_PIN            PB14
-//#define SPI3_SDI_PIN            PB4
+#define SPI3_SDI_PIN            PB4
 #define SPI3_SDI_PIN            PC11
 #define SPI4_SDI_PIN            PE13
 #define SPI1_SDO_PIN            PD7
 #define SPI2_SDO_PIN            PB15
-//#define SPI3_SDO_PIN            PB5
+#define SPI3_SDO_PIN            PB5
 #define SPI3_SDO_PIN            PC12
 #define SPI4_SDO_PIN            PE14
 #define ADC_VBAT_PIN            PC0
 #define ADC_RSSI_PIN            PC5
 #define ADC_CURR_PIN            PC1
 #define ADC_EXTERNAL1_PIN       PC4
-//#define PINIO1_PIN              PD10
-//#define SDIO_CK_PIN             PC12
-//#define SDIO_CMD_PIN            PD2
-//#define SDIO_D0_PIN             PC8
-//#define SDIO_D1_PIN             PC9
-//#define SDIO_D2_PIN             PC10
-//#define SDIO_D3_PIN             PC11
+#define PINIO1_PIN              PD10
+#define PINIO2_PIN              PD11
 #define SDCARD_SPI_CS_PIN       PA15
 #define MAX7456_SPI_CS_PIN      PB12
 #define GYRO_1_EXTI_PIN         PB2
@@ -110,29 +105,24 @@
     TIMER_PIN_MAP(4,  PA2,  2,  4) \
     TIMER_PIN_MAP(5,  PA3,  2,  5) \
     TIMER_PIN_MAP(6,  PD12, 1,  6) \
-    TIMER_PIN_MAP(7,  PD13, 1, -1) \
+    TIMER_PIN_MAP(7,  PD13, 1,  7) \
     TIMER_PIN_MAP(8,  PD14, 1, -1) \
     TIMER_PIN_MAP(9,  PD15, 1, -1) \
     TIMER_PIN_MAP(10, PE5,  1, -1) \
     TIMER_PIN_MAP(11, PE6,  1, -1) \
     TIMER_PIN_MAP(12, PA8,  1, 14) 
 
-#define ADC1_DMA_OPT        7
-#define ADC3_DMA_OPT        8
-//#define TIMUP1_DMA_OPT      0
-//#define TIMUP2_DMA_OPT      0
-//#define TIMUP3_DMA_OPT      2
-//#define TIMUP4_DMA_OPT      1
-//#define TIMUP5_DMA_OPT      0
-//#define TIMUP8_DMA_OPT      0
+#define ADC1_DMA_OPT        8
+#define ADC3_DMA_OPT        9
+#define TIMUP3_DMA_OPT      10
+#define TIMUP4_DMA_OPT      11
+#define TIMUP5_DMA_OPT      12
 
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define MAX7456_SPI_INSTANCE            SPI2
 #define USE_SDCARD_SPI
 #define SDCARD_SPI_INSTANCE             SPI3
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
-//#define SDIO_DEVICE                     SDIODEV_1
-//#define SDIO_USE_4BIT                   1
 
 #define MAG_I2C_INSTANCE                I2CDEV_1
 #define BARO_I2C_INSTANCE               I2CDEV_2
@@ -140,9 +130,11 @@
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_CURRENT_METER_SCALE     200
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SCALE     210
+#define DEFAULT_VOLTAGE_METER_SCALE     210 // Check
 
-//#define PINIO1_BOX                      40
-//#define PINIO2_BOX                      41
+#define PINIO1_BOX                      40
+#define PINIO2_BOX                      41
+//#define PINIO1_CONFIG 129 // Check
+//#define PINIO2_CONFIG 129 // Check
 
-#define BEEPER_INVERTED
+#define BEEPER_INVERTED // Check
