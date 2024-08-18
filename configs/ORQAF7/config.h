@@ -75,7 +75,6 @@
 #define GYRO_1_EXTI_PIN      PC4
 #define GYRO_1_CS_PIN        PB2
 #define GYRO_1_SPI_INSTANCE SPI1
-#define USE_SPI_GYRO
 
 #define SPI2_SCK_PIN         PB13
 #define SPI2_SDI_PIN         PB14
