@@ -83,6 +83,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |NGUA|NG.UAVP|https://ng.uavp.ch/Shop|
 |ODTY|OddityRC|http://www.oddityrc.com|
 |OPEN|OpenPilot|https://librepilot.atlassian.net/wiki/spaces/LPDOC/pages/31588369/Supported+Hardware|
+|ORQA|Orqa Ltd|https://orqafpv.com/|
 |PYDR|Pyro-Drone|https://pyrodrone.com/|
 |PYID|PYI Technologies|https://pyidrones.com/|
 |RALI|RadioLink Electronic Ltd|https://radiolink.com/|
