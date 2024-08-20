@@ -87,7 +87,7 @@
 #define MAG_I2C_INSTANCE                (I2CDEV_1)
 #define BARO_I2C_INSTANCE               (I2CDEV_1)
 
-// UART & VCP
+// UART
 #define UART1_RX_PIN                    PA10
 #define UART1_TX_PIN                    PA9
 #define UART2_RX_PIN                    PA3
