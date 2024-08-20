@@ -97,6 +97,12 @@
 #define UART5_RX_PIN                    PB8
 #define UART5_TX_PIN                    PB9
 
+#define ESCSERIAL_PIN                   PB8
+#define DEFAULT_FEATURE                 FEATURE_ESC_SENSOR
+#define ESC_SENSOR_UART                 SERIAL_PORT_UART5
+#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ESC
+#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ESC
+
 // ADC
 // #define ADC_VBAT_PIN                    PC2 // Not connected?
 // #define ADC_CURR_PIN                    PC1 // Not connected?
@@ -110,7 +116,7 @@
 
 // TIMERS & DMA
 #define TIMER_PIN_MAPPING               TIMER_PIN_MAP(  0, PA8,  1,  0 ) \
-                                        TIMER_PIN_MAP(  1, PB0,  2,  1 ) \
-                                        TIMER_PIN_MAP(  2, PB1,  2,  2 ) \
-                                        TIMER_PIN_MAP(  3, PB10,  1,  3 ) \
-                                        TIMER_PIN_MAP(  4, PB11,  1,  4 ) 
+                                        TIMER_PIN_MAP(  1, PB0,  2,  0 ) \
+                                        TIMER_PIN_MAP(  2, PB1,  2,  0 ) \
+                                        TIMER_PIN_MAP(  3, PB10,  1,  0 ) \
+                                        TIMER_PIN_MAP(  4, PB11,  1,  0 ) 
