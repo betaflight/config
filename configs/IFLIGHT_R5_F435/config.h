@@ -120,3 +120,4 @@
                                         TIMER_PIN_MAP(  2, PB1,  2,  0 ) \
                                         TIMER_PIN_MAP(  3, PB10,  1,  0 ) \
                                         TIMER_PIN_MAP(  4, PB11,  1,  0 ) 
+										
