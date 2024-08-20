@@ -98,7 +98,7 @@
 #define UART5_TX_PIN                    PB9
 
 #define ESCSERIAL_PIN                   PB8
-#define DEFAULT_FEATURE                 FEATURE_ESC_SENSOR
+#define DEFAULT_FEATURES                FEATURE_ESC_SENSOR
 #define ESC_SENSOR_UART                 SERIAL_PORT_UART5
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ESC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ESC
