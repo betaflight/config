@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F405
 
-#define BOARD_NAME        FLYSPARK F4
+#define BOARD_NAME        FLYSPARKF4
 #define MANUFACTURER_ID   FLYS
 
 #define USE_ACC
