@@ -21,7 +21,7 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     STM32FX2
+#define FC_TARGET_MCU     STM32F7X2
 #define BOARD_NAME DREAMFLYF722
 #define MANUFACTURER_ID DFRC
 
