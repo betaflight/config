@@ -26,6 +26,14 @@
 #define BOARD_NAME        FF_RACEPITF7
 #define MANUFACTURER_ID   FFPV
 
+#define USE_ACC
+#define USE_ACC_SPI_MPU6000
+#define USE_GYRO
+#define USE_GYRO_SPI_MPU6000
+#define USE_FLASH
+#define USE_FLASH_W25Q128FV
+#define USE_MAX7456
+
 #define BEEPER_PIN           PC3
 #define MOTOR1_PIN           PB0
 #define MOTOR2_PIN           PB1
