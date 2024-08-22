@@ -26,6 +26,8 @@
 #define BOARD_NAME        FLOWBOX
 #define MANUFACTURER_ID   NERC
 
+#define USE_ACCGYRO_BMI270
+
 #define BEEPER_PIN           PB1
 #define MOTOR1_PIN           PB10
 #define MOTOR2_PIN           PA0
@@ -61,6 +63,7 @@
 #define BEEPER_PWM_HZ 2185
 #define BEEPER_INVERTED
 #define SYSTEM_HSE_MHZ 8
+#define USE_SDCARD_SPI
 #define FLASH_SPI_INSTANCE SPI3
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW180_DEG

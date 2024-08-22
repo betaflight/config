@@ -26,6 +26,8 @@
 #define BOARD_NAME        FLOWBOXV2
 #define MANUFACTURER_ID   NERC
 
+#define USE_ACCGYRO_BMI270
+
 #define BEEPER_PIN           PB8
 #define MOTOR1_PIN           PA0
 #define MOTOR2_PIN           PB0
