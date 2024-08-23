@@ -35,7 +35,6 @@
 #define USE_FLASH_W25N01G
 #define USE_BARO
 #define USE_BARO_BMP280
-#define USE_BARO_SPI_BMP280
 #define USE_MAX7456
 
 #define BEEPER_PIN           PC11
