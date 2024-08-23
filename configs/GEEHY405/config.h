@@ -49,12 +49,12 @@
 #define MOTOR8_PIN           PB11
 #define LED_STRIP_PIN        PB8
 #define RX_PPM_PIN           PA3
-#define UART1_TX_PIN         PB6
+#define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PA2
 #define UART3_TX_PIN         PC10
 #define UART4_TX_PIN         PA0
 #define UART5_TX_PIN         PC12
-#define UART1_RX_PIN         PB7
+#define UART1_RX_PIN         PA10
 #define UART2_RX_PIN         PA3
 #define UART3_RX_PIN         PC11
 #define UART4_RX_PIN         PA1
