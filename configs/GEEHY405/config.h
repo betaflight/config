@@ -24,13 +24,12 @@
 #define FC_TARGET_MCU     APM32F405
 
 #define BOARD_NAME        GEEHY405
-#define MANUFACTURER_ID   FOSS
+#define MANUFACTURER_ID   CUST
 
 #define USE_ACC
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 #define USE_ACC_SPI_ICM42688P
-#define USE_SDCARD
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
@@ -48,7 +47,6 @@
 #define MOTOR7_PIN           PB10
 #define MOTOR8_PIN           PB11
 #define LED_STRIP_PIN        PB8
-#define RX_PPM_PIN           PA3
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PA2
 #define UART3_TX_PIN         PC10
@@ -90,8 +88,7 @@
     TIMER_PIN_MAP( 5, PB1 , 1,  0) \
     TIMER_PIN_MAP( 6, PB10, 1,  0) \
     TIMER_PIN_MAP( 7, PB11, 1,  0) \
-    TIMER_PIN_MAP( 8, PB8 , 1,  -1) \
-    TIMER_PIN_MAP( 9, PA3 , 2,  0) 
+    TIMER_PIN_MAP( 8, PB8 , 1,  -1) 
 	
 #define ADC1_DMA_OPT 0
 
@@ -104,10 +101,7 @@
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
 #define DEFAULT_CURRENT_METER_SCALE 400
 #define BEEPER_INVERTED
-#define SDCARD_DETECT_INVERTED
-#define USE_SDCARD_SPI
 #define FLASH_SPI_INSTANCE SPI3
-#define SDCARD_SPI_INSTANCE SPI3
 #define SYSTEM_HSE_MHZ 8
 #define MAX7456_SPI_INSTANCE SPI2
 #define PINIO1_BOX 40
