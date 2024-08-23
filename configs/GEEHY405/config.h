@@ -24,7 +24,7 @@
 #define FC_TARGET_MCU     APM32F405
 
 #define BOARD_NAME        GEEHY405
-#define MANUFACTURER_ID   geehy
+#define MANUFACTURER_ID   FOSS
 
 #define USE_ACC
 #define USE_GYRO
