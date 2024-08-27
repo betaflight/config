@@ -165,5 +165,5 @@
 
 #define PINIO1_BOX 40 // User 1
 #define PINIO2_BOX 41 // User 2
-#define PINIO3_BOX 39 // Pit mode
+#define PINIO3_BOX 42 // Turn VTX on/off
 
