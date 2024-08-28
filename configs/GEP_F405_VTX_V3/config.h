@@ -26,6 +26,11 @@
 #define BOARD_NAME        GEP_F405_VTX_V3
 #define MANUFACTURER_ID   GEPR
 
+#define USE_ACC
+#define USE_ACC_SPI_MPU6000
+#define USE_GYRO
+#define USE_GYRO_SPI_MPU6000
+
 #define BEEPER_PIN           PB4
 #define MOTOR1_PIN           PB0
 #define MOTOR2_PIN           PB1
