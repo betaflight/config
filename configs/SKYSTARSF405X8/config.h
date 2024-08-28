@@ -39,8 +39,8 @@
 #define MOTOR2_PIN           PC7
 #define MOTOR3_PIN           PC8
 #define MOTOR4_PIN           PC9
-#define MOTOR5_PIN           PA8
-#define MOTOR6_PIN           PA9
+#define MOTOR5_PIN           PB10
+#define MOTOR6_PIN           PB11
 #define MOTOR7_PIN           PB0
 #define MOTOR8_PIN           PB1
 #define LED_STRIP_PIN        PA10
@@ -55,9 +55,9 @@
 #define UART4_RX_PIN         PA1
 #define UART5_RX_PIN         PD2
 #define I2C1_SCL_PIN         PB8
-#define I2C2_SCL_PIN         PB10
+//#define I2C2_SCL_PIN         PB10
 #define I2C1_SDA_PIN         PB9
-#define I2C2_SDA_PIN         PB11
+//#define I2C2_SDA_PIN         PB11
 #define LED0_PIN             PC14
 #define LED1_PIN             PC15
 #define SPI1_SCK_PIN         PA5
@@ -83,17 +83,17 @@
     TIMER_PIN_MAP( 1, PC7 , 2,  1) \
     TIMER_PIN_MAP( 2, PC8 , 2,  1) \
     TIMER_PIN_MAP( 3, PC9 , 2,  0) \
-    TIMER_PIN_MAP( 4, PA8 , 1,  0) \
-    TIMER_PIN_MAP( 5, PA9 , 1,  0) \
+    TIMER_PIN_MAP( 4, PB10, 1,  0) \
+    TIMER_PIN_MAP( 5, PB11, 1,  1) \
     TIMER_PIN_MAP( 6, PB0 , 2,  0) \
     TIMER_PIN_MAP( 7, PB1 , 2,  0) \
-    TIMER_PIN_MAP( 8, PA10 , 1, 0)
+    TIMER_PIN_MAP( 8, PA10, 1, 0)
 
 #define ADC3_DMA_OPT                 1
 
 #define USE_BARO
-#define BARO_I2C_INSTANCE           (I2CDEV_2)  // On-board I2C2
-#define MAG_I2C_INSTANCE            (I2CDEV_1)  // External I2C1
+#define BARO_I2C_INSTANCE           (I2CDEV_1)
+#define MAG_I2C_INSTANCE            (I2CDEV_1) 
 
 #define SERIALRX_UART                SERIAL_PORT_USART2
 #define ESC_SENSOR_UART              SERIAL_PORT_USART3
