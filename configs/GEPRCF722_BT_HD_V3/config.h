@@ -66,7 +66,6 @@
 #define SPI1_SDO_PIN         PA7
 #define SPI2_SDO_PIN         PB15
 #define SPI3_SDO_PIN         PB5
-#define CAMERA_CONTROL_PIN   PA0
 #define ADC_VBAT_PIN         PC1
 #define ADC_CURR_PIN         PC2
 #define SDCARD_SPI_CS_PIN    PB9
@@ -77,17 +76,16 @@
 #define GYRO_1_CS_PIN        PA15
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PA0 , 2, -1) \
-    TIMER_PIN_MAP( 1, PA3 , 3, -1) \
-    TIMER_PIN_MAP( 2, PC8 , 2,  1) \
-    TIMER_PIN_MAP( 3, PC6 , 2,  0) \
-    TIMER_PIN_MAP( 4, PC9 , 2,  0) \
-    TIMER_PIN_MAP( 5, PC7 , 2,  1) \
-    TIMER_PIN_MAP( 6, PB6 , 1,  0) \
-    TIMER_PIN_MAP( 7, PB7 , 1,  0) \
-    TIMER_PIN_MAP( 8, PB1 , 2,  0) \
-    TIMER_PIN_MAP( 9, PB0 , 2,  0) \
-    TIMER_PIN_MAP(10, PA1 , 1,  0)
+    TIMER_PIN_MAP(0, PA3 , 3, -1) \
+    TIMER_PIN_MAP(1, PC8 , 2,  1) \
+    TIMER_PIN_MAP(2, PC6 , 2,  0) \
+    TIMER_PIN_MAP(3, PC9 , 2,  0) \
+    TIMER_PIN_MAP(4, PC7 , 2,  1) \
+    TIMER_PIN_MAP(5, PB6 , 1,  0) \
+    TIMER_PIN_MAP(6, PB7 , 1,  0) \
+    TIMER_PIN_MAP(7, PB1 , 2,  0) \
+    TIMER_PIN_MAP(8, PB0 , 2,  0) \
+    TIMER_PIN_MAP(9, PA1 , 1,  0)
 
 #define ADC3_DMA_OPT                   1
 
