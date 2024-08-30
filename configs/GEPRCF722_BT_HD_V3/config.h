@@ -88,23 +88,26 @@
     TIMER_PIN_MAP(9, PA1 , 1,  0)
 
 #define ADC3_DMA_OPT                   1
+#define ADC_INSTANCE                   ADC3
 
 #define MAG_I2C_INSTANCE               (I2CDEV_2)
 #define BARO_I2C_INSTANCE              (I2CDEV_2)
 
-#define ADC_INSTANCE                   ADC3
-
 #define USE_SDCARD_SPI
 #define DEFAULT_BLACKBOX_DEVICE        BLACKBOX_DEVICE_SDCARD
+
 #define DEFAULT_DSHOT_BITBANG          DSHOT_BITBANG_ON
+
 #define DEFAULT_CURRENT_METER_SOURCE   CURRENT_METER_ESC
 #define DEFAULT_VOLTAGE_METER_SOURCE   VOLTAGE_METER_ADC
 #define DEFAULT_CURRENT_METER_SCALE    100
+
 #define BEEPER_INVERTED
 
 #define GYRO_1_SPI_INSTANCE            SPI1
-#define SDCARD_SPI_INSTANCE            SPI3
 #define MAX7456_SPI_INSTANCE           SPI2
+#define SDCARD_SPI_INSTANCE            SPI3
+
 #define PINIO1_CONFIG                  129
 #define PINIO2_CONFIG                  1
 #define PINIO1_BOX                     0
