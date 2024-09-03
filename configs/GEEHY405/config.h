@@ -24,7 +24,7 @@
 #define FC_TARGET_MCU     APM32F405
 
 #define BOARD_NAME        GEEHY405
-#define MANUFACTURER_ID   CUST
+#define MANUFACTURER_ID   HGFP
 
 #define USE_ACC
 #define USE_GYRO
