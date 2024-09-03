@@ -28,7 +28,7 @@
 
 // LEDS
 #define BEEPER_PIN                          PC15
-#define BEEPER_INVERTED			             
+#define BEEPER_INVERTED             
 #define LED_STRIP_PIN                       PC9
 #define LED0_PIN                            PC13
 #define LED0_INVERTED
@@ -42,16 +42,16 @@
 #define MOTOR6_PIN                          PB6
 #define MOTOR7_PIN                          PB0
 #define MOTOR8_PIN                          PB1
-            
-// SPI          
+
+// SPI
 #define SPI1_SCK_PIN                        PA5
 #define SPI1_SDI_PIN                        PA6
 #define SPI1_SDO_PIN                        PA7
-            
+
 #define SPI2_SCK_PIN                        PB13
 #define SPI2_SDI_PIN                        PB14
 #define SPI2_SDO_PIN                        PB15
-            
+
 #define SPI3_SCK_PIN                        PB3
 #define SPI3_SDI_PIN                        PB4
 #define SPI3_SDO_PIN                        PB5
@@ -73,7 +73,7 @@
 // OSD
 #define USE_MAX7456
 #define MAX7456_SPI_CS_PIN                  PB12
-#define MAX7456_SPI_INSTANCE                SPI2   
+#define MAX7456_SPI_INSTANCE                SPI2
 
 // FLASH
 #define USE_FLASH
@@ -94,7 +94,7 @@
 #define MAG_I2C_INSTANCE                    (I2CDEV_1)
 
 // UART & VCP
-#define UART1_RX_PIN                        PA10			
+#define UART1_RX_PIN                        PA10	
 #define UART2_TX_PIN                        PA2
 #define UART2_RX_PIN                        PA3
 #define UART3_TX_PIN                        PC10
@@ -106,7 +106,7 @@
 #define UART6_TX_PIN                        PC6
 #define UART6_RX_PIN                        PC7
 
-// ADC			
+// ADC
 #define ADC_VBAT_PIN                        PC0
 #define ADC_RSSI_PIN                        PC5
 #define ADC_CURR_PIN                        PC1
@@ -122,15 +122,15 @@
 
 // TIMERS & DMA
 #define TIMER_PIN_MAPPING \
- 	TIMER_PIN_MAP(0, PA8, 1, 0) \
- 	TIMER_PIN_MAP(1, PA9, 1, 0) \
+ 	TIMER_PIN_MAP(0, PA8,  1, 0) \
+ 	TIMER_PIN_MAP(1, PA9,  1, 0) \
  	TIMER_PIN_MAP(2, PB10, 1, 0) \
  	TIMER_PIN_MAP(3, PB11, 1, 0) \
- 	TIMER_PIN_MAP(4, PB7, 1, 0) \
- 	TIMER_PIN_MAP(5, PB6, 1, 0) \
- 	TIMER_PIN_MAP(6, PB0, 2, 0) \
- 	TIMER_PIN_MAP(7, PB1, 2, 0) \
- 	TIMER_PIN_MAP(8, PC9, 2, 0)
+ 	TIMER_PIN_MAP(4, PB7,  1, 0) \
+ 	TIMER_PIN_MAP(5, PB6,  1, 0) \
+ 	TIMER_PIN_MAP(6, PB0,  2, 0) \
+ 	TIMER_PIN_MAP(7, PB1,  2, 0) \
+ 	TIMER_PIN_MAP(8, PC9,  2, 0)
 
 #define DEFAULT_DSHOT_BURST                 DSHOT_DMAR_AUTO
 #define DEFAULT_DSHOT_BITBANG               DSHOT_BITBANG_ON
