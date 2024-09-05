@@ -82,6 +82,8 @@
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
 
 // BARO & MAG
+#define USE_BARO
+#define USE_BARO_DPS310
 #define I2C1_SCL_PIN                    PB6
 #define I2C1_SDA_PIN                    PB7
 #define MAG_I2C_INSTANCE                (I2CDEV_1)
@@ -92,27 +94,30 @@
 #define UART1_TX_PIN                    PA9
 #define UART2_RX_PIN                    PA3
 #define UART2_TX_PIN                    PA2
-#define UART4_RX_PIN                    PA1
-#define UART4_TX_PIN                    PA0
+#define UART4_RX_PIN                    PH2
+#define UART4_TX_PIN                    PH3
 #define UART5_RX_PIN                    PB8
 #define UART5_TX_PIN                    PB9
 
-#define ESCSERIAL_PIN                   PB8
+#define SERIALRX_UART                   SERIAL_PORT_UART4 //On-board ELRS receiver on UART4
+#define SERIALRX_PROVIDER               SERIALRX_CRSF
+
+#define ESCSERIAL_PIN                   PA10
 #define DEFAULT_FEATURES                FEATURE_ESC_SENSOR
 #define ESC_SENSOR_UART                 SERIAL_PORT_UART5
-#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ESC
-#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ESC
 
 // ADC
-// #define ADC_VBAT_PIN                    PC2 // Not connected?
-// #define ADC_CURR_PIN                    PC1 // Not connected?
+#define ADC_VBAT_PIN                    PA1
+#define ADC_CURR_PIN                    PA0
 #define ADC_INSTANCE                    ADC1
 #define ADC1_DMA_OPT                    11
-//#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
-//#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
+#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 
 // PINIO
 #define PINIO1_PIN                      PC14
+#define PINIO1_CONFIG                   129
+#define PINIO1_BOX                      40
 
 // TIMERS & DMA
 #define TIMER_PIN_MAPPING               TIMER_PIN_MAP(  0, PA8,  1,  0 ) \
@@ -120,3 +125,7 @@
                                         TIMER_PIN_MAP(  2, PB1,  2,  0 ) \
                                         TIMER_PIN_MAP(  3, PB10,  1,  0 ) \
                                         TIMER_PIN_MAP(  4, PB11,  1,  0 ) 
+										
+
+
+
