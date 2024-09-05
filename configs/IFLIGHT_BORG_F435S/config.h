@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU                   AT32F435M
 
-#define BOARD_NAME                      IFLIGHT_R5_F435
+#define BOARD_NAME                      IFLIGHT_BORG_F435S
 #define MANUFACTURER_ID                 IFRC
 
 // LEDS
