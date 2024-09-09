@@ -38,7 +38,10 @@
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 #define USE_MAX7456
+
+#ifndef USE_CAMERA_CONTROL
 #define USE_CAMERA_CONTROL
+#endif
 
 #define BEEPER_PIN           PB7
 #define MOTOR1_PIN           PA3

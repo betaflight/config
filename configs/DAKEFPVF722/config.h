@@ -33,7 +33,6 @@
 #define USE_BARO
 #define USE_BARO_SPI_BMP280
 #define USE_BARO_SPI_DPS310
-#define USE_CAMERA_CONTROL
 #define USE_FLASH
 #define USE_FLASH_M25P16
 #define USE_GYRO
@@ -41,6 +40,10 @@
 #define USE_GYRO_SPI_MPU6500
 #define USE_GYRO_SPI_ICM42688P
 #define USE_MAX7456
+
+#ifndef USE_CAMERA_CONTROL
+#define USE_CAMERA_CONTROL
+#endif
 
 #define BEEPER_PIN           PC3
 #define MOTOR1_PIN           PC8
