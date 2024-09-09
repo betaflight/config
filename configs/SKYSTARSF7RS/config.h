@@ -28,7 +28,6 @@
 
 #define USE_ACC
 #define USE_BARO
-#define USE_CAMERA_CONTROL
 #define USE_FLASH
 #define USE_GYRO
 #define USE_MAX7456
@@ -38,6 +37,10 @@
 #define USE_ACCGYRO_BMI270
 #define USE_BARO_SPI_BMP280
 #define USE_FLASH_W25Q128FV
+
+#ifndef USE_CAMERA_CONTROL
+#define USE_CAMERA_CONTROL
+#endif
 
 #define BEEPER_PIN           PB2
 #define MOTOR1_PIN           PC8

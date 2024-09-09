@@ -90,7 +90,10 @@
 //TODO resource RX_BIND 1 @01
 #define RX_BIND_PLUG_PIN                PO15
 
+#ifndef USE_CAMERA_CONTROL
 #define USE_CAMERA_CONTROL
+#endif
+
 #define CAMERA_CONTROL_PIN              PA0
 
 #define ADC_VBAT_PIN                    PC2

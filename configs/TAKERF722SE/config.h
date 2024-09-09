@@ -36,7 +36,10 @@
 #define USE_FLASH_M25P16
 #define USE_FLASH_W25N01G
 #define USE_MAX7456
+
+#ifndef USE_CAMERA_CONTROL
 #define USE_CAMERA_CONTROL
+#endif
 
 #define BEEPER_PIN          PC13
 #define MOTOR1_PIN          PB4
