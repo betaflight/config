@@ -35,9 +35,6 @@
 #define USE_BARO_DPS310
 #define USE_MAX7456
 #define USE_SDCARD
-#define USE_MAG
-#define USE_GPS
-#define USE_LED_STRIP
 
 #define BEEPER_PIN          PA15
 #define MOTOR1_PIN          PB0
