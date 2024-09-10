@@ -45,6 +45,8 @@
 #define MOTOR6_PIN          PA3
 #define MOTOR7_PIN          PD12
 #define MOTOR8_PIN          PD13
+#define MOTOR9_PIN          PD14
+#define MOTOR10_PIN         PD15
 #define SERVO1_PIN          PE5
 #define SERVO2_PIN          PE6
 #define RX_PPM_PIN          PC7
@@ -107,8 +109,8 @@
     TIMER_PIN_MAP( 5, MOTOR6_PIN, 2,  5) \
     TIMER_PIN_MAP( 6, MOTOR7_PIN, 1,  6) \
     TIMER_PIN_MAP( 7, MOTOR8_PIN, 1,  7) \
-    TIMER_PIN_MAP( 8, PD14, 1, 12) \
-    TIMER_PIN_MAP( 9, PD15, 1, -1) \
+    TIMER_PIN_MAP( 8, MOTOR9_PIN, 1, 12) \
+    TIMER_PIN_MAP( 9, MOTOR10_PIN, 1, -1) \
     TIMER_PIN_MAP(10, SERVO1_PIN, 1,  0) \
     TIMER_PIN_MAP(11, SERVO2_PIN, 1, -1) \
     TIMER_PIN_MAP(12, LED_STRIP_PIN, 1, 14) 
@@ -137,8 +139,8 @@
 #define MAX7456_SPI_INSTANCE SPI2
 #define PINIO1_BOX 40
 #define PINIO2_BOX 41
-#define BOX_USER_1_NAME "9V BEC"
-#define BOX_USER_2_NAME "CAM 1,2"
+#define BOX_USER1_NAME "9V BEC"
+#define BOX_USER2_NAME "CAM 1,2"
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW270_DEG
 #define GYRO_1_ALIGN_YAW 2700
