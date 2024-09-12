@@ -26,6 +26,12 @@
 #define BOARD_NAME        MODULARF4
 #define MANUFACTURER_ID   TACO
 
+#define USE_ACC
+#define USE_ACC_SPI_MPU6000
+#define USE_GYRO
+#define USE_GYRO_SPI_MPU6000
+#define USE_MAX7456
+
 #define BEEPER_PIN           PA8
 #define MOTOR1_PIN           PB1
 #define MOTOR2_PIN           PB0
