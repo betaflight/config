@@ -93,7 +93,7 @@
 #define ADC_CURR_PIN PC3
 #define ADC_EXTERNAL1_PIN PC0
 #define PINIO1_PIN PC14
-#define PINIO2_PIN PD15
+#define PINIO2_PIN PD11
 #define PINIO3_PIN PE2
 #define FLASH_CS_PIN PA15
 #define MAX7456_SPI_CS_PIN PB12
@@ -139,7 +139,7 @@
 #define PINIO1_BOX                      40
 #define PINIO2_BOX                      41
 #define FLASH_SPI_INSTANCE              SPI3
-#define GYRO_1_SPI_INSTANCE             SPI1
+#define GYRO_1_SPI_INSTANCE             SPI2
 #define GYRO_1_ALIGN                    CW90_DEG_FLIP
-#define GYRO_2_SPI_INSTANCE             SPI4
+#define GYRO_2_SPI_INSTANCE             SPI1
 #define GYRO_2_ALIGN                    CW0_DEG_FLIP
