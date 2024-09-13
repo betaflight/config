@@ -26,6 +26,16 @@
 #define BOARD_NAME        SIRMIXALOT
 #define MANUFACTURER_ID   CUST
 
+#define USE_ACC
+#define USE_ACC_SPI_ICM20602
+#define USE_GYRO
+#define USE_GYRO_SPI_ICM20602
+#define USE_FLASH
+#define USE_FLASH_W25N01G
+#define USE_BARO
+#define USE_BARO_SPI_BMP280
+#define USE_MAX7456
+
 #define BEEPER_PIN           PC11
 #define MOTOR1_PIN           PB6
 #define MOTOR2_PIN           PB7
@@ -61,6 +71,7 @@
 #define ADC_VBAT_PIN         PC2
 #define ADC_RSSI_PIN         PC3
 #define ADC_CURR_PIN         PC1
+#define BARO_CS_PIN          PB9
 #define FLASH_CS_PIN         PC0
 #define MAX7456_SPI_CS_PIN   PC14
 #define GYRO_1_EXTI_PIN      PC4
@@ -79,6 +90,7 @@
 
 //TODO #define SERIALRX_INVERTED ON
 //TODO #define SERIALRX_HALFDUPLEX ON
+#define BARO_SPI_INSTANCE SPI3
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
 #define DEFAULT_DSHOT_TELEMETRY DSHOT_TELEMETRY_OFF
