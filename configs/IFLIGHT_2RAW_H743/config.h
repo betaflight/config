@@ -124,11 +124,9 @@
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_CURRENT_METER_SCALE     200
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SCALE     210 // Check
+#define DEFAULT_VOLTAGE_METER_SCALE     210
 
 #define PINIO1_BOX                      40
 #define PINIO2_BOX                      41
-//#define PINIO1_CONFIG 129 // Check
-//#define PINIO2_CONFIG 129 // Check
 
-#define BEEPER_INVERTED // Check
+#define BEEPER_INVERTED
