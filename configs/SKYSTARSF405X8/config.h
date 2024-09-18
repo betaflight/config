@@ -87,29 +87,34 @@
     TIMER_PIN_MAP( 5, PB11, 1,  1) \
     TIMER_PIN_MAP( 6, PB0 , 2,  0) \
     TIMER_PIN_MAP( 7, PB1 , 2,  0) \
-    TIMER_PIN_MAP( 8, PA10, 1, 0)
+    TIMER_PIN_MAP( 8, PA10, 1,  0)
 
-#define ADC3_DMA_OPT                 1
+#define ADC3_DMA_OPT                   1
 
 #define USE_BARO
-#define BARO_I2C_INSTANCE           (I2CDEV_1)
-#define MAG_I2C_INSTANCE            (I2CDEV_1) 
+#define BARO_I2C_INSTANCE              (I2CDEV_1)
+#define MAG_I2C_INSTANCE               (I2CDEV_1) 
 
-#define SERIALRX_UART                SERIAL_PORT_USART2
-#define ESC_SENSOR_UART              SERIAL_PORT_USART3
+#define DEFAULT_FEATURES               FEATURE_ESC_SENSOR
 
-#define PINIO1_BOX                   0
-#define PINIO1_CONFIG                129
+#define SERIALRX_UART                  SERIAL_PORT_USART2
+#define ESC_SENSOR_UART                SERIAL_PORT_USART3
 
-#define ADC_INSTANCE ADC3
-#define DEFAULT_BLACKBOX_DEVICE      BLACKBOX_DEVICE_FLASH
-#define DEFAULT_DSHOT_BURST          DSHOT_DMAR_AUTO
-#define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
+#define PINIO1_BOX                     40
+#define PINIO1_CONFIG                  129
+
+#define ADC_INSTANCE                   ADC3
+#define DEFAULT_BLACKBOX_DEVICE        BLACKBOX_DEVICE_FLASH
+#define DEFAULT_DSHOT_BURST            DSHOT_DMAR_OFF
+#define DEFAULT_DSHOT_BITBANG          DSHOT_BITBANG_OFF
+#define MOTOR_PWM_PROTOCOL             DSHOT300
+#define DEFAULT_CURRENT_METER_SOURCE   CURRENT_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SOURCE   VOLTAGE_METER_ADC
 #define BEEPER_INVERTED
-#define MAX7456_SPI_INSTANCE         SPI2
-#define FLASH_SPI_INSTANCE           SPI3
-#define GYRO_1_SPI_INSTANCE          SPI1
-//#define GYRO_1_ALIGN               CW180_DEG_FLIP
-//#define GYRO_1_ALIGN_PITCH         1800
-//#define GYRO_1_ALIGN_YAW           1800
+
+#define GYRO_1_SPI_INSTANCE            SPI1
+#define GYRO_1_ALIGN                   CW270_DEG
+//#define GYRO_1_ALIGN_PITCH           1800
+//#define GYRO_1_ALIGN_YAW             1800
+#define MAX7456_SPI_INSTANCE           SPI2
+#define FLASH_SPI_INSTANCE             SPI3
