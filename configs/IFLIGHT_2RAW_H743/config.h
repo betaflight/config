@@ -28,12 +28,12 @@
 
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
-#define USE_BARO
-#define USE_BARO_DPS310
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 #define USE_MAX7456
 #define USE_SDCARD
+#define USE_BARO
+#define USE_BARO_DPS310
 
 #define BEEPER_PIN              PC9
 #define MOTOR1_PIN              PB0
@@ -71,17 +71,14 @@
 #define LED2_PIN                PE4
 #define SPI1_SCK_PIN            PA5
 #define SPI2_SCK_PIN            PB13
-#define SPI3_SCK_PIN            PB3
 #define SPI3_SCK_PIN            PC10
 #define SPI4_SCK_PIN            PE12
 #define SPI1_SDI_PIN            PA6
 #define SPI2_SDI_PIN            PB14
-#define SPI3_SDI_PIN            PB4
 #define SPI3_SDI_PIN            PC11
 #define SPI4_SDI_PIN            PE13
 #define SPI1_SDO_PIN            PD7
 #define SPI2_SDO_PIN            PB15
-#define SPI3_SDO_PIN            PB5
 #define SPI3_SDO_PIN            PC12
 #define SPI4_SDO_PIN            PE14
 #define ADC_VBAT_PIN            PC0
@@ -99,24 +96,21 @@
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP(0,  PB0,  2,  0) \
-    TIMER_PIN_MAP(1,  PB1,  2,  1) \
-    TIMER_PIN_MAP(2,  PA0,  2,  2) \
-    TIMER_PIN_MAP(3,  PA1,  2,  3) \
-    TIMER_PIN_MAP(4,  PA2,  2,  4) \
-    TIMER_PIN_MAP(5,  PA3,  2,  5) \
-    TIMER_PIN_MAP(6,  PD12, 1,  6) \
-    TIMER_PIN_MAP(7,  PD13, 1,  7) \
+    TIMER_PIN_MAP(1,  PB1,  2,  0) \
+    TIMER_PIN_MAP(2,  PA0,  2,  0) \
+    TIMER_PIN_MAP(3,  PA1,  2,  0) \
+    TIMER_PIN_MAP(4,  PA2,  2,  0) \
+    TIMER_PIN_MAP(5,  PA3,  2,  0) \
+    TIMER_PIN_MAP(6,  PD12, 1,  0) \
+    TIMER_PIN_MAP(7,  PD13, 1,  0) \
     TIMER_PIN_MAP(8,  PD14, 1, -1) \
     TIMER_PIN_MAP(9,  PD15, 1, -1) \
     TIMER_PIN_MAP(10, PE5,  1, -1) \
     TIMER_PIN_MAP(11, PE6,  1, -1) \
-    TIMER_PIN_MAP(12, PA8,  1, 14) 
+    TIMER_PIN_MAP(12, PA8,  1,  0) 
 
 #define ADC1_DMA_OPT        8
 #define ADC3_DMA_OPT        9
-#define TIMUP3_DMA_OPT      10
-#define TIMUP4_DMA_OPT      11
-#define TIMUP5_DMA_OPT      12
 
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define MAX7456_SPI_INSTANCE            SPI2
