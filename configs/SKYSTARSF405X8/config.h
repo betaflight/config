@@ -32,6 +32,9 @@
 #define USE_GYRO_SPI_ICM42688P
 #define USE_FLASH
 #define USE_FLASH_M25P16
+#define USE_BARO
+#define USE_BARO_BMP280
+#define USE_BARO_DPS310
 #define USE_MAX7456
 
 #define BEEPER_PIN           PC13
@@ -44,6 +47,7 @@
 #define MOTOR7_PIN           PB0
 #define MOTOR8_PIN           PB1
 #define LED_STRIP_PIN        PA10
+#define SERVO1_PIN           PA15
 #define UART1_TX_PIN         PB6
 #define UART2_TX_PIN         PA2
 #define UART3_TX_PIN         PC10
@@ -87,7 +91,8 @@
     TIMER_PIN_MAP( 5, PB11, 1,  1) \
     TIMER_PIN_MAP( 6, PB0 , 2,  0) \
     TIMER_PIN_MAP( 7, PB1 , 2,  0) \
-    TIMER_PIN_MAP( 8, PA10, 1,  0)
+    TIMER_PIN_MAP( 8, PA10, 1,  0) \
+    TIMER_PIN_MAP( 9, PA15, 1, -1)
 
 #define ADC3_DMA_OPT                   1
 
