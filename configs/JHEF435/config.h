@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU        AT32F435G
 
-#define BOARD_NAME           JHEF435A
+#define BOARD_NAME           JHEF435
 #define MANUFACTURER_ID      JHEF
 
 #define USE_ACC
