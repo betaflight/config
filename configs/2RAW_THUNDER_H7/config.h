@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU       STM32H743
 
-#define BOARD_NAME          IFLIGHT_2RAW_H743
+#define BOARD_NAME          2RAW_THUNDER_H7
 #define MANUFACTURER_ID     IFRC
 
 #define USE_ACC
