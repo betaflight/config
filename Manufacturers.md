@@ -84,6 +84,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |NERC|NeutronRC|https://www.facebook.com/Neutronrc-575638996448880|
 |NGUA|NG.UAVP|https://ng.uavp.ch/Shop|
 |ODTY|OddityRC|http://www.oddityrc.com|
+|ORBT|Orbit Technology|https://www.orbitteknoloji.com.tr/|
 |OPEN|OpenPilot|https://librepilot.atlassian.net/wiki/spaces/LPDOC/pages/31588369/Supported+Hardware|
 |ORQA|Orqa Ltd|https://orqafpv.com/|
 |PRIN|PrincipIoT LLC|https://principiot.com/|
