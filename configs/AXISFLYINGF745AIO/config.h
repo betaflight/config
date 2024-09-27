@@ -109,8 +109,8 @@
 
 #define ADC1_DMA_OPT                   0
 
-#define MAG_I2C_INSTANCE               (I2CDEV_1)
-#define BARO_I2C_INSTANCE              (I2CDEV_4)
+#define MAG_I2C_INSTANCE               I2CDEV_1
+#define BARO_I2C_INSTANCE              I2CDEV_4
 
 #define ESC_SENSOR_UART                SERIAL_PORT_UART4
 
