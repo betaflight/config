@@ -114,6 +114,7 @@
 #define BEEPER_INVERTED
 
 #define BARO_I2C_INSTANCE            (I2CDEV_1)
+#define MAG_I2C_INSTANCE                     (I2CDEV_1)
 #define MAX7456_SPI_INSTANCE         SPI2
 #define FLASH_SPI_INSTANCE           SPI2
 

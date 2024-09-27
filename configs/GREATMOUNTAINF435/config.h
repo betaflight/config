@@ -100,6 +100,7 @@
 #define I2C3_SDA_PIN                    PC1
 
 #define BARO_I2C_INSTANCE               I2CDEV_3
+#define MAG_I2C_INSTANCE                        I2CDEV_3
 #define USE_BARO
 #define USE_BARO_BMP280
 #define USE_BARO_DPS310
