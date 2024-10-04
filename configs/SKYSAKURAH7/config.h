@@ -32,8 +32,10 @@
 #define USE_GYRO_SPI_ICM42688P
 #define USE_BARO
 #define USE_BARO_SPI_DPS310
+#ifndef USE_MAG
 #define USE_MAG
 #define USE_MAG_IST8310
+#endif
 #define USE_SDCARD
 
 //buzzer
@@ -107,7 +109,7 @@
 #define ADC_VBAT_PIN         PC3
 #define ADC_CURR_PIN         PC2
 #define ADC_EXTERNAL1_PIN    PC0
-#define ADC_RSSI_PIN    PC1
+#define ADC_RSSI_PIN         PC1
 
 //sd card
 #define SDIO_CK_PIN          PC12
@@ -127,7 +129,7 @@
 #define GYRO_2_EXTI_PIN      PB2
 #define GYRO_1_CS_PIN        PA4
 #define GYRO_2_CS_PIN        PE11
-#define BARO_CS_PIN        PC5
+#define BARO_CS_PIN          PC5
 
 /* CS1 pads for SPI2 connection:
  *
@@ -172,7 +174,7 @@
 //mag config
 #define MAG_I2C_INSTANCE I2CDEV_1
 #define MAG_I2C_ADDRESS 14
-#define MAG_ALIGN CW0_DEG_FLIP
+#define MAG_ALIGN CW180_DEG
 
 //default behavior
 #define DEFAULT_RX_FEATURE FEATURE_RX_SERIAL
@@ -198,10 +200,8 @@
 #define PINIO1_CONFIG 129
 
 //gyro config
-#define GYRO_1_SPI_INSTANCE SPI1
-#define GYRO_1_ALIGN CW270_DEG_FLIP
-#define GYRO_2_SPI_INSTANCE SPI4
-#define GYRO_2_ALIGN CW0_DEG_FLIP
+#define GYRO_1_SPI_INSTANCE SPI4
+#define GYRO_1_ALIGN CW0_DEG_FLIP
 
 //baro config
 #define BARO_SPI_INSTANCE SPI1
@@ -214,7 +214,3 @@
 #define GPS_UART SERIAL_PORT_USART3
 #define ESC_SENSOR_UART SERIAL_PORT_USART8
 #define SERIALRX_UART SERIAL_PORT_UART4
-
-
-//MPU6000 initialize
-#define ENSURE_MPU_DATA_READY_IS_LOW
