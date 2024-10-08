@@ -32,6 +32,11 @@
 #define USE_ACC_SPI_MPU6500
 #define USE_SDCARD
 
+#ifndef USE_WING
+// for CI build to test wing code
+#define USE_WING
+#endif
+
 #define MOTOR1_PIN           PB1
 #define MOTOR2_PIN           PB0
 #define MOTOR3_PIN           PA2
