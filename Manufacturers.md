@@ -24,6 +24,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |CADX|CADDX TECHNOLOGY (SHENZHEN) CO., LTD|https://caddxfpv.com/|
 |CCRC|Sunhey Now|https://sunheyccrc.aliexpress.com/|
 |CLRA|CLRACING LLC|https://cl-racing.myshopify.com/|
+|CSKY|ClearSky LLC|https://csky.space|
 |CYCL|CycloneRC|http://www.cyclone-rc.com|
 |DAFP|DarwinFPV|https://darwinfpv.com/|
 |DALR|DALRC TECHNOLOGY CO,.LIMITED|http://www.dalrc.cn/DALRC/|
