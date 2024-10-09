@@ -32,6 +32,7 @@
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
+#define USE_LED_STRIP
 
 #define BEEPER_PIN           PD13
 #define MOTOR1_PIN           PC6

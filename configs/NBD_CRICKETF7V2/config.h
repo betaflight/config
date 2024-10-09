@@ -29,6 +29,7 @@
 #define USE_ACC
 #define USE_GYRO
 #define USE_ACCGYRO_BMI270
+#define USE_LED_STRIP
 
 #define BEEPER_PIN           PC15
 #define MOTOR1_PIN           PB4
