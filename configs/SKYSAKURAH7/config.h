@@ -34,8 +34,8 @@
 #define USE_BARO_SPI_DPS310
 #ifndef USE_MAG
 #define USE_MAG
-#define USE_MAG_IST8310
 #endif
+#define USE_MAG_IST8310
 #define USE_SDCARD
 
 //buzzer
