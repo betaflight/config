@@ -39,7 +39,9 @@
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
 
+#ifndef USE_WING
 #define USE_WING
+#endif
 
 #define MOTOR1_PIN           PA8
 #define MOTOR2_PIN           PA9
