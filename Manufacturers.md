@@ -86,6 +86,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |NYXT|Nyxtronics|https://nyxtronics.com|
 |ODTY|OddityRC|http://www.oddityrc.com|
 |OPEN|OpenPilot|https://librepilot.atlassian.net/wiki/spaces/LPDOC/pages/31588369/Supported+Hardware|
+|ORBT|Orbit Technology|https://www.orbitteknoloji.com.tr/|
 |ORQA|Orqa Ltd|https://orqafpv.com/|
 |PRIN|PrincipIoT LLC|https://principiot.com/|
 |PYDR|Pyro-Drone|https://pyrodrone.com/|
