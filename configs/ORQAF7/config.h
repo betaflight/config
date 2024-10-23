@@ -36,6 +36,10 @@
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
 
+#ifndef USE_SERIALRX_GHST
+#define USE_SERIALRX_GHST
+#endif
+
 #define BEEPER_PIN           PA4
 #define MOTOR1_PIN           PC8  
 #define MOTOR2_PIN           PC9
