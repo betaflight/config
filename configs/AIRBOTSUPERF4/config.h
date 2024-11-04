@@ -45,6 +45,7 @@
 #define MAX7456_SPI_CS_PIN                  PH2
 #define MAX7456_SPI_INSTANCE                SPI2
 
+#define BEEPER_INVERTED
 #define BEEPER_PIN                          PB10
 #define MOTOR1_PIN                          PC9
 #define MOTOR2_PIN                          PC8
