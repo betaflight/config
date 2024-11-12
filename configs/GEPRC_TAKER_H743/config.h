@@ -37,9 +37,9 @@
 #define USE_BARO_DPS310
 #define USE_BARO_MS5611
 // #ifndef USE_MAG
+#ifndef USE_MAG
 #define USE_MAG
-#define USE_MAG_QMC5883
-#define USE_MAG_IST8310
+#endif
 // #endif
 #define USE_SDCARD
 #define USE_MAX7456
