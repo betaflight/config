@@ -44,6 +44,10 @@
 #define USE_BARO_DPS310
 #define USE_BARO_SPL06
 
+#ifndef USE_WING
+#define USE_WING
+#endif
+
 #define BEEPER_PIN PC15
 #define MOTOR1_PIN PB7
 #define MOTOR2_PIN PB6
