@@ -91,7 +91,7 @@
     TIMER_PIN_MAP( 6, MOTOR7_PIN        , 2,  6) \
     TIMER_PIN_MAP( 7, MOTOR8_PIN        , 2,  7) \
     TIMER_PIN_MAP( 8, LED_STRIP_PIN     , 1, 14) \
-    TIMER_PIN_MAP( 9, CAMERA_CONTROL_PIN, 1, 12)
+    TIMER_PIN_MAP( 9, CAMERA_CONTROL_PIN, 1, -1)
 
 #define SPI1_TX_DMA_OPT              13
 #define ADC1_DMA_OPT                 8
