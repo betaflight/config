@@ -103,7 +103,7 @@
 #define TIMUP2_DMA_OPT               0
 #define TIMUP3_DMA_OPT               2
 #define TIMUP4_DMA_OPT               0
-#define TIMUP5_DMA_OPT               0
+#define TIMUP5_DMA_OPT               3
 #define TIMUP8_DMA_OPT               1
 
 #define MAG_I2C_INSTANCE             (I2CDEV_1)
