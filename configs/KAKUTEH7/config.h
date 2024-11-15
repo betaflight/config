@@ -33,6 +33,7 @@
 #define USE_ACC_SPI_MPU6000
 #define USE_ACC_SPI_ICM42688P
 #define USE_ACCGYRO_BMI270
+#define USE_BARO
 #define USE_BARO_BMP280
 #define USE_BARO_DPS310
 #define USE_MAX7456
@@ -84,45 +85,42 @@
 #define USB_DETECT_PIN       PA8
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PB0 , 2,  0) \
-    TIMER_PIN_MAP( 1, PB1 , 2,  1) \
-    TIMER_PIN_MAP( 2, PB3 , 1,  2) \
-    TIMER_PIN_MAP( 3, PB10, 1,  3) \
-    TIMER_PIN_MAP( 4, PA0 , 2,  4) \
-    TIMER_PIN_MAP( 5, PA2 , 2,  5) \
-    TIMER_PIN_MAP( 6, PC8 , 2,  6) \
-    TIMER_PIN_MAP( 7, PC9 , 2,  7) \
-    TIMER_PIN_MAP( 8, PD12, 1, 14) \
-    TIMER_PIN_MAP( 9, PE9 , 1, 12)
+    TIMER_PIN_MAP( 0, MOTOR1_PIN        , 2,  0) \
+    TIMER_PIN_MAP( 1, MOTOR2_PIN        , 2,  1) \
+    TIMER_PIN_MAP( 2, MOTOR3_PIN        , 1,  2) \
+    TIMER_PIN_MAP( 3, MOTOR4_PIN        , 1,  3) \
+    TIMER_PIN_MAP( 4, MOTOR5_PIN        , 2,  4) \
+    TIMER_PIN_MAP( 5, MOTOR6_PIN        , 2,  5) \
+    TIMER_PIN_MAP( 6, MOTOR7_PIN        , 2,  6) \
+    TIMER_PIN_MAP( 7, MOTOR8_PIN        , 2,  7) \
+    TIMER_PIN_MAP( 8, LED_STRIP_PIN     , 1, 14) \
+    TIMER_PIN_MAP( 9, CAMERA_CONTROL_PIN, 1, -1)
 
+#define SPI1_TX_DMA_OPT             13
+#define ADC1_DMA_OPT                 8
+#define ADC3_DMA_OPT                 9
+#define TIMUP1_DMA_OPT               0
+#define TIMUP2_DMA_OPT               0
+#define TIMUP3_DMA_OPT               2
+#define TIMUP4_DMA_OPT               0
+#define TIMUP5_DMA_OPT               3
+#define TIMUP8_DMA_OPT               1
 
-#define SPI1_TX_DMA_OPT    13
-#define ADC1_DMA_OPT        8
-#define ADC3_DMA_OPT        9
-#define TIMUP1_DMA_OPT      0
-#define TIMUP2_DMA_OPT      0
-#define TIMUP3_DMA_OPT      2
-#define TIMUP4_DMA_OPT      0
-#define TIMUP5_DMA_OPT      0
-#define TIMUP8_DMA_OPT      1
+#define MAG_I2C_INSTANCE             I2CDEV_1
+#define BARO_I2C_INSTANCE            I2CDEV_1
 
-#define MAG_I2C_INSTANCE (I2CDEV_1)
-#define USE_BARO
-#define BARO_I2C_INSTANCE (I2CDEV_1)
-
-#define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_SDCARD
+#define DEFAULT_BLACKBOX_DEVICE      BLACKBOX_DEVICE_SDCARD
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SCALE 109
-#define DEFAULT_CURRENT_METER_SCALE 168
+#define DEFAULT_VOLTAGE_METER_SCALE  109
+#define DEFAULT_CURRENT_METER_SCALE  168
 #define BEEPER_INVERTED
 #define SDCARD_DETECT_INVERTED
 #define USE_SDCARD_SPI
-#define SDCARD_SPI_INSTANCE SPI1
-#define MAX7456_SPI_INSTANCE SPI2
-#define DASHBOARD_I2C_INSTANCE (I2CDEV_1)
-#define PINIO1_CONFIG 129
-#define PINIO1_BOX 0
-#define GYRO_1_SPI_INSTANCE SPI4
-#define GYRO_1_ALIGN CW270_DEG
-#define GYRO_1_ALIGN_YAW 2700
+#define SDCARD_SPI_INSTANCE          SPI1
+#define MAX7456_SPI_INSTANCE         SPI2
+#define PINIO1_CONFIG                129
+#define PINIO1_BOX                   0
+#define GYRO_1_SPI_INSTANCE          SPI4
+#define GYRO_1_ALIGN                 CW270_DEG
+#define GYRO_1_ALIGN_YAW             2700

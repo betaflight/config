@@ -34,6 +34,7 @@
 #define USE_GYRO_SPI_ICM20689
 #define USE_BARO
 #define USE_BARO_BMP280
+#define USE_BARO_DPS310
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
@@ -81,29 +82,27 @@
 #define USB_DETECT_PIN       PA8
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PE13, 1,  1) \
-    TIMER_PIN_MAP( 1, PB0 , 2,  0) \
-    TIMER_PIN_MAP( 2, PB1 , 2,  0) \
-    TIMER_PIN_MAP( 3, PE9 , 1,  2) \
-    TIMER_PIN_MAP( 4, PE11, 1,  1) \
-    TIMER_PIN_MAP( 5, PC9 , 2,  0) \
-    TIMER_PIN_MAP( 6, PA3 , 2,  0) \
-    TIMER_PIN_MAP( 7, PD12, 1,  0) \
-    TIMER_PIN_MAP( 8, PB3 , 1,  0)
+    TIMER_PIN_MAP( 0, MOTOR1_PIN        , 2,  0) \
+    TIMER_PIN_MAP( 1, MOTOR2_PIN        , 2,  0) \
+    TIMER_PIN_MAP( 2, MOTOR3_PIN        , 1,  2) \
+    TIMER_PIN_MAP( 3, MOTOR4_PIN        , 1,  1) \
+    TIMER_PIN_MAP( 4, MOTOR5_PIN        , 2,  0) \
+    TIMER_PIN_MAP( 5, MOTOR6_PIN        , 2,  0) \
+    TIMER_PIN_MAP( 6, LED_STRIP_PIN     , 1,  0) \
+    TIMER_PIN_MAP( 7, CAMERA_CONTROL_PIN, 1, -1)
 
 
 #define ADC1_DMA_OPT                    1
-#define MAG_I2C_INSTANCE                (I2CDEV_1)
-#define MAG_HARDWARE                    NONE
-#define BARO_I2C_INSTANCE               (I2CDEV_1)
-#define BARO_HARDWARE                   BMP280
+
+#define MAG_I2C_INSTANCE                I2CDEV_1
+#define BARO_I2C_INSTANCE               I2CDEV_1
+
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 #define DEFAULT_CURRENT_METER_SCALE     275
 #define BEEPER_INVERTED
 #define MAX7456_SPI_INSTANCE            SPI2
-#define DASHBOARD_I2C_INSTANCE          (I2CDEV_1)
 #define FLASH_SPI_INSTANCE              SPI1
 #define GYRO_1_SPI_INSTANCE             SPI4
 #define GYRO_1_ALIGN                    CW270_DEG
