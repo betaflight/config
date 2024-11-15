@@ -93,7 +93,6 @@
     TIMER_PIN_MAP( 5, SERVO4_PIN   , 2, -1) \
     TIMER_PIN_MAP( 6, LED_STRIP_PIN, 1,  0)
 
-
 #define ADC1_DMA_OPT                 1
 
 #define MIXER_MODE MIXER_FLYING_WING
