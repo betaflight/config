@@ -81,14 +81,13 @@
 #define USB_DETECT_PIN       PA8
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, RX_PPM_PIN   , 1,  1) \
-    TIMER_PIN_MAP( 1, MOTOR1_PIN   , 2,  0) \
-    TIMER_PIN_MAP( 2, MOTOR2_PIN   , 2,  0) \
-    TIMER_PIN_MAP( 3, MOTOR3_PIN   , 1,  2) \
-    TIMER_PIN_MAP( 4, MOTOR4_PIN   , 1,  1) \
-    TIMER_PIN_MAP( 5, MOTOR5_PIN   , 2,  0) \
-    TIMER_PIN_MAP( 6, MOTOR6_PIN   , 2,  0) \
-    TIMER_PIN_MAP( 7, LED_STRIP_PIN, 1,  0)
+    TIMER_PIN_MAP( 0, MOTOR1_PIN   , 2,  0) \
+    TIMER_PIN_MAP( 1, MOTOR2_PIN   , 2,  0) \
+    TIMER_PIN_MAP( 2, MOTOR3_PIN   , 1,  2) \
+    TIMER_PIN_MAP( 3, MOTOR4_PIN   , 1,  1) \
+    TIMER_PIN_MAP( 4, MOTOR5_PIN   , 2,  0) \
+    TIMER_PIN_MAP( 5, MOTOR6_PIN   , 2,  0) \
+    TIMER_PIN_MAP( 6, LED_STRIP_PIN, 1,  0)
 
 #define SPI1_TX_DMA_OPT     1
 #define ADC1_DMA_OPT        1
