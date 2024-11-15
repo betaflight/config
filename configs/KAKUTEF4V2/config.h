@@ -78,7 +78,7 @@
 #define USB_DETECT_PIN       PA8
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, RX_PPM_PIN,    2,  0) \
+    TIMER_PIN_MAP( 0, RX_PPM_PIN,    2, -1) \
     TIMER_PIN_MAP( 1, MOTOR1_PIN,    2,  0) \
     TIMER_PIN_MAP( 2, MOTOR2_PIN,    2,  0) \
     TIMER_PIN_MAP( 3, MOTOR3_PIN,    1,  1) \
