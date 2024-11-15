@@ -85,10 +85,10 @@
     TIMER_PIN_MAP( 4, MOTOR4_PIN,    1,  0) \
     TIMER_PIN_MAP( 5, LED_STRIP_PIN, 2,  0)
 
-#define ADC1_DMA_OPT        1
+#define ADC1_DMA_OPT                 1
 
-#define MAG_I2C_INSTANCE             (I2CDEV_1)
-#define BARO_I2C_INSTANCE            (I2CDEV_1)
+#define MAG_I2C_INSTANCE             I2CDEV_1
+#define BARO_I2C_INSTANCE            I2CDEV_1
 
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
 #define DEFAULT_CURRENT_METER_SCALE  275

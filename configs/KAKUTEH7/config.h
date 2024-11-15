@@ -106,8 +106,8 @@
 #define TIMUP5_DMA_OPT               3
 #define TIMUP8_DMA_OPT               1
 
-#define MAG_I2C_INSTANCE             (I2CDEV_1)
-#define BARO_I2C_INSTANCE            (I2CDEV_1)
+#define MAG_I2C_INSTANCE             I2CDEV_1
+#define BARO_I2C_INSTANCE            I2CDEV_1
 
 #define DEFAULT_BLACKBOX_DEVICE      BLACKBOX_DEVICE_SDCARD
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC

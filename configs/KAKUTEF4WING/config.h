@@ -95,10 +95,10 @@
 
 #define ADC1_DMA_OPT                 1
 
-#define MIXER_MODE MIXER_FLYING_WING
+#define MIXER_MODE                   MIXER_FLYING_WING
 
-#define MAG_I2C_INSTANCE (I2CDEV_2)
-#define BARO_I2C_INSTANCE (I2CDEV_2)
+#define MAG_I2C_INSTANCE             I2CDEV_2
+#define BARO_I2C_INSTANCE            I2CDEV_2
 
 #define DEFAULT_BLACKBOX_DEVICE      BLACKBOX_DEVICE_FLASH
 #define SERIALRX_UART                SERIAL_PORT_USART3
