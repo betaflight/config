@@ -42,7 +42,9 @@
 #define USE_BARO_DPS310
 #define USE_FLASH_M25P16
 #define USE_MAX7456
+#ifndef USE_CAMERA_CONTROL
 #define USE_CAMERA_CONTROL
+#endif
 
 #define BEEPER_PIN           PC3
 #define MOTOR1_PIN           PC6
