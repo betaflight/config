@@ -36,9 +36,6 @@
 #define USE_BARO_BMP280
 #define USE_BARO_DPS310
 #define USE_BARO_MS5611
-#ifndef USE_MAG
-#define USE_MAG
-#endif
 #define USE_SDCARD
 #define USE_MAX7456
 
