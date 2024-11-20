@@ -130,8 +130,6 @@
 #define PINIO1_CONFIG                   129
 #define PINIO1_BOX                      0
 #define PINIO2_BOX                      40
-#define PINIO3_BOX                      41
-#define PINIO4_BOX                      42
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define GYRO_1_ALIGN                    CW180_DEG
 #define GYRO_2_SPI_INSTANCE             SPI2
