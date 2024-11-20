@@ -36,11 +36,9 @@
 #define USE_BARO_BMP280
 #define USE_BARO_DPS310
 #define USE_BARO_MS5611
-// #ifndef USE_MAG
 #ifndef USE_MAG
 #define USE_MAG
 #endif
-// #endif
 #define USE_SDCARD
 #define USE_MAX7456
 
@@ -99,48 +97,46 @@
 #define GYRO_2_CS_PIN        PB12
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PA8 , 1, 14) \
-    TIMER_PIN_MAP( 1, PB0 , 2,  0) \
-    TIMER_PIN_MAP( 2, PB1 , 2,  1) \
-    TIMER_PIN_MAP( 3, PB4 , 1,  4) \
-    TIMER_PIN_MAP( 4, PB5 , 1,  5) \
-    TIMER_PIN_MAP( 5, PD12, 1,  6) \
-    TIMER_PIN_MAP( 6, PD13, 1,  7) \
-    TIMER_PIN_MAP( 7, PC8 , 2,  2) \
-    TIMER_PIN_MAP( 8, PC9 , 2,  3)
+    TIMER_PIN_MAP( 0, LED_STRIP_PIN, 1, 14) \
+    TIMER_PIN_MAP( 1, MOTOR1_PIN,    2,  0) \
+    TIMER_PIN_MAP( 2, MOTOR2_PIN,    2,  1) \
+    TIMER_PIN_MAP( 3, MOTOR3_PIN,    1,  5) \
+    TIMER_PIN_MAP( 4, MOTOR4_PIN,    1,  4) \
+    TIMER_PIN_MAP( 5, MOTOR5_PIN,    1,  6) \
+    TIMER_PIN_MAP( 6, MOTOR6_PIN,    1,  7) \
+    TIMER_PIN_MAP( 7, MOTOR7_PIN,    2,  2) \
+    TIMER_PIN_MAP( 8, MOTOR8_PIN,    2,  3)
 
+#define ADC1_DMA_OPT                    1
+#define ADC2_DMA_OPT                    9
+#define ADC3_DMA_OPT                    10
+#define TIMUP1_DMA_OPT                  0
+#define TIMUP3_DMA_OPT                  12
+#define TIMUP4_DMA_OPT                  13
+#define TIMUP5_DMA_OPT                  0
+#define TIMUP8_DMA_OPT                  14
 
-#define ADC1_DMA_OPT        1
-#define ADC2_DMA_OPT        9
-#define ADC3_DMA_OPT       10
-#define TIMUP1_DMA_OPT      0
-#define TIMUP3_DMA_OPT      0
-#define TIMUP4_DMA_OPT      0
-#define TIMUP5_DMA_OPT      0
-#define TIMUP8_DMA_OPT      0
+#define MSP_DISPLAYPORT_UART            SERIAL_PORT_USART1
+#define SERIALRX_UART                   SERIAL_PORT_USART2
+#define MSP_UART                        SERIAL_PORT_USART3
 
-#define MSP_DISPLAYPORT_UART    SERIAL_PORT_USART1
-#define SERIALRX_UART           SERIAL_PORT_USART2
-#define MSP_UART                SERIAL_PORT_USART3
+#define MAG_I2C_INSTANCE                I2CDEV_1
+#define BARO_I2C_INSTANCE               I2CDEV_1
 
-#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
-#define MAG_I2C_INSTANCE (I2CDEV_1)
-#define BARO_I2C_INSTANCE (I2CDEV_1)
-
-#define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_SDCARD
-#define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ESC
-#define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
-#define DEFAULT_CURRENT_METER_SCALE 100
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
+#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ESC
+#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
+#define DEFAULT_CURRENT_METER_SCALE     100
 #define BEEPER_INVERTED
 #define USE_SDCARD_SPI
-#define SDCARD_SPI_INSTANCE SPI3
-#define PINIO1_CONFIG 129
-#define PINIO1_BOX 0
-#define PINIO2_BOX 40
-#define PINIO3_BOX 41
-#define PINIO4_BOX 42
-#define GYRO_1_SPI_INSTANCE SPI1
-#define GYRO_1_ALIGN CW180_DEG
-#define GYRO_2_SPI_INSTANCE SPI2
-#define FLASH_SPI_INSTANCE SPI3
-#define MAX7456_SPI_INSTANCE SPI4
+#define SDCARD_SPI_INSTANCE             SPI3
+#define PINIO1_CONFIG                   129
+#define PINIO1_BOX                      0
+#define PINIO2_BOX                      40
+#define PINIO3_BOX                      41
+#define PINIO4_BOX                      42
+#define GYRO_1_SPI_INSTANCE             SPI1
+#define GYRO_1_ALIGN                    CW180_DEG
+#define GYRO_2_SPI_INSTANCE             SPI2
+#define FLASH_SPI_INSTANCE              SPI3
+#define MAX7456_SPI_INSTANCE            SPI4
