@@ -91,18 +91,16 @@
 #define GYRO_1_CS_PIN        PA4
 
 #define TIMER_PIN_MAPPING \
-	TIMER_PIN_MAP( 0, PC6 , 2, 0) \
-    TIMER_PIN_MAP( 1, PC7 , 2, 1) \
-	TIMER_PIN_MAP( 2, PC8 , 2, 1) \
-	TIMER_PIN_MAP( 3, PC9 , 2, 0) \
-	TIMER_PIN_MAP( 4, PA8 , 1, 0) \
-	TIMER_PIN_MAP( 5, PA15, 1, 0) \
-	TIMER_PIN_MAP( 6, PB7 , 1, 0) \
-    TIMER_PIN_MAP( 7, PA1 , 1, 0) \
-    TIMER_PIN_MAP( 8, PA0 , 2, 0) \
-    TIMER_PIN_MAP( 9, PB0 , 2, 0)
-    
-
+        TIMER_PIN_MAP( 0, MOTOR1_PIN        , 2,  0) \
+        TIMER_PIN_MAP( 1, MOTOR2_PIN        , 2,  1) \
+        TIMER_PIN_MAP( 2, MOTOR3_PIN        , 2,  1) \
+        TIMER_PIN_MAP( 3, MOTOR4_PIN        , 2,  0) \
+        TIMER_PIN_MAP( 4, MOTOR5_PIN        , 1,  0) \
+        TIMER_PIN_MAP( 5, MOTOR6_PIN        , 1,  0) \
+	TIMER_PIN_MAP( 6, MOTOR7_PIN        , 1,  0) \
+	TIMER_PIN_MAP( 7, MOTOR8_PIN        , 1,  0) \
+	TIMER_PIN_MAP( 8, LED_STRIP_PN      , 2,  0) \
+	TIMER_PIN_MAP( 9, CAMERA_CONTROL_PIN, 2, -1)
 
 #define ADC3_DMA_OPT        1
 
