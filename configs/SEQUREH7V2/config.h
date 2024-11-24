@@ -42,7 +42,9 @@
 
 #define USE_MAX7456
 
+#ifndef USE_CAMERA_CONTROL
 #define USE_CAMERA_CONTROL
+#endif
 
 #define BEEPER_PIN PD15
 
