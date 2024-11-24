@@ -104,19 +104,19 @@
 #define GYRO_1_CS_PIN PB12
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP(1, PB4, 1, 0) \
-    TIMER_PIN_MAP(2, PB5, 1, 0) \
-    TIMER_PIN_MAP(3, PB0, 2, 0) \
-    TIMER_PIN_MAP(4, PB1, 2, 0) \
-    TIMER_PIN_MAP(5, PB6, 2, 0) \
-    TIMER_PIN_MAP(6, PB7, 2, 0) \
-    TIMER_PIN_MAP(7, PB10, 1, 0) \
-    TIMER_PIN_MAP(8, PB11, 1, 0) \
-    TIMER_PIN_MAP(9, PA8, 1, 0) \
-    TIMER_PIN_MAP(10, PB3, 1, 0) 
+    TIMER_PIN_MAP( 0, PB4,  1,  0 ) \
+    TIMER_PIN_MAP( 1, PB5,  1,  0 ) \
+    TIMER_PIN_MAP( 2, PB0,  2,  0 ) \
+    TIMER_PIN_MAP( 3, PB1,  2,  0 ) \
+    TIMER_PIN_MAP( 4, PB6,  2,  0 ) \
+    TIMER_PIN_MAP( 5, PB7,  2,  0 ) \
+    TIMER_PIN_MAP( 6, PB10, 1,  0 ) \
+    TIMER_PIN_MAP( 7, PB11, 1,  0 ) \
+    TIMER_PIN_MAP( 8, PA8,  1,  0 ) \
+    TIMER_PIN_MAP( 9, PB3,  1, -1 ) 
 
-#define ADC1_DMA_OPT 0
-#define ADC3_DMA_OPT 0
+#define ADC1_DMA_OPT        0
+#define ADC3_DMA_OPT        0
 
 #define TIMUP1_DMA_OPT      0
 #define TIMUP2_DMA_OPT      0
