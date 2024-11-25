@@ -31,7 +31,6 @@
 
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
-#define USE_SPI_GYRO
 #define GYRO_1_CS_PIN                       PA4
 #define GYRO_1_SPI_INSTANCE                 SPI1
 #define GYRO_1_EXTI_PIN                     PB2
