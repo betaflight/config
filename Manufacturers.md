@@ -17,6 +17,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |APEX|Apexfpv|https://apexfpv.eu/|
 |AXFL|Axisflying|https://www.axisflying.com/|
 |BKRC|BAYCK RC||
+|BLDY|BotLab Dynamics|https://www.botlabdynamics.store|
 |BEFH|BETAFPV Hobby|https://betafpv.com/|
 |BKMN|Jason Blackman|https://github.com/blckmn|
 |BROT|Brotherhobby Co., Ltd|https://brotherhobby.com/|
