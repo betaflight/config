@@ -92,8 +92,6 @@
 #define ADC_VBAT_PIN                        PB0
 #define ADC_CURR_PIN                        PB1
 
-#define PINIO1_PIN                          NONE
-
 #define TIMER_PIN_MAPPING \
                                             TIMER_PIN_MAP(0, PH3, 1, 4) \
                                             TIMER_PIN_MAP(1, PA8, 1, 0) \
@@ -102,7 +100,6 @@
                                             TIMER_PIN_MAP(4, PA3, 1, 3) 
 
 #define ADC1_DMA_OPT                        11
-#define SPI3_TX_DMA_OPT                     5
 
 #define ADC_INSTANCE                        ADC1
 #define BARO_I2C_INSTANCE                   I2CDEV_2
