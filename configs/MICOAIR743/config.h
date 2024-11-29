@@ -99,14 +99,14 @@
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, MOTOR1_PIN, 1,  0 ) \
-    TIMER_PIN_MAP( 1, MOTOR2_PIN, 1,  0 ) \
-    TIMER_PIN_MAP( 2, MOTOR3_PIN, 1,  0 ) \
-    TIMER_PIN_MAP( 3, MOTOR4_PIN, 1,  0 ) \
-    TIMER_PIN_MAP( 4, MOTOR5_PIN, 2,  0 ) \
-    TIMER_PIN_MAP( 5, MOTOR6_PIN, 2,  0 ) \
-    TIMER_PIN_MAP( 6, MOTOR7_PIN, 1,  0 ) \
-    TIMER_PIN_MAP( 7, MOTOR8_PIN, 1,  0 ) \
-    TIMER_PIN_MAP( 8, LED_STRIP_PIN, 1, 0 ) \
+    TIMER_PIN_MAP( 1, MOTOR2_PIN, 1,  1 ) \
+    TIMER_PIN_MAP( 2, MOTOR3_PIN, 1,  2 ) \
+    TIMER_PIN_MAP( 3, MOTOR4_PIN, 1,  3 ) \
+    TIMER_PIN_MAP( 4, MOTOR5_PIN, 2,  4 ) \
+    TIMER_PIN_MAP( 5, MOTOR6_PIN, 2,  5 ) \
+    TIMER_PIN_MAP( 6, MOTOR7_PIN, 1,  6 ) \
+    TIMER_PIN_MAP( 7, MOTOR8_PIN, 1,  7 ) \
+    TIMER_PIN_MAP( 8, LED_STRIP_PIN, 1, 12 ) \
     TIMER_PIN_MAP( 9, BEEPER_PIN, 1, -1 ) 
     
 #define ADC1_DMA_OPT   8
@@ -121,8 +121,8 @@
 #define MAX7456_SPI_INSTANCE SPI1
 #define SDIO_USE_4BIT        1
 #define SDIO_DEVICE          SDIODEV_1
-#define BARO_I2C_INSTANCE    I2CDEV_2
-#define MAG_I2C_INSTANCE     I2CDEV_2
+#define BARO_I2C_INSTANCE    (I2CDEV_2)
+#define MAG_I2C_INSTANCE     (I2CDEV_2)
 #define MAG_I2C_ADDRESS      14
 #define MAG_ALIGN            CW90_DEG
 #define MAG_ALIGN_YAW        900
