@@ -44,26 +44,27 @@
 #endif
 
 #define BEEPER_PIN           PC3
-#define MOTOR1_PIN           PC6
-#define MOTOR2_PIN           PC7
-#define MOTOR3_PIN           PC8
-#define MOTOR4_PIN           PC9
-#define MOTOR5_PIN           PA15
-#define MOTOR6_PIN           PA1
-#define MOTOR7_PIN           PA2
-#define MOTOR8_PIN           PA3
 #define LED_STRIP_PIN        PA0
-#define UART1_TX_PIN         PA9
-#define UART3_TX_PIN         PB10
+#define MOTOR1_PIN           PA1
+#define MOTOR2_PIN           PA2
+#define MOTOR3_PIN           PA3
+#define MOTOR4_PIN           PA8
+#define MOTOR5_PIN           PA9
+#define MOTOR6_PIN           PA10
+#define MOTOR7_PIN           PC8
+#define MOTOR8_PIN           PC9
+#define UART1_TX_PIN         PB6
 #define UART4_TX_PIN         PC10
 #define UART5_TX_PIN         PC12
-#define UART1_RX_PIN         PA10
+#define UART6_TX_PIN         PC6
+#define UART1_RX_PIN         PB7
 #define UART3_RX_PIN         PB11
 #define UART4_RX_PIN         PC11
 #define UART5_RX_PIN         PD2
+#define UART6_RX_PIN         PC7
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
-#define LED0_PIN             PB7
+#define LED0_PIN             PA15
 #define SPI1_SCK_PIN         PA5
 #define SPI2_SCK_PIN         PB13
 #define SPI3_SCK_PIN         PB3
@@ -77,30 +78,28 @@
 #define ADC_VBAT_PIN         PC1
 #define ADC_RSSI_PIN         PC2
 #define ADC_CURR_PIN         PC0
-#define PINIO1_PIN           PA8
-#define PINIO2_PIN           PB1
-#define FLASH_CS_PIN         PB6
+#define PINIO1_PIN           PB1
+#define PINIO2_PIN           PB10
+#define FLASH_CS_PIN         PB2
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
 #define GYRO_1_CS_PIN        PA4
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PC6 , 2, 0) \
-    TIMER_PIN_MAP( 1, PC7 , 2, 1) \
-    TIMER_PIN_MAP( 2, PC8 , 2, 1) \
-    TIMER_PIN_MAP( 3, PC9 , 2, 0) \
-    TIMER_PIN_MAP( 4, PA15, 1, 0) \
-    TIMER_PIN_MAP( 5, PA1 , 1, 0) \
-    TIMER_PIN_MAP( 6, PA2 , 1, 0) \
-    TIMER_PIN_MAP( 7, PA3 , 1, 0) \
+    TIMER_PIN_MAP( 0, PA1 , 1, 0) \
+    TIMER_PIN_MAP( 1, PA2 , 1, 0) \
+    TIMER_PIN_MAP( 2, PA3 , 1, 0) \
+    TIMER_PIN_MAP( 3, PA8 , 1, 1) \
+    TIMER_PIN_MAP( 4, PA9 , 1, 1) \
+    TIMER_PIN_MAP( 5, PA10, 1, 1) \
+    TIMER_PIN_MAP( 6, PC8 , 2, 1) \
+    TIMER_PIN_MAP( 7, PC9 , 2, 0) \
     TIMER_PIN_MAP( 8, PA0 , 2, 0) \
     TIMER_PIN_MAP( 9, PB0 , 2, -1)
-    
 
+#define ADC2_DMA_OPT        1
 
-#define ADC3_DMA_OPT        1
-
-#define ADC_INSTANCE ADC3
+#define ADC_INSTANCE ADC2
 #define FLASH_SPI_INSTANCE SPI3
 #define MAX7456_SPI_INSTANCE SPI2
 
@@ -120,6 +119,7 @@
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG
 #define GYRO_1_ALIGN_YAW 900
+#define DEFAULT_CURRENT_METER_SCALE 120
 
 #define SERIALRX_UART           SERIAL_PORT_UART5
 #define ESC_SENSOR_UART         SERIAL_PORT_USART3
