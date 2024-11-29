@@ -110,8 +110,8 @@
 #define I2C4_SDA_PIN            NONE
 
 
-#define MAG_I2C_INSTANCE        (I2CDEV_2)
-#define BARO_I2C_INSTANCE       (I2CDEV_2)
+#define MAG_I2C_INSTANCE        I2CDEV_2
+#define BARO_I2C_INSTANCE       I2CDEV_2
 
 #define ENSURE_MPU_DATA_READY_IS_LOW
 

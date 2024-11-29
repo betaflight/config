@@ -86,8 +86,8 @@
 #define USE_BARO_DPS310
 #define I2C1_SCL_PIN                    PB6
 #define I2C1_SDA_PIN                    PB7
-#define MAG_I2C_INSTANCE                (I2CDEV_1)
-#define BARO_I2C_INSTANCE               (I2CDEV_1)
+#define MAG_I2C_INSTANCE                I2CDEV_1
+#define BARO_I2C_INSTANCE               I2CDEV_1
 
 // UART
 #define UART1_RX_PIN                    PA10

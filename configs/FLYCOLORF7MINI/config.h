@@ -97,7 +97,7 @@
 
 #define ADC3_DMA_OPT                        0
 #define ADC_INSTANCE                        ADC3
-#define BARO_I2C_INSTANCE                   (I2CDEV_1)
+#define BARO_I2C_INSTANCE                   I2CDEV_1
 #define FLASH_SPI_INSTANCE                  SPI3
 #define GYRO_1_SPI_INSTANCE                 SPI1
 #define GYRO_2_SPI_INSTANCE                 SPI1

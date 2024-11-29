@@ -96,8 +96,8 @@
 #define I2C2_SCL_PIN            PB10
 #define I2C2_SDA_PIN            PB11
 
-#define MAG_I2C_INSTANCE        (I2CDEV_1)
-#define BARO_I2C_INSTANCE       (I2CDEV_2)
+#define MAG_I2C_INSTANCE        I2CDEV_1
+#define BARO_I2C_INSTANCE       I2CDEV_2
 
 #define ENSURE_MPU_DATA_READY_IS_LOW
 

@@ -109,8 +109,8 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 #define ADC1_DMA_OPT                    8
 #define ADC3_DMA_OPT                    9
 
-#define BARO_I2C_INSTANCE               (I2CDEV_2)
-#define MAG_I2C_INSTANCE                (I2CDEV_2)
+#define BARO_I2C_INSTANCE               I2CDEV_2
+#define MAG_I2C_INSTANCE                I2CDEV_2
 #define FLASH_SPI_INSTANCE              SPI4
 #define GYRO_1_SPI_INSTANCE             SPI2
 #define GYRO_2_SPI_INSTANCE             SPI3

@@ -93,8 +93,8 @@
 #define SPI2_TX_DMA_OPT     0
 #define ADC1_DMA_OPT        0
 
-#define MAG_I2C_INSTANCE                    (I2CDEV_2)
-#define BARO_I2C_INSTANCE                   (I2CDEV_2)
+#define MAG_I2C_INSTANCE                    I2CDEV_2
+#define BARO_I2C_INSTANCE                   I2CDEV_2
 // #define SERIALRX_PROVIDER                   CRSF
 #define DEFAULT_BLACKBOX_DEVICE             BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BURST                 DSHOT_DMAR_ON

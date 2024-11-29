@@ -121,8 +121,8 @@
 #define MAX7456_SPI_INSTANCE SPI1
 #define SDIO_USE_4BIT        1
 #define SDIO_DEVICE          SDIODEV_1
-#define BARO_I2C_INSTANCE    (I2CDEV_2)
-#define MAG_I2C_INSTANCE     (I2CDEV_2)
+#define BARO_I2C_INSTANCE    I2CDEV_2
+#define MAG_I2C_INSTANCE     I2CDEV_2
 #define MAG_I2C_ADDRESS      14
 #define MAG_ALIGN            CW90_DEG
 #define MAG_ALIGN_YAW        900

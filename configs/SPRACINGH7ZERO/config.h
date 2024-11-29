@@ -105,7 +105,7 @@
 #define USE_I2C_DEVICE_1        // Connected to BMP388 only
 #define I2C1_SCL_PIN            PB8
 #define I2C1_SDA_PIN            PB9
-#define I2C_DEVICE (I2CDEV_1)
+#define I2C_DEVICE I2CDEV_1
 
 #define I2C2_SCL_PIN            NONE
 #define I2C2_SDA_PIN            NONE
@@ -225,10 +225,10 @@
 #define TIMUP5_DMA_OPT 0
 #define TIMUP8_DMA_OPT 2
 
-#define MAG_I2C_INSTANCE (I2CDEV_1)
+#define MAG_I2C_INSTANCE I2CDEV_1
 
 #define USE_BARO
-#define BARO_I2C_INSTANCE (I2CDEV_1)
+#define BARO_I2C_INSTANCE I2CDEV_1
 
 #define DEFAULT_GYRO_TO_USE  GYRO_CONFIG_USE_GYRO_1
 #define GYRO_1_SPI_INSTANCE  SPI3

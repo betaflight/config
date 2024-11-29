@@ -91,8 +91,8 @@
 #define ADC3_DMA_OPT                   1
 #define ADC_INSTANCE                   ADC3
 
-#define MAG_I2C_INSTANCE               (I2CDEV_2)
-#define BARO_I2C_INSTANCE              (I2CDEV_2)
+#define MAG_I2C_INSTANCE               I2CDEV_2
+#define BARO_I2C_INSTANCE              I2CDEV_2
 
 #define USE_SDCARD_SPI
 #define DEFAULT_BLACKBOX_DEVICE        BLACKBOX_DEVICE_SDCARD

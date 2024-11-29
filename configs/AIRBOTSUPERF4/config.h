@@ -122,8 +122,8 @@
 #define SPI3_TX_DMA_OPT                     5
 
 #define ADC_INSTANCE                        ADC1
-#define BARO_I2C_INSTANCE                   (I2CDEV_1)
-#define MAG_I2C_INSTANCE                            (I2CDEV_1)
+#define BARO_I2C_INSTANCE                   I2CDEV_1
+#define MAG_I2C_INSTANCE                            I2CDEV_1
 
 #define DEFAULT_BLACKBOX_DEVICE             BLACKBOX_DEVICE_FLASH
 

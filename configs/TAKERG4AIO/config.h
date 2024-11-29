@@ -113,6 +113,6 @@
 #define DEFAULT_ALIGN_BOARD_YAW      45
 #define GYRO_1_ALIGN                 CW270_DEG
 
-#define MAG_I2C_INSTANCE             (I2CDEV_1)
-#define BARO_I2C_INSTANCE            (I2CDEV_1)
+#define MAG_I2C_INSTANCE             I2CDEV_1
+#define BARO_I2C_INSTANCE            I2CDEV_1
 // Defines the I2C instance for magnetometer and barometer

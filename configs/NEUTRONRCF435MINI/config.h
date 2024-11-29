@@ -97,8 +97,8 @@
 #define DEFAULT_ALIGN_BOARD_YAW -45
 #define MAX7456_SPI_INSTANCE    SPI2
 #define FLASH_SPI_INSTANCE      SPI2
-#define BARO_I2C_INSTANCE       (I2CDEV_2)
-#define MAG_I2C_INSTANCE                (I2CDEV_2)
+#define BARO_I2C_INSTANCE       I2CDEV_2
+#define MAG_I2C_INSTANCE                I2CDEV_2
 #define USE_I2C_PULLUP
 #define LED0_INVERTED
 #define LED1_INVERTED

@@ -101,7 +101,7 @@
 
 #define USE_BARO
 #define USE_BARO_DPS310
-#define BARO_I2C_INSTANCE (I2CDEV_1)
+#define BARO_I2C_INSTANCE I2CDEV_1
 
 /*
 // SPI barometer for older board revision
@@ -112,7 +112,7 @@
 #define BARO_HARDWARE           AUTO
 */
 
-#define MAG_I2C_INSTANCE        (I2CDEV_1)
+#define MAG_I2C_INSTANCE        I2CDEV_1
 
 
 // Flash Configuration

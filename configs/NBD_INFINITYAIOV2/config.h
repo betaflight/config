@@ -77,8 +77,8 @@
 
 
 #define ADC1_DMA_OPT                    1
-#define MAG_I2C_INSTANCE                (I2CDEV_1)
-#define BARO_I2C_INSTANCE                       (I2CDEV_1)
+#define MAG_I2C_INSTANCE                I2CDEV_1
+#define BARO_I2C_INSTANCE                       I2CDEV_1
 #define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
 #define DEFAULT_DSHOT_TELEMETRY DSHOT_TELEMETRY_ON
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH

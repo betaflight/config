@@ -125,8 +125,8 @@
 #define ADC1_DMA_OPT         1
 
 // BARO I2C
-#define BARO_I2C_INSTANCE (I2CDEV_1)
-#define MAG_I2C_INSTANCE (I2CDEV_1)
+#define BARO_I2C_INSTANCE I2CDEV_1
+#define MAG_I2C_INSTANCE I2CDEV_1
 
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
