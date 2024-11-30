@@ -81,6 +81,7 @@
 #define ADC_CURR_PIN         PC0
 #define BARO_CS_PIN          PC13
 #define PINIO1_PIN           PC5
+#define PINIO2_PIN           PB4
 #define FLASH_CS_PIN         PA15
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
@@ -113,7 +114,9 @@
 #define BEEPER_INVERTED
 #define MAX7456_SPI_INSTANCE SPI2
 #define PINIO1_CONFIG 129
+#define PINIO2_CONFIG 129
 #define PINIO1_BOX 40
+#define PINIO2_BOX 41
 #define FLASH_SPI_INSTANCE SPI3
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG
