@@ -43,6 +43,10 @@
 #define USE_FLASH_M25P16
 #define USE_MAX7456
 
+#ifndef USE_CAMERA_CONTROL
+#define USE_CAMERA_CONTROL
+#endif
+
 #define BEEPER_PIN           PC3
 #define MOTOR1_PIN           PC8
 #define MOTOR2_PIN           PC9
@@ -76,6 +80,7 @@
 #define SPI1_SDO_PIN         PA7
 #define SPI2_SDO_PIN         PB15
 #define SPI3_SDO_PIN         PB5
+#define CAMERA_CONTROL_PIN   PA8
 #define ADC_VBAT_PIN         PC1
 #define ADC_RSSI_PIN         PC2
 #define ADC_CURR_PIN         PC0
@@ -98,7 +103,8 @@
     TIMER_PIN_MAP( 7, PB6 , 1,  0) \
     TIMER_PIN_MAP( 8, PB7 , 1,  0) \
     TIMER_PIN_MAP( 9, PC8 , 2,  0) \
-    TIMER_PIN_MAP(10, PC9 , 2,  0)
+    TIMER_PIN_MAP(10, PC9 , 2,  0) \
+    TIMER_PIN_MAP(11, PA8 , 1, -1)
 
 
 
