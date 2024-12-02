@@ -43,6 +43,10 @@
 #define USE_FLASH_M25P16
 #define USE_MAX7456
 
+#ifndef USE_CAMERA_CONTROL
+#define USE_CAMERA_CONTROL
+#endif
+
 #define BEEPER_PIN           PC3
 #define MOTOR1_PIN           PC8
 #define MOTOR2_PIN           PC9
@@ -76,11 +80,13 @@
 #define SPI1_SDO_PIN         PA7
 #define SPI2_SDO_PIN         PB15
 #define SPI3_SDO_PIN         PB5
+#define CAMERA_CONTROL_PIN   PA8
 #define ADC_VBAT_PIN         PC1
 #define ADC_RSSI_PIN         PC2
 #define ADC_CURR_PIN         PC0
 #define BARO_CS_PIN          PC13
 #define PINIO1_PIN           PC5
+#define PINIO2_PIN           PB4
 #define FLASH_CS_PIN         PA15
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
@@ -97,7 +103,8 @@
     TIMER_PIN_MAP( 7, PB6 , 1,  0) \
     TIMER_PIN_MAP( 8, PB7 , 1,  0) \
     TIMER_PIN_MAP( 9, PC8 , 2,  0) \
-    TIMER_PIN_MAP(10, PC9 , 2,  0)
+    TIMER_PIN_MAP(10, PC9 , 2,  0) \
+    TIMER_PIN_MAP(11, PA8 , 1, -1)
 
 
 
@@ -113,7 +120,9 @@
 #define BEEPER_INVERTED
 #define MAX7456_SPI_INSTANCE SPI2
 #define PINIO1_CONFIG 129
+#define PINIO2_CONFIG 129
 #define PINIO1_BOX 40
+#define PINIO2_BOX 41
 #define FLASH_SPI_INSTANCE SPI3
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG
