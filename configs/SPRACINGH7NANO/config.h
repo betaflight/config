@@ -95,7 +95,7 @@
 #define USE_I2C_DEVICE_1
 #define I2C1_SCL_PIN PB8
 #define I2C1_SDA_PIN PB9
-#define I2C_DEVICE (I2CDEV_1)
+#define I2C_DEVICE I2CDEV_1
 
 #define USE_I2C_DEVICE_4
 #define I2C4_SCL_PIN            PB6 // Shared with motor outputs 5/6
@@ -224,10 +224,10 @@
 #define TIMUP8_DMA_OPT 2
 
 //TODO #define MAG_BUSTYPE I2C
-#define MAG_I2C_INSTANCE (I2CDEV_1)
+#define MAG_I2C_INSTANCE I2CDEV_1
 
 #define USE_BARO
-#define BARO_I2C_INSTANCE (I2CDEV_1)
+#define BARO_I2C_INSTANCE I2CDEV_1
 
 #define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_1
 #define GYRO_1_SPI_INSTANCE SPI2

@@ -122,7 +122,7 @@
 //#define ADC2_DMA_OPT                  1  // DMA 2 Stream 3 Channel 1 (compat default)
 
 #define RX_SPI_DEFAULT_PROTOCOL         RX_SPI_NRF24_H8_3D
-#define I2C_DEVICE                      (I2CDEV_2)
+#define I2C_DEVICE                      I2CDEV_2
 
 #define MAX_SUPPORTED_MOTORS            12
 

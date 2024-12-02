@@ -84,7 +84,7 @@
 #define SPI2_TX_DMA_OPT                 10
 #define SPI2_RX_DMA_OPT                 11
 
-#define BARO_I2C_INSTANCE               (I2CDEV_2)
+#define BARO_I2C_INSTANCE               I2CDEV_2
 #define FLASH_SPI_INSTANCE              SPI2
 #define GYRO_1_SPI_INSTANCE             SPI1
 
