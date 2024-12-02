@@ -99,8 +99,8 @@
 #define I2C1_SDA_PIN                    PB9
 #define I2C2_SCL_PIN                    PH2
 #define I2C2_SDA_PIN                    PH3
-#define MAG_I2C_INSTANCE                (I2CDEV_1)
-#define BARO_I2C_INSTANCE               (I2CDEV_1)
+#define MAG_I2C_INSTANCE                I2CDEV_1
+#define BARO_I2C_INSTANCE               I2CDEV_1
 #define DEFAULT_BARO_DPS310
 
 // UART & VCP
