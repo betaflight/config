@@ -110,7 +110,8 @@
                                             TIMER_PIN_MAP(1, PA9, 1, 0) \
                                             TIMER_PIN_MAP(2, PA8, 1, 1) \
                                             TIMER_PIN_MAP(3, PC9, 1, 0) \
-                                            TIMER_PIN_MAP(4, PC8, 1, 0) 
+                                            TIMER_PIN_MAP(4, PC8, 1, 0)  \
+                                            TIMER_PIN_MAP(5, PB7, 1, -1)  
 
 #define ADC1_DMA_OPT                        1
 #define ADC_INSTANCE                        ADC1
