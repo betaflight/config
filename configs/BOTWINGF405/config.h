@@ -61,7 +61,7 @@
 
 #define UART1_TX_PIN                        PB6
 #define UART1_RX_PIN                        PB7
-#define RX_PPM_PIN                           PB7
+#define RX_PPM_PIN                          PB7
 
 #define UART2_TX_PIN                        PA2
 #define UART2_RX_PIN                        PA3
