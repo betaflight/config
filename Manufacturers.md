@@ -47,6 +47,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |FLHI|Fly High|https://elektronchika.github.io/flyhigh/|
 |FLLF|Flying Lemon FPV|https://github.com/flyinglemonfpv|
 |FLON|FlightOne|https://flightone.com/|
+|FLTE|FLYTEX LTD|https://www.flytex.pro/|
 |FLWO|Flywoo|https://flywoo.net/|
 |FLYS|FlySpark|https://flyspark.in/|
 |FOXE|Foxeer|http://www.foxeer.com/|
