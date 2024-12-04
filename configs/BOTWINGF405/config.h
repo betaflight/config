@@ -126,5 +126,3 @@
 #define SERIALRX_UART                       SERIAL_PORT_USART1
 #define ESC_SENSOR_UART                     SERIAL_PORT_USART2
 #define GPS_UART                            SERIAL_PORT_USART6
-
-#define DEFAULT_FEATURES                    (FEATURE_OSD | FEATURE_LED_STRIP)
