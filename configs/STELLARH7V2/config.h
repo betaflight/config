@@ -99,7 +99,6 @@
 #define GYRO_1_CLKIN_PIN     PA15
 #define FLASH_CS_PIN         PE11
 
-
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PB0 , 2,  0) \
     TIMER_PIN_MAP( 1, PB1 , 2,  1) \
@@ -112,8 +111,6 @@
     TIMER_PIN_MAP( 8, PD14, 1, -1) \
     TIMER_PIN_MAP( 9, PD15, 1, -1) \
     TIMER_PIN_MAP(10, PA15, 1, -1) 
-
-
 
 #define ADC1_DMA_OPT        8
 #define ADC3_DMA_OPT        9
