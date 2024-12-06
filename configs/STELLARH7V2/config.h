@@ -152,3 +152,5 @@
 #define GYRO_1_ALIGN_PITCH 1800
 
 #define ENSURE_MPU_DATA_READY_IS_LOW
+
+#define BOX_USER1_NAME       "CAM 1,2"
