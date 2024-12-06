@@ -55,7 +55,7 @@
 #define SERVO5_PIN          PA9 // TIM1 CH2 (AF1)
 #define SERVO6_PIN          PA10 // TIM1 CH3 (AF1) or UART1_RX_PIN
 #define SERVO7_PIN          PA8 // TIM1 CH1 (AF1) or UART1_TX_PIN
-#define RX_PPM_PIN          PA3 // TIM5 CH4 (AF2) DMA1 Stream 1 Channel 6
+#define RX_PPM_PIN          PA3 // TIM5 CH4 (AF2) 
 #define UART2_TX_PIN        PA2
 #define UART3_TX_PIN        PC10
 #define UART4_TX_PIN        PA0
@@ -96,7 +96,7 @@
                             TIMER_PIN_MAP( 8,  PA9,  1, -1 ) \
                             TIMER_PIN_MAP( 9,  PA10, 1, -1 ) \
                             TIMER_PIN_MAP( 10, PA8,  1, -1 ) \
-                            TIMER_PIN_MAP( 11, PA3 , 2,  0 ) \
+                            TIMER_PIN_MAP( 11, PA3 , 2, -1 ) \
                             TIMER_PIN_MAP( 12, PB0,  2, -1 )
 
 #define ADC_INSTANCE ADC3
