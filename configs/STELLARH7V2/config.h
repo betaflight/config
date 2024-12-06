@@ -101,14 +101,14 @@
 
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PB0 , 2,  1) \
+    TIMER_PIN_MAP( 0, PB0 , 2,  0) \
     TIMER_PIN_MAP( 1, PB1 , 2,  1) \
-    TIMER_PIN_MAP( 2, PA0 , 2,  1) \
-    TIMER_PIN_MAP( 3, PA1 , 2,  1) \
-    TIMER_PIN_MAP( 4, PA2 , 2,  0) \
-    TIMER_PIN_MAP( 5, PA3 , 2,  0) \
-    TIMER_PIN_MAP( 6, PD12, 1,  0) \
-    TIMER_PIN_MAP( 7, PD13, 1,  0) \
+    TIMER_PIN_MAP( 2, PA0 , 2,  2) \
+    TIMER_PIN_MAP( 3, PA1 , 2,  3) \
+    TIMER_PIN_MAP( 4, PA2 , 2,  4) \
+    TIMER_PIN_MAP( 5, PA3 , 2,  5) \
+    TIMER_PIN_MAP( 6, PD12, 1,  6) \
+    TIMER_PIN_MAP( 7, PD13, 1,  7) \
     TIMER_PIN_MAP( 8, PD14, 1, -1) \
     TIMER_PIN_MAP( 9, PD15, 1, -1) \
     TIMER_PIN_MAP(10, PA15, 1, -1) 
@@ -119,9 +119,9 @@
 #define ADC3_DMA_OPT        9
 #define TIMUP1_DMA_OPT      0
 #define TIMUP2_DMA_OPT      0
-#define TIMUP3_DMA_OPT      2
-#define TIMUP4_DMA_OPT      1
-#define TIMUP5_DMA_OPT      0
+#define TIMUP3_DMA_OPT      10
+#define TIMUP4_DMA_OPT      11
+#define TIMUP5_DMA_OPT      12
 #define TIMUP8_DMA_OPT      0
 
 #define BARO_I2C_INSTANCE I2CDEV_2
