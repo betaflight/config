@@ -99,7 +99,8 @@
                             TIMER_PIN_MAP( 11, PA3 , 2,  0 ) \
                             TIMER_PIN_MAP( 12, PB0,  2, -1 )
 
-#define ADC1_DMA_OPT 0 // DMA2 Stream 0 Channel 0
+#define ADC_INSTANCE ADC3
+#define ADC3_DMA_OPT 1 //  DMA2 Stream 1 Channel 2
 
 #define SERIALRX_UART SERIAL_PORT_USART2
 #define SERIALRX_PROVIDER SERIALRX_CRSF
