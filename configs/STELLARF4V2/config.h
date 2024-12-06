@@ -52,9 +52,10 @@
 #define SERVO2_PIN          PB7 // TIM4 CH2 (AF2)
 #define SERVO3_PIN          PB8 // TIM4 CH3 (AF2)
 #define SERVO4_PIN          PB9 // TIM4 CH4 (AF2)
-#define SERVO5_PIN          PA9 // TIM1 CH2 (AF1)
+#define SERVO5_PIN          PA9 // TIM1 CH2 (AF1) or UART1_TX_PIN
 #define SERVO6_PIN          PA10 // TIM1 CH3 (AF1) or UART1_RX_PIN
-#define SERVO7_PIN          PA8 // TIM1 CH1 (AF1) or UART1_TX_PIN
+#define SERVO7_PIN          PA8 // TIM1 CH1 (AF1) 
+
 #define RX_PPM_PIN          PA3 // TIM5 CH4 (AF2) 
 #define UART2_TX_PIN        PA2
 #define UART3_TX_PIN        PC10
