@@ -78,7 +78,6 @@
 #define ADC_VBAT_PIN                    PC2
 #define ADC_RSSI_PIN                    PC0
 #define ADC_CURR_PIN                    PC1
-#define BARO_CS_PIN                     PA4
 #define PINIO1_PIN                      PC8
 #define PINIO2_PIN                      PC9
 #define FLASH_CS_PIN                    PC10
