@@ -52,9 +52,9 @@
 #define RX_PWM1_PIN                     PA2
 #define RX_PWM2_PIN                     PA1
 #define RX_PWM3_PIN                     PA0
-#define LED_STRIP_PIN                   PA08
-#define UART1_TX_PIN                    PA09
-#define UART2_TX_PIN                    PA02
+#define LED_STRIP_PIN                   PA8
+#define UART1_TX_PIN                    PA9
+#define UART2_TX_PIN                    PA2
 #define UART3_TX_PIN                    PB10
 #define UART4_TX_PIN                    PA0
 #define UART5_TX_PIN                    PC12
