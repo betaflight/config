@@ -53,6 +53,8 @@
 #define MOTOR6_PIN           PA9
 #define MOTOR7_PIN           PA10
 #define MOTOR8_PIN           PC9
+#define SERVO1_PIN           PH3 //  S9
+#define SERVO2_PIN           PC8 // S10
 #define UART1_TX_PIN         PB6
 #define UART1_RX_PIN         PB7
 #define UART3_RX_PIN         PB11
@@ -95,7 +97,9 @@
     TIMER_PIN_MAP( 6, PA10, 1,  6) \
     TIMER_PIN_MAP( 7, PC9 , 2,  7) \
     TIMER_PIN_MAP( 8, PH2 , 1,  8) \
-    TIMER_PIN_MAP( 9, PC5 , 1, -1)
+    TIMER_PIN_MAP( 9, PC8 , 1,  9) \
+    TIMER_PIN_MAP( 10,PH3 , 1, 10) \
+    TIMER_PIN_MAP( 11,PC5 , 1, -1)
 
 #define ADC2_DMA_OPT        9
 
