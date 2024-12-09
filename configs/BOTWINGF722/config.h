@@ -136,5 +136,5 @@
                                             TIMER_PIN_MAP(5, MOTOR5_PIN,    2, 0) \
                                             TIMER_PIN_MAP(6, MOTOR6_PIN,    2, 0) \
                                             TIMER_PIN_MAP(7, MOTOR7_PIN,    1, 0) \
-                                            TIMER_PIN_MAP(8, MOTOR8_PIN,    1, 0)
+                                            TIMER_PIN_MAP(8, MOTOR8_PIN,    1, 0) \
                                             TIMER_PIN_MAP(9, RX_PPM_PIN,    3, -1)
