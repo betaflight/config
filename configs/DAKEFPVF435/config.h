@@ -39,7 +39,6 @@
 #define USE_FLASH
 #define USE_FLASH_M25P16
 #define USE_MAX7456
-#define USE_LED_STRIP
 #ifndef USE_CAMERA_CONTROL
 #define USE_CAMERA_CONTROL
 #endif
@@ -53,8 +52,9 @@
 #define MOTOR6_PIN           PA9
 #define MOTOR7_PIN           PA10
 #define MOTOR8_PIN           PC9
+#define LED_STRIP_PIN        PC8
 #define SERVO1_PIN           PH3 //  S9
-#define SERVO2_PIN           PC8 // S10
+#define SERVO2_PIN           PH2 // S10
 #define UART1_TX_PIN         PB6
 #define UART1_RX_PIN         PB7
 #define UART3_RX_PIN         PB11
@@ -96,9 +96,9 @@
     TIMER_PIN_MAP( 5, PA9 , 1,  5) \
     TIMER_PIN_MAP( 6, PA10, 1,  6) \
     TIMER_PIN_MAP( 7, PC9 , 2,  7) \
-    TIMER_PIN_MAP( 8, PH2 , 1,  8) \
+    TIMER_PIN_MAP( 8, PC8 , 2,  8) \
     TIMER_PIN_MAP( 9, PH3 , 1, -1) \
-    TIMER_PIN_MAP( 10,PC8 , 1, -1) \
+    TIMER_PIN_MAP( 10,PH2 , 1, -1) \
     TIMER_PIN_MAP( 11,PC5 , 1, -1)
 
 #define ADC2_DMA_OPT        9
@@ -108,6 +108,7 @@
 #define MAX7456_SPI_INSTANCE SPI2
 
 #define BARO_I2C_INSTANCE I2CDEV_1
+#define MAG_I2C_INSTANCE I2CDEV_1
 
 #define DEFAULT_BLACKBOX_DEVICE      BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BITBANG        DSHOT_BITBANG_ON
