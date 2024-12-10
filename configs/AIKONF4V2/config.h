@@ -70,8 +70,6 @@
 #define MOTOR2_PIN                          PC7
 #define MOTOR3_PIN                          PC8
 #define MOTOR4_PIN                          PC9
-#define MOTOR5_PIN                          PB0
-#define MOTOR6_PIN                          PB1
 
 #define LED_STRIP_PIN                       PB6
 
@@ -106,8 +104,6 @@
                                             TIMER_PIN_MAP(2, PC7, 2,  1) \
                                             TIMER_PIN_MAP(3, PC8, 2,  1) \
                                             TIMER_PIN_MAP(4, PC9, 2,  0) \
-                                            TIMER_PIN_MAP(5, PB0, 2,  0) \
-                                            TIMER_PIN_MAP(6, PB1, 2,  0) \
                                             TIMER_PIN_MAP(5, PB3, 1, -1)
 
 #define ADC3_DMA_OPT                        1
