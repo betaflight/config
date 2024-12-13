@@ -77,6 +77,8 @@
     TIMER_PIN_MAP(  4, LED_STRIP_PIN,  1,  4 ) /* TIM1 CH3 */ \
     TIMER_PIN_MAP(  5, BEEPER_PIN,  1,  -1 ) /* TIM4 CH1 */
 
+#define TIMUP3_DMA_OPT      5
+
 #define ADC1_DMA_OPT 8
 #define ADC2_DMA_OPT 9
 #define ADC3_DMA_OPT 10
