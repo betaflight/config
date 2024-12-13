@@ -39,7 +39,6 @@
 #define USE_FLASH
 #define USE_FLASH_M25P16
 #define USE_MAX7456
-#define USE_VTX
 
 #define BEEPER_PIN           PC3
 #define MOTOR1_PIN           PA0
