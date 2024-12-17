@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32H743
 
-#define BOARD_NAME        HDZEROH743R
+#define BOARD_NAME        HDZERO_HALO
 #define MANUFACTURER_ID   HDZO
 
 #define USE_GYRO
