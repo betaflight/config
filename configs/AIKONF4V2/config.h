@@ -41,6 +41,7 @@
 #define GYRO_1_CS_PIN                       SPI1_NSS_PIN
 #define GYRO_1_SPI_INSTANCE                 SPI1
 #define GYRO_1_EXTI_PIN                     PC4
+#define GYRO_1_ALIGN                        CW90_DEG
 
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
