@@ -120,3 +120,6 @@
 #define DEFAULT_VOLTAGE_METER_SCALE         110
 
 #define PINIO1_BOX                          40
+
+#define GYRO_1_ALIGN                 CW90_DEG
+#define GYRO_1_ALIGN_YAW             0
