@@ -98,9 +98,9 @@
     TIMER_PIN_MAP( 10,PH2 , 1, -1) \
     TIMER_PIN_MAP( 11,PC5 , 1, -1)
 
-#define ADC2_DMA_OPT        9
+#define ADC1_DMA_OPT        9
 
-#define ADC_INSTANCE ADC2
+#define ADC_INSTANCE ADC1
 #define FLASH_SPI_INSTANCE SPI3
 #define MAX7456_SPI_INSTANCE SPI2
 
