@@ -97,7 +97,6 @@
 #define GYRO_1_CS_PIN           PB2
 #define GYRO_1_SPI_INSTANCE     SPI1
 #define GYRO_1_ALIGN CW90_DEG
-#define GYRO_1_ALIGN_YAW 1800
 
 #define USE_BARO
 #define USE_BARO_DPS310
