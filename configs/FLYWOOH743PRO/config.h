@@ -143,7 +143,6 @@
 #define BOX_USER2_NAME                      "CAM 1,2"
 #define GYRO_1_SPI_INSTANCE                 SPI1
 #define GYRO_1_ALIGN                        CW270_DEG
-#define GYRO_1_ALIGN_YAW                    2700
 #define GYRO_2_SPI_INSTANCE                 SPI4
 #define GYRO_2_ALIGN                        CW270_DEG
 #define GYRO_2_ALIGN_YAW                    2700
