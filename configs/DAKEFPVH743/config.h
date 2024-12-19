@@ -40,7 +40,7 @@
 #define USE_FLASH_M25P16
 #define USE_MAX7456
 
-#define BEEPER_PIN           PE2
+#define BEEPER_PIN           PE6
 #define MOTOR1_PIN           PA0
 #define MOTOR2_PIN           PA1
 #define MOTOR3_PIN           PA2
@@ -88,10 +88,10 @@
 #define ADC_VBAT_PIN         PC1
 #define ADC_RSSI_PIN         PC5
 #define ADC_CURR_PIN         PC0
-#define PINIO1_PIN           PE3
-#define PINIO2_PIN           PE4
-#define PINIO3_PIN           PE5
-#define PINIO4_PIN           PE6
+#define PINIO1_PIN           PE2
+#define PINIO2_PIN           PE3
+#define PINIO3_PIN           PE4
+#define PINIO4_PIN           PE5
 #define FLASH_CS_PIN         PA15
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
@@ -143,10 +143,8 @@
 
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW0_DEG
-#define GYRO_1_ALIGN_YAW 0
 #define GYRO_2_SPI_INSTANCE SPI1
 #define GYRO_2_ALIGN CW180_DEG
-#define GYRO_2_ALIGN_YAW 1800
 
 #define SERIALRX_UART           SERIAL_PORT_UART5
 #define ESC_SENSOR_UART         SERIAL_PORT_USART3
