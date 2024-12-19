@@ -128,6 +128,5 @@
 //TODO #define SDCARD_MODE OFF
 #define GYRO_1_SPI_INSTANCE             SPI2
 #define GYRO_1_ALIGN                    CW0_DEG
-#define GYRO_1_ALIGN_YAW                1800
 
 #define SERIALRX_UART                   SERIAL_PORT_USART1

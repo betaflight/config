@@ -113,5 +113,4 @@
 
 #define GYRO_1_SPI_INSTANCE          SPI1
 #define GYRO_1_ALIGN                 CW0_DEG_FLIP
-#define GYRO_1_ALIGN_YAW             2700
 #define DEFAULT_ALIGN_BOARD_YAW      -45

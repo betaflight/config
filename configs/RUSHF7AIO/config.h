@@ -119,7 +119,6 @@
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 
 #define GYRO_1_ALIGN                    CW270_DEG
-#define GYRO_1_ALIGN_YAW                2700
 
 #define PINIO1_BOX                      40
 #define PINIO2_BOX                      41

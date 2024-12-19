@@ -132,8 +132,6 @@
 
 #define GYRO_1_SPI_INSTANCE     SPI1
 #define GYRO_1_ALIGN            CW180_DEG_FLIP
-#define GYRO_1_ALIGN_PITCH      1800
-#define GYRO_1_ALIGN_YAW        1800
 
 #define GYRO_2_SPI_INSTANCE     SPI1
 #define GYRO_2_ALIGN            CW90_DEG

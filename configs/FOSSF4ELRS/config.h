@@ -118,4 +118,3 @@
 #define DEFAULT_VOLTAGE_METER_SCALE     110
 
 #define GYRO_1_ALIGN                    CW180_DEG
-#define GYRO_1_ALIGN_YAW                1800

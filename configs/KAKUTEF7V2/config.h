@@ -106,4 +106,3 @@
 #define MAX7456_SPI_INSTANCE         SPI2
 #define GYRO_1_SPI_INSTANCE          SPI4
 #define GYRO_1_ALIGN                 CW270_DEG
-#define GYRO_1_ALIGN_YAW             2700

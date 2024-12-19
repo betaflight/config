@@ -106,7 +106,6 @@
 #define USE_I2C_PULLUP
 
 #define GYRO_1_ALIGN                    CW90_DEG
-#define GYRO_1_ALIGN_YAW                1800
 
 //TODO set rssi_channel = 15
 #define DEFAULT_DSHOT_BITBANG DSHOT_BITBANG_ON
