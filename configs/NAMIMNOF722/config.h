@@ -116,4 +116,3 @@
 #define PINIO1_BOX 40
 #define PINIO2_BOX 41
 #define GYRO_1_ALIGN CW90_DEG
-#define GYRO_1_ALIGN_YAW 900
