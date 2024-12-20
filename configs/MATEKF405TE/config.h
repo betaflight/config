@@ -119,8 +119,6 @@
 
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define GYRO_1_ALIGN                    CW270_DEG_FLIP
-#define GYRO_1_ALIGN_PITCH              1800
-#define GYRO_1_ALIGN_YAW                2700
 
 #define SERIALRX_UART                   SERIAL_PORT_USART2
 #define DEFAULT_RX_FEATURE              FEATURE_RX_SERIAL
