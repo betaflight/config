@@ -40,20 +40,20 @@
 #define USE_FLASH_M25P16
 #define USE_MAX7456
 
-#define BEEPER_PIN           PE6
+#define BEEPER_PIN           PC2
 #define MOTOR1_PIN           PA0
 #define MOTOR2_PIN           PA1
 #define MOTOR3_PIN           PA2
 #define MOTOR4_PIN           PA3
-#define MOTOR5_PIN           PE9
-#define MOTOR6_PIN           PE11
-#define MOTOR7_PIN           PE13
-#define MOTOR8_PIN           PE14
+#define MOTOR5_PIN           PD12
+#define MOTOR6_PIN           PD13
+#define MOTOR7_PIN           PD14
+#define MOTOR8_PIN           PD15
 #define LED_STRIP_PIN        PB0
-#define SERVO1_PIN           PC9  // S9
-#define SERVO2_PIN           PC8  // S10
-#define SERVO3_PIN           PD15 // S11
-#define SERVO4_PIN           PD14 // S12
+#define SERVO1_PIN           PE5  // S9
+#define SERVO2_PIN           PE6  // S10
+#define SERVO3_PIN           PC8  // S11
+#define SERVO4_PIN           PC9  // S12
 #define UART1_TX_PIN         PA9
 #define UART1_RX_PIN         PA10
 #define UART2_TX_PIN         PD5
@@ -91,7 +91,7 @@
 #define PINIO1_PIN           PE2
 #define PINIO2_PIN           PE3
 #define PINIO3_PIN           PE4
-#define PINIO4_PIN           PE5
+#define PINIO4_PIN           PD2
 #define FLASH_CS_PIN         PA15
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
@@ -107,17 +107,17 @@
     TIMER_PIN_MAP( 1,  PA1,  1,  1) \
     TIMER_PIN_MAP( 2,  PA2,  1,  2) \
     TIMER_PIN_MAP( 3,  PA3,  1,  3) \
-    TIMER_PIN_MAP( 4,  PE9,  1,  4) \
-    TIMER_PIN_MAP( 5,  PE11, 1,  5) \
-    TIMER_PIN_MAP( 6,  PE13, 1,  6) \
-    TIMER_PIN_MAP( 7,  PE14, 1,  7) \
-    TIMER_PIN_MAP( 8,  PC9,  2, -1) \
-    TIMER_PIN_MAP( 9,  PC8,  2, -1) \
-    TIMER_PIN_MAP( 10, PD15, 1, -1) \
-    TIMER_PIN_MAP( 11, PD14, 1, -1) \
+    TIMER_PIN_MAP( 4,  PD12, 1,  4) \
+    TIMER_PIN_MAP( 5,  PD13, 1,  5) \
+    TIMER_PIN_MAP( 6,  PD14, 1,  6) \
+    TIMER_PIN_MAP( 7,  PD15, 1,  7) \
+    TIMER_PIN_MAP( 8,  PE5,  1, -1) \
+    TIMER_PIN_MAP( 9,  PE6,  1, -1) \
+    TIMER_PIN_MAP( 10, PC8,  1, -1) \
+    TIMER_PIN_MAP( 11, PC9,  1, -1) \
     TIMER_PIN_MAP( 12, PB8,  1, -1) \
     TIMER_PIN_MAP( 13, PB9,  1, -1) \
-    TIMER_PIN_MAP( 14, PB0 , 2,  8)
+    TIMER_PIN_MAP( 14, PB0 , 1,  8)
 
 #define ADC2_DMA_OPT        9
 
