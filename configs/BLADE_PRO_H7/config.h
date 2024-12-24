@@ -42,6 +42,7 @@
 #define USE_FLASH_M25P16
 
 #define BEEPER_PIN           PA15
+
 #define MOTOR1_PIN           PB0
 #define MOTOR2_PIN           PB1
 #define MOTOR3_PIN           PA0
@@ -50,12 +51,14 @@
 #define MOTOR6_PIN           PA3
 #define MOTOR7_PIN           PD12
 #define MOTOR8_PIN           PD13
+
 #define SERVO1_PIN           PE5
 #define SERVO2_PIN           PE6
 #define SERVO3_PIN           PD15
 #define SERVO4_PIN           PD14
 
 #define LED_STRIP_PIN        PA8
+
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PD5
 #define UART3_TX_PIN         PD8
@@ -70,12 +73,15 @@
 #define UART6_RX_PIN         PC7
 #define UART7_RX_PIN         PE7
 #define UART8_RX_PIN         PE0
+
 #define I2C1_SCL_PIN         PB6
 #define I2C2_SCL_PIN         PB10
 #define I2C1_SDA_PIN         PB7
 #define I2C2_SDA_PIN         PB11
+
 #define LED0_PIN             PE3
 #define LED1_PIN             PE4
+
 #define SPI1_SCK_PIN         PA5
 #define SPI2_SCK_PIN         PB13
 #define SPI3_SCK_PIN         PB3
@@ -93,10 +99,13 @@
 #define ADC_RSSI_PIN         PC5
 #define ADC_CURR_PIN         PC1
 #define ADC_EXTERNAL1_PIN    PC4
+
 #define PINIO1_PIN           PD10
 #define PINIO2_PIN           PD11
+
 #define FLASH_CS_PIN         PE2
 #define MAX7456_SPI_CS_PIN   PB12
+
 #define GYRO_1_EXTI_PIN      PB2
 #define GYRO_2_EXTI_PIN      PE15
 #define GYRO_1_CS_PIN        PC15
