@@ -49,7 +49,7 @@
 #define MOTOR6_PIN           PD13
 #define MOTOR7_PIN           PD14
 #define MOTOR8_PIN           PD15
-#define LED_STRIP_PIN        PB0
+#define LED_STRIP_PIN        PE9
 #define SERVO1_PIN           PE5  // S9
 #define SERVO2_PIN           PE6  // S10
 #define SERVO3_PIN           PC8  // S11
@@ -74,7 +74,7 @@
 #define I2C1_SDA_PIN         PB11
 #define LED0_PIN             PD10
 #define LED1_PIN             PD11
-#define LED2_PIN             PD12
+#define LED2_PIN             PA8
 #define SPI1_SCK_PIN         PA5
 #define SPI1_SDI_PIN         PA6
 #define SPI1_SDO_PIN         PA7
@@ -117,7 +117,7 @@
     TIMER_PIN_MAP( 11, PC9,  1, -1) \
     TIMER_PIN_MAP( 12, PB8,  1, -1) \
     TIMER_PIN_MAP( 13, PB9,  1, -1) \
-    TIMER_PIN_MAP( 14, PB0 , 1,  8)
+    TIMER_PIN_MAP( 14, PE9 , 1,  8)
 
 #define ADC2_DMA_OPT        9
 
