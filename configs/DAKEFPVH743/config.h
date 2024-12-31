@@ -84,6 +84,9 @@
 #define SPI3_SCK_PIN         PC10
 #define SPI3_SDI_PIN         PC11
 #define SPI3_SDO_PIN         PC12
+#define SPI4_SCK_PIN         PE12
+#define SPI4_SDI_PIN         PE13
+#define SPI4_SDO_PIN         PE14
 #define CAMERA_CONTROL_PIN   PB8
 #define ADC_VBAT_PIN         PC1
 #define ADC_RSSI_PIN         PC5
@@ -95,8 +98,8 @@
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
 #define GYRO_1_CS_PIN        PA4
-#define GYRO_2_EXTI_PIN      PE15
-#define GYRO_2_CS_PIN        PE11
+#define GYRO_2_EXTI_PIN      PB2
+#define GYRO_2_CS_PIN        PB1
 
 #define USE_GYRO_CLKIN
 #define GYRO_1_CLKIN_PIN     PB9
