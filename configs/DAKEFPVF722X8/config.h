@@ -48,6 +48,7 @@
 #define MOTOR1_PIN           PA1
 #define MOTOR2_PIN           PA2
 #define MOTOR3_PIN           PA3
+#define MOTOR4_PIN           PA8
 #define MOTOR5_PIN           PA9
 #define MOTOR6_PIN           PA10
 #define MOTOR7_PIN           PC8
