@@ -91,7 +91,6 @@
 #define PINIO1_PIN           PE2
 #define PINIO2_PIN           PE3
 #define PINIO3_PIN           PE4
-#define PINIO4_PIN           PD2
 #define FLASH_CS_PIN         PA15
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
