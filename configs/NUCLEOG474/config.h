@@ -37,6 +37,7 @@
 
 #define USE_GYRO
 #define USE_FAKE_GYRO
+#define USE_I2C_GYRO
 #define USE_GYRO_MPU6050
 #define USE_ACC
 #define USE_FAKE_ACC
