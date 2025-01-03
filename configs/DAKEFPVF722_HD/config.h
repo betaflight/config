@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F7X2
 
-#define BOARD_NAME        DAKEFPVF722X8_HD
+#define BOARD_NAME        DAKEFPVF722_HD
 #define MANUFACTURER_ID   DAKE
 
 #define USE_ACC
