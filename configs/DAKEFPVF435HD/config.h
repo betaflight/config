@@ -121,5 +121,4 @@
 #define GYRO_1_ALIGN CW90_DEG
 
 #define SERIALRX_UART           SERIAL_PORT_UART5
-#define ESC_SENSOR_UART         SERIAL_PORT_USART3
 #define MSP_UART                SERIAL_PORT_USART6
