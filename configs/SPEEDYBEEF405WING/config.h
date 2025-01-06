@@ -105,9 +105,9 @@
     TIMER_PIN_MAP( 4, PC8 , 2, -1) \
     TIMER_PIN_MAP( 5, PC9 , 2, -1) \
     TIMER_PIN_MAP( 6, PB14, 2, -1) \
-	TIMER_PIN_MAP( 7, PA15, 1, -1) \
-	TIMER_PIN_MAP( 8, PB10, 1, -1) \
-	TIMER_PIN_MAP( 9, PA8 , 1,  0) 
+    TIMER_PIN_MAP( 7, PA15, 1, -1) \
+    TIMER_PIN_MAP( 8, PB10, 1, -1) \
+    TIMER_PIN_MAP( 9, PA8 , 1,  0) 
 
 #define ADC1_DMA_OPT                   0
 
@@ -116,7 +116,7 @@
 
 #define MAG_I2C_INSTANCE               I2CDEV_1
 #define BARO_I2C_INSTANCE              I2CDEV_1
-#define DEFAULT_BLACKBOX_DEVICE        BLACKBOX_DEVICE_FLASH
+#define DEFAULT_BLACKBOX_DEVICE        BLACKBOX_DEVICE_SDCARD
 #define DEFAULT_DSHOT_BURST            DSHOT_DMAR_AUTO
 #define DEFAULT_CURRENT_METER_SOURCE   CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE   VOLTAGE_METER_ADC
@@ -127,7 +127,8 @@
 #define MAX7456_SPI_INSTANCE           SPI2
 #define PINIO1_CONFIG                  1
 #define PINIO1_BOX                     0
-#define SDCARD_SPI_INSTANCE             SPI3
+#define SDCARD_SPI_INSTANCE            SPI3
+//#define FLASH_SPI_INSTANCE             SPI3
 #define GYRO_1_SPI_INSTANCE            SPI1
 #define GYRO_1_ALIGN                   CW270_DEG
 #define GYRO_1_ALIGN_YAW               2700
