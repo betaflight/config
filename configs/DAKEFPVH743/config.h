@@ -140,6 +140,7 @@
 #define BEEPER_INVERTED
 #define PINIO1_CONFIG 129
 #define PINIO1_BOX 40
+#define BOX_USER1_NAME                      "CAM 1,2"
 #define PINIO2_CONFIG 129
 #define PINIO2_BOX 41
 #define PINIO3_CONFIG 129
