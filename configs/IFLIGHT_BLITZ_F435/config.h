@@ -101,7 +101,6 @@
 #define I2C2_SDA_PIN                    PH3
 #define MAG_I2C_INSTANCE                I2CDEV_1
 #define BARO_I2C_INSTANCE               I2CDEV_1
-#define DEFAULT_BARO_DPS310
 
 // UART & VCP
 #define UART1_RX_PIN                    PA10
@@ -131,13 +130,13 @@
 #define PINIO1_PIN                      PC14
 
 // TIMERS & DMA
-#define TIMER_PIN_MAPPING               TIMER_PIN_MAP(  0, PA8,  1,  8 ) \
-                                        TIMER_PIN_MAP(  1, PA3,  1,  9 ) \
-                                        TIMER_PIN_MAP(  2, PB0,  2,  0 ) \
+#define TIMER_PIN_MAPPING               TIMER_PIN_MAP(  0, PA8,  1,  0 ) \
+                                        TIMER_PIN_MAP(  1, PA3,  1, -1 ) \
+                                        TIMER_PIN_MAP(  2, PB0,  2,  1 ) \
                                         TIMER_PIN_MAP(  3, PB1,  2,  2 ) \
-                                        TIMER_PIN_MAP(  4, PC8,  2,  1 ) \
-                                        TIMER_PIN_MAP(  5, PC9,  2,  3 ) \
-                                        TIMER_PIN_MAP(  6, PB6,  1, 11 ) \
-                                        TIMER_PIN_MAP(  7, PB7,  1, 10 ) \
-                                        TIMER_PIN_MAP(  8, PB11, 1, 12 ) \
-                                        TIMER_PIN_MAP(  9, PB10, 1, 13 )
+                                        TIMER_PIN_MAP(  4, PC8,  2,  3 ) \
+                                        TIMER_PIN_MAP(  5, PC9,  2,  4 ) \
+                                        TIMER_PIN_MAP(  6, PB6,  1,  5 ) \
+                                        TIMER_PIN_MAP(  7, PB7,  1,  6 ) \
+                                        TIMER_PIN_MAP(  8, PB11, 1,  7 ) \
+                                        TIMER_PIN_MAP(  9, PB10, 1,  8 )
