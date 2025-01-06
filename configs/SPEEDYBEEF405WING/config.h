@@ -127,7 +127,7 @@
 #define MAX7456_SPI_INSTANCE           SPI2
 #define PINIO1_CONFIG                  1
 #define PINIO1_BOX                     0
-#define FLASH_SPI_INSTANCE             SPI3
+#define SDCARD_SPI_INSTANCE             SPI3
 #define GYRO_1_SPI_INSTANCE            SPI1
 #define GYRO_1_ALIGN                   CW270_DEG
 #define GYRO_1_ALIGN_YAW               2700
