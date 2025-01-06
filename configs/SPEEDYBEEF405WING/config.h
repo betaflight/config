@@ -32,8 +32,8 @@
 #define USE_GYRO_SPI_ICM42605
 #define USE_ACC_SPI_ICM42688P
 #define USE_ACC_SPI_ICM42605
-#define USE_FLASH
-#define USE_FLASH_W25Q128FV
+//#define USE_FLASH
+//#define USE_FLASH_W25Q128FV
 #define USE_SDCARD
 #define USE_SDCARD_SPI
 #define USE_MAX7456
@@ -92,7 +92,7 @@
 #define ADC_RSSI_PIN       PC5
 #define ADC_CURR_PIN       PC1
 #define PINIO1_PIN         PC13
-#define SDCARD_CS_PIN      PC14
+#define SDCARD_SPI_CS_PIN  PC14
 #define MAX7456_SPI_CS_PIN PB12
 //#define GYRO_1_EXTI_PIN  PC4
 #define GYRO_1_CS_PIN      PA4
