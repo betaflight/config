@@ -33,7 +33,7 @@
 #define USE_ACCGYRO_BMI270
 #define USE_BARO
 #define USE_BARO_BMP280
-#define USE_BARO_DPS3120
+#define USE_BARO_DPS310
 #define USE_FLASH
 #define USE_FLASH_M25P16
 #define USE_MAX7456
@@ -45,12 +45,12 @@
 #define MOTOR4_PIN          PC13
 #define LED_STRIP_PIN       PB2
 #define UART1_TX_PIN        PA9
-#define UART2_TX_PIN        PA2
-#define UART3_TX_PIN        PB10
-#define UART4_TX_PIN        PC10
 #define UART1_RX_PIN        PA10
+#define UART2_TX_PIN        PA2
 #define UART2_RX_PIN        PA3
+#define UART3_TX_PIN        PB10
 #define UART3_RX_PIN        PB11
+#define UART4_TX_PIN        PC10
 #define UART4_RX_PIN        PC11
 #define I2C1_SCL_PIN        PA15
 #define I2C1_SDA_PIN        PB7
@@ -58,13 +58,13 @@
 #define LED1_PIN            PC14
 #define PINIO1_PIN          PC6
 #define SPI1_SCK_PIN        PA5
-#define SPI2_SCK_PIN        PB13
-#define SPI3_SCK_PIN        PB3
 #define SPI1_SDI_PIN        PA6
-#define SPI2_SDI_PIN        PB14
-#define SPI3_SDI_PIN        PB4
 #define SPI1_SDO_PIN        PA7
+#define SPI2_SCK_PIN        PB13
+#define SPI2_SDI_PIN        PB14
 #define SPI2_SDO_PIN        PB15
+#define SPI3_SCK_PIN        PB3
+#define SPI3_SDI_PIN        PB4
 #define SPI3_SDO_PIN        PB5
 #define ADC_VBAT_PIN        PA0
 #define ADC_CURR_PIN        PA1
@@ -74,29 +74,21 @@
 #define GYRO_1_CS_PIN       PA4
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PB2,  1, 1 ) \
-    TIMER_PIN_MAP( 1, PB0,  1, 2 ) \
-    TIMER_PIN_MAP( 2, PB1,  1, 3 ) \
-    TIMER_PIN_MAP( 3, PB6,  3, 4 ) \
-    TIMER_PIN_MAP( 4, PC13, 2, 5 ) 
+    TIMER_PIN_MAP( 0, LED_STRIP_PIN, 1, 0 ) \
+    TIMER_PIN_MAP( 1, MOTOR1_PIN,    1, 1 ) \
+    TIMER_PIN_MAP( 2, MOTOR2_PIN,    1, 2 ) \
+    TIMER_PIN_MAP( 3, MOTOR3_PIN,    3, 3 ) \
+    TIMER_PIN_MAP( 4, MOTOR4_PIN,    2, 4 )
 
-#define ADC1_DMA_OPT 6
-
-#define SPI1_TX_DMA_OPT 14
-#define SPI2_TX_DMA_OPT 10
-#define SPI3_TX_DMA_OPT 9
-#define SPI1_RX_DMA_OPT 13
-#define SPI2_RX_DMA_OPT 11
-#define SPI3_RX_DMA_OPT 8
+#define ADC1_DMA_OPT 8
 
 #define VTX_SMARTAUDIO_UART             SERIAL_PORT_USART2
 #define SERIALRX_UART                   SERIAL_PORT_USART3
 
 #define BARO_I2C_INSTANCE               I2CDEV_1
 #define MAG_I2C_INSTANCE                I2CDEV_1
-#define SERIALRX_PROVIDER               SERIALRX_CRSF
+
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
-//TODO #define DSHOT_IDLE_VALUE 450
 #define DEFAULT_DSHOT_BURST             DSHOT_DMAR_OFF
 #define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_ON
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
@@ -107,4 +99,3 @@
 #define FLASH_SPI_INSTANCE              SPI3
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define GYRO_1_ALIGN                    CW180_DEG
-#define GYRO_1_ALIGN_YAW                1800
