@@ -95,23 +95,20 @@
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, LED_STRIP_PIN, 1, 0) \
-    TIMER_PIN_MAP( 1, MOTOR1_PIN,    2, 0) \
-    TIMER_PIN_MAP( 2, MOTOR2_PIN,    2, 0) \
-    TIMER_PIN_MAP( 3, MOTOR3_PIN,    1, 0) \
-    TIMER_PIN_MAP( 4, MOTOR4_PIN,    1, 0) \
-    TIMER_PIN_MAP( 5, MOTOR5_PIN,    1, 0) \
-    TIMER_PIN_MAP( 6, MOTOR6_PIN,    1, 0) \
-    TIMER_PIN_MAP( 7, MOTOR7_PIN,    2, 0) \
-    TIMER_PIN_MAP( 8, MOTOR8_PIN,    2, 0)
+    TIMER_PIN_MAP( 1, MOTOR1_PIN,    2, 1) \
+    TIMER_PIN_MAP( 2, MOTOR2_PIN,    2, 2) \
+    TIMER_PIN_MAP( 3, MOTOR3_PIN,    1, 3) \
+    TIMER_PIN_MAP( 4, MOTOR4_PIN,    1, 4) \
+    TIMER_PIN_MAP( 5, MOTOR5_PIN,    1, 5) \
+    TIMER_PIN_MAP( 6, MOTOR6_PIN,    1, 6) \
+    TIMER_PIN_MAP( 7, MOTOR7_PIN,    2, 7) \
+    TIMER_PIN_MAP( 8, MOTOR8_PIN,    2, 8)
 
-#define ADC1_DMA_OPT                    0
-#define ADC2_DMA_OPT                    0
-#define ADC3_DMA_OPT                    0
-#define TIMUP1_DMA_OPT                  0
-#define TIMUP3_DMA_OPT                  0
-#define TIMUP4_DMA_OPT                  0
-#define TIMUP5_DMA_OPT                  0
-#define TIMUP8_DMA_OPT                  0
+#define ADC1_DMA_OPT                    9
+#define ADC3_DMA_OPT                    10
+#define TIMUP3_DMA_OPT                  11
+#define TIMUP4_DMA_OPT                  12
+#define TIMUP8_DMA_OPT                  13
 
 #define MSP_DISPLAYPORT_UART            SERIAL_PORT_USART1
 #define SERIALRX_UART                   SERIAL_PORT_USART2
