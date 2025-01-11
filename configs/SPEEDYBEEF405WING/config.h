@@ -110,6 +110,7 @@
 #define SERIALRX_UART                  SERIAL_PORT_USART1
 #define MSP_UART                       SERIAL_PORT_USART6
 
+#define DEFAULT_PID_PROCESS_DENOM      2
 #define MAG_I2C_INSTANCE               I2CDEV_1
 #define BARO_I2C_INSTANCE              I2CDEV_1
 #define DEFAULT_BLACKBOX_DEVICE        BLACKBOX_DEVICE_SDCARD
