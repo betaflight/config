@@ -24,7 +24,7 @@
 #define FC_TARGET_MCU     STM32H743
 
 #define BOARD_NAME        WDIYH743
-#define MANUFACTURER_ID   WDIYH
+#define MANUFACTURER_ID   WDIY
 
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
