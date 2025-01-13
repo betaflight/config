@@ -24,7 +24,7 @@
 #define FC_TARGET_MCU     STM32H743
 
 #define BOARD_NAME        WDIYH743
-#define MANUFACTURER_ID   WDIYH7
+#define MANUFACTURER_ID   WDIYH
 
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
@@ -108,20 +108,20 @@
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PA0 ,  2,  0) \
-    TIMER_PIN_MAP( 1, PA1 ,  2,  0) \
-    TIMER_PIN_MAP( 2, PA2 ,  2,  0) \
-    TIMER_PIN_MAP( 3, PA3,   2,  0) \
-    TIMER_PIN_MAP( 4, PB4,   2,  0) \
-    TIMER_PIN_MAP( 5, PB5 ,  2,  0) \
-    TIMER_PIN_MAP( 6, PB0 ,  2,  0) \
-    TIMER_PIN_MAP( 7, PB1 ,  2,  0) \
-    TIMER_PIN_MAP( 8, PB8 ,  2,  0) \
-    TIMER_PIN_MAP( 9, PE11 ,  1,  0) \
-    TIMER_PIN_MAP( 10, PE14 ,  1,  0) \
+    TIMER_PIN_MAP( 1, PA1 ,  2,  1) \
+    TIMER_PIN_MAP( 2, PA2 ,  2,  2) \
+    TIMER_PIN_MAP( 3, PA3,   2,  3) \
+    TIMER_PIN_MAP( 4, PB4,   2,  4) \
+    TIMER_PIN_MAP( 5, PB5 ,  2,  5) \
+    TIMER_PIN_MAP( 6, PB0 ,  2,  6) \
+    TIMER_PIN_MAP( 7, PB1 ,  2,  7) \
+    TIMER_PIN_MAP( 8, PB8 ,  2,  8) \
+    TIMER_PIN_MAP( 9, PE11 ,  1,  -1) \
+    TIMER_PIN_MAP( 10, PE14 ,  1,  -1) \
  
-#define ADC1_DMA_OPT        1
-#define ADC2_DMA_OPT        9
-#define ADC3_DMA_OPT       10
+#define ADC1_DMA_OPT        9
+#define ADC2_DMA_OPT        10
+#define ADC3_DMA_OPT       11
 
 #define TIMUP1_DMA_OPT      0
 #define TIMUP3_DMA_OPT      0
@@ -130,7 +130,6 @@
 #define TIMUP8_DMA_OPT      0
 #define TIMUP0_DMA_OPT      0
 
-#define USE_BARO
 #define BARO_I2C_INSTANCE (I2CDEV_2)
 
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
@@ -143,7 +142,5 @@
 #define FLASH_SPI_INSTANCE SPI3
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG
-#define GYRO_1_ALIGN_YAW 0
 #define GYRO_2_SPI_INSTANCE SPI4
 #define GYRO_2_ALIGN CW90_DEG
-#define GYRO_2_ALIGN_YAW 1800
