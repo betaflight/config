@@ -43,6 +43,10 @@
 #define USE_WING
 #endif
 
+#ifndef USE_SERVOS
+#define USE_SERVOS
+#endif
+
 #define MOTOR1_PIN           PA8
 #define MOTOR2_PIN           PA9
 #define SERVO1_PIN           PB0
@@ -78,7 +82,7 @@
 #define ADC_CURR_PIN         PC1
 #define FLASH_CS_PIN         PC14
 #define MAX7456_SPI_CS_PIN   PC15
-#define GYRO_1_EXTI_PIN      PB12
+#define GYRO_1_EXTI_PIN      PB2
 #define GYRO_1_CS_PIN        PA4
 #define USB_DETECT_PIN       PA10
 #define PINIO1_PIN           PB14
@@ -95,14 +99,17 @@
 
 #define ADC1_DMA_OPT                 1
 
-#define MIXER_MODE                   MIXER_FLYING_WING
+// Not enough motor resources for a quad, default to Wing
+#define DEFAULT_MIXER                MIXER_FLYING_WING  
 
 #define MAG_I2C_INSTANCE             I2CDEV_2
 #define BARO_I2C_INSTANCE            I2CDEV_2
 
 #define DEFAULT_BLACKBOX_DEVICE      BLACKBOX_DEVICE_FLASH
-#define SERIALRX_UART                SERIAL_PORT_USART3
+//#define SERIALRX_UART                SERIAL_PORT_USART3  **//USART3 should not be used for a receiver due to DFU hijacking
 #define DEFAULT_RX_FEATURE           FEATURE_RX_SERIAL
+#define DEFAULT_DSHOT_BURST          DSHOT_DMAR_OFF
+#define DEFAULT_DSHOT_BITBANG        DSHOT_BITBANG_OFF
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SCALE  110
