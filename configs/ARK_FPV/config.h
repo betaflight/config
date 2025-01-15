@@ -107,7 +107,7 @@
 #define I2C4_SCL_PIN        PF14
 #define I2C4_SDA_PIN        PF15
 #define MAG_I2C_INSTANCE    I2CDEV_4
-#define MAG_LIS2MDL_ALIGN   CW90_DEG
+#define MAG_LIS2MDL_ALIGN   CW180_DEG
 
 // IIM42653 on SPI1
 #define USE_ACC
