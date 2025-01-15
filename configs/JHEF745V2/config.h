@@ -27,7 +27,6 @@
 #define MOTOR6_PIN           PA3
 #define MOTOR7_PIN           PB4
 #define MOTOR8_PIN           PB5
-#define RX_PPM_PIN           PE13
 #define LED_STRIP_PIN        PD12
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PD5
@@ -67,17 +66,19 @@
 #define PINIO1_PIN           PC0
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PE13, 1,  1) \
-    TIMER_PIN_MAP( 1, PB0 , 2,  0) \
-    TIMER_PIN_MAP( 2, PB1 , 2,  0) \
-    TIMER_PIN_MAP( 3, PE9 , 1,  0) \
-    TIMER_PIN_MAP( 4, PE11, 1,  1) \
-    TIMER_PIN_MAP( 5, PC9 , 2,  0) \
-    TIMER_PIN_MAP( 6, PA3 , 2,  0) \
-    TIMER_PIN_MAP( 7, PD12, 1,  0) \
-    TIMER_PIN_MAP( 8, PB3 , 1,  0)
+    TIMER_PIN_MAP( 0, PB0 , 2,  0) \
+    TIMER_PIN_MAP( 1, PB1 , 2,  0) \
+    TIMER_PIN_MAP( 2, PE9 , 1,  2) \
+    TIMER_PIN_MAP( 3, PE11, 1,  1) \
+    TIMER_PIN_MAP( 4, PC9 , 2,  0) \
+    TIMER_PIN_MAP( 5, PA3 , 2,  0) \
+    TIMER_PIN_MAP( 6, PB4 , 2,  0) \
+    TIMER_PIN_MAP( 7, PB5 , 2,  0) \
+    TIMER_PIN_MAP( 8, PD12, 1,  0) \
+    TIMER_PIN_MAP( 9, PB3 , 1, -1)  
 
 #define ADC1_DMA_OPT        1
+
 #define DEFAULT_DSHOT_BITBANG DSHOT_BITBANG_ON
 
 #define MAG_I2C_INSTANCE    I2CDEV_1
