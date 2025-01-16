@@ -1,3 +1,24 @@
+/*
+ * This file is part of Betaflight.
+ *
+ * Betaflight is free software. You can redistribute this software
+ * and/or modify this software under the terms of the GNU General
+ * Public License as published by the Free Software Foundation,
+ * either version 3 of the License, or (at your option) any later
+ * version.
+ *
+ * Betaflight is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public
+ * License along with this software.
+ *
+ * If not, see <http://www.gnu.org/licenses/>.
+ */
+
 #pragma once
 
 #define FC_TARGET_MCU     STM32F745
@@ -27,7 +48,6 @@
 #define MOTOR6_PIN           PA3
 #define MOTOR7_PIN           PB4
 #define MOTOR8_PIN           PB5
-#define RX_PPM_PIN           PE13
 #define LED_STRIP_PIN        PD12
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PD5
@@ -67,17 +87,19 @@
 #define PINIO1_PIN           PC0
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PE13, 1,  1) \
-    TIMER_PIN_MAP( 1, PB0 , 2,  0) \
-    TIMER_PIN_MAP( 2, PB1 , 2,  0) \
-    TIMER_PIN_MAP( 3, PE9 , 1,  0) \
-    TIMER_PIN_MAP( 4, PE11, 1,  1) \
-    TIMER_PIN_MAP( 5, PC9 , 2,  0) \
-    TIMER_PIN_MAP( 6, PA3 , 2,  0) \
-    TIMER_PIN_MAP( 7, PD12, 1,  0) \
-    TIMER_PIN_MAP( 8, PB3 , 1,  0)
+    TIMER_PIN_MAP( 0, PB0 , 2,  0) \
+    TIMER_PIN_MAP( 1, PB1 , 2,  0) \
+    TIMER_PIN_MAP( 2, PE9 , 1,  2) \
+    TIMER_PIN_MAP( 3, PE11, 1,  1) \
+    TIMER_PIN_MAP( 4, PC9 , 2,  0) \
+    TIMER_PIN_MAP( 5, PA3 , 2,  0) \
+    TIMER_PIN_MAP( 6, PB4 , 1,  0) \
+    TIMER_PIN_MAP( 7, PB5 , 1,  0) \
+    TIMER_PIN_MAP( 8, PD12, 1,  0) \
+    TIMER_PIN_MAP( 9, PB3 , 1, -1)  
 
 #define ADC1_DMA_OPT        1
+
 #define DEFAULT_DSHOT_BITBANG DSHOT_BITBANG_ON
 
 #define MAG_I2C_INSTANCE    I2CDEV_1
