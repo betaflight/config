@@ -70,8 +70,8 @@
 #define UART7_RX_PIN         PE7
 #define UART8_TX_PIN         PE1
 #define UART8_RX_PIN         PE0
-#define I2C1_SCL_PIN         PB10
-#define I2C1_SDA_PIN         PB11
+#define I2C2_SCL_PIN         PB10
+#define I2C2_SDA_PIN         PB11
 #define LED0_PIN             PD10
 #define LED1_PIN             PD11
 #define LED2_PIN             PA8
@@ -127,8 +127,8 @@
 #define FLASH_SPI_INSTANCE SPI3
 #define MAX7456_SPI_INSTANCE SPI2
 
-#define BARO_I2C_INSTANCE I2CDEV_1
-#define MAG_I2C_INSTANCE I2CDEV_1
+#define BARO_I2C_INSTANCE I2CDEV_2
+#define MAG_I2C_INSTANCE I2CDEV_2
 
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BITBANG DSHOT_BITBANG_ON
