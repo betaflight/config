@@ -107,8 +107,7 @@
     TIMER_PIN_MAP( 9, PA8 , 1,  1)
 
 
-#define SPI3_TX_DMA_OPT     0
-#define ADC1_DMA_OPT        0
+#define ADC1_DMA_OPT       1 
 
 
 #define MAG_I2C_INSTANCE I2CDEV_2
