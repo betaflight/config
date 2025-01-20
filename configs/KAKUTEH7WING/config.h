@@ -133,15 +133,12 @@
     TIMER_PIN_MAP(13, LED_STRIP_PIN, 1,  8) \
     TIMER_PIN_MAP(14, BEEPER_PIN   , 1, -1)
 
-#define SPI1_TX_DMA_OPT             13
-#define ADC1_DMA_OPT                 8
-#define ADC3_DMA_OPT                 9
-#define TIMUP1_DMA_OPT               0
-#define TIMUP2_DMA_OPT               0
-#define TIMUP3_DMA_OPT               2
-#define TIMUP4_DMA_OPT               0
-#define TIMUP5_DMA_OPT               3
-#define TIMUP8_DMA_OPT               1
+#define SPI1_TX_DMA_OPT              9
+#define ADC1_DMA_OPT                 10
+#define ADC3_DMA_OPT                 11
+#define TIMUP1_DMA_OPT               12
+#define TIMUP4_DMA_OPT               13
+#define TIMUP5_DMA_OPT               14
 
 #define MAG_I2C_INSTANCE             I2CDEV_1
 #define BARO_I2C_INSTANCE            I2CDEV_4
