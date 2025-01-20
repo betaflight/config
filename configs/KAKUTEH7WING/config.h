@@ -149,10 +149,9 @@
 #define DEFAULT_VOLTAGE_METER_SCALE  182
 #define DEFAULT_CURRENT_METER_SCALE  366
 #define BEEPER_INVERTED
-#define SDCARD_DETECT_INVERTED
-#define USE_SDCARD_SPI
-#define SDCARD_SPI_INSTANCE          SPI1
 #define MAX7456_SPI_INSTANCE         SPI2
+#define GYRO_1_SPI_INSTANCE          SPI3
+#define GYRO_1_ALIGN                 CW90_DEG
 #define PINIO1_BOX                   40
 #define BOX_USER1_NAME               "CAM 1,2"
 #define PINIO2_CONFIG                129
@@ -160,5 +159,3 @@
 #define BOX_USER2_NAME               "VTX Power"
 #define PINIO3_BOX                   42
 #define PINIO4_BOX                   43
-#define GYRO_1_SPI_INSTANCE          SPI3
-#define GYRO_1_ALIGN                 CW90_DEG
