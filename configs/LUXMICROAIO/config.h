@@ -107,11 +107,10 @@
 #define BEEPER_INVERTED
 
 #define BARO_I2C_INSTANCE            I2CDEV_1
-#define MAG_I2C_INSTANCE                     I2CDEV_1
+#define MAG_I2C_INSTANCE             I2CDEV_1
 #define MAX7456_SPI_INSTANCE         SPI2
 #define FLASH_SPI_INSTANCE           SPI2
 
 #define GYRO_1_SPI_INSTANCE          SPI1
 #define GYRO_1_ALIGN                 CW0_DEG_FLIP
-#define GYRO_1_ALIGN_YAW             2700
 #define DEFAULT_ALIGN_BOARD_YAW      -45
