@@ -24,7 +24,7 @@
 #define FC_TARGET_MCU       STM32H743
 #define SYSTEM_HSE_MHZ      16
 #define BOARD_NAME          ARK_FPV
-#define MANUFACTURER_ID     ARK
+#define MANUFACTURER_ID     ARKE
 
 #define TARGET_IO_PORTH     0xffff
 #define TARGET_IO_PORTI     0xffff
@@ -69,8 +69,8 @@
 #define UART3_RX_PIN         PD9
 #define MSP_UART             SERIAL_PORT_UART3
 
-// TODO: this doesn't work, fw hangs.
-// Is it really needed since we have DSHOT and analog battery current/voltage measurements?
+// NOTE: enabling this doesn't work, fw hangs
+// Bidirectional DShot telemetry is used instead
 // ESC Telemetry (RX only)
 // #define USE_ESCSERIAL
 // #define UART4_RX_PIN         PH14
