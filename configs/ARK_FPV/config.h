@@ -133,6 +133,7 @@
 #define USE_SDCARD
 #define USE_SDCARD_SDIO
 #define USE_SDIO_PULLUP
+#define SDIO_CLOCK_DIV      2
 #define SDIO_DEVICE         SDIODEV_2
 #define SDIO_USE_4BIT       true
 #define SDIO_CK_PIN         PD6
