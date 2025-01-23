@@ -108,16 +108,17 @@
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PA0 ,  2,  0) \
-    TIMER_PIN_MAP( 1, PA1 ,  2,  1) \
-    TIMER_PIN_MAP( 2, PA2 ,  2,  2) \
-    TIMER_PIN_MAP( 3, PA3,   2,  3) \
-    TIMER_PIN_MAP( 4, PB4,   2,  4) \
-    TIMER_PIN_MAP( 5, PB5 ,  2,  5) \
-    TIMER_PIN_MAP( 6, PB0 ,  2,  6) \
-    TIMER_PIN_MAP( 7, PB1 ,  2,  7) \
-    TIMER_PIN_MAP( 8, PB8 ,  2,  8) \
-    TIMER_PIN_MAP( 9, PE11 ,  1,  -1) \
-    TIMER_PIN_MAP( 10, PE14 ,  1,  -1) \
+    TIMER_PIN_MAP( 1, PA1 ,  2,  0) \
+    TIMER_PIN_MAP( 2, PA2 ,  2,  0) \
+    TIMER_PIN_MAP( 3, PA3,   2,  0) \
+    TIMER_PIN_MAP( 4, PB4,   2,  0) \
+    TIMER_PIN_MAP( 5, PB5 ,  2,  0) \
+    TIMER_PIN_MAP( 6, PB0 ,  2,  0) \
+    TIMER_PIN_MAP( 7, PB1 ,  2,  0) \
+    TIMER_PIN_MAP( 8, PB8 ,  2,  0) \
+    TIMER_PIN_MAP( 9, PC6 ,  3,  0) \
+    TIMER_PIN_MAP( 10, PE11 ,  1,  -1) \
+    TIMER_PIN_MAP( 11, PE14 ,  1,  -1) \
  
 #define ADC1_DMA_OPT        9
 #define ADC2_DMA_OPT        10
