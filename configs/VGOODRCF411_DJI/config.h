@@ -26,6 +26,13 @@
 #define BOARD_NAME        VGOODRCF411_DJI
 #define MANUFACTURER_ID   VGRC
 
+// TODO Not verified
+#define USE_GYRO
+#define USE_GYRO_SPI_MPU6000
+#define USE_ACC
+#define USE_ACC_SPI_MPU6000
+#define USE_MAX7456
+
 #define BEEPER_PIN           PB2
 #define MOTOR1_PIN           PB3
 #define MOTOR2_PIN           PB4
@@ -64,9 +71,7 @@
     TIMER_PIN_MAP( 6, PB8 , 2, -1) \
     TIMER_PIN_MAP( 7, PA8 , 1,  0)
 
-
 #define ADC1_DMA_OPT        1
-
 
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
