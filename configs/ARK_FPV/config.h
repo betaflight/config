@@ -26,9 +26,6 @@
 #define BOARD_NAME          ARK_FPV
 #define MANUFACTURER_ID     ARKE
 
-#define TARGET_IO_PORTH     0xffff
-#define TARGET_IO_PORTI     0xffff
-
 #define USE_CONFIG_TARGET_PREINIT
 #define VDD_3V3_SENSORS1_EN PI11
 #define VDD_3V3_SD_CARD_EN  PC13
