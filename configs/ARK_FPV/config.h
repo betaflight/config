@@ -25,10 +25,13 @@
 #define SYSTEM_HSE_MHZ      16
 #define BOARD_NAME          ARK_FPV
 #define MANUFACTURER_ID     ARKE
-#define USE_CONFIG_TARGET_PREINIT
 
 #define TARGET_IO_PORTH     0xffff
 #define TARGET_IO_PORTI     0xffff
+
+#define USE_CONFIG_TARGET_PREINIT
+#define VDD_3V3_SENSORS1_EN PI11
+#define VDD_3V3_SD_CARD_EN  PC13
 
 #define LED0_PIN            PE5
 #define LED1_PIN            PE4
@@ -108,7 +111,7 @@
 #define I2C4_SCL_PIN        PF14
 #define I2C4_SDA_PIN        PF15
 #define MAG_I2C_INSTANCE    I2CDEV_4
-#define MAG_LIS2MDL_ALIGN   CW180_DEG
+#define MAG_ALIGN           CW180_DEG
 
 // IIM42653 on SPI1
 #define USE_ACC
@@ -159,13 +162,6 @@
 #define ADC_EXTERNAL2_PIN   PB1
 // 12V ADC
 #define ADC_EXTERNAL3_PIN   PA4
-
-// Default GPIOs
-#define VDD_3V3_SENSORS1_EN PI11
-#define VDD_3V3_SD_CARD_EN  PC13
-#define DEFAULT_GPIO_ARRAY \
-    GPIO_CONFIG_OUTPUT(VDD_3V3_SENSORS1_EN, IOCFG_OUT_PP, GPIO_STATE_HIGH), \
-    GPIO_CONFIG_OUTPUT(VDD_3V3_SD_CARD_EN,  IOCFG_OUT_PP, GPIO_STATE_HIGH),
 
 // Motor configuration
 #define USE_TIMER_MAP_PRINT
