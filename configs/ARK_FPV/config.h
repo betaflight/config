@@ -25,6 +25,7 @@
 #define SYSTEM_HSE_MHZ      16
 #define BOARD_NAME          ARK_FPV
 #define MANUFACTURER_ID     ARKE
+#define USE_CONFIG_TARGET_PREINIT
 
 #define TARGET_IO_PORTH     0xffff
 #define TARGET_IO_PORTI     0xffff
