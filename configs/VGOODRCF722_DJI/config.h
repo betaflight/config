@@ -26,6 +26,14 @@
 #define BOARD_NAME        VGOODRCF722_DJI
 #define MANUFACTURER_ID   VGRC
 
+#define USE_GYRO
+#define USE_GYRO_SPI_MPU6000
+#define USE_ACC
+#define USE_ACC_SPI_MPU6000
+#define USE_FLASH
+#define USE_FLASH_W25Q128FV
+#define USE_MAX7456
+
 #define BEEPER_PIN           PB2
 #define MOTOR1_PIN           PA9
 #define MOTOR2_PIN           PA8
@@ -75,9 +83,7 @@
     TIMER_PIN_MAP( 5, PB8 , 1,  0) \
     TIMER_PIN_MAP( 6, PB3 , 1,  0)
 
-
 #define ADC3_DMA_OPT        1
-
 
 #define ADC_INSTANCE ADC3
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
