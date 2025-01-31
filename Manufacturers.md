@@ -15,6 +15,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |ALWH|Alienwhoop|https://shop.alienwhoop.us/|
 |ANYL|AnyLeaf|https://www.anyleaf.org/|
 |APEX|Apexfpv|https://apexfpv.eu/|
+|ARKE|ARK Electronics|https://arkelectron.com/|
 |AXFL|Axisflying|https://www.axisflying.com/|
 |BKRC|BAYCK RC||
 |BLDY|BotLab Dynamics|https://www.botlabdynamics.store|
