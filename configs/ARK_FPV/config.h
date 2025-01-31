@@ -53,7 +53,9 @@
 // #define PINIO2_BOX          40
 
 // GPS1 UART
+#ifndef USE_GPS
 #define USE_GPS
+#endif
 #define UART1_TX_PIN         PB6
 #define UART1_RX_PIN         PB7
 #define GPS_UART             SERIAL_PORT_UART1
@@ -84,7 +86,6 @@
 #define MSP_DISPLAYPORT_UART SERIAL_PORT_UART5
 
 // RC Input
-#define USE_SERIALRX
 #define UART6_TX_PIN         PC6
 #define UART6_RX_PIN         PC7
 #define SERIALRX_UART        SERIAL_PORT_UART6
@@ -103,8 +104,12 @@
 #define BARO_I2C_INSTANCE   I2CDEV_2
 
 // Compass I2C bus
+#ifndef USE_MAG
 #define USE_MAG
+#endif
+#ifndef USE_MAG_LIS2MDL
 #define USE_MAG_LIS2MDL
+#endif
 #define I2C4_SCL_PIN        PF14
 #define I2C4_SDA_PIN        PF15
 #define MAG_I2C_INSTANCE    I2CDEV_4
@@ -175,13 +180,13 @@
 // NOTE: dma_opt unnecessary since H7 has dmamux
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP(0, MOTOR1_PIN, 1, 0) \
-    TIMER_PIN_MAP(1, MOTOR2_PIN, 1, 0) \
-    TIMER_PIN_MAP(2, MOTOR3_PIN, 1, 0) \
-    TIMER_PIN_MAP(3, MOTOR4_PIN, 1, 0) \
-    TIMER_PIN_MAP(4, MOTOR5_PIN, 1, 0) \
-    TIMER_PIN_MAP(5, MOTOR6_PIN, 1, 0) \
-    TIMER_PIN_MAP(6, MOTOR7_PIN, 1, 0) \
-    TIMER_PIN_MAP(7, MOTOR8_PIN, 1, 0)
+    TIMER_PIN_MAP(1, MOTOR2_PIN, 1, 1) \
+    TIMER_PIN_MAP(2, MOTOR3_PIN, 1, 2) \
+    TIMER_PIN_MAP(3, MOTOR4_PIN, 1, 3) \
+    TIMER_PIN_MAP(4, MOTOR5_PIN, 1, 4) \
+    TIMER_PIN_MAP(5, MOTOR6_PIN, 1, 5) \
+    TIMER_PIN_MAP(6, MOTOR7_PIN, 1, 6) \
+    TIMER_PIN_MAP(7, MOTOR8_PIN, 1, 7)
 
 // DMA stream assignment
 #define TIMUP8_DMA_OPT      10
