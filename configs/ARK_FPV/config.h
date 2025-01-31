@@ -180,13 +180,13 @@
 // NOTE: dma_opt unnecessary since H7 has dmamux
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP(0, MOTOR1_PIN, 1, 0) \
-    TIMER_PIN_MAP(1, MOTOR2_PIN, 1, 0) \
-    TIMER_PIN_MAP(2, MOTOR3_PIN, 1, 0) \
-    TIMER_PIN_MAP(3, MOTOR4_PIN, 1, 0) \
-    TIMER_PIN_MAP(4, MOTOR5_PIN, 1, 0) \
-    TIMER_PIN_MAP(5, MOTOR6_PIN, 1, 0) \
-    TIMER_PIN_MAP(6, MOTOR7_PIN, 1, 0) \
-    TIMER_PIN_MAP(7, MOTOR8_PIN, 1, 0)
+    TIMER_PIN_MAP(1, MOTOR2_PIN, 1, 1) \
+    TIMER_PIN_MAP(2, MOTOR3_PIN, 1, 2) \
+    TIMER_PIN_MAP(3, MOTOR4_PIN, 1, 3) \
+    TIMER_PIN_MAP(4, MOTOR5_PIN, 1, 4) \
+    TIMER_PIN_MAP(5, MOTOR6_PIN, 1, 5) \
+    TIMER_PIN_MAP(6, MOTOR7_PIN, 1, 6) \
+    TIMER_PIN_MAP(7, MOTOR8_PIN, 1, 7)
 
 // DMA stream assignment
 #define TIMUP8_DMA_OPT      10
