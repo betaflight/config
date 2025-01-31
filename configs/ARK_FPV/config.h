@@ -53,7 +53,9 @@
 // #define PINIO2_BOX          40
 
 // GPS1 UART
+#ifndef USE_GPS
 #define USE_GPS
+#endif
 #define UART1_TX_PIN         PB6
 #define UART1_RX_PIN         PB7
 #define GPS_UART             SERIAL_PORT_UART1
@@ -84,7 +86,6 @@
 #define MSP_DISPLAYPORT_UART SERIAL_PORT_UART5
 
 // RC Input
-#define USE_SERIALRX
 #define UART6_TX_PIN         PC6
 #define UART6_RX_PIN         PC7
 #define SERIALRX_UART        SERIAL_PORT_UART6
@@ -103,8 +104,12 @@
 #define BARO_I2C_INSTANCE   I2CDEV_2
 
 // Compass I2C bus
+#ifndef USE_MAG
 #define USE_MAG
+#endif
+#ifndef USE_MAG_LIS2MDL
 #define USE_MAG_LIS2MDL
+#endif
 #define I2C4_SCL_PIN        PF14
 #define I2C4_SDA_PIN        PF15
 #define MAG_I2C_INSTANCE    I2CDEV_4
