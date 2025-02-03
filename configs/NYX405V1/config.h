@@ -35,15 +35,12 @@
 #define USE_MAX7456
 #define USE_BARO
 #define USE_BARO_DPS310
-#define USE_MAG
 
 #define BEEPER_PIN PC13
 #define MOTOR1_PIN PB1
 #define MOTOR2_PIN PB0
 #define MOTOR3_PIN PA3
 #define MOTOR4_PIN PA2
-#define RX_PPM_PIN PA15
-#define SERVO1_PIN PB5
 #define LED_STRIP_PIN PC8
 #define UART1_TX_PIN PA9
 #define UART3_TX_PIN PB10
@@ -75,26 +72,23 @@
 #define GYRO_1_CS_PIN PB3
 
 #define TIMER_PIN_MAPPING                                                      \
-  TIMER_PIN_MAP(0, PB1, 1, 0)                                                  \
-  TIMER_PIN_MAP(1, PB0, 1, 0)                                                  \
-  TIMER_PIN_MAP(2, PA2, 1, 0)                                                  \
-  TIMER_PIN_MAP(3, PA3, 1, 1)                                                  \
-  TIMER_PIN_MAP(4, PC8, 2, 0)                                                  \
-  TIMER_PIN_MAP(5, PA15, 1, 0)                                                 \
-  TIMER_PIN_MAP(6, PB5, 1, 0)
+  TIMER_PIN_MAP(0, PB1, 2, 0)                                                  \
+  TIMER_PIN_MAP(1, PB0, 2, 0)                                                  \
+  TIMER_PIN_MAP(2, PA3, 1, 1)                                                  \
+  TIMER_PIN_MAP(3, PA2, 1, 0)                                                  \
+  TIMER_PIN_MAP(4, PC8, 2, 0)                                                  
 
 #define ADC1_DMA_OPT        1
 #define MAG_I2C_INSTANCE I2CDEV_1
 #define BARO_I2C_INSTANCE I2CDEV_1
 #define DEFAULT_BARO_I2C_ADDRESS 119
 #define DEFAULT_BLACKBOX_DEVICE BLACKBOX_DEVICE_FLASH
-#define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
+#define DEFAULT_DSHOT_BURST DSHOT_DMAR_OFF
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
 #define DEFAULT_CURRENT_METER_SCALE 240
 #define DEFAULT_VOLTAGE_METER_SCALE 110
 #define BEEPER_INVERTED
-#define USE_FLASH
 #define FLASH_SPI_INSTANCE SPI2
 #define SYSTEM_HSE_MHZ 8
 #define MAX7456_SPI_INSTANCE SPI1
@@ -102,6 +96,5 @@
 #define GYRO_1_ALIGN CW90_DEG
 #define DEFAULT_FEATURES (FEATURE_OSD | FEATURE_LED_STRIP | FEATURE_GPS | FEATURE_ESC_SENSOR )
 
-#define SERIALRX_UART SERIAL_PORT_USART1
 #define GPS_UART SERIAL_PORT_UART4
 #define ESC_SENSOR_UART SERIAL_PORT_UART5
