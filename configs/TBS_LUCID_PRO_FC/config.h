@@ -137,7 +137,7 @@
 #define DEFAULT_VOLTAGE_METER_SOURCE        VOLTAGE_METER_ADC
 
 #define DEFAULT_ALIGN_BOARD_ROLL            180
-#define DEFAULT_ALIGN_BOARD_YAW             0
+#define DEFAULT_ALIGN_BOARD_YAW             180
 
 #define SERIALRX_PROVIDER                   SERIALRX_CRSF
 #define SERIALRX_UART                       SERIAL_PORT_UART5
