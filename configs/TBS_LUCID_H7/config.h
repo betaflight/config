@@ -44,7 +44,7 @@
 #define GYRO_2_CS_PIN        PE11
 #define GYRO_2_EXTI_PIN      PE15
 #define GYRO_2_SPI_INSTANCE  SPI4
-#define GYRO_2_ALIGN         CW180_DEG_FLIP
+#define GYRO_2_ALIGN         CW0_DEG_FLIP
 
 #define USE_BARO
 #define USE_BARO_DPS310
