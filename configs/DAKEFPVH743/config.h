@@ -121,8 +121,8 @@
     TIMER_PIN_MAP( 13, PB9,  1, -1) \
     TIMER_PIN_MAP( 14, PE9 , 1,  8)
 
-#define ADC1_DMA_OPT        8
-#define ADC3_DMA_OPT        9
+#define ADC1_DMA_OPT        9
+#define ADC3_DMA_OPT        10
 
 #define FLASH_SPI_INSTANCE SPI3
 #define MAX7456_SPI_INSTANCE SPI2
