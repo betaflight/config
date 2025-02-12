@@ -20,6 +20,7 @@
  */
 
 #pragma once
+
 #define FC_TARGET_MCU     AT32F435G
 
 #define BOARD_NAME        HUMMINGBIRD_200_RS
