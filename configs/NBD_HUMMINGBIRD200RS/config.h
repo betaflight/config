@@ -18,6 +18,7 @@
  *
  * If not, see <http://www.gnu.org/licenses/>.
  */
+/* Legacy target, do not copy */
 
 #pragma once
 
