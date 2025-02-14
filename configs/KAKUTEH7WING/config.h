@@ -48,10 +48,6 @@
 #define USE_WING
 #endif
 
-#ifndef USE_SERVOS
-#define USE_SERVOS
-#endif
-
 #define BEEPER_PIN           PB9
 #define MOTOR1_PIN           PA8
 #define MOTOR2_PIN           PE11
