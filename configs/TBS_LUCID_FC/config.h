@@ -33,7 +33,6 @@
 #define USE_GYRO
 #define USE_GYRO_SPI_MPU6000
 #define USE_GYRO_SPI_ICM42688P
-#define USE_SPI_GYRO
 
 #define GYRO_1_EXTI_PIN                     PC4
 #define GYRO_1_CS_PIN                       PA4
@@ -132,7 +131,7 @@
 
 #define ADC_INSTANCE                        ADC1
 #define BARO_I2C_INSTANCE                   I2CDEV_1
-#define MAG_I2C_INSTANCE                            I2CDEV_1
+#define MAG_I2C_INSTANCE                    I2CDEV_1
 
 #define DEFAULT_BLACKBOX_DEVICE             BLACKBOX_DEVICE_FLASH
 
