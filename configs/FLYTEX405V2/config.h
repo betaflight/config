@@ -85,9 +85,9 @@
           TIMER_PIN_MAP( 0, PB6, 1,  0 ) \
           TIMER_PIN_MAP( 1, PB7, 1,  0 ) \
           TIMER_PIN_MAP( 2, PB8, 1,  0 ) \
-          TIMER_PIN_MAP( 3, PB9, 1, -1 ) \
-          TIMER_PIN_MAP( 4, PC8, 2,  0 ) \
-          TIMER_PIN_MAP( 5, PC9, 2,  0 ) \
+          TIMER_PIN_MAP( 3, PB9, 1,  0 ) \
+          TIMER_PIN_MAP( 4, PC8, 2, -1 ) \
+          TIMER_PIN_MAP( 5, PC9, 2, -1 ) \
           TIMER_PIN_MAP( 6, PA8, 1,  0 ) 
 
 #define ADC1_DMA_OPT 0
@@ -96,7 +96,6 @@
 
 #define MAG_I2C_INSTANCE I2CDEV_2
 #define BARO_I2C_INSTANCE I2CDEV_2
-#define DASHBOARD_I2C_INSTANCE I2CDEV_2
 
 #define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
