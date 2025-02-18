@@ -122,7 +122,7 @@
 #define ADC_VBAT_PIN                    PC2
 #define ADC_CURR_PIN                    PC1
 #define ADC_INSTANCE                    ADC1
-#define ADC1_DMA_OPT                    11
+#define ADC1_DMA_OPT                    14
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 
