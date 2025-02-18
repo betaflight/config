@@ -93,20 +93,18 @@
 #define USB_DETECT_PIN       PE2
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PB0 , 2,  0) \ 
-    TIMER_PIN_MAP( 1, PB1 , 2,  1) \ 
-    TIMER_PIN_MAP( 2, PA0 , 2,  2) \ 
-    TIMER_PIN_MAP( 3, PA1 , 2,  3) \ 
-    TIMER_PIN_MAP( 4, PD13, 1,  4) \ 
-    TIMER_PIN_MAP( 5, PD12, 1,  5) \ 
-    TIMER_PIN_MAP( 6, PA3 , 2,  6) \ 
-    TIMER_PIN_MAP( 7, PA2 , 2,  7) \ 
-    TIMER_PIN_MAP( 8, PE5 , 1, -1) \ 
+    TIMER_PIN_MAP( 0, PB0 , 2,  0) \
+    TIMER_PIN_MAP( 1, PB1 , 2,  1) \
+    TIMER_PIN_MAP( 2, PA0 , 2,  2) \
+    TIMER_PIN_MAP( 3, PA1 , 2,  3) \
+    TIMER_PIN_MAP( 4, PD13, 1,  4) \
+    TIMER_PIN_MAP( 5, PD12, 1,  5) \
+    TIMER_PIN_MAP( 6, PA3 , 2,  6) \
+    TIMER_PIN_MAP( 7, PA2 , 2,  7) \
+    TIMER_PIN_MAP( 8, PE5 , 1, -1) \
     TIMER_PIN_MAP( 9, PE6 , 1, -1) \
     TIMER_PIN_MAP(10, PA8 , 1,  8) \
     TIMER_PIN_MAP(11, PA15, 1, -1)
-
-
 
 #define ADC1_DMA_OPT         9
 #define ADC3_DMA_OPT        10
