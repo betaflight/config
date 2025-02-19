@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU       STM32G47X
 
-#define BOARD_NAME          JHEG473
+#define BOARD_NAME          JHEG474
 #define MANUFACTURER_ID     JHEM
 
 #define USE_ACC
