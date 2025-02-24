@@ -21,7 +21,7 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     STM32G47X
+#define FC_TARGET_MCU     STM32G473
 
 #define BOARD_NAME        LUXHDAIO-G4
 #define MANUFACTURER_ID   LMNR
