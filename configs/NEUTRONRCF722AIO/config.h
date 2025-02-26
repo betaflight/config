@@ -29,6 +29,8 @@
 #define USE_ACC
 #define USE_GYRO
 #define USE_ACCGYRO_BMI270
+#define USE_ACC_SPI_ICM42688P  // For ICM42688P variation
+#define USE_GYRO_SPI_ICM42688P // For ICM42688P variation
 #define USE_FLASH
 #define USE_FLASH_M25P16
 #define USE_MAX7456
