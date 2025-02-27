@@ -27,6 +27,7 @@
 
 // ADC
 #define ADC_CURR_PIN                        PC0
+#define ADC_RSSI_PIN                        PC1
 #define ADC_VBAT_PIN                        PC2
 #define ADC1_DMA_OPT                        0
 #define ADC_INSTANCE                        ADC1
@@ -60,8 +61,6 @@
 #define DEFAULT_BLACKBOX_DEVICE             BLACKBOX_DEVICE_FLASH
 
 // I2C
-// #define I2C1_SCL_PIN                        PB8
-// #define I2C1_SDA_PIN                        PB9
 #define I2C3_SCL_PIN                        PA8
 #define I2C3_SDA_PIN                        PC9
 
@@ -79,7 +78,7 @@
 #define GYRO_1_SPI_INSTANCE                 SPI3
 
 // LED
-#define LED_STRIP_PIN                       PA0
+#define LED_STRIP_PIN                       PB8
 #define LED0_PIN                            PC4
 #define LED1_PIN                            PB2
 
@@ -87,12 +86,12 @@
 #define MAG_I2C_INSTANCE                    I2CDEV_3
 
 // MOTOR
-#define MOTOR1_PIN                          PB5
-#define MOTOR2_PIN                          PB4
-#define MOTOR3_PIN                          PB3
-#define MOTOR4_PIN                          PA15
-#define SERVO1_PIN                          PB0
-#define SERVO2_PIN                          PB1
+#define MOTOR1_PIN                          PB4
+#define MOTOR2_PIN                          PB5
+#define MOTOR3_PIN                          PB0
+#define MOTOR4_PIN                          PB1
+#define SERVO1_PIN                          PA15
+#define SERVO2_PIN                          PB3
 
 // OSD
 #define USE_MAX7456
@@ -135,13 +134,14 @@
 #define SERIALRX_UART                       SERIAL_PORT_USART2
 #define ESC_SENSOR_UART                     SERIAL_PORT_UART4
 #define GPS_UART                            SERIAL_PORT_USART6
+#define DEFAULT_DSHOT_BITBANG               DSHOT_BITBANG_ON
 
 // TIMER && DMA
-#define TIMER_PIN_MAPPING                   TIMER_PIN_MAP(0, LED_STRIP_PIN, 2,  0) \
-                                            TIMER_PIN_MAP(1, MOTOR1_PIN,    1,  0) \
-                                            TIMER_PIN_MAP(2, MOTOR2_PIN,    1,  0) \
-                                            TIMER_PIN_MAP(3, MOTOR3_PIN,    1,  0) \
-                                            TIMER_PIN_MAP(4, MOTOR4_PIN,    1,  0) \
-                                            TIMER_PIN_MAP(5, SERVO1_PIN,    2, -1) \
-                                            TIMER_PIN_MAP(6, SERVO2_PIN,    2, -1) \
-                                            TIMER_PIN_MAP(9, RX_PPM_PIN,    3, -1)
+#define TIMER_PIN_MAPPING                   TIMER_PIN_MAP(0, LED_STRIP_PIN,       1,  0) \
+                                            TIMER_PIN_MAP(1, MOTOR1_PIN,          1,  0) \
+                                            TIMER_PIN_MAP(2, MOTOR2_PIN,          1,  0) \
+                                            TIMER_PIN_MAP(3, MOTOR3_PIN,          2,  0) \
+                                            TIMER_PIN_MAP(4, MOTOR4_PIN,          2,  0) \
+                                            TIMER_PIN_MAP(5, SERVO1_PIN,          1, -1) \
+                                            TIMER_PIN_MAP(6, SERVO2_PIN,          1, -1) \
+                                            TIMER_PIN_MAP(9, RX_PPM_PIN,          3, -1)
