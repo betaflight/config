@@ -137,11 +137,11 @@
 #define DEFAULT_DSHOT_BITBANG               DSHOT_BITBANG_ON
 
 // TIMER && DMA
-#define TIMER_PIN_MAPPING                   TIMER_PIN_MAP(0, LED_STRIP_PIN,       1,  0) \
-                                            TIMER_PIN_MAP(1, MOTOR1_PIN,          1,  0) \
-                                            TIMER_PIN_MAP(2, MOTOR2_PIN,          1,  0) \
-                                            TIMER_PIN_MAP(3, MOTOR3_PIN,          2,  0) \
-                                            TIMER_PIN_MAP(4, MOTOR4_PIN,          2,  0) \
-                                            TIMER_PIN_MAP(5, SERVO1_PIN,          1, -1) \
-                                            TIMER_PIN_MAP(6, SERVO2_PIN,          1, -1) \
-                                            TIMER_PIN_MAP(9, RX_PPM_PIN,          3, -1)
+#define TIMER_PIN_MAPPING                   TIMER_PIN_MAP(0, LED_STRIP_PIN, 1,  0) \
+                                            TIMER_PIN_MAP(1, MOTOR1_PIN,    1,  0) \
+                                            TIMER_PIN_MAP(2, MOTOR2_PIN,    1,  0) \
+                                            TIMER_PIN_MAP(3, MOTOR3_PIN,    2,  0) \
+                                            TIMER_PIN_MAP(4, MOTOR4_PIN,    2,  0) \
+                                            TIMER_PIN_MAP(5, SERVO1_PIN,    1, -1) \
+                                            TIMER_PIN_MAP(6, SERVO2_PIN,    1, -1) \
+                                            TIMER_PIN_MAP(9, RX_PPM_PIN,    3, -1)
