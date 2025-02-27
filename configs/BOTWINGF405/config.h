@@ -101,6 +101,7 @@
 #define ADC_CURR_PIN                        PC3
 
 #define PINIO1_PIN                          PB1
+#define PINIO2_PIN                          PC13
 
 #define SWDIO_PIN                           PA13
 #define SWCLK_PIN                           PA14
@@ -123,6 +124,7 @@
 #define DEFAULT_VOLTAGE_METER_SCALE         110
 
 #define PINIO1_BOX                          40
+#define PINIO2_BOX                          41
 
 #define SERIALRX_UART                       SERIAL_PORT_USART1
 #define ESC_SENSOR_UART                     SERIAL_PORT_USART2
