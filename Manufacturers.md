@@ -118,6 +118,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |TURC|TUNERC|https://www.tunerc.com/|
 |VGRC|V-GOOD Technology Co.|http://www.vgoodrc.com/|
 |VIVA|VivaFPV|https://vivafpv.com/|
+|WDIY|WDIY|http://wdiy.net.cn/|
 |WIZZ|WIZZ|https://wizz.store/|
 |YUPF|YuPiFc|https://www.yupifc.com/|
 |YYRC|JLDZ||
