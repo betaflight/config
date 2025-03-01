@@ -1,23 +1,23 @@
 /*
- * This file is part of Betaflight.
- *
- * Betaflight is free software. You can redistribute this software
- * and/or modify this software under the terms of the GNU General
- * Public License as published by the Free Software Foundation,
- * either version 3 of the License, or (at your option) any later
- * version.
- *
- * Betaflight is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- *
- * See the GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public
- * License along with this software.
- *
- * If not, see <http://www.gnu.org/licenses/>.
- */
+* This file is part of Betaflight.
+*
+* Betaflight is free software. You can redistribute this software
+* and/or modify this software under the terms of the GNU General
+* Public License as published by the Free Software Foundation,
+* either version 3 of the License, or (at your option) any later
+* version.
+*
+* Betaflight is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+*
+* See the GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public
+* License along with this software.
+*
+* If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #pragma once
 
@@ -41,6 +41,7 @@
 #define MOTOR2_PIN PB0
 #define MOTOR3_PIN PA3
 #define MOTOR4_PIN PA2
+#define SERVO1_PIN PB9
 #define LED_STRIP_PIN PC8
 #define UART1_TX_PIN PA9
 #define UART3_TX_PIN PB10
@@ -70,13 +71,15 @@
 #define MAX7456_SPI_CS_PIN PA4
 #define GYRO_1_EXTI_PIN PB8
 #define GYRO_1_CS_PIN PB3
+#define PINIO1_PIN PA15
 
 #define TIMER_PIN_MAPPING                                                      \
   TIMER_PIN_MAP(0, PB1, 2, 0)                                                  \
   TIMER_PIN_MAP(1, PB0, 2, 0)                                                  \
   TIMER_PIN_MAP(2, PA3, 1, 1)                                                  \
   TIMER_PIN_MAP(3, PA2, 1, 0)                                                  \
-  TIMER_PIN_MAP(4, PC8, 2, 0)                                                  
+  TIMER_PIN_MAP(4, PC8, 2, 0)                                                  \
+  TIMER_PIN_MAP(6, PB9, 1, -1)
 
 #define ADC1_DMA_OPT        1
 #define MAG_I2C_INSTANCE I2CDEV_1
