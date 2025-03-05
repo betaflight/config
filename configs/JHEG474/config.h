@@ -93,4 +93,4 @@
 #define MAX7456_SPI_INSTANCE            SPI2
 #define FLASH_SPI_INSTANCE              SPI3
 #define GYRO_1_SPI_INSTANCE             SPI1
-#define GYRO_1_ALIGN                    CW180_DEG
+#define GYRO_1_ALIGN                    CW90_DEG
