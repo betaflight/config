@@ -105,17 +105,18 @@
 #define GYRO_2_EXTI_PIN      PE3
 #define GYRO_1_CS_PIN        PA4
 #define GYRO_2_CS_PIN        PE4
-  
+
 #define TIMER_PIN_MAPPING \
-   TIMER_PIN_MAP( 1, PA1,  2,  0) \
-   TIMER_PIN_MAP( 2, PA2,  2,  1) \
-   TIMER_PIN_MAP( 3, PA3,  2,  2) \
-   TIMER_PIN_MAP( 4, PB4,  1,  3) \
-   TIMER_PIN_MAP( 5, PB5 , 1,  4) \
-   TIMER_PIN_MAP( 6, PB0,  2,  5) \
-   TIMER_PIN_MAP( 7, PB1,  2,  6) \
-   TIMER_PIN_MAP( 8, PB8,  2,  7) \
-   TIMER_PIN_MAP( 9, PC6,  1,  8) \
+   TIMER_PIN_MAP( 1, PA0,  2,  0) \
+   TIMER_PIN_MAP( 1, PA1,  2,  1) \
+   TIMER_PIN_MAP( 2, PA2,  2,  2) \
+   TIMER_PIN_MAP( 3, PA3,  2,  3) \
+   TIMER_PIN_MAP( 4, PB4,  1,  4) \
+   TIMER_PIN_MAP( 5, PB5 , 1,  5) \
+   TIMER_PIN_MAP( 6, PB0,  2,  6) \
+   TIMER_PIN_MAP( 7, PB1,  2,  7) \
+   TIMER_PIN_MAP( 8, PB8,  2,  8) \
+   TIMER_PIN_MAP( 9, PC6,  1, -1) \
    TIMER_PIN_MAP(10, PE11, 1, -1) \
    TIMER_PIN_MAP(11, PE14, 1, -1)
    
