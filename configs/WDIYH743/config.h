@@ -107,7 +107,7 @@
 #define GYRO_2_CS_PIN        PE4
 
 #define TIMER_PIN_MAPPING \
-   TIMER_PIN_MAP( 1, PA0,  2,  0) \
+   TIMER_PIN_MAP( 0, PA0,  2,  0) \
    TIMER_PIN_MAP( 1, PA1,  2,  1) \
    TIMER_PIN_MAP( 2, PA2,  2,  2) \
    TIMER_PIN_MAP( 3, PA3,  2,  3) \
