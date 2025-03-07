@@ -37,13 +37,15 @@
 
 // PINIO1 -- VTX Switch
 #define PINIO1_PIN                      PA2  //TIM2_CH3/TIM5_CH3/TIM15_CH1/USART2_TX/ADC12_INP14
-#define PINIO1_CONFIG                   1
-#define PINIO1_BOX                      39
+#define PINIO1_CONFIG                   129
+#define PINIO1_BOX                      40
+#define BOX_USER1_NAME                  "VTX SW"
 
 // PINIO2 -- CAM Switch
 #define PINIO2_PIN                      PA3  //TIM2_CH4/TIM5_CH4/TIM15_CH2/USART2_RX/ADC12_INP15
 #define PINIO2_CONFIG                   1
-#define PINIO2_BOX                      40
+#define PINIO2_BOX                      41
+#define BOX_USER2_NAME                  "CAM SW"
 
 // UART 1
 #define UART1_TX_PIN                    PB6  //TIM16_CH1N/TIM4_CH1/I2C1_SCL/I2C4_SCL/USART1_TX/UART5_TX
@@ -68,8 +70,6 @@
 // UART 5
 #define UART5_TX_PIN                    PD3  //SPI2_SCK
 #define UART5_RX_PIN                    PD2  //UART5_RX/SDMMC1_CMD
-#define I2C1_SCL_PIN                    PB8  //TIM16_CH1/TIM4_CH3/I2C1_SCL/I2C4_SCL/UART4_RX
-#define I2C1_SDA_PIN                    PB9  //TIM17_CH1/TIM4_CH4/I2C1_SDA/SPI2_NSS/I2C4_SDA/UART4_TX/I2C4_SMBA
 
 // UART 6 -- GPS
 #define UART6_TX_PIN                    PC6  //TIM3_CH1/TIM8_CH1/USART6_TX
@@ -86,14 +86,18 @@
 #define UART8_TX_PIN                    PE1  //UART8_TX
 #define UART8_RX_PIN                    PE0  //UART8_RX
 
+// I2C
+#define I2C1_SCL_PIN                    PB8  //TIM16_CH1/TIM4_CH3/I2C1_SCL/I2C4_SCL/UART4_RX
+#define I2C1_SDA_PIN                    PB9  //TIM17_CH1/TIM4_CH4/I2C1_SDA/SPI2_NSS/I2C4_SDA/UART4_TX/I2C4_SMBA
+#define I2C4_SCL_PIN                    PD12 //TIM4_CH1/I2C4_SCL
+#define I2C4_SDA_PIN                    PD13 //TIM4_CH2/I2C4_SDA
+
 // Baro
 #define USE_BARO
 #define USE_BARO_DPS310
 #define BARO_I2C_INSTANCE               I2CDEV_1
 
 // Compass
-#define I2C4_SCL_PIN                    PD12 //TIM4_CH1/I2C4_SCL
-#define I2C4_SDA_PIN                    PD13 //TIM4_CH2/I2C4_SDA
 #define MAG_I2C_INSTANCE                I2CDEV_4
 
 // IMU
@@ -134,12 +138,12 @@
 // BAT voltage ADC
 #define ADC_VBAT_PIN                    PC0  //ADC123_INP10
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
-// #define DEFAULT_VOLTAGE_METER_SCALE     210
+#define DEFAULT_VOLTAGE_METER_SCALE     110
 
 // BAT current ADC
 #define ADC_CURR_PIN                    PC1  //SPI2_MOSI/ADC123_INN10/ADC123_INP11
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
-// #define DEFAULT_CURRENT_METER_SCALE     120
+#define DEFAULT_CURRENT_METER_SCALE     120
 
 // MAX7456 OSD
 #ifdef USE_OSD_SD
@@ -166,7 +170,6 @@
 #define MOTOR8_PIN                      PC9  //TIM3_CH4/TIM8_CH4/I2C3_SDA/SDMMC1_D1
 
 // TIMER_PIN_MAP(idx, pin, occurance, dma_opt)
-#define USE_TIMER_MAP_PRINT
 #define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 0, MOTOR1_PIN, 1,  0 ) \
                                         TIMER_PIN_MAP( 1, MOTOR2_PIN, 1,  1 ) \
                                         TIMER_PIN_MAP( 2, MOTOR3_PIN, 1,  2 ) \
