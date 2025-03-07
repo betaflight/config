@@ -125,6 +125,10 @@
 #define GYRO_2_SPI_INSTANCE             SPI4
 #define GYRO_2_ALIGN                    CW180_DEG
 
+#define USE_GYRO_CLKIN
+#define GYRO_1_CLKIN_PIN                PA5  //TIM2_CH1/ADC12_INP5
+#define GYRO_2_CLKIN_PIN                PB0  //TIM3_CH3/ADC12_INP15
+
 // Blackbox
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
@@ -178,7 +182,11 @@
                                         TIMER_PIN_MAP( 5, MOTOR6_PIN, 1,  5 ) \
                                         TIMER_PIN_MAP( 6, MOTOR7_PIN, 1,  6 ) \
                                         TIMER_PIN_MAP( 7, MOTOR8_PIN, 1,  7 ) \
-                                        TIMER_PIN_MAP( 8, LED_STRIP_PIN, 1, 11 )
+                                        TIMER_PIN_MAP( 8, LED_STRIP_PIN, 2, 11 ) \
+                                        TIMER_PIN_MAP( 9, CAMERA_CONTROL_PIN, 3, -1 ) \
+                                        TIMER_PIN_MAP(10, GYRO_1_CLKIN_PIN, 1, -1 ) \
+                                        TIMER_PIN_MAP(11, GYRO_2_CLKIN_PIN, 2, -1 ) \
+                                        TIMER_PIN_MAP(12, BEEPER_PIN, 1, -1 )
 
 // DMA stream assignment
 #define ADC1_DMA_OPT                    8
