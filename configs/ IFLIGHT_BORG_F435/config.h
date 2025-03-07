@@ -38,10 +38,6 @@
 #define MOTOR2_PIN                      PB1
 #define MOTOR3_PIN                      PC8
 #define MOTOR4_PIN                      PC9
-#define MOTOR5_PIN                      PB6
-#define MOTOR6_PIN                      PB7
-#define MOTOR7_PIN                      PB11
-#define MOTOR8_PIN                      PB10
 #define RX_PPM_PIN                      PA3
 
 #define DEFAULT_DSHOT_BURST             DSHOT_DMAR_AUTO
@@ -135,8 +131,4 @@
                                         TIMER_PIN_MAP(  2, PB0,  2,  0 ) \
                                         TIMER_PIN_MAP(  3, PB1,  2,  2 ) \
                                         TIMER_PIN_MAP(  4, PC8,  2,  1 ) \
-                                        TIMER_PIN_MAP(  5, PC9,  2,  3 ) \
-                                        TIMER_PIN_MAP(  6, PB6,  1, 11 ) \
-                                        TIMER_PIN_MAP(  7, PB7,  1, 10 ) \
-                                        TIMER_PIN_MAP(  8, PB11, 1, 12 ) \
-                                        TIMER_PIN_MAP(  9, PB10, 1, 13 )
+                                        TIMER_PIN_MAP(  5, PC9,  2,  3 ) 
