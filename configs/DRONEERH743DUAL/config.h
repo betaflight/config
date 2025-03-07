@@ -127,7 +127,7 @@
 
 #define USE_GYRO_CLKIN
 #define GYRO_1_CLKIN_PIN                PA5  //TIM2_CH1/ADC12_INP5
-#define GYRO_2_CLKIN_PIN                PB0  //TIM3_CH3/ADC12_INP15
+#define GYRO_2_CLKIN_PIN                PB0  //TIM3_CH3/ADC12_INP15 (Conflicts with MOTOR7 when bitbang is disabled)
 
 // Blackbox
 #define USE_FLASH
