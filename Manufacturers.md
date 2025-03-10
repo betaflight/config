@@ -36,6 +36,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |DIAT|Diatone Innovations|https://www.diatoneusa.com/|
 |DRCL|dronercland|https://www.instagram.com/dronercland/|
 |DREA|DREAMRC|https://github.com/dreamworks-fpv|
+[DRNR|Shenzhen Zhimu Technology Co., Ltd||
 |DRRC|DroidRC|https://github.com/xiaoxiabub|
 |DYST|DongYang Smart Technology Co.,Ltd (dys)|http://www.dys.hk/|
 |EACH|eachine|https://www.eachine.com/|
