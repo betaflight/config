@@ -115,4 +115,5 @@
 #define PINIO2_BOX 41
 #define PINIO3_BOX 42
 #define PINIO4_BOX 43
+#define PINIO4_CONFIG 129
 #define BOX_USER4_NAME       "High-V BEC"
