@@ -86,13 +86,15 @@
           TIMER_PIN_MAP( 1, PC8, 2,  1 ) \
           TIMER_PIN_MAP( 2, PC7, 2,  1 ) \
           TIMER_PIN_MAP( 3, PC6, 2,  1 ) \
-          TIMER_PIN_MAP( 4, PB6, 1,  0 ) \
-          TIMER_PIN_MAP( 5, PB7, 1,  0 ) \
-          TIMER_PIN_MAP( 6, PB8, 1,  0 ) \
+          TIMER_PIN_MAP( 4, PB6, 1, -1 ) \
+          TIMER_PIN_MAP( 5, PB7, 1, -1 ) \
+          TIMER_PIN_MAP( 6, PB8, 1, -1 ) \
           TIMER_PIN_MAP( 7, PB9, 1, -1 ) \
-          TIMER_PIN_MAP( 8, PA8, 1,  0 ) 
+          TIMER_PIN_MAP( 8, PA8, 1,  0 ) \
+          TIMER_PIN_MAP( 9, PA3, 3, -1 )
 
-#define ADC1_DMA_OPT 0
+#define ADC_INSTANCE ADC3
+#define ADC3_DMA_OPT 1
 
 #define SERIALRX_UART SERIAL_PORT_USART2
 
