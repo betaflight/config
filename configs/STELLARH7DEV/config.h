@@ -40,7 +40,7 @@
 #define UART3_TX_PIN                    PD8
 #define UART3_RX_PIN                    PD9
 
-// RC connector
+// RC pads
 #define UART4_TX_PIN                    PA0
 #define UART4_RX_PIN                    PA1
 #define SERIALRX_UART                   SERIAL_PORT_UART4
@@ -213,7 +213,7 @@
 #define MAX7456_SPI_INSTANCE            SPI2
 #endif
 
-// Debug
+// Debug connector
 #define USE_SWDIO_PIN                   PA13
 #define USE_SWCLK_PIN                   PA14
 
