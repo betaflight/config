@@ -55,8 +55,8 @@
 #define UART6_RX_PIN         PC7
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
-#define LED0_PIN             PC14
-#define LED1_PIN             PC15
+#define LED0_PIN             PC0
+#define LED1_PIN             PC2
 #define SPI1_SCK_PIN         PA5
 #define SPI2_SCK_PIN         PB13
 #define SPI3_SCK_PIN         PC10
@@ -68,8 +68,6 @@
 #define SPI3_SDO_PIN         PB5
 #define ADC_VBAT_PIN         PC1
 #define ADC_CURR_PIN         PC3
-#define PINIO1_PIN           PC0
-#define PINIO2_PIN           PC2
 #define FLASH_CS_PIN         PA15
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
@@ -98,10 +96,6 @@
 #define DEFAULT_CURRENT_METER_SCALE 250
 #define BEEPER_INVERTED
 #define MAX7456_SPI_INSTANCE SPI2
-#define PINIO1_CONFIG 129
-#define PINIO2_CONFIG 129
-#define PINIO1_BOX 40
-#define PINIO2_BOX 41
 #define FLASH_SPI_INSTANCE SPI3
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW270_DEG
