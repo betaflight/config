@@ -45,10 +45,6 @@
 #define MOTOR2_PIN           PB1
 #define MOTOR3_PIN           PA3
 #define MOTOR4_PIN           PA2
-#define MOTOR5_PIN           PB5
-#define MOTOR6_PIN           PB7
-#define MOTOR7_PIN           PC9
-#define MOTOR8_PIN           PC8
 #define RX_PPM_PIN           PB8
 #define LED_STRIP_PIN        PA9
 #define UART1_TX_PIN         PB6
@@ -72,6 +68,7 @@
 #define SPI1_SDO_PIN         PA7
 #define SPI3_SDO_PIN         PC12
 #define ESCSERIAL_PIN        PB8
+#define PINIO1_PIN           PC8
 #define ADC_VBAT_PIN         PC3
 #define ADC_RSSI_PIN         PC0
 #define ADC_CURR_PIN         PC2
@@ -86,13 +83,7 @@
     TIMER_PIN_MAP( 1, PB1 , 2,  0) \
     TIMER_PIN_MAP( 2, PA3 , 1,  1) \
     TIMER_PIN_MAP( 3, PA2 , 1,  0) \
-    TIMER_PIN_MAP( 4, PB5 , 1,  0) \
-    TIMER_PIN_MAP( 5, PB7 , 1,  0) \
-    TIMER_PIN_MAP( 6, PC9 , 2,  0) \
-    TIMER_PIN_MAP( 7, PC8 , 2,  0) \
-    TIMER_PIN_MAP( 8, PA9 , 1,  0)
-
-
+    TIMER_PIN_MAP( 4, PA9 , 1,  0)
 
 #define ADC1_DMA_OPT                    0
 #define MAG_I2C_INSTANCE                I2CDEV_1
@@ -102,8 +93,8 @@
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 #define DEFAULT_CURRENT_METER_SCALE     170
 #define BEEPER_INVERTED
+#define PINIO1_BOX                      40
 #define MAX7456_SPI_INSTANCE            SPI3
-#define DASHBOARD_I2C_INSTANCE          I2CDEV_1
 #define FLASH_SPI_INSTANCE              SPI3
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define GYRO_1_ALIGN                    CW180_DEG
