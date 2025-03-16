@@ -40,17 +40,12 @@
  #define USE_FLASH
  #define USE_FLASH_M25P16
  #define USE_MAX7456
- 
  #define BEEPER_PIN           PC13
- #define MOTOR1_PIN           PC8
- #define MOTOR2_PIN           PC9
- #define MOTOR3_PIN           PA8
- #define MOTOR4_PIN           PA9
- #define MOTOR5_PIN           PA10
- #define MOTOR6_PIN           PB4
- #define MOTOR7_PIN           PB0
- #define MOTOR8_PIN           PB1
- #define LED_STRIP_PIN        PB3
+ #define MOTOR1_PIN           PA8
+ #define MOTOR2_PIN           PA9
+ #define MOTOR3_PIN           PA10
+ #define MOTOR4_PIN           PC8
+ #define LED_STRIP_PIN        PC9
  #define UART1_TX_PIN         PB6
  #define UART2_TX_PIN         PA2
  #define UART3_TX_PIN         PB10
@@ -87,16 +82,12 @@
  #define GYRO_1_CS_PIN        PA4
  
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP(0, PC8, 2, 0)   /* o=1 → TIM3_CH3, o=2 → TIM8_CH3 */ \
-    TIMER_PIN_MAP(1, PC9, 2, 0)   /* o=1 → TIM3_CH4, o=2 → TIM8_CH4 */ \
-    TIMER_PIN_MAP(2, PA8, 1, 0)   /* o=1 → TIM1_CH1 (唯一选项) */ \
-    TIMER_PIN_MAP(3, PA9, 1, 0)   /* o=1 → TIM1_CH2 (唯一选项) */ \
-    TIMER_PIN_MAP(4, PA10, 1, 0)  /* o=1 → TIM1_CH3 (唯一选项) */ \
-    TIMER_PIN_MAP(5, PB4, 1, 0)   /* o=1 → TIM3_CH1 (唯一选项) */ \
-    TIMER_PIN_MAP(6, PB0, 2, 0)   /* o=1 → TIM1_CH2N, o=2 → TIM3_CH3 */ \
-    TIMER_PIN_MAP(7, PB1, 2, 0)   /* o=1 → TIM1_CH3N, o=2 → TIM3_CH4 */ \
-    TIMER_PIN_MAP(8, PB3, 1, 0)  /* o=1 → TIM2_CH2 (唯一选项) */
- 
+    TIMER_PIN_MAP(0, PA8, 1, 0)    \
+    TIMER_PIN_MAP(1, PA9, 1, 0)    \
+    TIMER_PIN_MAP(2, PA10, 1, 0)   \
+    TIMER_PIN_MAP(3, PC8, 2, 0)   \
+    TIMER_PIN_MAP(4, PC9, 2, 0)   \
+
  
  
  #define ADC3_DMA_OPT        0
@@ -104,7 +95,6 @@
  #define MAG_I2C_INSTANCE (I2CDEV_1)
  #define USE_BARO
  #define BARO_I2C_INSTANCE (I2CDEV_1)
- 
  #define ADC_INSTANCE ADC3
  #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
  #define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
@@ -116,8 +106,8 @@
  #define MAX7456_SPI_INSTANCE SPI2
  #define PINIO1_CONFIG 129
  #define PINIO2_CONFIG 129
- #define PINIO1_BOX 40  //40是USER1
- #define PINIO2_BOX 41  //41是USER2
+ #define PINIO1_BOX 40
+ #define PINIO2_BOX 41
  #define FLASH_SPI_INSTANCE SPI3
  #define GYRO_1_SPI_INSTANCE SPI1
  #define GYRO_1_ALIGN CW90_DEG
