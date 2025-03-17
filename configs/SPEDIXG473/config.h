@@ -99,4 +99,5 @@
 #define MAX7456_SPI_INSTANCE SPI2
 #define FLASH_SPI_INSTANCE   SPI3
 #define GYRO_1_SPI_INSTANCE  SPI1
+#define DEFAULT_ALIGN_BOARD_YAW 315
 //#define GYRO_1_ALIGN CW180_DEG // Confirm gyro alignment
