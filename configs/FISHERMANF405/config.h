@@ -60,8 +60,8 @@
  #define INVERTER_PIN_UART2   PC0
  #define I2C1_SCL_PIN         PB8
  #define I2C1_SDA_PIN         PB9
- #define LED0_PIN             PC15
- #define LED1_PIN             PC14
+ #define LED0_PIN             PB0
+ #define LED1_PIN             PB1
  #define SPI1_SCK_PIN         PA5
  #define SPI2_SCK_PIN         PB13
  #define SPI3_SCK_PIN         PC10
