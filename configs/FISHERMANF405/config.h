@@ -82,10 +82,10 @@
  #define GYRO_1_CS_PIN        PA4
  
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP(0, PA8, 1, 0)    \
-    TIMER_PIN_MAP(1, PA9, 1, 0)    \
-    TIMER_PIN_MAP(2, PA10, 1, 0)   \
-    TIMER_PIN_MAP(3, PC8, 2, 0)   \
+    TIMER_PIN_MAP(0, PA8, 1, 1)    \
+    TIMER_PIN_MAP(1, PA9, 1, 1)    \
+    TIMER_PIN_MAP(2, PA10, 1, 1)   \
+    TIMER_PIN_MAP(3, PC8, 1, 0)   \
     TIMER_PIN_MAP(4, PC9, 2, 0)   \
 
  
