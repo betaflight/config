@@ -34,6 +34,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |DFRA|Drone FPV Racer|https://www.drone-fpv-racer.com/|
 |DFRC|Shenzhen Jingfei Technology Co., LTD|https://dreamflyrc.com/|
 |DIAT|Diatone Innovations|https://www.diatoneusa.com/|
+|DNFR|Drone Francais|https://dronefrancais.fr/|
 |DRCL|dronercland|https://www.instagram.com/dronercland/|
 |DREA|DREAMRC|https://github.com/dreamworks-fpv|
 |DRRC|DroidRC|https://github.com/xiaoxiabub|
