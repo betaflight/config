@@ -40,11 +40,11 @@
  #define USE_FLASH_M25P16
  #define USE_MAX7456
  #define BEEPER_PIN           PC13
- #define MOTOR1_PIN           PA8
+ #define MOTOR1_PIN           PA10
  #define MOTOR2_PIN           PA9
- #define MOTOR3_PIN           PA10
- #define MOTOR4_PIN           PC8
- #define LED_STRIP_PIN        PC9
+ #define MOTOR3_PIN           PA8
+ #define MOTOR4_PIN           PC9
+ #define LED_STRIP_PIN        PC8
  #define UART1_TX_PIN         PB6
  #define UART2_TX_PIN         PA2
  #define UART3_TX_PIN         PB10
