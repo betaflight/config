@@ -43,8 +43,8 @@
 #define MOTOR4_PIN PC6
 #define SERVO1_PIN PB6
 #define SERVO2_PIN PB7
-#define SERVO2_PIN PB8
-#define SERVO3_PIN PB9
+#define SERVO3_PIN PB8
+#define SERVO4_PIN PB9
 #define RX_PPM_PIN PA3
 #define LED_STRIP_PIN PA8
 #define LED0_PIN PB0
