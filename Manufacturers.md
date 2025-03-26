@@ -24,7 +24,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |BROT|Brotherhobby Co., Ltd|https://brotherhobby.com/|
 |BSTF|BEASTFPV|http://www.beastfpv.com/|
 |CADX|CADDX TECHNOLOGY (SHENZHEN) CO., LTD|https://caddxfpv.com/|
-|CDAY| CHENNAI DRONE ACADEMY LTD|https://https://chennaidroneacademy.com/|
+|CDAY|CHENNAI DRONE ACADEMY|https://https://chennaidroneacademy.com/|
 |CCRC|Sunhey Now|https://sunheyccrc.aliexpress.com/|
 |CLRA|CLRACING LLC|https://cl-racing.myshopify.com/|
 |CYCL|CycloneRC|http://www.cyclone-rc.com|
