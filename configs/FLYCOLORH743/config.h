@@ -87,7 +87,6 @@
 #define ADC_CURR_PIN         PC3
 #define ADC_EXTERNAL1_PIN    PC0
 #define PINIO1_PIN           PD10
-#define PINIO2_PIN           PD11
 #define USB_DETECT_PIN       PE6
 
 #define TIMER_PIN_MAPPING \
@@ -100,15 +99,13 @@
     TIMER_PIN_MAP( 6, PD12, 1,  6) \
     TIMER_PIN_MAP( 7, PD13, 1,  7) \
     TIMER_PIN_MAP( 8, PA8 , 1, 14) \
-    TIMER_PIN_MAP( 9, PB8 , 1,  0) \
     TIMER_PIN_MAP(10, PB9 , 1,  0)
 
 #define ADC1_DMA_OPT        8
 #define ADC3_DMA_OPT        9
-#define TIMUP1_DMA_OPT      0
-#define TIMUP3_DMA_OPT      2
-#define TIMUP4_DMA_OPT      1
-#define TIMUP5_DMA_OPT      0
+#define TIMUP3_DMA_OPT      10
+#define TIMUP4_DMA_OPT      11
+#define TIMUP5_DMA_OPT      12
 
 #define SERIALRX_UART SERIAL_PORT_UART4
 #define BARO_I2C_INSTANCE I2CDEV_1
@@ -124,8 +121,6 @@
 #define DEFAULT_DSHOT_TELEMETRY DSHOT_TELEMETRY_ON
 #define DEFAULT_DSHOT_BITBANG DSHOT_BITBANG_ON
 #define PINIO1_CONFIG 129
-#define PINIO2_CONFIG 129
 #define PINIO1_BOX 40
-#define PINIO2_BOX 41
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW0_DEG
