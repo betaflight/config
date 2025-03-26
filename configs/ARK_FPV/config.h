@@ -68,8 +68,8 @@
 #define UART2_RX_PIN         PA3
 
 // Debug
-#define UART3_TX_PIN         PD8
-#define UART3_RX_PIN         PD9
+#define UART4_TX_PIN         PD8
+#define UART4_RX_PIN         PD9
 #define MSP_UART             SERIAL_PORT_UART3
 
 // NOTE: enabling this doesn't work, fw hangs
