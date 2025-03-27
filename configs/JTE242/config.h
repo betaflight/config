@@ -22,7 +22,7 @@
 #pragma once
 
 #define FC_TARGET_MCU STM32H743
-#define BOARD_NAME JTE242
+#define BOARD_NAME RADIOMASTERH743
 #define MANUFACTURER_ID RDMR
 
 #define USE_GYRO
