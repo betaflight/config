@@ -99,7 +99,7 @@
     TIMER_PIN_MAP( 6, PD12, 1,  6) \
     TIMER_PIN_MAP( 7, PD13, 1,  7) \
     TIMER_PIN_MAP( 8, PA8 , 1, 14) \
-    TIMER_PIN_MAP(10, PB9 , 1,  0)
+    TIMER_PIN_MAP( 9, PB9 , 1, -1)
 
 #define ADC1_DMA_OPT        8
 #define ADC3_DMA_OPT        9
