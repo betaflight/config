@@ -129,7 +129,6 @@
     TIMER_PIN_MAP(  8, PC9, 2, 0 ) \
     TIMER_PIN_MAP(  9, PA3,  3,  -1 ) 
 
-#define USE_ADC
 #define ADC1_DMA_OPT 8
 #define ADC2_DMA_OPT 9
 #define ADC3_DMA_OPT 10
