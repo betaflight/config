@@ -97,6 +97,7 @@
 #define VTX_ENABLE_PIN                PE3
 #define PINIO1_PIN                    VTX_ENABLE_PIN
 #define PINIO1_BOX 40
+#define PINIO1_CONFIG 129
 
 #define GYRO_1_CLKIN_PIN PA3
 #define GYRO_2_CLKIN_PIN PA3
