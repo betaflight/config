@@ -100,7 +100,6 @@
 #define PINIO1_CONFIG 129
 
 #define GYRO_1_CLKIN_PIN PA3
-#define GYRO_2_CLKIN_PIN PA3
 
 // Index, Pin, 1-based occurrence of pin in fullTimerHardware, dma opt (use -1 for no DMA)
 // See timerio.c and timer_stm32h7xx.c
