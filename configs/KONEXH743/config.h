@@ -64,6 +64,8 @@
 
 #define I2C2_SCL_PIN PB10
 #define I2C2_SDA_PIN PB11
+#define I2C4_SCL_PIN PD12
+#define I2C4_SDA_PIN PD13
 
 #define SPI1_SCK_PIN PA5
 #define SPI1_SDI_PIN PA6
