@@ -94,6 +94,7 @@
 #define DEFAULT_CURRENT_METER_SCALE     170
 #define BEEPER_INVERTED
 #define PINIO1_BOX                      40
+#define PINIO1_CONFIG                   129
 #define MAX7456_SPI_INSTANCE            SPI3
 #define FLASH_SPI_INSTANCE              SPI3
 #define GYRO_1_SPI_INSTANCE             SPI1
