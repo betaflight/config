@@ -23,8 +23,8 @@
 
 #define FC_TARGET_MCU     STM32H743
  
-#define BOARD_NAME        HAKRCK540
-#define MANUFACTURER_ID   HARC
+#define BOARD_NAME        TJRCH743
+#define MANUFACTURER_ID   TJRC
  
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
