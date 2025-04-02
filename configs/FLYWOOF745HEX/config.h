@@ -99,8 +99,8 @@
 //TIMER_PIN_MAP( 9, LED_STRIP_PIN, 1,  0)
 
 #define ADC1_DMA_OPT        1
-#define SPI1_TX_DMA_OPT     1
-#define SPI1_RX_DMA_OPT     0
+#define SPI1_TX_DMA_OPT     0
+#define SPI1_RX_DMA_OPT     1
 #define SPI4_TX_DMA_OPT     0
 #define SPI4_RX_DMA_OPT     1
 
