@@ -21,10 +21,10 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     STM32H743
+#define FC_TARGET_MCU        STM32H743
  
-#define BOARD_NAME        TJRCH743
-#define MANUFACTURER_ID   TJRC
+#define BOARD_NAME           TJRCH743
+#define MANUFACTURER_ID      TJRC
  
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
@@ -84,13 +84,13 @@
 #define GYRO_1_CS_PIN        PC15
 
 #define TIMER_PIN_MAPPING \
-   TIMER_PIN_MAP( 0, MOTOR1_PIN,          2,  0) \
-   TIMER_PIN_MAP( 1, MOTOR2_PIN,          2,  1) \
-   TIMER_PIN_MAP( 2, MOTOR3_PIN,          2,  2) \
-   TIMER_PIN_MAP( 3, MOTOR4_PIN,          2,  3) \
-   TIMER_PIN_MAP( 4, LED_STRIP_PIN,       1,  4) \
-   TIMER_PIN_MAP( 5, GYRO_1_CLKIN_PIN,    1, -1) \
-   TIMER_PIN_MAP( 6, RX_PPM_PIN,          1, -1)
+   TIMER_PIN_MAP( 0, MOTOR1_PIN,        2,  0) \
+   TIMER_PIN_MAP( 1, MOTOR2_PIN,        2,  1) \
+   TIMER_PIN_MAP( 2, MOTOR3_PIN,        2,  2) \
+   TIMER_PIN_MAP( 3, MOTOR4_PIN,        2,  3) \
+   TIMER_PIN_MAP( 4, LED_STRIP_PIN,     1,  4) \
+   TIMER_PIN_MAP( 5, GYRO_1_CLKIN_PIN,  1, -1) \
+   TIMER_PIN_MAP( 6, RX_PPM_PIN,        1, -1)
    
 #define TIMUP5_DMA_OPT                      12
 
