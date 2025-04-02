@@ -85,7 +85,7 @@
 #define FLASH_CS_PIN PE4
 
 #define ADC_VBAT_PIN PC0
-#define ADC_CURR_PIN PC3
+#define ADC_CURR_PIN PC5
 
 #define MOTOR1_PIN PB9
 #define MOTOR2_PIN PB8
