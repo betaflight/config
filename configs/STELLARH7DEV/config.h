@@ -97,17 +97,17 @@
 #define ICM40609D_SPI_INSTANCE          SPI1
 #define ICM40609D_EXTI_PIN              PA4
 #define ICM40609D_CS_PIN                PA2
-#define ICM40609D_ALIGN                 CW90_DEG_FLIP
+#define ICM40609D_ALIGN                 CW180_DEG_FLIP
 // GYRO 2: ICM-42605 on SPI1
 #define ICM42605_SPI_INSTANCE           SPI1
 #define ICM42605_EXTI_PIN               PC4
 #define ICM42605_CS_PIN                 PC0
-#define ICM42605_ALIGN                  CW90_DEG_FLIP
+#define ICM42605_ALIGN                  CW180_DEG_FLIP
 // GYRO 3: ICM-45686 on SPI3
 #define ICM45686_SPI_INSTANCE           SPI3
 #define ICM45686_EXTI_PIN               PA9
 #define ICM45686_CS_PIN                 PD5
-#define ICM45686_ALIGN                  CW90_DEG_FLIP
+#define ICM45686_ALIGN                  CW180_DEG_FLIP
 // GYRO 4: ICM-42688P on SPI3
 #define ICM42688P_SPI_INSTANCE          SPI3
 #define ICM42688P_EXTI_PIN              PA8
