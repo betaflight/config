@@ -26,7 +26,7 @@
 #define MANUFACTURER_ID                 STBE
 
 // Miscellaneous
-#define LED1_PIN                        PB0
+#define LED1_PIN                        PB1
 #define LED_STRIP_PIN                   PA15
 #define BEEPER_PIN                      PA3
 #define USB_DETECT_PIN                  PA12
@@ -112,7 +112,7 @@
 #define ICM42688P_SPI_INSTANCE          SPI3
 #define ICM42688P_EXTI_PIN              PA8
 #define ICM42688P_CS_PIN                PE3
-#define ICM42688P_ALIGN                 CW90_DEG_FLIP
+#define ICM42688P_ALIGN                 CW180_DEG_FLIP
 
 // IMU selection
 #define ICM40609D                       1
@@ -185,7 +185,7 @@
 
 // Blackbox
 #define USE_FLASH
-#define USE_FLASH_W25N01GV
+#define USE_FLASH_W25M02G
 #define SPI4_SCK_PIN                    PE2
 #define SPI4_SDI_PIN                    PE5
 #define SPI4_SDO_PIN                    PE6
