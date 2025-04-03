@@ -43,6 +43,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |EXUA|EXUAV FPV|https://github.com/Linjieqiang|
 |FFPV|Furious FPV|https://furiousfpv.com/|
 |FFRC|FlyFishRC|https://www.flyfish-rc.com/|
+|FISM|Shenzhen Micheng Innovation Technology Co., Ltd.|http://www.michenginnovation.com/|
 |FLAO|FLAO Limited|https://www.sunrisemodel.com|
 |FLCO|Shenzhen Flycolor Electronic Co., LTD|http://www.flycolor.net/|
 |FLHI|Fly High|https://elektronchika.github.io/flyhigh/|
@@ -114,11 +115,13 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |TACO|Taco RC|https://taco-rc.com/|
 |TCMM|Shenzhen Xinmumu Science and Technology Co (TCMM)|http://www.tcmm-rc.cn/|
 |TEBS|Team Blacksheep|https://www.team-blacksheep.com/|
+|TJRC|Feijian Technology (Shenzhen) Co., Ltd.|http://www.tjrcfpv.com/|
 |TMTR|T-motor|http://uav-en.tmotor.com/|
 |TTRH|TransTEC|http://www.transtechobby.com/|
 |TURC|TUNERC|https://www.tunerc.com/|
 |VGRC|V-GOOD Technology Co.|http://www.vgoodrc.com/|
 |VIVA|VivaFPV|https://vivafpv.com/|
+|WDIY|WDIY|http://wdiy.net.cn/|
 |WIZZ|WIZZ|https://wizz.store/|
 |YUPF|YuPiFc|https://www.yupifc.com/|
 |YYRC|JLDZ||
