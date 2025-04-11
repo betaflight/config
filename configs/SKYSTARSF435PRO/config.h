@@ -95,7 +95,7 @@
                              TIMER_PIN_MAP( 8, PA8,  1,  7 )
 
 
-#define ADC_INSTANCE                 ADC1
+#define ADC1_DMA_OPT                 8
 
 #define BARO_I2C_INSTANCE            I2CDEV_2
 #define MAG_I2C_INSTANCE             I2CDEV_1
