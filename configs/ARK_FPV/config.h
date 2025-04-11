@@ -42,8 +42,8 @@
 // PINIO Box Config -- VTX Pit Mode
 #define PERIPH_12V_EN       PG4
 #define PINIO1_PIN          PERIPH_12V_EN
-#define PINIO1_CONFIG       1
-#define PINIO1_BOX          39
+#define PINIO1_CONFIG       129
+#define PINIO1_BOX          40
 
 // TODO: useful for...? Suggestions?
 // PINIO Box Config -- USER1
