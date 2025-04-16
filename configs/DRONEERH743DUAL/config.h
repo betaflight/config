@@ -185,6 +185,8 @@
                                         TIMER_PIN_MAP(11, GYRO_2_CLKIN_PIN, 2, -1 ) \
                                         TIMER_PIN_MAP(12, BEEPER_PIN, 1, -1 )
 
+#define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_ON
+
 // DMA stream assignment
 #define ADC1_DMA_OPT                    8
 #define ADC3_DMA_OPT                    10
