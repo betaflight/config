@@ -104,7 +104,6 @@
 #define UART8_TX_PIN                    PE1
 #define UART8_RX_PIN                    PE0
 
-
 // ADC
 #define ADC_VBAT_PIN                    PC0
 #define ADC_RSSI_PIN                    PC5
