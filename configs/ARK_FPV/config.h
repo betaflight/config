@@ -42,8 +42,8 @@
 // PINIO Box Config -- VTX Pit Mode
 #define PERIPH_12V_EN       PG4
 #define PINIO1_PIN          PERIPH_12V_EN
-#define PINIO1_CONFIG       1
-#define PINIO1_BOX          39
+#define PINIO1_CONFIG       129
+#define PINIO1_BOX          40
 
 // TODO: useful for...? Suggestions?
 // PINIO Box Config -- USER1
@@ -72,13 +72,10 @@
 #define UART3_RX_PIN         PD9
 #define MSP_UART             SERIAL_PORT_UART3
 
-// NOTE: enabling this doesn't work, fw hangs
-// Bidirectional DShot telemetry is used instead
 // ESC Telemetry (RX only)
-// #define USE_ESCSERIAL
-// #define UART4_RX_PIN         PH14
-// #define ESC_SENSOR_UART      SERIAL_PORT_UART4
-// #define ESCSERIAL_PIN        PH14
+#define UART4_TX_PIN         PH13
+#define UART4_RX_PIN         PH14
+#define ESC_SENSOR_UART      SERIAL_PORT_UART4
 
 // VTX
 #define UART5_TX_PIN         PC12
