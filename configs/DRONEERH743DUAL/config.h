@@ -68,7 +68,7 @@
 #endif
 
 // UART 5
-#define UART5_TX_PIN                    PD3  //SPI2_SCK
+#define UART5_TX_PIN                    PB6
 #define UART5_RX_PIN                    PD2  //UART5_RX/SDMMC1_CMD
 
 // UART 6 -- GPS
