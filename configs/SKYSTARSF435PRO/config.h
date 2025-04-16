@@ -74,8 +74,7 @@
 #define SPI1_SDO_PIN         PA7
 #define SPI2_SDO_PIN         PB15
 #define SPI3_SDO_PIN         PB5
-//#define CAMERA_CONTROL_PIN   PC9
-#define ADC_RSSI_PIN         PC2
+#define ADC_VBAT_PIN         PC2
 #define ADC_CURR_PIN         PC1
 #define PINIO1_PIN           PC0
 #define PINIO2_PIN           PC5
