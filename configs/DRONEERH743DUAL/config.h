@@ -75,7 +75,7 @@
 #define UART6_TX_PIN                    PC6  //TIM3_CH1/TIM8_CH1/USART6_TX
 #define UART6_RX_PIN                    PC7  //TIM3_CH2/TIM8_CH2/USART6_RX
 #ifdef USE_GPS
-#define GPS_UART                        SERIAL_PORT_UART5
+#define GPS_UART                        SERIAL_PORT_USART6
 #endif
 
 // UART 7
