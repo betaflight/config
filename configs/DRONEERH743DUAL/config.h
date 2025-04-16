@@ -48,7 +48,7 @@
 #define BOX_USER2_NAME                  "CAM SW"
 
 // UART 1
-#define UART1_TX_PIN                    PC9  //TIM1_CH2/I2C3_SDA/SPI2_SCK/USART1_TX
+#define UART1_TX_PIN                    PA9  //TIM1_CH2/I2C3_SDA/SPI2_SCK/USART1_TX
 #define UART1_RX_PIN                    PB7  //TIM17_CH1N/TIM4_CH2/I2C1_SDA/I2C4_SDA/USART1_RX
 
 // UART 2 -- Control Link
