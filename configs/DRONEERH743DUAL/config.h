@@ -114,7 +114,7 @@
 #define GYRO_1_CS_PIN                   PA15 //TIM2_CH1/SPI1_NSS/SPI3_NSS/SPI6_NSS/UART7_TX
 #define GYRO_1_EXTI_PIN                 PD7  //SPI1_MOSI
 #define GYRO_1_SPI_INSTANCE             SPI1
-#define GYRO_1_ALIGN                    CW180_DEG
+#define GYRO_1_ALIGN                    CW0_DEG
 
 #define SPI4_SCK_PIN                    PE2  //SPI4_SCK
 #define SPI4_SDI_PIN                    PE5  //TIM15_CH2/SPI4_MOSI
@@ -123,7 +123,7 @@
 #define GYRO_2_CS_PIN                   PE3  //SPI4_NSS
 #define GYRO_2_EXTI_PIN                 PE4  //TIM15_CH1N/SPI4_NSS
 #define GYRO_2_SPI_INSTANCE             SPI4
-#define GYRO_2_ALIGN                    CW180_DEG
+#define GYRO_2_ALIGN                    CW0_DEG
 
 #define USE_GYRO_CLKIN
 #define GYRO_1_CLKIN_PIN                PA5  //TIM2_CH1/ADC12_INP5
