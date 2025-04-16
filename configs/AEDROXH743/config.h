@@ -99,7 +99,6 @@
 #define UART4_TX_PIN                    PD1
 #define UART4_RX_PIN                    PD0
 
-#define UART7_TX_PIN                    PE8
 #define UART7_RX_PIN                    PE7
 
 #define UART8_TX_PIN                    PE1
