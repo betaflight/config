@@ -122,8 +122,6 @@
 #define PINIO2_BOX                      41
 #define PINIO3_BOX                      42
 
-#define PINIO1_CONFIG                   129
-#define PINIO2_CONFIG                   129
 #define PINIO3_CONFIG                   129
 
 #define BOX_USER3_NAME                  "VTX POWER"
