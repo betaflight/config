@@ -59,7 +59,7 @@
 #define SPI2_SDO_PIN    PB15
 #define SPI3_SDO_PIN    PC12
 #define ESCSERIAL1_PIN  PB8
-#define ADC_BATT_PIN    PC2
+#define ADC_VBAT_PIN    PC2
 #define ADC_RSSI_PIN    PC0
 #define ADC_CURR_PIN    PC1
 #define FLASH_CS_PIN    PB12
