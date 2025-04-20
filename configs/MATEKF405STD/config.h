@@ -31,6 +31,7 @@
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM20602
 #define USE_BARO_BMP280
+#define USE_BARO_DPS310
 #define USE_MAX7456
 #define USE_SDCARD
 
