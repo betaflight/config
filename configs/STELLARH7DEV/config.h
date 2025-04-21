@@ -102,17 +102,17 @@
 #define ICM45605_SPI_INSTANCE           SPI1
 #define ICM45605_EXTI_PIN               PC4
 #define ICM45605_CS_PIN                 PC0
-#define ICM45605_ALIGN                  CW180_DEG_FLIP
+#define ICM45605_ALIGN                  CW180_DEG
 // GYRO 3: ICM-45686 on SPI3
 #define ICM45686_SPI_INSTANCE           SPI3
 #define ICM45686_EXTI_PIN               PA9
 #define ICM45686_CS_PIN                 PD5
-#define ICM45686_ALIGN                  CW180_DEG_FLIP
+#define ICM45686_ALIGN                  CW180_DEG
 // GYRO 4: ICM-42688P on SPI3
 #define ICM42688P_SPI_INSTANCE          SPI3
 #define ICM42688P_EXTI_PIN              PA8
 #define ICM42688P_CS_PIN                PE3
-#define ICM42688P_ALIGN                 CW180_DEG_FLIP
+#define ICM42688P_ALIGN                 CW180_DEG
 
 // IMU selection
 #define ICM40609D                       1
