@@ -117,13 +117,17 @@
 #define USE_GYRO_SPI_MPU6500
 #define USE_BARO
 #define USE_BARO_BMP388
+#ifndef USEMAG
 #define USE_MAG
 #define USE_MAG_HMC5883
 #define USE_MAG_QMC5883
+#endif
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
 #define USE_FLASH_W25N01G
+#ifndef USE_CAMERA_CONTROL
 #define USE_CAMERA_CONTROL
+#endif
 #define USE_MAX7456
 #define USE_SDCARD
 #define USE_TRANSPONDER
