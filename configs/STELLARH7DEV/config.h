@@ -98,25 +98,25 @@
 #define ICM40609D_EXTI_PIN              PA4
 #define ICM40609D_CS_PIN                PA2
 #define ICM40609D_ALIGN                 CW180_DEG_FLIP
-// GYRO 2: ICM-42605 on SPI1
-#define ICM42605_SPI_INSTANCE           SPI1
-#define ICM42605_EXTI_PIN               PC4
-#define ICM42605_CS_PIN                 PC0
-#define ICM42605_ALIGN                  CW180_DEG_FLIP
+// GYRO 2: ICM-45605 on SPI1
+#define ICM45605_SPI_INSTANCE           SPI1
+#define ICM45605_EXTI_PIN               PC4
+#define ICM45605_CS_PIN                 PC0
+#define ICM45605_ALIGN                  CW180_DEG
 // GYRO 3: ICM-45686 on SPI3
 #define ICM45686_SPI_INSTANCE           SPI3
 #define ICM45686_EXTI_PIN               PA9
 #define ICM45686_CS_PIN                 PD5
-#define ICM45686_ALIGN                  CW180_DEG_FLIP
+#define ICM45686_ALIGN                  CW180_DEG
 // GYRO 4: ICM-42688P on SPI3
 #define ICM42688P_SPI_INSTANCE          SPI3
 #define ICM42688P_EXTI_PIN              PA8
 #define ICM42688P_CS_PIN                PE3
-#define ICM42688P_ALIGN                 CW180_DEG_FLIP
+#define ICM42688P_ALIGN                 CW180_DEG
 
 // IMU selection
 #define ICM40609D                       1
-#define ICM42605                        2
+#define ICM45605                        2
 #define ICM45686                        3
 #define ICM42688P                       4
 
@@ -131,12 +131,12 @@
 #define GYRO_1_SPI_INSTANCE             ICM40609D_SPI_INSTANCE
 #define GYRO_1_ALIGN                    ICM40609D_ALIGN
 #define USE_ACCGYRO_ICM40609D
-#elif USE_IMU1 == ICM42605
-#define GYRO_1_EXTI_PIN                 ICM42605_EXTI_PIN
-#define GYRO_1_CS_PIN                   ICM42605_CS_PIN
-#define GYRO_1_SPI_INSTANCE             ICM42605_SPI_INSTANCE
-#define GYRO_1_ALIGN                    ICM42605_ALIGN
-#define USE_ACCGYRO_ICM42605
+#elif USE_IMU1 == ICM45605
+#define GYRO_1_EXTI_PIN                 ICM45605_EXTI_PIN
+#define GYRO_1_CS_PIN                   ICM45605_CS_PIN
+#define GYRO_1_SPI_INSTANCE             ICM45605_SPI_INSTANCE
+#define GYRO_1_ALIGN                    ICM45605_ALIGN
+#define USE_ACCGYRO_ICM45605
 #elif USE_IMU1 == ICM45686
 #define GYRO_1_EXTI_PIN                 ICM45686_EXTI_PIN
 #define GYRO_1_CS_PIN                   ICM45686_CS_PIN
@@ -160,12 +160,12 @@
 #define GYRO_2_SPI_INSTANCE             ICM40609D_SPI_INSTANCE
 #define GYRO_2_ALIGN                    ICM40609D_ALIGN
 #define USE_ACCGYRO_ICM40609D
-#elif USE_IMU2 == ICM42605
-#define GYRO_2_EXTI_PIN                 ICM42605_EXTI_PIN
-#define GYRO_2_CS_PIN                   ICM42605_CS_PIN
-#define GYRO_2_SPI_INSTANCE             ICM42605_SPI_INSTANCE
-#define GYRO_2_ALIGN                    ICM42605_ALIGN
-#define USE_ACCGYRO_ICM42605
+#elif USE_IMU2 == ICM45605
+#define GYRO_2_EXTI_PIN                 ICM45605_EXTI_PIN
+#define GYRO_2_CS_PIN                   ICM45605_CS_PIN
+#define GYRO_2_SPI_INSTANCE             ICM45605_SPI_INSTANCE
+#define GYRO_2_ALIGN                    ICM45605_ALIGN
+#define USE_ACCGYRO_ICM45605
 #elif USE_IMU2 == ICM45686
 #define GYRO_2_EXTI_PIN                 ICM45686_EXTI_PIN
 #define GYRO_2_CS_PIN                   ICM45686_CS_PIN
