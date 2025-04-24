@@ -30,6 +30,7 @@
 #define LED1_PIN                        PC5  //ADC12_INN4/ADC12_INP8
 #define LED_STRIP_PIN                   PA0  //TIM2_CH1/TIM5_CH1/UART4_TX/ADC1_INP16
 #define BEEPER_PIN                      PD14 //TIM4_CH3
+#define BEEPER_INVERTED
 #define USB_DETECT_PIN                  PA10 //TIM1_CH3/USART1_RX
 
 // Camera control
