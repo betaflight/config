@@ -78,13 +78,6 @@
 #define GPS_UART                        SERIAL_PORT_USART6
 #endif
 
-// UART 7
-#define UART7_TX_PIN                    PE8  //TIM1_CH1N/UART7_TX
-#define UART7_RX_PIN                    PE7  //UART7_RX
-
-// UART 8
-#define UART8_TX_PIN                    PE1  //UART8_TX
-#define UART8_RX_PIN                    PE0  //UART8_RX
 
 // I2C
 #define I2C1_SCL_PIN                    PB8  //TIM16_CH1/TIM4_CH3/I2C1_SCL/I2C4_SCL/UART4_RX
