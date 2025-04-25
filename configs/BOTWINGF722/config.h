@@ -43,7 +43,7 @@
 
 // BEEPER
 #define BEEPER_INVERTED
-#define BEEPER_PIN                          PB6
+#define BEEPER_PIN                          PB7
 
 // DEBUG
 #define SWDIO_PIN                           PA13
@@ -78,7 +78,7 @@
 #define GYRO_1_SPI_INSTANCE                 SPI3
 
 // LED
-#define LED_STRIP_PIN                       PB7
+#define LED_STRIP_PIN                       PB6
 #define LED0_PIN                            PC4
 #define LED1_PIN                            PB2
 
