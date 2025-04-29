@@ -9,6 +9,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |FOSS|Free open source target definitions||
 |COMM|Community provided target definitions for closed source targets||
 |LEGA|Closed source legacy targets without a maintainer||
+|AEDR|AEDROX|https://www.aedrox.com/|
 |AERO|AeroCogito|https://www.aerocogito.com/|
 |AFNG|AlienFlight NG|https://www.alienflightng.com/|
 |AIKO|AIKON Electronics|https://www.aikon-electronics.com/|
@@ -37,6 +38,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |DIAT|Diatone Innovations|https://www.diatoneusa.com/|
 |DRCL|dronercland|https://www.instagram.com/dronercland/|
 |DREA|DREAMRC|https://github.com/dreamworks-fpv|
+[DRNR|Shenzhen Zhimu Technology Co., Ltd|https://www.droneer.com|
 |DRRC|DroidRC|https://github.com/xiaoxiabub|
 |DYST|DongYang Smart Technology Co.,Ltd (dys)|http://www.dys.hk/|
 |EACH|eachine|https://www.eachine.com/|
@@ -92,6 +94,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |OPEN|OpenPilot|https://librepilot.atlassian.net/wiki/spaces/LPDOC/pages/31588369/Supported+Hardware|
 |ORBT|Orbit Technology|https://www.orbitteknoloji.com.tr/|
 |ORQA|Orqa Ltd|https://orqafpv.com/|
+|OXBT|Zhuhai Oxbot Technology, Co, Ltd|https://www.oxbot.com/|
 |PRIN|PrincipIoT LLC|https://principiot.com/|
 |PYDR|Pyro-Drone|https://pyrodrone.com/|
 |PYID|PYI Technologies|https://pyidrones.com/|

@@ -43,7 +43,7 @@
 
 // BEEPER
 #define BEEPER_INVERTED
-#define BEEPER_PIN                          PB6
+#define BEEPER_PIN                          PB7
 
 // DEBUG
 #define SWDIO_PIN                           PA13
@@ -78,7 +78,7 @@
 #define GYRO_1_SPI_INSTANCE                 SPI3
 
 // LED
-#define LED_STRIP_PIN                       PB8
+#define LED_STRIP_PIN                       PB6
 #define LED0_PIN                            PC4
 #define LED1_PIN                            PB2
 
@@ -136,12 +136,15 @@
 #define GPS_UART                            SERIAL_PORT_USART6
 #define DEFAULT_DSHOT_BITBANG               DSHOT_BITBANG_ON
 
+#define CAMERA_CONTROL_PIN                  PB8
+
 // TIMER && DMA
-#define TIMER_PIN_MAPPING                   TIMER_PIN_MAP(0, LED_STRIP_PIN, 1,  0) \
-                                            TIMER_PIN_MAP(1, MOTOR1_PIN,    1,  0) \
-                                            TIMER_PIN_MAP(2, MOTOR2_PIN,    1,  0) \
-                                            TIMER_PIN_MAP(3, MOTOR3_PIN,    2,  0) \
-                                            TIMER_PIN_MAP(4, MOTOR4_PIN,    2,  0) \
-                                            TIMER_PIN_MAP(5, SERVO1_PIN,    1, -1) \
-                                            TIMER_PIN_MAP(6, SERVO2_PIN,    1, -1) \
-                                            TIMER_PIN_MAP(9, RX_PPM_PIN,    3, -1)
+#define TIMER_PIN_MAPPING                   TIMER_PIN_MAP(0,  LED_STRIP_PIN,       1,  0) \
+                                            TIMER_PIN_MAP(1,  MOTOR1_PIN,          1,  0) \
+                                            TIMER_PIN_MAP(2,  MOTOR2_PIN,          1,  0) \
+                                            TIMER_PIN_MAP(3,  MOTOR3_PIN,          2,  0) \
+                                            TIMER_PIN_MAP(4,  MOTOR4_PIN,          2,  0) \
+                                            TIMER_PIN_MAP(5,  SERVO1_PIN,          1, -1) \
+                                            TIMER_PIN_MAP(6,  SERVO2_PIN,          1, -1) \
+                                            TIMER_PIN_MAP(9,  RX_PPM_PIN,          3, -1) \
+                                            TIMER_PIN_MAP(10, CAMERA_CONTROL_PIN,  2, -1)
