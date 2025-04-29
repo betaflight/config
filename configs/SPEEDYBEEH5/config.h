@@ -35,7 +35,6 @@
 #define USE_ACCGYRO_LSM6DSV16X
 
 #define GYRO_1_ALIGN                    CW90_DEG
-#define GYRO_1_ALIGN_YAW                900
 #define GYRO_1_EXTI_PIN                 PC4
 #define GYRO_1_CS_PIN                   PA4
 #define GYRO_1_SPI_INSTANCE             SPI1
@@ -67,8 +66,8 @@
 #define MOTOR6_PIN                      PC8
 #define MOTOR7_PIN                      PB11
 #define MOTOR8_PIN                      PB10
-#define MOTOR9_PIN                      PA1
-#define MOTOR10_PIN                     PA0
+#define SERVO1_PIN                      PA1
+#define SERVO2_PIN                      PA0
 
 #define LED_STRIP_PIN                   PA8
 
@@ -112,23 +111,23 @@
 #define ADC_RSSI_PIN                    PC2
 #define ADC_CURR_PIN                    PC1
 
-#define TIMER_PIN_MAPPING               TIMER_PIN_MAP(  0, MOTOR1_PIN, 2, 0 ) \
-                                        TIMER_PIN_MAP(  1, MOTOR2_PIN, 2, 0 ) \
-                                        TIMER_PIN_MAP(  2, MOTOR3_PIN, 2, 0 ) \
-                                        TIMER_PIN_MAP(  3, MOTOR4_PIN, 2, 0 ) \
-                                        TIMER_PIN_MAP(  4, MOTOR5_PIN, 2, 0 ) \
-                                        TIMER_PIN_MAP(  5, MOTOR6_PIN, 2, 0 ) \
-                                        TIMER_PIN_MAP(  6, MOTOR7_PIN, 1, 0 ) \
-                                        TIMER_PIN_MAP(  7, MOTOR8_PIN, 1, 0 ) \
-                                        TIMER_PIN_MAP(  8, MOTOR9_PIN, 2, 0 ) \
-                                        TIMER_PIN_MAP(  9, MOTOR10_PIN, 2, 0 ) \
-                                        TIMER_PIN_MAP( 10, LED_STRIP_PIN, 1, 0 ) \
+#define TIMER_PIN_MAPPING               TIMER_PIN_MAP(  0, MOTOR1_PIN, 2,  0 ) \
+                                        TIMER_PIN_MAP(  1, MOTOR2_PIN, 2,  0 ) \
+                                        TIMER_PIN_MAP(  2, MOTOR3_PIN, 2,  0 ) \
+                                        TIMER_PIN_MAP(  3, MOTOR4_PIN, 2,  0 ) \
+                                        TIMER_PIN_MAP(  4, MOTOR5_PIN, 2,  0 ) \
+                                        TIMER_PIN_MAP(  5, MOTOR6_PIN, 2,  0 ) \
+                                        TIMER_PIN_MAP(  6, MOTOR7_PIN, 1,  0 ) \
+                                        TIMER_PIN_MAP(  7, MOTOR8_PIN, 1,  0 ) \
+                                        TIMER_PIN_MAP(  8, SERVO1_PIN, 2, -1 ) \
+                                        TIMER_PIN_MAP(  9, SERVO2_PIN, 2, -1 ) \
+                                        TIMER_PIN_MAP( 10, LED_STRIP_PIN, 1,  0 ) \
                                         TIMER_PIN_MAP( 11, CAMERA_CONTROL_PIN, 2, -1 )
 
 #define ADC1_DMA_OPT                    0
 
-#define MAG_I2C_INSTANCE                (I2CDEV_1)
-#define BARO_I2C_INSTANCE               (I2CDEV_1)
+#define MAG_I2C_INSTANCE                I2CDEV_1
+#define BARO_I2C_INSTANCE               I2CDEV_1
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
