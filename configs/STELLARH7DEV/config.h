@@ -183,6 +183,11 @@
 #define GYRO_2_CLKIN_PIN                PB4
 #endif
 
+// Disable GYRO_CLKIN for testing and comparing results
+#ifdef USE_DISABLE_GYRO_CLKIN
+#undef USE_GYRO_CLKIN
+#endif
+
 // Blackbox
 #define USE_FLASH
 #define USE_FLASH_W25M02G
