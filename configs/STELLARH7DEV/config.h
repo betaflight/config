@@ -97,7 +97,7 @@
 #define ICM40609D_SPI_INSTANCE          SPI1
 #define ICM40609D_EXTI_PIN              PA4
 #define ICM40609D_CS_PIN                PA2
-#define ICM40609D_ALIGN                 CW180_DEG_FLIP
+#define ICM40609D_ALIGN                 CW180_DEG
 // GYRO 2: ICM-45605 on SPI1
 #define ICM45605_SPI_INSTANCE           SPI1
 #define ICM45605_EXTI_PIN               PC4
