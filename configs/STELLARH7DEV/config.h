@@ -33,8 +33,9 @@
 
 // PINIO Box Config -- VTX Pit Mode
 #define PINIO1_PIN                      PB3
-#define PINIO1_CONFIG                   1
-#define PINIO1_BOX                      39
+#define PINIO1_CONFIG                   129
+#define PINIO1_BOX                      40
+#define BOX_USER1_NAME                  "VTX switch"
 
 // UART 3
 #define UART3_TX_PIN                    PD8
