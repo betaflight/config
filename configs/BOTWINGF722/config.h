@@ -126,9 +126,6 @@
 
 #define RX_PPM_PIN                          PA3
 
-#define UART6_TX_PIN                        PC6
-#define UART6_RX_PIN                        PC7
-
 #define SERIALRX_UART                       SERIAL_PORT_USART2
 #define ESC_SENSOR_UART                     SERIAL_PORT_UART4
 #define GPS_UART                            SERIAL_PORT_USART6
