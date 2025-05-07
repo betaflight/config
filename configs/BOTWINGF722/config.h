@@ -126,8 +126,6 @@
 
 #define RX_PPM_PIN                          PA3
 
-#define UART4_RX_PIN                        PA1
-
 #define UART6_TX_PIN                        PC6
 #define UART6_RX_PIN                        PC7
 
