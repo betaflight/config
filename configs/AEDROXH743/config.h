@@ -75,7 +75,6 @@
 // BARO & MAG
 #define USE_BARO
 #define USE_BARO_DPS310
-#define USE_BARO_DPS368
 
 #define I2C1_SCL_PIN                    PB6
 #define I2C1_SDA_PIN                    PB7
