@@ -87,7 +87,7 @@
     TIMER_PIN_MAP( 7, PB8 , 2, -1)
 
 
-#define ADC1_DMA_OPT        0
+#define ADC1_DMA_OPT                 0
 
 #define DEFAULT_PID_PROCESS_DENOM    2
 #define MOTOR_PWM_PROTOCOL           DSHOT300
@@ -103,4 +103,4 @@
 #define PINIO1_CONFIG                129
 #define FLASH_SPI_INSTANCE           SPI3
 #define GYRO_1_SPI_INSTANCE          SPI1
-#define GYRO_1_ALIGN CW90_DEG
+#define GYRO_1_ALIGN                 CW90_DEG
