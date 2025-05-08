@@ -103,6 +103,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |RCTI|RCTimer|http://rctimer.com/|
 |RDMS|RadioMaster RC|https://www.radiomasterrc.com/|
 |RUSH|FPV Racing Rush|http://www.rushfpv.com/|
+|SATE|Space & Tech Engineering LLP|https://www.spaceandtech-engineerings.com/|
 |SJET|Shenzhen Jiufang Electronic Technology Co., Ltd.|https://www.jiufang-tech.com/|
 |SSAK|Dezhou Yingfei Intelligent Technology Co., Ltd.||
 |SKST|Shenzhen SKYSTARS Tech Co., LIMITED|http://www.skystars-rc.com/index.html|
