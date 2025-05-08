@@ -48,6 +48,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |FFRC|FlyFishRC|https://www.flyfish-rc.com/|
 |FISM|Shenzhen Micheng Innovation Technology Co., Ltd.|http://www.michenginnovation.com/|
 |FLAO|FLAO Limited|https://www.sunrisemodel.com|
+|FLBD|FlashBird|https://github.com/lecui|
 |FLCO|Shenzhen Flycolor Electronic Co., LTD|http://www.flycolor.net/|
 |FLHI|Fly High|https://elektronchika.github.io/flyhigh/|
 |FLLF|Flying Lemon FPV|https://github.com/flyinglemonfpv|
@@ -58,7 +59,6 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |FOXE|Foxeer|http://www.foxeer.com/|
 |FPVM|FPV Model|https://fpvmodel.com/|
 |FRSK|FrSky|https://www.frsky-rc.com/|
-|FRFL|FireFly|https://github.com/lecui|
 |GEFP|GetFPV LLC|https://www.getfpv.com/|
 |GEPR|GEPRC|https://geprc.com/|
 |GFPV|GE-FPV|http://www.ge-fpv.com/|
