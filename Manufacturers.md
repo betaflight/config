@@ -58,6 +58,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |FOXE|Foxeer|http://www.foxeer.com/|
 |FPVM|FPV Model|https://fpvmodel.com/|
 |FRSK|FrSky|https://www.frsky-rc.com/|
+|FRFL|FireFly|https://github.com/lecui|
 |GEFP|GetFPV LLC|https://www.getfpv.com/|
 |GEPR|GEPRC|https://geprc.com/|
 |GFPV|GE-FPV|http://www.ge-fpv.com/|
