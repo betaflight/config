@@ -105,7 +105,10 @@
 #define MAG_I2C_INSTANCE                I2CDEV_1
 
 #define ESC_SENSOR_UART                 SERIAL_PORT_USART1
+
+#ifdef USE_GPS
 #define GPS_UART                        SERIAL_PORT_UART4
+#endif
 
 #if defined(USE_OSD_HD) && defined(USE_SERIALRX_SBUS)
 #define SERIALRX_UART                   SERIAL_PORT_USART3
