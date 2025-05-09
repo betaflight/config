@@ -77,8 +77,8 @@
 #define SPI2_SDI_PIN         PB14
 #define SPI2_SDO_PIN         PB15
 
-#define SPI3_SCK_PIN         PB4
-#define SPI3_SDI_PIN         PB3
+#define SPI3_SCK_PIN         PB3
+#define SPI3_SDI_PIN         PB4
 #define SPI3_SDO_PIN         PB5
 
 #define ADC_VBAT_PIN         PC0
@@ -86,7 +86,7 @@
 
 #define PINIO1_PIN           PB7
 
-#define FLASH_CS_PIN         PB12
+#define FLASH_CS_PIN         PB6
 #define MAX7456_SPI_CS_PIN   PA15
 #define GYRO_1_EXTI_PIN      PC4
 #define GYRO_1_CS_PIN        PA4
