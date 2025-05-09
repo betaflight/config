@@ -98,7 +98,7 @@
     TIMER_PIN_MAP( 3, MOTOR3_PIN,    2,  3 ) \
     TIMER_PIN_MAP( 4, MOTOR4_PIN,    2,  4 )
 
-#define ADC_INSTANCE		            ADC3
+#define ADC_INSTANCE                    ADC3
 #define ADC3_DMA_OPT                    10
 
 #define BARO_I2C_INSTANCE               I2CDEV_1
