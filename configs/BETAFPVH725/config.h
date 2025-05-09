@@ -110,7 +110,7 @@
 #if defined(USE_OSD_HD) && defined(USE_SERIALRX_SBUS)
 #define SERIALRX_UART                   SERIAL_PORT_USART3
 #else
-#define SERIALRX_UART                   SERIAL_PORT_USART5
+#define SERIALRX_UART                   SERIAL_PORT_UART5
 #endif
 
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
