@@ -110,8 +110,11 @@
 #define GPS_UART                        SERIAL_PORT_UART4
 #endif
 
-#if defined(USE_OSD_HD) && defined(USE_SERIALRX_SBUS)
+#ifdef USE_OSD_HD
+#define MSP_DISPLAYPORT_UART            SERIAL_PORT_UART5
+#ifdef USE_SERIALRX_SBUS
 #define SERIALRX_UART                   SERIAL_PORT_USART3
+#endif
 #else
 #define SERIALRX_UART                   SERIAL_PORT_UART5
 #endif
