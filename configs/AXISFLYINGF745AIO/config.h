@@ -123,7 +123,5 @@
 #define PINIO1_CONFIG                  129
 #define PINIO1_BOX                     40
 #define GYRO_1_SPI_INSTANCE            SPI1
-//#define GYRO_1_ALIGN CW90_DEG
-//#define GYRO_1_ALIGN_YAW 900
 #define FLASH_SPI_INSTANCE             SPI3
 #define MAX7456_SPI_INSTANCE           SPI4
