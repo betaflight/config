@@ -139,4 +139,4 @@
 #define BEEPER_INVERTED
 
 #define GYRO_1_ALIGN                    CW180_DEG
-#define GYRO_2_ALIGN                    CW180_DEG
+#define GYRO_2_ALIGN                    CW90_DEG
