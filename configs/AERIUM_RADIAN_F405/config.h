@@ -57,9 +57,8 @@
 
 #define USE_MAG
 #define USE_MAG_LIS3MDL
-#define MAG_I2C_INSTANCE        I2CDEV_1
-#define DEFAULT_MAG_I2C_ADDRESS 28
-#define DEFAULT_MAG_HARDWARE    AUTO
+#define MAG_I2C_INSTANCE     I2CDEV_1
+#define MAG_I2C_ADDRESS      28
 
 #define BEEPER_PIN           PA0
 
