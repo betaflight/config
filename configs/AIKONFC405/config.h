@@ -48,9 +48,11 @@
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PA2
 #define UART3_TX_PIN         PB10
+#define UART4_TX_PIN         PA0
 #define UART1_RX_PIN         PA10
 #define UART2_RX_PIN         PA3
 #define UART3_RX_PIN         PB11
+#define UART4_RX_PIN         PA1
 #define UART5_RX_PIN         PD2
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
@@ -102,6 +104,7 @@
 #define DEFAULT_CURRENT_METER_SOURCE   CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE   VOLTAGE_METER_ADC
 #define BEEPER_INVERTED
+#define SYSTEM_HSE_MHZ                 8
 
 #define GYRO_1_SPI_INSTANCE            SPI1
 //#define GYRO_1_ALIGN                   CW270_DEG
