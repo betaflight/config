@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F405
 
-#define BOARD_NAME        AIKONFC405
+#define BOARD_NAME        AIKONF4V3
 #define MANUFACTURER_ID   AIKO
 
 #define USE_ACC
