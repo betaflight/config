@@ -108,8 +108,6 @@
 
 #define GYRO_1_SPI_INSTANCE            SPI1
 //#define GYRO_1_ALIGN                   CW270_DEG
-//#define GYRO_1_ALIGN_PITCH           1800
-//#define GYRO_1_ALIGN_YAW             1800
 #define FLASH_SPI_INSTANCE             SPI2
 #define MAX7456_SPI_INSTANCE           SPI3
 
