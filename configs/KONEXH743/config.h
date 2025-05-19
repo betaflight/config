@@ -88,10 +88,10 @@
 #define ADC_CURR_PIN PC5
 #define ADC_EXTERNAL1_PIN PC1
 
-#define MOTOR1_PIN PB9
-#define MOTOR2_PIN PB8
-#define MOTOR3_PIN PB7
-#define MOTOR4_PIN PB6
+#define MOTOR1_PIN PB6
+#define MOTOR2_PIN PB7
+#define MOTOR3_PIN PB8
+#define MOTOR4_PIN PB9
 #define MOTOR5_PIN PB4
 #define MOTOR6_PIN PB5
 #define MOTOR7_PIN PB3
@@ -107,10 +107,10 @@
 // Index, Pin, 1-based occurrence of pin in fullTimerHardware, dma opt (use -1 for no DMA)
 // See timerio.c and timer_stm32h7xx.c
 
-// MOTOR1 PB9 TIM4 CH4
-// MOTOR2 PB8 TIM4 CH3
-// MOTOR3 PB7 TIM4 CH2
-// MOTOR4 PB6 TIM4 CH1
+// MOTOR1 PB6 TIM4 CH1
+// MOTOR2 PB7 TIM4 CH2
+// MOTOR3 PB8 TIM4 CH3
+// MOTOR4 PB9 TIM4 CH4
 // MOTOR5 PB4 TIM3 CH1
 // MOTOR6 PB5 TIM3 CH2
 // MOTOR7 PB3 TIM2 CH2
@@ -121,10 +121,10 @@
 // CLKIN PA3 TIM15_CH2
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PB9 , 2,  1 ) \
-    TIMER_PIN_MAP( 1, PB8 , 2,  2 ) \
-    TIMER_PIN_MAP( 2, PB7 , 2,  3 ) \
-    TIMER_PIN_MAP( 3, PB6 , 2,  4 ) \
+    TIMER_PIN_MAP( 0, PB6 , 2,  1 ) \
+    TIMER_PIN_MAP( 1, PB7 , 2,  2 ) \
+    TIMER_PIN_MAP( 2, PB8 , 2,  3 ) \
+    TIMER_PIN_MAP( 3, PB9 , 2,  4 ) \
     TIMER_PIN_MAP( 4, PB4 , 1,  5 ) \
     TIMER_PIN_MAP( 5, PB5 , 1,  6 ) \
     TIMER_PIN_MAP( 6, PB3 , 1,  7 ) \
