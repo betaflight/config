@@ -117,6 +117,7 @@
 #define ADC_INSTANCE                        ADC1
 
 #define DEFAULT_BLACKBOX_DEVICE             BLACKBOX_DEVICE_FLASH
+#define SYSTEM_HSE_MHZ                      24
 
 #define DEFAULT_CURRENT_METER_SOURCE        CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE        VOLTAGE_METER_ADC

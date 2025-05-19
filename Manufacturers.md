@@ -9,6 +9,8 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |FOSS|Free open source target definitions||
 |COMM|Community provided target definitions for closed source targets||
 |LEGA|Closed source legacy targets without a maintainer||
+|AEDR|AEDROX|https://www.aedrox.com/|
+|AERO|AeroCogito|https://www.aerocogito.com/|
 |AFNG|AlienFlight NG|https://www.alienflightng.com/|
 |AIKO|AIKON Electronics|https://www.aikon-electronics.com/|
 |AIRB|Airbot|https://store.myairbot.com/|
@@ -36,6 +38,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |DIAT|Diatone Innovations|https://www.diatoneusa.com/|
 |DRCL|dronercland|https://www.instagram.com/dronercland/|
 |DREA|DREAMRC|https://github.com/dreamworks-fpv|
+[DRNR|Shenzhen Zhimu Technology Co., Ltd|https://www.droneer.com|
 |DRRC|DroidRC|https://github.com/xiaoxiabub|
 |DYST|DongYang Smart Technology Co.,Ltd (dys)|http://www.dys.hk/|
 |EACH|eachine|https://www.eachine.com/|
@@ -43,6 +46,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |EXUA|EXUAV FPV|https://github.com/Linjieqiang|
 |FFPV|Furious FPV|https://furiousfpv.com/|
 |FFRC|FlyFishRC|https://www.flyfish-rc.com/|
+|FISM|Shenzhen Micheng Innovation Technology Co., Ltd.|http://www.michenginnovation.com/|
 |FLAO|FLAO Limited|https://www.sunrisemodel.com|
 |FLCO|Shenzhen Flycolor Electronic Co., LTD|http://www.flycolor.net/|
 |FLHI|Fly High|https://elektronchika.github.io/flyhigh/|
@@ -90,6 +94,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |OPEN|OpenPilot|https://librepilot.atlassian.net/wiki/spaces/LPDOC/pages/31588369/Supported+Hardware|
 |ORBT|Orbit Technology|https://www.orbitteknoloji.com.tr/|
 |ORQA|Orqa Ltd|https://orqafpv.com/|
+|OXBT|Zhuhai Oxbot Technology, Co, Ltd|https://www.oxbot.com/|
 |PRIN|PrincipIoT LLC|https://principiot.com/|
 |PYDR|Pyro-Drone|https://pyrodrone.com/|
 |PYID|PYI Technologies|https://pyidrones.com/|
@@ -114,11 +119,13 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |TACO|Taco RC|https://taco-rc.com/|
 |TCMM|Shenzhen Xinmumu Science and Technology Co (TCMM)|http://www.tcmm-rc.cn/|
 |TEBS|Team Blacksheep|https://www.team-blacksheep.com/|
+|TJRC|Feijian Technology (Shenzhen) Co., Ltd.|http://www.tjrcfpv.com/|
 |TMTR|T-motor|http://uav-en.tmotor.com/|
 |TTRH|TransTEC|http://www.transtechobby.com/|
 |TURC|TUNERC|https://www.tunerc.com/|
 |VGRC|V-GOOD Technology Co.|http://www.vgoodrc.com/|
 |VIVA|VivaFPV|https://vivafpv.com/|
+|WDIY|WDIY|http://wdiy.net.cn/|
 |WIZZ|WIZZ|https://wizz.store/|
 |YUPF|YuPiFc|https://www.yupifc.com/|
 |YYRC|JLDZ||
