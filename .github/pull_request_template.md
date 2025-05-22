@@ -25,3 +25,4 @@ If you have any questions or need guidance, feel free to reach out to the Betafl
 - [ ] passed hardware samples testing
 - [ ] follows guidelines
 - [ ] follows connector standards
+- [ ] comments/issues resolved
