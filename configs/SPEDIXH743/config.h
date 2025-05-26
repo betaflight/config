@@ -126,7 +126,7 @@
    TIMER_PIN_MAP(  9, GYRO_1_CLKIN_PIN,    1, -1) \
    TIMER_PIN_MAP( 10, GYRO_2_CLKIN_PIN,    2, -1) \
    TIMER_PIN_MAP( 11, BEEPER_PIN,          1, -1) \
-   TIMER_PIN_MAP( 12, CAMERA_CONTROL_PIN,  3, -1) \
+   TIMER_PIN_MAP( 12, CAMERA_CONTROL_PIN,  3, -1)
 
 #define TIMUP1_DMA_OPT                      12
 #define TIMUP3_DMA_OPT                      13
