@@ -31,27 +31,37 @@
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
 
-#define BEEPER_PIN PA9
-#define MOTOR1_PIN PA3
-#define MOTOR2_PIN PA2
-#define MOTOR3_PIN PA1
-#define MOTOR4_PIN PA0 
-#define LED_STRIP_PIN PA8
-#define UART1_TX_PIN PB6
-#define UART2_TX_PIN PB3
-#define UART3_TX_PIN PB10
-#define UART4_TX_PIN PC10
-#define UART1_RX_PIN PB7
-#define UART2_RX_PIN PB4
-#define UART3_RX_PIN PB11
-#define UART4_RX_PIN PC11
-#define LED0_PIN PA4
-#define SPI2_SCK_PIN PB13
-#define SPI2_SDI_PIN PB14
-#define SPI2_SDO_PIN PB15
+#define BEEPER_PIN           PA9
+
+#define MOTOR1_PIN           PA3
+#define MOTOR2_PIN           PA2
+#define MOTOR3_PIN           PA1
+#define MOTOR4_PIN           PA0
+
+#define LED_STRIP_PIN        PA8
+
+#define UART1_TX_PIN         PB6
+#define UART1_RX_PIN         PB7
+#define MSP_DISPLAYPORT_UART SERIAL_PORT_UART1
+
+#define UART2_TX_PIN         PB3
+#define UART2_RX_PIN         PB4
+
+#define UART3_TX_PIN         PB10
+#define UART3_RX_PIN         PB11
+
+#define UART4_TX_PIN         PC10
+#define UART4_RX_PIN         PC11
+
+#define LED0_PIN             PA4
+
+#define SPI2_SCK_PIN         PB13
+#define SPI2_SDI_PIN         PB14
+#define SPI2_SDO_PIN         PB15
 
 #define ADC_VBAT_PIN PB1
 #define ADC_CURR_PIN PB0
+
 #define GYRO_1_EXTI_PIN PB12
 #define GYRO_1_CS_PIN PC6
 
