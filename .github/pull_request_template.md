@@ -19,3 +19,11 @@ If you have any questions or need guidance, feel free to reach out to the Betafl
 **Housekeeping** 
 - Pull-Request only from a custom branch, not `master`.
 - Replace this text with details of your own.
+
+**Checklist** (✓/✕, or y/n)
+- [ ] passed schematics review
+- [ ] passed hardware samples testing
+- [ ] follows guidelines
+- [ ] follows connector standards
+- [ ] flight tested
+- [ ] comments/issues resolved
