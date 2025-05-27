@@ -101,6 +101,7 @@
 #define ADC1_DMA_OPT        1
 
 #define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
+#define GYRO_COUNT 2
 
 
 

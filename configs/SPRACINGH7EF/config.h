@@ -292,6 +292,7 @@
 #define GYRO_2_ALIGN            CW180_DEG
 
 #define GYRO_CONFIG_USE_GYRO_DEFAULT GYRO_CONFIG_USE_GYRO_BOTH
+#define GYRO_COUNT 2
 
 // Pre-BF-4.4 config:
 // On 4in1ESC_1
