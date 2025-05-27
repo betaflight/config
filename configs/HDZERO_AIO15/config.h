@@ -46,6 +46,7 @@
 
 #define UART2_TX_PIN         PB3
 #define UART2_RX_PIN         PB4
+#define SERIALRX_UART        SERIAL_PORT_USART2
 
 #define UART3_TX_PIN         PB10
 #define UART3_RX_PIN         PB11
@@ -59,11 +60,12 @@
 #define SPI2_SDI_PIN         PB14
 #define SPI2_SDO_PIN         PB15
 
-#define ADC_VBAT_PIN PB1
-#define ADC_CURR_PIN PB0
+#define ADC_VBAT_PIN         PB1
+#define ADC_CURR_PIN         PB0
 
-#define GYRO_1_EXTI_PIN PB12
-#define GYRO_1_CS_PIN PC6
+#define GYRO_1_EXTI_PIN      PB12
+#define GYRO_1_CS_PIN        PC6
+#define GYRO_1_SPI_INSTANCE  SPI2
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP(  0, MOTOR1_PIN,  1,  0 ) \
@@ -84,10 +86,7 @@
 #define TIMUP5_DMA_OPT 0
 #define TIMUP8_DMA_OPT 0
 
-#define SERIALRX_UART SERIAL_PORT_USART2
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
 #define DEFAULT_CURRENT_METER_SCALE 100
 #define BEEPER_INVERTED
-#define USE_SPI_GYRO
-#define GYRO_1_SPI_INSTANCE SPI2
