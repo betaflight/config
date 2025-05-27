@@ -21,15 +21,20 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     STM32G47X
+#define FC_TARGET_MCU        STM32G47X
 
-#define BOARD_NAME        HDZERO_AIO15
-#define MANUFACTURER_ID   HDZO
+#define BOARD_NAME           HDZERO_AIO15
+#define MANUFACTURER_ID      HDZO
 
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
+//#define USE_BARO
+//#define USE_BARO_DPS310
+
+#define USE_GYRO_CLKIN
+#define GYRO_1_CLKIN_PIN     PB9
 
 #define BEEPER_PIN           PA9
 
@@ -52,6 +57,9 @@
 #define UART4_TX_PIN         PC10
 #define UART4_RX_PIN         PC11
 
+//#define I2C2_SDA_PIN         PF0
+//#define I2C2_SCL_PIN         PC4
+
 #define LED0_PIN             PA4
 
 #define SPI2_SCK_PIN         PB13
@@ -66,23 +74,25 @@
 #define GYRO_1_SPI_INSTANCE  SPI2
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP(  0, MOTOR1_PIN,  1,  0 ) \
-    TIMER_PIN_MAP(  1, MOTOR2_PIN,  1,  0 ) \
-    TIMER_PIN_MAP(  2, MOTOR3_PIN,  2,  0 ) \
-    TIMER_PIN_MAP(  3, MOTOR4_PIN,  2,  0 ) \
-    TIMER_PIN_MAP(  4, LED_STRIP_PIN,  1,  0 ) \
-    TIMER_PIN_MAP(  5, BEEPER_PIN,  1,  0 )
+    TIMER_PIN_MAP(  0, MOTOR1_PIN,       2,  0 ) \
+    TIMER_PIN_MAP(  1, MOTOR2_PIN,       2,  1 ) \
+    TIMER_PIN_MAP(  2, MOTOR3_PIN,       2,  2 ) \
+    TIMER_PIN_MAP(  3, MOTOR4_PIN,       2,  3 ) \
+    TIMER_PIN_MAP(  4, LED_STRIP_PIN,    1,  4 ) \
+    TIMER_PIN_MAP(  5, BEEPER_PIN,       2, -1 ) \
+    TIMER_PIN_MAP(  6, GYRO_1_CLKIN_PIN, 1, -1 )
 
-#define SPI2_RX_DMA_OPT 7
+#define ADC1_DMA_OPT                 5
+#define ADC2_DMA_OPT                 6
+#define TIMUP5_DMA_OPT               7
 
-#define ADC1_DMA_OPT 8
-#define ADC2_DMA_OPT 9
+#define BARO_I2C_INSTANCE	         I2CDEV_2
+#define DEFAULT_DSHOT_BITBANG        DSHOT_BITBANG_ON
+#define DEFAULT_CURRENT_METER_SCALE  295 // Verify this
+#define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
+#define SYSTEM_HSE_MHZ               8
 
-#define TIMUP1_DMA_OPT 0
-#define TIMUP3_DMA_OPT 0
-#define TIMUP4_DMA_OPT 0
-#define TIMUP5_DMA_OPT 0
-#define TIMUP8_DMA_OPT 0
 
-#define MSP_DISPLAYPORT_UART SERIAL_PORT_UART1
-#define SERIALRX_UART        SERIAL_PORT_USART2
+#define MSP_DISPLAYPORT_UART         SERIAL_PORT_UART1
+#define SERIALRX_UART                SERIAL_PORT_USART2
