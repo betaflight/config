@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32H743
 
-#define BOARD_NAME        DAKEFPVH743Pro
+#define BOARD_NAME        DAKEFPVH743PRO
 #define MANUFACTURER_ID   DAKE
 
 #define USE_ACC
