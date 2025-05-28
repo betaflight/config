@@ -89,7 +89,7 @@
 #define ADC3_DMA_OPT                   1
 
 #define BARO_I2C_INSTANCE              I2CDEV_1
-#define MAG_I2C_INSTANCE               I2CDEV_1 
+#define MAG_I2C_INSTANCE               I2CDEV_1
 
 #define PINIO1_BOX                     40
 #define PINIO1_CONFIG                  129
