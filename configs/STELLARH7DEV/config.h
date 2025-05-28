@@ -79,6 +79,7 @@
 // IMU
 #define USE_ACC
 #define USE_GYRO
+#define GYRO_COUNT 2
 
 #define SPI1_SCK_PIN                    PA5
 #define SPI1_SDI_PIN                    PA6
