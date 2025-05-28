@@ -148,8 +148,7 @@
 #define PINIO3_BOX 42
 #define BOX_USER3_NAME                      "RF SWITCH"
 #define PINIO4_CONFIG 129
-#define PINIO4_BOX 43
-#define BOX_USER4_NAME                      "CAN SILENT"
+#define PINIO4_BOX 0
 
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW0_DEG
