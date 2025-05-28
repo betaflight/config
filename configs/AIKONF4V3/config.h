@@ -107,7 +107,7 @@
 #define SYSTEM_HSE_MHZ                 8
 
 #define GYRO_1_SPI_INSTANCE            SPI1
-//#define GYRO_1_ALIGN                   CW270_DEG
+#define GYRO_1_ALIGN                   CW270_DEG
 #define FLASH_SPI_INSTANCE             SPI2
 #define MAX7456_SPI_INSTANCE           SPI3
 
