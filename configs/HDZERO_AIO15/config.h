@@ -55,9 +55,6 @@
 #define UART4_TX_PIN         PC10
 #define UART4_RX_PIN         PC11
 
-//#define I2C2_SDA_PIN         PF0
-//#define I2C2_SCL_PIN         PC4
-
 #define LED0_PIN             PA4
 
 #define SPI2_SCK_PIN         PB13
