@@ -33,6 +33,9 @@
 #define USE_GYRO_SPI_MPU6000
 #define USE_GYRO_SPI_ICM42688P
 
+#define USE_GYRO_CLKIN
+#define GYRO_1_CLKIN_PIN     PE6
+
 #define USE_BARO
 #define USE_BARO_BMP280
 #define USE_BARO_DPS310
@@ -41,20 +44,20 @@
 #define USE_MAX7456
 
 #define BEEPER_PIN           PC2
-#define MOTOR1_PIN           PA0  // M1
-#define MOTOR2_PIN           PA1  // M2
-#define MOTOR3_PIN           PA2  // M3
-#define MOTOR4_PIN           PA3  // M4
-#define MOTOR5_PIN           PE9  // M5
-#define MOTOR6_PIN           PE11 // M6
-#define MOTOR7_PIN           PC8  // M7
-#define MOTOR8_PIN           PC9  // M8
-#define SERVO1_PIN           PD12 // S1
-#define SERVO2_PIN           PD13 // S2
-#define SERVO3_PIN           PD14 // S3
-#define SERVO4_PIN           PD15 // S4
-#define LED_STRIP_PIN        PB0   
-#define CAMERA_CONTROL_PIN   PE5 
+#define MOTOR1_PIN           PA0
+#define MOTOR2_PIN           PA1
+#define MOTOR3_PIN           PA2
+#define MOTOR4_PIN           PA3 
+#define MOTOR5_PIN           PE9
+#define MOTOR6_PIN           PE11
+#define MOTOR7_PIN           PC8
+#define MOTOR8_PIN           PC9
+#define SERVO1_PIN           PD12
+#define SERVO2_PIN           PD13
+#define SERVO3_PIN           PD14
+#define SERVO4_PIN           PD15
+#define LED_STRIP_PIN        PB0
+#define CAMERA_CONTROL_PIN   PE5
 #define UART1_TX_PIN         PA9
 #define UART1_RX_PIN         PA10
 #define UART2_TX_PIN         PD5
@@ -94,7 +97,6 @@
 #define PINIO1_PIN           PE2
 #define PINIO2_PIN           PE3
 #define PINIO3_PIN           PE4
-#define PINIO4_PIN           PD2
 #define FLASH_CS_PIN         PA15
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
@@ -102,8 +104,7 @@
 #define GYRO_2_EXTI_PIN      PB2
 #define GYRO_2_CS_PIN        PB1
 
-#define USE_GYRO_CLKIN
-#define GYRO_1_CLKIN_PIN     PE6
+
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0,  PA0,  1,  0) \
@@ -125,37 +126,35 @@
 #define ADC1_DMA_OPT        9
 #define ADC3_DMA_OPT        10
 
-#define FLASH_SPI_INSTANCE SPI3
-#define MAX7456_SPI_INSTANCE SPI2
+#define BARO_I2C_INSTANCE              I2CDEV_2
+#define MAG_I2C_INSTANCE               I2CDEV_2
 
-#define BARO_I2C_INSTANCE I2CDEV_2
-#define MAG_I2C_INSTANCE I2CDEV_2
-
-#define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
-#define DEFAULT_DSHOT_BITBANG DSHOT_BITBANG_ON
-#define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
-#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
+#define DEFAULT_BLACKBOX_DEVICE        BLACKBOX_DEVICE_FLASH
+#define DEFAULT_DSHOT_BITBANG          DSHOT_BITBANG_ON
+#define DEFAULT_CURRENT_METER_SOURCE   CURRENT_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SOURCE   VOLTAGE_METER_ADC
+#define DEFAULT_CURRENT_METER_SCALE    120  
+#define DEFAULT_VOLTAGE_METER_SCALE    160 
 
 #define BEEPER_INVERTED
-#define PINIO1_CONFIG 129
-#define PINIO1_BOX 40
-#define BOX_USER1_NAME                      "CAM 1,2"
-#define PINIO2_CONFIG 129
-#define PINIO2_BOX 41
-#define BOX_USER2_NAME                      "12V BEC"
-#define PINIO3_CONFIG 129
-#define PINIO3_BOX 42
-#define BOX_USER3_NAME                      "RF SWITCH"
+#define PINIO1_CONFIG                  129
+#define PINIO1_BOX                     40
+#define BOX_USER1_NAME                 "CAM 1,2"
+#define PINIO2_CONFIG                  129
+#define PINIO2_BOX                     41
+#define BOX_USER2_NAME                 "12V BEC"
+#define PINIO3_CONFIG                  129
+#define PINIO3_BOX                     0
 
-#define GYRO_1_SPI_INSTANCE SPI1
-#define GYRO_1_ALIGN CW0_DEG
-#define GYRO_2_SPI_INSTANCE SPI4
-#define GYRO_2_ALIGN CW180_DEG
+#define GYRO_1_SPI_INSTANCE            SPI1
+#define GYRO_1_ALIGN                   CW0_DEG
+#define MAX7456_SPI_INSTANCE           SPI2
+#define FLASH_SPI_INSTANCE             SPI3
+#define GYRO_2_SPI_INSTANCE            SPI4
+#define GYRO_2_ALIGN                   CW180_DEG
+#define DEFAULT_GYRO_TO_USE            GYRO_CONFIG_USE_GYRO_BOTH
+ 
 
-#define DEFAULT_CURRENT_METER_SCALE 120  
-#define DEFAULT_VOLTAGE_METER_SCALE 160  
-
-#define SERIALRX_UART           SERIAL_PORT_UART5
-#define ESC_SENSOR_UART         SERIAL_PORT_USART3
-#define MSP_UART                SERIAL_PORT_USART2
+#define SERIALRX_UART                  SERIAL_PORT_UART5
+#define ESC_SENSOR_UART                SERIAL_PORT_USART3
+#define MSP_UART                       SERIAL_PORT_USART2
