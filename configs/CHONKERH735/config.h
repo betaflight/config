@@ -34,6 +34,7 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 #define USE_BARO
 #define USE_FLASH
 #define USE_GYRO
+#define GYRO_COUNT 2
 
 #define USE_ACC_SPI_ICM20602
 #define USE_GYRO_SPI_ICM20602
@@ -116,7 +117,6 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 
 #define DEFAULT_RX_FEATURE              FEATURE_RX_SERIAL
 
-#define DEFAULT_GYRO_TO_USE             GYRO_CONFIG_USE_GYRO_1
 #define GYRO_1_ALIGN                    CW0_DEG_FLIP
 #define GYRO_2_ALIGN                    CW0_DEG_FLIP
 
