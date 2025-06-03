@@ -88,5 +88,5 @@
 #define SYSTEM_HSE_MHZ               8
 
 
-#define MSP_DISPLAYPORT_UART         SERIAL_PORT_UART1
+#define MSP_DISPLAYPORT_UART         SERIAL_PORT_USART1
 #define SERIALRX_UART                SERIAL_PORT_USART2
