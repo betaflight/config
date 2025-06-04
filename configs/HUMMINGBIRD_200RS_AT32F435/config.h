@@ -72,11 +72,11 @@
 #define GYRO_1_CS_PIN       PA4
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, LED_STRIP_PIN , 1,  0) \
-    TIMER_PIN_MAP( 1, MOTOR1_PIN , 2,  1) \
-    TIMER_PIN_MAP( 2, MOTOR2_PIN , 2,  1) \
-    TIMER_PIN_MAP( 3, MOTOR3_PIN , 2,  1) \
-    TIMER_PIN_MAP( 4, MOTOR4_PIN , 2,  1) 
+    TIMER_PIN_MAP( 0, LED_STRIP_PIN , 2,  0) \
+    TIMER_PIN_MAP( 1, MOTOR1_PIN , 1,  1) \
+    TIMER_PIN_MAP( 2, MOTOR2_PIN , 1,  2) \
+    TIMER_PIN_MAP( 3, MOTOR3_PIN , 2,  3) \
+    TIMER_PIN_MAP( 4, MOTOR4_PIN , 2,  4) 
 
 #define ADC_INSTANCE         ADC1    
 #define ADC1_DMA_OPT         12
