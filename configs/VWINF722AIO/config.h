@@ -97,6 +97,6 @@
 #define BEEPER_INVERTED
 #define DEFAULT_BLACKBOX_DEVICE        BLACKBOX_DEVICE_FLASH
 #define GYRO_1_SPI_INSTANCE            SPI1
-//#define GYRO_1_ALIGN                   CW180_DEG // Verify gyro alignment
+#define GYRO_1_ALIGN                   CW180_DEG
 #define MAX7456_SPI_INSTANCE           SPI2
 #define FLASH_SPI_INSTANCE             SPI3
