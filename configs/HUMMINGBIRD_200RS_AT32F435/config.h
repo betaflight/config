@@ -82,8 +82,6 @@
 #define ADC1_DMA_OPT         12
 
 #define SYSTEM_HSE_MHZ       8
-#define MAG_BUSTYPE          BUS_TYPE_I2C
-#define BARO_BUSTYPE         BUS_TYPE_I2C
 #define GYRO_1_SPI_INSTANCE  SPI1
 #define FLASH_SPI_INSTANCE   SPI2
 #define MAX7456_SPI_INSTANCE SPI4
