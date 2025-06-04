@@ -27,6 +27,7 @@
 #define MANUFACTURER_ID   HGLR
 
 #define USE_GYRO
+#define GYRO_COUNT 2
 #define USE_GYRO_SPI_MPU6000
 #define USE_ACC
 #define USE_ACC_SPI_MPU6000
@@ -92,7 +93,6 @@
 
 #define ADC2_DMA_OPT        1
 
-#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_1
 #define MAG_ALIGN DEFAULT
 #define MAG_I2C_INSTANCE I2CDEV_1
 

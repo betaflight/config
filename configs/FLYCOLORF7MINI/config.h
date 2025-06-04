@@ -29,6 +29,7 @@
 #define USE_BARO
 #define USE_FLASH
 #define USE_GYRO
+#define GYRO_COUNT 2
 
 #define USE_ACC_SPI_MPU6500
 #define USE_BARO_BMP280

@@ -29,6 +29,7 @@
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
+#define GYRO_COUNT 2
 #define USE_GYRO_SPI_ICM42688P
 #define USE_FLASH
 #define USE_FLASH_W25N01G
