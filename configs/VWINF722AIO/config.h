@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F7X2
 
-#define BOARD_NAME        VWINF722AIO
+#define BOARD_NAME        VWING_F722AIO
 #define MANUFACTURER_ID   VWIN
 
 #define USE_ACC
