@@ -116,7 +116,7 @@
                                         TIMER_PIN_MAP( 6, SERVO3_PIN, 2, -1 ) \
                                         TIMER_PIN_MAP( 7, SERVO4_PIN, 2, -1 ) \
                                         TIMER_PIN_MAP( 8, LED_STRIP_PIN, 2, 4 ) \
-                                        TIMER_PIN_MAP( 9, CAMERA_CONTROL_PIN, 2, -1 ) \
+                                        TIMER_PIN_MAP( 9, CAMERA_CONTROL_PIN, 2, -1 )
 
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
