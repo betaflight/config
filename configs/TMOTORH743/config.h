@@ -30,6 +30,7 @@
 #define USE_ACC_SPI_MPU6000
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
+#define GYRO_COUNT 2
 #define USE_GYRO_SPI_MPU6000
 #define USE_GYRO_SPI_ICM42688P
 #define USE_FLASH
@@ -126,7 +127,6 @@
 // #define TIMUP3_DMA_OPT                  0
 // #define TIMUP8_DMA_OPT                  0
 
-#define DEFAULT_GYRO_TO_USE             GYRO_CONFIG_USE_GYRO_1
 #define MAG_I2C_INSTANCE                I2CDEV_1
 #define BARO_I2C_INSTANCE               I2CDEV_2
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
