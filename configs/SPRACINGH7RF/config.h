@@ -120,7 +120,6 @@
 #define DEFAULT_RX_FEATURE            FEATURE_RX_SPI
 #define DEFAULT_FEATURES              (FEATURE_TELEMETRY | FEATURE_OSD | FEATURE_LED_STRIP)
 #define RX_SPI_DEFAULT_PROTOCOL       RX_SPI_EXPRESSLRS
-#define RX_SPI_PROTOCOL               EXPRESSLRS
 
 #define ADC3_DMA_OPT                  10
 #define ADC_INSTANCE                  ADC3

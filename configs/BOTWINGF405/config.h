@@ -117,6 +117,7 @@
 #define ADC_INSTANCE                        ADC1
 
 #define DEFAULT_BLACKBOX_DEVICE             BLACKBOX_DEVICE_FLASH
+#define SYSTEM_HSE_MHZ                      24
 
 #define DEFAULT_CURRENT_METER_SOURCE        CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE        VOLTAGE_METER_ADC
@@ -124,6 +125,9 @@
 #define DEFAULT_VOLTAGE_METER_SCALE         110
 
 #define PINIO1_BOX                          40
+#define PINIO1_CONFIG                       129
+#define BOX_USER1_NAME                      "VTX PWR"
+
 #define PINIO2_BOX                          41
 
 #define SERIALRX_UART                       SERIAL_PORT_USART1

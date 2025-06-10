@@ -39,6 +39,7 @@
 
 #define USE_BARO
 #define USE_BARO_SPI_BMP280
+#define USE_BARO_SPI_DPS310
 #define BARO_CS_PIN PC13
 #define BARO_SPI_INSTANCE SPI3
 
