@@ -69,6 +69,7 @@
 #define SPI3_SCK_PIN         PC10
 #define SPI3_SDI_PIN         PC11
 #define SPI3_SDO_PIN         PB2
+#define SPI3_NSS_PIN         PC13
 
 #define GYRO_1_CLKIN_PIN     PB3
 #define ADC_VBAT_PIN         PC0
