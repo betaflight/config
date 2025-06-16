@@ -30,6 +30,7 @@
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
+#define USE_ACCGYRO_IIM42652
 #define USE_BARO
 #define USE_BARO_SPI_DPS310
 #ifndef USE_MAG
@@ -126,9 +127,9 @@
 
 //sensor CS and EXTI
 #define GYRO_1_EXTI_PIN      PB2
-//#define GYRO_2_EXTI_PIN      PC4
+#define GYRO_2_EXTI_PIN      PC4
 #define GYRO_1_CS_PIN        PE11
-//#define GYRO_2_CS_PIN        PA4
+#define GYRO_2_CS_PIN        PA4
 #define BARO_CS_PIN          PC5
 
 /* CS1 pads for SPI2 connection:
@@ -189,6 +190,8 @@
 //gyro config
 #define GYRO_1_SPI_INSTANCE SPI4
 #define GYRO_1_ALIGN CW0_DEG_FLIP
+#define GYRO_2_SPI_INSTANCE SPI1
+#define GYRO_2_ALIGN CW0_DEG_FLIP  // Confirm alignment
 
 //baro config
 #define BARO_SPI_INSTANCE SPI1
