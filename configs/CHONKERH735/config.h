@@ -34,7 +34,6 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 #define USE_BARO
 #define USE_FLASH
 #define USE_GYRO
-#define GYRO_COUNT 2
 
 #define USE_ACC_SPI_ICM20602
 #define USE_GYRO_SPI_ICM20602

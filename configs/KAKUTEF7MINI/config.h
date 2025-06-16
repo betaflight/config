@@ -30,7 +30,6 @@
 #define USE_ACC_SPI_MPU6000
 #define USE_ACC_SPI_ICM20689
 #define USE_GYRO
-#define GYRO_COUNT 2
 #define USE_GYRO_SPI_MPU6000
 #define USE_GYRO_SPI_ICM20689
 #define USE_BARO
