@@ -191,7 +191,7 @@
 #define GYRO_1_SPI_INSTANCE SPI4
 #define GYRO_1_ALIGN CW0_DEG_FLIP
 #define GYRO_2_SPI_INSTANCE SPI1
-#define GYRO_2_ALIGN CW0_DEG_FLIP  // Confirm alignment
+#define GYRO_2_ALIGN CW0_DEG_FLIP
 
 //baro config
 #define BARO_SPI_INSTANCE SPI1
