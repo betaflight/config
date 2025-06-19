@@ -115,74 +115,32 @@
 #define ICM42688P_CS_PIN                PE3
 #define ICM42688P_ALIGN                 CW180_DEG
 
-// IMU selection
-#define ICM40609D                       1
-#define ICM45605                        2
-#define ICM45686                        3
-#define ICM42688P                       4
-
-// IMU selection is done by setting USE_IMU1 and USE_IMU2 in the build command
-#ifndef USE_IMU1
-#define USE_IMU1                        ICM42688P
-#endif
-
-#if USE_IMU1 == ICM40609D
 #define GYRO_1_EXTI_PIN                 ICM40609D_EXTI_PIN
 #define GYRO_1_CS_PIN                   ICM40609D_CS_PIN
 #define GYRO_1_SPI_INSTANCE             ICM40609D_SPI_INSTANCE
 #define GYRO_1_ALIGN                    ICM40609D_ALIGN
 #define USE_ACCGYRO_ICM40609D
-#elif USE_IMU1 == ICM45605
-#define GYRO_1_EXTI_PIN                 ICM45605_EXTI_PIN
-#define GYRO_1_CS_PIN                   ICM45605_CS_PIN
-#define GYRO_1_SPI_INSTANCE             ICM45605_SPI_INSTANCE
-#define GYRO_1_ALIGN                    ICM45605_ALIGN
-#define USE_ACCGYRO_ICM45605
-#elif USE_IMU1 == ICM45686
-#define GYRO_1_EXTI_PIN                 ICM45686_EXTI_PIN
-#define GYRO_1_CS_PIN                   ICM45686_CS_PIN
-#define GYRO_1_SPI_INSTANCE             ICM45686_SPI_INSTANCE
-#define GYRO_1_ALIGN                    ICM45686_ALIGN
-#define USE_ACCGYRO_ICM45686
-#elif USE_IMU1 == ICM42688P
-#define GYRO_1_EXTI_PIN                 ICM42688P_EXTI_PIN
-#define GYRO_1_CS_PIN                   ICM42688P_CS_PIN
-#define GYRO_1_SPI_INSTANCE             ICM42688P_SPI_INSTANCE
-#define GYRO_1_ALIGN                    ICM42688P_ALIGN
-#define USE_GYRO_SPI_ICM42688P
-#define USE_ACC_SPI_ICM42688P
-#define USE_GYRO_CLKIN
-#define GYRO_1_CLKIN_PIN                PB4
-#endif
 
-#if USE_IMU2 == ICM40609D
-#define GYRO_2_EXTI_PIN                 ICM40609D_EXTI_PIN
-#define GYRO_2_CS_PIN                   ICM40609D_CS_PIN
-#define GYRO_2_SPI_INSTANCE             ICM40609D_SPI_INSTANCE
-#define GYRO_2_ALIGN                    ICM40609D_ALIGN
-#define USE_ACCGYRO_ICM40609D
-#elif USE_IMU2 == ICM45605
 #define GYRO_2_EXTI_PIN                 ICM45605_EXTI_PIN
 #define GYRO_2_CS_PIN                   ICM45605_CS_PIN
 #define GYRO_2_SPI_INSTANCE             ICM45605_SPI_INSTANCE
 #define GYRO_2_ALIGN                    ICM45605_ALIGN
 #define USE_ACCGYRO_ICM45605
-#elif USE_IMU2 == ICM45686
-#define GYRO_2_EXTI_PIN                 ICM45686_EXTI_PIN
-#define GYRO_2_CS_PIN                   ICM45686_CS_PIN
-#define GYRO_2_SPI_INSTANCE             ICM45686_SPI_INSTANCE
-#define GYRO_2_ALIGN                    ICM45686_ALIGN
+
+#define GYRO_3_EXTI_PIN                 ICM45686_EXTI_PIN
+#define GYRO_3_CS_PIN                   ICM45686_CS_PIN
+#define GYRO_3_SPI_INSTANCE             ICM45686_SPI_INSTANCE
+#define GYRO_3_ALIGN                    ICM45686_ALIGN
 #define USE_ACCGYRO_ICM45686
-#elif USE_IMU2 == ICM42688P
-#define GYRO_2_EXTI_PIN                 ICM42688P_EXTI_PIN
-#define GYRO_2_CS_PIN                   ICM42688P_CS_PIN
-#define GYRO_2_SPI_INSTANCE             ICM42688P_SPI_INSTANCE
-#define GYRO_2_ALIGN                    ICM42688P_ALIGN
+
+#define GYRO_4_EXTI_PIN                 ICM42688P_EXTI_PIN
+#define GYRO_4_CS_PIN                   ICM42688P_CS_PIN
+#define GYRO_4_SPI_INSTANCE             ICM42688P_SPI_INSTANCE
+#define GYRO_4_ALIGN                    ICM42688P_ALIGN
 #define USE_GYRO_SPI_ICM42688P
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO_CLKIN
-#define GYRO_2_CLKIN_PIN                PB4
-#endif
+#define GYRO_4_CLKIN_PIN                PB4
 
 // Blackbox
 #define USE_FLASH
