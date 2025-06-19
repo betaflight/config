@@ -115,9 +115,6 @@
 #define ICM42688P_CS_PIN                PE3
 #define ICM42688P_ALIGN                 CW180_DEG
 
-#define GYRO_COUNT                      4
-#define DEFAULT_GYRO_ENABLED            GYRO_MASK(3)
-
 #define GYRO_1_EXTI_PIN                 ICM40609D_EXTI_PIN
 #define GYRO_1_CS_PIN                   ICM40609D_CS_PIN
 #define GYRO_1_SPI_INSTANCE             ICM40609D_SPI_INSTANCE
