@@ -31,7 +31,6 @@
 #define USE_ACCGYRO_BMI270
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
-#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
 #define USE_GYRO_SPI_MPU6000
 #define USE_GYRO_SPI_ICM42688P
 #define USE_BARO
@@ -98,6 +97,7 @@
     TIMER_PIN_MAP( 8, PB3,  1,  0) \
 
 #define ADC3_DMA_OPT                    0
+#define DEFAULT_GYRO_TO_USE             GYRO_CONFIG_USE_GYRO_BOTH
 #define MAG_I2C_INSTANCE                I2CDEV_1
 #define BARO_I2C_INSTANCE               I2CDEV_1
 #define ADC_INSTANCE ADC3
