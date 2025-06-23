@@ -88,7 +88,7 @@
 
 #define ADC_VBAT_PIN                    PC2
 #define ADC_CURR_PIN                    PC1
-#define ADC1_DMA_OPT                    11
+#define ADC1_DMA_OPT                    8
 
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
@@ -107,21 +107,16 @@
 #define MAX7456_SPI_INSTANCE            SPI2
 #define MAX7456_SPI_CS_PIN              PB12
 
-/*
-//TODO camera control not implemented yet
- #define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 0, CAMERA_CONTROL_PIN, 2, 13 ) \
-                                        TIMER_PIN_MAP( 1, LED_STRIP_PIN, 2, 7 ) \
-*/
-#define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 1, LED_STRIP_PIN, 2, 7 ) \
-                                        TIMER_PIN_MAP( 2, UART2_RX_PIN, 1,  6 ) \
-                                        TIMER_PIN_MAP( 3, SERVO1_PIN, 1,  11 ) \
-                                        TIMER_PIN_MAP( 4, SERVO2_PIN, 1,  10 ) \
-                                        TIMER_PIN_MAP( 5, SERVO3_PIN, 2,  8 ) \
-                                        TIMER_PIN_MAP( 6, SERVO4_PIN, 2,  9 ) \
-                                        TIMER_PIN_MAP( 7, MOTOR1_PIN, 2,  0 ) \
-                                        TIMER_PIN_MAP( 8, MOTOR2_PIN, 2,  2 ) \
-                                        TIMER_PIN_MAP( 9, MOTOR3_PIN, 1,  1 ) \
-                                        TIMER_PIN_MAP(10, MOTOR4_PIN, 1,  3 )
+#define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 0, MOTOR1_PIN, 2,  0 ) \
+                                        TIMER_PIN_MAP( 1, MOTOR2_PIN, 2,  1 ) \
+                                        TIMER_PIN_MAP( 2, MOTOR3_PIN, 2,  2 ) \
+                                        TIMER_PIN_MAP( 3, MOTOR4_PIN, 2,  3 ) \
+                                        TIMER_PIN_MAP( 4, SERVO1_PIN, 1, -1 ) \
+                                        TIMER_PIN_MAP( 5, SERVO2_PIN, 1, -1 ) \
+                                        TIMER_PIN_MAP( 6, SERVO3_PIN, 2, -1 ) \
+                                        TIMER_PIN_MAP( 7, SERVO4_PIN, 2, -1 ) \
+                                        TIMER_PIN_MAP( 8, LED_STRIP_PIN, 2, 4 ) \
+                                        TIMER_PIN_MAP( 9, CAMERA_CONTROL_PIN, 2, -1 )
 
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
