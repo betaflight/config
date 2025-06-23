@@ -44,6 +44,7 @@
 #define LED_STRIP_PIN        PB3
 #define UART1_TX_PIN         PB6
 #define UART2_TX_PIN         PA2
+#define UART3_TX_PIN         PB10
 #define UART4_TX_PIN         PA0
 #define UART5_TX_PIN         PC12
 #define UART6_TX_PIN         PC6
@@ -71,15 +72,18 @@
 #define FLASH_CS_PIN         PA15
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
-#define GYRO_2_EXTI_PIN      PB10
+#define GYRO_2_EXTI_PIN      PB0
 #define GYRO_1_CS_PIN        PA4
-#define GYRO_2_CS_PIN        PB2
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PC8 , 2,  0) \
     TIMER_PIN_MAP( 1, PC9 , 2,  0) \
     TIMER_PIN_MAP( 2, PA8 , 1,  0) \
     TIMER_PIN_MAP( 3, PA9 , 1,  0) \
+    TIMER_PIN_MAP(4, PB0, 2, 0)\
+    TIMER_PIN_MAP(5, PB1, 2, 0)\
+    TIMER_PIN_MAP(6, PA10, 1, 0)\
+    TIMER_PIN_MAP(7, PB4, 1, 0)\
     TIMER_PIN_MAP( 8, PB3 , 1,  0)
 
 
