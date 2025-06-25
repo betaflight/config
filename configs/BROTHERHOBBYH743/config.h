@@ -43,10 +43,8 @@
 #define MOTOR7_PIN                          PD12
 #define MOTOR8_PIN                          PD13
 
-#define SERVO1_PIN                          PD14
-#define SERVO2_PIN                          PD15
-#define SERVO3_PIN                          PE5
-#define SERVO4_PIN                          PE6
+#define SERVO1_PIN                          PE5
+#define SERVO2_PIN                          PE6
 
 // SPI
 #define SPI1_SCK_PIN                        PA5
