@@ -55,10 +55,6 @@
 #define SPI2_SDI_PIN                        PB14
 #define SPI2_SDO_PIN                        PB15
 
-#define SPI3_SCK_PIN                        PB3
-#define SPI3_SDI_PIN                        PB4
-#define SPI3_SDO_PIN                        PB5
-
 #define SPI4_SCK_PIN                        PE12
 #define SPI4_SDI_PIN                        PE13
 #define SPI4_SDO_PIN                        PE14
