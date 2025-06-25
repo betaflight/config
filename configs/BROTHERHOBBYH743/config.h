@@ -151,9 +151,7 @@
         TIMER_PIN_MAP(  7, MOTOR8_PIN,     1,  7 ) \
         TIMER_PIN_MAP(  8, SERVO1_PIN,     1, -1 ) \
         TIMER_PIN_MAP(  9, SERVO2_PIN,     1, -1 ) \
-        TIMER_PIN_MAP( 10, SERVO3_PIN,     1, -1 ) \
-        TIMER_PIN_MAP( 11, SERVO4_PIN,     1, -1 ) \
-        TIMER_PIN_MAP( 12, LED_STRIP_PIN,  1, 14 )
+        TIMER_PIN_MAP( 10, LED_STRIP_PIN,  1, 14 )
 
 #define ADC1_DMA_OPT                        8
 #define ADC3_DMA_OPT                        9
