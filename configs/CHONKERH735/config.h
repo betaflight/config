@@ -116,7 +116,6 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 
 #define DEFAULT_RX_FEATURE              FEATURE_RX_SERIAL
 
-#define DEFAULT_GYRO_TO_USE             GYRO_CONFIG_USE_GYRO_1
 #define GYRO_1_ALIGN                    CW0_DEG_FLIP
 #define GYRO_2_ALIGN                    CW0_DEG_FLIP
 
