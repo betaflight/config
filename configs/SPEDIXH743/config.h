@@ -35,6 +35,7 @@
 #define USE_BARO
 #define USE_BARO_BMP280
 #define USE_BARO_DPS310
+#define USE_MAX7456
 
 #define USE_GYRO_CLKIN
 #define GYRO_1_CLKIN_PIN     PA5          // TIM2_CH1
