@@ -56,12 +56,12 @@
 
 #define UART0_TX_PIN PA9
 #define UART1_TX_PIN PA2
-#define UART2_TX_PIN PC10
+#define UART2_TX_PIN PD8
 #define UART3_TX_PIN PA0
 #define UART4_TX_PIN PC12
 #define UART0_RX_PIN PA10
 #define UART1_RX_PIN PA3
-#define UART2_RX_PIN PD8
+#define UART2_RX_PIN PD9
 #define UART3_RX_PIN PA1
 #define UART4_RX_PIN PD2
 
@@ -81,7 +81,7 @@
 #define SPI1_SDO_PIN PB15
 #define SPI2_SDO_PIN PB2
 
-#define ESCSERIAL_PIN PD8
+#define ESCSERIAL_PIN PD9
 #define ADC_VBAT_PIN PC2
 #define ADC_RSSI_PIN PC3
 #define ADC_CURR_PIN PC1
