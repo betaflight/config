@@ -100,6 +100,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |PYDR|Pyro-Drone|https://pyrodrone.com/|
 |PYID|PYI Technologies|https://pyidrones.com/|
 |RALI|RadioLink Electronic Ltd|https://radiolink.com/|
+|RASP|Raspberry PI|https://www.raspberrypi.com/|
 |RAST|Racerstar|https://www.racerstar.com/|
 |RCTI|RCTimer|http://rctimer.com/|
 |RDMS|RadioMaster RC|https://www.radiomasterrc.com/|
