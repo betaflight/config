@@ -22,7 +22,7 @@
 #pragma once
 
 #define FC_TARGET_MCU     RP2350B
-#define BOARD_NAME        HELBENDER_0001
+#define BOARD_NAME        HELLBENDER_0001
 #define MANUFACTURER_ID   RASP
 
 #define USE_GYRO
