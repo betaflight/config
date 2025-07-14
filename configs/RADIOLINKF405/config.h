@@ -75,8 +75,6 @@
 #define GYRO_1_EXTI_PIN PC4
 #define GYRO_1_CS_PIN PA4
 #define PINIO1_PIN PC5
-#define PINIO2_PIN PA13
-#define PINIO3_PIN PA14
 
 #define TIMER_PIN_MAPPING \
           TIMER_PIN_MAP( 0, PC6,  2,  0 ) \
@@ -107,6 +105,7 @@
 #define FLASH_SPI_INSTANCE             SPI3
 #define MAX7456_SPI_INSTANCE           SPI2
 #define GYRO_1_SPI_INSTANCE            SPI1
+#define GYRO_1_ALIGN                   CW180_DEG
 #define PINIO1_BOX                     40
 #define PINIO1_CONFIG                  129
 #define BOX_USER1_NAME                 "9V BEC" 
