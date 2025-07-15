@@ -53,6 +53,7 @@
 #define SDCARD_CS_PIN        PA25
 //#define FLASH_CS_PIN         PA0
 #define MAX7456_SPI_CS_PIN   PA17
+#define USE_MAX7456
 
 #define GYRO_1_CS_PIN        PA1
 #define GYRO_1_EXTI_PIN      PA22
