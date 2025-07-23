@@ -129,6 +129,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |VIVA|VivaFPV|https://vivafpv.com/|
 |WDIY|WDIY|http://wdiy.net.cn/|
 |WIZZ|WIZZ|https://wizz.store/|
+|WRPL|Warp Labs|www.warplabs.it|
 |YUPF|YuPiFc|https://www.yupifc.com/|
 |YYRC|JLDZ||
 |ZEEZ|Zeez RC|https://www.zeezrc.com/|
