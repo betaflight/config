@@ -90,7 +90,7 @@
 #define ADC_INSTANCE                   ADC3
 #define ADC3_DMA_OPT                   1
 
-#define ESC_SENSOR_UART                SERIAL_PORT_UART3
+#define ESC_SENSOR_UART                SERIAL_PORT_USART3
 
 #define MAG_I2C_INSTANCE               I2CDEV_1
 #define BARO_I2C_INSTANCE              I2CDEV_1
