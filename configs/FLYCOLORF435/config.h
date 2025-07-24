@@ -83,19 +83,18 @@
 
 #define TIMER_PIN_MAPPING  \
         TIMER_PIN_MAP( 0, PA1, 2,  7 ) \
-	    TIMER_PIN_MAP( 1, PB6, 1, -1 ) \
+        TIMER_PIN_MAP( 1, PB6, 1, -1 ) \
         TIMER_PIN_MAP( 2, PB7, 1, -1 ) \
         TIMER_PIN_MAP( 3, PC9, 2,  0 ) \
         TIMER_PIN_MAP( 4, PC8, 2,  2 ) \
         TIMER_PIN_MAP( 5, PC7, 2,  1 ) \
         TIMER_PIN_MAP( 6, PC6, 2,  3 )
 										
-#define ADC_INSTANCE                    ADC1
 #define ADC1_DMA_OPT                    11
 #define SERIALRX_UART                   SERIAL_PORT_UART5
 
-#define BARO_I2C_INSTANCE               (I2CDEV_1)
-#define MAG_I2C_INSTANCE                (I2CDEV_1)
+#define BARO_I2C_INSTANCE               I2CDEV_1
+#define MAG_I2C_INSTANCE                I2CDEV_1
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define MAX7456_SPI_INSTANCE            SPI2									
 #define FLASH_SPI_INSTANCE              SPI3
@@ -111,9 +110,8 @@
 #define DEFAULT_DSHOT_TELEMETRY         DSHOT_TELEMETRY_ON
 #define DEFAULT_DSHOT_BURST             DSHOT_DMAR_AUTO
 #define PINIO1_CONFIG                   129  
-#define PINIO2_CONFIG                     1
-#define PINIO1_BOX                       40
-#define PINIO2_BOX                       41
+#define PINIO2_CONFIG                   1
+#define PINIO1_BOX                      40
+#define PINIO2_BOX                      41
 #define BOX_USER1_NAME                  "BEC SWITCH"
 #define BOX_USER2_NAME                  "CAM 1,2"
-#define GYRO_1_ALIGN                    CW0_DEG
