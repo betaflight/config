@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F7X2
 
-#define BOARD_NAME        XROTOR_F722
+#define BOARD_NAME        HOBBYWING_XROTORF7CONV
 #define MANUFACTURER_ID   HOWI
 
 #define USE_ACC
