@@ -48,6 +48,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |FFRC|FlyFishRC|https://www.flyfish-rc.com/|
 |FISM|Shenzhen Micheng Innovation Technology Co., Ltd.|http://www.michenginnovation.com/|
 |FLAO|FLAO Limited|https://www.sunrisemodel.com|
+|FLBD|FlashBird|https://github.com/lecui|
 |FLCO|Shenzhen Flycolor Electronic Co., LTD|http://www.flycolor.net/|
 |FLHI|Fly High|https://elektronchika.github.io/flyhigh/|
 |FLLF|Flying Lemon FPV|https://github.com/flyinglemonfpv|
