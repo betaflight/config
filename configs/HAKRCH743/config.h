@@ -138,9 +138,9 @@
 #define BARO_I2C_INSTANCE               I2CDEV_1
 
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
-//#define DEFAULT_CURRENT_METER_SCALE     250
+#define DEFAULT_CURRENT_METER_SCALE     110
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
-//#define DEFAULT_VOLTAGE_METER_SCALE     110
+#define DEFAULT_VOLTAGE_METER_SCALE     250
 
 #define PINIO1_BOX                      40
 #define PINIO1_CONFIG                   129
@@ -151,5 +151,4 @@
 
 #define BEEPER_INVERTED
 
-//#define GYRO_1_ALIGN                    CW180_DEG
-//#define GYRO_2_ALIGN                    CW180_DEG
+#define GYRO_2_ALIGN                    CW270_DEG
