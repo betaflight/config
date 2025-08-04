@@ -86,7 +86,6 @@
 #define ADC_CURR_PIN        PC5
 #define PINIO1_PIN          PC13
 #define PINIO2_PIN          PC14
-#define PINIO3_PIN          PC15
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP(0,  MOTOR1_PIN,         2, 0)  \
@@ -114,10 +113,8 @@
 
 #define PINIO1_CONFIG 1
 #define PINIO2_CONFIG 1
-#define PINIO3_CONFIG 129
 #define PINIO1_BOX 40
 #define PINIO2_BOX 41
-#define PINIO3_BOX 42
 
 #define DEFAULT_PID_PROCESS_DENOM    2
 #define DEFAULT_CURRENT_METER_SCALE  400
