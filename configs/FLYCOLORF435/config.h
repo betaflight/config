@@ -33,9 +33,11 @@
 #define USE_BARO
 #define USE_BARO_BMP388
 #define USE_FLASH
-#define USE_FLASH_W25Q128FV
+#define USE_FLASH_M25P16
 #define USE_MAX7456
+#define USE_GYRO_CLKIN
 
+#define GYRO_1_CLKIN_PIN                PC5
 #define BEEPER_PIN                      PC15
 #define MOTOR1_PIN                      PC9
 #define MOTOR2_PIN                      PC8
@@ -83,15 +85,17 @@
 
 #define TIMER_PIN_MAPPING  \
         TIMER_PIN_MAP( 0, PA1, 2,  7 ) \
-        TIMER_PIN_MAP( 1, PB6, 1, -1 ) \
-        TIMER_PIN_MAP( 2, PB7, 1, -1 ) \
-        TIMER_PIN_MAP( 3, PC9, 2,  0 ) \
-        TIMER_PIN_MAP( 4, PC8, 2,  2 ) \
-        TIMER_PIN_MAP( 5, PC7, 2,  1 ) \
-        TIMER_PIN_MAP( 6, PC6, 2,  3 )
+	TIMER_PIN_MAP( 1, PA3, 1,  6 ) \
+	TIMER_PIN_MAP( 2, PC5, 1,  -1) \
+        TIMER_PIN_MAP( 3, PB6, 1,  11) \
+        TIMER_PIN_MAP( 4, PB7, 1,  10) \
+        TIMER_PIN_MAP( 5, PC9, 2,  0 ) \
+        TIMER_PIN_MAP( 6, PC8, 2,  2 ) \
+        TIMER_PIN_MAP( 7, PC7, 2,  1 ) \
+        TIMER_PIN_MAP( 8, PC6, 2,  3 )
 										
 #define ADC1_DMA_OPT                    11
-#define SERIALRX_UART                   SERIAL_PORT_UART5
+#define SERIALRX_UART                   SERIAL_PORT_USART2
 
 #define BARO_I2C_INSTANCE               I2CDEV_1
 #define MAG_I2C_INSTANCE                I2CDEV_1
@@ -105,10 +109,8 @@
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SCALE     113
-#define DEFAULT_CURRENT_METER_SCALE     200
-#define DEFAULT_CURRENT_METER_OFFSET    -23000
 #define DEFAULT_DSHOT_TELEMETRY         DSHOT_TELEMETRY_ON
-#define DEFAULT_DSHOT_BURST             DSHOT_DMAR_AUTO
+#define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_ON
 #define PINIO1_CONFIG                   129  
 #define PINIO2_CONFIG                   1
 #define PINIO1_BOX                      40
