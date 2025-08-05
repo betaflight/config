@@ -54,7 +54,6 @@
 #define SERVO3_PIN              PB0
 #define SERVO4_PIN              PB1
 #define LED_STRIP_PIN           PA8
-//#define UART1_TX_PIN            PA9
 #define UART2_TX_PIN            PD5
 #define UART3_TX_PIN            PD8
 #define UART4_TX_PIN            PB9
