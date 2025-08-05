@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32G47X
 
-#define BOARD_NAME 	EMAX_G473
+#define BOARD_NAME 	EMAX_G473_AIO
 #define MANUFACTURER_ID EMAX
 
 #define USE_ACC
