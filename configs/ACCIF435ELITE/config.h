@@ -21,10 +21,10 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     AT32F435G
+#define FC_TARGET_MCU        AT32F435G
 
-#define BOARD_NAME        ACCIF435ELITE
-#define MANUFACTURER_ID   CUST
+#define BOARD_NAME           ACCIF435ELITE
+#define MANUFACTURER_ID      CUST
 
 #define USE_ACC
 #define USE_GYRO
@@ -50,11 +50,9 @@
 #define LED_STRIP_PIN        PB3
 
 // ACC/GYRO SPI 1
-#define USE_SPI_GYRO
 #define GYRO_1_EXTI_PIN      PC4
 #define GYRO_1_CS_PIN        PA4
 #define GYRO_1_SPI_INSTANCE  SPI1
-#define GYRO_1_ALIGN CW0_DEG
 
 #define SPI1_SCK_PIN         PA5
 #define SPI1_SDI_PIN         PA6
@@ -98,11 +96,11 @@
 
 // TIMERS
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PA9 , 1,  1) \
-    TIMER_PIN_MAP( 1, PA8 , 1,  1) \
-    TIMER_PIN_MAP( 2, PC9 , 1,  0) \
-    TIMER_PIN_MAP( 3, PC8 , 1,  0) \
-    TIMER_PIN_MAP( 4, PB3 , 1,  0) \
+    TIMER_PIN_MAP( 0, PA9 , 1,   2) \
+    TIMER_PIN_MAP( 1, PA8 , 1,   3) \
+    TIMER_PIN_MAP( 2, PC9 , 1,   4) \
+    TIMER_PIN_MAP( 3, PC8 , 1,   5) \
+    TIMER_PIN_MAP( 4, PB3 , 1,   6) \
     TIMER_PIN_MAP( 5, PC5 , 1,  -1)
 
 // MOTORS PINOUT
@@ -114,21 +112,20 @@
 #define ADC1_DMA_OPT         1
 
 // BARO I2C
-#define BARO_I2C_INSTANCE I2CDEV_1
-#define MAG_I2C_INSTANCE I2CDEV_1
-#define USE_I2C_PULLUP
+#define BARO_I2C_INSTANCE    I2CDEV_1
+#define MAG_I2C_INSTANCE     I2CDEV_1
 
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
 
 // USERS
 #define PINIO1_PIN           PB1
-#define PINIO1_BOX 40
-#define PINIO1_CONFIG 129
+#define PINIO1_BOX           40
+#define PINIO1_CONFIG        129
 
 // DEFAULTS
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SCALE     113
-#define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
+#define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_ON
