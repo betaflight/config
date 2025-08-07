@@ -24,7 +24,7 @@
 #define FC_TARGET_MCU        AT32F435G
 
 #define BOARD_NAME           ACCIF435ELITE
-#define MANUFACTURER_ID      CUST
+#define MANUFACTURER_ID      FOSS
 
 #define USE_ACC
 #define USE_GYRO
