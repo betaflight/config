@@ -90,7 +90,6 @@
 #define ADC1_DMA_OPT                   1
 #define MAG_I2C_INSTANCE               I2CDEV_1
 #define BARO_I2C_INSTANCE              I2CDEV_1
-#define ADC_INSTANCE                   ADC1
 #define DEFAULT_DSHOT_BITBANG          DSHOT_BITBANG_ON
 #define DEFAULT_CURRENT_METER_SOURCE   CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE   VOLTAGE_METER_ADC
