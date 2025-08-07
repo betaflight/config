@@ -111,7 +111,7 @@
 
 #define ADC1_DMA_OPT         8
 
-// BARO I2C
+// I2C
 #define BARO_I2C_INSTANCE    I2CDEV_1
 #define MAG_I2C_INSTANCE     I2CDEV_1
 
@@ -122,6 +122,7 @@
 #define PINIO1_PIN           PB1
 #define PINIO1_BOX           40
 #define PINIO1_CONFIG        129
+#define BOX_USER1_NAME       "VTX PWR"
 
 // DEFAULTS
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
