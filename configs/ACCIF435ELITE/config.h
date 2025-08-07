@@ -94,22 +94,22 @@
 
 #define GYRO_1_CLKIN_PIN     PC5
 
-// TIMERS
-#define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PA9 , 1,   2) \
-    TIMER_PIN_MAP( 1, PA8 , 1,   3) \
-    TIMER_PIN_MAP( 2, PC9 , 1,   4) \
-    TIMER_PIN_MAP( 3, PC8 , 1,   5) \
-    TIMER_PIN_MAP( 4, PB3 , 1,   6) \
-    TIMER_PIN_MAP( 5, PC5 , 1,  -1)
-
 // MOTORS PINOUT
 #define MOTOR1_PIN           PA9
 #define MOTOR2_PIN           PA8
 #define MOTOR3_PIN           PC9
 #define MOTOR4_PIN           PC8
 
-#define ADC1_DMA_OPT         1
+// TIMERS
+#define TIMER_PIN_MAPPING \
+    TIMER_PIN_MAP( 0, PA9 , 1,   0) \
+    TIMER_PIN_MAP( 1, PA8 , 1,   1) \
+    TIMER_PIN_MAP( 2, PC9 , 1,   2) \
+    TIMER_PIN_MAP( 3, PC8 , 1,   3) \
+    TIMER_PIN_MAP( 4, PB3 , 1,   4) \
+    TIMER_PIN_MAP( 5, PC5 , 1,  -1)
+
+#define ADC1_DMA_OPT         8
 
 // BARO I2C
 #define BARO_I2C_INSTANCE    I2CDEV_1
