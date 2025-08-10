@@ -50,9 +50,32 @@
 #define SPI1_SDI_PIN         PA24
 #define SPI1_SDO_PIN         PA27
 
-#define SDCARD_CS_PIN        PA25
-//#define FLASH_CS_PIN         PA0
+//#define USE_MAX7456
+
 #define MAX7456_SPI_CS_PIN   PA17
+
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
+
+#define USE_FLASH
+//#define FLASH_CS_PIN         PA0	// CS1 pin automatically used by the QSPI driver
+#define USE_FLASH_CHIP
+#define USE_FLASH_W25Q128FV
+
+// Enable QUADSPI on RP2350 (pins are fixed via QMI; platform code handles them)
+#define USE_QUADSPI
+#define USE_QUADSPI_DEVICE_1
+#define FLASH_QUADSPI_INSTANCE ((QUADSPI_TypeDef *)0x1)
+
+// RP2350 QMI CS1 wiring and external flash size (Winbond W25Q64JVXGIM 8MiB)
+#define PICO_QSPI_CS1_GPIO        0
+#define PICO_QSPI_CS1_SIZE_BYTES  (8 * 1024 * 1024)
+
+#ifndef USE_MAX7456
+// MAX7456 and SD card cannot be used at the same time
+#define SDCARD_SPI_CS_PIN    PA25
+#define USE_SDCARD
+#define USE_SDCARD_SPI
+#endif
 
 #define GYRO_1_CS_PIN        PA1
 #define GYRO_1_EXTI_PIN      PA22
