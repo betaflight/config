@@ -78,9 +78,9 @@
 #define PICO_BEC_5V_ENABLE_PIN PA14
 #define PICO_BEC_9V_ENABLE_PIN PA15
 
-#define ADC_VBAT_PIN PA40
-#define ADC_CURR_PIN PA41
-#define ADC_RSSI_PIN PA42
+#define ADC_VBAT_PIN         PA40
+#define ADC_CURR_PIN         PA41
+#define ADC_RSSI_PIN         PA42
 
 /*
 
