@@ -42,6 +42,8 @@
 #define LED0_PIN             PA6
 #define LED1_PIN             PA7
 
+#define LED_STRIP_PIN        PA38
+
 #define SPI0_SCK_PIN         PA2
 #define SPI0_SDI_PIN         PA4
 #define SPI0_SDO_PIN         PA3
