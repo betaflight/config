@@ -84,11 +84,11 @@
 #define USB_DETECT_PIN                  PC3
 
 #define TIMER_PIN_MAPPING  \
-        TIMER_PIN_MAP( 0, PA1, 2,  7 ) \
-	    TIMER_PIN_MAP( 1, PA3, 1,  6 ) \
-	    TIMER_PIN_MAP( 2, PC5, 1,  -1) \
-        TIMER_PIN_MAP( 3, PB6, 1,  11) \
-        TIMER_PIN_MAP( 4, PB7, 1,  10) \
+        TIMER_PIN_MAP( 0, PA1, 2,  4 ) \
+        TIMER_PIN_MAP( 1, PA3, 1, -1 ) \
+        TIMER_PIN_MAP( 2, PC5, 1, -1 ) \
+        TIMER_PIN_MAP( 3, PB6, 1, -1 ) \
+        TIMER_PIN_MAP( 4, PB7, 1, -1 ) \
         TIMER_PIN_MAP( 5, PC9, 2,  0 ) \
         TIMER_PIN_MAP( 6, PC8, 2,  2 ) \
         TIMER_PIN_MAP( 7, PC7, 2,  1 ) \
