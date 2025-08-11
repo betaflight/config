@@ -52,10 +52,12 @@
 #define SPI1_SDI_PIN         PA24
 #define SPI1_SDO_PIN         PA27
 
-#define SDCARD_CS_PIN        PA25
+#define SDCARD_SPI_CS_PIN    PA25
 //#define FLASH_CS_PIN         PA0
-#define MAX7456_SPI_CS_PIN   PA17
-#define USE_MAX7456
+//#define MAX7456_SPI_CS_PIN   PA17
+#define USE_SDCARD
+#define USE_SDCARD_SPI
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
 
 #define GYRO_1_CS_PIN        PA1
 #define GYRO_1_EXTI_PIN      PA22
