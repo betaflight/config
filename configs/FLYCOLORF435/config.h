@@ -95,7 +95,6 @@
         TIMER_PIN_MAP( 8, PC6, 2,  3 )
 										
 #define ADC1_DMA_OPT                    11
-#define SERIALRX_UART                   SERIAL_PORT_USART2
 
 #define BARO_I2C_INSTANCE               I2CDEV_1
 #define MAG_I2C_INSTANCE                I2CDEV_1
