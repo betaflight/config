@@ -113,6 +113,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |SNMT|Shenzhen NewMumu Technolagy Co.Ltd.|http://nvisionfpv.com/|
 |SPBE|LangTian Technology (Shenzhen) Co. (SpeedyBee)|https://www.speedybee.com/|
 |SPCM|Guangzhou shi parker electronic technology Co., Ltd|https://www.spcmaker.com/|
+|SDRC|Siangda Model Co.,Ltd.|https://www.sdmodel.com.tw/|
 |SPDX|Spedix Co, Ltd.|http://www.spedix-rc.com/|
 |SPRO|Seriously Pro Racing (SP Racing)|http://seriouslypro.com/|
 |SQRE|SEQURE|https://sequremall.com|
