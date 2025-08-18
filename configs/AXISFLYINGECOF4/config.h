@@ -99,6 +99,5 @@
 #define PINIO1_CONFIG                  129
 #define BOX_USER1_NAME                 "VTX PWR"
 #define GYRO_1_SPI_INSTANCE            SPI1
-//#define GYRO_1_ALIGN                   CW180_DEG
 #define MAX7456_SPI_INSTANCE           SPI2
 #define FLASH_SPI_INSTANCE             SPI3
