@@ -23,19 +23,19 @@
 
 #define FC_TARGET_MCU       STM32H743
 
-#define BOARD_NAME          ZEX_ATHENA_PRO
+#define BOARD_NAME          ZEX_ATHENA_STD_PRO
 #define MANUFACTURER_ID     HARC
 
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
+#define USE_GYRO_CLKIN
 #define USE_GYRO_SPI_ICM42688P
 #define USE_MAX7456
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
 #define USE_BARO
 #define USE_BARO_DPS310
-#define USE_GYRO_CLKIN
 
 #define BEEPER_PIN          PE9
 #define MOTOR1_PIN          PA0
