@@ -77,6 +77,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |IFRC|iFlight Innovation Technology Ltd.|https://www.iflight-rc.com/|
 |JHEF|JHE\_FPV|https://www.jhemcu.com/|
 |KLEE|Kevin Lee (WhitenoiseFPV)|https://whitenoisefpv.com/|
+|KONX|Konex Drone, SL|https://konexdrone.com/|
 |LDAR|LDARC|http://ldarc.com/|
 |LMNR|Lumenier|https://www.lumenier.com/|
 |MARC|Mayhem RC|https://mayhemrc.com.au/|
