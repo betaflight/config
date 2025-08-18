@@ -30,6 +30,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |CLRA|CLRACING LLC|https://cl-racing.myshopify.com/|
 |CYCL|CycloneRC|http://www.cyclone-rc.com|
 |DAFP|DarwinFPV|https://darwinfpv.com/|
+|DAKE|DAKEFPV Innovation Technology Ltd|https://www.dakefpv.com/|
 |DALR|DALRC TECHNOLOGY CO,.LIMITED|http://www.dalrc.cn/DALRC/|
 |DARK|Darkmatter|https://thedarkmatter.in/|
 |DERC|DemonRC|https://demonrc.eu/|
