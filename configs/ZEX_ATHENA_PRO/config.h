@@ -35,6 +35,7 @@
 #define USE_FLASH_W25Q128FV
 #define USE_BARO
 #define USE_BARO_DPS310
+#define USE_GYRO_CLKIN
 
 #define BEEPER_PIN          PE9
 #define MOTOR1_PIN          PA0
@@ -88,6 +89,8 @@
 #define GYRO_2_EXTI_PIN     PC14
 #define GYRO_1_CS_PIN       PC15
 #define GYRO_2_CS_PIN       PC13
+#define GYRO_1_CLKIN_PIN    PA15
+#define GYRO_2_CLKIN_PIN    PA15
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0,  PA0 , 2,  0) /* TIM5  CH1 (AF2) DMA1 Stream 1 Request  55 */ \
@@ -101,7 +104,8 @@
     TIMER_PIN_MAP( 8,  PE5 , 1, -1) /* TIM15 CH1 (AF4) DMA1 Stream 1 Request 105 */ \
     TIMER_PIN_MAP( 9,  PE6 , 1, -1) /* TIM15 CH2 (AF4)                           */ \
     TIMER_PIN_MAP(10,  PA8 , 1,  8) /* TIM1  CH1 (AF1) DMA1 Stream 1 Request  11 */ \
-    TIMER_PIN_MAP(11,  PE9 , 1, -1) /* TIM1  CH1 (AF1)                           */
+    TIMER_PIN_MAP(11,  PE9 , 1, -1) /* TIM1  CH1 (AF1)                           */ \
+    TIMER_PIN_MAP(12,  PA15, 1, -1) /* TIM2  CH1 (AF1)                           */
 
 #define ADC1_DMA_OPT                    9 /*# ADC 1: DMA2 Stream 0 Request 9*/
 #define ADC3_DMA_OPT                    10 /*# ADC 3: DMA2 Stream 1 Request 115*/
