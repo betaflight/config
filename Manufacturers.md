@@ -25,30 +25,31 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |BKMN|Jason Blackman|https://github.com/blckmn|
 |BROT|Brotherhobby Co., Ltd|https://brotherhobby.com/|
 |BSTF|BEASTFPV|http://www.beastfpv.com/|
-|CADX|CADDX TECHNOLOGY (SHENZHEN) CO., LTD|https://caddxfpv.com/|
+|CADX|CADDX TECHNOLOGY (SHENZHEN) Co., Ltd|https://caddxfpv.com/|
 |CCRC|Sunhey Now|https://sunheyccrc.aliexpress.com/|
 |CLRA|CLRACING LLC|https://cl-racing.myshopify.com/|
 |CYCL|CycloneRC|http://www.cyclone-rc.com|
 |DAFP|DarwinFPV|https://darwinfpv.com/|
-|DALR|DALRC TECHNOLOGY CO,.LIMITED|http://www.dalrc.cn/DALRC/|
+|DAKE|DAKEFPV Innovation Technology Ltd|https://www.dakefpv.com/|
+|DALR|DALRC TECHNOLOGY Co., Ltd|http://www.dalrc.cn/DALRC/|
 |DARK|Darkmatter|https://thedarkmatter.in/|
 |DERC|DemonRC|https://demonrc.eu/|
 |DFRA|Drone FPV Racer|https://www.drone-fpv-racer.com/|
-|DFRC|Shenzhen Jingfei Technology Co., LTD|https://dreamflyrc.com/|
+|DFRC|Shenzhen Jingfei Technology Co., Ltd|https://dreamflyrc.com/|
 |DIAT|Diatone Innovations|https://www.diatoneusa.com/|
 |DRCL|dronercland|https://www.instagram.com/dronercland/|
 |DREA|DREAMRC|https://github.com/dreamworks-fpv|
-[DRNR|Shenzhen Zhimu Technology Co., Ltd|https://www.droneer.com|
+|DRNR|Shenzhen Zhimu Technology Co., Ltd|https://www.droneer.com|
 |DRRC|DroidRC|https://github.com/xiaoxiabub|
-|DYST|DongYang Smart Technology Co.,Ltd (dys)|http://www.dys.hk/|
+|DYST|DongYang Smart Technology Co., Ltd (dys)|http://www.dys.hk/|
 |EACH|eachine|https://www.eachine.com/|
 |EASP|Ewing Aerospace|https://ewingaerospace.com/|
 |EXUA|EXUAV FPV|https://github.com/Linjieqiang|
 |FFPV|Furious FPV|https://furiousfpv.com/|
 |FFRC|FlyFishRC|https://www.flyfish-rc.com/|
-|FISM|Shenzhen Micheng Innovation Technology Co., Ltd.|http://www.michenginnovation.com/|
+|FISM|Shenzhen Micheng Innovation Technology Co., Ltd|http://www.michenginnovation.com/|
 |FLAO|FLAO Limited|https://www.sunrisemodel.com|
-|FLCO|Shenzhen Flycolor Electronic Co., LTD|http://www.flycolor.net/|
+|FLCO|Shenzhen Flycolor Electronic Co., Ltd|http://www.flycolor.net/|
 |FLHI|Fly High|https://elektronchika.github.io/flyhigh/|
 |FLLF|Flying Lemon FPV|https://github.com/flyinglemonfpv|
 |FLON|FlightOne|https://flightone.com/|
@@ -67,15 +68,16 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |HBRD|Hummingbird|https://newbeedrone.com/collections/hummingbird|
 |HBRO|Holybro|http://www.holybro.com/index.html|
 |HDZO|Divimath, Inc.|https://www.hd-zero.com/|
-|HEBI|Shenzhen High Energy Bili Co., Ltd.|http://www.coddar.net/|
+|HEBI|Shenzhen High Energy Bili Co., Ltd|http://www.coddar.net/|
 |HENA|Heli-Nation|https://www.heli-nation.com/|
 |HFOR|HIFIONRC|http://www.hifionrc.com/|
 |HGLR|HGLRC|https://www.hglrc.com/|
-|HNEC|Huizhou NIDICI Electronic Co., LTD|https://shop.nidici.com/|
-|HOWI|Hobbywing Technology CO., LTD.|http://hobbywing.com/|
+|HNEC|Huizhou NIDICI Electronic Co., Ltd|https://shop.nidici.com/|
+|HOWI|Hobbywing Technology Co., Ltd|http://hobbywing.com/|
 |IFRC|iFlight Innovation Technology Ltd.|https://www.iflight-rc.com/|
 |JHEF|JHE\_FPV|https://www.jhemcu.com/|
 |KLEE|Kevin Lee (WhitenoiseFPV)|https://whitenoisefpv.com/|
+|KONX|Konex Drone, SL|https://konexdrone.com/|
 |LDAR|LDARC|http://ldarc.com/|
 |LMNR|Lumenier|https://www.lumenier.com/|
 |MARC|Mayhem RC|https://mayhemrc.com.au/|
@@ -86,7 +88,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |MOQU|Modd Quad|https://www.moddquad.com/|
 |MTKS|Matek Systems|http://www.mateksys.com/|
 |MZGC|Manaz GCS|https://www.shop-mzgcs.de/|
-|NAMO|Namimno Silan Electronic Technology Co.Ltd|http://namimnorc.com/|
+|NAMO|Namimno Silan Electronic Technology Co., Ltd|http://namimnorc.com/|
 |NEBD|NewBeeDrone|https://newbeedrone.com/|
 |NERC|NeutronRC|https://www.facebook.com/Neutronrc-575638996448880|
 |NGUA|NG.UAVP|https://ng.uavp.ch/Shop|
@@ -95,7 +97,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |OPEN|OpenPilot|https://librepilot.atlassian.net/wiki/spaces/LPDOC/pages/31588369/Supported+Hardware|
 |ORBT|Orbit Technology|https://www.orbitteknoloji.com.tr/|
 |ORQA|Orqa Ltd|https://orqafpv.com/|
-|OXBT|Zhuhai Oxbot Technology, Co, Ltd|https://www.oxbot.com/|
+|OXBT|Zhuhai Oxbot Technology Co., Ltd|https://www.oxbot.com/|
 |PRIN|PrincipIoT LLC|https://principiot.com/|
 |PYDR|Pyro-Drone|https://pyrodrone.com/|
 |PYID|PYI Technologies|https://pyidrones.com/|
@@ -105,15 +107,16 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |RCTI|RCTimer|http://rctimer.com/|
 |RDMS|RadioMaster RC|https://www.radiomasterrc.com/|
 |RUSH|FPV Racing Rush|http://www.rushfpv.com/|
-|SJET|Shenzhen Jiufang Electronic Technology Co., Ltd.|https://www.jiufang-tech.com/|
-|SSAK|Dezhou Yingfei Intelligent Technology Co., Ltd.||
+|SJET|Shenzhen Jiufang Electronic Technology Co., Ltd|https://www.jiufang-tech.com/|
+|SSAK|Dezhou Yingfei Intelligent Technology Co., Ltd||
 |SKST|Shenzhen SKYSTARS Tech Co., LIMITED|http://www.skystars-rc.com/index.html|
 |SKZO|SkyZone|http://www.skyzonehobbies.com/|
 |SLGD|Sologood RC|https://www.sologood.net/|
-|SNMT|Shenzhen NewMumu Technolagy Co.Ltd.|http://nvisionfpv.com/|
+|SNMT|Shenzhen NewMumu Technology Co., Ltd|http://nvisionfpv.com/|
 |SPBE|LangTian Technology (Shenzhen) Co. (SpeedyBee)|https://www.speedybee.com/|
 |SPCM|Guangzhou shi parker electronic technology Co., Ltd|https://www.spcmaker.com/|
-|SPDX|Spedix Co, Ltd.|http://www.spedix-rc.com/|
+|SDRC|Siangda Model Co., Ltd|https://www.sdmodel.com.tw/|
+|SPDX|Spedix Co., Ltd|http://www.spedix-rc.com/|
 |SPRO|Seriously Pro Racing (SP Racing)|http://seriouslypro.com/|
 |SQRE|SEQURE|https://sequremall.com|
 |STBE|StingBee|https://stingbee.com.ua|
@@ -121,13 +124,13 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |TACO|Taco RC|https://taco-rc.com/|
 |TCMM|Shenzhen Xinmumu Science and Technology Co (TCMM)|http://www.tcmm-rc.cn/|
 |TEBS|Team Blacksheep|https://www.team-blacksheep.com/|
-|TJRC|Feijian Technology (Shenzhen) Co., Ltd.|http://www.tjrcfpv.com/|
+|TJRC|Feijian Technology (Shenzhen) Co., Ltd|http://www.tjrcfpv.com/|
 |TMTR|T-motor|http://uav-en.tmotor.com/|
 |TTRH|TransTEC|http://www.transtechobby.com/|
 |TURC|TUNERC|https://www.tunerc.com/|
 |VGRC|V-GOOD Technology Co.|http://www.vgoodrc.com/|
 |VIVA|VivaFPV|https://vivafpv.com/|
-|VWIN|Huizhou Xinchuang Technology Co., Ltd.||
+|VWIN|Huizhou Xinchuang Technology Co., Ltd||
 |WDIY|WDIY|http://wdiy.net.cn/|
 |WIZZ|WIZZ|https://wizz.store/|
 |WRPL|Warp Labs|https://www.warplabs.it/|
