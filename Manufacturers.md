@@ -52,7 +52,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |FISM|Shenzhen Micheng Innovation Technology Co., Ltd|http://www.michenginnovation.com/|
 |FLAO|FLAO Limited|https://www.sunrisemodel.com|
 |FLCO|Shenzhen Flycolor Electronic Co., Ltd|http://www.flycolor.net/|
-|FLHB|Flash Hobby|https://flashhobby.com/|
+|FLHB|Flash Hobby Technology Co.,Limited|https://flashhobby.com/|
 |FLHI|Fly High|https://elektronchika.github.io/flyhigh/|
 |FLLF|Flying Lemon FPV|https://github.com/flyinglemonfpv|
 |FLMO|FLMO||
