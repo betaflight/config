@@ -98,7 +98,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |NAMO|Namimno Silan Electronic Technology Co., Ltd|http://namimnorc.com/|
 |NEBD|NewBeeDrone|https://newbeedrone.com/|
 |NERC|NeutronRC|https://www.facebook.com/Neutronrc-575638996448880|
-|NGUA|NG.UAVP|httpshttps://ng.uavp.ch/Shop|
+|NGUA|NG.UAVP|https://ng.uavp.ch/Shop|
 |NYXT|Nyxtronics|https://nyxtronics.com|
 |ODTY|OddityRC|http://www.oddityrc.com|
 |OPEN|OpenPilot|https://librepilot.atlassian.net/wiki/spaces/LPDOC/pages/31588369/Supported+Hardware|
