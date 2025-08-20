@@ -48,7 +48,6 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |EXUA|EXUAV FPV|https://github.com/Linjieqiang|
 |FFPV|Furious FPV|https://furiousfpv.com/|
 |FFRC|FlyFishRC|https://www.flyfish-rc.com/|
-|FISH|SwellPro|https://swellpro.com/|
 |FISM|Shenzhen Micheng Innovation Technology Co., Ltd|http://www.michenginnovation.com/|
 |FLAO|FLAO Limited|https://www.sunrisemodel.com|
 |FLCO|Shenzhen Flycolor Electronic Co., Ltd|http://www.flycolor.net/|
