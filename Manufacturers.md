@@ -81,7 +81,6 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |HOWI|Hobbywing Technology Co., Ltd|http://hobbywing.com/|
 |IFRC|iFlight Innovation Technology Ltd.|https://www.iflight-rc.com/|
 |JHEF|Chenzhen Jinhang Electronic Co., Ltd|https://www.jhemcu.com/|
-|JMI|JHEMCU|https://www.jhemcu.com/|
 |KLEE|Kevin Lee (WhitenoiseFPV)|https://whitenoisefpv.com/|
 |KONX|Konex Drone, SL|https://konexdrone.com/|
 |LDAR|LDARC|http://ldarc.com/|
