@@ -24,7 +24,7 @@
 #define FC_TARGET_MCU     STM32F7X2
 
 #define BOARD_NAME        GRAVITYF7
-#define MANUFACTURER_ID   FLMO
+#define MANUFACTURER_ID   STBE
 
 #define USE_GYRO
 #define USE_GYRO_SPI_MPU6000
