@@ -38,6 +38,7 @@
 #define USE_BARO_DPS310
 
 #define BEEPER_PIN          PE9
+#define CAMERA_CONTROL_PIN  PB0
 #define MOTOR1_PIN          PA0
 #define MOTOR2_PIN          PA1
 #define MOTOR3_PIN          PA2
@@ -105,7 +106,8 @@
     TIMER_PIN_MAP( 9,  PE6 , 1, -1) /* TIM15 CH2 (AF4)                           */ \
     TIMER_PIN_MAP(10,  PA8 , 1,  8) /* TIM1  CH1 (AF1) DMA1 Stream 1 Request  11 */ \
     TIMER_PIN_MAP(11,  PE9 , 1, -1) /* TIM1  CH1 (AF1)                           */ \
-    TIMER_PIN_MAP(12,  PA15, 1, -1) /* TIM2  CH1 (AF1)                           */
+    TIMER_PIN_MAP(12,  PA15, 1, -1) /* TIM2  CH1 (AF1)                           */ \
+    TIMER_PIN_MAP(13,  PB0 , 1, -1) /* TIM3  CH3 (AF2)                           */
 
 #define ADC1_DMA_OPT                    9 /*# ADC 1: DMA2 Stream 0 Request 9*/
 #define ADC3_DMA_OPT                    10 /*# ADC 3: DMA2 Stream 1 Request 115*/
