@@ -39,6 +39,11 @@
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
+#ifndef USE_MAG
+#define USE_MAG
+#define USE_MAG_QMC5883
+#define USE_MAG_IST8310
+#endif
 
 #define BEEPER_PIN           PB4
 #define MOTOR1_PIN           PB0
@@ -60,6 +65,8 @@
 #define UART4_RX_PIN         PA1
 #define UART5_RX_PIN         PD2
 #define UART6_RX_PIN         PC7
+#define I2C1_SCL_PIN         PB8
+#define I2C1_SDA_PIN         PB9
 #define INVERTER_PIN_UART3   PC9
 #define INVERTER_PIN_UART6   PC8
 #define LED0_PIN             PB5
