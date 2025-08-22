@@ -95,8 +95,6 @@
 #define ADC_VBAT_PIN                        PC4
 #define ADC_CURR_PIN                        PA3
 
-#define PINIO1_PIN                          PC11
-
 #define FLASH_CS_PIN                        PC13
 #define FLASH_SPI_INSTANCE                  SPI3
 
