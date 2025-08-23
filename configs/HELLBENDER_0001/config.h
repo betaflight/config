@@ -56,10 +56,10 @@
 
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
 
-#define FLASH_CS_PIN         PA0
+#define USE_FLASH
+//#define FLASH_CS_PIN         PA0	// CS1 pin automatically used by the QSPI driver
 #define USE_FLASH_CHIP
 #define USE_FLASH_W25Q128FV
-#define USE_FLASHFS
 
 // Enable QUADSPI on RP2350 (pins are fixed via QMI; platform code handles them)
 #define USE_QUADSPI
