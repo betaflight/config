@@ -78,6 +78,7 @@
 #define I2C1_SCL_PIN                        PB8
 #define I2C1_SDA_PIN                        PB9
 
+// test board uses PC15, new revision will use PA8
 #define LED0_PIN                            PC15
 
 #define SPI1_SCK_PIN                        PA5
