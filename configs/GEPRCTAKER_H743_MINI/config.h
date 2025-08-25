@@ -39,10 +39,6 @@
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
 #define USE_GYRO_CLKIN
-#define USE_TIMER_MAP_PRINT
-#define USE_MAG
-#define USE_MAG_QMC5883
-#define USE_MAG_IST8310
 
 #define BEEPER_PIN           PD2 
 #define MOTOR1_PIN           PC6
