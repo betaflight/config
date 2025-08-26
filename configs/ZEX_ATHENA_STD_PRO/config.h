@@ -110,11 +110,8 @@
 
 #define ADC1_DMA_OPT                    9 /*# ADC 1: DMA2 Stream 0 Request 9*/
 #define ADC3_DMA_OPT                    10 /*# ADC 3: DMA2 Stream 1 Request 115*/
-#define TIMUP1_DMA_OPT                  0 /*# TIMUP 1: DMA1 Stream 0 Request 15*/
-#define TIMUP3_DMA_OPT                  2 /*# TIMUP 3: DMA1 Stream 2 Request 27*/
-#define TIMUP4_DMA_OPT                  1 /*# TIMUP 4: DMA1 Stream 1 Request 32*/
-#define TIMUP5_DMA_OPT                  0 /*# TIMUP 5: DMA1 Stream 0 Request 59*/
-#define TIMUP8_DMA_OPT                  0 /*# TIMUP 8: DMA1 Stream 0 Request 51*/
+#define TIMUP4_DMA_OPT                  11 /*# TIMUP 4: DMA1 Stream 1 Request 32*/
+#define TIMUP5_DMA_OPT                  12 /*# TIMUP 5: DMA1 Stream 0 Request 59*/
 
 #define SERIALRX_UART                   SERIAL_PORT_USART2
 #define DEFAULT_GYRO_TO_USE             GYRO_CONFIG_USE_GYRO_BOTH
