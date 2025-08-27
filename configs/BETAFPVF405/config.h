@@ -62,7 +62,6 @@
 #define UART6_RX_PIN         PC7
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
-#define MAG_I2C_INSTANCE     I2CDEV_1
 #define INVERTER_PIN_UART3   PC9
 #define INVERTER_PIN_UART6   PC8
 #define LED0_PIN             PB5
@@ -103,7 +102,7 @@
 
 #define ADC2_DMA_OPT        1
 
-#define MAG_I2C_INSTANCE I2CDEV_2
+#define MAG_I2C_INSTANCE I2CDEV_1
 #define BARO_SPI_INSTANCE SPI3
 #define DEFAULT_BARO_DEVICE BARO_NONE
 
