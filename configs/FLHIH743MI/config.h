@@ -41,7 +41,6 @@
 
 #define BEEPER_PIN          PD2
 
-#define FLASH_CS_PIN        PA4
 #define SDCARD_SPI_CS_PIN   PA4
 
 #define GYRO_1_EXTI_PIN     PB2
@@ -99,19 +98,19 @@
 #define UART8_RX_PIN        PE0 // currently unused
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, MOTOR1_PIN,    2,  0) \
-    TIMER_PIN_MAP( 1, MOTOR2_PIN,    2,  0) \
-    TIMER_PIN_MAP( 2, MOTOR3_PIN,    1,  0) \
-    TIMER_PIN_MAP( 3, MOTOR4_PIN,    1,  0) \
-    TIMER_PIN_MAP( 4, LED_STRIP_PIN, 1,  0)
+    TIMER_PIN_MAP( 0, LED_STRIP_PIN, 1, 0 ) \
+    TIMER_PIN_MAP( 1, MOTOR1_PIN,    2, 1 ) \
+    TIMER_PIN_MAP( 2, MOTOR2_PIN,    2, 2 ) \
+    TIMER_PIN_MAP( 3, MOTOR3_PIN,    1, 3 ) \
+    TIMER_PIN_MAP( 4, MOTOR4_PIN,    1, 4 )
 
 #define ADC1_DMA_OPT                    8
 #define ADC2_DMA_OPT                    9
 #define ADC3_DMA_OPT                    10
 
-#define BARO_I2C_INSTANCE               (I2CDEV_1)
-#define MAG_I2C_INSTANCE                (I2CDEV_1)
-#define FLASH_SPI_INSTANCE              SPI6
+#define BARO_I2C_INSTANCE               I2CDEV_1
+#define MAG_I2C_INSTANCE                I2CDEV_1
+
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define GYRO_2_SPI_INSTANCE             SPI2
 #define SDCARD_SPI_INSTANCE             SPI6
@@ -124,7 +123,6 @@
 
 #define BEEPER_INVERTED
 
-#define DEFAULT_GYRO_TO_USE             GYRO_CONFIG_USE_GYRO_1
 #define GYRO_1_ALIGN                    CW180_DEG
 #define GYRO_1_ALIGN_PITCH              1800
 #define GYRO_2_ALIGN                    CW270_DEG
