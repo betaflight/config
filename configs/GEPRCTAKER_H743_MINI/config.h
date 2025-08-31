@@ -87,7 +87,6 @@
 #define GYRO_1_CS_PIN        PB12
 #define GYRO_1_CLKIN_PIN     PB0
 
-
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, LED_STRIP_PIN, 1, 0) \
     TIMER_PIN_MAP( 1, MOTOR1_PIN,    2, 1) \
@@ -103,7 +102,7 @@
 #define ADC1_DMA_OPT                    9
 #define ADC3_DMA_OPT                    10
 #define TIMUP1_DMA_OPT                  11
-#define TIMUP8_DMA_OPT                  12
+#define TIMUP3_DMA_OPT                  12
 
 #define MSP_DISPLAYPORT_UART            SERIAL_PORT_USART1
 #define SERIALRX_UART                   SERIAL_PORT_USART2
