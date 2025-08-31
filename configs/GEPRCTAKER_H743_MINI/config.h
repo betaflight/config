@@ -102,9 +102,8 @@
 
 #define ADC1_DMA_OPT                    9
 #define ADC3_DMA_OPT                    10
-#define TIMUP3_DMA_OPT                  11
-#define TIMUP4_DMA_OPT                  12
-#define TIMUP8_DMA_OPT                  13
+#define TIMUP1_DMA_OPT                  11
+#define TIMUP8_DMA_OPT                  12
 
 #define MSP_DISPLAYPORT_UART            SERIAL_PORT_USART1
 #define SERIALRX_UART                   SERIAL_PORT_USART2
