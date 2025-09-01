@@ -60,7 +60,6 @@
  #define I2C1_SDA_PIN         PB9
  #define I2C2_SDA_PIN         PB11
  #define LED0_PIN             PC14
- #define LED1_PIN             PC15
  #define SPI1_SCK_PIN         PA5
  #define SPI2_SCK_PIN         PB13
  #define SPI3_SCK_PIN         PB3
