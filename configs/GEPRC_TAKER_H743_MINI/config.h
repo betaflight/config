@@ -22,7 +22,7 @@
 #pragma once
 
 #define FC_TARGET_MCU     STM32H743
-#define BOARD_NAME        GEPRCTAKER_H743_MINI
+#define BOARD_NAME        GEPRC_TAKER_H743_MINI
 #define MANUFACTURER_ID   GEPR
 
 #define USE_ACC
