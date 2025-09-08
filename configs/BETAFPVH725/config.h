@@ -35,6 +35,7 @@
 #define USE_FLASH
 #define USE_FLASH_M25P16
 #define USE_MAX7456
+#define USE_GYRO_CLKIN
 
 #define BEEPER_PIN           PC9
 
@@ -84,19 +85,21 @@
 #define ADC_VBAT_PIN         PC0
 #define ADC_CURR_PIN         PC1
 
-#define PINIO1_PIN           PB7
+#define PINIO1_PIN           PC15
 
 #define FLASH_CS_PIN         PB6
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
 #define GYRO_1_CS_PIN        PA4
+#define GYRO_1_CLKIN_PIN     PB7
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, LED_STRIP_PIN, 1,  0)  \
     TIMER_PIN_MAP( 1, MOTOR1_PIN,    1,  1 ) \
     TIMER_PIN_MAP( 2, MOTOR2_PIN,    1,  2 ) \
     TIMER_PIN_MAP( 3, MOTOR3_PIN,    2,  3 ) \
-    TIMER_PIN_MAP( 4, MOTOR4_PIN,    2,  4 )
+    TIMER_PIN_MAP( 4, MOTOR4_PIN,    2,  4 ) \
+    TIMER_PIN_MAP( 5, GYRO_1_CLKIN_PIN, 2, -1 )
 
 #define ADC_INSTANCE                    ADC3
 #define ADC3_DMA_OPT                    10
@@ -126,6 +129,7 @@
 #define BEEPER_INVERTED
 #define MAX7456_SPI_INSTANCE            SPI2
 #define PINIO1_BOX                      40
-#define PINIO1_CONFIG                   129
+#define PINIO1_CONFIG                   1
 #define FLASH_SPI_INSTANCE              SPI3
 #define GYRO_1_SPI_INSTANCE             SPI1
+#define DEFAULT_ALIGN_BOARD_YAW	        45
