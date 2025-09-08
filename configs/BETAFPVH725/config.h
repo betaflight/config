@@ -99,7 +99,7 @@
     TIMER_PIN_MAP( 2, MOTOR2_PIN,    1,  2 ) \
     TIMER_PIN_MAP( 3, MOTOR3_PIN,    2,  3 ) \
     TIMER_PIN_MAP( 4, MOTOR4_PIN,    2,  4 ) \
-    TIMER_PIN_MAP( 5,        PB7,    2, -1 )
+    TIMER_PIN_MAP( 5, GYRO_1_CLKIN_PIN, 2, -1 )
 
 #define ADC_INSTANCE                    ADC3
 #define ADC3_DMA_OPT                    10
