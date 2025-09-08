@@ -129,7 +129,7 @@
 #define BEEPER_INVERTED
 #define MAX7456_SPI_INSTANCE            SPI2
 #define PINIO1_BOX                      40
-#define PINIO1_CONFIG                   129
+#define PINIO1_CONFIG                   1
 #define FLASH_SPI_INSTANCE              SPI3
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define DEFAULT_ALIGN_BOARD_YAW	        45
