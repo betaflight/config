@@ -207,5 +207,7 @@
 #define MSP_DISPLAYPORT_UART SERIAL_PORT_USART2
 #endif
 #define MSP_UART             SERIAL_PORT_USART3
+#ifdef USE_GPS
 #define GPS_UART             SERIAL_PORT_UART4
+#endif
 #define ESC_SENSOR_UART      SERIAL_PORT_USART8
