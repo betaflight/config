@@ -22,8 +22,8 @@
 #pragma once
 
 #define FC_TARGET_MCU     STM32H743
-#define BOARD_NAME        XROTOR-H7
-#define MANUFACTURER_ID   HW
+#define BOARD_NAME        HWH7
+#define MANUFACTURER_ID   HOWI
 
 //Gyroscope
 #define USE_ACC
@@ -74,6 +74,8 @@
 #define GYRO_1_CLKIN_PIN              PB8     //TIM16_CH1,
 #define GYRO_2_CLKIN_PIN              PB9     //TIM17_CH1
 
+#define DEFAULT_GYRO_TO_USE          GYRO_1
+
 //ICM-42688 (1)
 #define ENSURE_MPU_DATA_READY_IS_LOW          //防止重复中断
 #define SPI1_SCK_PIN                  PA5
@@ -100,7 +102,7 @@
 #define UART1_RX_PIN                  PA10    //
 #define UART2_TX_PIN                  PA2     //
 #define UART2_RX_PIN                  PA3     //
-#define UART3_TX_PIN                  PD8     //BLUE TOOL
+#define UART3_TX_PIN                  PD8     //BLUETOOTH
 #define UART3_RX_PIN                  PD9     //
 #define UART4_TX_PIN                  PD1     //仅串口功能
 #define UART4_RX_PIN                  PD0     //仅串口功能
@@ -154,10 +156,10 @@
 
 //TIME MAP
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP(0, MOTOR1_PIN, 1, 2) \
-    TIMER_PIN_MAP(1, MOTOR2_PIN, 1, 3) \
-    TIMER_PIN_MAP(2, MOTOR3_PIN, 1, 4) \
-    TIMER_PIN_MAP(3, MOTOR4_PIN, 1, 5) \
+    TIMER_PIN_MAP(0, MOTOR1_PIN, 1, 1) \
+    TIMER_PIN_MAP(1, MOTOR2_PIN, 1, 2) \
+    TIMER_PIN_MAP(2, MOTOR3_PIN, 1, 3) \
+    TIMER_PIN_MAP(3, MOTOR4_PIN, 1, 4) \
     TIMER_PIN_MAP(4, MOTOR7_PIN, 1, -1) \
     TIMER_PIN_MAP(5, GYRO_1_CLKIN_PIN, 1, -1) \
     TIMER_PIN_MAP(6, MOTOR5_PIN, 1, -1) \
@@ -201,7 +203,9 @@
 //Default Module
 #define SERIALRX_PROVIDER        SERIALRX_CRSF
 #define SERIALRX_UART        SERIAL_PORT_USART1
+#ifdef USE_OSD_HD
 #define MSP_DISPLAYPORT_UART SERIAL_PORT_USART2
+#endif
 #define MSP_UART             SERIAL_PORT_USART3
 #define GPS_UART             SERIAL_PORT_UART4
 #define ESC_SENSOR_UART      SERIAL_PORT_USART8
