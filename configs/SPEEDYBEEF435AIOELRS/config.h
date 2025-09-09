@@ -73,12 +73,12 @@
 #define LED_STRIP_PIN           PB12
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP(0, MOTOR1_PIN,       1,  3) \
-    TIMER_PIN_MAP(1, MOTOR2_PIN,       1,  4) \
-    TIMER_PIN_MAP(2, MOTOR3_PIN,       2,  7) \
-    TIMER_PIN_MAP(3, MOTOR4_PIN,       2,  5) \
+    TIMER_PIN_MAP(0, MOTOR1_PIN,       1,  1) \
+    TIMER_PIN_MAP(1, MOTOR2_PIN,       1,  2) \
+    TIMER_PIN_MAP(2, MOTOR3_PIN,       2,  3) \
+    TIMER_PIN_MAP(3, MOTOR4_PIN,       2,  4) \
     TIMER_PIN_MAP(4, BEEPER_PIN,       1, -1) \
-    TIMER_PIN_MAP(5, LED_STRIP_PIN,    1,  6) \
+    TIMER_PIN_MAP(5, LED_STRIP_PIN,    1,  0) \
     TIMER_PIN_MAP(6, GYRO_1_CLKIN_PIN, 1, -1)
 
 #define ADC_INSTANCE            ADC1
