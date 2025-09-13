@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F411
 
-#define BOARD_NAME        MATEKF411TE
+#define BOARD_NAME        MATEKF411WTE
 #define MANUFACTURER_ID   MTKS
 
 #define USE_ACC
@@ -87,10 +87,10 @@
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PB6 , 1,  0) \
     TIMER_PIN_MAP( 1, PB7 , 1,  0) \
-    TIMER_PIN_MAP( 2, PB0 , 2, 0) \
-    TIMER_PIN_MAP( 3, PB1 , 2, 0) \
-    TIMER_PIN_MAP( 4, PB4 , 2, 0) \
-    TIMER_PIN_MAP( 5, PB5 , 2, 0) \
+    TIMER_PIN_MAP( 2, PB0 , 2, -1) \
+    TIMER_PIN_MAP( 3, PB1 , 2, -1) \
+    TIMER_PIN_MAP( 4, PB4 , 2, -1) \
+    TIMER_PIN_MAP( 5, PB5 , 2, -1) \
     TIMER_PIN_MAP( 6, PA8 , 1,  0)
 
 #define ADC1_DMA_OPT                   0
