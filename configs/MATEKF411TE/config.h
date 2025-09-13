@@ -41,8 +41,6 @@
 #define USE_BARO_BMP085
 #define USE_BARO_DPS310
 #define USE_SOFTSERIAL
-#define USE_SOFTSERIAL1
-#define USE_SOFTSERIAL2
 
 
 #ifndef USE_WING
