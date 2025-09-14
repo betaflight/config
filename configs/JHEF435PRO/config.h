@@ -99,4 +99,7 @@
 #define FLASH_SPI_INSTANCE              SPI3
 #define BARO_I2C_INSTANCE               I2CDEV_2
 #define MAG_I2C_INSTANCE                I2CDEV_2
+#define PINIO1_BOX                      40
+#define PINIO1_CONFIG                   129
+#define BOX_USER1_NAME                  "COB"
 #define LED0_INVERTED
