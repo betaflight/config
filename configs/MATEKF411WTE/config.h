@@ -83,6 +83,7 @@
 #define LED1_PIN             PA13
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_CS_PIN        PC13
+#define GYRO_1_EXTI_PIN      PC14
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PB6 , 1,  0) \
