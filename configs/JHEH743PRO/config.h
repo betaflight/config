@@ -104,7 +104,7 @@
 
 #define GYRO_2_EXTI_PIN      PE15
 #define GYRO_2_CS_PIN        PE11
-#define GYRO_2_CLKIN_PIN     PD12
+#define GYRO_2_CLKIN_PIN     PD13
 
 #define USB_DETECT_PIN       PE6
 
@@ -118,7 +118,8 @@
     TIMER_PIN_MAP( 6, PB4,  1,  6 ) \
     TIMER_PIN_MAP( 7, PB5,  1,  7 ) \
     TIMER_PIN_MAP( 8, PA8,  1,  8 ) \
-    TIMER_PIN_MAP( 9, PD12, 1, -1 )
+    TIMER_PIN_MAP( 9, PD12, 1, -1 ) \
+    TIMER_PIN_MAP(10, PD13, 1, -1 )
 
 #define ADC1_DMA_OPT    9
 #define ADC3_DMA_OPT    10
