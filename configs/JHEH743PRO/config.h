@@ -142,6 +142,8 @@
 #define PINIO2_BOX                     41
 #define PINIO1_CONFIG                  129
 #define PINIO2_CONFIG                  129
+#define BOX_USER1_NAME                 "COB"
+#define BOX_USER2_NAME                 "10V BEC"
 #define GYRO_1_SPI_INSTANCE            SPI1
 #define GYRO_1_ALIGN                   CW180_DEG
 #define GYRO_2_SPI_INSTANCE            SPI4
