@@ -96,7 +96,7 @@
     TIMER_PIN_MAP( 4, PD12, 1,  4) /* TIM4_CH1 */ \
     TIMER_PIN_MAP( 5, PD13, 1,  5) /* TIM4_CH2 */ \
     TIMER_PIN_MAP( 6, PD14, 1,  6) /* TIM4_CH3 */ \
-    TIMER_PIN_MAP( 7, PD15, 1,  7) /* TIM4_CH4 NO DMA */ \
+    TIMER_PIN_MAP( 7, PD15, 1,  -1) /* TIM4_CH4 NO DMA */ \
     TIMER_PIN_MAP( 8, PC6 , 2, -1) /* TIM8_CH1 */ \
     TIMER_PIN_MAP( 9, PC7 , 2, -1) /* TIM8_CH2 */ \
     TIMER_PIN_MAP(10, PE5 , 1, -1) /* TIM15_CH1 */
