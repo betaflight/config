@@ -26,8 +26,6 @@
 #define BOARD_NAME        AEROH7DIGITAL
 #define MANUFACTURER_ID   AERO
 
-#define SYSTEM_HSE_MHZ 16
-
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
@@ -101,31 +99,32 @@
     TIMER_PIN_MAP( 9, PC7 , 1, -1) /* TIM3_CH2 */ \
     TIMER_PIN_MAP(10, PE5 , 1, -1) /* TIM15_CH1 */
 
-#define ADC1_DMA_OPT         8
-#define ADC3_DMA_OPT         9
+#define ADC1_DMA_OPT                 8
+#define ADC3_DMA_OPT                 9
 
-#define BARO_I2C_INSTANCE I2CDEV_1
-#define MAG_I2C_INSTANCE I2CDEV_4
+#define BARO_I2C_INSTANCE            I2CDEV_1
+#define MAG_I2C_INSTANCE             I2CDEV_4
 
-#define SERIALRX_UART SERIAL_PORT_UART4
+#define SERIALRX_UART                SERIAL_PORT_UART4
 #ifdef USE_GPS
-#define GPS_UART SERIAL_PORT_UART8
+#define GPS_UART                     SERIAL_PORT_UART8
 #endif
-#define MSP_DISPLAYPORT_UART SERIAL_PORT_USART2
-#define ESC_SENSOR_UART SERIAL_PORT_USART3
+#define MSP_DISPLAYPORT_UART         SERIAL_PORT_USART2
+#define ESC_SENSOR_UART              SERIAL_PORT_USART3
 
 #define DEFAULT_BLACKBOX_DEVICE      BLACKBOX_DEVICE_SDCARD
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
-#define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_ON
-#define SDCARD_DETECT_PIN NONE
-#define SDIO_DEVICE SDIODEV_1
-#define SDIO_USE_4BIT 1
+#define DEFAULT_DSHOT_BITBANG        DSHOT_BITBANG_ON
 
-#define PINIO1_BOX 40
-#define PINIO1_CONFIG 129
-#define BOX_USER1_NAME "10V BEC"
+#define SYSTEM_HSE_MHZ               16
 
-#define GYRO_1_SPI_INSTANCE SPI1
-#define GYRO_1_ALIGN CW90_DEG
+#define SDIO_DEVICE                  SDIODEV_1
+#define SDIO_USE_4BIT                1
 
+#define PINIO1_BOX                   40
+#define PINIO1_CONFIG                129
+#define BOX_USER1_NAME               "10V BEC"
+
+#define GYRO_1_SPI_INSTANCE          SPI1
+#define GYRO_1_ALIGN                 CW90_DEG
