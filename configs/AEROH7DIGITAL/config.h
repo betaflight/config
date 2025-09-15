@@ -37,8 +37,6 @@
 #define USE_GYRO_CLKIN
 #define USE_BARO
 #define USE_BARO_DPS310
-#define USE_MAG
-#define USE_GPS
 #define USE_SDCARD
 #define USE_PINIO
 #define USE_PINIOBOX
