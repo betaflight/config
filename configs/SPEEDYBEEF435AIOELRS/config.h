@@ -77,9 +77,8 @@
     TIMER_PIN_MAP(1, MOTOR2_PIN,       1,  2) \
     TIMER_PIN_MAP(2, MOTOR3_PIN,       2,  3) \
     TIMER_PIN_MAP(3, MOTOR4_PIN,       2,  4) \
-    TIMER_PIN_MAP(4, BEEPER_PIN,       1, -1) \
-    TIMER_PIN_MAP(5, LED_STRIP_PIN,    1,  0) \
-    TIMER_PIN_MAP(6, GYRO_1_CLKIN_PIN, 1, -1)
+    TIMER_PIN_MAP(4, LED_STRIP_PIN,    1,  0) \
+    TIMER_PIN_MAP(5, GYRO_1_CLKIN_PIN, 1, -1)
 
 #define ADC_INSTANCE            ADC1
 #define ADC1_DMA_OPT            11
