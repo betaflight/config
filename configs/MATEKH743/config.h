@@ -105,7 +105,7 @@
 #define GYRO_1_EXTI_PIN      PB2
 #define GYRO_2_EXTI_PIN      PE15
 #define GYRO_1_CS_PIN        PC15
-#define GYRO_2_CS_PIN        PE11
+#define GYRO_2_CS_PIN        PC13
 
 /* CS1/CS2 pads for SPI3 connection:
  *

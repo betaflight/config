@@ -32,14 +32,13 @@
 #define USE_GYRO
 
 #define USE_ACC_SPI_MPU6000
-#define USE_ACC_SPI_ICM42688P       
+#define USE_ACC_SPI_ICM42688P
 #define USE_ACCGYRO_BMI270
 #define USE_GYRO_SPI_MPU6000
 #define USE_GYRO_SPI_ICM42688P
 #define USE_BARO_DPS310
 #define USE_FLASH_W25N01G
 #define USE_MAX7456
-
 
 #define BEEPER_PIN PE3
 
@@ -116,16 +115,13 @@
     TIMER_PIN_MAP(  5, PB1, 2,  5 ) \
     TIMER_PIN_MAP(  6, PC8, 2,  6 ) \
     TIMER_PIN_MAP(  7, PC9, 2,  7 ) \
-    TIMER_PIN_MAP(  8, PA8, 1, 14 ) \
-    TIMER_PIN_MAP(  9, PB8, 1,  0 ) \
-    TIMER_PIN_MAP( 10, PB9, 1,  0 )
+    TIMER_PIN_MAP(  8, PA8, 1, 14 )
 
 #define ADC1_DMA_OPT 8
 #define ADC3_DMA_OPT 9
-#define TIMUP1_DMA_OPT 0
-#define TIMUP3_DMA_OPT 2
-#define TIMUP5_DMA_OPT 0
-#define TIMUP8_DMA_OPT 4
+#define TIMUP3_DMA_OPT 11
+#define TIMUP5_DMA_OPT 12
+#define TIMUP8_DMA_OPT 13
 
 #define MAG_I2C_INSTANCE I2CDEV_1
 #define BARO_I2C_INSTANCE I2CDEV_1

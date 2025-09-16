@@ -34,6 +34,12 @@
 #define SDCARD_SPI_INSTANCE  SPI1
 #define GYRO_1_SPI_INSTANCE  SPI0
 
+// For debugging (trace) via UART, make with env var PICO_TRACE set (see RP2350.mk).
+// Instance, pins below for using spare UART connector (J10)
+#define PICO_TRACE_UART_INSTANCE  0
+#define PICO_TRACE_TX_GPIO       34
+#define PICO_TRACE_RX_GPIO       35
+
 #define MOTOR1_PIN           PA28
 #define MOTOR2_PIN           PA29
 #define MOTOR3_PIN           PA30
@@ -41,6 +47,8 @@
 
 #define LED0_PIN             PA6
 #define LED1_PIN             PA7
+
+#define LED_STRIP_PIN        PA38
 
 #define SPI0_SCK_PIN         PA2
 #define SPI0_SDI_PIN         PA4
@@ -50,16 +58,19 @@
 #define SPI1_SDI_PIN         PA24
 #define SPI1_SDO_PIN         PA27
 
-#define SDCARD_CS_PIN        PA25
+#define SDCARD_SPI_CS_PIN    PA25
 //#define FLASH_CS_PIN         PA0
-#define MAX7456_SPI_CS_PIN   PA17
-#define USE_MAX7456
+//#define MAX7456_SPI_CS_PIN   PA17
+#define USE_SDCARD
+#define USE_SDCARD_SPI
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
 
 #define GYRO_1_CS_PIN        PA1
 #define GYRO_1_EXTI_PIN      PA22
 
 #define GYRO_2_CS_PIN        NONE
 
+// Radio RX on UART1
 #define UART1_TX_PIN         PA20
 #define UART1_RX_PIN         PA21
 
@@ -74,60 +85,14 @@
 #define BEEPER_PIN           PA5
 
 #define PICO_BEC_5V_ENABLE_PIN PA14
+#define PICO_BEC_9V_ENABLE_PIN PA15
+
+#define ADC_VBAT_PIN         PA40
+#define ADC_CURR_PIN         PA41
+#define ADC_RSSI_PIN         PA42
 
 /*
-
-SPI0_CS         PA1
-SPI0_SCLK       PA2
-SPI0_COPI       PA3
-SPI0_CIPO       PA4
-BUZZER          PA5
-LED0            PA6
-LED1            PA7
-UART1_TX        PA8
-UART1_RX        PA9
-I2C1_SDA        PA10
-I2C1_SCL        PA11
-UART0_TX        PA12
-UART0_RX        PA13
-
-OSD_CS          PA17
-
-UART2_TX        PA20
-UART2_RX        PA21
-
-GYRO_INT        PA22
-
 GYRO_CLK        PA23
-
-SPI1_CIPO       PA24
-SPI1_CS         PA25
-SPI1_SCLK       PA26
-SPI1_COPI       PA27
-
-MOTOR1          PA28
-MOTOR2          PA29
-MOTOR3          PA30
-MOTOR4          PA31
-
-SPARE1          PA32
-SPARE2          PA33
-
-UART3_TX        PA34
-UART3_RX        PA35
-
-DVTX_SBUS_RX    PA36
 TELEM_RX        PA37
-LED_STRIP       PA38
 RGB_LED         PA39
-
-VBAT_SENSE      PA40
-CURR_SENSE      PA41
-ADC_SPARE       PA42
-
-I2C0_SDA        PA44
-I2C0_SCL        PA45
-
-SPARE3          PA47
-
 */
