@@ -37,8 +37,8 @@
 #define BEEPER_PIN PA8
 #define MOTOR1_PIN PB0
 #define MOTOR2_PIN PB1
-#define MOTOR3_PIN PC6
-#define MOTOR4_PIN PA4
+#define MOTOR3_PIN PB6
+#define MOTOR4_PIN PB9
 #define LED_STRIP_PIN PB2
 #define UART1_TX_PIN PA9
 #define UART2_TX_PIN PA2
@@ -50,8 +50,8 @@
 #define UART4_RX_PIN PC11
 #define I2C1_SCL_PIN PA15
 #define I2C1_SDA_PIN PB7
-#define LED0_PIN PB6
-#define LED1_PIN PB9
+#define LED0_PIN PC6
+#define LED1_PIN PA4
 #define SPI1_SCK_PIN PA5
 #define SPI2_SCK_PIN PB13
 #define SPI3_SCK_PIN PB3
