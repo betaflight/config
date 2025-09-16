@@ -112,6 +112,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |RDMS|RadioMaster RC|https://www.radiomasterrc.com/|
 |RUSH|FPV Racing Rush|http://www.rushfpv.com/|
 |SDRC|Siangda Model Co., Ltd|https://www.sdmodel.com.tw/|
+|SFLY|Macfos Ltd|https://robu.in|
 |SJET|Shenzhen Jiufang Electronic Technology Co., Ltd|https://www.jiufang-tech.com/|
 |SKST|Shenzhen SKYSTARS Tech Co., LIMITED|http://www.skystars-rc.com/index.html|
 |SKZO|SkyZone|http://www.skyzonehobbies.com/|
