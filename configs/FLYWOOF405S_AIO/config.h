@@ -92,8 +92,6 @@
     TIMER_PIN_MAP( 7, PC8 , 2,  0) \
     TIMER_PIN_MAP( 8, PA9 , 1,  0)
 
-
-
 #define ADC1_DMA_OPT                    0
 #define MAG_I2C_INSTANCE                I2CDEV_1
 #define BARO_I2C_INSTANCE               I2CDEV_1
@@ -102,6 +100,7 @@
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 #define DEFAULT_CURRENT_METER_SCALE     170
 #define BEEPER_INVERTED
+#define SYSTEM_HSE_MHZ                  8
 #define MAX7456_SPI_INSTANCE            SPI3
 #define DASHBOARD_I2C_INSTANCE          I2CDEV_1
 #define FLASH_SPI_INSTANCE              SPI3
