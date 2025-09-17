@@ -77,11 +77,11 @@
 #define GYRO_1_CLKIN_PIN    PA8  // TMR1_CH1 / I2C3_SCL / USART2_TX
 
 #define TIMER_PIN_MAPPING   TIMER_PIN_MAP(0, PB6, 1,  0) \
-                            TIMER_PIN_MAP(1, PA0, 1,  0) \
-                            TIMER_PIN_MAP(2, PA1, 1,  1) \
-                            TIMER_PIN_MAP(3, PA2, 1,  2) \
-                            TIMER_PIN_MAP(4, PA3, 1,  3) \
-                            TIMER_PIN_MAP(8, PA8, 1, -1)
+                            TIMER_PIN_MAP(1, PA0, 1,  1) \
+                            TIMER_PIN_MAP(2, PA1, 1,  2) \
+                            TIMER_PIN_MAP(3, PA2, 1,  3) \
+                            TIMER_PIN_MAP(4, PA3, 1,  4) \
+                            TIMER_PIN_MAP(5, PA8, 1, -1)
 
 #define ADC_INSTANCE                    ADC1
 #define ADC1_DMA_OPT                    8
