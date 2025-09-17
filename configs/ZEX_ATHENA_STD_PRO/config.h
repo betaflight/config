@@ -101,7 +101,7 @@
     TIMER_PIN_MAP( 4,  PD12, 1,  4) /* TIM4  CH1 (AF2) DMA1 Stream 1 Request  29 */ \
     TIMER_PIN_MAP( 5,  PD13, 1,  5) /* TIM4  CH2 (AF2) DMA1 Stream 2 Request  30 */ \
     TIMER_PIN_MAP( 6,  PD14, 1,  6) /* TIM4  CH3 (AF2) DMA1 Stream 3 Request  31 */ \
-    TIMER_PIN_MAP( 7,  PD15, 1,  7) /* TIM4  CH4 (AF2) No DMA for PD15 available */ \
+    TIMER_PIN_MAP( 7,  PD15, 1,  -1) /* TIM4  CH4 (AF2) No DMA for PD15 available */ \
     TIMER_PIN_MAP( 8,  PE5 , 1, -1) /* TIM15 CH1 (AF4) DMA1 Stream 1 Request 105 */ \
     TIMER_PIN_MAP( 9,  PE6 , 1, -1) /* TIM15 CH2 (AF4)                           */ \
     TIMER_PIN_MAP(10,  PA8 , 1,  8) /* TIM1  CH1 (AF1) DMA1 Stream 1 Request  11 */ \
