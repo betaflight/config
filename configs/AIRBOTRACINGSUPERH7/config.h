@@ -104,6 +104,7 @@
 #define BOX_USER1_NAME                  "VTX POWER"
 #define FLASH_SPI_INSTANCE              SPI2
 #define GYRO_1_SPI_INSTANCE             SPI3
+#define GYRO_1_ALIGN                    CW270_DEG_FLIP
 
 #define MSP_DISPLAYPORT_UART            SERIAL_PORT_UART4
 #define MSP_UART                        SERIAL_PORT_USART1
