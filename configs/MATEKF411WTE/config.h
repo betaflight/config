@@ -51,7 +51,6 @@
 #define USE_SERVOS
 #endif
 
-#define DEFAULT_DSHOT_BITBANG DSHOT_BITBANG_OFF
 
 #define BEEPER_PIN           PB2
 #define MOTOR1_PIN           PB6
