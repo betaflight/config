@@ -35,7 +35,9 @@
 #define USE_MAX7456
 #define USE_BARO
 #define USE_BARO_DPS310
+#ifndef USE_SOFTSERIAL
 #define USE_SOFTSERIAL
+#endif
 
 
 #ifndef USE_WING
