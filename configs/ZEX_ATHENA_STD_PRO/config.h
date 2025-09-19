@@ -24,7 +24,7 @@
 #define FC_TARGET_MCU       STM32H743
 
 #define BOARD_NAME          ZEX_ATHENA_STD_PRO
-#define MANUFACTURER_ID     HARC
+#define MANUFACTURER_ID     ZEXM
 
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
