@@ -44,11 +44,8 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 // ADC Resources
 
 #define ADC1_DMA_OPT                    9
-#define ADC2_DMA_OPT                    10
 #define ADC3_DMA_OPT                    11
 #define ADC_INSTANCE                    ADC1
-#define VBAT_ADC_INSTANCE               ADC2
-#define CURRENT_METER_ADC_INSTANCE      ADC1
 #define ADC_VBAT_PIN                    PC5
 #define ADC_CURR_PIN                    PA5
 
