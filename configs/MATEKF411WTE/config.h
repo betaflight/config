@@ -27,7 +27,6 @@
 #define MANUFACTURER_ID   MTKS
 
 #define USE_ACC
-#define USE_ACC_SPI_ICM42605
 #define USE_ACC_SPI_ICM42688P
 #define USE_ACC_SPI_BMI270
 #define USE_GYRO
