@@ -40,40 +40,40 @@
 
 //LED
 #define LED0_PIN                      PB2 
-#define LED_STRIP_PIN                 PA0       //TIM5_CH1
+#define LED_STRIP_PIN                 PA0       // TIM2_CH1/TIM5_CH1/UART4_TX
 
 //BEEPER
-#define BEEPER_PIN                    PA1       //TIM5_CH2
+#define BEEPER_PIN                    PA1       // TIM2_CH2/TIM5_CH2
 #define BEEPER_PWM_HZ                 3000
 #define BEEPER_INVERTED
 
 //motor
-#define MOTOR1_PIN                    PE14    //TIM1_CH4  
-#define MOTOR2_PIN                    PE13    //TIM1_CH3  
-#define MOTOR3_PIN                    PE11    //TIM1_CH2  
-#define MOTOR4_PIN                    PE9     //TIM1_CH1  
-#define MOTOR5_PIN                    PD12    //TIM4_CH1  
-#define MOTOR6_PIN                    PD13    //TIM4_CH2  
-#define MOTOR7_PIN                    PD14    //TIM4_CH3
-#define MOTOR8_PIN                    PD15    //TIM4_CH4
+#define MOTOR1_PIN                    PE14    // TIM1_CH4  
+#define MOTOR2_PIN                    PE13    // TIM1_CH3  
+#define MOTOR3_PIN                    PE11    // TIM1_CH2  
+#define MOTOR4_PIN                    PE9     // TIM1_CH1  
+#define MOTOR5_PIN                    PD12    // TIM4_CH1  
+#define MOTOR6_PIN                    PD13    // TIM4_CH2  
+#define MOTOR7_PIN                    PD14    // TIM4_CH3
+#define MOTOR8_PIN                    PD15    // TIM4_CH4
 
 //steering engine
-#define SERVO1_PIN                    PE5     //TIM15_CH1 
-#define SERVO2_PIN                    PE6     //TIM15_CH2 
+#define SERVO1_PIN                    PE5     // TIM15_CH1 
+#define SERVO2_PIN                    PE6     // TIM15_CH2 
 
 //I2C
-#define I2C2_SCL_PIN                  PB10    
-#define I2C2_SDA_PIN                  PB11
+#define I2C2_SCL_PIN                  PB10    // I2C2_SCL/TIM2_CH3/USART3_TX
+#define I2C2_SDA_PIN                  PB11    // I2C2_SDA/TIM2_CH4/USART3_RX
 
 //ICM Clock
 #define USE_GYRO_CLKIN
-#define GYRO_1_CLKIN_PIN              PB8     //TIM16_CH1,
-#define GYRO_2_CLKIN_PIN              PB9     //TIM17_CH1
+#define GYRO_1_CLKIN_PIN              PB8     // TIM16_CH1,
+#define GYRO_2_CLKIN_PIN              PB9     // TIM17_CH1
 
 #define DEFAULT_GYRO_TO_USE          GYRO_1
 
 //ICM-42688 (1)
-#define ENSURE_MPU_DATA_READY_IS_LOW          //防止重复中断
+#define ENSURE_MPU_DATA_READY_IS_LOW          // 防止重复中断
 #define SPI1_SCK_PIN                  PA5
 #define SPI1_SDI_PIN                  PA6
 #define SPI1_SDO_PIN                  PA7
@@ -98,10 +98,10 @@
 #define UART1_RX_PIN                  PA10    //
 #define UART2_TX_PIN                  PA2     //
 #define UART2_RX_PIN                  PA3     //
-#define UART3_TX_PIN                  PD8     //BLUETOOTH
+#define UART3_TX_PIN                  PD8     // BLUETOOTH
 #define UART3_RX_PIN                  PD9     //
-#define UART4_TX_PIN                  PD1     //仅串口功能
-#define UART4_RX_PIN                  PD0     //仅串口功能
+#define UART4_TX_PIN                  PD1     // 仅串口功能
+#define UART4_RX_PIN                  PD0     // 仅串口功能
 #define UART5_TX_PIN                  PB6     //
 #define UART5_RX_PIN                  PB5     //
 #define UART6_TX_PIN                  PC6     //
@@ -135,10 +135,10 @@
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_SDCARD
 
 //ADC
-#define ADC_VBAT_PIN                  PC0        //ADC123_INP10,
-#define ADC_CURR_PIN                  PC1        //ADC123_INP11,
-#define ADC_EXTERNAL1_PIN             PC4        //ADC12_INP4,   
-#define ADC_EXTERNAL2_PIN             PC5        //ADC12_INP8,   CU2
+#define ADC_VBAT_PIN                  PC0        // ADC123_INP10,
+#define ADC_CURR_PIN                  PC1        // ADC123_INP11,
+#define ADC_EXTERNAL1_PIN             PC4        // ADC12_INP4,   
+#define ADC_EXTERNAL2_PIN             PC5        // ADC12_INP8,   CU2
 
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
