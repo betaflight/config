@@ -169,7 +169,6 @@
 //DMA
 #define TIMUP1_DMA_OPT                8
 #define TIMUP4_DMA_OPT                9
-#define TIMUP5_DMA_OPT                10
 #define ADC1_DMA_OPT                  11
 #define ADC3_DMA_OPT                  12
 
