@@ -73,7 +73,6 @@
 #define DEFAULT_GYRO_TO_USE          GYRO_CONFIG_USE_GYRO_BOTH
 
 //ICM-42688 (1)
-#define ENSURE_MPU_DATA_READY_IS_LOW          // 防止重复中断
 #define SPI1_SCK_PIN                  PA5
 #define SPI1_SDI_PIN                  PA6
 #define SPI1_SDO_PIN                  PA7
