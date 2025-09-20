@@ -70,7 +70,7 @@
 #define GYRO_1_CLKIN_PIN              PB8     // TIM16_CH1,
 #define GYRO_2_CLKIN_PIN              PB9     // TIM17_CH1
 
-#define DEFAULT_GYRO_TO_USE          GYRO_1
+#define DEFAULT_GYRO_TO_USE          GYRO_CONFIG_USE_GYRO_BOTH
 
 //ICM-42688 (1)
 #define ENSURE_MPU_DATA_READY_IS_LOW          // 防止重复中断
@@ -155,31 +155,25 @@
     TIMER_PIN_MAP(1, MOTOR2_PIN, 1, 2) \
     TIMER_PIN_MAP(2, MOTOR3_PIN, 1, 3) \
     TIMER_PIN_MAP(3, MOTOR4_PIN, 1, 4) \
-    TIMER_PIN_MAP(4, MOTOR7_PIN, 1, -1) \
-    TIMER_PIN_MAP(5, GYRO_1_CLKIN_PIN, 1, -1) \
-    TIMER_PIN_MAP(6, MOTOR5_PIN, 1, -1) \
-    TIMER_PIN_MAP(7, MOTOR6_PIN, 1, -1) \
-    TIMER_PIN_MAP(8, GYRO_2_CLKIN_PIN, 1, -1) \
-    TIMER_PIN_MAP(9, MOTOR8_PIN, 1, -1) \
-    TIMER_PIN_MAP(10, SERVO1_PIN, 1, -1) \
-    TIMER_PIN_MAP(11, SERVO2_PIN, 1, -1) \
+    TIMER_PIN_MAP(4, MOTOR5_PIN, 1, 5) \
+    TIMER_PIN_MAP(5, MOTOR6_PIN, 1, 6) \
+    TIMER_PIN_MAP(6, MOTOR7_PIN, 1, 7) \
+    TIMER_PIN_MAP(7, MOTOR8_PIN, 1, -1) \
+    TIMER_PIN_MAP(8, SERVO1_PIN, 1, -1) \
+    TIMER_PIN_MAP(9, SERVO2_PIN, 1, -1) \
+    TIMER_PIN_MAP(10, GYRO_1_CLKIN_PIN, 1, -1) \
+    TIMER_PIN_MAP(11, GYRO_2_CLKIN_PIN, 1, -1) \
     TIMER_PIN_MAP(12, BEEPER_PIN, 2, -1) \
-    TIMER_PIN_MAP(13, LED_STRIP_PIN, 2, 0)
+    TIMER_PIN_MAP(13, LED_STRIP_PIN, 1, 0)
 
 #define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_ON
 
 //DMA
-#define TIMUP1_DMA_OPT                6
-#define TIMUP4_DMA_OPT                7
-#define TIMUP5_DMA_OPT                8
-#define ADC1_DMA_OPT                  9
-#define ADC3_DMA_OPT                  10
-#define SPI1_TX_DMA_OPT               11
-#define SPI1_RX_DMA_OPT               12
-#define SPI2_TX_DMA_OPT               13
-#define SPI2_RX_DMA_OPT               14
-#define SPI3_TX_DMA_OPT               15
-#define SPI3_RX_DMA_OPT               16
+#define TIMUP1_DMA_OPT                8
+#define TIMUP4_DMA_OPT                9
+#define TIMUP5_DMA_OPT                10
+#define ADC1_DMA_OPT                  11
+#define ADC3_DMA_OPT                  12
 
 //Default Pin switch
 #define PINIO1_PIN PE2
@@ -197,11 +191,11 @@
 
 //Default Module
 #define SERIALRX_PROVIDER        SERIALRX_CRSF
-#define SERIALRX_UART        SERIAL_PORT_USART1
+#define SERIALRX_UART            SERIAL_PORT_USART1
 #ifdef USE_OSD_HD
-#define MSP_DISPLAYPORT_UART SERIAL_PORT_USART2
+#define MSP_DISPLAYPORT_UART     SERIAL_PORT_USART2
 #endif
-#define MSP_UART             SERIAL_PORT_USART3
+#define MSP_UART                 SERIAL_PORT_USART3
 #ifdef USE_GPS
-#define GPS_UART             SERIAL_PORT_UART4
+#define GPS_UART                 SERIAL_PORT_UART4
 #endif
