@@ -44,6 +44,7 @@
 
 //BEEPER
 #define BEEPER_PIN                    PA1       // TIM2_CH2/TIM5_CH2
+#define BEEPER_PWM_HZ                 3000
 #define BEEPER_INVERTED
 
 //motor
