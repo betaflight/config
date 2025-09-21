@@ -188,7 +188,6 @@
 
 //Default Module
 #define SERIALRX_PROVIDER        SERIALRX_CRSF
-#define SERIALRX_UART            SERIAL_PORT_USART1
 #ifdef USE_OSD_HD
 #define MSP_DISPLAYPORT_UART     SERIAL_PORT_USART2
 #endif
