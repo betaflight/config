@@ -12,6 +12,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |AEDR|AEDROX|https://www.aedrox.com/|
 |AERO|AeroCogito|https://www.aerocogito.com/|
 |AFNG|AlienFlight NG|https://www.alienflightng.com/|
+|AGPT|Air Gapped Technologies|https://www.airgapped.dk/|
 |AIKO|AIKON Electronics|https://www.aikon-electronics.com/|
 |AIRB|Airbot|https://store.myairbot.com/|
 |ALWH|Alienwhoop|https://shop.alienwhoop.us/|
