@@ -74,7 +74,6 @@
                                 TIMER_PIN_MAP(4, LED_STRIP_PIN,     1,   0) \
                                 TIMER_PIN_MAP(5, GYRO_1_CLKIN_PIN,  1,  -1)
 
-#define ADC_INSTANCE            ADC1
 #define ADC1_DMA_OPT            11
 #define BEEPER_INVERTED
 #define SYSTEM_HSE_MHZ          8
