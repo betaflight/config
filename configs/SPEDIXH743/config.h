@@ -101,8 +101,8 @@
 #define SPI4_SDI_PIN         PE5
 #define SPI4_SDO_PIN         PE6
 
-#define ADC_VBAT_PIN         PC0
-#define ADC_CURR_PIN         PC1
+#define ADC_VBAT_PIN         PC1
+#define ADC_CURR_PIN         PC2
 
 #define PINIO1_PIN           PA2 // VTX Switch
 #define PINIO2_PIN           PA3 // Camera Switch
