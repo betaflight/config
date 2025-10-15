@@ -102,12 +102,13 @@
     TIMER_PIN_MAP( 5, MOTOR6_PIN, 2,  5) \
     TIMER_PIN_MAP( 6, MOTOR7_PIN, 1,  6) \
     TIMER_PIN_MAP( 7, MOTOR8_PIN, 1, -1) \
-    TIMER_PIN_MAP( 8, LED_STRIP_PIN, 1,  8) \
+    TIMER_PIN_MAP( 8, LED_STRIP_PIN, 1,  7) \
     TIMER_PIN_MAP( 9, CAMERA_CONTROL_PIN, 1, -1) \
     TIMER_PIN_MAP(10, GYRO_1_CLKIN_PIN, 1, -1)
 
-#define SPI3_TX_DMA_OPT                 9
-#define ADC1_DMA_OPT                    10
+#define SPI3_TX_DMA_OPT                 8
+#define ADC1_DMA_OPT                    9
+#define ADC3_DMA_OPT                    10
 
 #define MAG_I2C_INSTANCE                I2CDEV_1
 #define BARO_I2C_INSTANCE               I2CDEV_1
