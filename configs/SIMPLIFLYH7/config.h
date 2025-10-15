@@ -27,6 +27,7 @@
 #define MANUFACTURER_ID     SFLY
 
 #define USE_GYRO
+#define USE_GYRO_CLKIN
 #define USE_ACC
 #define USE_GYRO_SPI_ICM42688P
 #define USE_ACC_SPI_ICM42688P
@@ -90,6 +91,7 @@
 #define MAX7456_SPI_CS_PIN  PB12
 #define GYRO_1_EXTI_PIN     PC3
 #define GYRO_1_CS_PIN       PC4
+#define GYRO_1_CLKIN_PIN    PA8
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, MOTOR1_PIN, 2,  0) \
@@ -101,7 +103,8 @@
     TIMER_PIN_MAP( 6, MOTOR7_PIN, 1,  6) \
     TIMER_PIN_MAP( 7, MOTOR8_PIN, 1, -1) \
     TIMER_PIN_MAP( 8, LED_STRIP_PIN, 1,  8) \
-    TIMER_PIN_MAP( 9, CAMERA_CONTROL_PIN, 1, -1)
+    TIMER_PIN_MAP( 9, CAMERA_CONTROL_PIN, 1, -1) \
+    TIMER_PIN_MAP(10, GYRO_1_CLKIN_PIN, 1, -1)
 
 #define SPI3_TX_DMA_OPT                 9
 #define ADC1_DMA_OPT                    10
