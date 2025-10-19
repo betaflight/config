@@ -106,7 +106,6 @@
     TIMER_PIN_MAP( 9, CAMERA_CONTROL_PIN, 1, -1) \
     TIMER_PIN_MAP(10, GYRO_1_CLKIN_PIN, 1, -1)
 
-#define SPI3_TX_DMA_OPT                 8
 #define ADC1_DMA_OPT                    9
 #define ADC3_DMA_OPT                    10
 
