@@ -116,11 +116,10 @@
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
-#define DEFAULT_CURRENT_METER_SCALE     490
 #define BEEPER_INVERTED
 #define FLASH_SPI_INSTANCE              SPI3
 #define MAX7456_SPI_INSTANCE            SPI2
-#define PINIO1_BOX                      0
+#define PINIO1_BOX                      40
 #define PINIO1_CONFIG                   129
 #define BOX_USER1_NAME                  "VTX PWR"
 #define GYRO_1_SPI_INSTANCE             SPI1
