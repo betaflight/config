@@ -43,19 +43,23 @@
 #define USE_SDCARD_SDIO
 
 #define BEEPER_PIN           PE10 
-#define MOTOR1_PIN           PA0  // M1
-#define MOTOR2_PIN           PA1  // M2
-#define MOTOR3_PIN           PA2  // M3
-#define MOTOR4_PIN           PA3  // M4
-#define MOTOR5_PIN           PE9  // M5
-#define MOTOR6_PIN           PE11 // M6
-#define MOTOR7_PIN           PC8  // M7
-#define MOTOR8_PIN           PC9  // M8
-#define SERVO1_PIN           PD12 // S1
-#define SERVO2_PIN           PD13 // S2
-#define SERVO3_PIN           PD14 // S3
-#define SERVO4_PIN           PD15 // S4
-#define LED_STRIP_PIN        PB0   
+
+#define MOTOR1_PIN           PA0  // M1 TIM2 CH1
+#define MOTOR2_PIN           PA1  // M2 TIM2 CH2
+#define MOTOR3_PIN           PA2  // M3 TIM2 CH3
+#define MOTOR4_PIN           PA3  // M4 TIM2 CH4
+#define MOTOR5_PIN           PD12 // M5 TIM4 CH1
+#define MOTOR6_PIN           PD13 // M6 TIM4 CH2
+#define MOTOR7_PIN           PD14 // M7 TIM4 CH3
+#define MOTOR8_PIN           PD15 // M8 TIM4 CH4
+
+#define SERVO1_PIN           PE9  // S1 TIM1 CH1
+#define SERVO2_PIN           PE11 // S2 TIM1 CH2
+#define SERVO3_PIN           PC8  // S3 TIM8 CH3
+#define SERVO4_PIN           PC9  // S4 TIM8 CH4
+
+#define LED_STRIP_PIN        PB0  //    TIM3 CH3
+
 #define CAMERA_CONTROL_PIN   PE5 
 #define UART1_TX_PIN         PA9
 #define UART1_RX_PIN         PA10
@@ -121,14 +125,14 @@
     TIMER_PIN_MAP( 1,  PA1,  1,  1) \
     TIMER_PIN_MAP( 2,  PA2,  1,  2) \
     TIMER_PIN_MAP( 3,  PA3,  1,  3) \
-    TIMER_PIN_MAP( 4,  PE9,  1,  4) \
-    TIMER_PIN_MAP( 5,  PE11, 1,  5) \
-    TIMER_PIN_MAP( 6,  PC8,  1,  6) \
-    TIMER_PIN_MAP( 7,  PC9,  1,  7) \
-    TIMER_PIN_MAP( 8,  PD12, 1, -1) \
-    TIMER_PIN_MAP( 9,  PD13, 1, -1) \
-    TIMER_PIN_MAP( 10, PD14, 1, -1) \
-    TIMER_PIN_MAP( 11, PD15, 1, -1) \
+    TIMER_PIN_MAP( 4,  PD12, 1,  4) \
+    TIMER_PIN_MAP( 5,  PD13, 1,  5) \
+    TIMER_PIN_MAP( 6,  PD14, 1,  6) \
+    TIMER_PIN_MAP( 7,  PD15, 1,  7) \
+    TIMER_PIN_MAP( 8,  PE9,  1, -1) \
+    TIMER_PIN_MAP( 9,  PE11, 1, -1) \
+    TIMER_PIN_MAP( 10, PC8,  1, -1) \
+    TIMER_PIN_MAP( 11, PC9,  1, -1) \
     TIMER_PIN_MAP( 12, PE5,  1, -1) \
     TIMER_PIN_MAP( 13, PB7,  1, -1) \
     TIMER_PIN_MAP( 14, PB0 , 2,  8)
