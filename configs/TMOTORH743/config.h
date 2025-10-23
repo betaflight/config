@@ -113,17 +113,12 @@
                                         TIMER_PIN_MAP( 7, PC9, 2,  7 ) \
                                         TIMER_PIN_MAP( 8, PA8, 1, 14 )
 
-//                                        TIMER_PIN_MAP( 9, PB3, 1,  0 ) \
-//                                        TIMER_PIN_MAP(10, PB4, 1,  0 ) \
-//                                        TIMER_PIN_MAP(11, PB5, 1,  0 )
-
 
 #define ADC1_DMA_OPT                    8
 #define ADC3_DMA_OPT                    9
-// #define TIMUP1_DMA_OPT                  0
-// #define TIMUP2_DMA_OPT                  0
-// #define TIMUP3_DMA_OPT                  0
-// #define TIMUP8_DMA_OPT                  0
+#define TIMUP2_DMA_OPT                 10
+#define TIMUP3_DMA_OPT                 11
+#define TIMUP8_DMA_OPT                 12
 
 #define MAG_I2C_INSTANCE                I2CDEV_1
 #define BARO_I2C_INSTANCE               I2CDEV_2
