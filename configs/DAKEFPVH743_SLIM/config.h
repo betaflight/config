@@ -44,23 +44,23 @@
 
 #define BEEPER_PIN           PE10 
 
-#define MOTOR1_PIN           PA0  // M1 TIM2 CH1
-#define MOTOR2_PIN           PA1  // M2 TIM2 CH2
-#define MOTOR3_PIN           PA2  // M3 TIM2 CH3
-#define MOTOR4_PIN           PA3  // M4 TIM2 CH4
-#define MOTOR5_PIN           PD12 // M5 TIM4 CH1
-#define MOTOR6_PIN           PD13 // M6 TIM4 CH2
-#define MOTOR7_PIN           PD14 // M7 TIM4 CH3
-#define MOTOR8_PIN           PD15 // M8 TIM4 CH4
+#define MOTOR1_PIN           PE9  // TIM1 CH1
+#define MOTOR2_PIN           PE11 // TIM1 CH2
+#define MOTOR3_PIN           PE13 // TIM1 CH3
+#define MOTOR4_PIN           PE14 // TIM1 CH4
+#define MOTOR5_PIN           PA0  // TIM2 CH1
+#define MOTOR6_PIN           PA1  // TIM2 CH2
+#define MOTOR7_PIN           PA2  // TIM2 CH3
+#define MOTOR8_PIN           PA3  // TIM2 CH4
 
-#define SERVO1_PIN           PE9  // S1 TIM1 CH1
-#define SERVO2_PIN           PE11 // S2 TIM1 CH2
-#define SERVO3_PIN           PC8  // S3 TIM8 CH3
-#define SERVO4_PIN           PC9  // S4 TIM8 CH4
+#define SERVO1_PIN           PD12 // TIM4 CH1
+#define SERVO2_PIN           PD13 // TIM4 CH2
+#define SERVO3_PIN           PD14 // TIM4 CH3
+#define SERVO4_PIN           PD15 // TIM4 CH4
 
-#define LED_STRIP_PIN        PB0  //    TIM3 CH3
+#define LED_STRIP_PIN        PB0  // TIM3 CH3
 
-#define CAMERA_CONTROL_PIN   PE5 
+#define CAMERA_CONTROL_PIN   PC8  // TIM8 CH3
 #define UART1_TX_PIN         PA9
 #define UART1_RX_PIN         PA10
 #define UART2_TX_PIN         PD5
@@ -92,8 +92,8 @@
 #define SPI3_SDI_PIN         PC11
 #define SPI3_SDO_PIN         PC12
 #define SPI4_SCK_PIN         PE12
-#define SPI4_SDI_PIN         PE13
-#define SPI4_SDO_PIN         PE14
+#define SPI4_SDI_PIN         PE5
+#define SPI4_SDO_PIN         PE6
 #define ADC_VBAT_PIN         PA4 
 #define ADC_RSSI_PIN         PC5 
 #define ADC_CURR_PIN         PC0
@@ -106,12 +106,12 @@
 #define FLASH_CS_PIN         PA15
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PD4 
-#define GYRO_1_CS_PIN        PE6 
+#define GYRO_1_CS_PIN        PC9
 #define GYRO_2_EXTI_PIN      PB2
 #define GYRO_2_CS_PIN        PB1
 
 #define USE_GYRO_CLKIN
-#define GYRO_1_CLKIN_PIN     PB7
+#define GYRO_1_CLKIN_PIN     PB7 // TIM17_CH1N
 
 #define SDIO_CK_PIN          PC1  
 #define SDIO_CMD_PIN         PD7  
@@ -121,19 +121,19 @@
 #define SDIO_D3_PIN          PB4  
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0,  PA0,  1,  0) \
-    TIMER_PIN_MAP( 1,  PA1,  1,  1) \
-    TIMER_PIN_MAP( 2,  PA2,  1,  2) \
-    TIMER_PIN_MAP( 3,  PA3,  1,  3) \
-    TIMER_PIN_MAP( 4,  PD12, 1,  4) \
-    TIMER_PIN_MAP( 5,  PD13, 1,  5) \
-    TIMER_PIN_MAP( 6,  PD14, 1,  6) \
-    TIMER_PIN_MAP( 7,  PD15, 1,  7) \
-    TIMER_PIN_MAP( 8,  PE9,  1, -1) \
-    TIMER_PIN_MAP( 9,  PE11, 1, -1) \
-    TIMER_PIN_MAP( 10, PC8,  1, -1) \
-    TIMER_PIN_MAP( 11, PC9,  1, -1) \
-    TIMER_PIN_MAP( 12, PE5,  1, -1) \
+    TIMER_PIN_MAP( 0,  PE9,  1,  0) \
+    TIMER_PIN_MAP( 1,  PE11, 1,  1) \
+    TIMER_PIN_MAP( 2,  PE13, 1,  2) \
+    TIMER_PIN_MAP( 3,  PE14, 1,  3) \
+    TIMER_PIN_MAP( 4,  PA0,  1,  4) \
+    TIMER_PIN_MAP( 5,  PA1,  1,  5) \
+    TIMER_PIN_MAP( 6,  PA2,  1,  6) \
+    TIMER_PIN_MAP( 7,  PA3,  1,  7) \
+    TIMER_PIN_MAP( 8,  PD12, 1, -1) \
+    TIMER_PIN_MAP( 9,  PD13, 1, -1) \
+    TIMER_PIN_MAP( 10, PD14, 1, -1) \
+    TIMER_PIN_MAP( 11, PD15, 1, -1) \
+    TIMER_PIN_MAP( 12, PC8,  1, -1) \
     TIMER_PIN_MAP( 13, PB7,  1, -1) \
     TIMER_PIN_MAP( 14, PB0 , 2,  8)
 
@@ -180,8 +180,8 @@
 #define DEFAULT_VOLTAGE_METER_DIVIDER 10 
 
 #define SERIALRX_UART           SERIAL_PORT_UART5  // ELRS
-#define ESC_SENSOR_UART         SERIAL_PORT_USART3 //SEC
+#define ESC_SENSOR_UART         SERIAL_PORT_USART3 // ESC
 #define MSP_UART                SERIAL_PORT_USART2 // BLUETOOTH
 
-#define DEFAULT_MOTOR_DSHOT_SPEED PWM_TYPE_DSHOT300 
-#define DEFAULT_PID_PROCESS_DENOM       2           
+#define DEFAULT_MOTOR_DSHOT_SPEED PWM_TYPE_DSHOT300  
+#define DEFAULT_PID_PROCESS_DENOM 2            
