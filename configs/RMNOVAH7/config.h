@@ -143,13 +143,11 @@
 #define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_ON
 
 #define PINIO1_BOX                      40
-#define PINIO2_BOX                      41
-#define PINIO3_BOX                      42
 
-#define PINIO1_BOX                      40
-#define PINIO2_CONFIG                   129
 #define PINIO2_BOX                      41
+#define PINIO2_CONFIG                   129
 #define BOX_USER2_NAME                  "VTX SW"
+
 #define PINIO3_BOX                      42
 #define BOX_USER3_NAME                  "CAM 1,2"
 
