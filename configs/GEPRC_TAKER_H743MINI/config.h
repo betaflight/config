@@ -115,7 +115,7 @@
 #define FLASH_SPI_INSTANCE              SPI3
 #define PINIO1_CONFIG                   129
 #define PINIO1_CONFIG 1
-#define PINIO2_CONFIG 1
+#define PINIO2_CONFIG 129
 #define PINIO1_BOX 32
 #define PINIO2_BOX 41
 #define BOX_USER2_NAME "12V BEC OFF"
