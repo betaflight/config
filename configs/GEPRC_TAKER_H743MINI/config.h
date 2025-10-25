@@ -79,7 +79,7 @@
 #define ADC_CURR_PIN         PC0
 #define FLASH_CS_PIN         PA15
 #define PINIO1_PIN           PC5
-#define PINIO2_PIN           PC14
+#define PINIO2_PIN           PD3
 #define MAX7456_SPI_CS_PIN   PE4
 #define GYRO_1_EXTI_PIN      PB2
 #define GYRO_1_CS_PIN        PB12
@@ -107,7 +107,6 @@
 #define MSP_UART                        SERIAL_PORT_USART8
 #define MAG_I2C_INSTANCE                I2CDEV_2
 #define BARO_I2C_INSTANCE               I2CDEV_1
-
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
@@ -115,7 +114,11 @@
 #define BEEPER_INVERTED
 #define FLASH_SPI_INSTANCE              SPI3
 #define PINIO1_CONFIG                   129
-#define PINIO1_BOX                      0
-#define PINIO2_BOX                      40
+#define PINIO1_CONFIG 1
+#define PINIO2_CONFIG 129
+#define PINIO1_BOX 40
+#define PINIO2_BOX 41
+#define BOX_USER1_NAME "CAM 1,2"
+#define BOX_USER2_NAME "12V BEC OFF"
 #define GYRO_1_SPI_INSTANCE             SPI2
 #define MAX7456_SPI_INSTANCE            SPI4
