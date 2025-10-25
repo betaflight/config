@@ -140,6 +140,9 @@
 #define ADC1_DMA_OPT        9
 #define ADC3_DMA_OPT        10
 
+#define TIMUP1_DMA_OPT      11
+#define TIMUP2_DMA_OPT      12
+
 #define FLASH_SPI_INSTANCE SPI3
 #define MAX7456_SPI_INSTANCE SPI2
 
