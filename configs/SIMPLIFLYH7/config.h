@@ -43,10 +43,10 @@
 #define MOTOR2_PIN          PC7
 #define MOTOR3_PIN          PC8
 #define MOTOR4_PIN          PC9
-#define MOTOR5_PIN          PB6
-#define MOTOR6_PIN          PB7
-#define MOTOR7_PIN          PD14
-#define MOTOR8_PIN          PD15
+#define SERVO1_PIN          PB6
+#define SERVO2_PIN          PB7
+#define SERVO3_PIN          PD14
+#define SERVO4_PIN          PD15
 
 #define RX_PPM_PIN          PA1
 
@@ -98,16 +98,17 @@
     TIMER_PIN_MAP( 1, MOTOR2_PIN, 2,  1) \
     TIMER_PIN_MAP( 2, MOTOR3_PIN, 2,  2) \
     TIMER_PIN_MAP( 3, MOTOR4_PIN, 2,  3) \
-    TIMER_PIN_MAP( 4, MOTOR5_PIN, 2,  4) \
-    TIMER_PIN_MAP( 5, MOTOR6_PIN, 2,  5) \
-    TIMER_PIN_MAP( 6, MOTOR7_PIN, 1,  6) \
-    TIMER_PIN_MAP( 7, MOTOR8_PIN, 1, -1) \
-    TIMER_PIN_MAP( 8, LED_STRIP_PIN, 1,  7) \
+    TIMER_PIN_MAP( 4, SERVO1_PIN, 2, -1) \
+    TIMER_PIN_MAP( 5, SERVO2_PIN, 2, -1) \
+    TIMER_PIN_MAP( 6, SERVO3_PIN, 1, -1) \
+    TIMER_PIN_MAP( 7, SERVO4_PIN, 1, -1) \
+    TIMER_PIN_MAP( 8, LED_STRIP_PIN, 1,  4) \
     TIMER_PIN_MAP( 9, CAMERA_CONTROL_PIN, 1, -1) \
     TIMER_PIN_MAP(10, GYRO_1_CLKIN_PIN, 1, -1)
 
-#define ADC1_DMA_OPT                    9
+#define ADC1_DMA_OPT                    8
 #define ADC3_DMA_OPT                    10
+#define TIMUP8_DMA_OPT                  11
 
 #define MAG_I2C_INSTANCE                I2CDEV_1
 #define BARO_I2C_INSTANCE               I2CDEV_1
