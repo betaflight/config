@@ -46,7 +46,6 @@
 #define MOTOR6_PIN           PB7
 #define SERVO1_PIN           PB10
 #define SERVO2_PIN           PB11
-//#define RX_PPM_PIN           PA8
 #define LED_STRIP_PIN        PA8
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PA2
