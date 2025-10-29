@@ -62,9 +62,9 @@
 #define I2C1_SDA_PIN         PB9
 #define I2C4_SDA_PIN         PB7
 
-#define LED0_PIN             PD8
-#define LED1_PIN             PB14
-#define LED2_PIN             PB15
+#define LED0_PIN             PD8  // Blue
+#define LED1_PIN             PB15 // Green
+#define LED2_PIN             PB14 // Amber
 
 #define SPI1_SCK_PIN         PA5
 #define SPI1_SDI_PIN         PA6
