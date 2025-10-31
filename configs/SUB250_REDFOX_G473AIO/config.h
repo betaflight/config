@@ -58,7 +58,6 @@
 #define I2C2_SCL_PIN PA9
 #define I2C2_SDA_PIN PA8
 
-
 #define LED0_PIN PA10
 #define LED1_PIN PB9
 
