@@ -70,6 +70,7 @@
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW180_DEG
 
+/*
 // SDCARD 4-bit SDIO - TODO - Compiles but still have "SD-CARD: Not configured" in configurator
 #define USE_SDCARD
 #define SDCARD_DETECT_PIN    NONE
@@ -82,20 +83,19 @@
 #define SDIO_D2_PIN          PA38
 #define SDIO_D3_PIN          PA39
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
+*/
 
-/*
-// SDCARD 1-bit SPI - TODO - Compile error
+// SDCARD 1-bit SPI - works
 #define USE_SDCARD
 #define USE_SDCARD_SPI
-#define SPI3_SCK_PIN         PA34
-#define SPI3_SDI_PIN         PA36
-#define SPI3_SDO_PIN         PA35
+#define SPI0_SCK_PIN         PA34
+#define SPI0_SDI_PIN         PA36
+#define SPI0_SDO_PIN         PA35
 #define SDCARD_SPI_CS_PIN    PA39
 #define SDCARD_DETECT_PIN    NONE
 #define SDCARD_DETECT_INVERTED
 #define SDCARD_SPI_INSTANCE  SPI0
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_SDCARD
-*/
 
 //------------------
 // External Pins
