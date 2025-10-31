@@ -84,6 +84,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |KONX|Konex Drone, SL|https://konexdrone.com/|
 |LDAR|LDARC|http://ldarc.com/|
 |LMNR|Lumenier|https://www.lumenier.com/|
+|MADF|madflight|https://madflight.com/|
 |MARC|Mayhem RC|https://mayhemrc.com.au/|
 |MEPS|MepsKing|https://www.mepsking.com/|
 |MERA|MerakRC|http://www.merakrc.com/|
