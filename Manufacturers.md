@@ -65,6 +65,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |GEEL|Geelang|https://geelang.com/|
 |GEFP|GetFPV LLC|https://www.getfpv.com/|
 |GEPR|GEPRC|https://geprc.com/|
+|GEUP|Gear Up|https://takeyourgear.com/|
 |GFPV|GE-FPV|http://www.ge-fpv.com/|
 |GMRC|Great Mountain RC|https://github.com/shanggl|
 |HAMO|Happymodel|http://www.happymodel.cn/|
