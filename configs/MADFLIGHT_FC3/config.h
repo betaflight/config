@@ -187,22 +187,14 @@
 // Optional external barometer connected to I2C1 (second i2c bus) PA2=SDA PA3=SCL
 #define USE_BARO
 #define USE_BARO_MS5611
-#define USE_BARO_SPI_MS5611
 #define USE_BARO_BMP280
-#define USE_BARO_SPI_BMP280
 #define USE_BARO_BMP388
-#define USE_BARO_SPI_BMP388
 #define USE_BARO_LPS
-#define USE_BARO_SPI_LPS
 #define USE_BARO_QMP6988
-#define USE_BARO_SPI_QMP6988
 #define USE_BARO_DPS310
-#define USE_BARO_SPI_DPS310
 #define USE_BARO_BMP085
 #define USE_BARO_2SMBP_02B
-#define USE_BARO_SPI_2SMBP_02B
 #define USE_BARO_LPS22DF
-#define USE_BARO_SPI_LPS22DF
 #define BARO_I2C_INSTANCE    I2CDEV_1
 
 // Optional external compass connected to I2C1 (second i2c bus) PA2=SDA PA3=SCL
