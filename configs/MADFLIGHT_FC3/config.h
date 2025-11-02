@@ -58,8 +58,10 @@
 //#define USE_GYRO_CLKIN //TODO - gives compile error...
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
+#define USE_GYRO_SPI_ICM42605
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
+#define USE_ACC_SPI_ICM42605
 #define USE_SPI_DEVICE_1
 #define SPI1_SCK_PIN         PA30
 #define SPI1_SDI_PIN         PA28
@@ -69,6 +71,18 @@
 #define GYRO_1_CLKIN_PIN     PA26  //needs #define USE_GYRO_CLKIN
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW180_DEG
+
+// SDCARD 1-bit SPI
+#define USE_SDCARD
+#define USE_SDCARD_SPI
+#define SPI0_SCK_PIN         PA34
+#define SPI0_SDI_PIN         PA36
+#define SPI0_SDO_PIN         PA35
+#define SDCARD_SPI_CS_PIN    PA39
+#define SDCARD_DETECT_PIN    NONE
+#define SDCARD_DETECT_INVERTED
+#define SDCARD_SPI_INSTANCE  SPI0
+#define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_SDCARD
 
 /*
 // SDCARD 4-bit SDIO - TODO - Compiles but still have "SD-CARD: Not configured" in configurator
@@ -85,22 +99,11 @@
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
 */
 
-// SDCARD 1-bit SPI - works
-#define USE_SDCARD
-#define USE_SDCARD_SPI
-#define SPI0_SCK_PIN         PA34
-#define SPI0_SDI_PIN         PA36
-#define SPI0_SDO_PIN         PA35
-#define SDCARD_SPI_CS_PIN    PA39
-#define SDCARD_DETECT_PIN    NONE
-#define SDCARD_DETECT_INVERTED
-#define SDCARD_SPI_INSTANCE  SPI0
-#define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_SDCARD
-
 //------------------
 // External Pins
 //------------------
-// Pinout for up to 30 external GPIOS, only first 10 pins defined here. Available pins are PA10-25,40-43
+
+// Pinout for up to 30 external GPIOS. Available pins are PA0-25,40-43
 #define UART0_TX_PIN         PA0
 #define UART0_RX_PIN         PA1
 #define I2C1_SDA_PIN         PA2
@@ -111,6 +114,12 @@
 #define MOTOR2_PIN           PA7
 #define MOTOR3_PIN           PA8
 #define MOTOR4_PIN           PA9
+#define PIOUART0_TX_PIN      PA10
+#define PIOUART0_RX_PIN      PA11
+//PA12 unused
+//PA13 unused
+#define PIOUART1_TX_PIN      PA14
+#define PIOUART1_RX_PIN      PA15
 
 // Optional external barometer connected to I2C1 (second i2c bus) PA2=SDA PA3=SCL
 #define USE_BARO
