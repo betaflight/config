@@ -20,7 +20,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |ARKE|ARK Electronics|https://arkelectron.com/|
 |AXFL|Axisflying|https://www.axisflying.com/|
 |BEFH|BETAFPV Hobby|https://betafpv.com/|
-|BKMN|Jason Blackman|https://github.com/blckmn|
+|BKMN|BLCKMN|https://github.com/blckmn|
 |BKRC|BAYCK RC||
 |BLDY|BotLab Dynamics|https://www.botlabdynamics.store|
 |BROT|Brotherhobby Co., Ltd|https://brotherhobby.com/|
