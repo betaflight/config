@@ -61,17 +61,16 @@
 //#define USE_GYRO_CLKIN //TODO - gives compile error with betaflight_2025.12.0-beta
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
-#define USE_GYRO_SPI_ICM42605
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
-#define USE_ACC_SPI_ICM42605
+#define USE_ACCGYRO_ICM45686
 #define USE_SPI_DEVICE_1
 #define SPI1_SCK_PIN         PA30
 #define SPI1_SDI_PIN         PA28
 #define SPI1_SDO_PIN         PA31
 #define GYRO_1_EXTI_PIN      PA27
 #define GYRO_1_CS_PIN        PA29
-#define GYRO_1_CLKIN_PIN     PA26  // for ICM42688P, needs #define USE_GYRO_CLKIN
+#define GYRO_1_CLKIN_PIN     PA26  // for ICM42688P,ICP45686 needs #define USE_GYRO_CLKIN
 #define GYRO_1_SPI_INSTANCE  SPI1
 #define GYRO_1_ALIGN         CW180_DEG
 
