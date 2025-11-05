@@ -110,9 +110,9 @@
     TIMER_PIN_MAP(4,  MOTOR4_PIN,       1,  3) \
     TIMER_PIN_MAP(5,  MOTOR5_PIN,       2,  4) \
     TIMER_PIN_MAP(6,  MOTOR6_PIN,       2,  5) \
-    TIMER_PIN_MAP(7,  MOTOR7_PIN,       2,  6) \
-    TIMER_PIN_MAP(8,  MOTOR8_PIN,       2,  7) \
-    TIMER_PIN_MAP(9,  LED_STRIP_PIN,    1,  8) \
+    TIMER_PIN_MAP(7,  MOTOR7_PIN,       2, -1) \
+    TIMER_PIN_MAP(8,  MOTOR8_PIN,       2, -1) \
+    TIMER_PIN_MAP(9,  LED_STRIP_PIN,    1,  6) \
     TIMER_PIN_MAP(10, SERVO1_PIN,       1, -1) \
     TIMER_PIN_MAP(11, SERVO2_PIN,       1, -1) \
     TIMER_PIN_MAP(12, SERVO3_PIN,       1, -1) \
