@@ -105,6 +105,9 @@
 // PINIO
 #define PINIO1_PIN                          PC3
 #define PINIO1_BOX                          40
+#define PINIO1_CONFIG                       129
+#define BOX_USER1_NAME                      "VTX PWR"
+
 #define PINIO2_PIN                          PC14
 #define PINIO2_BOX                          41
 
