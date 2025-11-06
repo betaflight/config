@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU        STM32G47X
 
-#define BOARD_NAME           HDZERO_Gamma
+#define BOARD_NAME           HDZERO_GAMMA
 #define MANUFACTURER_ID      HDZO
 
 #define USE_GYRO
