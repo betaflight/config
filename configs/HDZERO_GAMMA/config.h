@@ -96,7 +96,6 @@
 #define SYSTEM_HSE_MHZ               8
 #define GYRO_1_ALIGN                 CW90_DEG_FLIP
 #define DEFAULT_ALIGN_BOARD_YAW      -135
-#define USE_LED_STRIP
 #define MSP_DISPLAYPORT_UART         SERIAL_PORT_USART1
 #define SERIALRX_UART                SERIAL_PORT_USART2
 #define BEEPER_INVERTED
