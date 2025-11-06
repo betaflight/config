@@ -30,10 +30,15 @@
 #define USE_FLASH
 #define USE_FLASH_W25N01G
 #define USE_MAX7456
+#define USE_BARO
 #define USE_BARO_DPS310
+#define USE_SDCARD
+
+
+#ifndef USE_MAG
 #define USE_MAG
 #define USE_MAG_QMC5883
-#define USE_SDCARD
+#endif
 
 #define BEEPER_PIN           PA15
 #define MOTOR1_PIN           PB0
@@ -106,36 +111,19 @@
     TIMER_PIN_MAP( 5, PA3 , 2,  5) \
     TIMER_PIN_MAP( 6, PD12, 1,  6) \
     TIMER_PIN_MAP( 7, PD13, 1,  7) \
-    TIMER_PIN_MAP( 8, PD14, 1, 12) \
-    TIMER_PIN_MAP( 9, PD15, 1, -1) \
-    TIMER_PIN_MAP(10, PE5 , 1,  0) \
-    TIMER_PIN_MAP(11, PE6 , 1, -1) \
-    TIMER_PIN_MAP(12, PA8 , 1, 14) \
-    TIMER_PIN_MAP(13, PA15, 1,  0) \
-    TIMER_PIN_MAP(14, PC7 , 2,  0) \
-    TIMER_PIN_MAP(15, PC6 , 2,  0) \
-    TIMER_PIN_MAP(16, PB8 , 1,  0) \
-    TIMER_PIN_MAP(17, PB9 , 1,  0)
-
+    TIMER_PIN_MAP( 8, PA8 , 1, 14) 
 
 #define ADC1_DMA_OPT        8
 #define ADC3_DMA_OPT        9
-#define TIMUP1_DMA_OPT      0
-#define TIMUP2_DMA_OPT      0
-#define TIMUP3_DMA_OPT      2
-#define TIMUP4_DMA_OPT      1
-#define TIMUP5_DMA_OPT      0
-#define TIMUP8_DMA_OPT      0
+#define TIMUP3_DMA_OPT      10
+#define TIMUP5_DMA_OPT      11
 
 #define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
 #define MAG_I2C_INSTANCE I2CDEV_1
-#define USE_BARO
-#define USE_MAG
 #define BARO_I2C_INSTANCE I2CDEV_2
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_SDCARD
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SCALE_DEFAULT 110
 #define DEFAULT_CURRENT_METER_SCALE 210
 #define BEEPER_INVERTED
 
