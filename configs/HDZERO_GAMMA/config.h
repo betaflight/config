@@ -31,8 +31,8 @@
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
 
-#define USE_BARO					
-#define USE_BARO_DPS310				
+#define USE_BARO
+#define USE_BARO_DPS310
 
 #define USE_GYRO_CLKIN
 #define GYRO_1_CLKIN_PIN     PB5
