@@ -87,7 +87,7 @@
 #define ADC2_DMA_OPT                 6
 #define TIMUP5_DMA_OPT               7
 
-#define BARO_I2C_INSTANCE               I2CDEV_1	
+#define BARO_I2C_INSTANCE            I2CDEV_1	
 
 #define DEFAULT_DSHOT_BITBANG        DSHOT_BITBANG_ON
 #define DEFAULT_CURRENT_METER_SCALE  107	
