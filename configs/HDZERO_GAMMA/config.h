@@ -58,8 +58,8 @@
 #define UART4_TX_PIN         PC10
 #define UART4_RX_PIN         PC11
 
-#define I2C1_SCL_PIN         PA15		
-#define I2C1_SDA_PIN         PB9		
+#define I2C1_SCL_PIN         PA15
+#define I2C1_SDA_PIN         PB9	
 
 #define LED0_PIN             PA4
 
@@ -87,10 +87,10 @@
 #define ADC2_DMA_OPT                 6
 #define TIMUP5_DMA_OPT               7
 
-#define BARO_I2C_INSTANCE            I2CDEV_1	
+#define BARO_I2C_INSTANCE            I2CDEV_1
 
 #define DEFAULT_DSHOT_BITBANG        DSHOT_BITBANG_ON
-#define DEFAULT_CURRENT_METER_SCALE  107	
+#define DEFAULT_CURRENT_METER_SCALE  107
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
 #define SYSTEM_HSE_MHZ               8
