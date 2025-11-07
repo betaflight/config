@@ -44,6 +44,7 @@
 #define GYRO_1_SPI_INSTANCE     SPI1
 #define USE_GYRO_CLKIN
 #define GYRO_1_CLKIN_PIN        PC6
+#define GYRO_1_ALIGN            CW180_DEG_FLIP
 
 #define SPI2_SCK_PIN            PB13
 #define SPI2_SDI_PIN            PB14
@@ -85,8 +86,8 @@
 #define I2C2_SCL_PIN            PB10
 #define I2C2_SDA_PIN            PB11
 
-#define LED0_PIN                PE6
-#define LED1_PIN                PE4
+#define LED0_PIN                PE4
+#define LED1_PIN                PE6
 #define LED2_PIN                PE3
 
 #define ADC_VBAT_PIN            PC0
