@@ -35,6 +35,7 @@
 #define GYRO_1_CLKIN_PIN     PB9
 
 #define BEEPER_PIN           PA9
+#define BEEPER_INVERTED
 
 #define MOTOR1_PIN           PA3
 #define MOTOR2_PIN           PA2
