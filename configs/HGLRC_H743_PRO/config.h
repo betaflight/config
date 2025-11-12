@@ -133,7 +133,7 @@
 
 #define PINIO1_PIN     PE2
 #define PINIO1_BOX     40
-#define PINIO1_CONFIG  129
+#define PINIO1_CONFIG  1
 #define BOX_USER1_NAME "CAM 1,2"
 
 #define PINIO2_PIN     PC13
