@@ -107,6 +107,7 @@
 #define SYSTEM_HSE_MHZ 8
 #define PINIO1_BOX          40
 #define PINIO1_CONFIG       1
+#define BOX_USER1_NAME      "VTX PWR"
 #define MAX7456_SPI_INSTANCE SPI2
 #define FLASH_SPI_INSTANCE SPI3
 #define GYRO_1_SPI_INSTANCE SPI1
