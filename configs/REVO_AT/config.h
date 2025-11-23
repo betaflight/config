@@ -19,6 +19,10 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+    GROUP: LEGACY
+*/
+
 #define FC_TARGET_MCU     AT32F435M
 
 // REVO with STM32F405 swapped for an AT32F435
