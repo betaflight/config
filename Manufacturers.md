@@ -18,6 +18,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |ANYL|AnyLeaf|https://www.anyleaf.org/|
 |APEX|Apexfpv|https://apexfpv.eu/|
 |ARKE|ARK Electronics|https://arkelectron.com/|
+|ASKY|AcroSky||
 |AXFL|Axisflying|https://www.axisflying.com/|
 |BEFH|BETAFPV Hobby|https://betafpv.com/|
 |BKMN|BLCKMN|https://github.com/blckmn|
