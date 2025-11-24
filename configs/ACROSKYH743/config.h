@@ -135,8 +135,12 @@
 #define DEFAULT_CURRENT_METER_SCALE 290
 #define BEEPER_INVERTED
 #define MAX7456_SPI_INSTANCE SPI2
-#define PINIO1_BOX 40
-#define PINIO2_BOX 41
+#define PINIO1_BOX                     40
+#define PINIO1_CONFIG                  129
+#define BOX_USER1_NAME                 "10V BEC"
+#define PINIO2_BOX                     41
+#define PINIO2_CONFIG                  129
+#define BOX_USER2_NAME                 "Cam1,2"
 #define FLASH_SPI_INSTANCE SPI3
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG
