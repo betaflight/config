@@ -97,7 +97,6 @@
     TIMER_PIN_MAP( 5, PB6 , 1, -1) \
     TIMER_PIN_MAP( 6, PB7 , 1, -1)
 
-#define ADC_INSTANCE                   ADC1
 #define ADC1_DMA_OPT                   0
 
 #define BARO_I2C_INSTANCE              I2CDEV_3
@@ -120,7 +119,5 @@
 
 #define GYRO_1_SPI_INSTANCE            SPI1
 #define GYRO_1_ALIGN                   CW270_DEG
-//#define GYRO_1_ALIGN_PITCH           1800
-//#define GYRO_1_ALIGN_YAW             1800
 #define MAX7456_SPI_INSTANCE           SPI2
 #define FLASH_SPI_INSTANCE             SPI3
