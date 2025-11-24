@@ -141,5 +141,5 @@
 #define ESC_SENSOR_UART                 SERIAL_PORT_UART5
 #define GPS_UART                        SERIAL_PORT_USART6
 
-
+#define THROTTLE_LIMIT_PERCENT          100
 
