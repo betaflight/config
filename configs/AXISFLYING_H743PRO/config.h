@@ -97,6 +97,9 @@
 
 #define LED0_PIN              PD3
 
+#define PINIO1_PIN            PE2
+#define PINIO2_PIN            PA8
+
 #define GYRO_1_CS_PIN         PC4
 #define GYRO_1_EXTI_PIN       PA4
 #define GYRO_1_CLKIN_PIN      PB0
