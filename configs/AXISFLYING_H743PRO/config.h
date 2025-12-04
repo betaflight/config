@@ -49,9 +49,9 @@
 #define MOTOR8_PIN            PA3
 
 #define SERVO1_PIN            PD12
-#define SERVO1_PIN            PD13
-#define SERVO1_PIN            PD14
-#define SERVO1_PIN            PD15
+#define SERVO2_PIN            PD13
+#define SERVO3_PIN            PD14
+#define SERVO4_PIN            PD15
 
 #define LED_STRIP_PIN         PE5
 
