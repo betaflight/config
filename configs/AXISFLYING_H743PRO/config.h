@@ -131,7 +131,14 @@
 #define ADC1_DMA_OPT                    9
 #define ADC3_DMA_OPT                    10
 
+#ifdef USE_GPS
+#define GPS_UART                        SERIAL_PORT_USART8
+#endif
+#define SERIALRX_UART                   SERIAL_PORT_USART2
 #define ESC_SENSOR_UART                 SERIAL_PORT_UART5
+#ifdef USE_OSD_HD
+#define MSP_DISPLAYPORT_UART            SERIAL_PORT_USART1
+#endif
 
 #define MAG_I2C_INSTANCE                I2CDEV_1
 #define BARO_I2C_INSTANCE               I2CDEV_2
