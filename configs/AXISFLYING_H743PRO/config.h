@@ -153,6 +153,7 @@
 #define GYRO_1_ALIGN                    CW0_DEG // TODO: needs correlation/update with actual board
 #define GYRO_2_SPI_INSTANCE             SPI4
 #define GYRO_2_ALIGN                    CW0_DEG // TODO: needs correlation/update with actual board
+#define DEFAULT_GYRO_TO_USE             GYRO_CONFIG_USE_GYRO_BOTH
 #define MAX7456_SPI_INSTANCE            SPI2
 #define FLASH_SPI_INSTANCE              SPI3
 
