@@ -126,7 +126,7 @@
     TIMER_PIN_MAP( 11, SERVO4_PIN,       1, -1) /* PD15 / TIM4_CH4 */ \
     TIMER_PIN_MAP( 12, LED_STRIP_PIN,    1,  8) /* PE5  / TIM15_CH1 */ \
     TIMER_PIN_MAP( 13, GYRO_1_CLKIN_PIN, 2, -1) /* PB0  / TIM3_CH3 */ \
-    TIMER_PIN_MAP( 14, GYRO_2_CLKIN_PIN, 2, -1) /* PB1  / TIM3_CH3 */
+    TIMER_PIN_MAP( 14, GYRO_2_CLKIN_PIN, 2, -1) /* PB1  / TIM3_CH4 */
 
 #define ADC1_DMA_OPT                    9
 #define ADC3_DMA_OPT                    10
