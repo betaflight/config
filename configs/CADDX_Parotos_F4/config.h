@@ -30,14 +30,11 @@
 // gyro+acc
 #define USE_GYRO
 #define USE_GYRO_SPI_MPU6000
-#define USE_GYRO_SPI_MPU6500
 #define USE_GYRO_SPI_ICM42688P
 
 #define USE_ACC
 #define USE_ACC_SPI_MPU6000
-#define USE_ACC_SPI_MPU6500
 #define USE_ACC_SPI_ICM42688P
-#define USE_ACCGYRO_BMI270
 
 #define GYRO_1_CS_PIN        PA4
 #define SPI1_SCK_PIN         PA5
