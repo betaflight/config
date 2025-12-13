@@ -48,7 +48,7 @@
 #define GYRO_1_CLKIN_PIN        PC6
 
 #define SPI2_SCK_PIN            PB13
-#define SPI2_SDI_PIN            PB14
+#define SPI2_SDI_PIN            PC2
 #define SPI2_SDO_PIN            PB15
 #define MAX7456_SPI_CS_PIN      PB12
 #define MAX7456_SPI_INSTANCE    SPI2
@@ -60,7 +60,7 @@
 #define FLASH_SPI_INSTANCE      SPI3
 #define DEFAULT_BLACKBOX_DEVICE BLACKBOX_DEVICE_FLASH
 
-#define BEEPER_PIN              PE5
+#define BEEPER_PIN              PB14
 #define MOTOR1_PIN              PE9
 #define MOTOR2_PIN              PE11
 #define MOTOR3_PIN              PE13
@@ -72,8 +72,7 @@
 #define LED_STRIP_PIN           PA0
 #define SERVO1_PIN              PA2
 #define SERVO2_PIN              PA3
-#define SERVO3_PIN              PB0
-#define SERVO4_PIN              PB1
+#define SERVO3_PIN              PB1
 
 #define UART1_TX_PIN            PA9
 #define UART1_RX_PIN            PA10
@@ -95,15 +94,13 @@
 #define I2C2_SCL_PIN            PB10
 #define I2C2_SDA_PIN            PB11
 
-#define LED0_PIN                PE4
-#define LED1_PIN                PE6
-#define LED2_PIN                PE3
+#define LED0_PIN                PE3
 
 #define ADC_VBAT_PIN            PC0
 #define ADC_CURR_PIN            PC1
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP(0,  BEEPER_PIN,       1, -1) \
+    TIMER_PIN_MAP(0,  BEEPER_PIN,       12, -1) \
     TIMER_PIN_MAP(1,  MOTOR1_PIN,       1,  0) \
     TIMER_PIN_MAP(2,  MOTOR2_PIN,       1,  1) \
     TIMER_PIN_MAP(3,  MOTOR3_PIN,       1,  2) \
@@ -116,8 +113,7 @@
     TIMER_PIN_MAP(10, SERVO1_PIN,       1, -1) \
     TIMER_PIN_MAP(11, SERVO2_PIN,       1, -1) \
     TIMER_PIN_MAP(12, SERVO3_PIN,       1, -1) \
-    TIMER_PIN_MAP(13, SERVO4_PIN,       1, -1) \
-    TIMER_PIN_MAP(14, GYRO_1_CLKIN_PIN, 1, -1)
+    TIMER_PIN_MAP(13, GYRO_1_CLKIN_PIN, 1, -1)
 
 #define TIMUP1_DMA_OPT      9
 #define TIMUP5_DMA_OPT      10
