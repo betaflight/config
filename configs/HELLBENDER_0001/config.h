@@ -61,20 +61,17 @@
 #define USE_QUADSPI_DEVICE_1
 #define FLASH_QUADSPI_INSTANCE	  1
 
-// MAX7456 and SD card cannot be used at the same time
-#ifdef USE_MAX7456
 #define USE_FLASH
 #define FLASH_CS_PIN         PA0
 #define USE_FLASH_CHIP
 #define USE_FLASH_W25Q128FV
-
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
-#else
+
+// MAX7456 and SD card cannot be used at the same time
+#ifndef USE_MAX7456
 #define USE_SDCARD
 #define USE_SDCARD_SPI
 #define SDCARD_SPI_CS_PIN    PA25
-
-#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
 #endif
 
 #define GYRO_1_CS_PIN        PA1
@@ -82,8 +79,29 @@
 
 #define GYRO_2_CS_PIN        NONE
 
-#define UART1_TX_PIN         PA20
-#define UART1_RX_PIN         PA21
+// DVTX connection J5
+#define UART0_TX_PIN         PA12
+#define UART0_RX_PIN         PA13
+#define MSP_DISPLAYPORT_UART SERIAL_PORT_UART0
+// GPS connection J7
+#define UART1_TX_PIN         PA8
+#define UART1_RX_PIN         PA9
+#define GPS_UART             SERIAL_PORT_UART1
+// FTRX connection J2
+#define PIOUART0_TX_PIN         PA20
+#define PIOUART0_RX_PIN         PA21
+#define USE_RX_CRSF
+#define DEFAULT_RX_FEATURE 	FEATURE_RX_SERIAL
+#define SERIALRX_PROVIDER 	SERIALRX_CRSF
+#define SERIALRX_UART 		SERIAL_PORT_PIOUART0
+// Aux connection J10
+#define PIOUART1_TX_PIN         PA34
+#define PIOUART1_RX_PIN         PA35
+// SBus RX J5
+#define UART5_RX_PIN         PA36
+// ESC sensor connection J1
+#define UART6_RX_PIN         PA37
+#define ESC_SENSOR_UART      SERIAL_PORT_USART6
 
 #define USE_BARO
 #define USE_BARO_DPS310
