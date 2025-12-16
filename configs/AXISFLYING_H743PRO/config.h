@@ -130,6 +130,8 @@
 
 #define ADC1_DMA_OPT                    9
 #define ADC3_DMA_OPT                    10
+#define TIMUP8_DMA_OPT                  11
+#define TIMUP2_DMA_OPT                  12
 
 #ifdef USE_GPS
 #define GPS_UART                        SERIAL_PORT_USART8
@@ -150,9 +152,9 @@
 #define BEEPER_INVERTED
 
 #define GYRO_1_SPI_INSTANCE             SPI1
-#define GYRO_1_ALIGN                    CW0_DEG // TODO: needs correlation/update with actual board
+#define GYRO_1_ALIGN                    CW0_DEG
 #define GYRO_2_SPI_INSTANCE             SPI4
-#define GYRO_2_ALIGN                    CW0_DEG // TODO: needs correlation/update with actual board
+#define GYRO_2_ALIGN                    CW270_DEG
 #define DEFAULT_GYRO_TO_USE             GYRO_CONFIG_USE_GYRO_BOTH
 #define MAX7456_SPI_INSTANCE            SPI2
 #define FLASH_SPI_INSTANCE              SPI3
