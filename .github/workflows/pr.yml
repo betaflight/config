@@ -102,7 +102,7 @@ jobs:
         id: cache-toolchain
         with:
           path: betaflight/tools
-          key: ${{ runner.os }}-${{ hashFiles('mk/tools.mk') }}
+          key: ${{ runner.os }}-${{ hashFiles('betaflight/mk/tools.mk') }}
 
       - name: Download and install toolchain
         if: steps.cache-toolchain.outputs.cache-hit != 'true'
@@ -148,7 +148,7 @@ jobs:
         id: cache-toolchain
         with:
           path: betaflight/tools
-          key: ${{ runner.os }}-${{ hashFiles('mk/tools.mk') }}
+          key: ${{ runner.os }}-${{ hashFiles('betaflight/mk/tools.mk') }}
 
       - name: Process Target ${{ matrix.target }}
         working-directory: ./betaflight
