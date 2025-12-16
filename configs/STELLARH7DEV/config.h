@@ -194,7 +194,8 @@
                                         TIMER_PIN_MAP(3, MOTOR4_PIN, 2,  3) \
                                         TIMER_PIN_MAP(4, SERVO1_PIN, 1, -1) \
                                         TIMER_PIN_MAP(5, SERVO2_PIN, 1, -1) \
-                                        TIMER_PIN_MAP(6, LED_STRIP_PIN, 1, 4)
+                                        TIMER_PIN_MAP(6, LED_STRIP_PIN, 1, 4) \
+                                        TIMER_PIN_MAP(7, GYRO_4_CLKIN_PIN, 1, -1)
 
 // DMA stream assignment
 #define ADC1_DMA_OPT                    8

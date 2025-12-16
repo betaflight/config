@@ -21,7 +21,7 @@
 
 /*
     SUPPORTED TARGET - THANK YOU
-    REFERENCE: sha256_d2257dd16973af76f5819c62c9b0b6a38b70f3fd6c1d36ffd47285ef91d12779
+    REFERENCE: sha256_29c8274d08f851f432abb7d3fe370f5dda49693b138c3aea23bd8e6408a5c898 
     DATE: 2025-01-01
 */
 
@@ -29,8 +29,8 @@
 
 #define FC_TARGET_MCU     STM32H743
 
-#define BOARD_NAME        SKYSTARSH7HD
-#define MANUFACTURER_ID   SKST
+#define BOARD_NAME        ACROSKYH743
+#define MANUFACTURER_ID   ASKY
 
 #define USE_GYRO
 #define USE_ACC
@@ -135,8 +135,12 @@
 #define DEFAULT_CURRENT_METER_SCALE 290
 #define BEEPER_INVERTED
 #define MAX7456_SPI_INSTANCE SPI2
-#define PINIO1_BOX 40
-#define PINIO2_BOX 41
+#define PINIO1_BOX                     40
+#define PINIO1_CONFIG                  129
+#define BOX_USER1_NAME                 "10V BEC"
+#define PINIO2_BOX                     41
+#define PINIO2_CONFIG                  129
+#define BOX_USER2_NAME                 "Cam1,2"
 #define FLASH_SPI_INSTANCE SPI3
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG

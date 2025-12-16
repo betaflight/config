@@ -34,12 +34,6 @@
 #define SDCARD_SPI_INSTANCE  SPI1
 #define GYRO_1_SPI_INSTANCE  SPI0
 
-// For debugging (trace) via UART, make with env var PICO_TRACE set (see RP2350.mk).
-// Instance, pins below for using spare UART connector (J10)
-#define PICO_TRACE_UART_INSTANCE  0
-#define PICO_TRACE_TX_GPIO       34
-#define PICO_TRACE_RX_GPIO       35
-
 #define MOTOR1_PIN           PA28
 #define MOTOR2_PIN           PA29
 #define MOTOR3_PIN           PA30
@@ -58,19 +52,36 @@
 #define SPI1_SDI_PIN         PA24
 #define SPI1_SDO_PIN         PA27
 
-#define SDCARD_SPI_CS_PIN    PA25
-//#define FLASH_CS_PIN         PA0
-//#define MAX7456_SPI_CS_PIN   PA17
+#define USE_MAX7456
+
+#define MAX7456_SPI_CS_PIN   PA17
+
+// Enable QUADSPI on RP2350 (pins are fixed via QMI; platform code handles them)
+#define USE_QUADSPI
+#define USE_QUADSPI_DEVICE_1
+#define FLASH_QUADSPI_INSTANCE	  1
+
+// MAX7456 and SD card cannot be used at the same time
+#ifdef USE_MAX7456
+#define USE_FLASH
+#define FLASH_CS_PIN         PA0
+#define USE_FLASH_CHIP
+#define USE_FLASH_W25Q128FV
+
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
+#else
 #define USE_SDCARD
 #define USE_SDCARD_SPI
+#define SDCARD_SPI_CS_PIN    PA25
+
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
+#endif
 
 #define GYRO_1_CS_PIN        PA1
 #define GYRO_1_EXTI_PIN      PA22
 
 #define GYRO_2_CS_PIN        NONE
 
-// Radio RX on UART1
 #define UART1_TX_PIN         PA20
 #define UART1_RX_PIN         PA21
 
@@ -90,9 +101,3 @@
 #define ADC_VBAT_PIN         PA40
 #define ADC_CURR_PIN         PA41
 #define ADC_RSSI_PIN         PA42
-
-/*
-GYRO_CLK        PA23
-TELEM_RX        PA37
-RGB_LED         PA39
-*/
