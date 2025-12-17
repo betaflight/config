@@ -61,7 +61,7 @@
 #define UART2_RX_PIN         PD6
 #define UART3_RX_PIN         PD9
 #define UART4_RX_PIN         PA1
-#define UART5_RX_PIN				 PB5
+#define UART5_RX_PIN         PB5
 #define UART7_RX_PIN         PE7
 #define UART8_RX_PIN         PE0
 
@@ -79,13 +79,13 @@
 #define SPI4_SDO_PIN         PE6
 
 #define GYRO_1_CS_PIN        PA4
-#define GYRO_1_EXTI_PIN			 PC5
-#define GYRO_1_CLKIN_PIN		 PC7
+#define GYRO_1_EXTI_PIN      PC5
+#define GYRO_1_CLKIN_PIN     PC7
 #define GYRO_1_SPI_INSTANCE	 SPI1
 #define GYRO_1_ALIGN         CW0_DEG
-#define GYRO_2_CS_PIN				 PE4
-#define GYRO_2_EXTI_PIN			 PE12
-#define GYRO_2_CLKIN_PIN		 PC6
+#define GYRO_2_CS_PIN        PE4
+#define GYRO_2_EXTI_PIN      PE12
+#define GYRO_2_CLKIN_PIN     PC6
 #define GYRO_2_SPI_INSTANCE	 SPI4
 #define GYRO_2_ALIGN         CW0_DEG
 #define SPI2_SCK_PIN         PB13
