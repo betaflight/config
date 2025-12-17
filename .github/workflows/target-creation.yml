@@ -9,14 +9,15 @@ on:
 
 jobs:
   deploy:
+    if: github.repository == 'betaflight/config'
     name: Create or Update Target
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
 
     - id: files
-      uses: tj-actions/changed-files@v34
+      uses: tj-actions/changed-files@v44
       with:
         files: |
           configs/**

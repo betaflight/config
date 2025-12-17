@@ -1,0 +1,159 @@
+name: Config File Check
+description: Check config files are valid by performing a betaflight build (using master)
+
+permissions:
+  contents: read
+  pull-requests: read
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  # -------------------------------------------------------
+  # JOB 1.1: Prepares the Matrix using a Marketplace Action
+  # -------------------------------------------------------
+  prepare_matrix:
+    runs-on: ubuntu-latest
+
+    outputs:
+      changed_files_json: ${{ steps.changed_files.outputs.all_changed_files_json }}
+      board_list_json: ${{ steps.process_dirs.outputs.board_list_json }}
+      is_empty: ${{ steps.check_empty.outputs.is_empty }}
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Get Changed Files and Output JSON
+        id: changed_files
+        uses: tj-actions/changed-files@v44
+        with:
+          dir_names: true
+          json: true
+
+      - name: Display Debug Output
+        run: |
+          echo "--- ALL CHANGED FILES ---"
+          echo "${{ steps.changed_files.outputs.all_changed_files }}"
+          echo "-------------------------"
+
+      - name: Process Paths and Extract Board Names
+        id: process_dirs
+        run: |
+          RAW_DIR_JSON="${{ steps.changed_files.outputs.all_changed_files }}"
+          MAX_MATRIX_SIZE=10 # limit the matrix size to 10... in case a bulk update is occurring.
+
+          BOARD_LIST=$(echo "$RAW_DIR_JSON" | jq -c \
+              --argjson max_size "$MAX_MATRIX_SIZE" \
+              '[
+                # Iterate, process, and collect into a new array
+                .[] |
+                select(startswith("configs/")) |
+                rtrimstr("/") |
+                split("/") |
+                last |
+                select(. != "")
+              ] | unique | .[:$max_size]')
+
+          # Fallback check: if the list is empty, default to an empty JSON array
+          if [[ -z "$BOARD_LIST" || "$BOARD_LIST" == "[]" ]]; then
+            BOARD_LIST="[]"
+            echo "No relevant board directories were changed."
+          fi
+
+          echo "Final Board List JSON: $BOARD_LIST"
+          echo "board_list_json=$BOARD_LIST" >> $GITHUB_OUTPUT
+
+      - name: Check if the Board List is Empty
+        id: check_empty
+        # Use JQ to check the length of the JSON array string
+        run: |
+          BOARD_LIST="${{ steps.process_dirs.outputs.final_list }}"
+
+          # JQ checks if the length of the array is 0
+          IS_EMPTY=$(echo "$BOARD_LIST" | jq 'length == 0')
+
+          echo "Board list empty? $IS_EMPTY"
+          echo "is_empty=$IS_EMPTY" >> $GITHUB_OUTPUT
+
+  # -------------------------------------------------------
+  # JOB 1.2: Prepare the build capability
+  # -------------------------------------------------------
+
+  setup:
+    name: Setup
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Firmware Repository
+        uses: actions/checkout@v5
+        with:
+          repository: 'betaflight/betaflight'
+          submodules: recursive
+          ref: 'master'
+          path: 'betaflight'
+          fetch-depth: 1
+
+      - name: Cache build toolchain
+        uses: actions/cache@v4
+        id: cache-toolchain
+        with:
+          path: betaflight/tools
+          key: ${{ runner.os }}-${{ hashFiles('betaflight/mk/tools.mk') }}
+
+      - name: Download and install toolchain
+        if: steps.cache-toolchain.outputs.cache-hit != 'true'
+        working-directory: ./betaflight
+        run: make arm_sdk_install
+
+      - name: Build pico tool and install
+        if: steps.cache-toolchain.outputs.cache-hit != 'true'
+        working-directory: ./betaflight
+        run: make picotool_install
+
+  # ----------------------------------------------------
+  # JOB 2: Runs the matrix for each Target Config
+  # ----------------------------------------------------
+  process_target:
+    needs: [prepare_matrix, setup]
+    runs-on: ubuntu-latest
+    if: ${{ needs.prepare_matrix.outputs.is_empty == 'false' }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        target: ${{ fromJson(needs.prepare_matrix.outputs.board_list_json) }}
+
+    steps:
+      - name: Checkout Config PR
+        uses: actions/checkout@v5
+        with:
+          path: 'config'
+          fetch-depth: 1
+
+      - name: Checkout Firmware Repository
+        uses: actions/checkout@v5
+        with:
+          repository: 'betaflight/betaflight'
+          submodules: recursive
+          ref: 'master'
+          path: 'betaflight'
+          fetch-depth: 1
+
+      - name: Fetch toolchain from cache
+        uses: actions/cache@v4
+        id: cache-toolchain
+        with:
+          path: betaflight/tools
+          key: ${{ runner.os }}-${{ hashFiles('betaflight/mk/tools.mk') }}
+
+      - name: Process Target ${{ matrix.target }}
+        working-directory: ./betaflight
+        run: |
+          TARGET="${{ matrix.target }}"
+
+          echo "--- Running check on $TARGET ---"
+          make EXTRA_FLAGS=-Werror CONFIG=$TARGET BETAFLIGHT_CONFIG=../config
