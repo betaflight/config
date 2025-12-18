@@ -15,6 +15,7 @@ jobs:
   # JOB 1.1: Prepares the Matrix using a Marketplace Action
   # -------------------------------------------------------
   prepare_matrix:
+    name: Prepare Build List
     runs-on: ubuntu-latest
 
     outputs:
@@ -85,7 +86,7 @@ jobs:
   # -------------------------------------------------------
 
   setup:
-    name: Setup
+    name: Setup Build Environment
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Firmware Repository
@@ -118,6 +119,7 @@ jobs:
   # JOB 2: Runs the matrix for each Target Config
   # ----------------------------------------------------
   process_target:
+    name: Process Target ${{ matrix.target }}
     needs: [prepare_matrix, setup]
     runs-on: ubuntu-latest
     if: ${{ needs.prepare_matrix.outputs.is_empty == 'false' }}
@@ -150,7 +152,7 @@ jobs:
           path: betaflight/tools
           key: ${{ runner.os }}-${{ hashFiles('betaflight/mk/tools.mk') }}
 
-      - name: Process Target ${{ matrix.target }}
+      - name: Build Target ${{ matrix.target }}
         working-directory: ./betaflight
         run: |
           TARGET="${{ matrix.target }}"
