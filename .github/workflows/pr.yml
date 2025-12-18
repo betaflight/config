@@ -72,7 +72,7 @@ jobs:
         id: check_empty
         # Use JQ to check the length of the JSON array string
         run: |
-          BOARD_LIST="${{ steps.process_dirs.outputs.final_list }}"
+          BOARD_LIST="${{ steps.process_dirs.outputs.board_list_json }}"
 
           # JQ checks if the length of the array is 0
           IS_EMPTY=$(echo "$BOARD_LIST" | jq 'length == 0')
