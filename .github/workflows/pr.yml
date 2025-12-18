@@ -71,10 +71,9 @@ jobs:
 
       - name: Check if the Board List is Empty
         id: check_empty
-        # Use JQ to check the length of the JSON array string
+        env:
+          BOARD_LIST: ${{ steps.process_dirs.outputs.board_list_json }}
         run: |
-          BOARD_LIST="${{ steps.process_dirs.outputs.board_list_json }}"
-
           # JQ checks if the length of the array is 0
           IS_EMPTY=$(echo "$BOARD_LIST" | jq 'length == 0')
 
