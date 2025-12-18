@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F405
 
-#define BOARD_NAME        HGLRC_F405_S_S
+#define BOARD_NAME        HGLRC_F405_S
 #define MANUFACTURER_ID   HGLR
 
 #define USE_GYRO
@@ -33,18 +33,14 @@
 #define USE_BARO
 #define USE_BARO_DPS368XTSA1
 #define USE_FLASH
-#define USE_FLASH_M25P16//flash不用标识SPI
-#define USE_MAX7456//OSD芯片
+#define USE_FLASH_M25P16
+#define USE_MAX7456
 
 #define BEEPER_PIN           PC13
-#define MOTOR1_PIN           PB4
-#define MOTOR2_PIN           PB5
+#define MOTOR1_PIN           PC9
+#define MOTOR2_PIN           PC8
 #define MOTOR3_PIN           PB0
 #define MOTOR4_PIN           PB1
-#define MOTOR5_PIN           PC8
-#define MOTOR6_PIN           PC9
-#define MOTOR7_PIN           PA9
-#define MOTOR8_PIN           PA10
 
 #define UART1_TX_PIN         PB6
 #define UART1_RX_PIN         PB7
@@ -54,7 +50,7 @@
 #define UART3_RX_PIN         PB11
 #define UART4_TX_PIN         PA0
 #define UART4_RX_PIN         PA1
-#define UART5_RX_PIN				 PD2
+#define UART5_RX_PIN         PD2
 #define UART6_TX_PIN         PC6
 #define UART6_RX_PIN         PC7
 
@@ -62,17 +58,17 @@
 #define I2C1_SDA_PIN         PB9
 
 #define LED0_PIN             PA8
-#define LED1_PIN						 PB15
+#define LED1_PIN             PB15
 #define LED_STRIP_PIN        PB3
 
 #define SPI1_SCK_PIN         PA5
 #define SPI1_SDO_PIN         PA7
 #define SPI1_SDI_PIN         PA6
-#define GYRO_1_CS_PIN				 PA4
-#define GYRO_1_EXTI_PIN			 PC4
-#define GYRO_1_CLKIN_PIN		 PB14
-#define GYRO_1_SPI_INSTANCE	 SPI1//实例用于区分和管理相同类型的传感器
-#define GYRO_1_ALIGN 				 CW0_DEG
+#define GYRO_1_CS_PIN        PA4
+#define GYRO_1_EXTI_PIN      PC4
+#define GYRO_1_CLKIN_PIN     PB14
+#define GYRO_1_SPI_INSTANCE  SPI1
+#define GYRO_1_ALIGN         CW0_DEG
 
 #define SPI2_SCK_PIN         PB13
 #define SPI2_SDI_PIN         PC2
@@ -82,7 +78,7 @@
 #define SPI3_SCK_PIN         PC10
 #define SPI3_SDI_PIN         PC11
 #define SPI3_SDO_PIN         PC12
-#define FLASH_CS_PIN				 PA15
+#define FLASH_CS_PIN         PA15
 #define FLASH_SPI_INSTANCE	 SPI3
 
 #define ADC_VBAT_PIN         PC0
@@ -92,15 +88,11 @@
 #define PINIO3_PIN           PB2
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 1, MOTOR1_PIN , 3,  1) \
-    TIMER_PIN_MAP( 2, MOTOR2_PIN , 3,  2) \
+    TIMER_PIN_MAP( 1, MOTOR1_PIN , 8,  4) \
+    TIMER_PIN_MAP( 2, MOTOR2_PIN , 8,  3) \
     TIMER_PIN_MAP( 3, MOTOR3_PIN , 3,  3) \
     TIMER_PIN_MAP( 4, MOTOR4_PIN , 3,  4) \
-    TIMER_PIN_MAP( 5, MOTOR5_PIN , 8,  3) \
-    TIMER_PIN_MAP( 6, MOTOR6_PIN , 8,  4) \
-    TIMER_PIN_MAP( 7, MOTOR7_PIN , 1,  2) \
-    TIMER_PIN_MAP( 8, MOTOR8_PIN , 1,  3) \
-		TIMER_PIN_MAP( 9, LED_STRIP_PIN , 2,  2) \
+    TIMER_PIN_MAP( 5, LED_STRIP_PIN , 2,  2) \
 
 #define ADC1_DMA_OPT        8
 #define ADC3_DMA_OPT        9
@@ -112,13 +104,11 @@
 #define USE_BARO
 #define BARO_I2C_INSTANCE I2CDEV_1
 #define MAG_I2C_INSTANCE I2CDEV_1
-//TODO #define SDCARD_MODE OFF
+
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define BEEPER_INVERTED
-//电源检测
-#define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC  // 电流计源为ADC
-#define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC  // 电压计源为ADC
-#define DEFAULT_VOLTAGE_METER_SCALE 110                 // 电压缩放系数110
-#define DEFAULT_CURRENT_METER_SCALE 400                 // 电流缩放系数400
-// #define PINIO1_CONFIG 129
-// #define PINIO1_BOX 0
+
+#define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SCALE 110               
+#define DEFAULT_CURRENT_METER_SCALE 400               
