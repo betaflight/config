@@ -113,8 +113,7 @@
 #define DEFAULT_CURRENT_METER_SCALE     100
 #define BEEPER_INVERTED
 #define FLASH_SPI_INSTANCE              SPI3
-#define PINIO1_CONFIG                   129
-#define PINIO1_CONFIG 1
+#define PINIO1_CONFIG                   1
 #define PINIO2_CONFIG 129
 #define PINIO1_BOX 40
 #define PINIO2_BOX 41
