@@ -38,6 +38,8 @@
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 
+#define USE_ACCGYRO_LSM6DSV16X
+
 //barometer
 #define USE_BARO
 #define USE_BARO_DPS310
