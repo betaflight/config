@@ -84,7 +84,7 @@
 #define GYRO_2_CS_PIN        PC3
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PA0 , 2,  0) \
+    TIMER_PIN_MAP( 0, PA0 , 2, -1) \
     TIMER_PIN_MAP( 1, PA3 , 3, -1) \
     TIMER_PIN_MAP( 2, PC8 , 2,  1) \
     TIMER_PIN_MAP( 3, PC6 , 2,  0) \
@@ -92,8 +92,8 @@
     TIMER_PIN_MAP( 5, PC7 , 2,  1) \
     TIMER_PIN_MAP( 6, PB6 , 1,  0) \
     TIMER_PIN_MAP( 7, PB7 , 1,  0) \
-    TIMER_PIN_MAP( 8, PB1 , 2,  0) \
-    TIMER_PIN_MAP( 9, PB0 , 2,  0) \
+    TIMER_PIN_MAP( 8, PB1 , 1,  0) \
+    TIMER_PIN_MAP( 9, PB0 , 1,  0) \
     TIMER_PIN_MAP(10, PA1 , 1,  0)
 
 #define ADC3_DMA_OPT        0
