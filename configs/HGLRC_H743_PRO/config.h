@@ -97,26 +97,26 @@
 
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 1, MOTOR1_PIN , 1,  1) \
-    TIMER_PIN_MAP( 2, MOTOR2_PIN , 1,  2) \
-    TIMER_PIN_MAP( 3, MOTOR3_PIN , 1,  3) \
-    TIMER_PIN_MAP( 4, MOTOR4_PIN , 1,  4) \
-    TIMER_PIN_MAP( 5, MOTOR5_PIN , 4,  1) \
-    TIMER_PIN_MAP( 6, MOTOR6_PIN , 4,  2) \
-    TIMER_PIN_MAP( 7, MOTOR7_PIN , 4,  3) \
-    TIMER_PIN_MAP( 8, MOTOR8_PIN , 4,  4) \
-    TIMER_PIN_MAP( 9, SERVO1_PIN , 5,  3) \
-    TIMER_PIN_MAP(10, SERVO2_PIN , 5,  4) \
-    TIMER_PIN_MAP(11, SERVO3_PIN , 3,  4) \
-    TIMER_PIN_MAP(12, BEEPER_PIN , 12,  -1) \
-    TIMER_PIN_MAP(13, LED_STRIP_PIN , 2,  -1) \
+    TIMER_PIN_MAP( 0, MOTOR1_PIN , 1,  0) \
+    TIMER_PIN_MAP( 1, MOTOR2_PIN , 1,  0) \
+    TIMER_PIN_MAP( 2, MOTOR3_PIN , 2,  0) \
+    TIMER_PIN_MAP( 3, MOTOR4_PIN , 2,  0) \
+    TIMER_PIN_MAP( 4, MOTOR5_PIN , 1,  0) \
+    TIMER_PIN_MAP( 5, MOTOR6_PIN , 2,  0) \
+    TIMER_PIN_MAP( 6, MOTOR7_PIN , 2,  0) \
+    TIMER_PIN_MAP( 7, MOTOR8_PIN , 3,  -1) \
+    TIMER_PIN_MAP( 8, SERVO1_PIN , 2,  0) \
+    TIMER_PIN_MAP( 9, SERVO2_PIN , 2,  0) \
+    TIMER_PIN_MAP(10, SERVO3_PIN , 2,  0) \
+    TIMER_PIN_MAP(11, BEEPER_PIN , 3,  -1) \
+    TIMER_PIN_MAP(12, LED_STRIP_PIN , 3,  -1) \
 
 #define ADC1_DMA_OPT        8
 #define ADC3_DMA_OPT        9
 #define TIMUP1_DMA_OPT      10
 #define TIMUP3_DMA_OPT      11
 #define TIMUP4_DMA_OPT      12
-#define TIMUP5_DMA_OPT      7
+#define TIMUP5_DMA_OPT      13
 
 #define USE_BARO
 #define BARO_I2C_INSTANCE I2CDEV_1
