@@ -69,15 +69,14 @@
 #define GYRO_1_CS_PIN        PA4
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, LED_STRIP_PIN , 1, -1) \
-    TIMER_PIN_MAP( 1, MOTOR1_PIN , 3,  4) \
-    TIMER_PIN_MAP( 2, MOTOR2_PIN , 3,  2) \
-    TIMER_PIN_MAP( 3, MOTOR3_PIN , 3,  3) \
-    TIMER_PIN_MAP( 4, MOTOR4_PIN , 3,  1)
+    TIMER_PIN_MAP( 0, MOTOR1_PIN , 2,  0) \
+    TIMER_PIN_MAP( 1, MOTOR2_PIN , 2,  0) \
+    TIMER_PIN_MAP( 2, MOTOR3_PIN , 2,  0) \
+    TIMER_PIN_MAP( 3, MOTOR4_PIN , 2,  0)
+    TIMER_PIN_MAP( 4, BEEPER_PIN , 3, -1) \
+    TIMER_PIN_MAP( 5, LED_STRIP_PIN , 3, -1) \
 
-
-#define SPI3_TX_DMA_OPT     1
-#define ADC1_DMA_OPT        0
+#define ADC1_DMA_OPT        1
 
 
 #define MAG_I2C_INSTANCE I2CDEV_1
