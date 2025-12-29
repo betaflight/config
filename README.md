@@ -4,7 +4,7 @@ Repository for the storage of config.h files for default board settings. For mor
 
 The config.h replaces the unified target configuration that is now deprecated from version 4.5.0. This frees up some flash space, and ensures defaults are baked into the build. This has been made possible due to the introduction of the cloud build service. Standard default targets are still available where possible, but they require all configuration to be restored from a backup.
 
-Cloud build takes care of the config repository for the general user, and knowledge of it is generally not needed. The instructions here are predominantly for tinkerers, community support and for manufacturers for creating a target.
+Cloud build takes care of the config repository for the general user, and knowledge of it is generally not needed. The instructions here are predominantly for tinkerers, and for community and manufacturers creating and supporting targets.
 
 ## NOTICE
 
