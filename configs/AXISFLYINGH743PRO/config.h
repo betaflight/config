@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU      STM32H743
 
-#define BOARD_NAME         AXISFLYING_H743PRO
+#define BOARD_NAME         AXISFLYINGH743PRO
 #define MANUFACTURER_ID    AXFL
 
 #define USE_ACC
@@ -154,7 +154,7 @@
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define GYRO_1_ALIGN                    CW0_DEG
 #define GYRO_2_SPI_INSTANCE             SPI4
-#define GYRO_2_ALIGN                    CW270_DEG
+#define GYRO_2_ALIGN                    CW90_DEG
 #define DEFAULT_GYRO_TO_USE             GYRO_CONFIG_USE_GYRO_BOTH
 #define MAX7456_SPI_INSTANCE            SPI2
 #define FLASH_SPI_INSTANCE              SPI3
