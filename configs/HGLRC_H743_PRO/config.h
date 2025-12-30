@@ -109,7 +109,8 @@
     TIMER_PIN_MAP( 9, SERVO2_PIN , 2,  -1) \
     TIMER_PIN_MAP(10, SERVO3_PIN , 2,  -1) \
     TIMER_PIN_MAP(11, BEEPER_PIN , 2,  -1) \
-    TIMER_PIN_MAP(12, LED_STRIP_PIN , 1,  7) \
+    TIMER_PIN_MAP(12, GYRO_1_CLKIN_PIN , 2,  -1) \
+    TIMER_PIN_MAP(13, LED_STRIP_PIN , 1,  7) 
 
 #define ADC1_DMA_OPT        8
 #define ADC3_DMA_OPT        9
