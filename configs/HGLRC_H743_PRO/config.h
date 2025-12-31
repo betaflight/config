@@ -68,6 +68,7 @@
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB7
 
+#define LED_STRIP_PIN        PA0
 #define LED0_PIN             PE3
 
 #define SPI1_SCK_PIN         PA5
@@ -91,9 +92,14 @@
 #define FLASH_CS_PIN         PA15
 #define FLASH_SPI_INSTANCE	 SPI3
 
-#define LED_STRIP_PIN        PA0
-#define ADC_VBAT_PIN         PC0
-#define ADC_CURR_PIN         PC1
+#define PINIO1_PIN           PC14
+#define PINIO2_PIN           PC15
+
+#define CURRENT_METER_1_ADC_PIN PC1
+#define CURRENT_METER_2_ADC_PIN PC3
+#define ADC_VBAT_PIN            PC0
+#define ADC_CURR_PIN            CURRENT_METER_1_ADC_PIN
+#define ADC_EXTERNAL1_PIN       CURRENT_METER_2_ADC_PIN
 
 
 #define TIMER_PIN_MAPPING \
@@ -124,6 +130,14 @@
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define BEEPER_INVERTED
 
+#define PINIO1_BOX                   40
+#define PINIO1_CONFIG                129
+#define BOX_USER1_NAME               "10V BEC"
+#define PINIO2_BOX                   41
+#define PINIO2_CONFIG                1
+#define BOX_USER2_NAME               "Cam1,2"
+
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
-#define DEFAULT_CURRENT_METER_SCALE 168              
+#define DEFAULT_VOLTAGE_METER_SCALE  130               
+#define DEFAULT_CURRENT_METER_SCALE  102              
