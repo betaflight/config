@@ -54,7 +54,6 @@
 #define DEFAULT_VOLTAGE_METER_SCALE    110 // 100k/10k divider
 
 // RGB LED
-#define USE_LED_STRIP
 #define LED_STRIP_PIN        PA46
 
 // Gyro+acc
