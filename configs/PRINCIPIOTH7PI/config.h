@@ -159,7 +159,6 @@
 #define USE_MAG
 #define USE_MAG_LIS2MDL
 #define MAG_I2C_INSTANCE     (I2CDEV_2)
-#define MAG_I2C_ADDRESS      0x1E
 #define MAG_ALIGN            CW90_DEG
 #define MAG_ALIGN_YAW        900
 
