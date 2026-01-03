@@ -102,13 +102,11 @@
 #define ADC_CURR_PIN         PC1
 
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SCALE 110
 
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 
-// TODO: Is this right?
-#define ADC1_DMA_OPT         8
-#define ADC3_DMA_OPT         9
+#define ADC1_DMA_OPT         9
+#define ADC3_DMA_OPT         10
 
 // SD card
 #define USE_SDCARD
@@ -153,12 +151,14 @@
 // Baro
 #define USE_BARO
 #define USE_BARO_DPS310 // DPS368, but it's equivalent
-#define BARO_I2C_INSTANCE    (I2CDEV_1)
+#define BARO_I2C_INSTANCE    I2CDEV_1
 
 // Mag
+#ifndef USE_MAG
 #define USE_MAG
+#endif
 #define USE_MAG_LIS2MDL
-#define MAG_I2C_INSTANCE     (I2CDEV_2)
+#define MAG_I2C_INSTANCE     I2CDEV_2
 #define MAG_ALIGN            CW90_DEG
 #define MAG_ALIGN_YAW        900
 
@@ -188,14 +188,8 @@ Beeper (TIM2 CH1)
     TIMER_PIN_MAP( 8, PA8 , 1,  8) \
     TIMER_PIN_MAP( 9, PA15, 1, -1)
 
-// TODO: DMA options
-
-#define TIMUP1_DMA_OPT      0
-#define TIMUP2_DMA_OPT      0
-#define TIMUP3_DMA_OPT      2
-#define TIMUP4_DMA_OPT      1
-#define TIMUP5_DMA_OPT      0
-#define TIMUP8_DMA_OPT      0
+#define TIMUP3_DMA_OPT      11
+#define TIMUP5_DMA_OPT      12
 
 // Other features:
 #define DEFAULT_RX_FEATURE FEATURE_RX_SERIAL
