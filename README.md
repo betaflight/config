@@ -1,16 +1,19 @@
 # Target Configuration (config.h) repository
 
-Repository for the storage of config.h files for board settings. For more information please see https://betaflight.com
+Repository for the storage of config.h files for default board settings. For more information please see https://betaflight.com
 
-The config.h replaces the unified target configuration that is now deprecated from version 4.5.0. This frees up some flash space, and ensures defaults are baked into the build. This has been made possible due to the introduction of the cloud build service. Standard default targets are still available, but they require all configuration to be restored from a backup.
+The config.h replaces the unified target configuration that is now deprecated from version 4.5.0. This frees up some flash space, and ensures defaults are baked into the build. This has been made possible due to the introduction of the cloud build service. Standard default targets are still available where possible, but they require all configuration to be restored from a backup.
 
-Cloud build takes care of the config repository for the general user, and knowledge of it is generally not needed. The instructions here are predominantly for tinkerers and for manufacturers around creating a target.
+Cloud build takes care of the config repository for the general user, and knowledge of it is generally not needed. The instructions here are predominantly for tinkerers, and for community and manufacturers creating and supporting targets.
 
 ## NOTICE
 
-For a target to be successfully approved it **must** adhere to both https://betaflight.com/docs/development/manufacturer/requirements-for-submission-of-targets AND https://betaflight.com/docs/development/manufacturer/config-target-guidance.
+For a target to be considered supported it **must** adhere to both:
+1. https://betaflight.com/docs/development/manufacturer/requirements-for-submission-of-targets
+-- AND --
+2. https://betaflight.com/docs/development/manufacturer/config-target-guidance.
 
-Pull-Requests for config submission should only be from a custom branch, and not `master` directly.
+In addition pull requests for config submission, or updates, should only be from a custom branch, and not `master` directly. PRs will be automatically closed that do not adhere to this.
 
 ## How to use - Firmware
 
@@ -31,7 +34,7 @@ Then you can make a build for a specific target configuration e.g.
 
 ### TIMER_MAP
 
-The `TIMER_MAP` define sets up the timers default settings, as adjusted with the `timer` and `dma` commands in CLI. The problem is there are some magic numbers (index entries), that need to be known.
+For those targets that require it (e.g. STM32), the `TIMER_MAP` define sets up the timers default settings, as adjusted with the `timer` and `dma` commands in CLI. The problem is there are some magic numbers (index entries), that need to be known.
 
 You can activate the `timer map` CLI command (by compiling with `USE_TIMER_MAP_PRINT` defined i.e. `"EXTRA_FLAGS=-DUSE_TIMER_MAP_PRINT"`).
 
