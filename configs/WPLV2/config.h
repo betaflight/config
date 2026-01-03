@@ -12,13 +12,9 @@
 #define USE_ACC_SPI_ICM42688P
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
-#ifndef USE_OSD_HD
-#define USE_OSD_HD
-#endif
 
-#define USE_LED_STRIP
-
-#define USE_BARO_DPS310
+//#define USE_BARO
+//#define USE_BARO_DPS310
 
 #define USE_SERVOS
 #define SERVO1_PIN           PE5
@@ -77,12 +73,15 @@
 #define PINIO1_BOX 40
 #define PINIO1_CONFIG 129
 #define PINIO2_PIN PE4                  
-#define PINIO2_BOX 40
+#define PINIO2_BOX 41
 #define PINIO2_CONFIG 1
 
 #define DEFAULT_FEATURES (FEATURE_OSD | FEATURE_LED_STRIP)
 
+#ifdef USE_OSD_HD
 #define MSP_DISPLAYPORT_UART            SERIAL_PORT_USART2
+#endif
+
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
@@ -104,7 +103,7 @@
     TIMER_PIN_MAP(  8, LED_STRIP_PIN, 1,  8 ) /* TIM2 CH1 */ \
     TIMER_PIN_MAP(  9, BEEPER_PIN,    1, -1 ) /* TIM4 CH1 */ \
     TIMER_PIN_MAP( 10, SERVO1_PIN,    1, -1 ) /* TIM15 CH1 */ \
-    TIMER_PIN_MAP( 11, SERVO2_PIN,    1, -1 ) /* TIM15 CH2 */
+    TIMER_PIN_MAP( 11, SERVO2_PIN,    1, -1 ) /* TIM15 CH2 */\
     TIMER_PIN_MAP( 12, GYRO_1_CLKIN_PIN,    2, -1 ) /* TIM5 CH1 */
 
 #define TIMUP1_DMA_OPT 9
@@ -112,3 +111,4 @@
 
 #define ADC1_DMA_OPT   11
 #define ADC2_DMA_OPT   12
+#define ADC3_DMA_OPT   13
