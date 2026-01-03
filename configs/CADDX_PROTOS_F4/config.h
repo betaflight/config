@@ -19,6 +19,10 @@
 * If not, see <http://www.gnu.org/licenses/>.
 */
 
+/*
+    NOTE: this board is community and manufacturer supported only.
+*/
+
 #pragma once
 
 #define FC_TARGET_MCU     STM32F405
@@ -118,3 +122,4 @@
 #define DEFAULT_CURRENT_METER_SCALE     191
 #define ADC1_DMA_OPT        1
 #define ADC_INSTANCE ADC1
+
