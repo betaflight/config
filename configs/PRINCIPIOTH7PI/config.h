@@ -200,7 +200,7 @@ Beeper (TIM2 CH1)
 // PINIO 1 is the 10V enable pin for VTX power
 #define PINIO1_PIN           PD10
 #define PINIO1_CONFIG        129 // PINIO_CONFIG_MODE_OUT_PP, 10V enable, active low
-#define PINIO1_BOX           42 // VTX
+#define PINIO1_BOX           40 // USER1
 
 #define PINIO2_PIN           PD11
 #define PINIO2_CONFIG        1 // PINIO_CONFIG_MODE_OUT_PP
