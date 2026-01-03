@@ -40,7 +40,6 @@
 #define RX_PPM_PIN           PE0
 #define LED_STRIP_PIN        PA8
 
-
 // Debug connector
 #define UART2_TX_PIN         PD5
 #define UART2_RX_PIN         PD6
@@ -119,7 +118,7 @@
 #define SDIO_D1_PIN          PC9
 #define SDIO_D2_PIN          PC10
 #define SDIO_D3_PIN          PC11
-#define SDCARD_DETECT_PIN    PD15 // TODO: Is this needed?
+#define SDCARD_DETECT_PIN    PD15
 #define SDCARD_DETECT_INVERTED
 
 #define SDIO_DEVICE SDIODEV_1
@@ -130,7 +129,7 @@
 // Sensors
 #define USE_ACC
 #define USE_GYRO
-#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH // TODO: Can it use both?
+#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
 
 // IMU 1 (ICM-42688P)
 #define USE_ACC_SPI_ICM42688P
@@ -164,7 +163,6 @@
 #define MAG_ALIGN            CW90_DEG
 #define MAG_ALIGN_YAW        900
 
-//TODO: Fix timer pin mapping
 /*
 Pin mapping:
 Motor 1 (TIM5 CH1)
@@ -178,6 +176,7 @@ Servo 2 (TIM15 CH2)
 LED strip (TIM1 CH1)
 Beeper (TIM2 CH1)
 */
+
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PA0 , 2,  0) \
     TIMER_PIN_MAP( 1, PA1 , 2,  1) \
@@ -190,7 +189,6 @@ Beeper (TIM2 CH1)
     TIMER_PIN_MAP( 8, PA8 , 1,  8) \
     TIMER_PIN_MAP( 9, PA15, 1, -1)
 
-
 // TODO: DMA options
 
 #define TIMUP1_DMA_OPT      0
@@ -199,8 +197,6 @@ Beeper (TIM2 CH1)
 #define TIMUP4_DMA_OPT      1
 #define TIMUP5_DMA_OPT      0
 #define TIMUP8_DMA_OPT      0
-
-
 
 // Other features:
 #define DEFAULT_RX_FEATURE FEATURE_RX_SERIAL
