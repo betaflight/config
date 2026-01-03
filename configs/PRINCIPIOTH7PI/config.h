@@ -204,4 +204,4 @@ Beeper (TIM2 CH1)
 
 #define PINIO2_PIN           PD11
 #define PINIO2_CONFIG        1 // PINIO_CONFIG_MODE_OUT_PP
-#define PINIO2_BOX           40 // User 2
+#define PINIO2_BOX           41 // USER2
