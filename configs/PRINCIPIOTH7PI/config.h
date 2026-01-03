@@ -37,7 +37,6 @@
 #define MOTOR6_PIN           PB0
 #define SERVO1_PIN           PE5
 #define SERVO2_PIN           PE6
-#define RX_PPM_PIN           PE0
 #define LED_STRIP_PIN        PA8
 
 // Debug connector
@@ -201,6 +200,7 @@ Beeper (TIM2 CH1)
 #define PINIO1_PIN           PD10
 #define PINIO1_CONFIG        129 // PINIO_CONFIG_MODE_OUT_PP, 10V enable, active low
 #define PINIO1_BOX           40 // USER1
+#define BOX_USER1_NAME       "VTX PWR"
 
 #define PINIO2_PIN           PD11
 #define PINIO2_CONFIG        1 // PINIO_CONFIG_MODE_OUT_PP
