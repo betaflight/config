@@ -102,11 +102,9 @@
 #define PINIO1_PIN           PC14
 #define PINIO2_PIN           PC15
 
-#define CURRENT_METER_1_ADC_PIN PC1
-#define CURRENT_METER_2_ADC_PIN PC3
 #define ADC_VBAT_PIN            PC0
-#define ADC_CURR_PIN            CURRENT_METER_1_ADC_PIN
-#define ADC_EXTERNAL1_PIN       CURRENT_METER_2_ADC_PIN
+#define ADC_CURR_PIN            PC1
+#define ADC_EXTERNAL1_PIN       PC3
 
 
 #define TIMER_PIN_MAPPING \
