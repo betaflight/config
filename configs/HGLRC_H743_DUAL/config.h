@@ -87,7 +87,6 @@
 #define GYRO_2_EXTI_PIN      PE12
 #define GYRO_2_CLKIN_PIN     PC6
 #define GYRO_2_SPI_INSTANCE	 SPI4
-#define GYRO_2_ALIGN         CW0_DEG
 #define SPI2_SCK_PIN         PB13
 #define SPI2_SDI_PIN         PC2
 #define SPI2_SDO_PIN         PB15
