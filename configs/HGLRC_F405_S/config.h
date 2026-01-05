@@ -67,7 +67,6 @@
 #define GYRO_1_CS_PIN        PA4
 #define GYRO_1_EXTI_PIN      PC4
 #define GYRO_1_SPI_INSTANCE	 SPI1
-#define GYRO_1_ALIGN         CW0_DEG
 
 #define USE_GYRO_CLKIN
 #define GYRO_1_CLKIN_PIN     PB14
