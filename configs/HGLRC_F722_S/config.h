@@ -92,18 +92,6 @@
     TIMER_PIN_MAP( 4, LED_STRIP_PIN, 1, 0) \
     TIMER_PIN_MAP( 5, GYRO_1_CLKIN_PIN, 1, 0)
 
-#ifndef USE_LED_STRIP
-#define USE_LED_STRIP
-#endif
-
-#ifndef USE_GPS
-#define USE_GPS
-#endif
-
-#ifndef USE_MAG
-#define USE_MAG
-#endif
-
 #define MAG_I2C_INSTANCE  I2CDEV_1
 #define BARO_I2C_INSTANCE I2CDEV_1
 
