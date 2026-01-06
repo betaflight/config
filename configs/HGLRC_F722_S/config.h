@@ -26,7 +26,9 @@
 #define BOARD_NAME        HGLRC_F722_S
 #define MANUFACTURER_ID   HGLR
 
+#define USE_ACC
 #define USE_ACC_SPI_ICM42688P
+#define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 #define USE_BARO
 #define USE_BARO_DPS310
