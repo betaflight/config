@@ -50,7 +50,7 @@
 #define MOTOR8_PIN           PD15
 #define SERVO1_PIN           PA2
 #define SERVO2_PIN           PA3
-#define SERVO3_PIN           PB1
+#define SERVO3_PIN           PB0
 
 #define UART1_TX_PIN         PA9
 #define UART1_RX_PIN         PA10
