@@ -92,8 +92,8 @@
     TIMER_PIN_MAP( 5, PC7 , 2,  1) \
     TIMER_PIN_MAP( 6, PB6 , 1,  0) \
     TIMER_PIN_MAP( 7, PB7 , 1,  0) \
-    TIMER_PIN_MAP( 8, PB1 , 1,  0) \
-    TIMER_PIN_MAP( 9, PB0 , 1,  0) \
+    TIMER_PIN_MAP( 8, PB1 , 2,  0) \
+    TIMER_PIN_MAP( 9, PB0 , 2,  0) \
     TIMER_PIN_MAP(10, PA1 , 1,  0)
 
 #define ADC3_DMA_OPT        0
