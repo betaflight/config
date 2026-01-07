@@ -109,7 +109,7 @@
     TIMER_PIN_MAP( 3, MOTOR4_PIN , 2,  0 ) \
     TIMER_PIN_MAP( 4, LED_STRIP_PIN , 1,  0 ) \
     TIMER_PIN_MAP( 5, CAMERA_CONTROL_PIN , 2, -1 ) \
-    TIMER_PIN_MAP( 6, RX_PPM_PIN , 2, -1 ) \
+    TIMER_PIN_MAP( 6, RX_PPM_PIN , 2, -1 )
 
 #define ADC1_DMA_OPT         1
 
