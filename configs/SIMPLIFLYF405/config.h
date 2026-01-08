@@ -100,7 +100,8 @@
 // PinIO
 #define PINIO1_PIN           PB2
 #define PINIO1_CONFIG        129
-#define PINIO1_BOX           0
+#define PINIO1_BOX           40
+#define BOX_USER1_NAME       "9V BEC"
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, MOTOR1_PIN , 2,  1 ) \
