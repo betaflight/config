@@ -75,6 +75,8 @@
 #define GYRO_1_CS_PIN        PC4
 #define GYRO_1_SPI_INSTANCE  SPI1
 #define GYRO_1_ALIGN         CW270_DEG_FLIP
+#define USE_GYRO_CLKIN
+#define GYRO_1_CLKIN_PIN     PA8
 
 // SPI2 for Max7456 OSD
 #define SPI2_SCK_PIN         PB13
