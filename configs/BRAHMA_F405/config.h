@@ -79,15 +79,13 @@
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PB1 , 1,  1 ) \
     TIMER_PIN_MAP( 1, PB0 , 1,  0 ) \
-    TIMER_PIN_MAP( 2, PA3 , 1,  0 ) \
-    TIMER_PIN_MAP( 3, PA2 , 1,  0 ) \
+    TIMER_PIN_MAP( 2, PA3 , 2,  0 ) \
+    TIMER_PIN_MAP( 3, PA2 , 2,  0 ) \
     TIMER_PIN_MAP( 4, PB9 , 1, -1 ) \
     TIMER_PIN_MAP( 5, PB4 , 1,  0 ) \
     TIMER_PIN_MAP( 6, PB5 , 1,  0 ) \
-    TIMER_PIN_MAP( 7, PC9 , 1,  0 ) \
+    TIMER_PIN_MAP( 7, PC9 , 2,  0 ) \
     TIMER_PIN_MAP( 8, PC8 , 2,  0 )
-
-// ##timer A15 NONE ### please Add
 
 #define ADC1_DMA_OPT 0
 
