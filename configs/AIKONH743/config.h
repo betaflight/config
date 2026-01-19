@@ -58,8 +58,8 @@
 #define UART3_RX_PIN         PD9
 #define UART4_TX_PIN         PD1
 #define UART4_RX_PIN         PD0
-#define UART5_TX_PIN         PB9
-#define UART5_RX_PIN         PB8
+#define UART5_TX_PIN         PB6
+#define UART5_RX_PIN         PB5
 #define UART6_TX_PIN         PC6
 #define UART6_RX_PIN         PC7
 #define UART7_TX_PIN         PE8
@@ -67,8 +67,8 @@
 #define UART8_TX_PIN         PE1
 #define UART8_RX_PIN         PE0
 					         
-#define I2C1_SCL_PIN         PB6
-#define I2C1_SDA_PIN         PB7
+#define I2C1_SCL_PIN         PB8
+#define I2C1_SDA_PIN         PB9
 #define I2C2_SCL_PIN         PB10
 #define I2C2_SDA_PIN         PB11
 					         
@@ -136,7 +136,7 @@
 #define PINIO1_CONFIG                  129
 #define BOX_USER1_NAME                 "10V BEC OFF"
 #define PINIO2_BOX                     41
-#define PINIO2_CONFIG                  1
+#define PINIO2_CONFIG                  129
 #define BOX_USER2_NAME                 "CAM 1,2"
 #define GYRO_1_SPI_INSTANCE            SPI1
 //#define GYRO_1_ALIGN                   CW180_DEG
