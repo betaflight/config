@@ -83,7 +83,7 @@
 #define SPI2_SDO_PIN         PB15
 #define SPI3_SCK_PIN         PB3
 #define SPI3_SDI_PIN         PB4
-#define SPI3_SDO_PIN         PB5
+#define SPI3_SDO_PIN         PB2
 #define MAX7456_SPI_CS_PIN   PA15
 #define SPI4_SCK_PIN         PE12
 #define SPI4_SDI_PIN         PE13
@@ -96,7 +96,7 @@
 #define PINIO1_PIN           PE4
 #define PINIO2_PIN           PC4
 
-#define GYRO_1_EXTI_PIN      PB2
+#define GYRO_1_EXTI_PIN      PC5
 #define GYRO_1_CS_PIN        PA4
 #define GYRO_1_CLKIN_PIN     PE6
 
@@ -139,7 +139,7 @@
 #define PINIO2_CONFIG                  129
 #define BOX_USER2_NAME                 "CAM 1,2"
 #define GYRO_1_SPI_INSTANCE            SPI1
-//#define GYRO_1_ALIGN                   CW180_DEG
+#define GYRO_1_ALIGN                   CW180_DEG
 #define GYRO_2_SPI_INSTANCE            SPI2
-//#define GYRO_2_ALIGN                   CW0_DEG
-//#define DEFAULT_ALIGN_BOARD_YAW        -45
+#define GYRO_2_ALIGN                   CW0_DEG
+#define DEFAULT_ALIGN_BOARD_YAW        -45
