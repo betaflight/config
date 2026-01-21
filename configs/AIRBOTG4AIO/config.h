@@ -99,12 +99,6 @@
 #define ADC1_DMA_OPT                 10
 #define ADC2_DMA_OPT                 11
 
-#define SPI1_RX_DMA_OPT              6
-#define SPI1_TX_DMA_OPT              7
-
-#define SPI2_RX_DMA_OPT              8
-#define SPI2_TX_DMA_OPT              9
-
 #define ADC_INSTANCE                 ADC2
 #define DEFAULT_BLACKBOX_DEVICE      BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BURST          DSHOT_DMAR_ON
@@ -112,12 +106,12 @@
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
 #define DEFAULT_CURRENT_METER_SCALE  179
 #define BEEPER_INVERTED
+#define SYSTEM_HSE_MHZ               8
 
 #define BARO_I2C_INSTANCE            I2CDEV_1
-#define MAG_I2C_INSTANCE                     I2CDEV_1
+#define MAG_I2C_INSTANCE             I2CDEV_1
 #define MAX7456_SPI_INSTANCE         SPI2
 #define FLASH_SPI_INSTANCE           SPI2
-
 #define GYRO_1_SPI_INSTANCE          SPI1
 #define GYRO_1_ALIGN                 CW0_DEG_FLIP
 #define DEFAULT_ALIGN_BOARD_YAW      -45
