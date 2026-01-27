@@ -131,7 +131,7 @@
 #define DEFAULT_VOLTAGE_METER_SOURCE   VOLTAGE_METER_ADC
 #define BEEPER_INVERTED
 #define MAX7456_SPI_INSTANCE           SPI3
-#define FLASH_SPI_INSTANCE             SPI2
+#define FLASH_SPI_INSTANCE             SPI4
 #define PINIO1_BOX                     40
 #define PINIO1_CONFIG                  129
 #define BOX_USER1_NAME                 "10V BEC OFF"
