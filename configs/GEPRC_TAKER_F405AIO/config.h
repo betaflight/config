@@ -40,8 +40,8 @@
 #define BEEPER_PIN           PD7
 #define MOTOR1_PIN           PE9
 #define MOTOR2_PIN           PE11
-#define MOTOR3_PIN           PE13
-#define MOTOR4_PIN           PE14
+#define MOTOR3_PIN           PC8
+#define MOTOR4_PIN           PC9
 #define RX_PPM_PIN           PA3
 #define LED_STRIP_PIN        PD14
 #define UART1_TX_PIN         PA9
@@ -84,8 +84,8 @@
 #define TIMER_PIN_MAPPING \
 TIMER_PIN_MAP( 0, PE9 , 1,  2) \
 TIMER_PIN_MAP( 1, PE11, 1,  1) \
-TIMER_PIN_MAP( 2, PE13, 1,  1) \
-TIMER_PIN_MAP( 3, PE14, 1,  0) \
+TIMER_PIN_MAP( 2, PC8, 2,  1) \
+TIMER_PIN_MAP( 3, PC9, 2,  0) \
 TIMER_PIN_MAP( 4, PA3 , 3, -1) \
 TIMER_PIN_MAP( 5, PD14, 1,  0) \
 TIMER_PIN_MAP( 6, PB1 , 2, -1) 
