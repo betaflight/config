@@ -83,9 +83,7 @@
 #define FLASH_CS_PIN         PC13
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC3
-#define GYRO_2_EXTI_PIN      PC4
 #define GYRO_1_CS_PIN        PA4
-#define GYRO_2_CS_PIN        PB2
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PC6 , 2,  0) \
@@ -116,5 +114,3 @@
 #define MAX7456_SPI_INSTANCE SPI2
 #define FLASH_SPI_INSTANCE SPI3
 #define GYRO_1_SPI_INSTANCE SPI1
-#define GYRO_2_SPI_INSTANCE SPI1
-#define GYRO_2_ALIGN CW270_DEG
