@@ -63,6 +63,8 @@
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
 #define USE_ACCGYRO_ICM45686
+#define USE_ACCGYRO_LSM6DSO
+#define USE_ACCGYRO_LSM6DSV16X
 #define USE_SPI_DEVICE_1
 #define SPI1_SCK_PIN         PA30
 #define SPI1_SDI_PIN         PA28
