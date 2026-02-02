@@ -21,6 +21,7 @@
 #define SERVO2_PIN           PE6
 
 #define BEEPER_PIN PD12
+#define BEEPER_INVERTED
 
 #define MOTOR1_PIN PE9
 #define MOTOR2_PIN PE11
@@ -71,7 +72,7 @@
 #define VTX_ENABLE_PIN PE3
 #define PINIO1_PIN VTX_ENABLE_PIN
 #define PINIO1_BOX 40
-#define PINIO1_CONFIG 129
+#define PINIO1_CONFIG 1
 #define PINIO2_PIN PE4                  
 #define PINIO2_BOX 41
 #define PINIO2_CONFIG 1
@@ -101,10 +102,9 @@
     TIMER_PIN_MAP(  6, MOTOR7_PIN, 2,  6 ) /* TIM8 CH3 */ \
     TIMER_PIN_MAP(  7, MOTOR8_PIN, 2,  7 ) /* TIM8 CH4 */ \
     TIMER_PIN_MAP(  8, LED_STRIP_PIN, 1,  8 ) /* TIM2 CH1 */ \
-    TIMER_PIN_MAP(  9, BEEPER_PIN,    1, -1 ) /* TIM4 CH1 */ \
-    TIMER_PIN_MAP( 10, SERVO1_PIN,    1, -1 ) /* TIM15 CH1 */ \
-    TIMER_PIN_MAP( 11, SERVO2_PIN,    1, -1 ) /* TIM15 CH2 */\
-    TIMER_PIN_MAP( 12, GYRO_1_CLKIN_PIN,    2, -1 ) /* TIM5 CH1 */
+    TIMER_PIN_MAP( 9, SERVO1_PIN,    1, -1 ) /* TIM15 CH1 */ \
+    TIMER_PIN_MAP( 10, SERVO2_PIN,    1, -1 ) /* TIM15 CH2 */\
+    TIMER_PIN_MAP( 11, GYRO_1_CLKIN_PIN,    2, -1 ) /* TIM5 CH1 */
 
 #define TIMUP1_DMA_OPT 9
 #define TIMUP8_DMA_OPT 10
