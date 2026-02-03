@@ -74,7 +74,7 @@
 #define SPI3_SCK_PIN        PC10
 #define SPI3_SDI_PIN        PC11
 #define SPI3_SDO_PIN        PB5
-#define FLASH_SPI_CS_PIN    PB4
+#define FLASH_CS_PIN        PB4
 
 #define LED0_PIN            PC0
 #define BEEPER_PIN          PC13
