@@ -198,10 +198,10 @@
 //+3.3V
 //GND
 
-// Internal BMP580 barometer on I2C0
+// Internal BMP5xx barometer on I2C0
 #define USE_BARO
-#define USE_BARO_BMP580
-#define DEFAULT_BARO_BMP580
+#define USE_BARO_BMP5XX
+#define DEFAULT_BARO_BMP5XX
 #define BARO_I2C_INSTANCE    I2CDEV_0
 
 // Internal MMC5603 compass on I2C0
