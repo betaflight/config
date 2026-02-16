@@ -38,23 +38,39 @@
 //------------------
 
 // Bus for internal I2C sensors
-// NOTE: Board has BMP580 barometer, MMC5603 compass and INA226 power sensor. Sensors not supported by betaflight_2025.12.0-beta
+// NOTE: Board has BMP580 barometer, MMC5603 compass and INA226 power sensor.
 #define I2C0_SCL_PIN         PA33
 #define I2C0_SDA_PIN         PA32
+#define I2C0_CLOCKSPEED      100    // 100kHz (slow, most compatible)
+#define USE_I2C_PULLUP                 // Enable internal pull-ups
 
 // LED
 #define LED0_PIN             PA45 // blue
 //#define LED0_INVERTED
 
-// Battery voltage
-#define USE_ADC
-#define ADC_INSTANCE         ADC1
-#define ADC_VBAT_PIN         PA44
-#define DEFAULT_VOLTAGE_METER_SOURCE   VOLTAGE_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SCALE    110 // 100k/10k divider
+// INA226 Current Sensor (connected to I2C0)
+#define USE_CURRENT_METER_INA226
+#define DEFAULT_INA226_I2C_DEVICE        1      // 1 = I2CDEV_0 (internal I2C bus)
+#define DEFAULT_INA226_ADDRESS           0x40   // Default INA226 address (A0=GND, A1=GND)
+#define DEFAULT_INA226_SHUNT_RESISTANCE  2000   // 2mΩ shunt resistor (2000 µΩ) - adjust based on actual board design
+#define DEFAULT_INA226_MAX_CURRENT       50000  // 50A maximum expected current
+#define DEFAULT_INA226_VBAT_SCALE        100    // Calibration: 100 = 1.00x (no scaling needed, INA226 reads accurately)
+#define DEFAULT_CURRENT_METER_SOURCE     CURRENT_METER_INA226
+
+// Battery voltage - use INA226 for voltage measurement (no ADC needed)
+#define DEFAULT_VOLTAGE_METER_SOURCE     VOLTAGE_METER_INA226
 
 // RGB LED
 #define LED_STRIP_PIN        PA46
+
+// Motor protocol - Oneshot125 for analog ESCs
+#define DEFAULT_MOTOR_PROTOCOL  MOTOR_PROTOCOL_ONESHOT125
+
+// Digital OSD via MSP Displayport (for HDZero, Walksnail, DJI, etc.)
+// Connect VTX to PIOUART0 (PA10=TX, PA11=RX)
+#define USE_OSD
+#define USE_MSP_DISPLAYPORT
+#define MSP_DISPLAYPORT_UART    SERIAL_PORT_PIOUART0
 
 // Gyro+acc
 //#define USE_GYRO_CLKIN //TODO - gives compile error with betaflight_2025.12.0-beta
@@ -182,25 +198,34 @@
 //+3.3V
 //GND
 
-// Optional external barometer connected to I2C1 (second i2c bus) PA2=SDA PA3=SCL
+// Internal BMP580 barometer on I2C0
 #define USE_BARO
-#define USE_BARO_MS5611
-#define USE_BARO_BMP280
-#define USE_BARO_BMP388
-#define USE_BARO_LPS
-#define USE_BARO_QMP6988
-#define USE_BARO_DPS310
-#define USE_BARO_BMP085
-#define USE_BARO_2SMBP_02B
-#define USE_BARO_LPS22DF
-#define BARO_I2C_INSTANCE    I2CDEV_1
+#define USE_BARO_BMP580
+#define DEFAULT_BARO_BMP580
+#define BARO_I2C_INSTANCE    I2CDEV_0
+
+// Internal MMC5603 compass on I2C0
+#define USE_MAG
+#define USE_MAG_MMC5603
+#define MAG_I2C_INSTANCE     I2CDEV_0
+
+// Optional external barometers on I2C1 (second i2c bus) PA2=SDA PA3=SCL
+// Disabled to reduce I2C detection errors - uncomment if needed
+//#define USE_BARO_MS5611
+//#define USE_BARO_BMP280
+//#define USE_BARO_BMP388
+//#define USE_BARO_LPS
+//#define USE_BARO_QMP6988
+//#define USE_BARO_DPS310
+//#define USE_BARO_BMP085
+//#define USE_BARO_2SMBP_02B
+//#define USE_BARO_LPS22DF
 
 // Optional external compass connected to I2C1 (second i2c bus) PA2=SDA PA3=SCL
-#define USE_MAG
-#define USE_MAG_HMC5883
-#define USE_MAG_QMC5883
-#define USE_MAG_LIS2MDL
-#define USE_MAG_LIS3MDL
-#define USE_MAG_AK8975
-#define USE_MAG_IST8310
-#define MAG_I2C_INSTANCE     I2CDEV_1
+// Disabled to reduce I2C detection errors - uncomment if needed
+//#define USE_MAG_HMC5883
+//#define USE_MAG_QMC5883
+//#define USE_MAG_LIS2MDL
+//#define USE_MAG_LIS3MDL
+//#define USE_MAG_AK8975
+//#define USE_MAG_IST8310
