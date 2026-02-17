@@ -13,10 +13,6 @@
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
 
-//#define USE_BARO
-//#define USE_BARO_DPS310
-
-#define USE_SERVOS
 #define SERVO1_PIN           PE5
 #define SERVO2_PIN           PE6
 
@@ -90,7 +86,6 @@
 #define FLASH_SPI_INSTANCE              SPI2
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define GYRO_2_SPI_INSTANCE             SPI1
-#define BARO_I2C_INSTANCE               I2CDEV_1
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP(  0, MOTOR1_PIN, 1,  0 ) /* TIM1 CH1 */ \
