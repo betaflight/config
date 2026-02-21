@@ -78,6 +78,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |HEBI|Shenzhen High Energy Bili Co., Ltd|http://www.coddar.net/|
 |HENA|Heli-Nation|https://www.heli-nation.com/|
 |HFOR|HIFIONRC|http://www.hifionrc.com/|
+|HGFP|HXW GEEHY FPV||
 |HGLR|HGLRC|https://www.hglrc.com/|
 |HNEC|Huizhou NIDICI Electronic Co., Ltd|https://shop.nidici.com/|
 |HOWI|Hobbywing Technology Co., Ltd|http://hobbywing.com/|
