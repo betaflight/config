@@ -1,0 +1,109 @@
+#pragma once
+
+#define FC_TARGET_MCU     STM32H743
+
+#define BOARD_NAME        WPLV2
+#define MANUFACTURER_ID   WRPL
+
+#define USE_GYRO
+#define USE_GYRO_SPI_ICM42688P
+#define USE_GYRO_CLKIN
+#define USE_ACC
+#define USE_ACC_SPI_ICM42688P
+#define USE_FLASH
+#define USE_FLASH_W25Q128FV
+
+#define SERVO1_PIN           PE5
+#define SERVO2_PIN           PE6
+
+#define BEEPER_PIN PD12
+#define BEEPER_INVERTED
+
+#define MOTOR1_PIN PE9
+#define MOTOR2_PIN PE11
+#define MOTOR3_PIN PE13
+#define MOTOR4_PIN PE14
+#define MOTOR5_PIN PC6
+#define MOTOR6_PIN PC7
+#define MOTOR7_PIN PC8
+#define MOTOR8_PIN PC9
+
+#define LED_STRIP_PIN PA15
+
+#define UART1_TX_PIN PB6
+#define UART1_RX_PIN PB7
+#define UART2_TX_PIN PD5
+#define UART2_RX_PIN PD6
+#define UART3_RX_PIN PD9
+#define UART4_RX_PIN PD0
+#define UART5_TX_PIN PC12
+#define UART5_RX_PIN PD2
+#define UART7_TX_PIN PE8
+#define UART7_RX_PIN PE7
+#define UART8_TX_PIN PE1
+#define UART8_RX_PIN PE0
+
+#define I2C1_SCL_PIN PB8
+#define I2C1_SDA_PIN PB9
+
+#define LED0_PIN PE2
+
+#define SPI1_SCK_PIN PA5
+#define SPI1_SDI_PIN PA6
+#define SPI1_SDO_PIN PA7
+#define GYRO_1_EXTI_PIN PC13
+#define GYRO_1_CS_PIN PB4
+#define GYRO_1_CLKIN_PIN PA0
+
+
+#define SPI2_SCK_PIN PB13
+#define SPI2_SDI_PIN PB14
+#define SPI2_SDO_PIN PB15
+#define FLASH_CS_PIN PB12
+
+
+#define ADC_VBAT_PIN PC0
+#define ADC_CURR_PIN PC2
+
+#define VTX_ENABLE_PIN PE3
+#define PINIO1_PIN VTX_ENABLE_PIN
+#define PINIO1_BOX 40
+#define PINIO1_CONFIG 1
+#define PINIO2_PIN PE4                  
+#define PINIO2_BOX 41
+#define PINIO2_CONFIG 1
+
+#define DEFAULT_FEATURES (FEATURE_OSD | FEATURE_LED_STRIP)
+
+#ifdef USE_OSD_HD
+#define MSP_DISPLAYPORT_UART            SERIAL_PORT_USART2
+#endif
+
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
+#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
+#define DEFAULT_CURRENT_METER_SCALE     100
+#define FLASH_SPI_INSTANCE              SPI2
+#define GYRO_1_SPI_INSTANCE             SPI1
+#define GYRO_2_SPI_INSTANCE             SPI1
+
+#define TIMER_PIN_MAPPING \
+    TIMER_PIN_MAP(  0, MOTOR1_PIN, 1,  0 ) /* TIM1 CH1 */ \
+    TIMER_PIN_MAP(  1, MOTOR2_PIN, 1,  1 ) /* TIM1 CH2 */ \
+    TIMER_PIN_MAP(  2, MOTOR3_PIN, 1,  2 ) /* TIM1 CH3 */ \
+    TIMER_PIN_MAP(  3, MOTOR4_PIN, 1,  3 ) /* TIM1 CH4 */ \
+    TIMER_PIN_MAP(  4, MOTOR5_PIN, 2,  4 ) /* TIM8 CH1 */ \
+    TIMER_PIN_MAP(  5, MOTOR6_PIN, 2,  5 ) /* TIM8 CH2 */ \
+    TIMER_PIN_MAP(  6, MOTOR7_PIN, 2,  6 ) /* TIM8 CH3 */ \
+    TIMER_PIN_MAP(  7, MOTOR8_PIN, 2,  7 ) /* TIM8 CH4 */ \
+    TIMER_PIN_MAP(  8, LED_STRIP_PIN, 1,  8 ) /* TIM2 CH1 */ \
+    TIMER_PIN_MAP( 9, SERVO1_PIN,    1, -1 ) /* TIM15 CH1 */ \
+    TIMER_PIN_MAP( 10, SERVO2_PIN,    1, -1 ) /* TIM15 CH2 */\
+    TIMER_PIN_MAP( 11, GYRO_1_CLKIN_PIN,    2, -1 ) /* TIM5 CH1 */
+
+#define TIMUP1_DMA_OPT 9
+#define TIMUP8_DMA_OPT 10
+
+#define ADC1_DMA_OPT   11
+#define ADC2_DMA_OPT   12
+#define ADC3_DMA_OPT   13
