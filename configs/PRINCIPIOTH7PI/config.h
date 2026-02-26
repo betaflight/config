@@ -136,7 +136,6 @@
 #define GYRO_1_CS_PIN        PC15
 #define GYRO_1_SPI_INSTANCE  SPI1
 #define GYRO_1_ALIGN         CW0_DEG
-//#define GYRO_1_ALIGN_PITCH 1800
 
 // IMU 2 (IIM-42653)
 #define USE_ACCGYRO_IIM42653
