@@ -99,7 +99,7 @@
 #define DEFAULT_VOLTAGE_METER_SOURCE   VOLTAGE_METER_ADC
 #define BEEPER_INVERTED
 #define SYSTEM_HSE_MHZ                 8
-#define MAX7456_SPI_INSTANCE           SPI3
+#define MAX7456_SPI_INSTANCE           SPI2
 #define FLASH_SPI_INSTANCE             SPI3
 #define GYRO_1_SPI_INSTANCE            SPI1
 //#define GYRO_1_ALIGN                   CW90_DEG
