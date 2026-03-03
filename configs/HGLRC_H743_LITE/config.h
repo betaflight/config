@@ -30,6 +30,9 @@
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
+#define USE_ACCGYRO_LSM6DSV16X
+#define USE_ACCGYRO_LSM6DSK320X
+
 #define USE_BARO
 #define USE_BARO_DPS310
 #define USE_MAX7456
@@ -42,8 +45,6 @@
 #define GYRO_1_EXTI_PIN         PC5
 #define GYRO_1_CS_PIN           PA4
 #define GYRO_1_SPI_INSTANCE     SPI1
-#define USE_GYRO_CLKIN
-#define GYRO_1_CLKIN_PIN        PC6
 #define GYRO_1_ALIGN            CW180_DEG_FLIP
 
 #define SPI2_SCK_PIN            PB13
@@ -99,8 +100,7 @@
     TIMER_PIN_MAP(2, MOTOR2_PIN,       1,  1) \
     TIMER_PIN_MAP(3, MOTOR3_PIN,       1,  2) \
     TIMER_PIN_MAP(4, MOTOR4_PIN,       1,  3) \
-    TIMER_PIN_MAP(5, LED_STRIP_PIN,    1,  8) \
-    TIMER_PIN_MAP(6, GYRO_1_CLKIN_PIN, 1, -1)
+    TIMER_PIN_MAP(5, LED_STRIP_PIN,    1,  8)
 
 #define ADC1_DMA_OPT        9
 #define ADC3_DMA_OPT        10
