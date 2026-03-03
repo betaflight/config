@@ -30,7 +30,7 @@
 #define BEEPER_INVERTED
 #define LED_STRIP_PIN                   PA5
 #define LED0_PIN                        PE5
-#define LED1_PIN                        PE4
+#define LED1_PIN                        PC13
 
 // MOTORS & SERVOS
 #define MOTOR1_PIN                      PC7
@@ -51,6 +51,12 @@
 #define SPI3_SDI_PIN                    PC11
 #define SPI3_SDO_PIN                    PB2
 
+#define SPI1_SCK_PIN                    PB3
+#define SPI1_SDI_PIN                    PB4
+#define SPI1_SDO_PIN                    PB5
+
+
+
 // GYRO & ACC
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
@@ -60,21 +66,27 @@
 
 #define GYRO_1_CLKIN_PIN                PD13
 #define GYRO_1_EXTI_PIN                 PC4
-#define GYRO_1_CS_PIN                   PA4
+#define GYRO_1_CS_PIN                   PB12
 #define GYRO_1_SPI_INSTANCE             SPI2
 #define GYRO_1_ALIGN                    CW90_DEG
 
 // FLASH
 #define USE_FLASH
-#define USE_FLASH_W25Q128FV
-#define USE_FLASH_M25P16
+#define USE_FLASH_W25N01G
 #define FLASH_CS_PIN                    PA15
 #define FLASH_SPI_INSTANCE              SPI3
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
 
+// OSD
+#define USE_MAX7456
+#define MAX7456_SPI_INSTANCE            SPI1 
+#define MAX7456_SPI_CS_PIN              PE4 
+
 // BARO & MAG
 #define USE_BARO
 #define USE_BARO_DPS310
+#define USE_BARO_DPS368
+#define USE_MAG
 
 #define I2C1_SCL_PIN                    PB6
 #define I2C1_SDA_PIN                    PB7
@@ -113,15 +125,18 @@
 // PINIO
 #define PINIO1_PIN                      PA2
 #define PINIO2_PIN                      PA3
-#define PINIO3_PIN                      PB12
+#define PINIO3_PIN                      PB1
+#define PINIO4_PIN                      PD15
 
 #define PINIO1_BOX                      40
 #define PINIO2_BOX                      41
 #define PINIO3_BOX                      42
+#define PINIO4_BOX                      43
 
 #define PINIO3_CONFIG                   129
 
 #define BOX_USER3_NAME                  "VTX POWER"
+#define BOX_USER4_NAME                  "CAM SWITCH"
 
 // CONNECTORS
 #ifdef USE_GPS
