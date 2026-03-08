@@ -132,6 +132,7 @@
 #define DEFAULT_CURRENT_METER_SOURCE   CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE   VOLTAGE_METER_ADC
 #define BEEPER_INVERTED
+#define LED0_INVERTED
 #define PINIO1_CONFIG                  129
 #define PINIO1_BOX                     40
 #define PINIO2_CONFIG                  129
