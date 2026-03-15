@@ -79,7 +79,6 @@
 #define FLASH_CS_PIN         PA15
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
-#define GYRO_2_EXTI_PIN      PC0
 #define GYRO_1_CS_PIN        PA4
 #define GYRO_2_CS_PIN        PC13
 
