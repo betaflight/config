@@ -80,7 +80,7 @@
 #define PINIO2_PIN           PC15
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PB8 , 2, -1) \
+    TIMER_PIN_MAP( 0, PB8 , 1, -1) \
     TIMER_PIN_MAP( 1, PC6 , 2,  0) \
     TIMER_PIN_MAP( 2, PC7 , 2,  1) \
     TIMER_PIN_MAP( 3, PC8 , 2,  1) \
@@ -102,7 +102,7 @@
 #define MAX7456_SPI_INSTANCE           SPI2
 #define FLASH_SPI_INSTANCE             SPI3
 #define GYRO_1_SPI_INSTANCE            SPI1
-//#define GYRO_1_ALIGN                   CW90_DEG
+#define GYRO_1_ALIGN                   CW90_DEG
 #define PINIO1_BOX                     40
 #define PINIO1_CONFIG                  129
 #define BOX_USER1_NAME                 "10V BEC"
