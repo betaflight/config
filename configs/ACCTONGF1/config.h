@@ -37,6 +37,7 @@
 #define USE_FLASH
 #define USE_FLASH_W25N02K
 #define USE_MAX7456
+#define USE_FLASH_MX35LF2G   USE_FLASH_W25N02K
 
 #define BEEPER_PIN           PA14
 #define MOTOR1_PIN           PA8 // TIM1_CH1 PA8
