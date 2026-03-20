@@ -19,6 +19,11 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+    SUPPORTED TARGET - THANK YOU
+    REFERENCE: sha256_1ca2ab5c90077ee8cf28afd3206e6167b969ff1d7047b3a6d554bf8e8af4ccb7
+*/
+
 #pragma once
 
 #define FC_TARGET_MCU                       AT32F435M

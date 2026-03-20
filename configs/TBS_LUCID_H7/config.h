@@ -19,6 +19,11 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+    SUPPORTED TARGET - THANK YOU
+    REFERENCE: sha256_71fef37d864dd374ffb57733918050ca05ed95e0ca5bc6a42548bd5c6ae892fd
+*/
+
 #pragma once
 
 #define FC_TARGET_MCU     STM32H743
@@ -33,6 +38,7 @@
 #define USE_GYRO
 #define USE_GYRO_SPI_MPU6000
 #define USE_GYRO_SPI_ICM42688P
+#define USE_ACCGYRO_ICM42686P
 
 #define ENSURE_MPU_DATA_READY_IS_LOW
 
@@ -142,35 +148,31 @@
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PB0 , 2,  0) \
-    TIMER_PIN_MAP( 1, PB1 , 2,  0) \
-    TIMER_PIN_MAP( 2, PA0 , 2,  0) \
-    TIMER_PIN_MAP( 3, PA1 , 2,  0) \
-    TIMER_PIN_MAP( 4, PA2 , 2,  0) \
-    TIMER_PIN_MAP( 5, PA3 , 2,  0) \
-    TIMER_PIN_MAP( 6, PD12, 1,  0) \
-    TIMER_PIN_MAP( 7, PD13, 1,  0) \
+    TIMER_PIN_MAP( 1, PB1 , 2,  1) \
+    TIMER_PIN_MAP( 2, PA0 , 2,  2) \
+    TIMER_PIN_MAP( 3, PA1 , 2,  3) \
+    TIMER_PIN_MAP( 4, PA2 , 2,  4) \
+    TIMER_PIN_MAP( 5, PA3 , 2,  5) \
+    TIMER_PIN_MAP( 6, PD12, 1,  6) \
+    TIMER_PIN_MAP( 7, PD13, 1,  7) \
     TIMER_PIN_MAP( 8, PE5 , 1, -1) \
     TIMER_PIN_MAP( 9, PE6 , 1, -1) \
-    TIMER_PIN_MAP(10, PA8 , 1,  0) \
+    TIMER_PIN_MAP(10, PA8 , 1,  8) \
     TIMER_PIN_MAP(11, PA15, 1, -1) \
     TIMER_PIN_MAP(12, PC7 , 2, -1) 
 
-#define ADC1_DMA_OPT        8
-#define ADC3_DMA_OPT        9
+#define ADC1_DMA_OPT        9
+#define ADC3_DMA_OPT        10
 
-#define TIMUP1_DMA_OPT      0
-#define TIMUP2_DMA_OPT      0
-#define TIMUP3_DMA_OPT      2
-#define TIMUP4_DMA_OPT      1
-#define TIMUP5_DMA_OPT      0
-#define TIMUP8_DMA_OPT      0
+#define TIMUP3_DMA_OPT      11
+#define TIMUP4_DMA_OPT      12
+#define TIMUP5_DMA_OPT      13
 
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_SDCARD
 
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
 
-#define DEFAULT_VOLTAGE_METER_SCALE_DEFAULT 110
 #define DEFAULT_CURRENT_METER_SCALE 250
 
 #define BOX_USER1_NAME "CAM SW"

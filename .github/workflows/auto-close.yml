@@ -11,10 +11,11 @@ permissions:
 
 jobs:
   close-pr:
+    if: github.repository == 'betaflight/config'
     runs-on: ubuntu-latest
     steps:
       - name: Code Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: autoclose
         shell: bash
