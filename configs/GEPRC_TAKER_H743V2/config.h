@@ -37,7 +37,7 @@
 #define USE_BARO_MS5611
 #define USE_MAX7456
 #define USE_FLASH
-#define USE_FLASH_W25Q128FV
+#define USE_SDCARD
 #define USE_GYRO_CLKIN
 
 #define GYRO_1_CLKIN_PIN PB14
