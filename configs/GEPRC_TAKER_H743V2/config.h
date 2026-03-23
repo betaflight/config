@@ -19,13 +19,12 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
- #pragma once
+#pragma once
 
- #define FC_TARGET_MCU     STM32H743
+#define FC_TARGET_MCU     STM32H743
  
- #define BOARD_NAME        GEPRC_TAKER_H743V2
-
- #define MANUFACTURER_ID   GEPR
+#define BOARD_NAME        GEPRC_TAKER_H743V2
+#define MANUFACTURER_ID   GEPR
  
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
