@@ -19,6 +19,11 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+    SUPPORTED TARGET - THANK YOU
+    REFERENCE: sha256_f92f29bf8b48074be24c9be97ff266b9f2be23bef3fcc4756910080baf6a34bc
+*/
+
 #pragma once
 
 #define FC_TARGET_MCU     STM32F7X2
