@@ -94,8 +94,8 @@
 #define MAX7456_SPI_INSTANCE    SPI4
 #define FLASH_SPI_INSTANCE      SPI2
 
-#define PINIO1_CONFIG 129
-#define PINIO1_BOX 40
+#define PINIO1_CONFIG  129
+#define PINIO1_BOX     40
 #define BOX_USER1_NAME "9V BEC OFF"
 
 #define DEFAULT_BLACKBOX_DEVICE             BLACKBOX_DEVICE_FLASH
@@ -106,6 +106,6 @@
 #define DEFAULT_CURRENT_METER_SCALE         85
 
 #define MSP_UART                            SERIAL_PORT_USART1
-#define MSP_DISPLAYPORT_UART                SERIAL_PORT_USART1
+#define MSP_DISPLAYPORT_UART                SERIAL_PORT_USART2
 #define GPS_UART                            SERIAL_PORT_USART7
 #define SERIALRX_UART                       SERIAL_PORT_UART4
