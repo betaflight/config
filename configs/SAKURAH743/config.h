@@ -30,6 +30,7 @@
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
+#define USE_ACCGYRO_IIM42652
 #define USE_BARO
 #define USE_BARO_SPI_DPS310
 #ifndef USE_MAG
@@ -90,7 +91,7 @@
 #define LED1_PIN             PB4
 #define LED2_PIN             PB5
 
-//spi1 for mpu6000(deleting)
+//spi1 for IIM42652 and baro
 #define SPI1_SCK_PIN         PA5
 #define SPI1_SDI_PIN         PA6
 #define SPI1_SDO_PIN         PA7
@@ -125,10 +126,10 @@
 #define PINIO3_PIN           PD11
 
 //sensor CS and EXTI
-#define GYRO_1_EXTI_PIN      PC4
-#define GYRO_2_EXTI_PIN      PB2
-#define GYRO_1_CS_PIN        PA4
-#define GYRO_2_CS_PIN        PE11
+#define GYRO_1_EXTI_PIN      PB2
+#define GYRO_2_EXTI_PIN      PC4
+#define GYRO_1_CS_PIN        PE11
+#define GYRO_2_CS_PIN        PA4
 #define BARO_CS_PIN          PC5
 
 /* CS1 pads for SPI2 connection:
@@ -138,34 +139,26 @@
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PA2 , 2,  0) \
-    TIMER_PIN_MAP( 1, PA3 , 2,  0) \
-    TIMER_PIN_MAP( 2, PB0 , 2,  0) \
-    TIMER_PIN_MAP( 3, PB1 , 2,  0) \
-    TIMER_PIN_MAP( 4, PA0 , 2,  0) \
-    TIMER_PIN_MAP( 5, PA1 , 2,  0) \
-    TIMER_PIN_MAP( 6, PE5 , 1,  0) \
-    TIMER_PIN_MAP( 7, PE6 , 1,  0) \
+    TIMER_PIN_MAP( 1, PA3 , 2,  1) \
+    TIMER_PIN_MAP( 2, PB0 , 2,  2) \
+    TIMER_PIN_MAP( 3, PB1 , 2,  3) \
+    TIMER_PIN_MAP( 4, PA0 , 2,  4) \
+    TIMER_PIN_MAP( 5, PA1 , 2,  5) \
+    TIMER_PIN_MAP( 6, PE5 , 1,  6) \
+    TIMER_PIN_MAP( 7, PE6 , 1, -1) \
     TIMER_PIN_MAP( 8, PD12, 1, -1) \
     TIMER_PIN_MAP( 9, PD13, 1, -1) \
     TIMER_PIN_MAP(10, PD14, 1, -1) \
     TIMER_PIN_MAP(11, PD15, 1, -1) \
     TIMER_PIN_MAP(12, PB8 , 1, -1) \
-    TIMER_PIN_MAP(13, PA8 , 1,  0) 
-
-
+    TIMER_PIN_MAP(13, PA8 , 1,  7) 
 
 #define ADC1_DMA_OPT        8
 #define ADC3_DMA_OPT        9
-#define TIMUP1_DMA_OPT      0
-#define TIMUP2_DMA_OPT      0
-#define TIMUP3_DMA_OPT      2
-#define TIMUP4_DMA_OPT      1
-#define TIMUP5_DMA_OPT      0
-#define TIMUP8_DMA_OPT      0
-
+#define TIMUP3_DMA_OPT      10
+#define TIMUP5_DMA_OPT      11
 
 #define USB_DETECT PD4
-
 
 //mag config
 #define MAG_I2C_INSTANCE I2CDEV_1
@@ -197,12 +190,13 @@
 //gyro config
 #define GYRO_1_SPI_INSTANCE SPI4
 #define GYRO_1_ALIGN CW0_DEG_FLIP
+#define GYRO_2_SPI_INSTANCE SPI1
+#define GYRO_2_ALIGN CW0_DEG_FLIP
 
 //baro config
 #define BARO_SPI_INSTANCE SPI1
 
 //default serial mapping
-#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_1
 #define USE_I2C_PULLUP
 #define MSP_UART SERIAL_PORT_USART1
 #define MSP_DISPLAYPORT_UART SERIAL_PORT_USART6

@@ -91,19 +91,19 @@
 #define GYRO_1_CS_PIN                   PA4
 
 #define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 0, PB7,  1,  0) \
-                                        TIMER_PIN_MAP( 0, PC8,  2,  0) \
-                                        TIMER_PIN_MAP( 0, PC9,  2,  0) \
-                                        TIMER_PIN_MAP( 0, PA8,  1,  0) \
-                                        TIMER_PIN_MAP( 0, PA9,  1,  0) \
-                                        TIMER_PIN_MAP( 0, PB0,  2,  0) \
-                                        TIMER_PIN_MAP( 0, PB1,  2,  0) \
-                                        TIMER_PIN_MAP( 0, PA10, 1,  0) \
-                                        TIMER_PIN_MAP( 0, PB4,  1,  0) \
-                                        TIMER_PIN_MAP( 0, PB3,  1,  0)
+                                        TIMER_PIN_MAP( 1, PC8,  2,  0) \
+                                        TIMER_PIN_MAP( 2, PC9,  2,  0) \
+                                        TIMER_PIN_MAP( 3, PA8,  1,  0) \
+                                        TIMER_PIN_MAP( 4, PA9,  1,  0) \
+                                        TIMER_PIN_MAP( 5, PB0,  2,  0) \
+                                        TIMER_PIN_MAP( 6, PB1,  2,  0) \
+                                        TIMER_PIN_MAP( 7, PA10, 1,  0) \
+                                        TIMER_PIN_MAP( 8, PB4,  1,  0) \
+                                        TIMER_PIN_MAP( 9, PB3,  1,  0)
 
 #define ADC_INSTANCE                    ADC3
 #define BARO_I2C_INSTANCE               I2CDEV_1
-#define MAG_I2C_INSTANCE                        I2CDEV_1
+#define MAG_I2C_INSTANCE                I2CDEV_1
 #define FLASH_SPI_INSTANCE              SPI3
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define MAX7456_SPI_INSTANCE            SPI2

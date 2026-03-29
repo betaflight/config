@@ -19,6 +19,10 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+    GROUP: LEGACY
+*/
+
 #pragma once
 
 #define FC_TARGET_MCU     STM32F411

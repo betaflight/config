@@ -105,6 +105,9 @@
 // PINIO
 #define PINIO1_PIN                          PC3
 #define PINIO1_BOX                          40
+#define PINIO1_CONFIG                       129
+#define BOX_USER1_NAME                      "VTX PWR"
+
 #define PINIO2_PIN                          PC14
 #define PINIO2_BOX                          41
 
@@ -125,11 +128,6 @@
 #define UART6_RX_PIN                        PC7
 
 #define RX_PPM_PIN                          PA3
-
-#define UART4_RX_PIN                        PA1
-
-#define UART6_TX_PIN                        PC6
-#define UART6_RX_PIN                        PC7
 
 #define SERIALRX_UART                       SERIAL_PORT_USART2
 #define ESC_SENSOR_UART                     SERIAL_PORT_UART4

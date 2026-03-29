@@ -85,14 +85,14 @@
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PC8,  2, 1 ) \
-    TIMER_PIN_MAP( 0, PC9,  2, 0 ) \
-    TIMER_PIN_MAP( 0, PA8,  1, 2 ) \
-    TIMER_PIN_MAP( 0, PA9,  1, 1 ) \
-    TIMER_PIN_MAP( 0, PB0,  2, 0 ) \
-    TIMER_PIN_MAP( 0, PB1,  2, 0 ) \
-    TIMER_PIN_MAP( 0, PA10, 1, 0 ) \
-    TIMER_PIN_MAP( 0, PB4,  1, 0 ) \
-    TIMER_PIN_MAP( 0, PB3,  1, 0 )
+    TIMER_PIN_MAP( 1, PC9,  2, 0 ) \
+    TIMER_PIN_MAP( 2, PA8,  1, 2 ) \
+    TIMER_PIN_MAP( 3, PA9,  1, 1 ) \
+    TIMER_PIN_MAP( 4, PB0,  2, 0 ) \
+    TIMER_PIN_MAP( 5, PB1,  2, 0 ) \
+    TIMER_PIN_MAP( 6, PA10, 1, 0 ) \
+    TIMER_PIN_MAP( 7, PB4,  1, 0 ) \
+    TIMER_PIN_MAP( 8, PB3,  1, 0 )
 
 #define ADC3_DMA_OPT 1
 
