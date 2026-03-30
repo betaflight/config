@@ -106,7 +106,6 @@
 #define DEFAULT_CURRENT_METER_SCALE     100
 #define FLASH_SPI_INSTANCE              SPI2
 #define GYRO_1_SPI_INSTANCE             SPI1
-#define GYRO_2_SPI_INSTANCE             SPI1
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP(  0, MOTOR1_PIN, 1,  0 ) /* TIM1 CH1 */ \
