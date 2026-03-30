@@ -89,7 +89,7 @@
 #define VTX_ENABLE_PIN PE3
 #define PINIO1_PIN VTX_ENABLE_PIN
 #define PINIO1_BOX 40
-#define PINIO1_CONFIG 1
+#define PINIO1_CONFIG 129
 #define PINIO2_PIN PE4                  
 #define PINIO2_BOX 41
 #define PINIO2_CONFIG 1
