@@ -22,10 +22,10 @@
 #pragma once
 
 #define FC_TARGET_MCU     STM32H743
- 
+
 #define BOARD_NAME        GEPRC_TAKER_H743V2
 #define MANUFACTURER_ID   GEPR
- 
+
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
 #define USE_ACCGYRO_LSM6DSK320X
@@ -36,11 +36,10 @@
 #define USE_BARO_DPS310
 #define USE_BARO_MS5611
 #define USE_MAX7456
-#define USE_FLASH
 #define USE_SDCARD
 #define USE_GYRO_CLKIN
 
-#define GYRO_1_CLKIN_PIN PB14
+#define GYRO_1_CLKIN_PIN     PB14
 #define MOTOR1_PIN           PB4
 #define MOTOR2_PIN           PB5
 #define MOTOR3_PIN           PB0
@@ -50,8 +49,8 @@
 #define MOTOR7_PIN           PE13
 #define MOTOR8_PIN           PE14
 
-#define SERVO1_PIN          PD13
-#define SERVO2_PIN          PD14
+#define SERVO1_PIN           PD13
+#define SERVO2_PIN           PD14
 
 #define BEEPER_PIN           PA2
 #define LED_STRIP_PIN        PB3
@@ -99,9 +98,7 @@
 #define MAX7456_SPI_CS_PIN   PE4
 #define GYRO_1_EXTI_PIN      PB2
 #define GYRO_1_CS_PIN        PB12
- 
- 
- 
+
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, LED_STRIP_PIN, 1, 0) \
     TIMER_PIN_MAP( 1, MOTOR1_PIN,    1, 1) \
@@ -112,40 +109,41 @@
     TIMER_PIN_MAP( 6, MOTOR6_PIN,    1, 6) \
     TIMER_PIN_MAP( 7, MOTOR7_PIN,    1, 7) \
     TIMER_PIN_MAP( 8, MOTOR8_PIN,    1, 8) \
-    TIMER_PIN_MAP( 9, GYRO_1_CLKIN_PIN, 2, -1 )\
+    TIMER_PIN_MAP( 9, GYRO_1_CLKIN_PIN, 2, -1 ) \
     TIMER_PIN_MAP( 10, SERVO1_PIN,    1, -1) \
     TIMER_PIN_MAP( 11, SERVO2_PIN,    1, -1) \
-    TIMER_PIN_MAP( 12, CAMERA_CONTROL_PIN, 2, -1) 
+    TIMER_PIN_MAP( 12, CAMERA_CONTROL_PIN, 2, -1)
+
 #define ADC1_DMA_OPT                    9
 #define ADC3_DMA_OPT                    10
-#define TIMUP3_DMA_OPT                  11
-#define TIMUP4_DMA_OPT                  12
-#define TIMUP8_DMA_OPT                  13
+#define TIMUP1_DMA_OPT                  11
+#define TIMUP3_DMA_OPT                  12
 
-#define PINIO1_CONFIG 129
-#define PINIO2_CONFIG 129
-#define PINIO3_CONFIG 129
-#define PINIO1_BOX 40
-#define PINIO2_BOX 41
-#define PINIO3_BOX 42
-#define BOX_USER1_NAME "RF OFF"
-#define BOX_USER2_NAME "12V BEC OFF"
-#define BOX_USER3_NAME       "CAM 1,2"
- 
+#define PINIO1_CONFIG                   129
+#define PINIO2_CONFIG                   129
+#define PINIO3_CONFIG                   129
+#define PINIO1_BOX                      40
+#define PINIO2_BOX                      41
+#define PINIO3_BOX                      42
+#define BOX_USER1_NAME                  "RF OFF"
+#define BOX_USER2_NAME                  "12V BEC OFF"
+#define BOX_USER3_NAME                  "CAM 1,2"
+
+#ifdef USE_OSD_HD
 #define MSP_DISPLAYPORT_UART            SERIAL_PORT_USART1
+#endif
 #define SERIALRX_UART                   SERIAL_PORT_USART2
 #define MSP_UART                        SERIAL_PORT_USART8
+
 #define MAG_I2C_INSTANCE                I2CDEV_2
 #define BARO_I2C_INSTANCE               I2CDEV_1
  
-#define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_SDCARD
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 #define DEFAULT_CURRENT_METER_SCALE     100
 #define BEEPER_INVERTED
-#define SDCARD_DETECT_PIN NONE
-#define SDIO_DEVICE SDIODEV_1
-#define SDIO_USE_4BIT 1
+#define SDIO_DEVICE                     SDIODEV_1
+#define SDIO_USE_4BIT                   1
 #define GYRO_1_SPI_INSTANCE             SPI2
 #define MAX7456_SPI_INSTANCE            SPI4
- 
