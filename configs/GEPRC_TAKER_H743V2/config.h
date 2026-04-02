@@ -126,7 +126,7 @@ REFERENCE: sha256_f2926b24b555f146563a8b33f0244c3c862d54ae8b7e40d06bf6fbfe0881ab
 
 #define PINIO1_CONFIG                   129
 #define PINIO2_CONFIG                   129
-#define PINIO3_CONFIG                   129
+#define PINIO3_CONFIG                   1
 #define PINIO1_BOX                      40
 #define PINIO2_BOX                      41
 #define PINIO3_BOX                      42
