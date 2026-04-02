@@ -19,6 +19,11 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+    SUPPORTED TARGET - THANK YOU
+    REFERENCE: sha256_7b4c6c0c7a62f0f304ef9e54e85d6328dce5ca1af9c0721c6d6b4e9cb3e76dcd
+*/
+
 #pragma once
 
 #define FC_TARGET_MCU     STM32F405
@@ -30,8 +35,12 @@
 #define USE_GYRO_SPI_ICM42688P
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
+#define USE_ACCGYRO_LSM6DSK320X
+
 #define USE_BARO
 #define USE_BARO_DPS310
+#define USE_BARO_LPS22DF
+
 #define USE_FLASH
 #define USE_FLASH_M25P16
 #define USE_MAX7456
