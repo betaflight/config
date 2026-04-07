@@ -21,7 +21,7 @@ If you have any questions or need guidance, feel free to reach out to the Betafl
 - Replace this text with details of your own.
 
 **Checklist** (✓/✕, or y/n)
-- [ ] passed schematics review
+- [ ] passed Betaflight team's schematics review
 - [ ] passed hardware samples testing
 - [ ] follows guidelines
 - [ ] follows connector standards

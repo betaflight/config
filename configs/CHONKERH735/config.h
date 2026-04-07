@@ -25,10 +25,10 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 
 #pragma once
 
-#define FC_TARGET_MCU                   STM32H725
+#define FC_TARGET_MCU                   STM32H735
 
 #define BOARD_NAME                      CHONKERH735
-#define MANUFACTURER_ID                 YOLO
+#define MANUFACTURER_ID                 FOSS
 
 #define USE_ACC
 #define USE_BARO
@@ -43,7 +43,10 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 
 // ADC Resources
 
-// #define ADC_VBAT_PIN
+#define ADC1_DMA_OPT                    9
+#define ADC3_DMA_OPT                    11
+#define ADC_INSTANCE                    ADC1
+#define ADC_VBAT_PIN                    PC5
 #define ADC_CURR_PIN                    PA5
 
 // #define BEEPER_PIN
@@ -101,8 +104,6 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
     TIMER_PIN_MAP( 2, MOTOR3_PIN, 2,  2 ) \
     TIMER_PIN_MAP( 3, MOTOR4_PIN, 2,  3 )
 
-#define ADC_INSTANCE                    ADC3
-#define ADC3_DMA_OPT                    10
 
 #define BARO_I2C_INSTANCE               I2CDEV_2
 #define MAG_I2C_INSTANCE                I2CDEV_2
@@ -116,7 +117,8 @@ Details: https://github.com/crteensy/yolo-chonker/tree/as-built-20230303
 
 #define DEFAULT_RX_FEATURE              FEATURE_RX_SERIAL
 
-#define GYRO_1_ALIGN                    CW0_DEG_FLIP
-#define GYRO_2_ALIGN                    CW0_DEG_FLIP
+#define DEFAULT_GYRO_TO_USE             GYRO_CONFIG_USE_GYRO_2
+#define GYRO_1_ALIGN                    CW270_DEG
+#define GYRO_2_ALIGN                    CW270_DEG
 
 #define ENSURE_MPU_DATA_READY_IS_LOW

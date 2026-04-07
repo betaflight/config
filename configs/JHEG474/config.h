@@ -24,10 +24,11 @@
 #define FC_TARGET_MCU       STM32G47X
 
 #define BOARD_NAME          JHEG474
-#define MANUFACTURER_ID     JHEM
+#define MANUFACTURER_ID     JHEF
 
 #define USE_ACC
 #define USE_GYRO
+#define USE_ACCGYRO_BMI270
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO_SPI_ICM42688P
 #define USE_BARO

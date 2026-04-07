@@ -109,12 +109,10 @@
 #define I2C4_SCL_PIN            NONE
 #define I2C4_SDA_PIN            NONE
 
-
 #define MAG_I2C_INSTANCE        I2CDEV_2
 #define BARO_I2C_INSTANCE       I2CDEV_2
 
 #define ENSURE_MPU_DATA_READY_IS_LOW
-
 
 #define DEFAULT_RX_FEATURE            FEATURE_RX_SERIAL
 #define DEFAULT_FEATURES              (FEATURE_TELEMETRY | FEATURE_LED_STRIP)
@@ -131,7 +129,7 @@
 #define CURRENT_METER_2_ADC_INSTANCE  ADC3
 #define ADC_EXTERNAL1_PIN             PC2
 #define ADC_EXTERNAL1_INSTANCE        ADC3
-#define VBAT_ADC_INSTANCE             ADC3
+#define ADC_VBAT_INSTANCE             ADC3
 // Video IN/Out ADC pins are N/C, reserved in schematic
 #define VIDEO_IN_ADC_PIN              PC5
 #define VIDEO_OUT_ADC_PIN             PC4
