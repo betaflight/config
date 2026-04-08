@@ -94,7 +94,7 @@
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, MOTOR1_PIN ,      2,  0) \
-    TIMER_PIN_MAP( 1, MOTOR2_PIN ,      2,  0) \
+    TIMER_PIN_MAP( 1, MOTOR2_PIN ,      2,  1) \
     TIMER_PIN_MAP( 2, MOTOR3_PIN ,      1,  0) \
     TIMER_PIN_MAP( 3, MOTOR4_PIN ,      1,  1) \
     TIMER_PIN_MAP( 4, SERVO1_PIN,       2, -1) \
