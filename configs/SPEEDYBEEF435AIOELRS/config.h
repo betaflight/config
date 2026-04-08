@@ -71,6 +71,7 @@
 #define LED0_PIN                PA8
 #define BEEPER_PIN              PB5
 #define LED_STRIP_PIN           PB12
+#define PINIO1_PIN              PC14
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP(0, MOTOR1_PIN,       1,  1) \
@@ -90,6 +91,9 @@
 #define GYRO_1_ALIGN            CW90_DEG
 #define GYRO_1_SPI_INSTANCE     SPI1
 #define FLASH_SPI_INSTANCE      SPI2
+#define PINIO1_CONFIG           129
+#define PINIO1_BOX              40
+#define BOX_USER1_NAME          "DJI 8V"
 
 #define DEFAULT_BLACKBOX_DEVICE      BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BITBANG        DSHOT_BITBANG_ON
