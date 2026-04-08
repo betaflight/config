@@ -14,13 +14,15 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |AFNG|AlienFlight NG|https://www.alienflightng.com/|
 |AIKO|AIKON Electronics|https://www.aikon-electronics.com/|
 |AIRB|Airbot|https://store.myairbot.com/|
+|AKIN|AKINGFPV|https://www.akingfpv.com/|
 |ALWH|Alienwhoop|https://shop.alienwhoop.us/|
 |ANYL|AnyLeaf|https://www.anyleaf.org/|
 |APEX|Apexfpv|https://apexfpv.eu/|
 |ARKE|ARK Electronics|https://arkelectron.com/|
+|ASKY|AcroSky||
 |AXFL|Axisflying|https://www.axisflying.com/|
 |BEFH|BETAFPV Hobby|https://betafpv.com/|
-|BKMN|Jason Blackman|https://github.com/blckmn|
+|BKMN|BLCKMN|https://github.com/blckmn|
 |BKRC|BAYCK RC||
 |BLDY|BotLab Dynamics|https://www.botlabdynamics.store|
 |BROT|Brotherhobby Co., Ltd|https://brotherhobby.com/|
@@ -65,6 +67,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |GEEL|Geelang|https://geelang.com/|
 |GEFP|GetFPV LLC|https://www.getfpv.com/|
 |GEPR|GEPRC|https://geprc.com/|
+|GEUP|Gear Up|https://takeyourgear.com/|
 |GFPV|GE-FPV|http://www.ge-fpv.com/|
 |GMRC|Great Mountain RC|https://github.com/shanggl|
 |HAMO|Happymodel|http://www.happymodel.cn/|
@@ -84,6 +87,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |KONX|Konex Drone, SL|https://konexdrone.com/|
 |LDAR|LDARC|http://ldarc.com/|
 |LMNR|Lumenier|https://www.lumenier.com/|
+|MADF|madflight|https://madflight.com/|
 |MARC|Mayhem RC|https://mayhemrc.com.au/|
 |MEPS|MepsKing|https://www.mepsking.com/|
 |MERA|MerakRC|http://www.merakrc.com/|
