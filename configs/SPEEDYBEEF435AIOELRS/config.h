@@ -93,7 +93,7 @@
 #define FLASH_SPI_INSTANCE      SPI2
 #define PINIO1_CONFIG           129
 #define PINIO1_BOX              40
-#define BOX_USER1_NAME          "DJI 8V"
+#define BOX_USER1_NAME          "8V CTRL"
 
 #define DEFAULT_BLACKBOX_DEVICE      BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BITBANG        DSHOT_BITBANG_ON
