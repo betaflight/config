@@ -42,6 +42,8 @@
 #define LED0_PIN             PA6
 #define LED1_PIN             PA7
 
+#define LED_STRIP_PIN        PA38
+
 #define SPI0_SCK_PIN         PA2
 #define SPI0_SDI_PIN         PA4
 #define SPI0_SDO_PIN         PA3
@@ -50,18 +52,56 @@
 #define SPI1_SDI_PIN         PA24
 #define SPI1_SDO_PIN         PA27
 
-#define SDCARD_CS_PIN        PA25
-//#define FLASH_CS_PIN         PA0
-#define MAX7456_SPI_CS_PIN   PA17
 #define USE_MAX7456
+
+#define MAX7456_SPI_CS_PIN   PA17
+
+// Enable QUADSPI on RP2350 (pins are fixed via QMI; platform code handles them)
+#define USE_QUADSPI
+#define USE_QUADSPI_DEVICE_1
+#define FLASH_QUADSPI_INSTANCE	  1
+
+#define USE_FLASH
+#define FLASH_CS_PIN         PA0
+#define USE_FLASH_CHIP
+#define USE_FLASH_W25Q128FV
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
+
+// MAX7456 and SD card cannot be used at the same time
+#ifndef USE_MAX7456
+#define USE_SDCARD
+#define USE_SDCARD_SPI
+#define SDCARD_SPI_CS_PIN    PA25
+#endif
 
 #define GYRO_1_CS_PIN        PA1
 #define GYRO_1_EXTI_PIN      PA22
 
 #define GYRO_2_CS_PIN        NONE
 
-#define UART1_TX_PIN         PA20
-#define UART1_RX_PIN         PA21
+// DVTX connection J5
+#define UART0_TX_PIN         PA12
+#define UART0_RX_PIN         PA13
+#define MSP_DISPLAYPORT_UART SERIAL_PORT_UART0
+// GPS connection J7
+#define UART1_TX_PIN         PA8
+#define UART1_RX_PIN         PA9
+#define GPS_UART             SERIAL_PORT_UART1
+// FTRX connection J2
+#define PIOUART0_TX_PIN         PA20
+#define PIOUART0_RX_PIN         PA21
+#define USE_RX_CRSF
+#define DEFAULT_RX_FEATURE 	FEATURE_RX_SERIAL
+#define SERIALRX_PROVIDER 	SERIALRX_CRSF
+#define SERIALRX_UART 		SERIAL_PORT_PIOUART0
+// Aux connection J10
+#define PIOUART1_TX_PIN         PA34
+#define PIOUART1_RX_PIN         PA35
+// SBus RX J5
+#define UART5_RX_PIN         PA36
+// ESC sensor connection J1
+#define UART6_RX_PIN         PA37
+#define ESC_SENSOR_UART      SERIAL_PORT_USART6
 
 #define USE_BARO
 #define USE_BARO_DPS310
@@ -74,60 +114,8 @@
 #define BEEPER_PIN           PA5
 
 #define PICO_BEC_5V_ENABLE_PIN PA14
+#define PICO_BEC_9V_ENABLE_PIN PA15
 
-/*
-
-SPI0_CS         PA1
-SPI0_SCLK       PA2
-SPI0_COPI       PA3
-SPI0_CIPO       PA4
-BUZZER          PA5
-LED0            PA6
-LED1            PA7
-UART1_TX        PA8
-UART1_RX        PA9
-I2C1_SDA        PA10
-I2C1_SCL        PA11
-UART0_TX        PA12
-UART0_RX        PA13
-
-OSD_CS          PA17
-
-UART2_TX        PA20
-UART2_RX        PA21
-
-GYRO_INT        PA22
-
-GYRO_CLK        PA23
-
-SPI1_CIPO       PA24
-SPI1_CS         PA25
-SPI1_SCLK       PA26
-SPI1_COPI       PA27
-
-MOTOR1          PA28
-MOTOR2          PA29
-MOTOR3          PA30
-MOTOR4          PA31
-
-SPARE1          PA32
-SPARE2          PA33
-
-UART3_TX        PA34
-UART3_RX        PA35
-
-DVTX_SBUS_RX    PA36
-TELEM_RX        PA37
-LED_STRIP       PA38
-RGB_LED         PA39
-
-VBAT_SENSE      PA40
-CURR_SENSE      PA41
-ADC_SPARE       PA42
-
-I2C0_SDA        PA44
-I2C0_SCL        PA45
-
-SPARE3          PA47
-
-*/
+#define ADC_VBAT_PIN         PA40
+#define ADC_CURR_PIN         PA41
+#define ADC_RSSI_PIN         PA42

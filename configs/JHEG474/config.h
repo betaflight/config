@@ -24,10 +24,11 @@
 #define FC_TARGET_MCU       STM32G47X
 
 #define BOARD_NAME          JHEG474
-#define MANUFACTURER_ID     JHEM
+#define MANUFACTURER_ID     JHEF
 
 #define USE_ACC
 #define USE_GYRO
+#define USE_ACCGYRO_BMI270
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO_SPI_ICM42688P
 #define USE_BARO
@@ -83,7 +84,7 @@
 
 #define BARO_I2C_INSTANCE               I2CDEV_1
 #define MAG_I2C_INSTANCE                I2CDEV_1
-
+#define SYSTEM_HSE_MHZ                  8
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BURST             DSHOT_DMAR_OFF
 #define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_ON

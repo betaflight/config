@@ -55,12 +55,16 @@
 #define UART4_TX_PIN         PA0
 #define UART5_TX_PIN         PC12
 #define UART6_TX_PIN         PC6
+#define UART7_TX_PIN         PE8
+#define UART8_TX_PIN         PE1
 #define UART1_RX_PIN         PA10
 #define UART2_RX_PIN         PA3
 #define UART3_RX_PIN         PB11
 #define UART4_RX_PIN         PA1
 #define UART5_RX_PIN         PD2
 #define UART6_RX_PIN         PC7
+#define UART7_RX_PIN         PE7
+#define UART8_RX_PIN         PE0
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
 #define I2C4_SCL_PIN         PD12

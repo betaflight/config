@@ -32,6 +32,7 @@
 #define USE_GYRO_SPI_ICM42688P
 #define USE_FLASH
 #define USE_FLASH_W25N01G
+#define USE_FLASH_W25Q128FV
 #define USE_BARO
 #define USE_BARO_BMP280
 #define USE_BARO_DPS310
@@ -90,7 +91,7 @@
 #define ADC_INSTANCE                   ADC3
 #define ADC3_DMA_OPT                   1
 
-#define ESC_SENSOR_UART                SERIAL_PORT_UART3
+#define ESC_SENSOR_UART                SERIAL_PORT_USART3
 
 #define MAG_I2C_INSTANCE               I2CDEV_1
 #define BARO_I2C_INSTANCE              I2CDEV_1

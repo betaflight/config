@@ -133,7 +133,7 @@
 #define CURRENT_METER_2_ADC_INSTANCE  ADC3
 #define ADC_EXTERNAL1_PIN             PC2
 #define ADC_EXTERNAL1_INSTANCE        ADC3
-#define VBAT_ADC_INSTANCE             ADC3
+#define ADC_VBAT_INSTANCE             ADC3
 #define VIDEO_IN_ADC_PIN              PC5
 #define VIDEO_OUT_ADC_PIN             PC4
 
