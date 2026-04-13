@@ -83,6 +83,7 @@
 
 #define LED_STRIP_PIN        PA0
 #define LED0_PIN             PE3
+#define LED1_PIN             PD3
 
 #define SPI1_SCK_PIN         PA5
 #define SPI1_SDO_PIN         PA7
@@ -101,8 +102,9 @@
 #define SPI2_SDO_PIN         PB15
 #define MAX7456_SPI_CS_PIN   PB12
 #define MAX7456_SPI_INSTANCE SPI2
-#define SPI3_SCK_PIN         PC10
-#define SPI3_SDI_PIN         PC11
+
+#define SPI3_SCK_PIN         PB3
+#define SPI3_SDI_PIN         PB4
 #define SPI3_SDO_PIN         PB2
 #define FLASH_CS_PIN         PA15
 #define FLASH_SPI_INSTANCE	 SPI3
