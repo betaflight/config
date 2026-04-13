@@ -68,6 +68,7 @@
 #define I2C1_SDA_PIN PB9
 
 #define LED0_PIN PE2
+#define LED0_INVERTED
 
 #define SPI1_SCK_PIN PA5
 #define SPI1_SDI_PIN PA6
