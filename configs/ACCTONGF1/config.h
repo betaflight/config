@@ -44,6 +44,10 @@
 #define MOTOR2_PIN           PC8 // TIM8_CH3 PC8
 #define MOTOR3_PIN           PC9 // TIM8_CH4 PC9
 #define MOTOR4_PIN           PB4 // TIM3_CH1 PB4
+#define MOTOR5_PIN           PB3 // TIM2_CH2
+#define MOTOR6_PIN           PB0 // TIM3_CH3
+#define MOTOR7_PIN           PB1 // TIM3_CH4
+#define MOTOR8_PIN           PB14// TIM12_CH1
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PA2
 #define UART3_TX_PIN         PB10
@@ -82,9 +86,13 @@
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, MOTOR1_PIN, 1,  0 ) \
-    TIMER_PIN_MAP( 1, MOTOR2_PIN, 2,  0 ) \
-    TIMER_PIN_MAP( 2, MOTOR3_PIN, 2,  0 ) \
-    TIMER_PIN_MAP( 3, MOTOR4_PIN, 1,  0 ) 
+    TIMER_PIN_MAP( 1, MOTOR2_PIN, 1,  0 ) \
+    TIMER_PIN_MAP( 2, MOTOR3_PIN, 1,  0 ) \
+    TIMER_PIN_MAP( 3, MOTOR4_PIN, 1,  0 ) \
+    TIMER_PIN_MAP( 4, MOTOR5_PIN, 1,  0 ) \
+    TIMER_PIN_MAP( 5, MOTOR6_PIN, 1,  0 ) \
+    TIMER_PIN_MAP( 6, MOTOR7_PIN, 1,  0 ) \
+    TIMER_PIN_MAP( 7, MOTOR8_PIN, 1,  0 ) 
 
 #define ADC_INSTANCE          ADC1
 #define ADC1_DMA_OPT 0
