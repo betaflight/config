@@ -143,4 +143,3 @@
 #define GPS_UART                        SERIAL_PORT_USART6
 
 #define THROTTLE_LIMIT_PERCENT          100
-#define DEFAULT_VIDEO_SYSTEM            VIDEO_SYSTEM_AUTO  // Set VIDEO SYSTEM to AUTO by default
