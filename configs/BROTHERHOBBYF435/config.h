@@ -64,6 +64,7 @@
 #define USE_GYRO_SPI_MPU6000
 #define USE_GYRO_SPI_ICM42688P
 #define USE_ACCGYRO_BMI270
+#define USE_ACCGYRO_LSM6DSK320X
 #define ENSURE_MPU_DATA_READY_IS_LOW
 #define GYRO_1_EXTI_PIN                     PC4
 #define GYRO_1_CS_PIN                       PA4
