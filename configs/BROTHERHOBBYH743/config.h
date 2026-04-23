@@ -64,6 +64,8 @@
 #define USE_GYRO
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO_SPI_ICM42688P
+#define USE_ACCGYRO_LSM6DSK320X
+#define USE_ACCGYRO_LSM6DSO
 #define DEFAULT_GYRO_TO_USE                 GYRO_CONFIG_USE_GYRO_BOTH
 #define GYRO_1_EXTI_PIN                     PB2
 #define GYRO_1_CS_PIN                       PC15
