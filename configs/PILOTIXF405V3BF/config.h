@@ -35,8 +35,6 @@
 #define USE_MAX7456
 #define USE_BARO
 #define USE_BARO_DPS310
-#define USE_BARO_BMP280
-#define USE_BARO_MS5611
 #define USE_GYRO_CLKIN
 
 #define MOTOR1_PIN          PB0
@@ -104,8 +102,8 @@
     TIMER_PIN_MAP( 8, RX_PPM_PIN ,      2, -1) \
     TIMER_PIN_MAP( 9, GYRO_1_CLKIN_PIN, 2, -1)
 
-#define ADC_INSTANCE ADC3
-#define ADC3_DMA_OPT        1
+#define ADC_INSTANCE ADC1
+#define ADC1_DMA_OPT        1
 #define SYSTEM_HSE_MHZ      8
 
 #define BEEPER_INVERTED

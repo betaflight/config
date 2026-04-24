@@ -35,8 +35,6 @@
 #define USE_MAX7456
 #define USE_BARO
 #define USE_BARO_DPS310
-#define USE_BARO_BMP280
-#define USE_BARO_MS5611
 #define USE_GYRO_CLKIN
 
 #define MOTOR1_PIN          PB0
@@ -92,20 +90,8 @@
 
 #define ESCSERIAL_PIN       PC11
 
-#define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, MOTOR1_PIN ,      2,  0) \
-    TIMER_PIN_MAP( 1, MOTOR2_PIN ,      2,  0) \
-    TIMER_PIN_MAP( 2, MOTOR3_PIN ,      1,  0) \
-    TIMER_PIN_MAP( 3, MOTOR4_PIN ,      1,  1) \
-    TIMER_PIN_MAP( 4, SERVO1_PIN,       2, -1) \
-    TIMER_PIN_MAP( 5, SERVO2_PIN,       2, -1) \
-    TIMER_PIN_MAP( 6, LED_STRIP_PIN ,   1,  0) \
-    TIMER_PIN_MAP( 7, BEEPER_PIN,       1, -1) \
-    TIMER_PIN_MAP( 8, RX_PPM_PIN ,      2, -1) \
-    TIMER_PIN_MAP( 9, GYRO_1_CLKIN_PIN, 2, -1)
-
-#define ADC_INSTANCE ADC3
-#define ADC3_DMA_OPT        1
+#define ADC_INSTANCE ADC1
+#define ADC1_DMA_OPT        1
 #define SYSTEM_HSE_MHZ      8
 
 #define BEEPER_INVERTED
@@ -123,7 +109,7 @@
 #define PINIO3_BOX 42
 
 #define DEFAULT_DSHOT_BURST             DSHOT_DMAR_OFF
-#define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_OFF
+#define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_ON
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
