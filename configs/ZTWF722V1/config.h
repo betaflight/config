@@ -46,6 +46,8 @@
 #define MOTOR2_PIN           PC7
 #define MOTOR3_PIN           PC8
 #define MOTOR4_PIN           PC9
+#define SERVO1_PIN           PB1
+#define SERVO2_PIN           PB4
 #define LED_STRIP_PIN        PB3
 #define UART1_TX_PIN         PB6
 #define UART2_TX_PIN         PA2
@@ -73,22 +75,21 @@
 #define ADC_VBAT_PIN         PC1
 #define ADC_CURR_PIN         PC3
 #define PINIO1_PIN           PB0
-#define PINIO2_PIN           PC2F
 #define FLASH_CS_PIN         PA15
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
 #define GYRO_1_CS_PIN        PA4
+#define GYRO_1_CLKIN_PIN     PA8
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PC6 , 1,  0) \
     TIMER_PIN_MAP( 1, PC7 , 1,  0) \
     TIMER_PIN_MAP( 2, PC8 , 2,  0) \
     TIMER_PIN_MAP( 3, PC9 , 2,  0) \
-    TIMER_PIN_MAP( 4, PA10, 1,  0) \
+    TIMER_PIN_MAP( 4, PB1, 1,  0) \
     TIMER_PIN_MAP( 5, PB4 , 1,  0) \
-    TIMER_PIN_MAP( 6, PB1 , 2,  0) \
-    TIMER_PIN_MAP( 7, PA9 , 1,  0) \
-    TIMER_PIN_MAP( 8, PB3 , 1,  0) 
+    TIMER_PIN_MAP( 6, PA8 , 1,  2) \
+    TIMER_PIN_MAP( 7, PB3 , 1,  0) 
 
 
 #define ADC1_DMA_OPT        1
@@ -107,4 +108,5 @@
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG
 #define PINIO1_BOX 40
-#define PINIO2_BOX 41
+#define PINIO1_CONFIG                   129
+#define BOX_USER1_NAME                  "12V BEC"
