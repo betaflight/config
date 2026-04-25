@@ -142,5 +142,4 @@
 #define DEFAULT_RX_FEATURE              FEATURE_RX_SERIAL
 #define SERIALRX_PROVIDER               SERIALRX_CRSF
 #define SERIALRX_UART                   SERIAL_PORT_USART7
-#define OSD_DISPLAYPORT_DEVICE          MAX7456
 
