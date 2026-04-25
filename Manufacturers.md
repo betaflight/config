@@ -149,3 +149,4 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |ZEEZ|Zeez RC|https://www.zeezrc.com/|
 |ZERO|Zerodrag|https://zerodrag.in/|
 |ZEXM|Shenzhen Zexin Future Technology Co., Ltd|http://zexfpv.com/|
+|ZTWF|Shenzhen ZTW Future Technology Co., Ltd|http://ZTW.com/|
