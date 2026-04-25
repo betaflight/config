@@ -69,9 +69,6 @@
 #define UART8_TX_PIN                 PC2
 #define UART8_RX_PIN                 PC3
 
-#define USE_MAG
-#define USE_GPS
-
 #define I2C1_SCL_PIN                 PB8
 #define I2C1_SDA_PIN                 PB9
 
