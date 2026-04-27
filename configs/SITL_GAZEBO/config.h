@@ -31,6 +31,11 @@
 //   - gyro Z kept positive (FRD frame from sensor)
 //   - GPS position mirrored around spawn origin
 //   - barometric pressure derived from altitude (plugin doesn't supply pressure)
-//   - YAW_MOTORS_REVERSED for Iris "props in" model
-//   - flight plan / GPX integration enabled
-#define SITL_BRIDGE_GAZEBO  1
+#define ENABLE_GAZEBO_BRIDGE    1
+
+// Gazebo Iris model uses "props in" motor directions (M0/M3=CW, M1/M2=CCW),
+// which is the "reversed" configuration in BF's convention.
+#define YAW_MOTORS_REVERSED     1
+
+// Flight plan / GPX waypoint integration with the Gazebo world
+#define USE_FLIGHT_PLAN

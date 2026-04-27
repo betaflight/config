@@ -32,4 +32,4 @@
 //   - gyro Z negated
 //   - GPS position used directly (no origin mirror)
 //   - barometric pressure read from fdm_packet
-#define SITL_BRIDGE_GAZEBO  0
+#define ENABLE_GAZEBO_BRIDGE    0
