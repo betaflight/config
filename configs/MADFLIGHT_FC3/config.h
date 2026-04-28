@@ -57,7 +57,7 @@
 #define LED_STRIP_PIN        PA46
 
 // Gyro+acc
-//#define USE_GYRO_CLKIN //TODO - gives compile error with betaflight_2025.12.0-beta
+#define USE_GYRO_CLKIN
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 #define USE_ACC
