@@ -103,7 +103,6 @@
 #define ADC1_DMA_OPT                    7
 #define ADC3_DMA_OPT                    8
 #define TIMUP8_DMA_OPT                  9
-#define TIMUP2_DMA_OPT                  10
 
 #ifdef USE_GPS
 #define GPS_UART                        SERIAL_PORT_USART8
