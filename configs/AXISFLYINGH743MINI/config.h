@@ -127,7 +127,7 @@
 #define BEEPER_INVERTED
 
 #define GYRO_1_SPI_INSTANCE             SPI1
-#define GYRO_1_ALIGN                    CW0_DEG  // NEEDS CONFIRMATION
+#define GYRO_1_ALIGN                    CW0_DEG
 #define MAX7456_SPI_INSTANCE            SPI2
 #define FLASH_SPI_INSTANCE              SPI3
 
