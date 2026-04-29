@@ -32,3 +32,7 @@
 //   - GPS position used directly (no origin mirror)
 //   - barometric pressure read from fdm_packet
 #define ENABLE_GAZEBO_BRIDGE    0
+
+// RealFlight bridge does not push UDP RC packets; default to MSP RX over the
+// TCP-emulated UART so Configurator / test harnesses can drive RC channels.
+#define DEFAULT_RX_FEATURE      FEATURE_RX_MSP
