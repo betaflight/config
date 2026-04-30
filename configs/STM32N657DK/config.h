@@ -37,7 +37,7 @@
 #define FC_TARGET_MCU                   STM32N657
 
 #define BOARD_NAME                      STM32N657DK
-#define MANUFACTURER_ID                 STMC
+#define MANUFACTURER_ID                 STMI
 
 // STM32N6570-DK ships with a 48 MHz HSE clock source.
 #define SYSTEM_HSE_MHZ                  48
