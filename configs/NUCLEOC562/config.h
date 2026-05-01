@@ -78,6 +78,17 @@
 #define MOTOR3_PIN                      PB10
 #define MOTOR4_PIN                      PB11
 
+// timerIOConfig is empty by default; without TIMER_PIN_MAPPING entries
+// the motor pins find no timer and DSHOT bitbang init bails with
+// MOTOR_PIN_CONFLICT, so the motor stack reports zero motors over MSP.
+// Each pin only has one entry in fullTimerHardware on this die so the
+// occurrence index is always 1; dmaopt is -1 (bitbang is per-port DMA).
+#define TIMER_PIN_MAPPING \
+    TIMER_PIN_MAP( 0, PA8 , 1, -1) \
+    TIMER_PIN_MAP( 1, PA9 , 1, -1) \
+    TIMER_PIN_MAP( 2, PB10, 1, -1) \
+    TIMER_PIN_MAP( 3, PB11, 1, -1)
+
 // --- Status LED ---------------------------------------------------------
 // LD2 (User LED) on PA5, also exposed as Arduino D13.
 #define LED0_PIN                        PA5
