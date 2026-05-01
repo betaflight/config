@@ -89,6 +89,11 @@
     TIMER_PIN_MAP( 2, PB10, 1, -1) \
     TIMER_PIN_MAP( 3, PB11, 1, -1)
 
+// 4 kHz PID loop at the default 8 kHz gyro rate (denom = gyro / pid).
+// Keeps headroom for the C562 / 144 MHz core during bring-up; can be
+// raised once the platform settles.
+#define DEFAULT_PID_PROCESS_DENOM 2
+
 // --- Status LED ---------------------------------------------------------
 // LD2 (User LED) on PA5, also exposed as Arduino D13.
 #define LED0_PIN                        PA5
