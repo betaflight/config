@@ -62,7 +62,21 @@
 #define GYRO_1_EXTI_PIN                 PA10
 
 #define USE_MAG
-#define USE_VIRTUAL_MAG
+#define USE_MAG_LIS2MDL
+
+#define USE_BARO
+#define USE_BARO_LPS22DF
+
+// I2C1 on PB6/PB7 for LIS2MDL mag and LPS22DF baro.
+#define USE_I2C_DEVICE_1
+#define I2C1_SCL_PIN                    PB6
+#define I2C1_SDA_PIN                    PB7
+
+#define MAG_I2C_INSTANCE                I2CDEV_1
+#define BARO_I2C_INSTANCE               I2CDEV_1
+
+#define MAG_ALIGN                       CW0_DEG
+#define GYRO_1_ALIGN                    CW180_DEG
 
 // --- ST-LINK Virtual COM port -------------------------------------------
 // USART2 PA2 (TX) / PA3 (RX), AF7 -- wired to the on-board ST-LINK MCU.
@@ -93,6 +107,13 @@
 // Keeps headroom for the C562 / 144 MHz core during bring-up; can be
 // raised once the platform settles.
 #define DEFAULT_PID_PROCESS_DENOM 2
+
+// ADC1 routes via LPDMA2 CH0 on the C5. The dmaChannelSpec opts 0-7
+// are LPDMA1 CH0-7 (used by DSHOT bitbang pacers and SPI), so pick
+// opt 8 (LPDMA2 CH0) which is free for the ADC. Default of
+// DMA_OPT_UNUSED in common_defaults_post.h would make adcInit() skip
+// DMA setup entirely (status: Vref=0.00V, Core temp=-282degC).
+#define ADC1_DMA_OPT 8
 
 // --- Status LED ---------------------------------------------------------
 // LD2 (User LED) on PA5, also exposed as Arduino D13.
