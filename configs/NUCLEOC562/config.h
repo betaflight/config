@@ -23,11 +23,11 @@
 
 // NUCLEO-C562RE development bring-up config.
 //
-// Goal: exercise the STM32C562 platform path on the STMicro NUCLEO-64 board.
-// No flight hardware is wired -- the IMU/baro/mag stack runs against the
-// virtual drivers under src/main/drivers/{accgyro,compass,barometer}/*_virtual.c.
-// CLI/MSP runs over the MCU's on-chip USB DRD FS (PA11/PA12). USART2 on
-// PA2/PA3 is kept as a backup serial console wired to the on-board ST-LINK.
+// Goal: exercise the STM32C562 platform path on the STMicro NUCLEO-64 board
+// against real sensor hardware: LSM6DSK320X gyro/accel on SPI1, LIS2MDL mag
+// and LPS22DF baro on I2C1. CLI/MSP runs over the MCU's on-chip USB DRD FS
+// (PA11/PA12). USART2 on PA2/PA3 is kept as a backup serial console wired
+// to the on-board ST-LINK.
 //
 // Motor map: TIM1 CH1/CH2 on PA8/PA9 for MOTOR1/MOTOR2, TIM2 CH3/CH4 on
 // PB10/PB11 for MOTOR3/MOTOR4. PA10 is reserved for the DSK320X EXTI
@@ -53,7 +53,8 @@
 
 // --- Sensors ------------------------------------------------------------
 // LSM6DSK320X gyro/accel on SPI1 (CS PC9, MOSI PA7, MISO PA6, SCK PA5),
-// data-ready/EXTI line on PA10. Mag stays virtual (none wired).
+// data-ready/EXTI line on PA10. LIS2MDL mag and LPS22DF baro on I2C1
+// (PB6/PB7).
 #define USE_ACC
 #define USE_GYRO
 #define USE_ACCGYRO_LSM6DSK320X
