@@ -40,10 +40,11 @@
 #define BOARD_NAME                      NUCLEOC562
 #define MANUFACTURER_ID                 STMI
 
-// HSE: drive SYSCLK from the X3 24 MHz crystal (board solder bridges
-// SB6/SB7 closed, SB10 open, X3 populated). The C5 platform PSI reference
-// selector must match this (see system_stm32c5xx.c). If the crystal
-// isn't fitted the platform falls back to HSIS at 144 MHz.
+// HSE: drive SYSCLK from the on-board X3 24 MHz crystal (NUCLEO-C562RE
+// default configuration: R3/R4 fitted, SB3/SB4/SB5 open). The C5
+// platform PSI reference selector must match this (see
+// system_stm32c5xx.c). If the crystal isn't fitted the platform falls
+// back to HSIS at 144 MHz.
 #define SYSTEM_HSE_MHZ                  24
 
 // Keep the runtime config in RAM during platform bring-up to sidestep the
