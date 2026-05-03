@@ -151,5 +151,16 @@
 // fullTimerHardware resolves a timer/channel for each motor pin during
 // DSHOT bitbang init.
 
+// --- LCD console ---------------------------------------------------------
+// Inherit the lcd_console framework with the in-RAM stub backend. The
+// stub backend mirrors writes into a static char grid that can be
+// dumped via OpenOCD or the `lcd` CLI command — no real panel hardware
+// required, so we get a debug log of boot/trace output for free.
+#define ENABLE_LCD_CONSOLE              1
+#define LCD_CONSOLE_PANEL_STUB
+#define LCD_CONSOLE_COLS                80
+#define LCD_CONSOLE_ROWS                30
+#define ENABLE_LCD_PRINTF_REDIRECT      1
+
 // 4 kHz PID loop at the default 8 kHz gyro rate.
 #define DEFAULT_PID_PROCESS_DENOM       2

@@ -73,11 +73,13 @@
 // keep parity here until ADC clock setup lands per-board.
 
 // --- LCD console ---------------------------------------------------------
-// Route printf/trace output to the on-board LCD via the LTDC panel backend.
-// The CLI keeps its existing USB-VCP path; the LCD shows runtime/debug
-// output during normal operation.
+// Inherit the lcd_console framework with the in-RAM stub backend so
+// printf/trace output is captured into a debug grid that the `lcd` CLI
+// (and OpenOCD `mdw stubGrid`) can dump. A real LTDC panel backend is a
+// follow-up — until that lands, the CLI keeps its existing USB-VCP path
+// and the LCD path is purely a memory-resident scratchpad.
 #define ENABLE_LCD_CONSOLE              1
-#define LCD_CONSOLE_PANEL_LTDC
+#define LCD_CONSOLE_PANEL_STUB
 #define LCD_CONSOLE_COLS                80
 #define LCD_CONSOLE_ROWS                30
 #define ENABLE_LCD_PRINTF_REDIRECT      1
