@@ -19,6 +19,11 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+    SUPPORTED TARGET - THANK YOU
+    REFERENCE: sha256_b08b3592217ec38f808083d7383e4e17dae4b9acb3f3fbaef244d35bd0e6f8ad
+*/
+
 #pragma once
 
 #define FC_TARGET_MCU       STM32H743
@@ -30,6 +35,9 @@
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
+#define USE_ACCGYRO_LSM6DSV16X
+#define USE_ACCGYRO_LSM6DSK320X
+
 #define USE_BARO
 #define USE_BARO_DPS310
 #define USE_MAX7456
@@ -42,8 +50,6 @@
 #define GYRO_1_EXTI_PIN         PC5
 #define GYRO_1_CS_PIN           PA4
 #define GYRO_1_SPI_INSTANCE     SPI1
-#define USE_GYRO_CLKIN
-#define GYRO_1_CLKIN_PIN        PC6
 #define GYRO_1_ALIGN            CW180_DEG_FLIP
 
 #define SPI2_SCK_PIN            PB13
@@ -94,13 +100,12 @@
 #define ADC_CURR_PIN            PC1
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP(0, BEEPER_PIN,       1, -1) \
-    TIMER_PIN_MAP(1, MOTOR1_PIN,       1,  0) \
-    TIMER_PIN_MAP(2, MOTOR2_PIN,       1,  1) \
-    TIMER_PIN_MAP(3, MOTOR3_PIN,       1,  2) \
-    TIMER_PIN_MAP(4, MOTOR4_PIN,       1,  3) \
-    TIMER_PIN_MAP(5, LED_STRIP_PIN,    1,  8) \
-    TIMER_PIN_MAP(6, GYRO_1_CLKIN_PIN, 1, -1)
+    TIMER_PIN_MAP(0, BEEPER_PIN, 1, -1) \
+    TIMER_PIN_MAP(1, MOTOR1_PIN, 1,  0) \
+    TIMER_PIN_MAP(2, MOTOR2_PIN, 1,  1) \
+    TIMER_PIN_MAP(3, MOTOR3_PIN, 1,  2) \
+    TIMER_PIN_MAP(4, MOTOR4_PIN, 1,  3) \
+    TIMER_PIN_MAP(5, LED_STRIP_PIN, 1, 8)
 
 #define ADC1_DMA_OPT        9
 #define ADC3_DMA_OPT        10
@@ -114,9 +119,12 @@
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SCALE     210
 
-#define PINIO1_PIN     PC13
+#define PINIO1_PIN     PE2
 #define PINIO1_BOX     40
-#define PINIO1_CONFIG  129
-#define BOX_USER1_NAME "12V BEC"
+#define BOX_USER1_NAME "Cam1,2"
+
+#define PINIO2_PIN     PC13
+#define PINIO2_BOX     41
+#define BOX_USER2_NAME "12V BEC"
 
 #define BEEPER_INVERTED
