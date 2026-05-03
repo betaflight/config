@@ -56,14 +56,14 @@
 #define CONFIG_IN_RAM
 
 // --- Sensors ------------------------------------------------------------
-// REAL SENSOR WIRING (DSK320K module, currently disabled):
-//   SPI1 SCK PA5 / SDI PA6 / SDO PA7,  LSM6DSK320X CS PC9 / DRDY PA10
-//   I2C1 SCL PB6 / SDA PB7,  LIS2MDL mag + LPS22DF baro
+// DSK320K module wiring (same pinout used on the NUCLEO-C562RE bring-up):
+//   SPI1   SCK PA5  / SDI PA6 / SDO PA7,  LSM6DSK320X CS PC9 / DRDY PA10
+//   I2C1   SCL PB6  / SDA PB7,  LIS2MDL mag + LPS22DF baro
 //
-// Real sensors disabled until SPI1 + I2C1 kernel clocks + AF mappings are
-// validated (sensorsAutodetect hangs trying to read WHOAMI). Use the
-// existing virtual-sensor stack so the scheduler / task system can run
-// and we can debug everything else first.
+// Real sensors stay disabled until the N6 SPI/I2C bring-up handles the
+// RIF + secure peripheral alias correctly (without -mcmse, peripheral
+// symbols resolve to the NS aliases at 0x42xxxxxx and the bus matrix
+// faults the access). Use the virtual stack so the scheduler runs.
 #define USE_ACC
 #define USE_VIRTUAL_ACC
 #define USE_GYRO
@@ -73,7 +73,7 @@
 #define USE_MAG
 #define USE_VIRTUAL_MAG
 
-// Real-sensor pins kept here as comments for the next iteration:
+// Real sensor pin defs kept here for the next iteration:
 // #define USE_ACCGYRO_LSM6DSK320X
 // #define USE_GYRO_EXTI
 // #define USE_SPI_DEVICE_1
@@ -83,6 +83,7 @@
 // #define GYRO_1_SPI_INSTANCE             SPI1
 // #define GYRO_1_CS_PIN                   PC9
 // #define GYRO_1_EXTI_PIN                 PA10
+// #define GYRO_1_ALIGN                    CW180_DEG
 // #define USE_MAG_LIS2MDL
 // #define USE_BARO_LPS22DF
 // #define USE_I2C_DEVICE_1
@@ -91,7 +92,6 @@
 // #define MAG_I2C_INSTANCE                I2CDEV_1
 // #define BARO_I2C_INSTANCE               I2CDEV_1
 // #define MAG_ALIGN                       CW0_DEG
-// #define GYRO_1_ALIGN                    CW180_DEG
 
 // --- ST-LINK V3 backup serial console -----------------------------------
 // The N6570-DK routes USART1 PE5/PE6 to the on-board ST-LINK-V3 VCOM.
