@@ -127,11 +127,12 @@
 //   CK  PC2   CMD PC3
 //   D0  PC4   D1  PC5   D2 PC0   D3 PE4
 //
-// TEMPORARILY DISABLED — SDMMC2 kernel clock is now configured but
-// SD_DoInit still spin-loops polling the peripheral status register
-// (offset 0x34). SDMMC2 peripheral may need additional setup (CKIN
-// gating, init timing) beyond just kernel clock select. Re-enable
-// after SD init path is fully validated. Pin defs kept for reference:
+// HAL_SD_MspInit now configures the SDMMC2 master+slave RIF attributes and
+// marks each pin as secure-privileged. HAL_SD_Init still spin-loops on the
+// SDMMC STAR register (offset 0x34), so something else in the controller
+// init path needs attention (possibly the DLYB / OUTDRV / CKIN gating
+// outside the RIF framework). Pin/RIF infrastructure is committed for the
+// follow-up — leave USE_SDCARD off until HAL_SD_Init returns cleanly.
 // #define USE_SDCARD
 // #define SDIO_DEVICE                     SDIODEV_2
 // #define SDIO_USE_4BIT                   true
