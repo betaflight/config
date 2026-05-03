@@ -94,12 +94,14 @@
 // #define GYRO_1_ALIGN                    CW180_DEG
 
 // --- ST-LINK V3 backup serial console -----------------------------------
-// USART1 PE5 (TX) / PE6 (RX) wired to the on-board ST-LINK-V3 VCOM. CLI
-// continues to default to the USB VCP; this is a fallback for early boot
-// trace before USB enumerates.
-#define USE_UART1
-#define UART1_TX_PIN                    PE5
-#define UART1_RX_PIN                    PE6
+// The N6570-DK routes USART1 PE5/PE6 to the on-board ST-LINK-V3 VCOM,
+// but the N6 platform UART1 hardware table doesn't list PE5/PE6 yet —
+// only PA9/PA10, PB6/PB7 and PB14/PB15. Adding PE5/PE6 entries (with
+// the right AF number) to serial_uart_stm32n6xx.c is a follow-up; for
+// now leave USART1 disabled rather than fault inside uartOpen.
+// #define USE_UART1
+// #define UART1_TX_PIN                    PE5
+// #define UART1_RX_PIN                    PE6
 
 // --- USB VCP ------------------------------------------------------------
 // USB1 OTG_HS in FS mode (PA11 D-/PA12 D+) routed to the user USB-C
