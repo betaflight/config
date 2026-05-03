@@ -113,12 +113,13 @@
 // USB33RDY before the core leaves reset.
 #define USE_VCP
 
-// --- Status LED ---------------------------------------------------------
-// LD2 (red) on PG10 — usable as status LED for bring-up. The on-board green
-// LD1 sits on PO1 which the IO subsystem doesn't reach yet (io_def_generated.h
-// only covers ports A..I, see follow-up task to extend coverage to J..Q for
-// the wider N6 GPIO set including LCD lines).
-#define LED0_PIN                        PG10
+// --- Status LEDs --------------------------------------------------------
+// N6570-DK ships two user LEDs. LD1 (green / PO1) is the primary heartbeat;
+// LD2 (red / PG10) is the secondary indicator. The IO subsystem now
+// reaches port O via the extended io_def_generated coverage (A..O). Ports
+// P and Q remain unreachable until ioTag_t widens past uint8_t.
+#define LED0_PIN                        PO1
+#define LED1_PIN                        PG10
 
 // --- SDCARD (on-board microSD slot) ------------------------------------
 // SDMMC2 routed to all six lines via the on-board card cage. Pin map per
