@@ -97,9 +97,14 @@
 // The N6570-DK routes USART1 PE5/PE6 to the on-board ST-LINK-V3 VCOM.
 // USART1 kernel clock is sourced from HSI (64 MHz) via SystemClock_Config
 // so baud-rate generation is independent of the bus-clock tree.
+//
+// MSP_UART pins MSP onto USART1 by default so the ST-LINK VCOM serves as
+// a backup path to the CLI: connect at 115200 8N1, send "#<lf>" to drop
+// out of MSP and into the CLI prompt.
 #define USE_UART1
 #define UART1_TX_PIN                    PE5
 #define UART1_RX_PIN                    PE6
+#define MSP_UART                        SERIAL_PORT_USART1
 
 // --- USB VCP ------------------------------------------------------------
 // USB1 OTG_HS in FS mode (PA11 D-/PA12 D+) routed to the user USB-C
