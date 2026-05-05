@@ -106,6 +106,17 @@
 #define UART1_RX_PIN                    PE6
 #define MSP_UART                        SERIAL_PORT_USART1
 
+// --- ADC ----------------------------------------------------------------
+// Bring up ADC1 with VBAT on PB0 (ADC1 channel 8). Nothing is wired to
+// PB0 by default on the N6570-DK, so the reading will be floating /
+// near-zero — the goal here is just to exercise the ADC code path so the
+// `Voltage` line in `status` reflects a real conversion.
+//
+// SystemClock_Config already configures the ADC kernel clock at HCLK/2
+// (75 MHz, within the 75 MHz max).
+#define ADC_VBAT_PIN                    PB0
+#define ADC_INSTANCE                    ADC1
+
 // --- USB VCP ------------------------------------------------------------
 // USB1 OTG_HS in FS mode (PA11 D-/PA12 D+) routed to the user USB-C
 // connector. SystemClock_Config feeds the USB1 PHY from HSE/2 (24 MHz),
