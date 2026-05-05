@@ -34,7 +34,7 @@
 #define FC_TARGET_MCU                   STM32N657
 
 #define BOARD_NAME                      OPENN657V1
-#define MANUFACTURER_ID                 OPEN
+#define MANUFACTURER_ID                 CUST
 
 // 48 MHz HSE crystal — matches the fork's target.mk and the N6570-DK
 // reference clock tree the platform expects.
