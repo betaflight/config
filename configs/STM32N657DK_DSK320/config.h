@@ -159,13 +159,15 @@
 // DSHOT bitbang init.
 
 // --- LCD console ---------------------------------------------------------
-// Inherit the lcd_console framework with the in-RAM stub backend. The
-// stub backend mirrors writes into a static char grid that can be
-// dumped via OpenOCD or the `lcd` CLI command — no real panel hardware
-// required, so we get a debug log of boot/trace output for free.
+// On-board RK050HR18-CT 800x480 parallel-RGB panel driven via LTDC. The
+// backend (drivers/lcd_panel/lcd_panel_n6570dk_ltdc.c) brings up PLL4 +
+// IC16 for the 25 MHz pixel clock, configures the LTDC AF14 pin set,
+// pulses LCD_RESET (PE1), drives LCD_ONOFF (PQ6) + LCD_BL_CTRL (PQ3) high,
+// and parks an 800x480 RGB565 framebuffer in AXISRAM2 (.DMA_RW_D2). The
+// console grid is 72x30 cells of ST's vendored Font16 (11x16).
 #define ENABLE_LCD_CONSOLE              1
-#define LCD_CONSOLE_PANEL_STUB
-#define LCD_CONSOLE_COLS                80
+#define LCD_CONSOLE_PANEL_N6570DK_LTDC
+#define LCD_CONSOLE_COLS                72
 #define LCD_CONSOLE_ROWS                30
 #define ENABLE_LCD_PRINTF_REDIRECT      1
 
