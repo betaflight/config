@@ -51,8 +51,8 @@
 #define USE_VCP
 
 // --- LEDs ----------------------------------------------------------------
-#define LED1_PIN                        PD15
-#define LED2_PIN                        PG10
+#define LED0_PIN                        PD15
+#define LED1_PIN                        PG10
 
 // --- Serial --------------------------------------------------------------
 // UART3: bidirectional debug / MSP
@@ -102,10 +102,16 @@
 // #define I2C?_SDA_PIN                  P??
 
 // --- Motors --------------------------------------------------------------
+// TODO MOTOR3/MOTOR4 wiring — PD2 and PC12 are inherited from the fork's
+// target.h but neither pin has a TIM1_CH3/CH4 alternate function on the
+// STM32N657 (per src/platform/STM32/timer_stm32n6xx.c, TIM1_CH3 is on
+// PA10/PE13 and TIM1_CH4 on PA11/PE14). M3/M4 will not PWM out as
+// configured — confirm against the v1.0 schematic and reassign before
+// flying.
 #define MOTOR1_PIN                      PE9     // TIM1_CH1
 #define MOTOR2_PIN                      PE11    // TIM1_CH2
-#define MOTOR3_PIN                      PD2     // TIM1_CH3
-#define MOTOR4_PIN                      PC12    // TIM1_CH4
+#define MOTOR3_PIN                      PD2     // TIM1_CH3 (TODO: invalid AF, see above)
+#define MOTOR4_PIN                      PC12    // TIM1_CH4 (TODO: invalid AF, see above)
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP(0, MOTOR1_PIN, 1, 0) \

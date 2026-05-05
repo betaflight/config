@@ -29,10 +29,11 @@
 // the existing virtual drivers under src/main/drivers/{accgyro,compass,
 // barometer}/*_virtual.c.
 //
-// The LCD path is currently a placeholder backend (see
-// src/platform/STM32/lcd_ltdc_n6.c) that mirrors writes into a debug RAM
-// grid; real LTDC + PSRAM + DSI + RK050HR18 bring-up will replace the
-// placeholder over follow-up iterations on the actual board.
+// The LCD path uses the in-RAM stub backend (LCD_CONSOLE_PANEL_STUB):
+// writes land in a debug grid that the `lcd` CLI (and OpenOCD
+// `mdw stubGrid`) can dump. The bare DK has no panel attached — the
+// real LTDC panel backend (lcd_ltdc_n6.c) is exercised by the
+// STM32N657DK_DSK320 config when paired with the DSK320K daughter board.
 
 #define FC_TARGET_MCU                   STM32N657
 
