@@ -159,17 +159,11 @@
 // DSHOT bitbang init.
 
 // --- LCD console ---------------------------------------------------------
-// On-board RK050HR18-CT 800x480 parallel-RGB panel driven via LTDC. The
-// backend (drivers/lcd_panel/lcd_panel_n6570dk_ltdc.c) brings up PLL4 +
-// IC16 for the 25 MHz pixel clock, configures the LTDC AF14 pin set,
-// pulses LCD_RESET (PE1), drives LCD_ONOFF (PQ6) + LCD_BL_CTRL (PQ3) high,
-// and parks an 800x480 RGB565 framebuffer in AXISRAM2 (.DMA_RW_D2). The
-// console grid is 72x30 cells of ST's vendored Font16 (11x16).
-#define ENABLE_LCD_CONSOLE              1
-#define LCD_CONSOLE_PANEL_N6570DK_LTDC
-#define LCD_CONSOLE_COLS                72
-#define LCD_CONSOLE_ROWS                30
-#define ENABLE_LCD_PRINTF_REDIRECT      1
+// LTDC backend (lcd_panel_n6570dk_ltdc.c) currently wedges the boot path
+// between systemInit() and USB init, blocking USB enumeration. Off until
+// the bring-up sequence is fixed; the panel driver source stays in the
+// build tree and self-disables when the selector is undefined.
+#define ENABLE_LCD_CONSOLE              0
 
 // 4 kHz PID loop at the default 8 kHz gyro rate.
 #define DEFAULT_PID_PROCESS_DENOM       2
