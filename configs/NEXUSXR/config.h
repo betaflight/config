@@ -49,6 +49,10 @@
 #define SERVO1_PIN           PB4  // S1
 #define SERVO2_PIN           PB5  // S2
 #define SERVO3_PIN           PB0  // S3
+#define SERVO4_PIN           PA2  // RPM
+#define SERVO5_PIN           PA3  // TLM
+#define SERVO6_PIN           PB6  // AUX
+#define SERVO7_PIN           PB7  // SBUX
 
 #define UART1_TX_PIN         PB6 // AUX or S6
 #define UART1_RX_PIN         PB7 // SBUS or S7
