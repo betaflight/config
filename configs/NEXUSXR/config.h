@@ -104,23 +104,24 @@
 	TIMER_PIN_MAP( 8, PB7,  1, -1 ) /* TIM4_CH2 */ \
 	TIMER_PIN_MAP( 9, PB9,  2, -1 ) /* TIM11_CH1 */ 
 
-#define ADC1_DMA_OPT                    0
+#define ADC1_DMA_OPT                     0
 
-#define BARO_I2C_INSTANCE               I2CDEV_3
-#define MAG_I2C_INSTANCE                I2CDEV_3
-#define ADC_INSTANCE                    ADC1
-#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
-#define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_ON
-#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
-#define DEFAULT_VOLTAGE_METER_SCALE     475
-#define DEFAULT_CURRENT_METER_SCALE     273
-#define PINIO1_BOX                      40
-#define PINIO1_CONFIG                   129
-#define BOX_USER1_NAME                  "ELRS OFF"
-#define DEFAULT_RX_FEATURE              FEATURE_RX_SERIAL
-#define SERIALRX_UART                   SERIAL_PORT_UART5
-#define SERIALRX_PROVIDER               SERIALRX_CRSF
-#define FLASH_SPI_INSTANCE              SPI2
-#define GYRO_1_SPI_INSTANCE             SPI1
-#define GYRO_1_ALIGN                    CW0_DEG
+#define BARO_I2C_INSTANCE                I2CDEV_3
+#define MAG_I2C_INSTANCE                 I2CDEV_3
+#define ADC_INSTANCE                     ADC1
+#define DEFAULT_BLACKBOX_DEVICE          BLACKBOX_DEVICE_FLASH
+#define DEFAULT_DSHOT_BITBANG            DSHOT_BITBANG_ON
+#define DEFAULT_CURRENT_METER_SOURCE     CURRENT_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SOURCE     VOLTAGE_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SCALE      238
+#define DEFAULT_VOLTAGE_METER_MULTIPLIER 2
+#define DEFAULT_CURRENT_METER_SCALE      273
+#define PINIO1_BOX                       40
+#define PINIO1_CONFIG                    129
+#define BOX_USER1_NAME                   "ELRS OFF"
+#define DEFAULT_RX_FEATURE               FEATURE_RX_SERIAL
+#define SERIALRX_UART                    SERIAL_PORT_UART5
+#define SERIALRX_PROVIDER                SERIALRX_CRSF
+#define FLASH_SPI_INSTANCE               SPI2
+#define GYRO_1_SPI_INSTANCE              SPI1
+#define GYRO_1_ALIGN                     CW0_DEG
