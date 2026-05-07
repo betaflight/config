@@ -99,10 +99,10 @@
     TIMER_PIN_MAP( 3, PB5,  1, -1 ) /* TIM3_CH2 */ \
     TIMER_PIN_MAP( 4, PB0,  2, -1 ) /* TIM3_CH3 */ \
     TIMER_PIN_MAP( 5, PA2,  2, -1 ) /* TIM5_CH3 */ \
-	TIMER_PIN_MAP( 6, PA3,  2, -1 ) /* TIM5_CH4 */ \
+    TIMER_PIN_MAP( 6, PA3,  2, -1 ) /* TIM5_CH4 */ \
     TIMER_PIN_MAP( 7, PB6,  1, -1 ) /* TIM4_CH1 */ \
-	TIMER_PIN_MAP( 8, PB7,  1, -1 ) /* TIM4_CH2 */ \
-	TIMER_PIN_MAP( 9, PB9,  2, -1 ) /* TIM11_CH1 */ 
+    TIMER_PIN_MAP( 8, PB7,  1, -1 ) /* TIM4_CH2 */ \
+    TIMER_PIN_MAP( 9, PB9,  2, -1 ) /* TIM11_CH1 */ 
 
 #define ADC1_DMA_OPT                     0
 
