@@ -29,10 +29,11 @@
 // the existing virtual drivers under src/main/drivers/{accgyro,compass,
 // barometer}/*_virtual.c.
 //
-// The LCD path is currently a placeholder backend (see
-// src/platform/STM32/lcd_ltdc_n6.c) that mirrors writes into a debug RAM
-// grid; real LTDC + PSRAM + DSI + RK050HR18 bring-up will replace the
-// placeholder over follow-up iterations on the actual board.
+// The LCD path uses the in-RAM stub backend (LCD_CONSOLE_PANEL_STUB):
+// writes land in a debug grid that the `lcd` CLI (and OpenOCD
+// `mdw stubGrid`) can dump. The bare DK has no panel attached — the
+// real LTDC panel backend (lcd_ltdc_n6.c) is exercised by the
+// STM32N657DK_DSK320 config when paired with the DSK320K daughter board.
 
 #define FC_TARGET_MCU                   STM32N657
 
@@ -61,12 +62,25 @@
 #define USE_MAG
 #define USE_VIRTUAL_MAG
 
+// --- USB VCP -------------------------------------------------------------
+// USB1 OTG_HS in FS mode on the user USB-C connector (PA11/PA12 internally
+// routed via the integrated PHY). USE_VCP is opted in per board because
+// the boot ROM hands off USB power-rail state non-deterministically and
+// each board does its own MspInit sequencing.
+#define USE_VCP
+
+// USE_ADC requires SystemClock_Config to set up the ADC kernel clock
+// (PERIPHCLK_ADC). The legacy STM32N657DK config didn't enable ADC, so
+// keep parity here until ADC clock setup lands per-board.
+
 // --- LCD console ---------------------------------------------------------
-// Route printf/trace output to the on-board LCD via the LTDC panel backend.
-// The CLI keeps its existing USB-VCP path; the LCD shows runtime/debug
-// output during normal operation.
+// Inherit the lcd_console framework with the in-RAM stub backend so
+// printf/trace output is captured into a debug grid that the `lcd` CLI
+// (and OpenOCD `mdw stubGrid`) can dump. A real LTDC panel backend is a
+// follow-up — until that lands, the CLI keeps its existing USB-VCP path
+// and the LCD path is purely a memory-resident scratchpad.
 #define ENABLE_LCD_CONSOLE              1
-#define LCD_CONSOLE_PANEL_LTDC
+#define LCD_CONSOLE_PANEL_STUB
 #define LCD_CONSOLE_COLS                80
 #define LCD_CONSOLE_ROWS                30
 #define ENABLE_LCD_PRINTF_REDIRECT      1
