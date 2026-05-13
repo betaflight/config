@@ -27,7 +27,7 @@
 
 #define FC_TARGET_MCU     STM32F405
 
-#define BOARD_NAME        BLADEF4
+#define BOARD_NAME        BLADE_F4
 #define MANUFACTURER_ID   RUSH
 
 #define USE_GYRO
