@@ -19,6 +19,12 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+SUPPORTED TARGET - THANK YOU
+REFERENCE: sha256_60ddabf4268db085896f49c754d593cfe9eb17672e844dd26665830b94019ad6
+DATE: 2025-12-01
+*/
+
 #pragma once
 
 #define FC_TARGET_MCU     STM32G47X
