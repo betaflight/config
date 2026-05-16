@@ -41,10 +41,6 @@
 #define MOTOR2_PIN          PB3         //TIM2_CH2
 #define MOTOR3_PIN          PB10        //TIM2_CH3
 #define MOTOR4_PIN          PB11        //TIM2_CH4
-#define MOTOR5_PIN          PA6         //TIM3_CH1
-#define MOTOR6_PIN          PB0         //TIM3_CH2
-#define MOTOR7_PIN          PB1         //TIM3_CH3
-#define MOTOR8_PIN          PC7         //TIM3_CH4
 #define LED_STRIP_PIN       PC6         //TIM8_CH1
 #define UART1_TX_PIN        PA9
 #define UART1_RX_PIN        PA10
