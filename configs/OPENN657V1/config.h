@@ -83,11 +83,11 @@
 // validated on N6 yet — force standard timer-DMA.
 #define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_OFF
 
-// Burst-DMA mode: single GPDMA1 channel writes 4 CCRs via TIM1->DMAR per
-// update event. Used during bring-up because it's the path the CubeN6
-// TIM_DMA reference exercises. Per-channel DMA also works with the
-// GPDMA SEC + SrcAllocatedPort fixes in BF master.
-#define DEFAULT_DSHOT_BURST             DSHOT_DMAR_ON
+// Default to per-channel DMA on N6: one GPDMA1 channel per motor writes
+// directly to its own CCRx. Simpler path than TIM_DMAR burst (no
+// auto-routing, no DBL bookkeeping) and the one validated during
+// bring-up. DSHOT_DMAR_ON also works on the N6 GPDMA fix path.
+#define DEFAULT_DSHOT_BURST             DSHOT_DMAR_OFF
 
 // Bring-up trace UART (drivers/debug_uart.h). UART7 TX on PE8 (AF8),
 // connected to the bench USB-serial adapter on /dev/ttyUSB0. Compiles
