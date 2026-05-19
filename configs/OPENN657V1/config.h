@@ -62,6 +62,33 @@
 
 #define DEFAULT_PID_PROCESS_DENOM       2
 
+// --- Motors --------------------------------------------------------------
+// All four motors are on TIM1 channels (AF1). DShot via GPDMA1 burst-DMA
+// to TIM1->DMAR; one GPDMA1 channel covers all four channels.
+// Pin map matches STM32N6-FC-Pinout V3.0 (TIM1_CH1..CH4 columns).
+#define MOTOR1_PIN                      PE9   /* TIM1_CH1 */
+#define MOTOR2_PIN                      PE11  /* TIM1_CH2 */
+#define MOTOR3_PIN                      PD2   /* TIM1_CH3 */
+#define MOTOR4_PIN                      PC12  /* TIM1_CH4 */
+
+#define TIMER_PIN_MAPPING \
+    TIMER_PIN_MAP(0, MOTOR1_PIN, 1, 0) /* PE9  / TIM1_CH1 / GPDMA1_Channel0 */ \
+    TIMER_PIN_MAP(1, MOTOR2_PIN, 1, 1) /* PE11 / TIM1_CH2 / GPDMA1_Channel1 */ \
+    TIMER_PIN_MAP(2, MOTOR3_PIN, 1, 2) /* PD2  / TIM1_CH3 / GPDMA1_Channel2 */ \
+    TIMER_PIN_MAP(3, MOTOR4_PIN, 1, 3) /* PC12 / TIM1_CH4 / GPDMA1_Channel3 */
+
+#define TIMUP1_DMA_OPT                  4   /* GPDMA1_Channel4 — burst DMA */
+
+// Bitbang path needs MCO-driven pacer GPIO setup which hasn't been
+// validated on N6 yet — force standard timer-DMA.
+#define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_OFF
+
+// Burst-DMA mode: single GPDMA1 channel writes 4 CCRs via TIM1->DMAR per
+// update event. Used during bring-up because it's the path the CubeN6
+// TIM_DMA reference exercises. Per-channel DMA also works with the
+// GPDMA SEC + SrcAllocatedPort fixes in BF master.
+#define DEFAULT_DSHOT_BURST             DSHOT_DMAR_ON
+
 // Bring-up trace UART (drivers/debug_uart.h). UART7 TX on PE8 (AF8),
 // connected to the bench USB-serial adapter on /dev/ttyUSB0. Compiles
 // out cleanly when ENABLE_DEBUG_UART is 0.
