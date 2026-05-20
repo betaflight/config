@@ -111,7 +111,9 @@
 #ifdef USE_GPS
 #define GPS_UART             SERIAL_PORT_USART3
 #endif
+#define MSP_UART             SERIAL_PORT_USART1
 #define ESC_SENSOR_UART      SERIAL_PORT_USART7
+#define SERIALRX_UART        SERIAL_PORT_USART6
 
 #define MAG_I2C_INSTANCE I2CDEV_1
 #define BARO_I2C_INSTANCE I2CDEV_2
@@ -129,3 +131,5 @@
 #define PINIO2_CONFIG 129
 #define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE SPI3
+#define SDIO_USE_4BIT        1
+#define SDIO_DEVICE          SDIODEV_1
