@@ -44,6 +44,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |DRNR|Shenzhen Zhimu Technology Co., Ltd|https://www.droneer.com|
 |DRRC|DroidRC|https://github.com/xiaoxiabub|
 |DYST|DongYang Smart Technology Co., Ltd (dys)|http://www.dys.hk/|
+|DOLP|DolphinRC|https://www.dolphinrc.com/|
 |EACH|eachine|https://www.eachine.com/|
 |EASP|Ewing Aerospace|https://ewingaerospace.com/|
 |EMAX|EMAX|https://emaxmodel.com/|
@@ -149,4 +150,4 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |ZEEZ|Zeez RC|https://www.zeezrc.com/|
 |ZERO|Zerodrag|https://zerodrag.in/|
 |ZEXM|Shenzhen Zexin Future Technology Co., Ltd|http://zexfpv.com/|
-|DOLP|DolphinRC|https://www.dolphinrc.com/|
+
