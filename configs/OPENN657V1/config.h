@@ -79,9 +79,10 @@
 
 #define TIMUP1_DMA_OPT                  4   /* GPDMA1_Channel4 — burst DMA */
 
-// Bitbang path needs MCO-driven pacer GPIO setup which hasn't been
-// validated on N6 yet — force standard timer-DMA.
-#define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_OFF
+// N6 GPDMA bitbang (TIM8-paced, BSRR-direct writes) is the working path —
+// mirrors the reference implementation. Timer-DMA is still selectable via
+// `set dshot_bitbang = OFF` but lacks the broken-OC-output workaround.
+#define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_ON
 
 // Default to per-channel DMA on N6: one GPDMA1 channel per motor writes
 // directly to its own CCRx. Simpler path than TIM_DMAR burst (no
