@@ -106,6 +106,7 @@
     TIMER_PIN_MAP( 9, GYRO_1_CLKIN_PIN, 2, -1)
 
 #define ADC_INSTANCE ADC1
+#define ADC1_DMA_OPT 5
 
 #define SYSTEM_HSE_MHZ      8
 
