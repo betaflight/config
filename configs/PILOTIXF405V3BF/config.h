@@ -87,6 +87,9 @@
 #define PINIO1_PIN          PC5
 #define PINIO2_PIN          PA14
 #define PINIO3_PIN          PC15
+#define BOX_USER1_NAME	"VTX PWR"
+#define BOX_USER2_NAME	"BLE PWR"
+#define BOX_USER3_NAME	"CAM 1,2"
 
 #define ESCSERIAL_PIN       PC11
 
