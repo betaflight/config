@@ -62,6 +62,10 @@
 // CONFIG_IN_MEMORY_MAPPED_FLASH once the XSPI flash storage path is proven.
 #define CONFIG_IN_RAM
 
+// DK reference layout supplies VCORE externally (not the on-chip SMPS),
+// so the platform must drive PWR_EXTERNAL_SOURCE_SUPPLY.
+#define ENABLE_N6_PWR_EXTERNAL          1
+
 // --- Sensors ------------------------------------------------------------
 // DSK320K module wiring (same pinout used on the NUCLEO-C562RE bring-up):
 //   SPI1   SCK PA5  / SDI PA6 / SDO PA7,  LSM6DSK320X CS PC9 / DRDY PA10
