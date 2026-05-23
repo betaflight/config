@@ -65,6 +65,17 @@
 
 #define DEFAULT_PID_PROCESS_DENOM       2
 
+// --- Baro: BMP280 on I2C1 ------------------------------------------------
+// SCL=PH9, SDA=PC1 (AF4). Default I2C address 0x76 (SDO tied low).
+// (USE_I2C is provided by the N657 target.h.)
+#define USE_I2C_DEVICE_1
+#define I2C1_SCL_PIN                    PH9
+#define I2C1_SDA_PIN                    PC1
+
+#define USE_BARO
+#define USE_BARO_BMP280
+#define BARO_I2C_INSTANCE               I2CDEV_1
+
 // --- Motors --------------------------------------------------------------
 // All four motors are on TIM1 channels (AF1). DShot via GPDMA1 burst-DMA
 // to TIM1->DMAR; one GPDMA1 channel covers all four channels.
@@ -104,3 +115,7 @@
 
 // Enable CLI dxr / dxw for SPI1 bring-up register dump.
 #define ENABLE_DEBUG_CLI_COMMANDS       1
+
+// Don't write fresh defaults to MM-flash on first-boot EEPROM recovery.
+// The save path stalls the scheduler for ~7 s mid-initPhase1.
+#define ENABLE_RESET_CONFIG             1
