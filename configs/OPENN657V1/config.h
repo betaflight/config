@@ -25,10 +25,13 @@
 #define BOARD_NAME                      OPENN657V1
 #define MANUFACTURER_ID                 CUST
 
-#define BF_N6_NO_FLASH_CHIP
-
 #define SYSTEM_HSE_MHZ                  48
-#define CONFIG_IN_RAM
+
+// CLI `save` writes config into the boot flash chip (mx66uw1g45g) at the
+// top of XSPI2 via the meta-flash driver. The OCTOSPI_FLASH_CHIP setting
+// in config.mk pairs with this — without it the build-time chip dispatch
+// in flash.c can't select the chip and detection falls back to JEDEC
+// probing (which the bootloader-configured MX66 doesn't honour cleanly).
 
 // --- USB VCP -------------------------------------------------------------
 #define USE_VCP
