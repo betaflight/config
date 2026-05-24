@@ -39,12 +39,12 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |DFRA|Drone FPV Racer|https://www.drone-fpv-racer.com/|
 |DFRC|Shenzhen Jingfei Technology Co., Ltd|https://dreamflyrc.com/|
 |DIAT|Diatone Innovations|https://www.diatoneusa.com/|
+|DOLP|DolphinRC|https://www.dolphinrc.com/|
 |DRCL|dronercland|https://www.instagram.com/dronercland/|
 |DREA|DREAMRC|https://github.com/dreamworks-fpv|
 |DRNR|Shenzhen Zhimu Technology Co., Ltd|https://www.droneer.com|
 |DRRC|DroidRC|https://github.com/xiaoxiabub|
 |DYST|DongYang Smart Technology Co., Ltd (dys)|http://www.dys.hk/|
-|DOLP|DolphinRC|https://www.dolphinrc.com/|
 |EACH|eachine|https://www.eachine.com/|
 |EASP|Ewing Aerospace|https://ewingaerospace.com/|
 |EMAX|EMAX|https://emaxmodel.com/|
