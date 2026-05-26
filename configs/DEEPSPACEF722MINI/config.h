@@ -18,6 +18,12 @@
  *
  * If not, see <http://www.gnu.org/licenses/>.
  */
+ 
+ /*
+    SUPPORTED TARGET - THANK YOU
+    REFERENCE: sha256_4cfbf6a77c993b11ed43b4afe0022fd5e700c5c6368cfd3723b4c9e5bdcc504a
+    DATE: 2025-12-01
+*/
 
 #pragma once
 
