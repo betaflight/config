@@ -76,6 +76,10 @@
 #define UART6_TX_PIN         PC6
 #define UART6_RX_PIN         PC7
 
+// I2C2 shared with UART 3 (Port C)
+#define I2C2_SCL_PIN         PB10
+#define I2C2_SDA_PIN         PB11
+
 #define I2C3_SCL_PIN         PA8
 #define I2C3_SDA_PIN         PC9
 #define LED0_PIN             PC10
@@ -111,7 +115,7 @@
 #define ADC1_DMA_OPT                     0
 
 #define BARO_I2C_INSTANCE                I2CDEV_3
-#define MAG_I2C_INSTANCE                 I2CDEV_3
+#define MAG_I2C_INSTANCE                 I2CDEV_2
 #define ADC_INSTANCE                     ADC1
 #define DEFAULT_BLACKBOX_DEVICE          BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BITBANG            DSHOT_BITBANG_ON
