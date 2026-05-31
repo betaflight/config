@@ -72,14 +72,9 @@
 #define I2C1_SCL_PIN                    PH9
 #define I2C1_SDA_PIN                    PC1
 
-// USE_BARO disabled — board has a BMP280 on I2C1 but BF's async baro
-// state machine wedges the scheduler on N6 (the I2C BUSY-after-NACK
-// pattern that the existing recovery code doesn't fully escape from).
-// Re-enable once the N6 I2C driver / baro state machine recovery is
-// fixed.
-// #define USE_BARO
-// #define USE_BARO_BMP280
-// #define BARO_I2C_INSTANCE               I2CDEV_1
+#define USE_BARO
+#define USE_BARO_BMP280
+#define BARO_I2C_INSTANCE               I2CDEV_1
 
 // --- Motors --------------------------------------------------------------
 // All four motors are on TIM1 channels (AF1). DShot via GPDMA1 burst-DMA
