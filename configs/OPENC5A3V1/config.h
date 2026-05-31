@@ -38,12 +38,13 @@
 // matching PSI reference selector for HSE_VALUE.
 #define SYSTEM_HSE_MHZ                  8
 
-// Config stays in RAM (eepromData[] in .persistent_data). The C5 linker
-// (stm32_flash_c5xx_1m.ld) routes __config_start there for CONFIG_IN_RAM
-// builds via a DEFINED(eepromData) ternary; without that override the
-// streamer writes silently fail against the read-only flash region and
-// the first-boot config save trips FAILURE_CONFIG_STORE_FAILURE.
-#define CONFIG_IN_RAM
+// Config lives in the external W25Q64 (SPI3) alongside the blackbox.
+// BF partitions the chip automatically: a small CONFIG partition at the
+// start, the rest of the device as FLASHFS for blackbox logs.
+// At runtime config_streamer still works through the eepromData[] RAM
+// buffer (sized by EEPROM_SIZE in target.h); CONFIG_IN_EXTERNAL_FLASH
+// just adds the flash-page-aligned read/write hooks at the boundaries.
+#define CONFIG_IN_EXTERNAL_FLASH
 
 // --- USB VCP -------------------------------------------------------------
 // USB DRD FS on PA11 (DM) / PA12 (DP) — only DRD FS pin pair on this die.
@@ -115,6 +116,35 @@
 
 // USE_VIRTUAL_GYRO would short-circuit mpuDetect() in gyro_init.c — the
 // real driver path can't be exercised while it's defined. Keep removed.
+
+// --- External flash: W25Q64JV on SPI3 ------------------------------------
+// SPI3 SCK=PC10, MISO=PC11, MOSI=PB5 (all AF6). CS=PA15. Chip is a
+// Winbond W25Q64JVSSIQ (8 MiB NOR, JEDEC ID 0xEF4017) — handled by the
+// flash_m25p16.c driver which despite the name covers the broader
+// Winbond / Spansion SPI-NOR family up to 1 Gbit.
+//
+// With CONFIG_IN_EXTERNAL_FLASH + USE_FLASHFS, drivers/flash/flash.c
+// auto-partitions the chip: a CONFIG partition at the top sized to
+// EEPROM_SIZE (8 KiB rounded up to one 4 KiB sector = 2 sectors), and
+// the remaining ~8 MiB as the FLASHFS partition for blackbox logs.
+//
+// Status (2026-06-01): the chip is silent on the wire — SWD-driven
+// JEDEC read returns 0xFF/0xFF/0xFF, same chip-silent pattern as the
+// ICM-42688P. Both peripherals sit on the VDD3V3_SENSOR rail per the
+// schematic, so they share whatever the underlying hardware issue
+// is. Software path is complete pending hardware verification.
+#define USE_SPI_DEVICE_3
+#define SPI3_SCK_PIN                    PC10
+#define SPI3_SDI_PIN                    PC11
+#define SPI3_SDO_PIN                    PB5
+
+#define USE_FLASH
+#define USE_FLASH_M25P16
+#define FLASH_SPI_INSTANCE              SPI3
+#define FLASH_CS_PIN                    PA15
+
+#define USE_FLASHFS
+#define USE_BLACKBOX
 
 // --- Motors: DShot bitbang -----------------------------------------------
 // M1 PA8 / TIM1_CH1, M2 PA9 / TIM1_CH2 (port A, one GPDMA channel).
