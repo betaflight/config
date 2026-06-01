@@ -38,17 +38,16 @@
 // matching PSI reference selector for HSE_VALUE.
 #define SYSTEM_HSE_MHZ                  8
 
-// Config lives in the external W25Q64 (SPI3) alongside the blackbox.
-// BF partitions the chip automatically: a small CONFIG partition at the
-// start, the rest of the device as FLASHFS for blackbox logs.
-// At runtime config_streamer still works through the eepromData[] RAM
-// buffer (sized by EEPROM_SIZE in target.h); CONFIG_IN_EXTERNAL_FLASH
-// just adds the flash-page-aligned read/write hooks at the boundaries.
+// Config in W25Q64.
 #define CONFIG_IN_EXTERNAL_FLASH
 
 // --- USB VCP -------------------------------------------------------------
 // USB DRD FS on PA11 (DM) / PA12 (DP) — only DRD FS pin pair on this die.
+// VBUS sense on PC5 (Q1 voltage divider on the schematic). Lets BF
+// distinguish powered-on-USB from battery-only boots.
 #define USE_VCP
+#define USB_DETECT_PIN                  PC5
+#define USE_USB_DETECT
 
 // --- Status LEDs ---------------------------------------------------------
 // LED0 = LED-MCU on PB4, LED1 = LED-GYRO on PC0 (V1.1 revision).
@@ -60,9 +59,8 @@
 // (host /dev/ttyUSB0). Reachable before USB VCP enumerates. PA3 also
 // drives the SBUS-inverter mosfet (Q2) on the schematic.
 //
-// USART1 (PB6/PB7) shares PB6/PB7 with I2C1 (per V1.1 schematic). I2C1
-// has no pin defines in this config, so UART1 owns them by default;
-// when the SPA06-003 baro lands, the user picks one or the other.
+// USART1 on PB6/PB7. I2C1 lives on PB8/PB9 (see baro block below) so
+// no contention between UART1 and I2C1 on this board.
 //
 // USART6 isn't enabled by the shared STM32C5A3/target.h (it mirrors
 // C591 which only declares UART1..5), so opt in here.
@@ -73,7 +71,7 @@
 #define UART2_TX_PIN                    PA2
 #define UART2_RX_PIN                    PA3
 #define UART3_TX_PIN                    PB10
-#define UART3_RX_PIN                    PB11
+#define UART3_RX_PIN                    PC4
 #define UART4_TX_PIN                    PA0
 #define UART4_RX_PIN                    PA1
 #define UART5_TX_PIN                    PC12
@@ -146,37 +144,88 @@
 #define USE_FLASHFS
 #define USE_BLACKBOX
 
+// --- OSD: AT7456E on SPI2 ------------------------------------------------
+// SPI2 PB13 SCK / PB14 MISO / PB15 MOSI / PB12 CS. AT7456E sits on the
+// MCU 3V3 rail (not VDD3V3_SENSOR) so it's the rail-isolation probe
+// alongside the sensor-rail SPI1/SPI3 chips.
+#define USE_SPI_DEVICE_2
+#define SPI2_SCK_PIN                    PB13
+#define SPI2_SDI_PIN                    PB14
+#define SPI2_SDO_PIN                    PB15
+
+#define USE_MAX7456
+#define MAX7456_SPI_INSTANCE            SPI2
+#define MAX7456_SPI_CS_PIN              PB12
+
+#define USE_OSD
+// AT7456E is an SD-only OSD. Declare USE_OSD_SD so common_pre.h does
+// not auto-define USE_OSD_HD (which would default vcd_video_system
+// to VIDEO_SYSTEM_HD and make init.c short-circuit to the MSP OSD
+// path without ever running max7456Init).
+#define USE_OSD_SD
+
+// --- Baro: SPA06-003 on I2C1 ---------------------------------------------
+// I2C1 SCL=PB8, SDA=PB9 (AF4 on C5A3). SPA06-003 sits on the
+// VDD3V3_SENSOR rail, so it's the second independent rail probe alongside
+// AT7456E. No SPA06 driver in BF yet; reuse the BMP280 driver which
+// shares the I2C address (0x76) — even if SPA06 returns a different chip
+// ID and detection fails, an ACK on the address shows the rail is
+// alive and the I2C controller talks to the wire.
+#define USE_BARO_BMP280
+#define USE_BARO_I2C_BMP280
+#define BARO_I2C_INSTANCE               I2CDEV_1
+#define I2C1_SCL_PIN                    PB8
+#define I2C1_SDA_PIN                    PB9
+
 // --- Motors: DShot bitbang -----------------------------------------------
-// M1 PA8 / TIM1_CH1, M2 PA9 / TIM1_CH2 (port A, one GPDMA channel).
-// M3 PC8 / TIM8_CH3, M4 PC9 / TIM8_CH4 (port C, second GPDMA channel).
-// PC8/PC9 also map to TIM3_CH3/CH4 (occurrence 1); the schematic labels
-// them TIM8, so pick occurrence 2 here. dmaopt = -1 because bitbang uses
-// per-port GPDMA to write BSRR (not timer DMA), so the channel is
-// auto-allocated.
+// M1 PA8 TIM1_CH1, M2 PA9 TIM1_CH2 (port A, one GPDMA channel).
+// M3 PC9 TIM8_CH4, M4 PC8 TIM8_CH3 (port C, second GPDMA channel).
+// PC8/PC9 also alias to TIM3_CH3/CH4 (occurrence 1) but the board
+// wires them to TIM8 (occurrence 2). dmaopt = -1: bitbang uses
+// per-port GPDMA on BSRR, channel auto-allocated.
 #define MOTOR1_PIN                      PA8
 #define MOTOR2_PIN                      PA9
-#define MOTOR3_PIN                      PC8
-#define MOTOR4_PIN                      PC9
+#define MOTOR3_PIN                      PC9
+#define MOTOR4_PIN                      PC8
+
+// LED strip on PB3 (TIM2_CH2). Servo outputs on PB0/PB1 (TIM3_CH3/CH4)
+// — runtime-assigned via `servo` CLI, so just expose the pins through
+// TIMER_PIN_MAPPING. Motors took PC8/PC9 to TIM8 (occurrence 2), so
+// TIM3 is free for servos.
+#define USE_LED_STRIP
+#define LED_STRIP_PIN                   PB3
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP(0, PA8, 1, -1) \
     TIMER_PIN_MAP(1, PA9, 1, -1) \
-    TIMER_PIN_MAP(2, PC8, 2, -1) \
-    TIMER_PIN_MAP(3, PC9, 2, -1)
+    TIMER_PIN_MAP(2, PC9, 2, -1) \
+    TIMER_PIN_MAP(3, PC8, 2, -1) \
+    TIMER_PIN_MAP(4, PB0, 1, -1) \
+    TIMER_PIN_MAP(5, PB1, 1, -1) \
+    TIMER_PIN_MAP(6, PB3, 1, -1)
 
 // 4 kHz PID at the 8 kHz gyro rate — matches NUCLEOC562 / OPENN657V1
 // bring-up defaults; can be raised once the platform settles.
 #define DEFAULT_PID_PROCESS_DENOM       2
 
-// --- Baro / mag still synthetic ------------------------------------------
+// --- Mag still synthetic -------------------------------------------------
 #define USE_BARO
-#define USE_VIRTUAL_BARO
 #define USE_MAG
 #define USE_VIRTUAL_MAG
 
-// --- Out-of-scope (follow-up commits) ------------------------------------
-// W25Q128 flash on SPI3 (PA15 CS, FLASH_SCK/MISO/MOSI on PB8/9 + PC12).
-// SPA06-003 baro on I2C1 (PB6 SCL, PB7 SDA) -- shares pins with USART1.
-// MAX7456 OSD on SPI2 (PB12 CS, PB13 SCK, PB14 MISO, PB15 MOSI).
-// Servo PB0/PB1 (TIM3_CH3/4). LED strip PB3.
-// ADC: VBAT PC2, current PC1.
+// --- ADC: VBAT + current sense -------------------------------------------
+// VBAT divider on PC2 (ADC1 channel), current shunt amp on PC1.
+#define ADC_VBAT_PIN                    PC2
+#define ADC_CURR_PIN                    PC1
+#define ADC1_INSTANCE                   ADC1
+
+// --- Buzzer --------------------------------------------------------------
+// Passive buzzer driven by PC3 via Q3 MOSFET on the schematic.
+#define USE_BEEPER
+#define BEEPER_PIN                      PC3
+#define BEEPER_INVERTED
+
+// --- Camera control ------------------------------------------------------
+// PC13 — single-wire camera OSD menu control. C5 platform doesn't yet
+// implement cameraControlHardwarePwmInit; defer until that lands.
+// #define CAMERA_CONTROL_PIN              PC13
