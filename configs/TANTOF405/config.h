@@ -28,7 +28,6 @@
 
 #define USE_ACC
 #define USE_ACC_SPI_MPU6000
-#define USE_ACCGYRO_LSM6DSV16X
 #define USE_ACCGYRO_LSM6DSK320X
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
@@ -92,7 +91,7 @@
     TIMER_PIN_MAP( 3, PC9 , 2,  0) \
     TIMER_PIN_MAP( 4, PB0 , 2, -1) \
     TIMER_PIN_MAP( 5, PB1 , 2, -1) \
-    TIMER_PIN_MAP( 6, PA3 , 2,  -1) \
+    TIMER_PIN_MAP( 6, PA3 , 2, -1) \
     TIMER_PIN_MAP( 7, PB3 , 1,  0)
 
 #define ADC1_DMA_OPT 0
