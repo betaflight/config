@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F405
 
-#define BOARD_NAME        G-FF4
+#define BOARD_NAME        ACCTON_GFF4
 #define MANUFACTURER_ID   ACCT
 
 #define USE_ACC
