@@ -25,6 +25,7 @@
 
 #define USE_ACC
 #define USE_GYRO
+#define USE_ACCGYRO_LSM6DSV16X
 #define USE_ACCGYRO_LSM6DSK320X
 #define USE_BARO
 #define USE_BARO_DPS310
