@@ -67,7 +67,6 @@
 #define MOTOR7_PIN                      PB11
 #define MOTOR8_PIN                      PB10
 #define SERVO1_PIN                      PA1
-#define SERVO2_PIN                      PA0
 
 #define LED_STRIP_PIN                   PA8
 
@@ -98,8 +97,8 @@
 #define SPI1_SDO_PIN                    PA7
 
 #define SPI2_SCK_PIN                    PB13
-#define SPI2_SDI_PIN                    PC2
-#define SPI2_SDO_PIN                    PC3
+#define SPI2_SDI_PIN                    PB14
+#define SPI2_SDO_PIN                    PB15
 
 #define SPI3_SCK_PIN                    PB3
 #define SPI3_SDI_PIN                    PB4
