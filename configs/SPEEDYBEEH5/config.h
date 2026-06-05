@@ -66,7 +66,6 @@
 #define MOTOR6_PIN                      PC8
 #define MOTOR7_PIN                      PB11
 #define MOTOR8_PIN                      PB10
-#define SERVO1_PIN                      PA1
 
 #define LED_STRIP_PIN                   PA8
 
@@ -110,18 +109,16 @@
 #define ADC_RSSI_PIN                    PC2
 #define ADC_CURR_PIN                    PC1
 
-#define TIMER_PIN_MAPPING               TIMER_PIN_MAP(  0, MOTOR1_PIN, 2,  0 ) \
-                                        TIMER_PIN_MAP(  1, MOTOR2_PIN, 2,  1 ) \
-                                        TIMER_PIN_MAP(  2, MOTOR3_PIN, 2,  2 ) \
-                                        TIMER_PIN_MAP(  3, MOTOR4_PIN, 2,  3 ) \
-                                        TIMER_PIN_MAP(  4, MOTOR5_PIN, 2,  4 ) \
-                                        TIMER_PIN_MAP(  5, MOTOR6_PIN, 2,  5 ) \
-                                        TIMER_PIN_MAP(  6, MOTOR7_PIN, 1,  6 ) \
-                                        TIMER_PIN_MAP(  7, MOTOR8_PIN, 1,  7 ) \
-                                        TIMER_PIN_MAP(  8, SERVO1_PIN, 2, -1 ) \
-                                        TIMER_PIN_MAP(  9, SERVO2_PIN, 2, -1 ) \
-                                        TIMER_PIN_MAP( 10, LED_STRIP_PIN, 1,  8 ) \
-                                        TIMER_PIN_MAP( 11, CAMERA_CONTROL_PIN, 2, -1 )
+#define TIMER_PIN_MAPPING               TIMER_PIN_MAP( 0, MOTOR1_PIN, 2,  0 ) \
+                                        TIMER_PIN_MAP( 1, MOTOR2_PIN, 2,  1 ) \
+                                        TIMER_PIN_MAP( 2, MOTOR3_PIN, 2,  2 ) \
+                                        TIMER_PIN_MAP( 3, MOTOR4_PIN, 2,  3 ) \
+                                        TIMER_PIN_MAP( 4, MOTOR5_PIN, 2,  4 ) \
+                                        TIMER_PIN_MAP( 5, MOTOR6_PIN, 2,  5 ) \
+                                        TIMER_PIN_MAP( 6, MOTOR7_PIN, 1,  6 ) \
+                                        TIMER_PIN_MAP( 7, MOTOR8_PIN, 1,  7 ) \
+                                        TIMER_PIN_MAP( 8, LED_STRIP_PIN, 1,  8 ) \
+                                        TIMER_PIN_MAP( 9, CAMERA_CONTROL_PIN, 2, -1 )
 
 // H5 routes internal channels to both ADC1 (VREFINT/TEMPSENSOR) and ADC2
 // (VBAT/4), so each ADC in use needs a valid GPDMA option. opt 0-7 = GPDMA1
