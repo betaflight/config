@@ -67,18 +67,21 @@
 #define SPI3_SDI_PIN                    PB6
 #define SPI3_SDO_PIN                    PB5
 
-#define USE_ACC_SPI_ICM42688P
-#define USE_GYRO_SPI_ICM42688P
+// The IMU populated on this board is an LSM6 family part (WHO_AM_I=0x75 at
+// reg 0x0F), matched by BF's LSM6DSK320X driver. Schematic markings refer to
+// it as ICM-42688P but the silicon is LSM6 -- different register map, so the
+// LSM6 driver path is what actually drives it.
+#define USE_ACCGYRO_LSM6DSK320X
 
-#define ICM42688P_SPI_INSTANCE          SPI3
-#define ICM42688P_CS_PIN                PB8
-#define ICM42688P_EXTI_PIN              PB7
-#define ICM42688P_ALIGN                 CW0_DEG
+#define GYRO_1_SPI_INSTANCE             SPI3
+#define GYRO_1_CS_PIN                   PB8
+#define GYRO_1_EXTI_PIN                 PB7
+#define GYRO_1_ALIGN                    CW0_DEG
 
-#define GYRO_1_SPI_INSTANCE             ICM42688P_SPI_INSTANCE
-#define GYRO_1_CS_PIN                   ICM42688P_CS_PIN
-#define GYRO_1_EXTI_PIN                 ICM42688P_EXTI_PIN
-#define GYRO_1_ALIGN                    ICM42688P_ALIGN
+// SPA06-003 baro over I3C1 (PC10=SCL/PC11=SDA, AF4). First-cut probe; the
+// real driver is still to land. Probe reads CHIP_ID and parks the result for
+// SWD inspection.
+#define ENABLE_BARO_SPA06_PROBE         1
 
 // --- External flash: W25Q128JV on SPI1 -----------------------------------
 // AF5 standard for SPI1 on STM32C5.
@@ -133,11 +136,14 @@
 #define USE_LED_STRIP
 #define LED_STRIP_PIN                   PA8
 
+// PC6-PC9 motors on TIM8: C562 omits TIM3 from the C5 timer table, so the only
+// occurrence of these pins is TIM8 (index 1). C591/C5A3 has both TIM3 and TIM8
+// in the table -- those configs need index 2 for TIM8.
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP(0, PC6, 2, -1) \
-    TIMER_PIN_MAP(1, PC7, 2, -1) \
-    TIMER_PIN_MAP(2, PC8, 2, -1) \
-    TIMER_PIN_MAP(3, PC9, 2, -1) \
+    TIMER_PIN_MAP(0, PC6, 1, -1) \
+    TIMER_PIN_MAP(1, PC7, 1, -1) \
+    TIMER_PIN_MAP(2, PC8, 1, -1) \
+    TIMER_PIN_MAP(3, PC9, 1, -1) \
     TIMER_PIN_MAP(4, PA8, 1, -1)
 
 #define DEFAULT_PID_PROCESS_DENOM       2
