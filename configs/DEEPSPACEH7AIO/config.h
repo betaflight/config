@@ -128,8 +128,8 @@
     TIMER_PIN_MAP( 11, SERVO4_PIN,         1, -1) /* PD15 /  TIM4_CH4 */ \
     TIMER_PIN_MAP( 12, LED_STRIP_PIN,      1,  8) /* PA15 /  TIM2_CH1 */ \
     TIMER_PIN_MAP( 13, GYRO_1_CLKIN_PIN,   1, -1) /* PA8  /  TIM1_CH1 */ \
-    TIMER_PIN_MAP( 14, CAMERA_CONTROL_PIN, 2, -1) /* PB14 / TIM12_CH4 */ \
-    TIMER_PIN_MAP( 15, BEEPER_PIN,         1, -1) /* PE5  / TIM15_CH4 */
+    TIMER_PIN_MAP( 14, CAMERA_CONTROL_PIN, 2, -1) /* PB14 / TIM12_CH1 */ \
+    TIMER_PIN_MAP( 15, BEEPER_PIN,         1, -1) /* PE5  / TIM15_CH1 */
 
 #define ADC1_DMA_OPT                    9
 #define ADC3_DMA_OPT                    10
