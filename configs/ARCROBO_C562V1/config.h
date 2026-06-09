@@ -149,10 +149,23 @@
 #define DEFAULT_PID_PROCESS_DENOM       2
 
 // --- ADC: VBAT + current + RSSI ------------------------------------------
+// PC1/PC2/PC3 are ADC1/ADC2 channels 11/12/13 per the C5 ADC pin table.
+// ADC1_DMA_OPT picks the first DMA spec entry (LPDMA2 ch 0) for ADC1; default
+// DMA_OPT_UNUSED (-1) makes dmaGetChannelSpecByPeripheral return NULL and the
+// per-device init loop bails out silently, leaving adcValues[] at zero.
+// DEFAULT_*_METER_SOURCE = ADC is required because config.c:applyConfig() overrides
+// adcConfig.vbat.enabled / .current.enabled to (source == ADC); without these defaults
+// the external channels stay disabled and only the internal VREFINT / TEMPSENSOR sample.
+#define USE_ADC
+#define USE_ADC_INTERNAL
+#define ADC_INSTANCE                    ADC1
+#define ADC1_DMA_OPT                    0
 #define ADC_VBAT_PIN                    PC1
 #define ADC_CURR_PIN                    PC2
 #define ADC_RSSI_PIN                    PC3
 #define ADC1_INSTANCE                   ADC1
+#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
+#define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 
 // --- Buzzer --------------------------------------------------------------
 // Passive buzzer driven by PC5 via Q1 MOSFET (inverted).
