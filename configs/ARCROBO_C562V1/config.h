@@ -81,7 +81,9 @@
 // SPA06-003 baro over I3C1 (PC10=SCL/PC11=SDA, AF4). First-cut probe; the
 // real driver is still to land. Probe reads CHIP_ID and parks the result for
 // SWD inspection.
-#define ENABLE_BARO_SPA06_PROBE         1
+// Probe disabled now that the I3C-as-I2C driver handles bring-up via BF's
+// bus_i2c framework. Re-enable to diagnose if baro detection breaks.
+#define ENABLE_BARO_SPA06_PROBE         0
 
 // --- External flash: W25Q128JV on SPI1 -----------------------------------
 // AF5 standard for SPI1 on STM32C5.
@@ -114,12 +116,23 @@
 // path (same trap as OPENC5A3V1).
 #define USE_OSD_SD
 
-// --- Baro: virtual ------------------------------------------------------
-// Schematic labels PC10/PC11 as I2C3 SCL/SDA, but C562 has no I2C3
-// peripheral -- PC10/PC11 are I3C1 alternates and BF has no
-// I3C-as-I2C driver yet. Stay on virtual baro for first light.
+// --- Baro: SPA06-003 over I3C1-as-I2C ------------------------------------
+// Schematic labels PC10/PC11 as I2C3 SCL/SDA but C562 has no I2C3 peripheral
+// -- those pads are I3C1-only (AF4). USE_I3C_AS_I2C activates the
+// bus_i2c_i3c.c driver which runs I3C1 in MTYPE_LEGACY_I2C controller mode
+// with the I3C arbitration header suppressed, presenting a plain bus_i2c.h
+// interface to the rest of BF. The SPA06-003 (CHIP_ID 0x11, register-
+// identical to SPL07-003) is picked up by the DPS310 driver; the
+// USE_BARO_SPA06_003 alias surfaces the correct chip name in status/CLI.
 #define USE_BARO
-#define USE_VIRTUAL_BARO
+#define USE_BARO_SPA06_003
+#define USE_I2C
+#define USE_I3C_AS_I2C
+#define USE_I2C_DEVICE_1
+#define I3C_AS_I2C_SCL_PIN              PC10
+#define I3C_AS_I2C_SDA_PIN              PC11
+#define BARO_I2C_INSTANCE               I2CDEV_1
+#define DEFAULT_BARO_I2C_ADDRESS        0x76
 
 // --- Mag still synthetic -------------------------------------------------
 #define USE_MAG
@@ -146,7 +159,6 @@
     TIMER_PIN_MAP(3, PC9, 1, -1) \
     TIMER_PIN_MAP(4, PA8, 1, -1)
 
-#define DEFAULT_PID_PROCESS_DENOM       2
 
 // --- ADC: VBAT + current + RSSI ------------------------------------------
 // PC1/PC2/PC3 are ADC1/ADC2 channels 11/12/13 per the C5 ADC pin table.
