@@ -28,6 +28,7 @@
 #define USE_FLASH
 #define USE_GYRO
 
+#define USE_ACCGYRO_BMI270
 #define USE_ACC_SPI_ICM42688P
 #define USE_BARO_DPS310
 #define USE_FLASH_W25Q128FV
