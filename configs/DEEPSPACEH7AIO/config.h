@@ -97,8 +97,6 @@
 
 #define ADC_VBAT_PIN          PC0
 #define ADC_CURR_PIN          PC1
-#define ADC_RSSI_PIN          PC5
-#define ADC_EXTERNAL1_PIN     PC4
 
 #define LED0_PIN              PE3
 
