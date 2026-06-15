@@ -87,8 +87,8 @@
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define GYRO_1_CS_PIN                   PA4
 #define GYRO_1_EXTI_PIN                 PC4
-// Placeholder orientation -- verify against the physical board and adjust.
-#define GYRO_1_ALIGN                    CW0_DEG
+// LSM6 is mounted facing the board's rear, so rotate 180 deg about yaw.
+#define GYRO_1_ALIGN                    CW180_DEG
 
 // --- External flash: W25Q256JV on SPI3 -----------------------------------
 // SPI3 SCK=PB3, MISO=PB4 (AF6), MOSI=PB5 (AF7 -- C5 quirk handled by the
