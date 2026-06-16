@@ -85,8 +85,12 @@
 #define UART1_RX_PIN         PA16   // RX
 
 // --- Motors ----------------------------------------------------------------
-// MCT8329A drivers take a PWM throttle on their SPEED input, so default to
-// standard PWM (DShot stays selectable). Betaflight quad-X motor order:
+// The MCT8329A6 BLDC drivers read the DUTY CYCLE of a PWM throttle on their SPEED
+// input (0% = stop, ~100% = full), so they are driven with duty-cycle PWM at 1 kHz
+// (Betaflight's BRUSHED protocol), exactly as the reference firmware does - NOT the
+// 1-2 ms RC PWM, which would idle at ~50% duty. The chips' speed-input mode is set
+// in their own EEPROM, so no I2C configuration is needed at boot.
+// Betaflight quad-X motor order (schematic M1/M2/M5/M6):
 //   M1 back-right=GPIO33, M2 front-right=GPIO35, M3 back-left=GPIO4, M4 front-left=GPIO6.
 #define MOTOR1_PIN           PA33   // M1 (back right)
 #define MOTOR2_PIN           PA35   // M2 (front right)
@@ -102,7 +106,8 @@
 #define LED_STRIP_DEFAULT_LED0  DEFINE_LED(0, 0, 0, 0, LED_FUNCTION_ARM_STATE, LED_FLAG_OVERLAY(LED_OVERLAY_WARNING))
 
 // --- Defaults --------------------------------------------------------------
-#define DEFAULT_MOTOR_PROTOCOL          MOTOR_PROTOCOL_PWM
+#define DEFAULT_MOTOR_PROTOCOL          MOTOR_PROTOCOL_BRUSHED
+#define DEFAULT_MOTOR_PWM_RATE          1000   // Hz; MCT8329A6 SPEED duty-cycle PWM, per the Y3
 #define DEFAULT_FEATURES                (FEATURE_LED_STRIP)
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_VIRTUAL
