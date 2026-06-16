@@ -86,11 +86,12 @@
 
 // --- Motors ----------------------------------------------------------------
 // MCT8329A drivers take a PWM throttle on their SPEED input, so default to
-// standard PWM (DShot stays selectable). M5 (PA6) / M6 (PA35) are unused.
-#define MOTOR1_PIN           PA4    // M1
-#define MOTOR2_PIN           PA33   // M2
-#define MOTOR3_PIN           PA5    // M3
-#define MOTOR4_PIN           PA34   // M4
+// standard PWM (DShot stays selectable). Betaflight quad-X motor order:
+//   M1 back-right=GPIO33, M2 front-right=GPIO35, M3 back-left=GPIO4, M4 front-left=GPIO6.
+#define MOTOR1_PIN           PA33   // M1 (back right)
+#define MOTOR2_PIN           PA35   // M2 (front right)
+#define MOTOR3_PIN           PA4    // M3 (back left)
+#define MOTOR4_PIN           PA6    // M4 (front left)
 
 // --- LED strip -------------------------------------------------------------
 // Single WS2812 used as a status indicator (green disarmed / blue armed,
