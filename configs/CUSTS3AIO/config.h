@@ -53,11 +53,12 @@
 // --- Gyro/Acc on SPI0 ------------------------------------------------------
 // ICM-42688-P. INT1 is not wired to the MCU on this board, so GYRO_1_EXTI_PIN
 // is intentionally omitted: the gyro runs in the polled (GYRO_EXTI_NO_INT)
-// path. ALIGN is a placeholder - verify against the physical IMU mounting.
+// path. ALIGN is CW180: the IMU is mounted rotated 180 deg in yaw, matching the
+// reference firmware's -X/-Y/+Z gyro/acc axis handling (FlightControllerY3).
 #define USE_SPI_GYRO
 #define GYRO_1_SPI_INSTANCE  SPI0
 #define GYRO_1_CS_PIN        PA39   // MPUCS
-#define GYRO_1_ALIGN         CW0_DEG
+#define GYRO_1_ALIGN         CW180_DEG
 
 #define SPI0_SCK_PIN         PA38   // CLK
 #define SPI0_SDI_PIN         PA36   // MISO
