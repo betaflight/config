@@ -59,6 +59,13 @@
 #define SPI0_SDI_PIN         PA13   // MISO
 #define SPI0_SDO_PIN         PA11   // MOSI
 
+// --- UARTs -----------------------------------------------------------------
+// UART0 is the native console (not broken out). UART1 is brought out for the
+// serial-RX bench test on two free GPIOs (any GPIO works via the ESP32 matrix);
+// PA15/PA16 mirror CUSTS3AIO's UART1.
+#define UART1_RX_PIN         PA16   // RX  (wire CRSF source TX here)
+#define UART1_TX_PIN         PA15   // TX  (CRSF telemetry back)
+
 // --- Motors ----------------------------------------------------------------
 #define MOTOR1_PIN           PA4
 #define MOTOR2_PIN           PA5
@@ -75,5 +82,12 @@
 #define DEFAULT_MOTOR_PROTOCOL          MOTOR_PROTOCOL_PWM
 #define DEFAULT_FEATURES                (FEATURE_LED_STRIP)
 
-// High per-iteration cost on this port; decimate the PID loop. Tune to taste.
-#define DEFAULT_PID_PROCESS_DENOM       4
+// Serial RX on UART1, provider CRSF (ELRS/Crossfire) - for the CRSF bench test.
+#define DEFAULT_RX_FEATURE              FEATURE_RX_SERIAL
+#define SERIALRX_UART                   SERIAL_PORT_UART1
+#define SERIALRX_PROVIDER               SERIALRX_CRSF
+
+// The ESP32 PID/control task is ~470 us, so a 2 kHz loop (denom 4) overruns the
+// scheduler (tasks run late -> LOAD). Denom 8 runs PID at 1 kHz with the gyro still
+// at 8 kHz, ~36% CPU and the scheduler in budget. Measured on this board.
+#define DEFAULT_PID_PROCESS_DENOM       8
