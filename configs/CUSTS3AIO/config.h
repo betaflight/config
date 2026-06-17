@@ -106,14 +106,26 @@
 #define LED_STRIP_DEFAULT_LED0  DEFINE_LED(0, 0, 0, 0, LED_FUNCTION_ARM_STATE, LED_FLAG_OVERLAY(LED_OVERLAY_WARNING))
 
 // --- Defaults --------------------------------------------------------------
+// Advertise BRUSHED in the MSP build-options list (msp_build_info.c gates
+// BUILD_OPTION_BRUSHED on USE_BRUSHED) so the Configurator offers it rather than
+// greying it out. The protocol itself is enum-driven; USE_BRUSHED_MOTORS only sets
+// the pgReset default and is not needed here (DEFAULT_MOTOR_PROTOCOL handles that).
+#define USE_BRUSHED
 #define DEFAULT_MOTOR_PROTOCOL          MOTOR_PROTOCOL_BRUSHED
 #define DEFAULT_MOTOR_PWM_RATE          1000   // Hz; MCT8329A6 SPEED duty-cycle PWM, per the Y3
 #define DEFAULT_FEATURES                (FEATURE_LED_STRIP)
+// Serial RX enabled by default on UART1 (the FPC serial-RX port), provider CRSF -
+// the protocol ELRS and TBS Crossfire receivers speak. Set explicitly rather than
+// leaning on the implicit default; change serialrx_provider for SBUS/other receivers.
+#define DEFAULT_RX_FEATURE              FEATURE_RX_SERIAL
+#define SERIALRX_UART                   SERIAL_PORT_UART1
+#define SERIALRX_PROVIDER               SERIALRX_CRSF
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_VIRTUAL
 #define DEFAULT_VOLTAGE_METER_SCALE     60
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SERIAL
 
-// Polled gyro on a port with a high per-iteration cost: decimate the PID loop
-// to keep the scheduler within budget. Tune once real loop timing is known.
-#define DEFAULT_PID_PROCESS_DENOM       4
+// Polled gyro plus an expensive ESP32 PID/control task (~470 us measured on the
+// dev board): a 2 kHz loop (denom 4) overruns the scheduler. Denom 8 runs PID at
+// 1 kHz (gyro 8 kHz) with the scheduler in budget.
+#define DEFAULT_PID_PROCESS_DENOM       8
