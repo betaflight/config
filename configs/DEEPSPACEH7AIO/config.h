@@ -135,6 +135,7 @@
 #define TIMUP3_DMA_OPT                  11
 #define TIMUP5_DMA_OPT                  12
 
+#define SERIALRX_UART                   SERIAL_PORT_UART4
 #define ESC_SENSOR_UART                 SERIAL_PORT_USART7
 #ifdef USE_OSD_HD
 #define MSP_DISPLAYPORT_UART            SERIAL_PORT_USART1
