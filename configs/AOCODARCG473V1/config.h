@@ -40,6 +40,8 @@
 #define USE_BARO_MS5611
 #define USE_GYRO_CLKIN
 #define USE_MAG
+#define USE_PINIO
+#define USE_PINIOBOX
 
 #define MOTOR1_PIN          PA0
 #define MOTOR2_PIN          PA1
@@ -81,6 +83,7 @@
 
 #define ADC_VBAT_PIN        PB0
 #define ADC_CURR_PIN        PB1
+#define PINIO1_PIN          PB2
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, MOTOR1_PIN,       2,  0) \
@@ -101,6 +104,8 @@
 #define GYRO_1_SPI_INSTANCE     SPI1
 #define MAX7456_SPI_INSTANCE    SPI2
 #define FLASH_SPI_INSTANCE      SPI3
+#define PINIO1_BOX 40
+#define PINIO1_CONFIG 1
 
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BURST             DSHOT_DMAR_OFF
