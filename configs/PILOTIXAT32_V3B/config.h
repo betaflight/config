@@ -104,8 +104,8 @@
     TIMER_PIN_MAP( 1, MOTOR2_PIN ,      2,  1) \
     TIMER_PIN_MAP( 2, MOTOR3_PIN ,      1,  2) \
     TIMER_PIN_MAP( 3, MOTOR4_PIN ,      1,  3) \
-    TIMER_PIN_MAP( 4, SERVO1_PIN,       2, -1) \
-    TIMER_PIN_MAP( 5, SERVO2_PIN,       2, -1) \
+    TIMER_PIN_MAP( 4, SERVO1_PIN,       1, -1) \
+    TIMER_PIN_MAP( 5, SERVO2_PIN,       1, -1) \
     TIMER_PIN_MAP( 6, LED_STRIP_PIN ,   1,  4) \
     TIMER_PIN_MAP( 7, BEEPER_PIN,       3, -1) \
     TIMER_PIN_MAP( 8, RX_PPM_PIN ,      2, -1) \
