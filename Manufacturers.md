@@ -29,6 +29,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |BSTF|BEASTFPV|http://www.beastfpv.com/|
 |CADX|CADDX TECHNOLOGY (SHENZHEN) Co., Ltd|https://caddxfpv.com/|
 |CCRC|Sunhey Now|https://sunheyccrc.aliexpress.com/|
+|CFLY|Coolfly (Xiamen) Co., Ltd|https://www.cecooleye.cn/|
 |CLRA|CLRACING LLC|https://cl-racing.myshopify.com/|
 |CYCL|CycloneRC|http://www.cyclone-rc.com|
 |DAFP|DarwinFPV|https://darwinfpv.com/|
