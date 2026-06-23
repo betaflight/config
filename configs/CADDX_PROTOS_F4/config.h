@@ -124,7 +124,9 @@
 #define ADC_INSTANCE ADC1
 
 //--------OPTICAL FLOW-------
+#ifndef USE_RANGEFINDER
 #define USE_RANGEFINDER
-#define USE_RANGEFINDER_UPT1
+#endif
+#ifndef USE_OPTICALFLOW
 #define USE_OPTICALFLOW
-#define USE_OPTICALFLOW_UPT1
+#endif
