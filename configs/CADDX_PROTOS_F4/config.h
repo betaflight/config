@@ -123,3 +123,10 @@
 #define ADC1_DMA_OPT        1
 #define ADC_INSTANCE ADC1
 
+//--------OPTICAL FLOW-------
+#ifndef USE_RANGEFINDER
+#define USE_RANGEFINDER
+#endif
+#ifndef USE_OPTICALFLOW
+#define USE_OPTICALFLOW
+#endif

@@ -50,6 +50,10 @@
 // only surfaces in USE_CONFIG mode where common_pre.h defaults are skipped).
 #define CONFIG_IN_RAM
 
+// DK reference layout supplies VCORE externally (not the on-chip SMPS),
+// so the platform must drive PWR_EXTERNAL_SOURCE_SUPPLY.
+#define ENABLE_N6_PWR_EXTERNAL          1
+
 // --- Synthetic sensors ---------------------------------------------------
 // No real sensors are wired; rely on the virtual drivers so the flight code
 // has something coherent to talk to during the platform bring-up.
