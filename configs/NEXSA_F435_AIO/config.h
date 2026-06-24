@@ -41,7 +41,9 @@
 #define USE_BARO_DPS310
 #define USE_MAX7456
 #define USE_LED_STRIP
+#ifndef USE_SERVOS
 #define USE_SERVOS
+#endif
 
 #define BEEPER_PIN           PB1
 #define MOTOR1_PIN           PC9
