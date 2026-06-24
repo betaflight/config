@@ -84,6 +84,7 @@
 #define MAX7456_SPI_CS_PIN   PA4
 #define GYRO_1_EXTI_PIN      PH2
 #define GYRO_1_CS_PIN        PB12
+#define GYRO_1_CLKIN_PIN     PA2
 
 #define PINIO1_PIN              PB5 // LT_EN
 
