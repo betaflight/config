@@ -78,7 +78,6 @@
 #define SPI1_SDO_PIN         PA7
 #define SPI2_SDO_PIN         PB15
 #define SPI4_SDO_PIN         PB9
-// #define ESCSERIAL_PIN        PA3
 #define ADC_VBAT_PIN         PC1
 // #define ADC_RSSI_PIN         PC0
 #define ADC_CURR_PIN         PC3
