@@ -88,14 +88,14 @@
 #define PINIO1_PIN              PB5 // LT_EN
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PC9, 8, 4) \
-    TIMER_PIN_MAP( 1, PC8 , 8,  3) \
-    TIMER_PIN_MAP( 2, PC7 , 8,  2) \
-    TIMER_PIN_MAP( 3, PC6, 8,  1) \
-    TIMER_PIN_MAP( 4, PB4 , 3,  1) \
-    TIMER_PIN_MAP( 5, PB3 , 2,  2) \
-    TIMER_PIN_MAP( 6, PH3 , 5,  2) 
-    // TIMER_PIN_MAP( 7, PB6 , 1,  0)
+    TIMER_PIN_MAP( 0, PC9, 2, 0) \
+    TIMER_PIN_MAP( 1, PC8, 2,  1) \
+    TIMER_PIN_MAP( 2, PC7, 2,  2) \
+    TIMER_PIN_MAP( 3, PC6, 2,  3) \
+    TIMER_PIN_MAP( 4, PB4 , 1,  -1) \
+    TIMER_PIN_MAP( 5, PB3 , 1,  -1) \
+    TIMER_PIN_MAP( 6, PH3 , 1,  4)  \
+    TIMER_PIN_MAP( 7, PA2 , 2,  -1)
 
 
 #define ADC1_DMA_OPT        1
