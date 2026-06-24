@@ -99,7 +99,7 @@
     TIMER_PIN_MAP( 7, PA2 , 2,  -1)
 
 
-#define ADC1_DMA_OPT        1
+#define ADC1_DMA_OPT        5
 
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BITBANG               DSHOT_BITBANG_ON
