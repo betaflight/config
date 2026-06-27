@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32H743
 
-#define BOARD_NAME        AXISFLYINGH7MINI
+#define BOARD_NAME        AXISFLYINGH7AIO
 #define MANUFACTURER_ID   AXFL
 
 #define USE_ACC
@@ -42,17 +42,13 @@
 #define MOTOR2_PIN           PA1
 #define MOTOR3_PIN           PA2
 #define MOTOR4_PIN           PA3
-#define MOTOR5_PIN           PD12
-#define MOTOR6_PIN           PD13
-#define MOTOR7_PIN           PD14
-#define MOTOR8_PIN           PD15
 
 #define LED_STRIP_PIN        PA8
 
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PD5
 #define UART3_TX_PIN         PD8
-#define UART4_TX_PIN         PB9
+#define UART5_TX_PIN         PC12
 #define UART6_TX_PIN         PC6
 #define UART7_TX_PIN         PE8
 #define UART8_TX_PIN         PE1
@@ -60,7 +56,7 @@
 #define UART1_RX_PIN         PA10
 #define UART2_RX_PIN         PD6
 #define UART3_RX_PIN         PD9
-#define UART4_RX_PIN         PB8
+#define UART5_RX_PIN         PC11
 #define UART6_RX_PIN         PC7
 #define UART7_RX_PIN         PE7
 #define UART8_RX_PIN         PE0
