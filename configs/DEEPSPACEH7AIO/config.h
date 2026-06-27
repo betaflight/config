@@ -141,8 +141,8 @@
 #define MSP_DISPLAYPORT_UART            SERIAL_PORT_USART1
 #endif
 
-#define MAG_I2C_INSTANCE                I2CDEV_1
 #define BARO_I2C_INSTANCE               I2CDEV_1
+#define MAG_I2C_INSTANCE                I2CDEV_2
 
 #define DEFAULT_DSHOT_BITBANG           DSHOT_BITBANG_ON
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
