@@ -81,28 +81,19 @@
 
 #define ADC_VBAT_PIN         PC0
 #define ADC_CURR_PIN         PC1
-#define ADC_EXTERNAL1_PIN    PA7
-
-#define PINIO1_PIN           PD10
-#define PINIO2_PIN           PE2
 
 #define FLASH_CS_PIN         PD4
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PE10
 #define GYRO_1_CS_PIN        PC15
-#define GYRO_2_EXTI_PIN      PB2
-#define GYRO_2_CS_PIN        PC13
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, MOTOR1_PIN, 1,  0 ) \
+    TIMER_PIN_MAP( 0, MOTOR1_PIN, 2,  0 ) \
     TIMER_PIN_MAP( 1, MOTOR2_PIN, 2,  1 ) \
-    TIMER_PIN_MAP( 2, MOTOR3_PIN, 1,  2 ) \
+    TIMER_PIN_MAP( 2, MOTOR3_PIN, 2,  2 ) \
     TIMER_PIN_MAP( 3, MOTOR4_PIN, 2,  3 ) \
-    TIMER_PIN_MAP( 4, MOTOR5_PIN, 1,  4 ) \
-    TIMER_PIN_MAP( 5, MOTOR6_PIN, 2,  5 ) \
-    TIMER_PIN_MAP( 6, MOTOR7_PIN, 1,  6 ) \
-    TIMER_PIN_MAP( 7, MOTOR8_PIN, 2, -1 ) \
-    TIMER_PIN_MAP( 8, LED_STRIP_PIN, 1, 7 )
+    TIMER_PIN_MAP( 4, LED_STRIP_PIN, 1, 4 ) \
+    TIMER_PIN_MAP( 5, BEEPER_PIN, 1, -1)
 
 #define ADC1_DMA_OPT                   8
 #define ADC2_DMA_OPT                   9
@@ -118,7 +109,7 @@
 #ifdef USE_GPS
 #define GPS_UART                       SERIAL_PORT_USART3
 #endif
-#define ESC_SENSOR_UART                SERIAL_PORT_UART4
+#define ESC_SENSOR_UART                SERIAL_PORT_UART5
 
 #define DEFAULT_BLACKBOX_DEVICE        BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BITBANG          DSHOT_BITBANG_ON
@@ -126,11 +117,6 @@
 #define DEFAULT_VOLTAGE_METER_SOURCE   VOLTAGE_METER_ADC
 #define BEEPER_INVERTED
 #define LED0_INVERTED
-#define PINIO1_CONFIG                  129
-#define PINIO1_BOX                     40
-#define PINIO2_CONFIG                  129
-#define PINIO2_BOX                     41
 #define GYRO_1_SPI_INSTANCE            SPI1
-#define GYRO_2_SPI_INSTANCE            SPI4
 #define FLASH_SPI_INSTANCE             SPI3
 #define MAX7456_SPI_INSTANCE           SPI2
