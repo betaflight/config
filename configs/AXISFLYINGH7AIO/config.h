@@ -72,15 +72,12 @@
 #define SPI1_SCK_PIN         PA5 // imu1
 #define SPI2_SCK_PIN         PB13 // osd
 #define SPI3_SCK_PIN         PB3 // flash
-#define SPI4_SCK_PIN         PE12 // imu2
 #define SPI1_SDI_PIN         PA6
 #define SPI2_SDI_PIN         PB14
 #define SPI3_SDI_PIN         PB4
-#define SPI4_SDI_PIN         PE13
 #define SPI1_SDO_PIN         PD7
 #define SPI2_SDO_PIN         PB15
 #define SPI3_SDO_PIN         PB5
-#define SPI4_SDO_PIN         PE14
 
 #define ADC_VBAT_PIN         PC0
 #define ADC_CURR_PIN         PC1
