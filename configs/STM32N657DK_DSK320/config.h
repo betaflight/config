@@ -19,6 +19,9 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+  VERSION: 2026.6.0
+*/
 #pragma once
 
 // STM32N6570-DK + LSM6DSK320X (DSK320K) module bring-up config.
