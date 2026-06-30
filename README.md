@@ -72,8 +72,9 @@ The cloud build API (`build-src/build-api`, `ConfigService`) reads a comment blo
 | `REFERENCE:` | A `sha256_…` hash that marks the target as **reviewed and supported by the Betaflight team**, as opposed to merely community-supported. The Betaflight team provides this value to the manufacturer/contributor once a target has been reviewed (it is generated internally and the mechanism is not public — you cannot compute it yourself). It is validated against the (upper-cased) `BOARD_NAME`; if it is absent or does not match, the target is not flagged as team-supported. |
 | `DATE:` | Reference date (`YYYY-MM-DD`). The target is **excluded** from any release published *prior* to this date, so a new board does not appear against older releases that never supported it. |
 | `VERSION:` | The first firmware version the target is valid for. Releases **prior** to this version are never offered for the target, irrespective of `DATE:`. |
+| `GROUP:` | Categorises the target. `SUPPORTED` is the implicit default; `LEGACY` flags an older/deprecated board so it is grouped (and sorted) separately in the configurator's target list. A legacy target is not team-supported, so it carries no `REFERENCE:` and the `GROUP:` directive may stand alone in its own comment block — see the `REVO` target (`GROUP: LEGACY`). |
 
-`REFERENCE:` together with a non-empty `BOARD_NAME` are required for the supported marking to take effect; `DATE:` and `VERSION:` are optional release filters. (The API recognises `WIKI:`, `URL:` and `GROUP:` directives in the same block as well.)
+`REFERENCE:` together with a non-empty `BOARD_NAME` are required for the supported marking to take effect; `DATE:`, `VERSION:` and `GROUP:` are optional. (The API recognises `WIKI:` and `URL:` directives in the same block as well.)
 
 ### config.c (optional)
 
