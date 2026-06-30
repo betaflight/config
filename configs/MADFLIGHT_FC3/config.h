@@ -38,20 +38,31 @@
 //------------------
 
 // Bus for internal I2C sensors
-// NOTE: Board has BMP580 barometer, MMC5603 compass and INA226 power sensor. Sensors not supported by betaflight_2025.12.0-beta
+// NOTE: Board has BMP580 barometer, MMC5603 compass and INA226 power sensor.
+// Sensor drivers: PR #14925 (BMP580), PR #14924 (MMC5603), PR #14927 (INA226)
 #define I2C0_SCL_PIN         PA33
 #define I2C0_SDA_PIN         PA32
+#define I2C0_CLOCKSPEED      100    // 100kHz for internal sensors
+#define USE_I2C_PULLUP              // Enable internal pull-ups
 
 // LED
 #define LED0_PIN             PA45 // blue
 //#define LED0_INVERTED
 
-// Battery voltage
+// Battery voltage - external ADC as fallback
 #define USE_ADC
 #define ADC_INSTANCE         ADC1
 #define ADC_VBAT_PIN         PA44
-#define DEFAULT_VOLTAGE_METER_SOURCE   VOLTAGE_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SCALE    110 // 100k/10k divider
+
+// INA226 Current/Voltage Sensor (connected to I2C0) - requires PR #14927
+#define USE_CURRENT_METER_INA226
+#define DEFAULT_INA226_I2C_DEVICE        1      // 1 = I2CDEV_0 (internal I2C bus)
+#define DEFAULT_INA226_ADDRESS           0x40   // Default INA226 address (A0=GND, A1=GND)
+#define DEFAULT_INA226_SHUNT_RESISTANCE  2000   // 2mΩ shunt resistor (2000 µΩ)
+#define DEFAULT_INA226_MAX_CURRENT       50000  // 50A maximum expected current
+#define DEFAULT_CURRENT_METER_SOURCE     CURRENT_METER_INA226
+#define DEFAULT_VOLTAGE_METER_SOURCE     VOLTAGE_METER_INA226
 
 // RGB LED
 #define LED_STRIP_PIN        PA46
@@ -184,8 +195,14 @@
 //+3.3V
 //GND
 
-// Optional external barometer connected to I2C1 (second i2c bus) PA2=SDA PA3=SCL
+// Internal BMP580 barometer on I2C0 - requires PR #14925
 #define USE_BARO
+#define USE_BARO_BMP580
+#define USE_BARO_BMP581
+#define DEFAULT_BARO_BMP580
+#define BARO_I2C_INSTANCE    I2CDEV_0
+
+// Optional external barometers on I2C1 (second i2c bus) PA2=SDA PA3=SCL
 #define USE_BARO_MS5611
 #define USE_BARO_BMP280
 #define USE_BARO_BMP388
@@ -195,14 +212,16 @@
 #define USE_BARO_BMP085
 #define USE_BARO_2SMBP_02B
 #define USE_BARO_LPS22DF
-#define BARO_I2C_INSTANCE    I2CDEV_1
 
-// Optional external compass connected to I2C1 (second i2c bus) PA2=SDA PA3=SCL
+// Internal MMC5603 magnetometer on I2C0 - requires PR #14924
 #define USE_MAG
+#define USE_MAG_MMC5603
+#define MAG_I2C_INSTANCE     I2CDEV_0
+
+// Optional external compass on I2C1 (second i2c bus) PA2=SDA PA3=SCL
 #define USE_MAG_HMC5883
 #define USE_MAG_QMC5883
 #define USE_MAG_LIS2MDL
 #define USE_MAG_LIS3MDL
 #define USE_MAG_AK8975
 #define USE_MAG_IST8310
-#define MAG_I2C_INSTANCE     I2CDEV_1
