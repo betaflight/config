@@ -56,8 +56,8 @@ Beyond these, add the device `USE_*` flags and pin `#define`s for the sensors, O
 
 ### Supported-target header (REFERENCE / DATE / VERSION)
 
-The cloud build API (`build-src/build-api`, `ConfigService`) reads a comment block — placed after the GPL header and before `#pragma once` — to mark a target as officially supported and to gate which firmware releases it is offered for. The directive lines are parsed by splitting on whitespace, so each line **must begin with the keyword** (do not prefix the lines with `*`):
-
+The cloud build API reads a comment block — placed after the GPL header and before `#pragma once` — to mark a target as officially supported and to gate which firmware releases it is offered for.
+The directive lines are parsed by splitting on whitespace, so the first non-whitespace token on each directive line must be the keyword (do not prefix the lines with `*`):
 ```
 /*
     SUPPORTED TARGET - THANK YOU
