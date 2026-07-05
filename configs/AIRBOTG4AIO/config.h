@@ -42,7 +42,6 @@
 #define USE_BARO_BMP085
 #define USE_BARO_MS5611
 #define USE_BARO_QMP6988
-#define USE_BARO_LPS
 
 #define GYRO_1_CS_PIN        PB0
 #define GYRO_1_EXTI_PIN      PC4
