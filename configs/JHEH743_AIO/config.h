@@ -34,6 +34,7 @@
 #define USE_MAX7456
 #define USE_FLASH
 #define USE_FLASH_M25P16
+#define USE_FLASH_PY25Q128HA
 
 #define BEEPER_PIN           PD15
 #define MOTOR1_PIN           PE9
