@@ -110,7 +110,6 @@
 #define ADC1_DMA_OPT        9
 #define ADC3_DMA_OPT        10
 #define TIMUP1_DMA_OPT      11
-#define TIMUP5_DMA_OPT      12
 
 #define BARO_I2C_INSTANCE   I2CDEV_1
 #define MAG_I2C_INSTANCE    I2CDEV_2
