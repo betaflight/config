@@ -15,6 +15,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |AIKO|AIKON Electronics|https://www.aikon-electronics.com/|
 |AIRB|Airbot|https://store.myairbot.com/|
 |AKIN|AKINGFPV|https://www.akingfpv.com/|
+|ALEX|ALEX RC|https://github.com/Alex-rc-system|
 |ALWH|Alienwhoop|https://shop.alienwhoop.us/|
 |ANYL|AnyLeaf|https://www.anyleaf.org/|
 |APEX|Apexfpv|https://apexfpv.eu/|
