@@ -23,14 +23,12 @@
 
 #define FC_TARGET_MCU      STM32H743
 
-#define BOARD_NAME         AXISFLYINGH743PRO
+#define BOARD_NAME         AXISFLYINGH743PRO_BMI270
 #define MANUFACTURER_ID    AXFL
 
 #define USE_ACC
-#define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
-#define USE_GYRO_SPI_ICM42688P
-#define USE_ACCGYRO_LSM6DSK320X
+#define USE_ACCGYRO_BMI270
 #define USE_FLASH
 #define USE_FLASH_PY25Q128HA
 #define USE_BARO
@@ -153,9 +151,9 @@
 #define BEEPER_INVERTED
 
 #define GYRO_1_SPI_INSTANCE             SPI1
-#define GYRO_1_ALIGN                    CW0_DEG
+#define GYRO_1_ALIGN                    CW270_DEG
 #define GYRO_2_SPI_INSTANCE             SPI4
-#define GYRO_2_ALIGN                    CW90_DEG
+#define GYRO_2_ALIGN                    CW0_DEG
 #define DEFAULT_GYRO_TO_USE             GYRO_CONFIG_USE_GYRO_BOTH
 #define MAX7456_SPI_INSTANCE            SPI2
 #define FLASH_SPI_INSTANCE              SPI3
