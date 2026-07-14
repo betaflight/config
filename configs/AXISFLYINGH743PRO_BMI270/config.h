@@ -34,7 +34,6 @@
 #define USE_BARO
 #define USE_BARO_DPS310
 #define USE_MAX7456
-#define USE_GYRO_CLKIN
 
 #define BEEPER_PIN            PC13
 
@@ -101,11 +100,9 @@
 
 #define GYRO_1_CS_PIN         PC4
 #define GYRO_1_EXTI_PIN       PA4
-#define GYRO_1_CLKIN_PIN      PB0
 
 #define GYRO_2_CS_PIN         PE15
 #define GYRO_2_EXTI_PIN       PE11
-#define GYRO_2_CLKIN_PIN      PB1
 
 #define MAX7456_SPI_CS_PIN    PB12
 #define FLASH_CS_PIN          PD7
@@ -123,9 +120,7 @@
     TIMER_PIN_MAP(  9, SERVO2_PIN,       1, -1) /* PD13 / TIM4_CH2 */ \
     TIMER_PIN_MAP( 10, SERVO3_PIN,       1, -1) /* PD14 / TIM4_CH3 */ \
     TIMER_PIN_MAP( 11, SERVO4_PIN,       1, -1) /* PD15 / TIM4_CH4 */ \
-    TIMER_PIN_MAP( 12, LED_STRIP_PIN,    1,  8) /* PE5  / TIM15_CH1 */ \
-    TIMER_PIN_MAP( 13, GYRO_1_CLKIN_PIN, 2, -1) /* PB0  / TIM3_CH3 */ \
-    TIMER_PIN_MAP( 14, GYRO_2_CLKIN_PIN, 2, -1) /* PB1  / TIM3_CH4 */
+    TIMER_PIN_MAP( 12, LED_STRIP_PIN,    1,  8) /* PE5  / TIM15_CH1 */
 
 #define ADC1_DMA_OPT                    9
 #define ADC3_DMA_OPT                    10
