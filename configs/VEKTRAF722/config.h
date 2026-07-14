@@ -1,8 +1,29 @@
+/*
+ * This file is part of Betaflight.
+ *
+ * Betaflight is free software. You can redistribute this software
+ * and/or modify this software under the terms of the GNU General
+ * Public License as published by the Free Software Foundation,
+ * either version 3 of the License, or (at your option) any later
+ * version.
+ *
+ * Betaflight is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public
+ * License along with this software.
+ *
+ * If not, see <http://www.gnu.org/licenses/>.
+ */
+
 #pragma once
 
 #define FC_TARGET_MCU     STM32F7X2
 #define BOARD_NAME        VEKTRAF722
-#define MANUFACTURER_ID   VEKTRA
+#define MANUFACTURER_ID   VKTR
 
 #define USE_ACC
 #define USE_GYRO
@@ -54,8 +75,8 @@
 #define PINIO1_PIN           PC14
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PA9 , 2,  1) \
-    TIMER_PIN_MAP( 1, PA8 , 2,  1) \
+    TIMER_PIN_MAP( 0, PA9 , 1,  1) \
+    TIMER_PIN_MAP( 1, PA8 , 1,  1) \
     TIMER_PIN_MAP( 2, PC9 , 2,  1) \
     TIMER_PIN_MAP( 3, PC8 , 2,  1) \
     TIMER_PIN_MAP( 4, PB8 , 1,  0) \
