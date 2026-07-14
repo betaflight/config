@@ -81,6 +81,7 @@
 #define ADC_CURR_PIN        PB1
 
 #define PINIO1_PIN          PB2
+#define PINIO2_PIN          PA4
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, MOTOR1_PIN,       2,  0) \
@@ -99,6 +100,10 @@
 #define PINIO1_BOX                   40
 #define PINIO1_CONFIG                1
 #define BOX_USER1_NAME               "CAM 1,2"
+
+#define PINIO2_BOX                   41
+#define PINIO2_CONFIG                129
+#define BOX_USER2_NAME               "VTX PWR"
 
 #define BEEPER_INVERTED
 #define BARO_I2C_INSTANCE	         I2CDEV_2
