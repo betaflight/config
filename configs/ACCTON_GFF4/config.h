@@ -33,7 +33,6 @@
 #define USE_BARO
 #define USE_BARO_DPS310
 #define USE_MAG
-#define USE_MAG_IST8310
 #define USE_FLASH
 #define USE_FLASH_W25N01G
 #define USE_GYRO_CLKIN
@@ -86,7 +85,7 @@
    TIMER_PIN_MAP( 5, GYRO_1_CLKIN_PIN, 3,  -1)
    
 #define ADC_INSTANCE  ADC3
-#define ADC1_DMA_OPT 1
+#define ADC3_DMA_OPT 1
 
 #ifdef USE_OSD_HD
    #define BOX_USER1_NAME      "VTX SWITCH"
