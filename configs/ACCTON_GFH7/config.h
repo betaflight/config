@@ -36,6 +36,8 @@
 #define USE_BARO_DPS310
 #define USE_SDCARD
 #define USE_GYRO_CLKIN
+#define USE_OSD
+#define USE_MAX7456
 
 #define BEEPER_PIN PE12 // BUZZER
 #define MOTOR1_PIN PE9 // TIM1_CH1
@@ -83,6 +85,7 @@
 #define GYRO_2_CS_PIN PB9
 #define GYRO_2_ALIGN CW0_DEG
 #define GYRO_1_CLKIN_PIN PD14
+#define MAX7456_SPI_CS_PIN PA4
 #define SDIO_CK_PIN   PD6
 #define SDIO_CMD_PIN  PA0
 #define SDIO_D0_PIN   PB14
@@ -90,7 +93,8 @@
 #define SDIO_D2_PIN   PB3
 #define SDIO_D3_PIN   PB4
 #define SDCARD_DETECT_PIN PA15
-#define PINIO1_PIN    PC12// 12V_EN Switch
+#define PINIO1_PIN    PC12 // 12V_EN Switch
+#define PINIO2_PIN    PE3 // hearter switch pin
 
 #define TIMER_PIN_MAPPING \
    TIMER_PIN_MAP( 0, MOTOR1_PIN,  1,  1) \
@@ -116,7 +120,9 @@
 #define SYSTEM_HSE_MHZ 8
 #define GYRO_1_SPI_INSTANCE SPI4
 #define GYRO_2_SPI_INSTANCE SPI2
+#define MAX7456_SPI_INSTANCE SPI1
 #define SDIO_DEVICE SDIODEV_2
 #define SDIO_USE_4BIT 1
 #define BOX_USER1_NAME      "VTX SWITCH"
 #define PINIO1_BOX   40
+#define PINIO2_BOX   41
