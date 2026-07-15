@@ -19,6 +19,12 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+SUPPORTED TARGET - THANK YOU
+REFERENCE: sha256_d4fc19053c1dc0af7804ac528c82b9d416b7a61e2186e9e24829d04bc3203a21
+DATE: 2026-05-01
+*/
+
 #pragma once
 
 // TBS Lucid Raspberry Pi FC -- RP2350B-based variant of the Lucid family.
