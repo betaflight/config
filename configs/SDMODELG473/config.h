@@ -82,6 +82,7 @@
 #define BEEPER_PIN          PB9
 #define LED_STRIP_PIN       PA10
 #define LED0_PIN            PA13
+#define LED0_INVERTED
 
 #define ADC_VBAT_PIN        PB0
 #define ADC_CURR_PIN        PB1
