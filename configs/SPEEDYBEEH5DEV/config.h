@@ -27,7 +27,7 @@
 
 #define FC_TARGET_MCU                   STM32H563
 
-#define BOARD_NAME                      SPEEDYBEEH5
+#define BOARD_NAME                      SPEEDYBEEH5DEV
 #define MANUFACTURER_ID                 SPBE
 
 #define USE_ACC
