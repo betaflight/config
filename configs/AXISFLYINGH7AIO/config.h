@@ -48,7 +48,6 @@
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PD5
 #define UART3_TX_PIN         PD8
-#define UART5_TX_PIN         PC12
 #define UART6_TX_PIN         PC6
 #define UART7_TX_PIN         PE8
 #define UART8_TX_PIN         PE1
@@ -56,7 +55,7 @@
 #define UART1_RX_PIN         PA10
 #define UART2_RX_PIN         PD6
 #define UART3_RX_PIN         PD9
-#define UART5_RX_PIN         PC11
+#define UART4_RX_PIN         PC11
 #define UART6_RX_PIN         PC7
 #define UART7_RX_PIN         PE7
 #define UART8_RX_PIN         PE0
@@ -109,7 +108,7 @@
 #ifdef USE_GPS
 #define GPS_UART                       SERIAL_PORT_USART3
 #endif
-#define ESC_SENSOR_UART                SERIAL_PORT_UART5
+#define ESC_SENSOR_UART                SERIAL_PORT_UART4
 
 #define DEFAULT_BLACKBOX_DEVICE        BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BITBANG          DSHOT_BITBANG_ON
