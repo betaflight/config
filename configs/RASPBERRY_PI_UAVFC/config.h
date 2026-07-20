@@ -81,28 +81,30 @@
 #endif
 
 #if !defined(PICO_TRACE_UART_INSTANCE) || PICO_TRACE_UART_INSTANCE != 1
-#if 0
-// UART1 spare, could be GPS
-#define UART1_TX_PIN         PA36
-#define UART1_RX_PIN         PA37
-#else
-// or Radio RX
+#if 1
+// UART1 spare, could be Radio RX
 #define UART1_TX_PIN         PA42
 #define UART1_RX_PIN         PA43
+#else
+// or GPS
+#define UART1_TX_PIN         PA36
+#define UART1_RX_PIN         PA37
 #endif
 #endif
 
 // PIOUART0 spare
-#if !ENABLE_FB_OSD
-#define PIOUART0_TX_PIN      PA22
-#define PIOUART0_RX_PIN      PA23
-#endif
+// GP1, GP2
+#define PIOUART0_TX_PIN      PA12
+#define PIOUART0_RX_PIN      PA13
 
 // PIOUART1 spare, could be e.g. AVTX or GPS
-#if 0
+// NB if defined, PIOUART0 and PIOUART1 pins need to be all either in range PA0..PA31 or in range PA16..PA47
+#if 1
+// VID T, VID R
 #define PIOUART1_TX_PIN      PA16
 #define PIOUART1_RX_PIN      PA17
 #else
+// GPS T, GPS R
 #define PIOUART1_TX_PIN      PA36
 #define PIOUART1_RX_PIN      PA37
 #endif
@@ -118,6 +120,7 @@
 #define MAG_I2C_INSTANCE     I2CDEV_1
 
 // I2C1, could be GPS (Magnetemometer/Compass)
+// GPS D, GPS C
 #define I2C1_SDA_PIN         PA38
 #define I2C1_SCL_PIN         PA39
 
@@ -174,7 +177,6 @@
 #ifndef OSD_FB_PICO_ENABLE_PIXEL_MODE
 // Default is to enable pixel-based elements
 #define OSD_FB_PICO_ENABLE_PIXEL_MODE 1
-
 // Alternative is to reproduce MAX7456-like purely character-based display
 // #define OSD_FB_PICO_ENABLE_PIXEL_MODE 0
 #endif
@@ -197,17 +199,9 @@
 #define OSD_BATTERY_PERCENT_WITH_SYMBOL
 #define OSD_RSSI_WITH_SYMBOL
 
-// Small font is almost compulsory for pixel mode, not guaranteeing to support elements with large fonts
+// Small font is recommended for pixel mode, not guaranteeing to support elements with large fonts
 #ifndef OSD_FB_ENABLE_SMALLFONT
 #define OSD_FB_ENABLE_SMALLFONT 1
-#endif
-
-#else
-// LED STRIP not ENABLE_FB_OSD
-
-// External LED STRIP GPIO number
-#if PICO_TRACE_TX_GPIO != 2
-#define LED_STRIP_PIN        PA2
 #endif
 
 #endif // #if OSD_PICO_ENABLE_PIXEL_MODE
@@ -219,6 +213,14 @@
 #define OSD_FRAMERATE_MAX_HZ 100
 #define OSD_FRAMERATE_DEFAULT_HZ 50
 #define OSD_DRAWSCREEN_TIME_LIMIT_US 20
+
+#else
+// LED STRIP not ENABLE_FB_OSD
+
+// External LED STRIP GPIO number
+#if PICO_TRACE_TX_GPIO != 2
+#define LED_STRIP_PIN        PA2
+#endif
 
 #endif // ENABLE_FB_OSD
 
