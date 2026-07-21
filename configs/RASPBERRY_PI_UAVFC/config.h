@@ -46,7 +46,7 @@
 #define PICO_TRACE_TX_GPIO       2 // J2 (LED connector) 3 of 3
 #define PICO_TRACE_RX_GPIO       4 // not connected
 #else
-// uart1 via Radio "UART2" connector
+// uart1 via Radio "UART2" connector (J3)
 #define PICO_TRACE_UART_INSTANCE  1
 #define PICO_TRACE_TX_GPIO       42
 #define PICO_TRACE_RX_GPIO       4 // not connected
@@ -75,39 +75,41 @@
 
 #define GYRO_2_CS_PIN        NONE
 
+// Board labels
+#define BOARD_U0TX           PA44
+#define BOARD_U0RX           PA45
+#define BOARD_U1TX           PA36
+#define BOARD_U1RX           PA37
+#define BOARD_U2TX           PA42
+#define BOARD_U2RX           PA43
+#define BOARD_U3TX           PA16
+#define BOARD_U3RX           PA17
+#define BOARD_GP1            PA12
+#define BOARD_GP2            PA13
+#define BOARD_GP3            PA14
+
+// Default UART, PIOUART assignments.
+// NB when defined, PIOUART0 and PIOUART1 pins need to be all either in range PA0..PA31 or in range PA16..PA47
+
 #if !defined(PICO_TRACE_UART_INSTANCE) || PICO_TRACE_UART_INSTANCE != 0
-#define UART0_TX_PIN         PA44
-#define UART0_RX_PIN         PA45
+// UART0 for DVTX (T,R)
+#define UART0_TX_PIN         BOARD_U0TX
+#define UART0_RX_PIN         BOARD_U0RX
 #endif
 
 #if !defined(PICO_TRACE_UART_INSTANCE) || PICO_TRACE_UART_INSTANCE != 1
-#if 1
-// UART1 spare, could be Radio RX
-#define UART1_TX_PIN         PA42
-#define UART1_RX_PIN         PA43
-#else
-// or GPS
-#define UART1_TX_PIN         PA36
-#define UART1_RX_PIN         PA37
-#endif
+// UART1 for GPS (T,R)
+#define UART1_TX_PIN         BOARD_U1TX
+#define UART1_RX_PIN         BOARD_U1RX
 #endif
 
-// PIOUART0 spare
-// GP1, GP2
-#define PIOUART0_TX_PIN      PA12
-#define PIOUART0_RX_PIN      PA13
+// PIOUART0 for Radio RX (T,R)
+#define PIOUART0_TX_PIN      BOARD_U2TX
+#define PIOUART0_RX_PIN      BOARD_U2RX
 
-// PIOUART1 spare, could be e.g. AVTX or GPS
-// NB if defined, PIOUART0 and PIOUART1 pins need to be all either in range PA0..PA31 or in range PA16..PA47
-#if 1
-// VID T, VID R
-#define PIOUART1_TX_PIN      PA16
-#define PIOUART1_RX_PIN      PA17
-#else
-// GPS T, GPS R
-#define PIOUART1_TX_PIN      PA36
-#define PIOUART1_RX_PIN      PA37
-#endif
+// PIOUART1 for AVTX (VID T, R)
+#define PIOUART1_TX_PIN      BOARD_U3TX
+#define PIOUART1_RX_PIN      BOARD_U3RX
 
 #define USE_BARO
 // DPS368 same drivers as for DPS310
@@ -152,8 +154,7 @@
 #define USE_OSD_SD
 #endif
 
-// undef USE_MSP_DISPLAYPORT in target.h, would be better to migrate to ENABLE_MSP_DISPLAYPORT then set ENABLE to 0 here
-#define REMOVE_MSP_DISPLAYPORT
+// #define REMOVE_MSP_DISPLAYPORT // Save some RAM
 
 // OSD_EN_PIN must be next GPIO up from OSD_W_PIN
 // and OSD_SYNC_PIN next up from OSD_EN_PIN
