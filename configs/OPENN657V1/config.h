@@ -19,6 +19,9 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+  VERSION: 2026.6.0
+*/
 #pragma once
 
 #define FC_TARGET_MCU                   STM32N657

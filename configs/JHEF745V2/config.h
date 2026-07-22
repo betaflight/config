@@ -30,6 +30,7 @@
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
+#define USE_ACCGYRO_LSM6DSK320X
 
 #define USE_BARO
 #define USE_BARO_BMP280
@@ -37,6 +38,7 @@
 #define USE_FLASH
 #define USE_FLASH_M25P16
 #define USE_FLASH_W25N01G
+#define USE_FLASH_PY25Q128HA
 #define USE_MAX7456
 
 #define BEEPER_PIN           PD15
