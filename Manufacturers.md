@@ -9,6 +9,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |FOSS|Free open source target definitions||
 |COMM|Community provided target definitions for closed source targets||
 |LEGA|Closed source legacy targets without a maintainer||
+|ACRO|ARCROBO Pte., Ltd|www.arcrobo.com.sg|
 |AEDR|AEDROX|https://www.aedrox.com/|
 |AERO|AeroCogito|https://www.aerocogito.com/|
 |AFNG|AlienFlight NG|https://www.alienflightng.com/|
@@ -18,7 +19,6 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |ALWH|Alienwhoop|https://shop.alienwhoop.us/|
 |ANYL|AnyLeaf|https://www.anyleaf.org/|
 |APEX|Apexfpv|https://apexfpv.eu/|
-|ARCR|ARCROBO Pte., Ltd|www.arcrobo.com.sg|
 |ARKE|ARK Electronics|https://arkelectron.com/|
 |ASKY|AcroSky||
 |AXFL|Axisflying|https://www.axisflying.com/|
