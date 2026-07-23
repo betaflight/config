@@ -34,6 +34,10 @@ Then you can make a build for a specific target configuration e.g.
 
 A `config.h` is a plain C header (`#pragma once`) that bakes a board's default settings into the firmware build. At minimum it identifies the MCU and the board; everything else (sensors, pin assignments, timers, default tuning) follows the usual `USE_*` and pin `#define` conventions used throughout the firmware. Look at any existing entry under `configs/` for a representative example.
 
+### Directory layout
+
+Configs are grouped by manufacturer: a board lives at `configs/<MANUFACTURER_ID>/<BOARD_NAME>/config.h`, where `<MANUFACTURER_ID>` is the config's own `MANUFACTURER_ID` and `<BOARD_NAME>` its `BOARD_NAME`. Any `config.c` / `config.mk` sits in that same directory. The build selects a target by board name alone (`make CONFIG=<BOARD_NAME>`) and locates the manufacturer directory for you, so board names must stay unique across the repository.
+
 ### Required defines
 
 Every config **must** declare these three — both the firmware build and the cloud build API derive the target's identity from them:
@@ -41,8 +45,8 @@ Every config **must** declare these three — both the firmware build and the cl
 | Define | Purpose |
 | --- | --- |
 | `FC_TARGET_MCU` | MCU family/type. The build derives `TARGET` from this and fails if it is missing or unparseable. |
-| `BOARD_NAME` | Unique board name. Must match the config's directory name under `configs/`. |
-| `MANUFACTURER_ID` | Four-letter manufacturer code (see `Manufacturers.md`). |
+| `BOARD_NAME` | Unique board name. Must match the config's leaf directory name (`configs/<MANUFACTURER_ID>/<BOARD_NAME>/`). |
+| `MANUFACTURER_ID` | Four-letter manufacturer code (see `Manufacturers.md`). Names the parent directory the config lives under. |
 
 ### Common optional defines
 
@@ -86,7 +90,7 @@ A per-config `config.mk` lets a target inject build-system (make) variables that
 
 The currently recognised setting is `OCTOSPI_FLASH_CHIP`, which selects the boot/config flash chip wired to the OCTOSPI/XSPI peripheral. It emits both `-DUSE_FLASH_<chip>` (driver gating) and `-DOCTOSPI_FLASH_CHIP_<chip>` (build-time chip selection). The build-time selection is needed for chips that cannot be probed via JEDEC RDID at runtime — for example a chip left in 8-line OPI mode by the bootloader.
 
-Example — `configs/OPENN657V1/config.mk`:
+Example — `configs/CUST/OPENN657V1/config.mk`:
 
 ```
 # Boot flash chip on OPENN657V1 is Macronix MX66UW1G45G (1 Gbit octal NOR).
