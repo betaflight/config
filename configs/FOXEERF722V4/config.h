@@ -18,6 +18,12 @@
  *
  * If not, see <http://www.gnu.org/licenses/>.
  */
+ 
+ /*
+    SUPPORTED TARGET - THANK YOU
+    REFERENCE: sha256_d21ad5220a3e870ab430532a54672fe1871728dc5f4ea49d544a417c3ad6da3c
+    DATE: 2025-12-01
+*/
 
 #pragma once
 
@@ -32,6 +38,7 @@
 #define USE_ACC_SPI_MPU6000
 #define USE_GYRO_SPI_ICM42688P
 #define USE_ACC_SPI_ICM42688P
+#define USE_ACCGYRO_LSM6DSK320X
 #define USE_BARO
 #define USE_BARO_DPS310
 #define USE_BARO_BMP280
