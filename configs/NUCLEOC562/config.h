@@ -111,11 +111,6 @@
     TIMER_PIN_MAP( 2, PB10, 1, -1) \
     TIMER_PIN_MAP( 3, PB11, 1, -1)
 
-// 4 kHz PID loop at the default 8 kHz gyro rate (denom = gyro / pid).
-// Keeps headroom for the C562 / 144 MHz core during bring-up; can be
-// raised once the platform settles.
-#define DEFAULT_PID_PROCESS_DENOM 2
-
 // ADC1 routes via LPDMA2 CH0 on the C5. The dmaChannelSpec opts 0-7
 // are LPDMA1 CH0-7 (used by DSHOT bitbang pacers and SPI), so pick
 // opt 8 (LPDMA2 CH0) which is free for the ADC. Default of
