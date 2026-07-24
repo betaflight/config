@@ -19,7 +19,7 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
-#define FC_TARGET_MCU       STM32G47X
+#define FC_TARGET_MCU       STM32G474
 #define BOARD_NAME          TAKERG4AIO
 #define MANUFACTURER_ID     GEPR
 

@@ -25,7 +25,7 @@
 */
 #pragma once
 
-#define FC_TARGET_MCU     STM32G47X
+#define FC_TARGET_MCU     STM32G474
 
 #define BOARD_NAME        SPEDIXG473
 #define MANUFACTURER_ID   SPDX

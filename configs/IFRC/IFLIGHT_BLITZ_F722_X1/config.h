@@ -21,7 +21,7 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     STM32F7X2
+#define FC_TARGET_MCU     STM32F722
 
 #define BOARD_NAME        IFLIGHT_BLITZ_F722_X1
 #define MANUFACTURER_ID   IFRC

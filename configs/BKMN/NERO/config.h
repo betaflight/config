@@ -25,7 +25,7 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     STM32F7X2
+#define FC_TARGET_MCU     STM32F722
 
 #define BOARD_NAME        NERO
 #define MANUFACTURER_ID   BKMN

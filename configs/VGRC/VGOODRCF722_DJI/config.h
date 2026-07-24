@@ -21,7 +21,7 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     STM32F7X2
+#define FC_TARGET_MCU     STM32F722
 
 #define BOARD_NAME        VGOODRCF722_DJI
 #define MANUFACTURER_ID   VGRC

@@ -19,7 +19,7 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
-#define FC_TARGET_MCU       STM32F7X2
+#define FC_TARGET_MCU       STM32F722
 #define BOARD_NAME          TAKERF722SE
 #define MANUFACTURER_ID     GEPR
 

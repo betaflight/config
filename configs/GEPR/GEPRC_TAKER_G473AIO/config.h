@@ -21,7 +21,7 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     STM32G47X
+#define FC_TARGET_MCU     STM32G474
 
 #define BOARD_NAME        GEPRC_TAKER_G473AIO
 #define MANUFACTURER_ID   GEPR
