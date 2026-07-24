@@ -108,6 +108,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |ORBT|Orbit Technology|https://www.orbitteknoloji.com.tr/|
 |ORQA|Orqa Ltd|https://orqafpv.com/|
 |OXBT|Zhuhai Oxbot Technology Co., Ltd|https://www.oxbot.com/|
+|PEEK|PeeKeep|http://www.peakeepworld.com/|
 |PRIN|PrincipIoT LLC|https://principiot.com/|
 |PYDR|Pyro-Drone|https://pyrodrone.com/|
 |PYID|PYI Technologies|https://pyidrones.com/|
