@@ -114,6 +114,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |RALI|RadioLink Electronic Ltd|https://radiolink.com/|
 |RASP|Raspberry PI|https://www.raspberrypi.com/|
 |RAST|Racerstar|https://www.racerstar.com/|
+|RATE|RateFPV|https://ratefpv.com/|
 |RCTI|RCTimer|http://rctimer.com/|
 |RDMS|RadioMaster RC|https://www.radiomasterrc.com/|
 |RUSH|FPV Racing Rush|http://www.rushfpv.com/|
