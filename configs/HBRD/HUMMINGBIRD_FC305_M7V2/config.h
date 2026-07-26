@@ -110,37 +110,34 @@
 #define PINIO2_PIN           PC14
 #define PINIO3_PIN           PC13
 
-// FIXME occurrence indices below are placeholders (1). Get the real map with
-//   make CONFIG=<BOARD> EXTRA_FLAGS="-DUSE_TIMER_MAP_PRINT"
-// then "timer map" in the CLI, and re-run with --timer-map <capture>.
-// From the capture, for checking the indices:
-//   A00   TIM6 CH1 (AF8)
-//   A01   TIM6 CH2 (AF5)
-//   A02   TIM6 CH3 (AF4)
-//   A03   TIM6 CH4 (AF8)
-//   D12   TIM5 CH1 (AF3)
-//   D13   TIM5 CH2 (AF3)
-//   D14   TIM5 CH3 (AF6)
-//   D15   TIM5 CH4 (AF6)
-//   B14   TIM9 CH1 (AF8)
-//   B15   TIM9 CH2 (AF8)
-//   A15   TIM3 CH1 (AF9)
-//   E06   TIM10 CH2 (AF5)
-//   E09   TIM1 CH1 (AF6)
+// timer/DMA allocation, as reported by the board:
+//   MOTOR1_PIN       PA0   TIM6 CH1 (AF8)
+//   MOTOR2_PIN       PA1   TIM6 CH2 (AF5)
+//   MOTOR3_PIN       PA2   TIM6 CH3 (AF4)
+//   MOTOR4_PIN       PA3   TIM6 CH4 (AF8)
+//   MOTOR5_PIN       PD12  TIM5 CH1 (AF3)
+//   MOTOR6_PIN       PD13  TIM5 CH2 (AF3)
+//   MOTOR7_PIN       PD14  TIM5 CH3 (AF6)
+//   MOTOR8_PIN       PD15  TIM5 CH4 (AF6)
+//   SERVO1_PIN       PB14  TIM9 CH1 (AF8)
+//   SERVO2_PIN       PB15  TIM9 CH2 (AF8)
+//   BEEPER_PIN       PA15  TIM3 CH1 (AF9)
+//   LED_STRIP_PIN    PE6   TIM10 CH2 (AF5)
+//   GYRO_1_CLKIN_PIN PE9   TIM1 CH1 (AF6)
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP(  0, PA0,   1,  2) \
-    TIMER_PIN_MAP(  1, PA1,   1,  2) \
-    TIMER_PIN_MAP(  2, PA2,   1,  2) \
-    TIMER_PIN_MAP(  3, PA3,   1,  2) \
-    TIMER_PIN_MAP(  4, PD12,  1,  3) \
-    TIMER_PIN_MAP(  5, PD13,  1,  3) \
-    TIMER_PIN_MAP(  6, PD14,  1,  3) \
-    TIMER_PIN_MAP(  7, PD15,  1,  3) \
-    TIMER_PIN_MAP(  8, PB14,  1, -1) \
-    TIMER_PIN_MAP(  9, PB15,  1, -1) \
-    TIMER_PIN_MAP( 10, PA15,  1, -1) \
-    TIMER_PIN_MAP( 11, PE6,   1,  0) \
-    TIMER_PIN_MAP( 12, PE9,   1, -1)
+    TIMER_PIN_MAP(  0, MOTOR1_PIN,       1,  2) \
+    TIMER_PIN_MAP(  1, MOTOR2_PIN,       1,  2) \
+    TIMER_PIN_MAP(  2, MOTOR3_PIN,       1,  2) \
+    TIMER_PIN_MAP(  3, MOTOR4_PIN,       1,  2) \
+    TIMER_PIN_MAP(  4, MOTOR5_PIN,       1,  3) \
+    TIMER_PIN_MAP(  5, MOTOR6_PIN,       1,  3) \
+    TIMER_PIN_MAP(  6, MOTOR7_PIN,       1,  3) \
+    TIMER_PIN_MAP(  7, MOTOR8_PIN,       1,  3) \
+    TIMER_PIN_MAP(  8, SERVO1_PIN,       1, -1) \
+    TIMER_PIN_MAP(  9, SERVO2_PIN,       1, -1) \
+    TIMER_PIN_MAP( 10, BEEPER_PIN,       1, -1) \
+    TIMER_PIN_MAP( 11, LED_STRIP_PIN,    1,  0) \
+    TIMER_PIN_MAP( 12, GYRO_1_CLKIN_PIN, 1, -1)
 
 #define ADC1_DMA_OPT         8
 #define ADC2_DMA_OPT         9
