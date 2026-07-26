@@ -36,12 +36,9 @@
 #define USE_GYRO
 #define USE_GYRO_CLKIN
 #define USE_GYRO_SPI_ICM42688P
-#define USE_MAG
 #define USE_MAX7456
 #define USE_SDCARD
 #define USE_SDCARD_SDIO
-#define USE_SPI_GYRO
-//TODO mag driver, e.g. USE_MAG_QMC5883 / USE_MAG_HMC5883
 
 #define BEEPER_PIN           PA15
 #define LED0_PIN             PD3
@@ -150,7 +147,7 @@
 #define ADC3_DMA_OPT         10
 #define ADC_INSTANCE         ADC1
 
-#define BARO_I2C_INSTANCE            I2CDEV_10
+#define BARO_I2C_INSTANCE            I2CDEV_1
 #define GYRO_1_SPI_INSTANCE          SPI1
 #define MAG_I2C_INSTANCE             I2CDEV_1
 #define MAX7456_SPI_INSTANCE         SPI3
