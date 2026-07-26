@@ -26,9 +26,6 @@
 #define BOARD_NAME        HUMMINGBIRD_FC305_M7V2
 #define MANUFACTURER_ID   HBRD
 
-//ERROR from CLI dump: CORRUPTED CONFIG: baro_i2c_device = 10
-
-// sensor drivers inherited from a sibling config -- verify against the board: gyro/acc<-HUMMINGBIRD_FC305 baro<-HUMMINGBIRD_FC305
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
 #define USE_BARO
@@ -110,20 +107,6 @@
 #define PINIO2_PIN           PC14
 #define PINIO3_PIN           PC13
 
-// timer/DMA allocation, as reported by the board:
-//   MOTOR1_PIN       PA0   TIM6 CH1 (AF8)
-//   MOTOR2_PIN       PA1   TIM6 CH2 (AF5)
-//   MOTOR3_PIN       PA2   TIM6 CH3 (AF4)
-//   MOTOR4_PIN       PA3   TIM6 CH4 (AF8)
-//   MOTOR5_PIN       PD12  TIM5 CH1 (AF3)
-//   MOTOR6_PIN       PD13  TIM5 CH2 (AF3)
-//   MOTOR7_PIN       PD14  TIM5 CH3 (AF6)
-//   MOTOR8_PIN       PD15  TIM5 CH4 (AF6)
-//   SERVO1_PIN       PB14  TIM9 CH1 (AF8)
-//   SERVO2_PIN       PB15  TIM9 CH2 (AF8)
-//   BEEPER_PIN       PA15  TIM3 CH1 (AF9)
-//   LED_STRIP_PIN    PE6   TIM10 CH2 (AF5)
-//   GYRO_1_CLKIN_PIN PE9   TIM1 CH1 (AF6)
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP(  0, MOTOR1_PIN,       1,  2) \
     TIMER_PIN_MAP(  1, MOTOR2_PIN,       1,  2) \
@@ -173,14 +156,3 @@
 #define PINIO2_CONFIG                129
 #define PINIO3_BOX                   42
 #define PINIO3_CONFIG                129
-
-// no config.h equivalent -- delete, or move to a preset
-//TODO set i2c1_clockspeed_khz = 800
-//TODO set i2c2_clockspeed_khz = 800
-//TODO set i2c3_clockspeed_khz = 800
-//TODO set i2c4_clockspeed_khz = 800
-//TODO set motor_kv = 1960
-//TODO set scheduler_debug_task = 0
-//TODO set scheduler_relax_osd = 25
-//TODO set scheduler_relax_rx = 25
-//TODO set usb_msc_pin_pullup = ON
