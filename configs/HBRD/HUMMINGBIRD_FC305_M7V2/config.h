@@ -144,7 +144,7 @@
 #define ADC3_DMA_OPT         10
 #define ADC_INSTANCE         ADC1
 
-#define BARO_I2C_INSTANCE            I2CDEV_1
+#define BARO_I2C_INSTANCE            I2CDEV_10
 #define GYRO_1_SPI_INSTANCE          SPI1
 #define MAG_I2C_INSTANCE             I2CDEV_1
 #define MAX7456_SPI_INSTANCE         SPI3
