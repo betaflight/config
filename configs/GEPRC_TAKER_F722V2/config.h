@@ -26,7 +26,7 @@ REFERENCE: sha256_f2926b24b555f146563a8b33f0244c3c862d54ae8b7e40d06bf6fbfe0881ab
 
 #pragma once
 
-#define FC_TARGET_MCU       STM32F7X2
+#define FC_TARGET_MCU     STM32F7X2
 
 #define BOARD_NAME          GEPRC_TAKER_F722V2
 #define MANUFACTURER_ID     GEPR
@@ -68,6 +68,7 @@ REFERENCE: sha256_f2926b24b555f146563a8b33f0244c3c862d54ae8b7e40d06bf6fbfe0881ab
 #define UART5_RX_PIN        PD2
 #define UART6_TX_PIN        PC6
 #define UART6_RX_PIN        PC7
+#define RX_PPM_PIN          PA3
 
 #define LED0_PIN            PB3
 #define I2C1_SCL_PIN        PB8
@@ -99,6 +100,7 @@ REFERENCE: sha256_f2926b24b555f146563a8b33f0244c3c862d54ae8b7e40d06bf6fbfe0881ab
 #define BOX_USER3_NAME       "CAM 1,2"
 
 #define TIMER_PIN_MAPPING \
+    TIMER_PIN_MAP( 0, PA3, 2, 0) \
     TIMER_PIN_MAP( 1, MOTOR1_PIN , 1, 0) \
     TIMER_PIN_MAP( 2, MOTOR2_PIN, 1, 0) \
     TIMER_PIN_MAP( 3, MOTOR3_PIN, 2, 0) \
