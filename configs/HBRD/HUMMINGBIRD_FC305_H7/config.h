@@ -30,8 +30,6 @@
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 
-#define USE_GPS
-#define USE_MAG
 #define USE_BARO
 #define USE_BARO_DPS310
 #define USE_MAX7456
