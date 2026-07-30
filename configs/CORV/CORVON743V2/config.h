@@ -42,7 +42,6 @@
 
 #ifndef USE_MAG
 #define USE_MAG
-#define USE_MAG_IST8310
 #endif
 
 // --- Motor pins (8 DShot motors + 2 PWM servos) ---
