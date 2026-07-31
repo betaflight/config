@@ -158,7 +158,7 @@
 #define BEEPER_INVERTED
 #define SYSTEM_HSE_MHZ 8
 
-#define DEFAULT_DSHOT_BITBANG               DSHOT_BITBANG_ON
+#define DEFAULT_DSHOT_BITBANG               DSHOT_BITBANG_OFF
 #define DEFAULT_DSHOT_BURST                 DSHOT_DMAR_OFF
 
 
