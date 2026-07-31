@@ -21,9 +21,9 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     UM324xF
-#define BOARD_NAME        UMDEMO4xF_V04
-#define MANUFACTURER_ID   UM
+#define FC_TARGET_MCU     UM324XF
+#define BOARD_NAME        UMDEMO41FV04
+#define MANUFACTURER_ID   UMIC
 
 
 #define USE_GYRO
@@ -55,7 +55,7 @@
 #ifndef USE_CAMERA_CONTROL
 #define USE_CAMERA_CONTROL
 #endif
-#define CAMERA_CONTROL_PIN   PC6
+// #define CAMERA_CONTROL_PIN   PC6
 
 #define USE_BEEPER
 #define BEEPER_PIN           PC13
@@ -133,7 +133,6 @@
     TIMER_PIN_MAP(5, SERVO2_PIN , 1,  -1) \
     TIMER_PIN_MAP(6, SERVO3_PIN , 1,  -1) \
     TIMER_PIN_MAP(7, SERVO4_PIN , 1,  -1) \
-    TIMER_PIN_MAP(8, CAMERA_CONTROL_PIN , 1,  -1) \
     TIMER_PIN_MAP(9, LED_STRIP_PIN , 1,  0)
 
 
@@ -159,7 +158,7 @@
 #define BEEPER_INVERTED
 #define SYSTEM_HSE_MHZ 8
 
-#define DEFAULT_DSHOT_BITBANG               DSHOT_BITBANG_OFF
+#define DEFAULT_DSHOT_BITBANG               DSHOT_BITBANG_ON
 #define DEFAULT_DSHOT_BURST                 DSHOT_DMAR_OFF
 
 
