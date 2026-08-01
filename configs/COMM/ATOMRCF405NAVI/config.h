@@ -48,8 +48,6 @@
 
 #define USE_MAX7456
 #define USE_SDCARD
-#define USE_FLASH
-#define USE_FLASH_W25Q128FV
 
 #define BEEPER_PIN           PC5
 #define BEEPER_INVERTED
@@ -100,7 +98,6 @@
 #define GYRO_1_CS_PIN        PA4
 #define MAX7456_SPI_CS_PIN   PB12
 #define SDCARD_SPI_CS_PIN    PB6
-#define FLASH_CS_PIN         PB6
 
 #define GYRO_1_EXTI_PIN      NONE
 
