@@ -131,8 +131,8 @@
 #define PINIO2_BOX                   41
 #define PINIO3_BOX                   42
 #define PINIO1_CONFIG                (PINIO_CONFIG_MODE_OUT_PP | PINIO_CONFIG_OUT_INVERTED)
-#define PINIO2_CONFIG                (PINIO_CONFIG_MODE_OUT_PP | PINIO_CONFIG_OUT_INVERTED)
-#define PINIO3_CONFIG                (PINIO_CONFIG_MODE_OUT_PP | PINIO_CONFIG_OUT_INVERTED)
+#define PINIO2_CONFIG                (PINIO_CONFIG_MODE_OUT_PP)
+#define PINIO3_CONFIG                (PINIO_CONFIG_MODE_OUT_PP)
 #define BARO_I2C_INSTANCE            I2CDEV_2
 #define MAG_I2C_INSTANCE             I2CDEV_1
 #define GYRO_1_SPI_INSTANCE          SPI1
