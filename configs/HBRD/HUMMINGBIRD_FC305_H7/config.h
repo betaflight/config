@@ -39,8 +39,6 @@
 #define USE_FLASH_W25Q128FV
 #define USE_FLASH_W25N01G
 #define USE_SDCARD
-#define USE_ALTITUDE_HOLD
-#define USE_POSITION_HOLD
 
 #define BEEPER_PIN           PA15   //TIM2_CH1
 #define MOTOR1_PIN           PA3    //TIM5_CH4
