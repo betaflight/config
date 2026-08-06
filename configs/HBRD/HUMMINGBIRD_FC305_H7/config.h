@@ -142,8 +142,8 @@
 #define GYRO_1_SPI_INSTANCE          SPI1
 #define MAX7456_SPI_INSTANCE         SPI4
 #define SERIALRX_UART                SERIAL_PORT_UART5
-#define ESC_SENSOR_UART              SERIAL_PORT_USART1
-// #define ESC_SENSOR_UART2             SERIAL_PORT_USART2
+#define ESC_SENSOR_UART              SERIAL_PORT_USART2
+// #define ESC_SENSOR_UART2             SERIAL_PORT_USART1
 #define SDCARD_DETECT_INVERTED
 #define SDCARD_DETECT_PIN            NONE
 #define SDIO_DEVICE                  SDIODEV_1
