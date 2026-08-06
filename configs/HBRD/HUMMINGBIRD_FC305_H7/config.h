@@ -34,10 +34,6 @@
 #define USE_BARO_DPS310
 #define USE_MAX7456
 #define USE_GYRO_CLKIN
-#define USE_FLASH
-#define USE_FLASH_M25P16
-#define USE_FLASH_W25Q128FV
-#define USE_FLASH_W25N01G
 #define USE_SDCARD
 
 #define BEEPER_PIN           PA15   //TIM2_CH1
