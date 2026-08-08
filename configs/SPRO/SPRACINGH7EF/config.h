@@ -184,7 +184,9 @@
 #define ADC_EXTERNAL1_PIN    CURRENT_METER_2_ADC_PIN
 
 #define VTX_ENABLE_PIN                PB11
+#define USE_PINIO
 #define PINIO1_PIN                    VTX_ENABLE_PIN
+#define USE_PINIOBOX
 
 #define USE_ACC
 #define USE_ACC_SPI_ICM42605
