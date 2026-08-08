@@ -20,12 +20,12 @@
  */
 
 /*
-    Generated from SCH_原理图_5.0.4.pdf
-    Schematic sha256: 27025aeebbee5152f882b59b057c9071e077d366640f0316de8f62046d8614b2
+    Generated from SCH_原理图_5.0.5.pdf
+    Schematic sha256: 03a9f5864dc03d59e265cfc4107a88e9205a9510b7e9c37295faf167de67a8c8
     MCU symbol: 64 pins on page 3 of 8
-    Converted: 2026-08-06
+    Converted: 2026-08-08
     Pin tables validated against Betaflight c18421eb5 (branch master, seeded 2026-08-04)
-    Manufacturer: CUST - 'Custom', to be used for homebrew targets (registry placeholder)
+    Manufacturer: UAVD - NOT REGISTERED in betaflight/config Manufacturers.md @ 18ffb2a74 (2026-07-23)
 
     No REFERENCE directive: this target has not been reviewed by
     the Betaflight team. They issue that value; it cannot be
@@ -43,7 +43,6 @@
 #define USE_GYRO
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO_SPI_ICM42688P
-#define USE_ACCGYRO_LSM6DSK320X
 #define USE_GYRO_CLKIN
 #define USE_BARO
 #define USE_BARO_DPS310
@@ -94,8 +93,8 @@
 #define LED_STRIP_PIN       PA8
 
 #define ADC_VBAT_PIN        PC1
-#define ADC_CURR_PIN        PC4
-#define ADC_RSSI_PIN        PC0
+#define ADC_CURR_PIN        PC0
+#define ADC_RSSI_PIN        PC4
 
 #define PINIO1_PIN          PB1
 #define PINIO2_PIN          PB2
