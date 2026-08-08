@@ -92,6 +92,8 @@
 #define BEEPER_PIN          PB9
 #define LED_STRIP_PIN       PA8
 
+#define CAMERA_CONTROL_PIN  PB8
+
 #define ADC_VBAT_PIN        PC1
 #define ADC_CURR_PIN        PC0
 #define ADC_RSSI_PIN        PC4
@@ -100,13 +102,15 @@
 #define PINIO2_PIN          PB2
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, MOTOR1_PIN,       2,  0) \
-    TIMER_PIN_MAP( 1, MOTOR2_PIN,       2,  1) \
-    TIMER_PIN_MAP( 2, MOTOR3_PIN,       2,  1) \
-    TIMER_PIN_MAP( 3, MOTOR4_PIN,       2,  0) \
-    TIMER_PIN_MAP( 4, SERVO1_PIN,       3, -1) \
-    TIMER_PIN_MAP( 5, LED_STRIP_PIN,    1,  0) \
-    TIMER_PIN_MAP( 6, GYRO_1_CLKIN_PIN, 1, -1)
+    TIMER_PIN_MAP( 0, MOTOR1_PIN,         2,  0) \
+    TIMER_PIN_MAP( 1, MOTOR2_PIN,         2,  1) \
+    TIMER_PIN_MAP( 2, MOTOR3_PIN,         2,  1) \
+    TIMER_PIN_MAP( 3, MOTOR4_PIN,         2,  0) \
+    TIMER_PIN_MAP( 4, SERVO1_PIN,         3, -1) \
+    TIMER_PIN_MAP( 5, LED_STRIP_PIN,      1,  0) \
+    TIMER_PIN_MAP( 6, GYRO_1_CLKIN_PIN,   1, -1) \
+    TIMER_PIN_MAP( 7, BEEPER_PIN,         1, -1) \
+    TIMER_PIN_MAP( 8, CAMERA_CONTROL_PIN, 2, -1)
 
 #define ADC1_DMA_OPT                 0
 
@@ -119,13 +123,12 @@
 #define GYRO_1_SPI_INSTANCE          SPI1
 #define MAX7456_SPI_INSTANCE         SPI2
 
-#define PINIO1_BOX                   40
+#define PINIO1_BOX                   0
 #define PINIO1_CONFIG                129
-#define BOX_USER1_NAME               "PINIO1"
 
 #define PINIO2_BOX                   41
 #define PINIO2_CONFIG                129
-#define BOX_USER2_NAME               "PINIO2"
+#define BOX_USER2_NAME               "10 V BEC"
 
 #define DEFAULT_BLACKBOX_DEVICE      BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BITBANG        DSHOT_BITBANG_ON
