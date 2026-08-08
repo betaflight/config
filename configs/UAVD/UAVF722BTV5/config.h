@@ -36,13 +36,14 @@
 
 #define FC_TARGET_MCU       STM32F722
 
-#define BOARD_NAME          UAVDF722BT
+#define BOARD_NAME          UAVF722BTV5
 #define MANUFACTURER_ID     UAVD
 
 #define USE_ACC
 #define USE_GYRO
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO_SPI_ICM42688P
+#define USE_ACCGYRO_LSM6DSV
 #define USE_GYRO_CLKIN
 #define USE_BARO
 #define USE_BARO_DPS310
@@ -91,7 +92,6 @@
 #define LED0_PIN            PA15
 #define BEEPER_PIN          PB9
 #define LED_STRIP_PIN       PA8
-
 #define CAMERA_CONTROL_PIN  PB8
 
 #define ADC_VBAT_PIN        PC1
@@ -108,9 +108,9 @@
     TIMER_PIN_MAP( 3, MOTOR4_PIN,         2,  0) \
     TIMER_PIN_MAP( 4, SERVO1_PIN,         3, -1) \
     TIMER_PIN_MAP( 5, LED_STRIP_PIN,      1,  0) \
-    TIMER_PIN_MAP( 6, GYRO_1_CLKIN_PIN,   1, -1) \
-    TIMER_PIN_MAP( 7, BEEPER_PIN,         1, -1) \
-    TIMER_PIN_MAP( 8, CAMERA_CONTROL_PIN, 2, -1)
+    TIMER_PIN_MAP( 6, CAMERA_CONTROL_PIN, 1, -1) \
+    TIMER_PIN_MAP( 7, GYRO_1_CLKIN_PIN,   1, -1) \
+    TIMER_PIN_MAP( 8, BEEPER_PIN,         1, -1)
 
 #define ADC3_DMA_OPT                 1
 #define ADC_INSTANCE                 ADC3
@@ -123,6 +123,7 @@
 #define GYRO_1_ALIGN                 CW0_DEG
 #define GYRO_1_SPI_INSTANCE          SPI1
 #define MAX7456_SPI_INSTANCE         SPI2
+#define FLASH_SPI_INSTANCE           SPI3
 
 #define PINIO1_BOX                   0
 #define PINIO1_CONFIG                129
