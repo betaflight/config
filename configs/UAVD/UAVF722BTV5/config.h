@@ -108,7 +108,7 @@
     TIMER_PIN_MAP( 3, MOTOR4_PIN,         2,  0) \
     TIMER_PIN_MAP( 4, SERVO1_PIN,         3, -1) \
     TIMER_PIN_MAP( 5, LED_STRIP_PIN,      1,  0) \
-    TIMER_PIN_MAP( 6, CAMERA_CONTROL_PIN, 1, -1) \
+    TIMER_PIN_MAP( 6, CAMERA_CONTROL_PIN, 2, -1) \
     TIMER_PIN_MAP( 7, GYRO_1_CLKIN_PIN,   1, -1) \
     TIMER_PIN_MAP( 8, BEEPER_PIN,         1, -1)
 
