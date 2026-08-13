@@ -102,7 +102,7 @@
 #define TIMUP8_DMA_OPT                  13
 
 #define MSP_DISPLAYPORT_UART   SERIAL_PORT_USART2
-#define SERIALRX_UART          SERIAL_PORT_USART4
+#define SERIALRX_UART          SERIAL_PORT_UART4
 #define MSP_UART               SERIAL_PORT_USART1
 
 #define MAG_I2C_INSTANCE                I2CDEV_1
