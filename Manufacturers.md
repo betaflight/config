@@ -10,6 +10,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |COMM|Community provided target definitions for closed source targets||
 |LEGA|Closed source legacy targets without a maintainer||
 |ACCT|Accton Technology Corporation|https://www.accton-iot.com/|
+|ACRO|ARCROBO Pte., Ltd|https://www.arcrobo.com.sg/|
 |AEDR|AEDROX|https://www.aedrox.com/|
 |AERO|AeroCogito|https://www.aerocogito.com/|
 |AFNG|AlienFlight NG|https://www.alienflightng.com/|
@@ -40,6 +41,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |DFRA|Drone FPV Racer|https://www.drone-fpv-racer.com/|
 |DFRC|Shenzhen Jingfei Technology Co., Ltd|https://dreamflyrc.com/|
 |DIAT|Diatone Innovations|https://www.diatoneusa.com/|
+|DPDS|Deepspace FPV|https://www.deepspacefpv.com|
 |DRCL|dronercland|https://www.instagram.com/dronercland/|
 |DREA|DREAMRC|https://github.com/dreamworks-fpv|
 |DRNR|Shenzhen Zhimu Technology Co., Ltd|https://www.droneer.com|
