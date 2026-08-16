@@ -149,8 +149,6 @@ DATE: 2026-05-01
 
 // VTX BEC enable -- single 10 V rail, transistor-driven (Q3) on PA18
 // Exposed as PINIO1 so the user can toggle the rail from the GUI/CLI
-#define USE_PINIO
-#define USE_PINIOBOX
 #define VTX_ENABLE_PIN       PA18
 #define PINIO1_PIN           VTX_ENABLE_PIN
 #define PINIO1_BOX           40
