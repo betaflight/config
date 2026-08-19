@@ -45,10 +45,7 @@
 #define CAN1_TX_PIN                         PD1
 #define CAN1_RX_PIN                         PD0
 
-// === IMU - on-module ICM-45686 on SPI3 (mounted upright; no rotation) ===
-// AP hwdef has ROTATION_ROLL_180 but empirical testing shows the chip is
-// mounted right-side up — any non-identity rotation produces an inverted
-// model in the Configurator and a wrong-sign pitch/roll response.
+// === IMU - on-module ICM-45686 on SPI3 (mounted inverted on this carrier) ===
 #define USE_GYRO
 #define USE_ACC
 #define USE_ACCGYRO_ICM45686
@@ -62,8 +59,8 @@
 #define GYRO_1_SPI_INSTANCE                 SPI3
 #define GYRO_1_CS_PIN                       PG15
 #define GYRO_1_EXTI_PIN                     NONE
-// Chip is mounted right-side up — no rotation needed.
-#define GYRO_1_ALIGN                        CW0_DEG
+// CW180_DEG_FLIP maps x,y,z -> x,-y,-z, matching ROTATION_ROLL_180 in the AP hwdef.
+#define GYRO_1_ALIGN                        CW180_DEG_FLIP
 
 // === Baro - on-carrier DPS368 (DPS310-compatible) on SPI3 ===
 #define USE_BARO
