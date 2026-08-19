@@ -150,7 +150,10 @@
 // === Buzzer (active alarm on PC8) ===
 #define BEEPER_PIN                          PC8
 
+// The BUZZ pad is the drain of a low-side MOSFET whose gate PC8 drives, so the
+// pin is active-high push-pull rather than the open-drain default.
 // === USB VBUS detect ===
+#define BEEPER_INVERTED
 // PA9 = VUSB through R57 (10k); 5V-tolerant.
 #define USE_USB_DETECT
 #define USB_DETECT_PIN                      PA9
