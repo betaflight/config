@@ -140,7 +140,7 @@
 // === LEDs (all active-low, anodes tied to +3.3V) ===
 #define LED0_PIN                            PF12   // RGB notify red
 #define LED1_PIN                            PF13   // RGB notify green
-#define LED2_PIN                            PA4    // RGB notify blue
+#define LED2_PIN                            PA5    // RGB notify blue
 
 // Status LED (single amber on PC0) exposed as PINIO so the user can drive it
 #define PINIO1_PIN                          PC0
