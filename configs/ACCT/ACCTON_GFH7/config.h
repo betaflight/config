@@ -95,7 +95,7 @@
 #define BOX_USER1_NAME      "VTX SWITCH"
 #define PINIO1_BOX    40
 #define PINIO1_PIN    PC12 // 12V_EN Switch
-#define BOX_USER2_NAME      "HEARTER SWITCH"
+#define BOX_USER2_NAME      "HEATER SWITCH"
 #define PINIO2_BOX    41
 #define PINIO2_PIN    PE3 // hearter switch pin
 
