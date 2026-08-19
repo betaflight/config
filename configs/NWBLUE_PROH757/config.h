@@ -130,12 +130,14 @@
 // VBAT divider on PF3 (ADC3 ch5): R19=200k top, R20=10k bottom -> 21:1.
 // Current sense on PC2 (ADC1 ch12): passthrough from J10 pin 2 via 1k+100nF
 // RC filter, so the scale depends on the external current sensor wired in.
+// Scale is in 1/10th mV/A, so 417 is the 41.7mV/A that the AP hwdef carries as
+// BATT_AMP_PERVLT 24.0 A/V.
 #define ADC_VBAT_PIN                        PF3
 #define ADC_CURR_PIN                        PC2
 #define DEFAULT_VOLTAGE_METER_SOURCE        VOLTAGE_METER_ADC
 #define DEFAULT_CURRENT_METER_SOURCE        CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SCALE         210
-#define DEFAULT_CURRENT_METER_SCALE         240
+#define DEFAULT_CURRENT_METER_SCALE         417
 
 // === LEDs (all active-low, anodes tied to +3.3V) ===
 #define LED0_PIN                            PF12   // RGB notify red
@@ -148,12 +150,12 @@
 #define PINIO1_BOX                          40
 
 // === Buzzer (active alarm on PC8) ===
-#define BEEPER_PIN                          PC8
-
 // The BUZZ pad is the drain of a low-side MOSFET whose gate PC8 drives, so the
 // pin is active-high push-pull rather than the open-drain default.
-// === USB VBUS detect ===
+#define BEEPER_PIN                          PC8
 #define BEEPER_INVERTED
+
+// === USB VBUS detect ===
 // PA9 = VUSB through R57 (10k); 5V-tolerant.
 #define USE_USB_DETECT
 #define USB_DETECT_PIN                      PA9
