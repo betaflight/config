@@ -97,7 +97,7 @@
 #define PINIO1_PIN    PC12 // 12V_EN Switch
 #define BOX_USER2_NAME      "HEATER SWITCH"
 #define PINIO2_BOX    41
-#define PINIO2_PIN    PE3 // hearter switch pin
+#define PINIO2_PIN    PE3 // heater switch pin
 
 #define TIMER_PIN_MAPPING \
    TIMER_PIN_MAP( 0, MOTOR1_PIN,       1,  0) \ /* TIM1_CH1, DMA Opt 0 */ \
