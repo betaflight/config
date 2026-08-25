@@ -30,8 +30,10 @@
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
+#define USE_ACCGYRO_LSM6DSK320X
 #define USE_FLASH
 #define USE_FLASH_M25P16
+#define USE_MAX7456
 #define USE_BARO
 #define USE_BARO_BMP280
 #define USE_BARO_DPS310
@@ -52,8 +54,8 @@
 #define UART4_TX_PIN            PH3
 #define UART4_RX_PIN            PH2
 
-#define I2C1_SCL_PIN            PA0
-#define I2C1_SDA_PIN            PA1
+#define I2C2_SCL_PIN            PA0
+#define I2C2_SDA_PIN            PA1
 
 #define SPI1_SCK_PIN            PA5
 #define SPI1_SDI_PIN            PA6
@@ -85,15 +87,15 @@
     TIMER_PIN_MAP(2, MOTOR3_PIN,       2,  3) \
     TIMER_PIN_MAP(3, MOTOR4_PIN,       2,  4) \
     TIMER_PIN_MAP(4, LED_STRIP_PIN,    1,  0) \
-    TIMER_PIN_MAP(5, GYRO_1_CLKIN_PIN, 1, -1)
+    TIMER_PIN_MAP(5, GYRO_1_CLKIN_PIN, 2, -1)
 
 #define ADC_INSTANCE            ADC1
 #define ADC1_DMA_OPT            11
 #define BEEPER_INVERTED
 #define SYSTEM_HSE_MHZ          8
 
-#define BARO_I2C_INSTANCE       I2CDEV_1
-#define MAG_I2C_INSTANCE        I2CDEV_1
+#define BARO_I2C_INSTANCE       I2CDEV_2
+#define MAG_I2C_INSTANCE        I2CDEV_2
 #define DEFAULT_ALIGN_BOARD_YAW 45
 #define GYRO_1_SPI_INSTANCE     SPI1
 #define MAX7456_SPI_INSTANCE    SPI2
