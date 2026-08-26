@@ -30,6 +30,8 @@
 #define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
+#define USE_ACCGYRO_ICM45686
+#define USE_ACCGYRO_LSM6DSK320X
 #define USE_FLASH
 #define USE_FLASH_M25P16
 #define USE_BARO
@@ -157,4 +159,3 @@
 #define MAX7456_SPI_INSTANCE                SPI2
 #define FLASH_SPI_INSTANCE                  SPI3
 #define GYRO_2_SPI_INSTANCE                 SPI4
-//#define GYRO_2_ALIGN                    CW90_DEG
