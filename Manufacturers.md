@@ -137,6 +137,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |TACO|Taco RC|https://taco-rc.com/|
 |TCMM|Shenzhen Xinmumu Science and Technology Co (TCMM)|http://www.tcmm-rc.cn/|
 |TEBS|Team Blacksheep|https://www.team-blacksheep.com/|
+|TEHD|TEFPV|https://www.tefpv.com/|
 |TJRC|Feijian Technology (Shenzhen) Co., Ltd|http://www.tjrcfpv.com/|
 |TMTR|T-motor|http://uav-en.tmotor.com/|
 |TTRH|TransTEC|http://www.transtechobby.com/|
