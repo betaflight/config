@@ -32,9 +32,6 @@
 #define USE_BARO_BMP388
 #define USE_BARO_DPS310
 #define USE_MAX7456
-#define USE_MAG
-#define USE_MAG_QMC5883L
-#define USE_MAG_IST8310
 #define USE_SDCARD
 #define USE_FLASH
 #define USE_FLASH_W25Q128FV
