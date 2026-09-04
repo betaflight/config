@@ -129,7 +129,7 @@
 #define MAG_I2C_INSTANCE             I2CDEV_1
 
 #define GYRO_1_SPI_INSTANCE          SPI2
-#define GYRO_1_ALIGN                 CW90_DEG
+#define GYRO_1_ALIGN                 CW90_DEG_FLIP
 #define MAX7456_SPI_INSTANCE         SPI3
 #define FLASH_SPI_INSTANCE           SPI1
 
