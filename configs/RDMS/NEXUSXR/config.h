@@ -18,16 +18,15 @@
  *
  * If not, see <http://www.gnu.org/licenses/>.
  */
-
-#pragma once
-
-#define FC_TARGET_MCU     STM32F722
-
 /*
     SUPPORTED TARGET - THANK YOU
     REFERENCE: sha256_dd6db62d474f1456c68eb71ac9bced381110ad1f570f467ac06793cff8b03207
     DATE: 2026-05-01
 */
+
+#pragma once
+
+#define FC_TARGET_MCU     STM32F722
 
 #define BOARD_NAME        NEXUSXR
 #define MANUFACTURER_ID   RDMS
