@@ -30,7 +30,7 @@
 #define BEEPER_INVERTED
 #define LED_STRIP_PIN                   PA5
 #define LED0_PIN                        PE5
-#define LED1_PIN                        PE4
+#define LED1_PIN                        PE2
 
 // MOTORS & SERVOS
 #define MOTOR1_PIN                      PC7
@@ -43,6 +43,10 @@
 #define MOTOR8_PIN                      PE14
 
 // SPI
+#define SPI1_SCK_PIN                    PB3
+#define SPI1_SDI_PIN                    PB4
+#define SPI1_SDO_PIN                    PB5
+
 #define SPI2_SCK_PIN                    PB13
 #define SPI2_SDI_PIN                    PB14
 #define SPI2_SDO_PIN                    PB15
@@ -60,14 +64,13 @@
 
 #define GYRO_1_CLKIN_PIN                PD13
 #define GYRO_1_EXTI_PIN                 PC4
-#define GYRO_1_CS_PIN                   PA4
+#define GYRO_1_CS_PIN                   PB12
 #define GYRO_1_SPI_INSTANCE             SPI2
 #define GYRO_1_ALIGN                    CW90_DEG
 
 // FLASH
 #define USE_FLASH
-#define USE_FLASH_W25Q128FV
-#define USE_FLASH_M25P16
+#define USE_FLASH_W25N01G
 #define FLASH_CS_PIN                    PA15
 #define FLASH_SPI_INSTANCE              SPI3
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
@@ -114,14 +117,19 @@
 #define PINIO1_PIN                      PA2
 #define PINIO2_PIN                      PA3
 #define PINIO3_PIN                      PB12
+#define PINIO4_PIN                      PD15
 
 #define PINIO1_BOX                      40
 #define PINIO2_BOX                      41
 #define PINIO3_BOX                      42
+#define PINIO4_BOX                      43
 
 #define PINIO3_CONFIG                   129
 
+#define BOX_USER1_NAME                  "USER1"
+#define BOX_USER2_NAME                  "USER2"
 #define BOX_USER3_NAME                  "VTX POWER"
+#define BOX_USER4_NAME                  "CAM SWITCH"
 
 // CONNECTORS
 #ifdef USE_GPS
