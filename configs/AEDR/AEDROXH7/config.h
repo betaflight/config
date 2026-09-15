@@ -55,6 +55,11 @@
 #define SPI3_SDI_PIN                    PC11
 #define SPI3_SDO_PIN                    PB2
 
+// OSD
+#define USE_MAX7456
+#define MAX7456_SPI_INSTANCE            SPI1 
+#define MAX7456_SPI_CS_PIN              PE4
+
 // GYRO & ACC
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
