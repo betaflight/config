@@ -121,7 +121,7 @@
 // PINIO
 #define PINIO1_PIN                      PA2
 #define PINIO2_PIN                      PA3
-#define PINIO3_PIN                      PB12
+#define PINIO3_PIN                      PB1
 #define PINIO4_PIN                      PD15
 
 #define PINIO1_BOX                      40
