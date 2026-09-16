@@ -131,8 +131,6 @@
 
 #define PINIO3_CONFIG                   129
 
-#define BOX_USER1_NAME                  "USER1"
-#define BOX_USER2_NAME                  "USER2"
 #define BOX_USER3_NAME                  "VTX POWER"
 #define BOX_USER4_NAME                  "CAM SWITCH"
 
