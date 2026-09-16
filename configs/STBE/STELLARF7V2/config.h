@@ -88,7 +88,7 @@
                             TIMER_PIN_MAP( 5, PB10, 1,  0 ) \
                             TIMER_PIN_MAP( 6, PB11, 1,  0 )
 
-#define ADC1_DMA_OPT 1
+#define ADC3_DMA_OPT 1
 
 //TODO feature OSD
 //TODO feature RX_SERIAL
@@ -104,7 +104,7 @@
 
 #define MAG_I2C_INSTANCE I2CDEV_1
 #define BARO_I2C_INSTANCE I2CDEV_1
-#define ADC_INSTANCE ADC1
+#define ADC_INSTANCE ADC3
 #define DEFAULT_BLACKBOX_DEVICE BLACKBOX_DEVICE_FLASH
 #define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
 #define DEFAULT_MOTOR_DSHOT_SPEED PWM_TYPE_DSHOT300
