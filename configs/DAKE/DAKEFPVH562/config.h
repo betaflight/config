@@ -45,7 +45,7 @@
 #define USE_FLASH_M25P16
 #define USE_MAX7456
 
-#define BEEPER_PIN           PA14
+#define BEEPER_PIN           PA13
 #define MOTOR1_PIN           PC6    // TIM8_CH1
 #define MOTOR2_PIN           PC7    // TIM8_CH2
 #define MOTOR3_PIN           PC8    // TIM8_CH3
@@ -57,7 +57,6 @@
 #define SERVO1_PIN           PB3    // TIM2_CH2
 #define SERVO2_PIN           PB10   // TIM2_CH3 
 #define LED_STRIP_PIN        PB6    // TIM4_CH1 
-// #define CAMERA_CONTROL_PIN   PC2    // TIM4_CH4
 #define UART1_TX_PIN         PA9
 #define UART1_RX_PIN         PA10
 #define UART2_TX_PIN         PA2
@@ -71,7 +70,7 @@
 #define UART7_RX_PIN         PA8
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB7
-#define LED0_PIN             PC13
+#define LED0_PIN             PA14
 #define SPI1_SCK_PIN         PA5
 #define SPI1_SDI_PIN         PA6
 #define SPI1_SDO_PIN         PA7
@@ -83,9 +82,8 @@
 #define SPI3_SDO_PIN         PB2
 #define ADC_CURR_PIN         PC0
 #define ADC_VBAT_PIN         PC1
-#define PINIO1_PIN           PA13
-#define PINIO2_PIN           PC14
-#define PINIO3_PIN           PC15
+#define PINIO1_PIN           PC13
+#define PINIO2_PIN           PC2
 #define FLASH_CS_PIN         PC3
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC5
