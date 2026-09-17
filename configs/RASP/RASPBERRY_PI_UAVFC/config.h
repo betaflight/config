@@ -30,9 +30,6 @@
 #define USE_ACCGYRO_ICM56686
 #define USE_GYRO_SPI_ICM56686
 #define USE_ACC_SPI_ICM56686
-#define USE_GYRO_SPI_ICM42688P
-#define USE_GYRO_SPI_ICM42688P
-#define USE_ACC_SPI_ICM42688P
 #define GYRO_1_SPI_INSTANCE  SPI0
 
 #define USE_SDCARD
@@ -45,7 +42,7 @@
 #define PICO_TRACE_UART_INSTANCE  0
 #define PICO_TRACE_TX_GPIO       2 // J2 (LED connector) 3 of 3
 #else
-// uart1 via Radio "UART2" connector (J3)
+// uart1 via Radio "U2" connector (J3)
 #define PICO_TRACE_UART_INSTANCE  1
 #define PICO_TRACE_TX_GPIO       42
 #endif
@@ -83,12 +80,24 @@
 #define BOARD_U2RX           PA43
 #define BOARD_U3TX           PA16
 #define BOARD_U3RX           PA17
+#define BOARD_SBUS           PA41
 #define BOARD_GP1            PA12
 #define BOARD_GP2            PA13
 #define BOARD_GP3            PA14
 
-// Default UART, PIOUART assignments.
-// NB when defined, PIOUART0 and PIOUART1 pins need to be all either in range PA0..PA31 or in range PA16..PA47
+/*
+ * Default UART, PIOUART assignments.
+ * NB when defined, PIOUART0 and PIOUART1 pins need to be all either in range PA0..PA31 or in range PA16..PA47
+ * If HD (digital OSD) was selected, let the port default (reset) values be suitable for, e.g., DJI with DVTX + SBUS
+ * otherwise for analogue AVTX
+ *
+ *                  UART0       UART1               PIOUART0       PIOUART1
+ * HD (digital)     U0 DVTX     SBUS (radio RX)     U1 GPS         U2 (radio TX, RX)
+ * SD (analogue)    U0 spare    U2 (radio TX, RX)   U1 GPS         U3 AVTX
+ *
+*/
+
+#ifdef USE_OSD_HD
 
 #if !defined(PICO_TRACE_UART_INSTANCE) || PICO_TRACE_UART_INSTANCE != 0
 // UART0 for DVTX (T,R)
@@ -97,18 +106,42 @@
 #endif
 
 #if !defined(PICO_TRACE_UART_INSTANCE) || PICO_TRACE_UART_INSTANCE != 1
-// UART1 for GPS (T,R)
-#define UART1_TX_PIN         BOARD_U1TX
-#define UART1_RX_PIN         BOARD_U1RX
+// UART1 for SBUS RX (option for Radio)
+#define UART1_TX_PIN         NONE
+#define UART1_RX_PIN         BOARD_SBUS
 #endif
 
-// PIOUART0 for Radio RX (T,R)
-#define PIOUART0_TX_PIN      BOARD_U2TX
-#define PIOUART0_RX_PIN      BOARD_U2RX
+// PIOUART0 for GPS (T,R)
+#define PIOUART0_TX_PIN      BOARD_U1TX
+#define PIOUART0_RX_PIN      BOARD_U1RX
+
+// PIOUART1 for Radio RX (T,R)
+#define PIOUART1_TX_PIN      BOARD_U2TX
+#define PIOUART1_RX_PIN      BOARD_U2RX
+
+#else
+
+#if !defined(PICO_TRACE_UART_INSTANCE) || PICO_TRACE_UART_INSTANCE != 0
+// UART0 spare (on DVTX T,R)
+#define UART0_TX_PIN         BOARD_U0TX
+#define UART0_RX_PIN         BOARD_U0RX
+#endif
+
+#if !defined(PICO_TRACE_UART_INSTANCE) || PICO_TRACE_UART_INSTANCE != 1
+// UART1 for Radio RX (T,R)
+#define UART1_TX_PIN         BOARD_U2TX
+#define UART1_RX_PIN         BOARD_U2RX
+#endif
+
+// PIOUART0 for GPS (T,R)
+#define PIOUART0_TX_PIN      BOARD_U1TX
+#define PIOUART0_RX_PIN      BOARD_U1RX
 
 // PIOUART1 for AVTX (VID T, R)
 #define PIOUART1_TX_PIN      BOARD_U3TX
 #define PIOUART1_RX_PIN      BOARD_U3RX
+
+#endif // USE_OSD_HD
 
 #define USE_BARO
 // DPS368 same drivers as for DPS310
@@ -141,8 +174,7 @@
 
 // In this config file, we choose between support for LED STRIP or FB OSD (both require a PIO block)
 #ifndef ENABLE_FB_OSD
-// Set the default behaviour
-// #define ENABLE_FB_OSD        0
+// Set the default behaviour (can disable by predefining ENABLE_FB_OSD=0)
 #define ENABLE_FB_OSD        1
 #endif
 
@@ -176,15 +208,15 @@
 
 #ifndef OSD_FB_PICO_ENABLE_PIXEL_MODE
 // Default is to enable pixel-based elements
-#define OSD_FB_PICO_ENABLE_PIXEL_MODE 1
 // Alternative is to reproduce MAX7456-like purely character-based display
-// #define OSD_FB_PICO_ENABLE_PIXEL_MODE 0
+// by predefining OSD_FB_PICO_ENABLE_PIXEL_MODE=0
+#define OSD_FB_PICO_ENABLE_PIXEL_MODE 1
 #endif
 
 #if OSD_FB_PICO_ENABLE_PIXEL_MODE
 // Bring in pixel-based elements
 
-// These default to enabled, can disable here
+// These default to enabled, can disable by defining as here
 // #define OSD_FB_ELEMENT_ENABLE_ARTIFICIAL_HORIZON  0
 // #define OSD_FB_ELEMENT_ENABLE_ALTITUDE            0
 
@@ -236,5 +268,4 @@
 /*
 GYRO_CLK        PA27
 TELEM_RX        PA5
-DVTX_SBUS_RX    PA41
 */
