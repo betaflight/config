@@ -41,6 +41,13 @@
 #define USE_BARO_DPS310
 #define USE_MAX7456
 
+#define USE_SDCARD
+#define USE_SDCARD_SPI
+#define SDCARD_SPI_INSTANCE  SPI3
+#define SDCARD_SPI_CS_PIN    PC13
+
+#define DEFAULT_BLACKBOX_DEVICE BLACKBOX_DEVICE_SDCARD
+
 #define LED0_PIN          PB0
 #define LED1_PIN          PB1
 
@@ -62,6 +69,10 @@
 #define SPI2_SCK_PIN          PB13
 #define SPI2_SDI_PIN          PB14
 #define SPI2_SDO_PIN          PB15
+
+#define SPI3_SCK_PIN          PB3
+#define SPI3_SDI_PIN          PB4
+#define SPI3_SDO_PIN          PB5
 
 #define ADC_VBAT_PIN      PC2
 #define ADC_CURR_PIN      PC1
