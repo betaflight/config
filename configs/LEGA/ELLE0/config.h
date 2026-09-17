@@ -69,7 +69,7 @@
 
 
 
-#define ADC1_DMA_OPT        1
+#define ADC1_DMA_OPT        0
 
 #define SYSTEM_HSE_MHZ 25
 #define GYRO_1_SPI_INSTANCE SPI2
