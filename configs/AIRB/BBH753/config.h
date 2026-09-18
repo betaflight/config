@@ -64,9 +64,6 @@
 #define MOTOR3_PIN           PE9
 #define MOTOR4_PIN           PE11
 
-// PPM Input Pad — PE13 (TIM1 CH3)
-#define RX_PPM_PIN           PE13
-
 #define LED_STRIP_PIN        PD12
 
 // UART x8
@@ -146,8 +143,7 @@
     TIMER_PIN_MAP( 2, PE9,  1,  2) \
     TIMER_PIN_MAP( 3, PE11, 1,  3) \
     TIMER_PIN_MAP( 4, PD12, 1,  4) \
-    TIMER_PIN_MAP( 5, PE13, 1,  5) \
-    TIMER_PIN_MAP( 6, PD15, 1, -1)
+    TIMER_PIN_MAP( 5, PD15, 1, -1)
 
 #define ADC1_DMA_OPT         8
 #define ADC3_DMA_OPT         9
@@ -157,7 +153,7 @@
 #define BARO_I2C_INSTANCE    I2CDEV_2
 #define MAG_I2C_INSTANCE     I2CDEV_2
 
-#define DEFAULT_BLACKBOX_DEVICE        BLACKBOX_DEVICE_NONE
+#define DEFAULT_BLACKBOX_DEVICE        BLACKBOX_DEVICE_FLASH
 #define DEFAULT_GYRO_TO_USE            GYRO_CONFIG_USE_GYRO_BOTH
 #define DEFAULT_CURRENT_METER_SOURCE   CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE   VOLTAGE_METER_ADC
