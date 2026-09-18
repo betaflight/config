@@ -133,7 +133,7 @@ DATE: 2026-05-01
 // I2C0 -- onboard barometer (DPS368 / BMP390 alt) with R54/R55 2k pull-ups
 #define USE_BARO
 #define USE_BARO_DPS310     // DPS368 is pin/register-compatible with DPS310
-#define USE_BARO_BMP390
+#define USE_BARO_BMP388
 #define BARO_I2C_INSTANCE    I2CDEV_0
 #define I2C0_SDA_PIN         PA24
 #define I2C0_SCL_PIN         PA25
