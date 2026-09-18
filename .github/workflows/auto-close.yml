@@ -14,9 +14,6 @@ jobs:
     if: github.repository == 'betaflight/config'
     runs-on: ubuntu-latest
     steps:
-      - name: Code Checkout
-        uses: actions/checkout@v5
-
       - name: autoclose
         shell: bash
         if: github.head_ref == 'master'
