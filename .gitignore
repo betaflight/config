@@ -53,3 +53,7 @@ dkms.conf
 
 # OSX
 .DS_Store
+
+# Python
+__pycache__/
+*.pyc
