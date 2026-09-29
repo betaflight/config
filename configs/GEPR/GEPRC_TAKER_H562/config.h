@@ -104,11 +104,11 @@ REFERENCE: sha256_f2926b24b555f146563a8b33f0244c3c862d54ae8b7e40d06bf6fbfe0881ab
     TIMER_PIN_MAP( 6, SERVO1_PIN, 2, -1) \
     TIMER_PIN_MAP( 7, SERVO2_PIN, 2, -1)
 
-#define ADC1_DMA_OPT 0
+#define ADC1_DMA_OPT 5
 
 #define PINIO1_CONFIG           129
 #define PINIO2_CONFIG           129
-#define PINIO3_CONFIG           0
+#define PINIO3_CONFIG           1
 
 #define PINIO1_BOX              40
 #define PINIO2_BOX              41
