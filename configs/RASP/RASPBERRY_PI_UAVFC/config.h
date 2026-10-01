@@ -130,10 +130,11 @@
 #define BEEPER_PIN           PA3
 
 #ifndef PICO_BEC_ENABLE_NONINVERTED
+// For this board, high means enable
 #define PICO_BEC_ENABLE_NONINVERTED 1
 #endif
-#define PICO_BEC_5V_ENABLE_PIN PA18
-#define PICO_BEC_9V_ENABLE_PIN PA19
+#define PICO_BEC_5V_ENABLE_PIN PA19
+#define PICO_BEC_9V_ENABLE_PIN PA18
 
 #define ADC_VBAT_PIN         PA46
 #define ADC_CURR_PIN         PA47
