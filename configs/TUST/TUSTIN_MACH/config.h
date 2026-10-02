@@ -31,7 +31,6 @@
 #define USE_ACC
 #define USE_GYRO
 #define USE_ACCGYRO_ICM45686
-#define USE_ACCGYRO_BMI088
 
 // ICP-20100 pressure sensor on I2C2
 #define USE_BARO
@@ -112,9 +111,9 @@
 #define MAX7456_SPI_CS_PIN             PB12
 #define GYRO_1_CS_PIN                  PA15
 #define GYRO_1_EXTI_PIN                PB7
-#define GYRO_2_CS_PIN                  PD5
-#define GYRO_2_EXTI_PIN                PC15
-#define ACC_2_CS_PIN                   PD4
+
+// Unused BMI088 footprint on SPI2: gyro CS PD5, gyro EXTI PC15, accel CS PD4.
+// BMI088 is intentionally not enabled; keep these pins documented for PCB reference.
 #define FLASH_CS_PIN                   PD10
 #define USB_DETECT_PIN                 PA8
 
@@ -145,7 +144,6 @@
 #define TIMUP4_DMA_OPT                 12
 
 #define GYRO_1_SPI_INSTANCE            SPI3
-#define GYRO_2_SPI_INSTANCE            SPI2
 #define MAG_I2C_INSTANCE               I2CDEV_2
 #define BARO_I2C_INSTANCE              I2CDEV_2
 #define MAX7456_SPI_INSTANCE           SPI1
@@ -168,9 +166,9 @@
 #endif
 
 /*
- * The schematic does not specify the ICM-45686, BMI088 or IST8310 mounting
+ * The schematic does not specify the ICM-45686 or IST8310 mounting
  * orientation. Verify sensor alignment from the PCB or on hardware before
- * flight, then add GYRO_1_ALIGN, GYRO_2_ALIGN and MAG_ALIGN here.
+ * flight, then add GYRO_1_ALIGN and MAG_ALIGN here.
  *
  * The current-meter scale depends on the connected ESC and must be calibrated
  * for that ESC. F-RAM is 32 KiB; microSD remains the blackbox default.
