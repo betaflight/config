@@ -33,7 +33,6 @@
 #define USE_SDCARD
 #define USE_SDCARD_SDIO
 #define USE_MAG
-#define USE_GYRO_CLKIN
 
 #define BEEPER_PIN PE12 // BUZZER
 #define MOTOR1_PIN PE9 // TIM1_CH1
