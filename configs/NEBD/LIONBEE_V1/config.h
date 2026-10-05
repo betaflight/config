@@ -31,6 +31,11 @@
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 #define USE_ACCGYRO_BMI270
+// A board config does not get the compass and barometer drivers by default.
+#define USE_BARO
+#define USE_BARO_DPS310
+#define USE_MAG
+#define USE_MAG_QMC5883
 // Unproven: BMI270 rotation direction is unconfirmed on hardware and may be 180 degrees off.
 #define ENABLE_BMI270_ALIGN_AS_ICM 1
 #define USE_FLASH
@@ -122,4 +127,3 @@
 #define DEFAULT_CURRENT_METER_SCALE     447
 #define DEFAULT_ALIGN_BOARD_PITCH       180
 #define YAW_MOTORS_REVERSED             1
-// Unproven: vendor defaults (motor idle, PIDs, rates, OSD layout) are not set here.
