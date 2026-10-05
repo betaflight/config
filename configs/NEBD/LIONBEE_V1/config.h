@@ -36,6 +36,9 @@
 #define USE_BARO_DPS310
 #define USE_MAG
 #define USE_MAG_QMC5883
+// The kit has an onboard LED strip pad and an M10 GPS, so a cloud build must compile both in.
+#define USE_LED_STRIP
+#define USE_GPS
 // Unproven: BMI270 rotation direction is unconfirmed on hardware and may be 180 degrees off.
 #define ENABLE_BMI270_ALIGN_AS_ICM 1
 #define USE_FLASH
