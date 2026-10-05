@@ -31,13 +31,13 @@
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 #define USE_ACCGYRO_BMI270
-// A board config does not get the compass and barometer drivers by default.
+// The board has an onboard LED strip; a cloud build does not enable it by default.
+#define USE_LED_STRIP
+// Kit sensors (DPS310 barometer, QMC5883 compass, M10 GPS) are not enabled by default in a cloud build.
 #define USE_BARO
 #define USE_BARO_DPS310
 #define USE_MAG
 #define USE_MAG_QMC5883
-// The board has an onboard LED strip and the kit includes an M10 GPS; a cloud build skips the default feature block.
-#define USE_LED_STRIP
 #define USE_GPS
 // Unproven: BMI270 rotation direction is unconfirmed on hardware and may be 180 degrees off.
 #define ENABLE_BMI270_ALIGN_AS_ICM 1
