@@ -78,7 +78,11 @@
 #define GYRO_1_CS_PIN       PA4
 
 // Unproven: PA14 (low bit) and PB7 (high bit) are the VTX power-code lines, set as PINIO outputs (unverified: 00 = 25 mW, 01 = 100 mW, 10 = MAX).
-// pinio_box picks the armed code: 100 mW 0,255,255,255 (default below); MAX 255,0,255,255; 25 mW 255,255,255,255. A user mode on a pin gives a switch.
+// pinio_box sets the armed VTX power code (0 = ARM mode ID, 255 = no box); disarmed is always 00 (25 mW):
+// pinio_box = 255,255,255,255   armed 00 = 25 mW
+// pinio_box = 0,255,255,255     armed 01 = 100 mW (default here, set by PINIO1_BOX below)
+// pinio_box = 255,0,255,255     armed 10 = MAX
+// pinio_box = 0,0,255,255       armed 11 = meaning unknown, untested
 #define RTC6705_CS_PIN      PB2
 #define PINIO1_PIN          PA14
 // 0 is the ARM mode ID, so PA14 follows the armed state: high when armed, low (lowest power) when disarmed.
