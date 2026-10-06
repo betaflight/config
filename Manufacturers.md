@@ -75,6 +75,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |GFPV|GE-FPV|http://www.ge-fpv.com/|
 |GMRC|Great Mountain RC|https://github.com/shanggl|
 |HAMO|Happymodel|http://www.happymodel.cn/|
+|HMSR|Hamster Robotics|https://support.hamsterrobotics.space/|
 |HARC|HAKRC|https://www.hakrc.com/|
 |HBRD|Hummingbird|https://newbeedrone.com/collections/hummingbird|
 |HBRO|Holybro|http://www.holybro.com/index.html|
