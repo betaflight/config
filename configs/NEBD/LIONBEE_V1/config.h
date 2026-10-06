@@ -37,7 +37,7 @@
 #define USE_BARO
 #define USE_BARO_DPS310
 #define USE_MAG
-#define USE_MAG_QMC5883
+#define USE_MAG_QMC5883L
 #define USE_GPS
 // Unproven: BMI270 rotation direction is unconfirmed on hardware and may be 180 degrees off.
 #define ENABLE_BMI270_ALIGN_AS_ICM 1
