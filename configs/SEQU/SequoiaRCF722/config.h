@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32F722
 
-#define BOARD_NAME        SequoiaRCF722
+#define BOARD_NAME        SEQUOIARCF722
 #define MANUFACTURER_ID   SEQU
 
 #define USE_GYRO
