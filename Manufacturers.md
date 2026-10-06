@@ -75,7 +75,6 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |GFPV|GE-FPV|http://www.ge-fpv.com/|
 |GMRC|Great Mountain RC|https://github.com/shanggl|
 |HAMO|Happymodel|http://www.happymodel.cn/|
-|HMSR|Hamster Robotics|https://support.hamsterrobotics.space/|
 |HARC|HAKRC|https://www.hakrc.com/|
 |HBRD|Hummingbird|https://newbeedrone.com/collections/hummingbird|
 |HBRO|Holybro|http://www.holybro.com/index.html|
@@ -84,6 +83,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |HENA|Heli-Nation|https://www.heli-nation.com/|
 |HFOR|HIFIONRC|http://www.hifionrc.com/|
 |HGLR|HGLRC|https://www.hglrc.com/|
+|HMSR|Hamster Robotics|https://support.hamsterrobotics.space/|
 |HNEC|Huizhou NIDICI Electronic Co., Ltd|https://shop.nidici.com/|
 |HOWI|Hobbywing Technology Co., Ltd|http://hobbywing.com/|
 |IFRC|iFlight Innovation Technology Ltd.|https://www.iflight-rc.com/|
