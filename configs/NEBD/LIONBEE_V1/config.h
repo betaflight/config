@@ -32,7 +32,9 @@
 #define USE_GYRO_SPI_ICM42688P
 #define USE_ACCGYRO_BMI270
 // The board has an onboard LED strip; a cloud build does not enable it by default.
+#ifndef USE_LED_STRIP
 #define USE_LED_STRIP
+#endif
 // Kit sensors (DPS310 barometer, QMC5883 compass, M10 GPS) are not enabled by default in a cloud build.
 #define USE_BARO
 #define USE_BARO_DPS310
