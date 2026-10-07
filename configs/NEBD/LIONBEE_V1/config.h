@@ -121,12 +121,13 @@
 #define SPI_SHARED_MAX7456_AND_RTC6705
 #define MAG_I2C_INSTANCE                I2CDEV_2
 #define BARO_I2C_INSTANCE               I2CDEV_2
-// Unproven: the GPS feature is not enabled by default here; the vendor firmware enables it in config.c.
 #define GPS_UART                        SERIAL_PORT_UART5
 
 #define RX_SPI_LED_INVERTED
 #define RX_SPI_DEFAULT_PROTOCOL         RX_SPI_EXPRESSLRS
 #define DEFAULT_RX_FEATURE              FEATURE_RX_SPI
+// The kit includes a GPS; the board has an OSD chip and an onboard LED strip.
+#define DEFAULT_FEATURES                (FEATURE_GPS | FEATURE_OSD | FEATURE_LED_STRIP)
 // Unproven: TMR5 comes from the vendor config and is not checked on the factory unit.
 #define RX_EXPRESSLRS_TIMER_INSTANCE    TMR5
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
