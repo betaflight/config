@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     AT32F435G
 
-#define BOARD_NAME        LIONBEE_V1_DEV
+#define BOARD_NAME        LIONBEE_V1
 #define MANUFACTURER_ID   NEBD
 
 #define USE_ACC
