@@ -38,9 +38,13 @@
 // Kit sensors (DPS310 barometer, QMC5883 compass, M10 GPS) are not enabled by default in a cloud build.
 #define USE_BARO
 #define USE_BARO_DPS310
+#ifndef USE_MAG
 #define USE_MAG
 #define USE_MAG_QMC5883L
+#endif
+#ifndef USE_GPS
 #define USE_GPS
+#endif
 // Unproven: BMI270 rotation direction is unconfirmed on hardware and may be 180 degrees off.
 #define ENABLE_BMI270_ALIGN_AS_ICM 1
 #define USE_FLASH
