@@ -135,6 +135,9 @@
 #define DEFAULT_RX_FEATURE              FEATURE_RX_SPI
 // The kit includes a GPS; the board has an OSD chip and an onboard LED strip.
 #define DEFAULT_FEATURES                (FEATURE_GPS | FEATURE_OSD | FEATURE_LED_STRIP)
+// The kit has an analog MAX7456 OSD and an RTC6705 analog VTX; default to analog, not HD.
+#define DEFAULT_VIDEO_SYSTEM            VIDEO_SYSTEM_AUTO
+#define DEFAULT_OSD_DISPLAYPORT_DEVICE  OSD_DISPLAYPORT_DEVICE_AUTO
 // Unproven: TMR5 comes from the vendor config and is not checked on the factory unit.
 #define RX_EXPRESSLRS_TIMER_INSTANCE    TMR5
 #define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
