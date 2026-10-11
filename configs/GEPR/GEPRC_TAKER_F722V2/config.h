@@ -124,7 +124,9 @@ REFERENCE: sha256_f2926b24b555f146563a8b33f0244c3c862d54ae8b7e40d06bf6fbfe0881ab
 #define BOX_USER2_NAME "CAM 1,2"
 #define BOX_USER4_NAME "LIGHT OFF"
 
+#ifdef USE_VTX
 #define VTX_TRAMP_UART                  SERIAL_PORT_USART1
+#endif
 #define SERIALRX_UART                   SERIAL_PORT_USART2
 #define MSP_UART                        SERIAL_PORT_USART6
 
