@@ -97,6 +97,7 @@
 #define PINIO2_PIN           PE15   // IO2 PAD
 #define PINIO3_PIN           PE10   // IO3 PAD
 #define PINIO4_PIN           PC14   // 12V BEC EN
+#define PINIO_COUNT 8
 #define PINIO5_PIN           PE12   // IO4 PAD
 #define SDCARD_DETECT_PIN    PD2
 #define SDIO_DEVICE          SDIODEV_2
