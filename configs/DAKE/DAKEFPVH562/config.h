@@ -84,6 +84,8 @@
 #define ADC_VBAT_PIN         PC1
 #define PINIO1_PIN           PC13
 #define PINIO2_PIN           PC2
+#define PINIO3_PIN           PC14
+#define PINIO4_PIN           PC15
 #define FLASH_CS_PIN         PC3
 #define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC5
@@ -122,12 +124,15 @@
 #define BEEPER_INVERTED
 #define PINIO1_CONFIG 129
 #define PINIO1_BOX 40
-#define BOX_USER1_NAME                      "CAM 1,2"
+#define BOX_USER1_NAME                      "CAM Switch"
 #define PINIO2_CONFIG 129
 #define PINIO2_BOX 41
-#define BOX_USER2_NAME                      "12V BEC"
+#define BOX_USER2_NAME                      "BLE Switc"
 #define PINIO3_CONFIG 129
 #define PINIO3_BOX 42
+#define BOX_USER3_NAME                      "12V BEC Switch"
+#define PINIO4_CONFIG 129
+#define PINIO4_BOX 43
 
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG
