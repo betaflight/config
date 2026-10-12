@@ -109,7 +109,7 @@
 #define SDIO_D2_PIN          PB3
 #define SDIO_D3_PIN          PB4
 #define CAN1_RX_PIN          PB8
-#define CAN1_TX_PIX          PB9
+#define CAN1_TX_PIN          PB9
 
 /*
     PC6 -  TIM8_CH1
