@@ -9,6 +9,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |FOSS|Free open source target definitions||
 |COMM|Community provided target definitions for closed source targets||
 |LEGA|Closed source legacy targets without a maintainer||
+|ACCT|Accton Technology Corporation|https://www.accton-iot.com/|
 |ACRO|ARCROBO Pte., Ltd|https://www.arcrobo.com.sg/|
 |AEDR|AEDROX|https://www.aedrox.com/|
 |AERO|AeroCogito|https://www.aerocogito.com/|
