@@ -9,9 +9,12 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |FOSS|Free open source target definitions||
 |COMM|Community provided target definitions for closed source targets||
 |LEGA|Closed source legacy targets without a maintainer||
+|ACCT|Accton Technology Corporation|https://www.accton-iot.com/|
+|ACRO|ARCROBO Pte., Ltd|https://www.arcrobo.com.sg/|
 |AEDR|AEDROX|https://www.aedrox.com/|
 |AERO|AeroCogito|https://www.aerocogito.com/|
 |AFNG|AlienFlight NG|https://www.alienflightng.com/|
+|AGAM|Agam Robotics|https://www.agamrobotics.com/shop/|
 |AIKO|AIKON Electronics|https://www.aikon-electronics.com/|
 |AIRB|Airbot|https://store.myairbot.com/|
 |AKIN|AKINGFPV|https://www.akingfpv.com/|
@@ -39,6 +42,8 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |DFRA|Drone FPV Racer|https://www.drone-fpv-racer.com/|
 |DFRC|Shenzhen Jingfei Technology Co., Ltd|https://dreamflyrc.com/|
 |DIAT|Diatone Innovations|https://www.diatoneusa.com/|
+|DOLP|DolphinRC|https://www.dolphinrc.com/|
+|DPDS|Deepspace FPV|https://www.deepspacefpv.com|
 |DRCL|dronercland|https://www.instagram.com/dronercland/|
 |DREA|DREAMRC|https://github.com/dreamworks-fpv|
 |DRNR|Shenzhen Zhimu Technology Co., Ltd|https://www.droneer.com|
@@ -116,6 +121,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |RDMS|RadioMaster RC|https://www.radiomasterrc.com/|
 |RUSH|FPV Racing Rush|http://www.rushfpv.com/|
 |SDRC|Siangda Model Co., Ltd|https://www.sdmodel.com.tw/|
+|SEQU|Sequoia RC|http://hsairc.com|
 |SFLY|Macfos Ltd|https://robu.in|
 |SJET|Shenzhen Jiufang Electronic Technology Co., Ltd|https://www.jiufang-tech.com/|
 |SKST|Shenzhen SKYSTARS Tech Co., LIMITED|http://www.skystars-rc.com/index.html|
