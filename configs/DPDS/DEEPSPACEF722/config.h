@@ -117,7 +117,6 @@
 #define BOX_USER1_NAME               "VTX PWR"
 
 #define PINIO2_BOX                   41
-#define PINIO2_CONFIG                1
 #define BOX_USER2_NAME               "USER1"
 
 #define DEFAULT_BLACKBOX_DEVICE      BLACKBOX_DEVICE_FLASH
