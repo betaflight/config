@@ -19,6 +19,12 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+ /*
+    SUPPORTED TARGET - THANK YOU
+    REFERENCE: sha256_dcf8e2a99d5e043d97c9e6a789420b17f1e1c682b52eb05f2506044c95a480c3
+    DATE: 2026-05-01
+*/
+
 #pragma once
 
 #define FC_TARGET_MCU       STM32C562
@@ -28,7 +34,6 @@
 
 #define USE_ACC
 #define USE_GYRO
-#define USE_ACCGYRO_LSM6DSV16X
 #define USE_ACCGYRO_LSM6DSK320X
 #define USE_BARO
 #define USE_BARO_DPS310
