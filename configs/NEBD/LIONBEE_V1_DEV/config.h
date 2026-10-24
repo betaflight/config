@@ -54,6 +54,8 @@
 #define USE_RX_SPI
 #define USE_RX_EXPRESSLRS
 #define USE_RX_SX1280
+// config.c seeds the default LED strip layout.
+#define USE_TARGET_CONFIG
 
 #define MOTOR1_PIN          PA1
 #define MOTOR2_PIN          PA0
