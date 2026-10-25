@@ -121,7 +121,6 @@
 #define FLASH_SPI_INSTANCE           SPI1
 
 #define PINIO1_BOX                   40
-#define PINIO1_CONFIG                129
 #define BOX_USER1_NAME               "VCC10V EN"
 
 #define SYSTEM_HSE_MHZ               8
