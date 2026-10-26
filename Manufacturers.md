@@ -150,6 +150,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |WDIY|WDIY|http://wdiy.net.cn/|
 |WIZZ|WIZZ|https://wizz.store/|
 |WRPL|Warp Labs|https://www.warplabs.it/|
+|XCLB|xcorelabs|https://github.com/X-CORE-LABS-PTE-LTD|
 |YUPF|YuPiFc|https://www.yupifc.com/|
 |YYRC|JLDZ||
 |ZEEZ|Zeez RC|https://www.zeezrc.com/|
