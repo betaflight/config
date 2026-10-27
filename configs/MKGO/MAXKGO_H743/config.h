@@ -33,7 +33,8 @@
 #define USE_BARO
 #define USE_BARO_DPS310
 #define USE_BARO_BMP280
-#define USE_SDCARD
+#define USE_FLASH
+#define USE_FLASH_W25Q128FV
 #define USE_MAX7456
 
 #define USE_GYRO_CLKIN
@@ -77,7 +78,7 @@
 #define SPI4_SDO_PIN         PE6
 #define ADC_VBAT_PIN         PC3
 #define ADC_CURR_PIN         PC2
-#define SDCARD_SPI_CS_PIN    PA15
+#define FLASH_CS_PIN         PA15
 #define PINIO1_PIN           PC14
 #define MAX7456_SPI_CS_PIN   PE4
 #define GYRO_1_EXTI_PIN      PD0
@@ -108,14 +109,14 @@
 #define MAG_I2C_INSTANCE                I2CDEV_1
 #define BARO_I2C_INSTANCE               I2CDEV_1
 
-#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
+#define DEFAULT_BLACKBOX_DEVICE   BLACKBOX_DEVICE_FLASH
 #define DEFAULT_CURRENT_METER_SOURCE    CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SCALE 160    // 150k / 10k target voltage 50.4V(12s)
 #define DEFAULT_CURRENT_METER_SCALE     100
 #define BEEPER_INVERTED
-#define USE_SDCARD_SPI
-#define SDCARD_SPI_INSTANCE             SPI3
+
+#define FLASH_SPI_INSTANCE   SPI3
 #define PINIO1_CONFIG                   129
 #define PINIO1_BOX                      40
 #define BOX_USER1_NAME                  "VTX"
