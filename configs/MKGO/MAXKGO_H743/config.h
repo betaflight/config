@@ -38,7 +38,6 @@
 
 #define USE_GYRO_CLKIN
 #define GYRO_1_CLKIN_PIN    PB14
-#define GYRO_1_CLKIN_FREQ   32000
 
 #define BEEPER_PIN             PB3
 #define MOTOR1_PIN           PB4
