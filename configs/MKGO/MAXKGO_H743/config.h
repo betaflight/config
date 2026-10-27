@@ -85,16 +85,16 @@
 
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, LED_STRIP_PIN, 4, 1) \
-    TIMER_PIN_MAP( 1, MOTOR1_PIN, 8, 1) \
-    TIMER_PIN_MAP( 2, MOTOR2_PIN, 8, 2) \
-    TIMER_PIN_MAP( 3, MOTOR3_PIN, 8, 3) \
-    TIMER_PIN_MAP( 4, MOTOR4_PIN, 8, 4) \
+    TIMER_PIN_MAP( 0, LED_STRIP_PIN, 1, 1) \
+    TIMER_PIN_MAP( 1, MOTOR1_PIN, 1, 1) \
+    TIMER_PIN_MAP( 2, MOTOR2_PIN, 1, 2) \
+    TIMER_PIN_MAP( 3, MOTOR3_PIN, 2, 3) \
+    TIMER_PIN_MAP( 4, MOTOR4_PIN, 2, 4) \
     TIMER_PIN_MAP( 5, MOTOR5_PIN, 1, 1) \
     TIMER_PIN_MAP( 6, MOTOR6_PIN, 1, 2) \
     TIMER_PIN_MAP( 7, MOTOR7_PIN, 1, 3) \
     TIMER_PIN_MAP( 8, MOTOR8_PIN, 1, 4) \
-    TIMER_PIN_MAP( 9, GYRO_1_CLKIN_PIN 2, -1)    
+    TIMER_PIN_MAP( 9, GYRO_1_CLKIN_PIN, 2, -1)  
 
 #define ADC1_DMA_OPT                    9
 #define ADC3_DMA_OPT                    10
@@ -118,6 +118,7 @@
 #define SDCARD_SPI_INSTANCE             SPI3
 #define PINIO1_CONFIG                   129
 #define PINIO1_BOX                      40
+#define BOX_USER1_NAME                  "VTX"
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define GYRO_1_ALIGN                    CW180_DEG
 #define GYRO_2_NONE
