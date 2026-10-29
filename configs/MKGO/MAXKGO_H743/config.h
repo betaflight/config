@@ -119,7 +119,7 @@
 #define FLASH_SPI_INSTANCE   SPI3
 #define PINIO1_CONFIG                   129
 #define PINIO1_BOX                      40
-#define BOX_USER1_NAME                  "VTX12V"
+#define BOX_USER1_NAME                  "12VTX"
 #define GYRO_1_SPI_INSTANCE             SPI1
 #define GYRO_1_ALIGN                    CW180_DEG
 #define GYRO_2_NONE
