@@ -127,7 +127,7 @@
 #define BOX_USER1_NAME                      "CAM Switch"
 #define PINIO2_CONFIG 129
 #define PINIO2_BOX 41
-#define BOX_USER2_NAME                      "BLE Switc"
+#define BOX_USER2_NAME                      "BLE Switch"
 #define PINIO3_CONFIG 129
 #define PINIO3_BOX 42
 #define BOX_USER3_NAME                      "12V BEC Switch"
