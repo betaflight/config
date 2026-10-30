@@ -126,13 +126,13 @@
 #define PINIO1_BOX 40
 #define BOX_USER1_NAME                      "CAM Switch"
 #define PINIO2_CONFIG 129
-#define PINIO2_BOX 41
+#define PINIO2_BOX 0
 #define BOX_USER2_NAME                      "BLE Switch"
 #define PINIO3_CONFIG 129
-#define PINIO3_BOX 42
+#define PINIO3_BOX 41
 #define BOX_USER3_NAME                      "12V BEC Switch"
 #define PINIO4_CONFIG 129
-#define PINIO4_BOX 43
+#define PINIO4_BOX 42
 
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG
