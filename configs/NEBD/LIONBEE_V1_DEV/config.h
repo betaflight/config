@@ -45,7 +45,7 @@
 #ifndef USE_GPS
 #define USE_GPS
 #endif
-// Unproven: BMI270 rotation direction is unconfirmed on hardware and may be 180 degrees off.
+// Unproven: BMI270 rotation direction is unconfirmed on hardware and may be 180 degrees off; the hardware vendor reports this define does not work properly on the LionBee.
 #define ENABLE_BMI270_ALIGN_AS_ICM 1
 #define USE_FLASH
 #define USE_FLASH_M25P16
@@ -85,19 +85,13 @@
 #define GYRO_1_EXTI_PIN     PC13
 #define GYRO_1_CS_PIN       PA4
 
-// Unproven: PA14 (low bit) and PB7 (high bit) are the VTX power-code lines, set as PINIO outputs (unverified: 00 = 25 mW, 01 = 100 mW, 10 = MAX).
-// pinio_box sets the armed VTX power code (0 = ARM mode ID, 255 = no box). Disarmed is 00 (25 mW) while each box is 255 or 0;
-// a USER mode that is active while disarmed drives its pin high and changes the disarmed code:
-// pinio_box = 255,255,255,255   armed 00 = 25 mW
-// pinio_box = 0,255,255,255     armed 01 = 100 mW (default here, set by PINIO1_BOX below)
-// pinio_box = 255,0,255,255     armed 10 = MAX
-// pinio_box = 0,0,255,255       armed 11 = meaning unknown, untested
+// RTC6705 external power code: PA14 = bit 0, PB7 = bit 1. 00 = 25 mW (boot default), 01 = 100 mW, 10 = MAX, 11 = undefined and unsafe.
+// Needs betaflight/betaflight PR 15935 (RTC6705_DYNAMIC_POWER_CTRL). VTX table power values 0, 1, 2 select the codes.
+// Unproven: output power per code is from the vendor and not measured.
 #define RTC6705_CS_PIN      PB2
-#define PINIO1_PIN          PA14
-// 0 is the ARM mode ID, so PA14 follows the armed state: high when armed, low (lowest power) when disarmed.
-#define PINIO1_BOX          0
-// No box is set for PB7; the pilot assigns one with pinio_box.
-#define PINIO2_PIN          PB7
+#define RTC6705_DYNAMIC_POWER_CTRL
+#define RTC6705_EX_POWER_1_PIN  PA14
+#define RTC6705_EX_POWER_2_PIN  PB7
 
 #define RX_SPI_CS_PIN                   PA8
 #define RX_SPI_EXTI_PIN                 PB3
