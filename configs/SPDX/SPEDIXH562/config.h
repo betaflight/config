@@ -26,8 +26,6 @@
 #define BOARD_NAME          SPEDIXH562
 #define MANUFACTURER_ID     SPDX
 
-// #define SYSTEM_HSE_MHZ                  25
-
 #define USE_ACC
 #define USE_GYRO
 #define USE_ACCGYRO_LSM6DSK320X
