@@ -161,6 +161,7 @@
 #define BARO_I2C_INSTANCE            I2CDEV_10
 #define MAG_I2C_INSTANCE             I2CDEV_2
 #define GYRO_1_SPI_INSTANCE          SPI1
+#define GYRO_1_ALIGN                 CW90_DEG
 #define MAX7456_SPI_INSTANCE         SPI3
 #define GPS_UART                     SERIAL_PORT_UART9
 #define SERIALRX_UART                SERIAL_PORT_USART1
