@@ -86,10 +86,9 @@
 #define SPI3_SDO_PIN        PB5
 #define FLASH_CS_PIN        PB6
 
-#define LED_STRIP_PIN       PA0
 #define LED0_PIN            PB1
 #define BEEPER_PIN          PB2
-#define LED_STRIP_PIN       PB1
+#define LED_STRIP_PIN       PA0
 #define CAMERA_CONTROL_PIN  PA1
 #define USB_DETECT_PIN      PC3
 
@@ -115,7 +114,7 @@ GYRO-CLKIN TIM3 CH3
     TIMER_PIN_MAP( 1, MOTOR2_PIN,         2,  1) \
     TIMER_PIN_MAP( 2, MOTOR3_PIN,         2,  2) \
     TIMER_PIN_MAP( 3, MOTOR4_PIN,         2,  3) \
-    TIMER_PIN_MAP( 4. LED_STRIP_PIN,      2,  4) \
+    TIMER_PIN_MAP( 4, LED_STRIP_PIN,      2,  4) \
     TIMER_PIN_MAP( 5, CAMERA_CONTROL_PIN, 1, -1) \
     TIMER_PIN_MAP( 6, GYRO_1_CLKIN_PIN,   2, -1)
 
