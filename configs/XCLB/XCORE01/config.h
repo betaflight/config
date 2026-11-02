@@ -18,6 +18,13 @@
 *
 * If not, see <http://www.gnu.org/licenses/>.
 */
+
+/*
+    SUPPORTED TARGET - THANK YOU
+    REFERENCE: sha256_fc62327b9a603ae4c33ff9124a3ba2b9a6a5452cecfbb38fd3438c87e31cfddb
+    DATE: 2026-05-01
+*/
+
 #pragma once
 
 #define FC_TARGET_MCU     X32M7B
