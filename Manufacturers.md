@@ -145,6 +145,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |TTRH|TransTEC|http://www.transtechobby.com/|
 |TURC|TUNERC|https://www.tunerc.com/|
 |UAVD|UAVOD|https://www.uavod.com|
+|UMIC|Unicmicro|https://github.com/unicmicro|
 |VGRC|V-GOOD Technology Co.|http://www.vgoodrc.com/|
 |VIVA|VivaFPV|https://vivafpv.com/|
 |VWIN|Huizhou Xinchuang Technology Co., Ltd||
