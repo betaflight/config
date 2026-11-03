@@ -42,6 +42,7 @@
 #define USE_ACCGYRO_LSM6DSV16X
 #define USE_ACCGYRO_LSM6DSK320X
 #define USE_ACCGYRO_BMI270
+#define USE_ACCGYRO_BMI423
 
 #define USE_MAG
 #define USE_BARO
@@ -163,6 +164,7 @@
 #define GYRO_1_SPI_INSTANCE          SPI1
 #define GYRO_1_ALIGN                 CW90_DEG
 #define ENABLE_BMI270_ALIGN_AS_ICM   1
+#define ENABLE_BMI423_ALIGN_AS_ICM   1
 #define MAX7456_SPI_INSTANCE         SPI3
 #define GPS_UART                     SERIAL_PORT_UART9
 #define SERIALRX_UART                SERIAL_PORT_USART1
