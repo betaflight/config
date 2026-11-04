@@ -45,7 +45,8 @@
 #ifndef USE_GPS
 #define USE_GPS
 #endif
-// Unproven: BMI270 rotation direction is unconfirmed on hardware and may be 180 degrees off; the hardware vendor reports this define does not work properly on the LionBee.
+// The define rotates BMI270 axes to the ICM42688P frame. The rotation direction is fixed in https://github.com/betaflight/betaflight/pull/15971; without that fix the BMI270 frame is reported 180 degrees off.
+// Unproven: no BMI270 LionBee was tested.
 #define ENABLE_BMI270_ALIGN_AS_ICM 1
 #define USE_FLASH
 #define USE_FLASH_M25P16
