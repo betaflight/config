@@ -82,7 +82,7 @@
 #define UART6_RX_PIN         PC7
 #define UART7_RX_PIN         PC3
 
-#define UART1_SEC_RX_PIN     PB7
+#define SA_UART_RX_PIN       PB7
 
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
