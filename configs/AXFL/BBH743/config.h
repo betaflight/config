@@ -43,7 +43,9 @@
 #define USE_FLASH_W25Q128FV
 
 // OSD: MSP DisplayPort on UART7. Bluetooth module on UART8.
+#ifdef USE_OSD_HD
 #define MSP_DISPLAYPORT_UART SERIAL_PORT_UART7
+#endif
 #define MSP_UART             SERIAL_PORT_UART8
 
 // Passive buzzer, NPN driven, active high
