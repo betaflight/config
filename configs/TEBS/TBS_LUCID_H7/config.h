@@ -143,6 +143,10 @@
 #define SDIO_D2_PIN          PC10
 #define SDIO_D3_PIN          PC11
 
+#define CAN1_TX_PIN          PD1
+#define CAN1_RX_PIN          PD0
+#define CAN1_SILENT_PIN      PD3
+
 #define PINIO1_PIN           PD10
 #define PINIO2_PIN           PD11
 #define PINIO3_PIN           PC13
