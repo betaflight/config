@@ -9,6 +9,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |FOSS|Free open source target definitions||
 |COMM|Community provided target definitions for closed source targets||
 |LEGA|Closed source legacy targets without a maintainer||
+|ACCT|Accton Technology Corporation|https://www.accton-iot.com/|
 |ACRO|ARCROBO Pte., Ltd|https://www.arcrobo.com.sg/|
 |AEDR|AEDROX|https://www.aedrox.com/|
 |AERO|AeroCogito|https://www.aerocogito.com/|
@@ -120,6 +121,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |RDMS|RadioMaster RC|https://www.radiomasterrc.com/|
 |RUSH|FPV Racing Rush|http://www.rushfpv.com/|
 |SDRC|Siangda Model Co., Ltd|https://www.sdmodel.com.tw/|
+|SEQU|Sequoia RC|http://hsairc.com|
 |SFLY|Macfos Ltd|https://robu.in|
 |SJET|Shenzhen Jiufang Electronic Technology Co., Ltd|https://www.jiufang-tech.com/|
 |SKST|Shenzhen SKYSTARS Tech Co., LIMITED|http://www.skystars-rc.com/index.html|
@@ -142,12 +144,14 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |TMTR|T-motor|http://uav-en.tmotor.com/|
 |TTRH|TransTEC|http://www.transtechobby.com/|
 |TURC|TUNERC|https://www.tunerc.com/|
+|UAVD|UAVOD|https://www.uavod.com|
 |VGRC|V-GOOD Technology Co.|http://www.vgoodrc.com/|
 |VIVA|VivaFPV|https://vivafpv.com/|
 |VWIN|Huizhou Xinchuang Technology Co., Ltd||
 |WDIY|WDIY|http://wdiy.net.cn/|
 |WIZZ|WIZZ|https://wizz.store/|
 |WRPL|Warp Labs|https://www.warplabs.it/|
+|XCLB|xcorelabs|https://x-corelabs.com/|
 |YUPF|YuPiFc|https://www.yupifc.com/|
 |YYRC|JLDZ||
 |ZEEZ|Zeez RC|https://www.zeezrc.com/|
