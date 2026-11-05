@@ -81,6 +81,7 @@
 #define MAX7456_SPI_CS_PIN      PB12
 #define GYRO_1_EXTI_PIN         PC13
 #define GYRO_1_CS_PIN           PA4
+#define ENABLE_BMI270_ALIGN_AS_ICM 1
 
 #define TIMER_PIN_MAPPING       TIMER_PIN_MAP(0, PA8, 1, 6) \
                                 TIMER_PIN_MAP(1, PB9, 2, 0) \

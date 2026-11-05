@@ -89,10 +89,6 @@
 #define SPI3_SDI_PIN          PC11
 #define SPI3_SDO_PIN          PC12
 
-#define SPI4_SCK_PIN          PE12
-#define SPI4_SDI_PIN          PE13
-#define SPI4_SDO_PIN          PE14
-
 #define CAMERA_CONTROL_PIN    PB14
 
 #define ADC_VBAT_PIN          PC0
@@ -101,7 +97,6 @@
 #define LED0_PIN              PE3
 
 #define PINIO1_PIN            PD10
-#define PINIO2_PIN            PD11
 
 #define GYRO_1_CS_PIN         PC15
 #define GYRO_1_EXTI_PIN       PB2
@@ -157,7 +152,6 @@
 #define FLASH_SPI_INSTANCE              SPI3
 
 #define PINIO1_BOX                      40
-#define PINIO2_BOX                      41
 
 #define PINIO1_CONFIG                   129
 #define BOX_USER1_NAME                  "10V BEC"
