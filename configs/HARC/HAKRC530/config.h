@@ -1,7 +1,4 @@
 /*
- *SUPPORTED TARGET - THANK YOU
- *REFERENCE: sha256_d6b1c2ec6f49dec71100d500d0d6248a7602387cca8691e149a4cdc75b2d2a4f
- *DATE: 2026-05-01
  * This file is part of Betaflight.
  *
  * Betaflight is free software. You can redistribute this software
@@ -20,7 +17,12 @@
  * License along with this software.
  *
  * If not, see <http://www.gnu.org/licenses/>.
+ 
+   SUPPORTED TARGET - THANK YOU
+   REFERENCE: sha256_d6b1c2ec6f49dec71100d500d0d6248a7602387cca8691e149a4cdc75b2d2a4f
+   DATE: 2026-05-01
  */
+
 
 #pragma once
 
