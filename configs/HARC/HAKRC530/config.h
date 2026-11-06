@@ -37,7 +37,6 @@
 #define USE_ACCGYRO_LSM6DSK320X
 #define USE_BARO_BMP280
 #define USE_BARO_DPS310
-#define USE_OSD
 #define USE_MAX7456
 #define USE_LED_STRIP
 #define USE_MAG
