@@ -89,7 +89,6 @@
 
 #define ADC1_DMA_OPT       8
 
-#define USE_BARO
 #define BARO_I2C_INSTANCE I2CDEV_1
 #define MAG_I2C_INSTANCE I2CDEV_1
 #define ADC_INSTANCE ADC1
