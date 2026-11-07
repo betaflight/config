@@ -25,25 +25,22 @@
  DATE: 2026-05-01
 */
 
-
 #pragma once
 
-
 #define FC_TARGET_MCU     STM32C591
-
 #define BOARD_NAME        HAKRC530
 #define MANUFACTURER_ID   HARC
 
 #define USE_ACC
+#define USE_GYRO
+#define USE_ACC_SPI_ICM42688P
+#define USE_ACCGYRO_LSM6DSK320X
+#define USE_GYRO_SPI_ICM42688P
+#define USE_BARO
+#define USE_BARO_DPS310
 #define USE_FLASH
 #define USE_FLASH_M25P16
 #define USE_FLASH_W25Q128FV
-#define USE_GYRO
-#define USE_GYRO_SPI_ICM42688P
-#define USE_ACC_SPI_ICM42688P
-#define USE_ACCGYRO_LSM6DSK320X
-#define USE_BARO
-#define USE_BARO_DPS310
 #define USE_MAX7456
 
 #define BEEPER_PIN           PB3
@@ -61,7 +58,6 @@
 #define UART3_RX_PIN         PB1
 #define UART4_RX_PIN         PA1
 #define UART5_RX_PIN         PD2
-// #define INVERTER_PIN_UART2   PB4
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
 #define LED0_PIN             PA9
@@ -85,14 +81,12 @@
 #define PINIO1_PIN           PC2
 #define PINIO2_PIN           PC5
 
-
 #define TIMER_PIN_MAPPING  \
     TIMER_PIN_MAP( 0, PC6, 2,  0) \
     TIMER_PIN_MAP( 1, PC7, 2,  1) \
     TIMER_PIN_MAP( 2, PC8, 2,  2) \
     TIMER_PIN_MAP( 3, PC9, 2,  3)  \
     TIMER_PIN_MAP( 4, PA8, 1,  4) 
-
 
 #define ADC1_DMA_OPT       8
 
@@ -103,8 +97,6 @@
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
-// #define DEFAULT_DSHOT_BURST DSHOT_DMAR_AUTO
-// #define DEFAULT_CURRENT_METER_SCALE 100
 #define MAX7456_SPI_INSTANCE SPI2
 #define FLASH_SPI_INSTANCE SPI3
 #define PINIO1_BOX 40
@@ -114,4 +106,3 @@
 #define PINIO2_CONFIG 129
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG
-
