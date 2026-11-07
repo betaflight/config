@@ -52,9 +52,9 @@
 #define USE_MAG
 #define USE_MAG_QMC5883
 
-// #ifndef USE_CAMERA_CONTROL
-// #define USE_CAMERA_CONTROL
-// #endif
+#ifndef USE_CAMERA_CONTROL
+#define USE_CAMERA_CONTROL
+#endif
 
 #define BEEPER_PIN           PB11
 
@@ -79,7 +79,9 @@
 #define UART6_RX_PIN         PC7
 #define UART7_RX_PIN         PC3
 
-#define SA_UART_RX_PIN       PB7
+#define UART1_BIDIR_RX_PIN       PB7
+// Keep the external two-pad bus high while TX is released.
+#define UART1_BIDIR_PULLUP
 
 #define I2C1_SCL_PIN         PB8
 #define I2C1_SDA_PIN         PB9
