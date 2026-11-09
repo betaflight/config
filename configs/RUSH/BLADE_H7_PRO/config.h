@@ -44,18 +44,17 @@
 
 #define BEEPER_PIN           PA15
 
-#define MOTOR1_PIN           PA0
-#define MOTOR2_PIN           PA1
-#define MOTOR3_PIN           PA2
-#define MOTOR4_PIN           PA3
-#define MOTOR5_PIN           PD12
-#define MOTOR6_PIN           PD13
-#define MOTOR7_PIN           PD14
-#define MOTOR8_PIN           PD15
+#define MOTOR1_PIN           PB0
+#define MOTOR2_PIN           PB1
+#define MOTOR3_PIN           PA0
+#define MOTOR4_PIN           PA1
+#define MOTOR5_PIN           PA2
+#define MOTOR6_PIN           PA3
+#define MOTOR7_PIN           PD12
+#define MOTOR8_PIN           PD13
 
 #define SERVO1_PIN           PE5
 #define SERVO2_PIN           PE6
-#define SERVO3_PIN           PB1
 
 #define LED_STRIP_PIN        PA8
 
@@ -113,19 +112,17 @@
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP(  0, PA15, 1, -1) \
-    TIMER_PIN_MAP(  1, PA0 , 2,  0 ) \
-    TIMER_PIN_MAP(  2, PA1 , 2,  1 ) \
-    TIMER_PIN_MAP(  3, PA2 , 2,  2 ) \
-    TIMER_PIN_MAP(  4, PA3 , 2,  3 ) \
-    TIMER_PIN_MAP(  5, PD12, 1,  4 ) \
-    TIMER_PIN_MAP(  6, PD13, 1,  5 ) \
-    TIMER_PIN_MAP(  7, PD14, 1,  6 ) \
-    TIMER_PIN_MAP(  8, PD15, 1,  7 ) \
+    TIMER_PIN_MAP(  1, PB0 , 2,  0 ) \
+    TIMER_PIN_MAP(  2, PB1 , 2,  1 ) \
+    TIMER_PIN_MAP(  3, PA0 , 2,  2 ) \
+    TIMER_PIN_MAP(  4, PA1 , 2,  3 ) \
+    TIMER_PIN_MAP(  5, PA2 , 2,  4 ) \
+    TIMER_PIN_MAP(  6, PA3 , 2,  5 ) \
+    TIMER_PIN_MAP(  7, PD12, 1,  6 ) \
+    TIMER_PIN_MAP(  8, PD13, 1,  7 ) \
     TIMER_PIN_MAP(  9, PE5 , 1, -1 ) \
     TIMER_PIN_MAP( 10, PE6 , 1, -1 ) \
-    TIMER_PIN_MAP( 11, PB1 , 2, -1 ) \
-    TIMER_PIN_MAP( 12, PB0 , 2, -1 ) \
-    TIMER_PIN_MAP( 13, PA8 , 1, 10 )
+    TIMER_PIN_MAP( 11, PA8 , 1, 10 )
 
 #define ADC1_DMA_OPT        8
 #define ADC3_DMA_OPT        9
