@@ -24,7 +24,7 @@
 #define FC_TARGET_MCU     STM32H743
 #define SYSTEM_HSE_MHZ    8
 
-#define BOARD_NAME        BLADE_H7_PRO
+#define BOARD_NAME        BLADE_PRO_H7
 #define MANUFACTURER_ID   RUSH
 
 #define USE_ACC
