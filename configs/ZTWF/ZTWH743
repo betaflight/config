@@ -44,12 +44,6 @@
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
 
-#ifndef USE_MAG
-#define USE_MAG
-#define USE_MAG_QMC5883L
-#define USE_MAG_IST8310
-#endif
-
 #define BEEPER_PIN           PC2
 #define MOTOR1_PIN           PA0
 #define MOTOR2_PIN           PA1
@@ -157,9 +151,7 @@
 #define GYRO_2_ALIGN CW0_DEG
 
 #define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
-#define ENSURE_MPU_DATA_READY_IS_LOW
 
 #define MSP_DISPLAYPORT_UART SERIAL_PORT_UART4
 #define GPS_UART             SERIAL_PORT_USART6
 #define ESC_SENSOR_UART      SERIAL_PORT_USART8
-
