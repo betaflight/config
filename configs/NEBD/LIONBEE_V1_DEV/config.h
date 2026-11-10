@@ -87,10 +87,10 @@
 #define GYRO_1_CS_PIN       PA4
 
 // RTC6705 external power code: PA14 = bit 0, PB7 = bit 1. 00 = 25 mW (boot default), 01 = 100 mW, 10 = MAX, 11 = undefined and unsafe.
-// Needs betaflight/betaflight PR 15935 (RTC6705_DYNAMIC_POWER_CTRL). VTX table power values 0, 1, 2 select the codes.
+// Needs betaflight/betaflight PR 15935 (ENABLE_RTC6705_DYNAMIC_POWER_CTRL). VTX table power values 0, 1, 2 select the codes.
 // Unproven: output power per code is from the vendor and not measured.
 #define RTC6705_CS_PIN      PB2
-#define RTC6705_DYNAMIC_POWER_CTRL
+#define ENABLE_RTC6705_DYNAMIC_POWER_CTRL 1
 #define RTC6705_EX_POWER_1_PIN  PA14
 #define RTC6705_EX_POWER_2_PIN  PB7
 
