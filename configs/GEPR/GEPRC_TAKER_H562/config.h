@@ -111,11 +111,10 @@ REFERENCE: sha256_f2926b24b555f146563a8b33f0244c3c862d54ae8b7e40d06bf6fbfe0881ab
 #define PINIO3_CONFIG           1
 
 #define PINIO1_BOX              40
-#define PINIO2_BOX              41
+#define PINIO2_BOX              0
 #define PINIO3_BOX              42
 
 #define BOX_USER1_NAME          "12V BEC OFF"
-#define BOX_USER2_NAME          "RF OFF"
 #define BOX_USER3_NAME          "CAM 1,2"
 
 #define DEFAULT_FEATURES  FEATURE_ESC_SENSOR
