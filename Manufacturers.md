@@ -100,6 +100,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |MOLA|MotoLab|https://github.com/MotoLab|
 |MOQU|Modd Quad|https://www.moddquad.com/|
 |MTKS|Matek Systems|http://www.mateksys.com/|
+|MWEL|Milky Way Electronics|https://milkyway-electronics.com|
 |MZGC|Manaz GCS|https://www.shop-mzgcs.de/|
 |NAMO|Namimno Silan Electronic Technology Co., Ltd|http://namimnorc.com/|
 |NEBD|NewBeeDrone|https://newbeedrone.com/|
