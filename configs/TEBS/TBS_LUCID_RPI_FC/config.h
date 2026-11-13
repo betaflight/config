@@ -31,7 +31,7 @@ DATE: 2026-05-01
 // Based on HELLBENDER_0001 (RASP) with the schematic for the TBS "Lucid Raspberry Pi FC".
 // Differences vs HELLBENDER_0001:
 //  - Discrete analogue OSD (74LVC1G3157 mux + TLV3231/TLV3541) instead of MAX7456
-//    (no Betaflight driver -- OSD pins are wired but inactive in firmware)
+//    (PIO framebuffer OSD, same circuit as RASPBERRY_PI_UAVFC)
 //  - W25Q64 QSPI flash instead of W25Q128
 //  - DPS368 baro (BMP390 alt) on a separate I2C0 bus from external I2C1 header
 //  - Single 10 V VTX BEC enable instead of dual 5 V/9 V enables
@@ -61,9 +61,6 @@ DATE: 2026-05-01
 #define LED0_PIN             PA0
 #define LED1_PIN             PA1
 
-// WS2812B RGB strip output (J5)
-#define LED_STRIP_PIN        PA2
-
 // SPI0 -- IMU (ICM42688P / MPU6000)
 #define SPI0_SCK_PIN         PA34
 #define SPI0_SDI_PIN         PA32  // MISO
@@ -74,21 +71,11 @@ DATE: 2026-05-01
 #define SPI1_SDI_PIN         PA28  // MISO
 #define SPI1_SDO_PIN         PA31  // MOSI
 
-// QSPI flash (W25Q64JV) -- pins fixed via QMI on RP2350; FLASH_CS_PIN is a placeholder
-#define USE_QUADSPI
-#define USE_QUADSPI_DEVICE_1
-#define FLASH_QUADSPI_INSTANCE	  1
-
-#define USE_FLASH
-#define FLASH_CS_PIN         PA0  // shared with LED0 -- platform handles real QSPI CS via QMI
-#define USE_FLASH_CHIP
-#define USE_FLASH_W25Q128FV  // populated chip is W25Q64JV; W25Q-series share the same command set
-#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
-
-// SD card on SPI1 -- this board has no MAX7456, so the SD card path is always available
+// SD card on SPI1 -- blackbox device. The W25Q64JV is the boot flash, not used for blackbox.
 #define USE_SDCARD
 #define USE_SDCARD_SPI
 #define SDCARD_SPI_CS_PIN    PA29
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_SDCARD
 
 // IMU CS / interrupt / external clock-in (6-wire IMU bus on schematic)
 #define GYRO_1_CS_PIN        PA33
@@ -100,34 +87,52 @@ DATE: 2026-05-01
 #define GYRO_2_CS_PIN        NONE
 
 // UARTs --------------------------------------------------------------
-// UART0 -- DVTX (DJI O4)
-#define UART0_TX_PIN         PA44
-#define UART0_RX_PIN         PA45
-#define MSP_DISPLAYPORT_UART SERIAL_PORT_UART0
+// RP2350 has two hardware UARTs (UART0, UART1) and two PIO UARTs
+// (PIOUART0, PIOUART1). All PIOUART pins must be in PA0..PA31 or in PA16..PA47.
+// Same mapping as RASPBERRY_PI_UAVFC. ESC telemetry (PA5) has no port.
+//
+//                  UART0          UART1          PIOUART0    PIOUART1
+// HD (digital)     DVTX           SBUS (RX)      GPS         XF2 (CRSF)
+// SD (analogue)    DVTX (spare)   XF2 (CRSF)     GPS         SmartAudio
 
-// UART1 -- GPS
-#define UART1_TX_PIN         PA36
-#define UART1_RX_PIN         PA37
-#define GPS_UART             SERIAL_PORT_UART1
-
-// UART2 -- XF2 receiver (CRSF default)
-#define UART2_TX_PIN         PA42
-#define UART2_RX_PIN         PA43
 #define USE_RX_CRSF
 #define DEFAULT_RX_FEATURE   FEATURE_RX_SERIAL
 #define SERIALRX_PROVIDER    SERIALRX_CRSF
-#define SERIALRX_UART        SERIAL_PORT_UART2
 
-// UART3 -- SmartAudio HD (TX-only used by VTX, but RX pin is wired)
-#define UART3_TX_PIN         PA16
-#define UART3_RX_PIN         PA17
+// UART0 -- DVTX (DJI O4)
+#define UART0_TX_PIN         PA44
+#define UART0_RX_PIN         PA45
 
-// UART4 -- ESC telemetry (RX only)
-#define UART4_RX_PIN         PA5
-#define ESC_SENSOR_UART      SERIAL_PORT_UART4
+// PIOUART0 -- GPS
+#define PIOUART0_TX_PIN      PA36
+#define PIOUART0_RX_PIN      PA37
+#define GPS_UART             SERIAL_PORT_PIOUART0
 
-// UART5 -- SBUS RX pad (J3 P pin, "SBUS" net)
-#define UART5_RX_PIN         PA41
+#ifdef USE_OSD_HD
+
+#define MSP_DISPLAYPORT_UART SERIAL_PORT_UART0
+
+// UART1 -- SBUS pad (J3 P pin)
+#define UART1_TX_PIN         NONE
+#define UART1_RX_PIN         PA41
+
+// PIOUART1 -- XF2 receiver
+#define PIOUART1_TX_PIN      PA42
+#define PIOUART1_RX_PIN      PA43
+#define SERIALRX_UART        SERIAL_PORT_PIOUART1
+
+#else
+
+// UART1 -- XF2 receiver
+#define UART1_TX_PIN         PA42
+#define UART1_RX_PIN         PA43
+#define SERIALRX_UART        SERIAL_PORT_UART1
+
+// PIOUART1 -- SmartAudio (analogue VTX)
+#define PIOUART1_TX_PIN      PA16
+#define PIOUART1_RX_PIN      PA17
+
+#endif // USE_OSD_HD
 
 // I2C ----------------------------------------------------------------
 // I2C0 -- onboard barometer (DPS368 / BMP390 alt) with R54/R55 2k pull-ups
@@ -160,10 +165,62 @@ DATE: 2026-05-01
 #define ADC_RSSI_PIN         PA40   // SPARE_ADC pad on J7
 
 // OSD ----------------------------------------------------------------
-// Board has a discrete analogue OSD (74LVC1G3157 mux + TLV3541/TLV3231 comparators)
-// driven by OSD_W (PA21), OSD_EN (PA22) and OSD_SYNC (PA23). Betaflight has no
-// driver for this DIY OSD path, so these are left undefined and the OSD will be
-// inactive until external HD VTX OSD is used (MSP DisplayPort over UART0).
+// Analogue OSD (74LVC1G3157 mux + TLV3541/TLV3231 comparators), same circuit
+// and pins as RASPBERRY_PI_UAVFC. The PIO framebuffer OSD and the LED strip
+// both use PIO2, so choose one. Predefine ENABLE_FB_OSD=0 for LED strip.
+#ifndef ENABLE_FB_OSD
+#define ENABLE_FB_OSD        1
+#endif
+
+#if ENABLE_FB_OSD
+
+#ifndef USE_OSD_SD
+#define USE_OSD_SD
+#endif
+
+// OSD_EN_PIN must be next GPIO up from OSD_W_PIN
+// and OSD_SYNC_PIN next up from OSD_EN_PIN
+#define OSD_W_PIN            PA21
+#define OSD_EN_PIN           PA22
+#define OSD_SYNC_PIN         PA23
+
+// Save space by leaving font in FLASH, don't copy to RAM
+#define OSD_FB_PICO_FLASH_FONT
+
+// Allow to set,get osd_canvas_width,height in cli
+#define OSD_CANVAS_SIZE_DEBUG
+
+#ifndef OSD_FB_PICO_ENABLE_PIXEL_MODE
+#define OSD_FB_PICO_ENABLE_PIXEL_MODE 1
+#endif
+
+#if OSD_FB_PICO_ENABLE_PIXEL_MODE
+// One pixel black border left and right, one above and below
+#define OSD_FB_PICO_POSTPROCESS 2
+
+#define OSD_BATTERY_PERCENT_WITH_SYMBOL
+#define OSD_RSSI_WITH_SYMBOL
+
+#ifndef OSD_FB_ENABLE_SMALLFONT
+// Small font needs a special packed font; standard MCM fonts need it off
+#define OSD_FB_ENABLE_SMALLFONT 0
+#endif
+#endif // OSD_FB_PICO_ENABLE_PIXEL_MODE
+
+#if !OSD_FB_ENABLE_SMALLFONT
+#undef OSD_RSSI_WITH_SYMBOL
+#endif
+
+#define OSD_FRAMERATE_MAX_HZ 100
+#define OSD_FRAMERATE_DEFAULT_HZ 50
+#define OSD_DRAWSCREEN_TIME_LIMIT_US 20
+
+#else
+
+// WS2812B RGB strip output (J5)
+#define LED_STRIP_PIN        PA2
+
+#endif // ENABLE_FB_OSD
 
 // Spare GPIO header (J7 SM06B-SRSS-TB) -- not currently consumed by firmware
 //   SPARE_GPIO1 = PA12, SPARE_GPIO2 = PA13, SPARE_GPIO3 = PA14
