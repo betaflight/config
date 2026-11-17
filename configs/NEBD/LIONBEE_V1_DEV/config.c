@@ -4,10 +4,11 @@
 
 #include "config/config.h"
 #include "io/ledstrip.h"
+#include "io/vtx.h"
 #include "pg/gps.h"
 #include "pg/vtx_table.h"
 
-// Runs on a config reset only. A stored config keeps its own LED layout, GNSS setting and VTX table.
+// Runs on a config reset only. A stored config keeps its own LED layout, GNSS setting, VTX table and VTX power.
 void targetConfiguration(void)
 {
 #ifdef USE_LED_STRIP
@@ -52,5 +53,8 @@ void targetConfiguration(void)
         table->powerValues[level] = level;
         strcpy(table->powerLabels[level], powerLabels[level]);
     }
+    // Power level 3 (MAX) while armed, level 1 (25 mW) while disarmed.
+    vtxSettingsConfigMutable()->power = 3;
+    vtxSettingsConfigMutable()->lowPowerDisarm = VTX_LOW_POWER_DISARM_ALWAYS;
 #endif
 }
