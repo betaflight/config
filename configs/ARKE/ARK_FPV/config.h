@@ -133,6 +133,16 @@
 #define SPI6_SDI_PIN        PA6
 #define SPI6_SDO_PIN        PG14
 
+// MAX7456 OSD on the external SPI port
+#define USE_MAX7456
+#define MAX7456_SPI_INSTANCE SPI6
+#define MAX7456_SPI_CS_PIN  PI10
+// A build with both SD and HD OSD otherwise defaults to the HD video system and
+// the MSP displayport, and neither ever probes the MAX7456. AUTO probes it first
+// and falls back to MSP on the VTX UART when no MAX7456 answers.
+#define DEFAULT_VIDEO_SYSTEM            VIDEO_SYSTEM_AUTO
+#define DEFAULT_OSD_DISPLAYPORT_DEVICE  OSD_DISPLAYPORT_DEVICE_AUTO
+
 // SD card
 #define USE_SDCARD
 #define USE_SDCARD_SDIO
