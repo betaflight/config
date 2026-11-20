@@ -29,44 +29,19 @@
 #define USE_ACC
 #define USE_ACC_SPI_ICM42688P
 #define USE_ACC_SPI_ICM42605
-//#define USE_ACC_SPI_MPU6000
+
 #define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 #define USE_GYRO_SPI_ICM42605
-//#define USE_GYRO_SPI_MPU6000
-//#define USE_ACCGYRO_IIM42652
+
 #define USE_BARO
-//#define USE_BARO_BMP581
-//#define USE_BARO_BMP280
+
 #define USE_BARO_DPS310
-//#define USE_MAX7456
+
 #define USE_SDCARD
 #define USE_SDCARD_SDIO
-#define USE_MAG
-//#define USE_WING
-//#define USE_OSD_HD
-//#define USE_GPS
-//#define USE_GPS_PLUS_CODES
-//#define USE_ACRO_TRAINER
-//#define USE_CAMERA_CONTROL
-//#define USE_DSHOT
-//#define USE_LED_STRIP
-//#define USE_LED_STRIP_64
-//#define USE_OPTICALFLOW
-//#define USE_POSITION_HOLD
-//#define USE_PINIO
-//#define USE_SERVOS
-//#define USE_SERIALRX
-//#define USE_SERIALRX_CRSF
-//#define USE_CRSF_V3
-//#define USE_TELEMETRY
-//#define USE_TELEMETRY_CRSF
-//#define USE_I2C
-//#define USE_HAL_DRIVER
-//#define USE_FULL_LL_DRIVER
-//#define USE_YAW_SPIN_RECOVERY
-//#define USE_CUSTOM_BOX_NAMES
-//#define USE_BOARD_INFO
+
+
 
 
 //  MOTORS  //
@@ -78,8 +53,7 @@
 #define MOTOR6_PIN           PA3
 #define MOTOR7_PIN           PD12
 #define MOTOR8_PIN           PD13
-//#define MOTOR9_PIN           PD14
-//#define MOTOR10_PIN          PD15
+
 
 //  SERVOS  //
 #define SERVO1_PIN           PE5
@@ -144,9 +118,7 @@
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_CS_PIN        PC15
 #define GYRO_1_EXTI_PIN      PB2
-//#define GYRO_2_ALIGN CW90_DEG
-//#define GYRO_2_ALIGN CW0_DEG_FLIP
-//#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_1
+
 #define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
 
 
@@ -162,7 +134,7 @@
 #define ADC_EXTERNAL1_PIN    PC4  //ADC12  AirS  :1-1
 #define ADC_EXTERNAL2_PIN    PA4  //ADC12  VB2   :210
 #define ADC_EXTERNAL3_PIN    PC5  //ADC12  CU2   :external divider needed
-//#define ADC_RSSI_PIN         PC5
+
 
 //  PINIO  //
 #define PINIO1_PIN           PD10
@@ -184,12 +156,7 @@
 #define RX_PPM_PIN           PC7  //SAME AS TX6 YOU CAN USE TX6 AS PPM IF YOU WANT BUT YOU NEED TO ACTIVATE TIMER
 #define SPI3_CS1            PD4
 
-//#define CAMERA_CONTROL_PIN PB8    //THERE IS A PAD FOR IT, IF YOU WANT JUST ACTIVE THIS AND TIMER
 
-/* CS1/CS2 pads for SPI3 connection:
- * CS1 PD4
- * CS2 PE2
- */
 
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, PB0 , 2,  0) \
@@ -213,36 +180,13 @@
 #define TIMUP3_DMA_OPT      11
 #define TIMUP4_DMA_OPT      12
 #define TIMUP5_DMA_OPT      13
-//#define ADC2_DMA_OPT        14
-//#define SDCARD_SDIO_DMA_OPT 14
 
-
-/*  ÖRNEK
-    TIMER_PIN_MAP( 0, PB0 , 2,  0) \    //MOTOR1_PIN TIM3_CH3
-    TIMER_PIN_MAP( 1, PB1 , 2,  1) \    //MOTOR2_PIN TIM3_CH4
-    TIMER_PIN_MAP( 2, PA0 , 2,  2) \    //MOTOR3_PIN TIM5_CH1
-    TIMER_PIN_MAP( 3, PA1 , 2,  3) \    //MOTOR4_PIN TIM5_CH2
-    TIMER_PIN_MAP( 4, PA2 , 2,  4) \    //MOTOR5_PIN TIM5_CH3
-    TIMER_PIN_MAP( 5, PA3 , 2,  5) \    //MOTOR6_PIN TIM5_CH4
-    TIMER_PIN_MAP( 6, PD12, 1,  6) \    //MOTOR7_PIN TIM4_CH1
-    TIMER_PIN_MAP( 7, PD13, 1,  7) \    //MOTOR8_PIN TIM4_CH2
-    TIMER_PIN_MAP( 8, PE5 , 1, -1) \    //SERVO 1 
-    TIMER_PIN_MAP( 9, PE6 , 1, -1) \    //SERVO 2
-    TIMER_PIN_MAP(10, PA8 , 1, 8) \    //LED STRIP
-    TIMER_PIN_MAP(11, PA15, 1, -1)      //BEEPER
-     TIMER_PIN_MAP(12, PC7 , 2, -1)     //UART6_RX_PIN-PPM
-    TIMER_PIN_MAP( 13, PD14, 1,  0)     //MOTOR9_PIN TIM4_CH3    - 
-    TIMER_PIN_MAP( 14, PD15, 1,  0)     //MOTOR10_PIN TIM4_CH4 - NO DMA  - 
-    TIMER_PIN_MAP( 15, PB08, 1,  -1)    //camera control kullanırsan
-*/
 
 
 #define BARO_I2C_INSTANCE I2CDEV_2
 #define MAG_I2C_INSTANCE I2CDEV_1
-//#define DASHBOARD_I2C_INSTANCE I2CDEV_1
-//#define DASHBOARD_I2C_INSTANCE (I2CDEV_1)
 
-//#define DEFAULT_RX_FEATURE FEATURE_RX_SERIAL
+
 #define SERIALRX_UART SERIAL_PORT_USART6
 #define ESC_SENSOR_UART SERIAL_PORT_UART8
 #define MSP_DISPLAYPORT_UART SERIAL_PORT_USART1
