@@ -43,7 +43,7 @@
 #define USE_SDCARD
 #define USE_SDCARD_SDIO
 #define USE_MAG
-#define USE_WING
+//#define USE_WING
 //#define USE_OSD_HD
 //#define USE_GPS
 //#define USE_GPS_PLUS_CODES
