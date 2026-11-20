@@ -86,7 +86,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |HGLR|HGLRC|https://www.hglrc.com/|
 |HNEC|Huizhou NIDICI Electronic Co., Ltd|https://shop.nidici.com/|
 |HOWI|Hobbywing Technology Co., Ltd|http://hobbywing.com/|
-|IFRC|iFlight Innovation Technology Ltd.|https://www.iflight-rc.com/|
+|IFRC|iFlight Innovation Technology Ltd.|https://www.iflight.com/|
 |JHEF|Shenzhen Jinhang Electronic Co., Ltd|https://www.jhemcu.com/|
 |KLEE|Kevin Lee (WhitenoiseFPV)|https://whitenoisefpv.com/|
 |KONX|Konex Drone, SL|https://konexdrone.com/|
