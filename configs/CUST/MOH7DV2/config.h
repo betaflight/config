@@ -49,10 +49,7 @@
 #define MOTOR2_PIN           PB1
 #define MOTOR3_PIN           PA0
 #define MOTOR4_PIN           PA1
-#define MOTOR5_PIN           PA2
-#define MOTOR6_PIN           PA3
-#define MOTOR7_PIN           PD12
-#define MOTOR8_PIN           PD13
+
 
 
 //  SERVOS  //
@@ -153,7 +150,7 @@
 #define BEEPER_INVERTED
 #define BEEPER_PWM_HZ 2500
 #define USB_DETECT_PIN       PE2
-#define RX_PPM_PIN           PC7  //SAME AS TX6 YOU CAN USE TX6 AS PPM IF YOU WANT BUT YOU NEED TO ACTIVATE TIMER
+
 #define SPI3_CS1            PD4
 
 
@@ -163,23 +160,19 @@
     TIMER_PIN_MAP( 1, PB1 , 2,  1) \
     TIMER_PIN_MAP( 2, PA0 , 2,  2) \
     TIMER_PIN_MAP( 3, PA1 , 2,  3) \
-    TIMER_PIN_MAP( 4, PA2 , 2,  4) \
-    TIMER_PIN_MAP( 5, PA3 , 2,  5) \
-    TIMER_PIN_MAP( 6, PD12, 1,  6) \
-    TIMER_PIN_MAP( 7, PD13, 1,  7) \
     TIMER_PIN_MAP( 8, PE5 , 1, -1) \
     TIMER_PIN_MAP( 9, PE6 , 1, -1) \
-    TIMER_PIN_MAP(10, PA8 , 1,  8) \
+    TIMER_PIN_MAP(10, PA8 , 1,  4) \
     TIMER_PIN_MAP(11, PA15, 1, -1) \
     TIMER_PIN_MAP(12, PC7 , 2, -1) 
 
 
 
-#define ADC1_DMA_OPT        9
-#define ADC3_DMA_OPT        10
-#define TIMUP3_DMA_OPT      11
-#define TIMUP4_DMA_OPT      12
-#define TIMUP5_DMA_OPT      13
+#define ADC1_DMA_OPT        5
+#define ADC3_DMA_OPT        6
+#define TIMUP3_DMA_OPT      7
+#define TIMUP4_DMA_OPT      8
+#define TIMUP5_DMA_OPT      9
 
 
 
