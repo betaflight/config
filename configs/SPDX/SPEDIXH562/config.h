@@ -121,7 +121,6 @@ GYRO-CLKIN TIM3 CH3
 #define BARO_I2C_INSTANCE            I2CDEV_1
 #define MAG_I2C_INSTANCE             I2CDEV_1
 
-#define GYRO_1_ALIGN                 CW0_DEG
 #define GYRO_1_SPI_INSTANCE          SPI1
 #define MAX7456_SPI_INSTANCE         SPI2
 #define FLASH_SPI_INSTANCE           SPI3
@@ -133,6 +132,7 @@ GYRO-CLKIN TIM3 CH3
 #define PINIO2_BOX                   41
 #define BOX_USER2_NAME               "CAM SW"
 
+// Disable on arm - used for BLE
 #define PINIO3_BOX                   0
 #define PINIO3_CONFIG                129
 
