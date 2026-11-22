@@ -43,7 +43,6 @@
 #define USE_FLASH_W25Q128FV
 #define USE_MAX7456
 #define USE_SERIALRX_SBUS
-#define USE_GPS
 #define USE_MAG
 
 #define MOTOR1_PIN          PC6
