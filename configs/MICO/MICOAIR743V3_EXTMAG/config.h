@@ -60,7 +60,6 @@
 #define SERVO2_PIN PE6
 
 #define BEEPER_PIN    PD15
-#define LED_STRIP_PIN PD14 // Shares TIM4 with timer-driven motor outputs M7 and M8.
 
 #define UART1_TX_PIN PA9
 #define UART2_TX_PIN PA2
@@ -123,6 +122,8 @@
 #define PINIO1_BOX    40
 #define BOX_USER1_NAME "VTX PWR"
 
+// The PD14 LED strip pad shares TIM4 with timer-driven motor outputs M7 and M8.
+// Assign it with "resource LED_STRIP 1 D14" only when no other active output uses TIM4.
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, MOTOR1_PIN,    1,  0 ) \
     TIMER_PIN_MAP( 1, MOTOR2_PIN,    1,  1 ) \
@@ -134,7 +135,7 @@
     TIMER_PIN_MAP( 7, MOTOR8_PIN,    1,  7 ) \
     TIMER_PIN_MAP( 8, SERVO1_PIN,    1, -1 ) \
     TIMER_PIN_MAP( 9, SERVO2_PIN,    1, -1 ) \
-    TIMER_PIN_MAP(10, LED_STRIP_PIN, 1, 12 ) \
+    TIMER_PIN_MAP(10, PD14,          1, 12 ) \
     TIMER_PIN_MAP(11, BEEPER_PIN,    1, -1 )
 
 #define ADC1_DMA_OPT   8

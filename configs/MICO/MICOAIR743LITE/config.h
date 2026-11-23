@@ -97,11 +97,12 @@
 #define LED1_PIN           PE2
 #define LED2_PIN           PE4
 #define BEEPER_PIN         PD15
-#define LED_STRIP_PIN      PD14 // Shares TIM4 with the M11 and M12 servo outputs.
 #define GYRO_1_CS_PIN      PD4
 #define GYRO_1_EXTI_PIN    PD5
 #define GYRO_1_ALIGN       CW90_DEG
 
+// The PD14 LED strip pad shares TIM4 with the M11 and M12 servo outputs.
+// Assign it with "resource LED_STRIP 1 D14" only when no other active output uses TIM4.
 #define TIMER_PIN_MAPPING \
     TIMER_PIN_MAP( 0, MOTOR1_PIN, 1,  0 ) \
     TIMER_PIN_MAP( 1, MOTOR2_PIN, 1,  1 ) \
@@ -117,7 +118,7 @@
     TIMER_PIN_MAP(11, SERVO4_PIN, 1, -1 ) \
     TIMER_PIN_MAP(12, SERVO5_PIN, 2, -1 ) \
     TIMER_PIN_MAP(13, SERVO6_PIN, 2, -1 ) \
-    TIMER_PIN_MAP(14, LED_STRIP_PIN, 1, 12 ) \
+    TIMER_PIN_MAP(14, PD14,       1, 12 ) \
     TIMER_PIN_MAP(15, BEEPER_PIN, 1, -1 )
 
 #define ADC1_DMA_OPT   8
