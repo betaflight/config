@@ -40,7 +40,7 @@
 #define USE_GYRO_CLKIN
 #define GYRO_1_CLKIN_PIN    PB14
 
-#define BEEPER_PIN             PB3
+#define BEEPER_PIN          PB3
 #define MOTOR1_PIN           PB4
 #define MOTOR2_PIN           PB5
 #define MOTOR3_PIN           PB0
