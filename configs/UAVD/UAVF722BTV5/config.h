@@ -128,7 +128,7 @@
 #define PINIO1_BOX                   0
 #define PINIO1_CONFIG                129
 
-#define PINIO2_BOX                   41
+#define PINIO2_BOX                   40
 #define PINIO2_CONFIG                129
 #define BOX_USER2_NAME               "10 V BEC"
 
