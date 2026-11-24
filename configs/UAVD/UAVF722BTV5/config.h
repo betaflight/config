@@ -125,6 +125,7 @@
 #define MAX7456_SPI_INSTANCE         SPI2
 #define FLASH_SPI_INSTANCE           SPI3
 
+// Disable Bluetooth when armed
 #define PINIO1_BOX                   0
 #define PINIO1_CONFIG                129
 
