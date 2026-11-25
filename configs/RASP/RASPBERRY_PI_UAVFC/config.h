@@ -19,6 +19,12 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+    SUPPORTED TARGET - THANK YOU
+    REFERENCE: sha256_4cbcfaa42f935b27b8c866e1dad16ba90cad68ed1631726bf264854f138dc29e
+    DATE: 2026-05-01
+*/
+
 #pragma once
 
 #define FC_TARGET_MCU     RP2350B
