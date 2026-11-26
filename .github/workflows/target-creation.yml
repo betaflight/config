@@ -9,14 +9,15 @@ on:
 
 jobs:
   deploy:
+    if: github.repository == 'betaflight/config'
     name: Create or Update Target
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
 
     - id: files
-      uses: tj-actions/changed-files@v34
+      uses: tj-actions/changed-files@v44
       with:
         files: |
           configs/**
@@ -31,7 +32,7 @@ jobs:
 
             if [[ $target_config == */config.h ]]; then
               BOARD_NAME=$(sed -n 's/^.*[[:space:]]BOARD_NAME \([^#]\+\).*$/\1/p' ${target_config} | sed -e 's/[[:space:]]*$//')
-              STATUS_RECEIVED=$(curl -s --write-out "%{http_code}\n" -X POST -H "Content-Type: text/plain; charset=utf-8" -H "API_KEY: ${API_KEY}" --data-binary @${target_config} ${URL} --silent);
+              STATUS_RECEIVED=$(curl -s -o /dev/null --write-out "%{http_code}\n" -X POST -H "Content-Type: text/plain; charset=utf-8" -H "API_KEY: ${API_KEY}" --data-binary @${target_config} ${URL} --silent);
               echo "${BOARD_NAME}  -->  ${STATUS_RECEIVED}"
 
               if [ $STATUS_RECEIVED -ne "200" ]; then
