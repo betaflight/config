@@ -68,6 +68,7 @@ This is the official list of manufacturer ids (`manufacturer_id` in the target c
 |FLYS|FlySpark|https://flyspark.in/|
 |FOXE|Foxeer|http://www.foxeer.com/|
 |FPVM|FPV Model|https://fpvmodel.com/|
+|FRNS|Farins Frames S.R.L.|https://www.farinsframes.com/|
 |FRSK|FrSky|https://www.frsky-rc.com/|
 |GEEL|Geelang|https://geelang.com/|
 |GEFP|GetFPV LLC|https://www.getfpv.com/|
