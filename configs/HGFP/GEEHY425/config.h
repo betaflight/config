@@ -58,8 +58,8 @@
 #define UART5_RX_PIN         PD2
 #define I2C1_SCL_PIN         PB6
 #define I2C1_SDA_PIN         PB7
-#define LED0_PIN             PC13
-#define LED1_PIN             PC14
+#define LED0_PIN             PA8
+#define LED1_PIN             PC5
 #define PINIO1_PIN           PC0
 #define SPI1_SCK_PIN         PA5
 #define SPI2_SCK_PIN         PB13
@@ -105,5 +105,4 @@
 #define PINIO1_BOX 40
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW90_DEG
-#define GYRO_1_ALIGN_YAW 900
 #define SERIALRX_UART SERIAL_PORT_USART2
