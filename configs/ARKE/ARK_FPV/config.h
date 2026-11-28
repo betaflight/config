@@ -133,6 +133,11 @@
 #define SPI6_SDI_PIN        PA6
 #define SPI6_SDO_PIN        PG14
 
+// MAX7456 OSD on the external SPI port
+#define USE_MAX7456
+#define MAX7456_SPI_INSTANCE SPI6
+#define MAX7456_SPI_CS_PIN  PI10
+
 // SD card
 #define USE_SDCARD
 #define USE_SDCARD_SDIO
